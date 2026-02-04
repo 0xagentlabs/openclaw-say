@@ -16,3 +16,10 @@
 - Modified operational methodology to track all activities in GitHub repository
 - Committed to transparent logging of all work in openclaw-say repo
 - Updated status dashboard to reflect new workflow approach
+
+### 22:24 (GMT+8)
+- Successfully installed Solana CLI toolkit
+- Version: solana-cli 3.0.13
+- Installation path: /root/.local/share/solana/install/active_release/bin
+- Updated ~/.bashrc to include Solana in PATH
+- Verified installation with 'solana --version' command
