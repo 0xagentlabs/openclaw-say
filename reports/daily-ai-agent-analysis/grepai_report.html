@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>项目分析报告: ZhuLinsen/daily_stock_analysis</title>
+    <title>项目分析报告: yoanbernabeu/grepai</title>
     <style>
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 20px; background-color: #f8f9fa; }
         .container { max-width: 1200px; margin: 0 auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
@@ -30,36 +30,33 @@
 <body>
     <div class="container">
         <h1>项目分析报告</h1>
-        <h2>ZhuLinsen/daily_stock_analysis</h2>
-        <a href="https://github.com/ZhuLinsen/daily_stock_analysis" class="repo-link" target="_blank">访问项目主页</a>
+        <h2>yoanbernabeu/grepai</h2>
+        <a href="https://github.com/yoanbernabeu/grepai" class="repo-link" target="_blank">访问项目主页</a>
         <a href="../index.html" class="repo-link" style="background:#636e72;" target="_blank">返回项目聚合器首页</a>
         <div class="summary-box">
             <h3>项目摘要</h3>
-            <p><strong>一句话介绍:</strong> ZhuLinsen/daily_stock_analysis 是一个基于 Python 的 对话式AI / 聊天机器人 项目，具有 9445 个星标。</p>
-            <p><strong>核心亮点:</strong> 超高人气与社区认可度</p>
+            <p><strong>一句话介绍:</strong> yoanbernabeu/grepai 是一个具备自动化能力的 Go 自主代理 / 任务自动化 项目，拥有 1150 个星标。</p>
+            <p><strong>核心亮点:</strong> 活跃的开发维护</p>
         </div>
         <div class="stats">
-            <div class="stat-card">⭐ <strong>星标</strong><br>9445</div>
-            <div class="stat-card">🔄 <strong>复刻</strong><br>9898</div>
-            <div class="stat-card">📋 <strong>问题</strong><br>24</div>
-            <div class="stat-card">🏷️ <strong>语言</strong><br>Python</div>
+            <div class="stat-card">⭐ <strong>星标</strong><br>1150</div>
+            <div class="stat-card">🔄 <strong>复刻</strong><br>88</div>
+            <div class="stat-card">📋 <strong>问题</strong><br>10</div>
+            <div class="stat-card">🏷️ <strong>语言</strong><br>Go</div>
             <div class="stat-card">📄 <strong>许可</strong><br>MIT</div>
         </div>
         <div class="section">
             <h3>项目描述</h3>
-            <p>LLM驱动的 A/H/美股智能分析器，多数据源行情 + 实时新闻 + Gemini 决策仪表盘 + 多渠道推送，零成本，纯白嫖，定时运行</p>
+            <p>Semantic Search & Call Graphs for AI Agents (100% Local)</p>
         </div>
         <div class="section">
             <h3>应用领域</h3>
-            <p>对话式AI / 聊天机器人</p>
+            <p>自主代理 / 任务自动化</p>
         </div>
         <div class="section tech-stack">
             <h3>技术栈</h3>
             <ul>
-                <li>Python</li>
-                <li>依赖包: openai>=1.0.0 # OpenAI 兼容 API（可选，支持 DeepSeek/通义千问等）</li>
-                <li>Python (pyproject)</li>
-                <li>依赖包: </li>
+                <li>Go</li>
             </ul>
         </div>
         <div class="features">
@@ -87,26 +84,30 @@
         <div class="section">
             <h3>仓库结构</h3>
             <pre>.
-./bot
-./bot/commands
-./bot/platforms
-./data_provider
-./docker
+./cli
+./config
 ./docs
-./docs/bot
-./docs/docker
-./sources
-./src
-./src/core</pre>
+./docs/public
+./docs/src
+./docs/src/components
+./docs/src/content
+./docs/src/layouts
+./docs/src/pages
+./docs/src/styles
+./docs/src/utils
+./indexer
+./mcp
+./search
+./store
+./trace</pre>
         </div>
         <div class="strengths">
             <h3 style="color:white;">优势分析</h3>
             <ul style="color:white;">
-                <li>极高人气 (9445 ⭐)</li>
-                <li>活跃社区 (>9898 复刻)</li>
+                <li>显著人气 (1150 ⭐)</li>
+                <li>社区兴趣 (88 复刻)</li>
                 <li>良好文档</li>
-                <li>测试覆盖</li>
-                <li>维护良好 (低开放问题数: 24)</li>
+                <li>维护良好 (低开放问题数: 10)</li>
                 <li>许可证清晰 (MIT)</li>
             </ul>
         </div>
@@ -114,66 +115,67 @@
             <h3 style="color:white;">潜在不足</h3>
             <ul style="color:white;">
                 <li>缺少示例</li>
+                <li>无可见测试套件</li>
             </ul>
         </div>
         <div class="section">
             <h3>README预览</h3>
             <pre><div align="center">
 
-# 📈 股票智能分析系统
+# grepai
 
-[![GitHub stars](https://img.shields.io/github/stars/ZhuLinsen/daily_stock_analysis?style=social)](https://github.com/ZhuLinsen/daily_stock_analysis/stargazers)
-[![CI](https://github.com/ZhuLinsen/daily_stock_analysis/actions/workflows/ci.yml/badge.svg)](https://github.com/ZhuLinsen/daily_stock_analysis/actions/workflows/ci.yml)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
-[![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-Ready-2088FF?logo=github-actions&logoColor=white)](https://github.com/features/actions)
-[![Docker](https://img.shields.io/badge/Docker-Ready-2496ED?logo=docker&logoColor=white)](https://hub.docker.com/)
+### grep for the AI era
 
-> 🤖 基于 AI 大模型的 A股/港股/美股自选股智能分析系统，每日自动分析并推送「决策仪表盘」到企业微信/飞书/Telegram/邮箱
+[![Product Hunt](https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1067661&theme=light)](https://www.producthunt.com/products/grepai)
 
-[**功能特性**](#-功能特性) · [**快速开始**](#-快速开始) · [**推送效果**](#-推送效果) · [**完整指南**](docs/full-guide.md) · [**常见问题**](docs/FAQ.md) · [**更新日志**](docs/CHANGELOG.md)
+[![GitHub stars](https://img.shields.io/github/stars/yoanbernabeu/grepai?style=flat&logo=github)](https://github.com/yoanbernabeu/grepai/stargazers)
+[![Downloads](https://img.shields.io/github/downloads/yoanbernabeu/grepai/total?style=flat&logo=github)](https://github.com/yoanbernabeu/grepai/releases)
+[![Go](https://github.com/yoanbernabeu/grepai/actions/workflows/ci.yml/badge.svg)](https://github.com/yoanbernabeu/grepai/actions/workflows/ci.yml)
+[![Go Report Card](https://goreportcard.com/badge/github.com/yoanbernabeu/grepai)](https://goreportcard.com/report/github.com/yoanbernabeu/grepai)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-简体中文 | [English](docs/README_EN.md) | [繁體中文](docs/README_CHT.md)
+**Search code by meaning, not just text.**
+
+[Documentation](https://yoanbernabeu.github.io/grepai/) · [Installation](#installation) · [Quick Start](#quick-start)
 
 </div>
 
-## 💖 赞助商 (Sponsors)
-<div align="center">
-  <a href="https://serpapi.com/baidu-search-api?utm_source=github_daily_stock_analysis" target="_blank">
-    <img src="./sources/serpapi_banner_zh.png" alt="轻松抓取搜索引擎上的实时金融新闻数据 - SerpApi" height="160">
-  </a>
-</div>
-<br>
+---
 
+`grepai` is a privacy-first CLI for semantic code search. It uses vector embeddings to understand code meaning, enabling natural language queries that find relevant code—even when naming conventions vary.
 
-## ✨ 功能特性
+**Drastically reduces AI agent input tokens** by providing relevant context instead of raw search results.
 
-| 模块 | 功能 | 说明 |
-|------|------|------|
-| AI | 决策仪表盘 | 一句话核心结论 + 精确买卖点位 + 操作检查清单 |
-| 分析 | 多维度分析 | 技术面 + 筹码分布 + 舆情情报 + 实时行情 |
-| 市场 | 全球市场 | 支持 A股、港股、美股 |
-| 复盘 | 大盘复盘 | 每日市场概览、板块涨跌、北向资金 |
-| 推送 | 多渠道通知 | 企业微信、飞书、Telegram、钉钉、邮件、Pushover |
-| 自动化 | 定时运行 | GitHub Actions 定时执行，无需服务器 |
+## Features
 
-### 技术栈与数据来源
+- **Search by intent** — Ask "authentication logic" and find `handleUserSession`
+- **Trace call graphs** — Know who calls a function before you change it
+- **100% local** — Your code never leaves your machine
+- **Always up-to-date** — File watcher keeps the index fresh automatically
+- **AI agent ready** — Works with Claude Code, Cursor, Windsurf out of the box
+- **MCP server** — Your AI agent can call grepai directly as a tool
 
-| 类型 | 支持 |
-|------|------|
-| AI 模型 | Gemini（免费）、OpenAI 兼容、DeepSeek、通义千问、Claude、Ollama |
-| 行情数据 | AkShare、Tushare、Pytdx、Baostock、YFinance |
-| 新闻搜索 | Tavily、SerpAPI、Bocha |
+## Installation
 
-### 内置交易纪律
+**Homebrew (macOS):**
+```bash
+brew install yoanbernabeu/tap/grepai
+```
 
-| 规则 | 说明 |</pre>
+**Linux/macOS:**
+```bash
+curl -sSL https://raw.githubusercontent.com/yoanbernabeu/grepai/main/install.sh | sh
+```
+
+**Windows (PowerShell):**
+```powershell
+irm https://raw.githubusercontent.com/yoanbernabeu/grepai/main/install.ps1 | iex</pre>
         </div>
         <div class="section">
             <h3>补充说明</h3>
             <ul>
                 <li>文档完善度: 完整</li>
-                <li>测试覆盖度: 完整</li>
+                <li>测试覆盖度: 缺失或简单</li>
                 <li>示例丰富度: 缺失或简单</li>
             </ul>
         </div>

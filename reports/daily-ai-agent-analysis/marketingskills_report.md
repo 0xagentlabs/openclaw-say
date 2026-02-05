@@ -1,26 +1,45 @@
-# Analysis Report: coreyhaines31/marketingskills
+# 项目分析报告: coreyhaines31/marketingskills
 
-## Repository Overview
-- **URL**: https://github.com/coreyhaines31/marketingskills
-- **Description**: Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering.
-- **Primary Language**: null
-- **Stars**: 5869
-- **Forks**: 646
-- **Open Issues**: 5
-- **License**: MIT
-- **Last Updated**: 2026-02-05T05:53:18Z
-- **Topics**: claude, codex, marketing
+## 项目概览
+- **项目地址**: https://github.com/coreyhaines31/marketingskills
+- **项目描述**: Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering.
+- **主要语言**: null
+- **星标数**: 5870
+- **复刻数**: 647
+- **开放问题**: 5
+- **许可证**: MIT
+- **最后更新**: 2026-02-05T06:15:44Z
+- **主题标签**: claude, codex, marketing
 
-## Application Scope
-Autonomous Agents / Task Automation
+## 一句话介绍
+coreyhaines31/marketingskills 是一个具备自动化能力的 null 自主代理 / 任务自动化 项目，拥有 5870 个星标。
 
-## Technology Stack
-- Not clearly specified
+## 核心亮点
+超高人气与社区认可度
 
-## Extension Capabilities
-High - Has dedicated extension/plugin system
+## 应用领域
+自主代理 / 任务自动化
 
-## Repository Structure
+## 技术栈
+- 技术栈未明确指定
+
+## 核心特性
+- 未识别出核心特性
+
+## 扩展能力
+高 - 具备专门的插件/扩展系统
+
+## 执行流程解析
+基于代码库分析，该项目的主要执行流程可能包括：
+1. 初始化阶段：根据配置文件或命令行参数设置运行环境
+2. 输入处理：接收用户输入或任务指令
+3. 代理循环：执行AI推理、工具调用、行动规划等
+4. 输出处理：生成响应或执行结果
+5. 记忆/状态管理：更新内部状态或记忆系统
+
+(具体执行流程需参考源代码实现)
+
+## 仓库结构
 ```text
 .
 ./skills
@@ -39,18 +58,18 @@ High - Has dedicated extension/plugin system
 ./tools/integrations
 ```
 
-## Strengths
-- High popularity (5869 ⭐)
-- Active community (>646 forks)
-- Well maintained (low open issues: 5)
-- Clear licensing (MIT)
+## 优势分析
+- 极高人气 (5870 ⭐)
+- 活跃社区 (>647 复刻)
+- 维护良好 (低开放问题数: 5)
+- 许可证清晰 (MIT)
 
-## Potential Weaknesses
-- Limited documentation
-- Missing examples
-- No visible test suite
+## 潜在不足
+- 文档有限
+- 缺少示例
+- 无可见测试套件
 
-## README Preview
+## README预览
 ```markdown
 # Marketing Skills for Claude Code
 
@@ -103,10 +122,10 @@ Skills are markdown files that give AI agents specialized knowledge and workflow
 ### Option 1: CLI Install (Recommended)
 ```
 
-## Additional Notes
-- Documentation: Missing or minimal
-- Tests: Missing or minimal
-- Examples: Missing or minimal
+## 补充说明
+- 文档完善度: 缺失或简单
+- 测试覆盖度: 缺失或简单
+- 示例丰富度: 缺失或简单
 
 ---
-*Analysis performed on 2026-02-05*
+*分析时间: 2026-02-05*
