@@ -4,15 +4,15 @@
 - **项目地址**: https://github.com/ZhuLinsen/daily_stock_analysis
 - **项目描述**: LLM驱动的 A/H/美股智能分析器，多数据源行情 + 实时新闻 + Gemini 决策仪表盘 + 多渠道推送，零成本，纯白嫖，定时运行
 - **主要语言**: Python
-- **星标数**: 9445
-- **复刻数**: 9902
-- **开放问题**: 24
+- **星标数**: 9451
+- **复刻数**: 9909
+- **开放问题**: 25
 - **许可证**: MIT
-- **最后更新**: 2026-02-05T06:14:43Z
+- **最后更新**: 2026-02-05T06:47:14Z
 - **主题标签**: agent, ai, aigc, gemini, llm, quant, quantitative-trading, rag, stock
 
 ## 一句话介绍
-ZhuLinsen/daily_stock_analysis 是一个基于 Python 的 对话式AI / 聊天机器人 项目，具有 9445 个星标。
+ZhuLinsen/daily_stock_analysis 是一个基于 Python 的 对话式AI / 聊天机器人 项目，具有 9451 个星标。
 
 ## 核心亮点
 超高人气与社区认可度
@@ -59,11 +59,11 @@ ZhuLinsen/daily_stock_analysis 是一个基于 Python 的 对话式AI / 聊天�
 ```
 
 ## 优势分析
-- 极高人气 (9445 ⭐)
-- 活跃社区 (>9902 复刻)
+- 极高人气 (9451 ⭐)
+- 活跃社区 (>9909 复刻)
 - 良好文档
 - 测试覆盖
-- 维护良好 (低开放问题数: 24)
+- 维护良好 (低开放问题数: 25)
 - 许可证清晰 (MIT)
 
 ## 潜在不足

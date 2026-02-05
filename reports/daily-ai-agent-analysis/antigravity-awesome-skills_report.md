@@ -4,15 +4,15 @@
 - **项目地址**: https://github.com/sickn33/antigravity-awesome-skills
 - **项目描述**: The Ultimate Collection of 600+ Agentic Skills for Claude Code/Antigravity/Cursor. Battle-tested, high-performance skills for AI agents including official skills from Anthropic and Vercel.
 - **主要语言**: Python
-- **星标数**: 7199
-- **复刻数**: 1540
+- **星标数**: 7203
+- **复刻数**: 1541
 - **开放问题**: 2
 - **许可证**: MIT
-- **最后更新**: 2026-02-05T06:09:25Z
+- **最后更新**: 2026-02-05T06:50:15Z
 - **主题标签**: agentic-skills, ai-agents, antigravity, autonomous-coding, claude-code, mcp, react-patterns, security-auditing
 
 ## 一句话介绍
-sickn33/antigravity-awesome-skills 是一个基于 Python 的 对话式AI / 聊天机器人 项目，具有 7199 个星标。
+sickn33/antigravity-awesome-skills 是一个基于 Python 的 对话式AI / 聊天机器人 项目，具有 7203 个星标。
 
 ## 核心亮点
 超高人气与社区认可度
@@ -62,8 +62,8 @@ sickn33/antigravity-awesome-skills 是一个基于 Python 的 对话式AI / 聊�
 ```
 
 ## 优势分析
-- 极高人气 (7199 ⭐)
-- 活跃社区 (>1540 复刻)
+- 极高人气 (7203 ⭐)
+- 活跃社区 (>1541 复刻)
 - 良好文档
 - 维护良好 (低开放问题数: 2)
 - 许可证清晰 (MIT)

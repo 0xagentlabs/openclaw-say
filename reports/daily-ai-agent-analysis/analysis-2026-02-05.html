@@ -3,162 +3,600 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OpenClaw AI Agent 项目聚合器 - 2026-02-05</title>
+    <title>🦞 OpenClaw AI Agent 项目聚合器 - 2026-02-05</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 20px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; }
-        .container { max-width: 1200px; margin: 0 auto; }
-        .header { text-align: center; color: white; margin-bottom: 30px; }
-        h1 { margin: 0; font-size: 2.5em; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); }
-        .subtitle { font-size: 1.2em; opacity: 0.9; margin-top: 10px; }
-        .projects-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 25px; }
-        .project-card { background: white; border-radius: 12px; padding: 20px; box-shadow: 0 10px 20px rgba(0,0,0,0.1); transition: transform 0.3s ease; }
-        .project-card:hover { transform: translateY(-5px); }
-        .project-title { color: #2c3e50; margin: 0 0 10px 0; font-size: 1.3em; }
-        .project-description { color: #7f8c8d; margin: 10px 0; font-size: 0.95em; }
-        .project-stats { display: flex; flex-wrap: wrap; gap: 12px; margin: 15px 0; }
-        .stat-item { background: #f8f9fa; padding: 6px 12px; border-radius: 20px; font-size: 0.85em; }
-        .highlight-feature { background: #ffeaa7; padding: 12px; border-radius: 8px; margin: 15px 0; border-left: 4px solid #fdcb6e; }
-        .view-details { display: inline-block; background: #74b9ff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin-top: 10px; }
-        .view-details:hover { background: #0984e3; }
-        .github-link { display: inline-block; background: #2d3436; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin-top: 10px; margin-left: 10px; }
-        .github-link:hover { background: #000; }
-        .last-updated { text-align: center; color: white; margin-top: 30px; font-size: 0.9em; opacity: 0.8; }
-        .intro { background: rgba(255,255,255,0.2); padding: 20px; border-radius: 10px; color: white; margin-bottom: 30px; text-align: center; }
+        :root {
+            --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --card-bg: rgba(255, 255, 255, 0.95);
+            --hover-gradient: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+            --accent-color: #74b9ff;
+            --positive-color: #00b894;
+            --negative-color: #d63031;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: var(--primary-gradient);
+            min-height: 100vh;
+            padding: 20px;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="white" opacity="0.1"/><circle cx="75" cy="75" r="1" fill="white" opacity="0.1"/><circle cx="50" cy="10" r="0.5" fill="white" opacity="0.1"/><circle cx="10" cy="90" r="0.5" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+            opacity: 0.3;
+            pointer-events: none;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .header h1 {
+            font-size: 3.5rem;
+            margin: 0 0 15px 0;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.3);
+            background: linear-gradient(to right, #ffffff, #f1f3f4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .header .subtitle {
+            font-size: 1.4rem;
+            opacity: 0.9;
+            margin-bottom: 25px;
+            font-weight: 300;
+        }
+
+        .stats-bar {
+            background: rgba(255,255,255,0.15);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            color: white;
+            font-size: 1.1rem;
+        }
+
+        .intro {
+            background: var(--card-bg);
+            border-radius: 20px;
+            padding: 30px;
+            margin: 30px auto;
+            max-width: 800px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border: 1px solid rgba(255,255,255,0.2);
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        .intro h2 {
+            color: #2d3436;
+            margin-bottom: 15px;
+            font-size: 1.8rem;
+        }
+
+        .intro p {
+            color: #636e72;
+            line-height: 1.6;
+            margin: 10px 0;
+            font-size: 1.1rem;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .project-card {
+            background: var(--card-bg);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            border: 1px solid rgba(255,255,255,0.2);
+            position: relative;
+            overflow: hidden;
+            animation: slideIn 0.6s ease-out;
+        }
+
+        .project-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+            transition: left 0.5s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+        }
+
+        .project-card:hover::before {
+            left: 100%;
+        }
+
+        .project-title {
+            color: #2d3436;
+            margin: 0 0 15px 0;
+            font-size: 1.5rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .project-title i {
+            color: var(--accent-color);
+        }
+
+        .project-description {
+            color: #636e72;
+            margin: 15px 0;
+            line-height: 1.6;
+            font-size: 1rem;
+        }
+
+        .project-stats {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .stat-item {
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            padding: 10px 18px;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .highlight-feature {
+            background: linear-gradient(135deg, #ffeaa7, #fdcb6e);
+            padding: 18px;
+            border-radius: 15px;
+            margin: 20px 0;
+            border-left: 5px solid #e17055;
+            position: relative;
+        }
+
+        .highlight-feature::before {
+            content: '✨';
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 1.2rem;
+        }
+
+        .highlight-feature strong {
+            color: #2d3436;
+            font-size: 1.1rem;
+        }
+
+        .summary-section {
+            background: linear-gradient(135deg, #a29bfe, #6c5ce7);
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+            margin: 15px 0;
+            font-size: 1.1rem;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .view-details, .github-link, .daily-report-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .view-details {
+            background: linear-gradient(135deg, #74b9ff, #0984e3);
+            color: white;
+        }
+
+        .github-link {
+            background: linear-gradient(135deg, #2d3436, #636e72);
+            color: white;
+        }
+
+        .daily-report-link {
+            background: linear-gradient(135deg, #00b894, #00cec9);
+            color: white;
+        }
+
+        .view-details:hover, .github-link:hover, .daily-report-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+        }
+
+        .last-updated {
+            text-align: center;
+            color: rgba(255,255,255,0.8);
+            margin-top: 40px;
+            font-size: 1rem;
+            padding: 20px;
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateX(-20px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        @media (max-width: 768px) {
+            .header h1 { font-size: 2.5rem; }
+            .header .subtitle { font-size: 1.1rem; }
+            .projects-grid { grid-template-columns: 1fr; }
+            .stats-bar { flex-direction: column; gap: 10px; }
+            .button-group { flex-direction: column; }
+        }
+
+        .floating-element {
+            position: fixed;
+            font-size: 2rem;
+            opacity: 0.1;
+            z-index: 0;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(10deg); }
+        }
     </style>
 </head>
 <body>
+    <div class="floating-element" style="top: 10%; left: 5%; animation-delay: 0s;">🤖</div>
+    <div class="floating-element" style="top: 20%; right: 10%; animation-delay: 1s;">🧠</div>
+    <div class="floating-element" style="bottom: 15%; left: 15%; animation-delay: 2s;">💡</div>
+    <div class="floating-element" style="bottom: 25%; right: 20%; animation-delay: 3s;">🔗</div>
+
     <div class="container">
         <div class="header">
-            <h1>🦞 OpenClaw AI Agent 项目聚合器</h1>
+            <h1><i class="fas fa-robot"></i> OpenClaw AI Agent 项目聚合器</h1>
             <div class="subtitle">每日聚合 GitHub 上最受欢迎的 AI Agent 项目</div>
+            <div class="stats-bar">
+                <div><i class="fas fa-calendar-day"></i> 更新日期: 2026-02-05</div>
+                <div><i class="fas fa-sync-alt"></i> 自动更新: 每日14:25</div>
+                <div><i class="fas fa-globe"></i> 数据源: GitHub API</div>
+            </div>
         </div>
+
         <div class="intro">
-            <p>本聚合器每日自动分析 GitHub 上排名最靠前的 AI Agent 项目，提供一句话介绍、核心亮点和详细技术报告。</p>
-            <p>所有分析均为自动化生成，旨在帮助用户快速了解最新的 AI Agent 技术趋势。</p>
+            <h2><i class="fas fa-star"></i> 项目特色</h2>
+            <p>本聚合器每日自动分析 GitHub 上排名最靠前的 AI Agent 项目</p>
+            <p>提供一句话介绍、核心亮点和详细技术报告</p>
+            <p>所有分析均为自动化生成，帮助您快速了解最新的 AI Agent 技术趋势</p>
+            <div class="button-group" style="justify-content: center; margin-top: 20px;">
+                <a href="#daily-report" class="daily-report-link">
+                    <i class="fas fa-file-alt"></i> 查看今日报告
+                </a>
+            </div>
         </div>
+
+        <h2 style="text-align: center; color: white; margin: 40px 0 30px; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">
+            <i class="fas fa-fire"></i> 今日热门 AI Agent 项目
+        </h2>
         <div class="project-card">
-            <h3 class="project-title">vercel-labs/agent-browser</h3>
+            <h3 class="project-title">
+                <i class="fab fa-github"></i> vercel-labs/agent-browser
+            </h3>
             <div class="project-stats">
-                <div class="stat-item">⭐ 12658 星标</div>
-                <div class="stat-item"></div>
-                <div class="stat-item">🔄 2026-02-05T06:24:33Z</div>
+                <div class="stat-item">
+                    <i class="fas fa-star"></i> 12663 星标
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-code"></i> 
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-clock"></i> 2026-02-05T06:43:59Z
+                </div>
             </div>
             <p class="project-description">Browser automation CLI for AI agents</p>
             <div class="highlight-feature">
                 <strong>核心亮点:</strong> 检索增强生成(RAG)
             </div>
-            <p><strong>一句话介绍:</strong> vercel-labs/agent-browser 是一个具备自动化能力的 TypeScript 自主代理 / 任务自动化 项目，拥有 12658 个星标。</p>
-            <a href="./agent-browser_report.html" class="view-details" target="_blank">查看详情报告</a>
-            <a href="https://github.com/vercel-labs/agent-browser" class="github-link" target="_blank">访问GitHub</a>
+            <div class="summary-section">
+                <strong>一句话介绍:</strong> vercel-labs/agent-browser 是一个具备自动化能力的 TypeScript 自主代理 / 任务自动化 项目，拥有 12663 个星标。
+            </div>
+            <div class="button-group">
+                <a href="./agent-browser_report.html" class="view-details" target="_blank">
+                    <i class="fas fa-external-link-alt"></i> 详情报告
+                </a>
+                <a href="https://github.com/vercel-labs/agent-browser" class="github-link" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </div>
         </div>
         <div class="project-card">
-            <h3 class="project-title">ZhuLinsen/daily_stock_analysis</h3>
+            <h3 class="project-title">
+                <i class="fab fa-github"></i> ZhuLinsen/daily_stock_analysis
+            </h3>
             <div class="project-stats">
-                <div class="stat-item">⭐ 9445 星标</div>
-                <div class="stat-item"></div>
-                <div class="stat-item">🔄 2026-02-05T06:14:43Z</div>
+                <div class="stat-item">
+                    <i class="fas fa-star"></i> 9451 星标
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-code"></i> 
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-clock"></i> 2026-02-05T06:47:14Z
+                </div>
             </div>
             <p class="project-description">LLM驱动的 A/H/美股智能分析器，多数据源行情 + 实时新闻 + Gemini 决策仪表盘 + 多渠道推送，零成本，纯白嫖，定时运行</p>
             <div class="highlight-feature">
                 <strong>核心亮点:</strong> 超高人气与社区认可度
             </div>
-            <p><strong>一句话介绍:</strong> ZhuLinsen/daily_stock_analysis 是一个基于 Python 的 对话式AI / 聊天机器人 项目，具有 9445 个星标。</p>
-            <a href="./daily_stock_analysis_report.html" class="view-details" target="_blank">查看详情报告</a>
-            <a href="https://github.com/ZhuLinsen/daily_stock_analysis" class="github-link" target="_blank">访问GitHub</a>
+            <div class="summary-section">
+                <strong>一句话介绍:</strong> ZhuLinsen/daily_stock_analysis 是一个基于 Python 的 对话式AI / 聊天机器人 项目，具有 9451 个星标。
+            </div>
+            <div class="button-group">
+                <a href="./daily_stock_analysis_report.html" class="view-details" target="_blank">
+                    <i class="fas fa-external-link-alt"></i> 详情报告
+                </a>
+                <a href="https://github.com/ZhuLinsen/daily_stock_analysis" class="github-link" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </div>
         </div>
         <div class="project-card">
-            <h3 class="project-title">snarktank/ralph</h3>
+            <h3 class="project-title">
+                <i class="fab fa-github"></i> snarktank/ralph
+            </h3>
             <div class="project-stats">
-                <div class="stat-item">⭐ 9431 星标</div>
-                <div class="stat-item"></div>
-                <div class="stat-item">🔄 2026-02-05T06:16:29Z</div>
+                <div class="stat-item">
+                    <i class="fas fa-star"></i> 9436 星标
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-code"></i> 
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-clock"></i> 2026-02-05T06:48:32Z
+                </div>
             </div>
             <p class="project-description">Ralph is an autonomous AI agent loop that runs repeatedly until all PRD items are complete. </p>
             <div class="highlight-feature">
                 <strong>核心亮点:</strong> 自主学习能力
             </div>
-            <p><strong>一句话介绍:</strong> snarktank/ralph 是一个具备自动化能力的 TypeScript 自主代理 / 任务自动化 项目，拥有 9431 个星标。</p>
-            <a href="./ralph_report.html" class="view-details" target="_blank">查看详情报告</a>
-            <a href="https://github.com/snarktank/ralph" class="github-link" target="_blank">访问GitHub</a>
+            <div class="summary-section">
+                <strong>一句话介绍:</strong> snarktank/ralph 是一个具备自动化能力的 TypeScript 自主代理 / 任务自动化 项目，拥有 9436 个星标。
+            </div>
+            <div class="button-group">
+                <a href="./ralph_report.html" class="view-details" target="_blank">
+                    <i class="fas fa-external-link-alt"></i> 详情报告
+                </a>
+                <a href="https://github.com/snarktank/ralph" class="github-link" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </div>
         </div>
         <div class="project-card">
-            <h3 class="project-title">sickn33/antigravity-awesome-skills</h3>
+            <h3 class="project-title">
+                <i class="fab fa-github"></i> sickn33/antigravity-awesome-skills
+            </h3>
             <div class="project-stats">
-                <div class="stat-item">⭐ 7199 星标</div>
-                <div class="stat-item"></div>
-                <div class="stat-item">🔄 2026-02-05T06:09:25Z</div>
+                <div class="stat-item">
+                    <i class="fas fa-star"></i> 7203 星标
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-code"></i> 
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-clock"></i> 2026-02-05T06:50:15Z
+                </div>
             </div>
             <p class="project-description">The Ultimate Collection of 600+ Agentic Skills for Claude Code/Antigravity/Cursor. Battle-tested, high-performance skills for AI agents including official skills from Anthropic and Vercel.</p>
             <div class="highlight-feature">
                 <strong>核心亮点:</strong> 超高人气与社区认可度
             </div>
-            <p><strong>一句话介绍:</strong> sickn33/antigravity-awesome-skills 是一个基于 Python 的 对话式AI / 聊天机器人 项目，具有 7199 个星标。</p>
-            <a href="./antigravity-awesome-skills_report.html" class="view-details" target="_blank">查看详情报告</a>
-            <a href="https://github.com/sickn33/antigravity-awesome-skills" class="github-link" target="_blank">访问GitHub</a>
+            <div class="summary-section">
+                <strong>一句话介绍:</strong> sickn33/antigravity-awesome-skills 是一个基于 Python 的 对话式AI / 聊天机器人 项目，具有 7203 个星标。
+            </div>
+            <div class="button-group">
+                <a href="./antigravity-awesome-skills_report.html" class="view-details" target="_blank">
+                    <i class="fas fa-external-link-alt"></i> 详情报告
+                </a>
+                <a href="https://github.com/sickn33/antigravity-awesome-skills" class="github-link" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </div>
         </div>
         <div class="project-card">
-            <h3 class="project-title">coreyhaines31/marketingskills</h3>
+            <h3 class="project-title">
+                <i class="fab fa-github"></i> coreyhaines31/marketingskills
+            </h3>
             <div class="project-stats">
-                <div class="stat-item">⭐ 5872 星标</div>
-                <div class="stat-item"></div>
-                <div class="stat-item">🔄 2026-02-05T06:24:03Z</div>
+                <div class="stat-item">
+                    <i class="fas fa-star"></i> 5877 星标
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-code"></i> 
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-clock"></i> 2026-02-05T06:47:53Z
+                </div>
             </div>
             <p class="project-description">Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering.</p>
             <div class="highlight-feature">
                 <strong>核心亮点:</strong> 超高人气与社区认可度
             </div>
-            <p><strong>一句话介绍:</strong> coreyhaines31/marketingskills 是一个具备自动化能力的 null 自主代理 / 任务自动化 项目，拥有 5872 个星标。</p>
-            <a href="./marketingskills_report.html" class="view-details" target="_blank">查看详情报告</a>
-            <a href="https://github.com/coreyhaines31/marketingskills" class="github-link" target="_blank">访问GitHub</a>
+            <div class="summary-section">
+                <strong>一句话介绍:</strong> coreyhaines31/marketingskills 是一个具备自动化能力的 null 自主代理 / 任务自动化 项目，拥有 5877 个星标。
+            </div>
+            <div class="button-group">
+                <a href="./marketingskills_report.html" class="view-details" target="_blank">
+                    <i class="fas fa-external-link-alt"></i> 详情报告
+                </a>
+                <a href="https://github.com/coreyhaines31/marketingskills" class="github-link" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </div>
         </div>
         <div class="project-card">
-            <h3 class="project-title">benjitaylor/agentation</h3>
+            <h3 class="project-title">
+                <i class="fab fa-github"></i> benjitaylor/agentation
+            </h3>
             <div class="project-stats">
-                <div class="stat-item">⭐ 1854 星标</div>
-                <div class="stat-item"></div>
-                <div class="stat-item">🔄 2026-02-05T03:59:57Z</div>
+                <div class="stat-item">
+                    <i class="fas fa-star"></i> 1854 星标
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-code"></i> 
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-clock"></i> 2026-02-05T03:59:57Z
+                </div>
             </div>
             <p class="project-description">The visual feedback tool for agents.</p>
             <div class="highlight-feature">
                 <strong>核心亮点:</strong> 检索增强生成(RAG)
             </div>
-            <p><strong>一句话介绍:</strong> benjitaylor/agentation 是一个具备自动化能力的 TypeScript 自主代理 / 任务自动化 项目，拥有 1854 个星标。</p>
-            <a href="./agentation_report.html" class="view-details" target="_blank">查看详情报告</a>
-            <a href="https://github.com/benjitaylor/agentation" class="github-link" target="_blank">访问GitHub</a>
+            <div class="summary-section">
+                <strong>一句话介绍:</strong> benjitaylor/agentation 是一个具备自动化能力的 TypeScript 自主代理 / 任务自动化 项目，拥有 1854 个星标。
+            </div>
+            <div class="button-group">
+                <a href="./agentation_report.html" class="view-details" target="_blank">
+                    <i class="fas fa-external-link-alt"></i> 详情报告
+                </a>
+                <a href="https://github.com/benjitaylor/agentation" class="github-link" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </div>
         </div>
         <div class="project-card">
-            <h3 class="project-title">AvdLee/SwiftUI-Agent-Skill</h3>
+            <h3 class="project-title">
+                <i class="fab fa-github"></i> AvdLee/SwiftUI-Agent-Skill
+            </h3>
             <div class="project-stats">
-                <div class="stat-item">⭐ 1178 星标</div>
-                <div class="stat-item"></div>
-                <div class="stat-item">🔄 2026-02-05T05:49:51Z</div>
+                <div class="stat-item">
+                    <i class="fas fa-star"></i> 1180 星标
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-code"></i> 
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-clock"></i> 2026-02-05T06:49:01Z
+                </div>
             </div>
             <p class="project-description">Add expert SwiftUI Best Practices guidance to your AI coding tool (Agent Skills open format).</p>
             <div class="highlight-feature">
                 <strong>核心亮点:</strong> 活跃的开发维护
             </div>
-            <p><strong>一句话介绍:</strong> AvdLee/SwiftUI-Agent-Skill 是一个具备自动化能力的 null 自主代理 / 任务自动化 项目，拥有 1178 个星标。</p>
-            <a href="./SwiftUI-Agent-Skill_report.html" class="view-details" target="_blank">查看详情报告</a>
-            <a href="https://github.com/AvdLee/SwiftUI-Agent-Skill" class="github-link" target="_blank">访问GitHub</a>
+            <div class="summary-section">
+                <strong>一句话介绍:</strong> AvdLee/SwiftUI-Agent-Skill 是一个具备自动化能力的 null 自主代理 / 任务自动化 项目，拥有 1180 个星标。
+            </div>
+            <div class="button-group">
+                <a href="./SwiftUI-Agent-Skill_report.html" class="view-details" target="_blank">
+                    <i class="fas fa-external-link-alt"></i> 详情报告
+                </a>
+                <a href="https://github.com/AvdLee/SwiftUI-Agent-Skill" class="github-link" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </div>
         </div>
         <div class="project-card">
-            <h3 class="project-title">yoanbernabeu/grepai</h3>
+            <h3 class="project-title">
+                <i class="fab fa-github"></i> yoanbernabeu/grepai
+            </h3>
             <div class="project-stats">
-                <div class="stat-item">⭐ 1150 星标</div>
-                <div class="stat-item"></div>
-                <div class="stat-item">🔄 2026-02-05T00:52:35Z</div>
+                <div class="stat-item">
+                    <i class="fas fa-star"></i> 1151 星标
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-code"></i> 
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-clock"></i> 2026-02-05T06:49:34Z
+                </div>
             </div>
             <p class="project-description">Semantic Search & Call Graphs for AI Agents (100% Local)</p>
             <div class="highlight-feature">
                 <strong>核心亮点:</strong> 活跃的开发维护
             </div>
-            <p><strong>一句话介绍:</strong> yoanbernabeu/grepai 是一个具备自动化能力的 Go 自主代理 / 任务自动化 项目，拥有 1150 个星标。</p>
-            <a href="./grepai_report.html" class="view-details" target="_blank">查看详情报告</a>
-            <a href="https://github.com/yoanbernabeu/grepai" class="github-link" target="_blank">访问GitHub</a>
+            <div class="summary-section">
+                <strong>一句话介绍:</strong> yoanbernabeu/grepai 是一个具备自动化能力的 Go 自主代理 / 任务自动化 项目，拥有 1151 个星标。
+            </div>
+            <div class="button-group">
+                <a href="./grepai_report.html" class="view-details" target="_blank">
+                    <i class="fas fa-external-link-alt"></i> 详情报告
+                </a>
+                <a href="https://github.com/yoanbernabeu/grepai" class="github-link" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </div>
+        </div>
+        <div id="daily-report" class="intro" style="margin-top: 50px; background: linear-gradient(135deg, #74b9ff, #0984e3); color: white;">
+            <h2 style="color: white;"><i class="fas fa-chart-line"></i> 今日综合报告</h2>
+            <p>查看今天的完整AI Agent项目分析报告</p>
+            <div class="button-group" style="justify-content: center; margin-top: 20px;">
+                <a href="./analysis-2026-02-05.html" class="daily-report-link" target="_blank">
+                    <i class="fas fa-file-contract"></i> 今日详细报告
+                </a>
+            </div>
         </div>
         <div class="last-updated">
-            <p>最后更新: 2026-02-05 | 数据来源: GitHub API</p>
-            <p>下一个更新周期: 北京时间明日14:00</p>
+            <p><i class="fas fa-history"></i> 最后更新: 2026-02-05</p>
+            <p><i class="fas fa-bolt"></i> 下一个更新周期: 北京时间明日14:25</p>
+            <p><i class="fas fa-rocket"></i> powered by OpenClaw AI Assistant</p>
         </div>
     </div>
 </body>
