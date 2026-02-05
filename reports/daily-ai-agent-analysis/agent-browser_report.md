@@ -4,15 +4,15 @@
 - **项目地址**: https://github.com/vercel-labs/agent-browser
 - **项目描述**: Browser automation CLI for AI agents
 - **主要语言**: TypeScript
-- **星标数**: 12656
+- **星标数**: 12658
 - **复刻数**: 718
-- **开放问题**: 158
+- **开放问题**: 156
 - **许可证**: Apache-2.0
-- **最后更新**: 2026-02-05T06:10:52Z
+- **最后更新**: 2026-02-05T06:24:33Z
 - **主题标签**: 
 
 ## 一句话介绍
-vercel-labs/agent-browser 是一个具备自动化能力的 TypeScript 自主代理 / 任务自动化 项目，拥有 12656 个星标。
+vercel-labs/agent-browser 是一个具备自动化能力的 TypeScript 自主代理 / 任务自动化 项目，拥有 12658 个星标。
 
 ## 核心亮点
 检索增强生成(RAG)
@@ -63,7 +63,7 @@ vercel-labs/agent-browser 是一个具备自动化能力的 TypeScript 自主代
 ```
 
 ## 优势分析
-- 极高人气 (12656 ⭐)
+- 极高人气 (12658 ⭐)
 - 活跃社区 (>718 复刻)
 - 良好文档
 - 测试覆盖

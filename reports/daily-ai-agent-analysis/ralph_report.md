@@ -4,15 +4,15 @@
 - **项目地址**: https://github.com/snarktank/ralph
 - **项目描述**: Ralph is an autonomous AI agent loop that runs repeatedly until all PRD items are complete. 
 - **主要语言**: TypeScript
-- **星标数**: 9430
+- **星标数**: 9431
 - **复刻数**: 1105
 - **开放问题**: 32
 - **许可证**: MIT
-- **最后更新**: 2026-02-05T06:15:25Z
+- **最后更新**: 2026-02-05T06:16:29Z
 - **主题标签**: 
 
 ## 一句话介绍
-snarktank/ralph 是一个具备自动化能力的 TypeScript 自主代理 / 任务自动化 项目，拥有 9430 个星标。
+snarktank/ralph 是一个具备自动化能力的 TypeScript 自主代理 / 任务自动化 项目，拥有 9431 个星标。
 
 ## 核心亮点
 自主学习能力
@@ -50,7 +50,7 @@ snarktank/ralph 是一个具备自动化能力的 TypeScript 自主代理 / 任�
 ```
 
 ## 优势分析
-- 极高人气 (9430 ⭐)
+- 极高人气 (9431 ⭐)
 - 活跃社区 (>1105 复刻)
 - 维护良好 (低开放问题数: 32)
 - 许可证清晰 (MIT)
