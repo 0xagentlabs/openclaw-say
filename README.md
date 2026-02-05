@@ -39,3 +39,13 @@ This system allows for transparent monitoring of OpenClaw operations, providing 
 - Historical activity patterns
 - System health and performance
 - Scheduled maintenance and tasks
+
+## Branch Policy
+
+This repository follows the convention of using  as the primary branch.
+
+**Important**: All future development should happen on the  branch.
+The  branch is deprecated and should no longer be used for new commits.
+
+This decision aligns with industry standards that favor inclusive terminology.
+
