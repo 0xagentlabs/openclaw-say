@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spoon-Bot - Local-First AI Agent Framework</title>
+    <style>
+        :root {
+            --primary: #6366f1;
+            --secondary: #8b5cf6;
+            --dark: #1e293b;
+            --light: #f8fafc;
+            --success: #10b981;
+            --warning: #f59e0b;
+            --danger: #ef4444;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background: linear-gradient(135deg, #f0f9ff 0%, #fdf2f8 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 1rem;
+        }
+        
+        .repo-link {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            text-decoration: none;
+            margin-top: 1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .repo-link:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+        }
+        
+        .card {
+            background: var(--light);
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        h2 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 0.5rem;
+        }
+        
+        h3 {
+            color: var(--secondary);
+            margin: 1rem 0 0.5rem 0;
+        }
+        
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+        
+        .feature-card {
+            background: white;
+            padding: 1rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--primary);
+        }
+        
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin: 1rem 0;
+        }
+        
+        .tech-tag {
+            background: var(--primary);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.875rem;
+        }
+        
+        ul, ol {
+            padding-left: 1.5rem;
+            margin: 0.5rem 0;
+        }
+        
+        li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .architecture-diagram {
+            background: white;
+            padding: 1rem;
+            border-radius: 8px;
+            font-family: monospace;
+            white-space: pre;
+            overflow-x: auto;
+            background: #f8f9fa;
+            border: 1px solid #e2e8f0;
+            margin: 1rem 0;
+        }
+        
+        .status-badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+        
+        .status-active {
+            background: #dcfce7;
+            color: #166534;
+        }
+        
+        .status-beta {
+            background: #fef3c7;
+            color: #92400e;
+        }
+        
+        .status-planned {
+            background: #dbeafe;
+            color: #1e40af;
+        }
+        
+        footer {
+            background: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .highlight-section {
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+        }
+        
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: 1fr;
+                padding: 1rem;
+            }
+            
+            header {
+                padding: 1.5rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Spoon-Bot</h1>
+            <div class="subtitle">Local-First AI Agent with Native OS Tools, Powered by Spoon-Core</div>
+            <a href="https://github.com/XSpoonAi/spoon-bot" class="repo-link" target="_blank">View on GitHub</a>
+        </header>
+
+        <div class="grid">
+            <section class="card">
+                <h2>Project Overview</h2>
+                <p>Spoon-Bot is an advanced local-first AI agent framework that prioritizes native operating system integration. It provides a comprehensive platform for autonomous AI operations with built-in safety mechanisms and extensible tooling.</p>
+                
+                <div class="highlight-section">
+                    <h3>Core Philosophy</h3>
+                    <p><strong>Local Agent Priority:</strong> Native OS tools built-in, MCP (Model Context Protocol) as optional extension</p>
+                    <p><strong>4-Layer Memory:</strong> File-based + Short-term + Mem0 + Checkpointer</p>
+                    <p><strong>Tool Registry Pattern:</strong> Native → Toolkit → MCP (priority order)</p>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2>Key Features</h2>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <h3>Multi-Provider LLM</h3>
+                        <p>Supports Anthropic, OpenAI, DeepSeek, Gemini, OpenRouter and more</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Agent-Centric</h3>
+                        <p>Autonomous execution with safety rails</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>OS-Native</h3>
+                        <p>Built-in shell/filesystem tools as priority</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Memory-First</h3>
+                        <p>Four-layer memory system (file + short-term + Mem0 + checkpointer)</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Self-Managing</h3>
+                        <p>Self-configuration, self-upgrade, memory management tools</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Web3-Enabled</h3>
+                        <p>Blockchain operations via spoon-core and spoon-toolkits</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2>Architecture</h2>
+                <div class="architecture-diagram">
+┌─────────────────────────────────────────────────────────────────┐
+│                      SPOON-BOT TOOLS                             │
+├─────────────────────────────────────────────────────────────────┤
+│  Native OS Tools (Always Available, Priority)                   │
+│  ├── shell          Execute commands (60s timeout, 10KB limit)  │
+│  ├── read_file      Read file contents                          │
+│  ├── write_file     Write content to file                       │
+│  ├── edit_file      Edit file by replacing text                 │
+│  └── list_dir       List directory contents                     │
+├─────────────────────────────────────────────────────────────────┤
+│  Self-Management Tools                                          │
+│  ├── self_config    get/set/list agent configuration            │
+│  ├── self_upgrade   check updates, install/update skills        │
+│  └── memory         remember, note, search, forget, checkpoint  │
+├─────────────────────────────────────────────────────────────────┤
+│  Extension Tools                                                │
+│  ├── MCP tools      Dynamic via configured MCP servers          │
+│  ├── spoon-toolkit  40+ crypto/blockchain/social tools          │
+│  └── Skill tools    ScriptTool from SKILL.md scripts            │
+└─────────────────────────────────────────────────────────────────┘
+                </div>
+            </section>
+
+            <section class="card">
+                <h2>LLM Provider Support</h2>
+                <table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
+                    <thead>
+                        <tr style="background: var(--primary); color: white;">
+                            <th style="padding: 0.75rem; text-align: left;">Provider</th>
+                            <th style="padding: 0.75rem; text-align: left;">Models</th>
+                            <th style="padding: 0.75rem; text-align: left;">Notes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="border-bottom: 1px solid #e2e8f0;">
+                            <td style="padding: 0.75rem;">Anthropic</td>
+                            <td style="padding: 0.75rem;">claude-sonnet-4-20250514, claude-opus-4-20250514, claude-3-5-haiku-20241022</td>
+                            <td style="padding: 0.75rem;">Default provider</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #e2e8f0;">
+                            <td style="padding: 0.75rem;">OpenAI</td>
+                            <td style="padding: 0.75rem;">gpt-4o, gpt-4o-mini, gpt-4-turbo, o1, o1-mini</td>
+                            <td style="padding: 0.75rem;">Full tool support</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #e2e8f0;">
+                            <td style="padding: 0.75rem;">DeepSeek</td>
+                            <td style="padding: 0.75rem;">deepseek-chat, deepseek-coder</td>
+                            <td style="padding: 0.75rem;">Cost-effective</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #e2e8f0;">
+                            <td style="padding: 0.75rem;">Google Gemini</td>
+                            <td style="padding: 0.75rem;">gemini-2.0-flash, gemini-2.0-pro, gemini-1.5-pro</td>
+                            <td style="padding: 0.75rem;">Google AI</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 0.75rem;">OpenRouter</td>
+                            <td style="padding: 0.75rem;">200+ models</td>
+                            <td style="padding: 0.75rem;">Multi-model gateway</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section class="card">
+                <h2>Workspace Structure</h2>
+                <p>Default workspace: <code>~/.spoon-bot/workspace/</code></p>
+                <pre style="background: #f8f9fa; padding: 1rem; border-radius: 8px; overflow-x: auto;">
+~/.spoon-bot/
+├── workspace/
+│   ├── AGENTS.md        # Agent instructions
+│   ├── SOUL.md          # Personality
+│   ├── memory/
+│   │   ├── MEMORY.md    # Long-term facts
+│   │   └── YYYY-MM-DD.md # Daily notes
+│   └── skills/          # Custom skills
+└── config.json          # Configuration</pre>
+            </section>
+
+            <section class="card">
+                <h2>Gateway API</h2>
+                <p>Spoon-bot includes a WebSocket and REST API gateway for remote agent control.</p>
+                
+                <h3>API Endpoints</h3>
+                <table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
+                    <thead>
+                        <tr style="background: var(--primary); color: white;">
+                            <th style="padding: 0.75rem; text-align: left;">Endpoint</th>
+                            <th style="padding: 0.75rem; text-align: left;">Method</th>
+                            <th style="padding: 0.75rem; text-align: left;">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="border-bottom: 1px solid #e2e8f0;">
+                            <td style="padding: 0.75rem;"><code>/v1/auth/login</code></td>
+                            <td style="padding: 0.75rem;">POST</td>
+                            <td style="padding: 0.75rem;">Authenticate and get tokens</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #e2e8f0;">
+                            <td style="padding: 0.75rem;"><code>/v1/agent/chat</code></td>
+                            <td style="padding: 0.75rem;">POST</td>
+                            <td style="padding: 0.75rem;">Send message to agent</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #e2e8f0;">
+                            <td style="padding: 0.75rem;"><code>/v1/agent/status</code></td>
+                            <td style="padding: 0.75rem;">GET</td>
+                            <td style="padding: 0.75rem;">Get agent status</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #e2e8f0;">
+                            <td style="padding: 0.75rem;"><code>/v1/ws</code></td>
+                            <td style="padding: 0.75rem;">WS</td>
+                            <td style="padding: 0.75rem;">WebSocket for real-time communication</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section class="card">
+                <h2>Implementation Phases</h2>
+                <ol>
+                    <li><strong>Phase 1:</strong> Core Agent Loop - Create project structure and implement native OS tools</li>
+                    <li><strong>Phase 2:</strong> Session & Memory - Implement 4-layer memory system</li>
+                    <li><strong>Phase 3:</strong> CLI & Onboarding - Create Typer CLI and onboarding commands</li>
+                    <li><strong>Phase 4:</strong> MCP & Skills - Integrate Model Context Protocol and Skills system</li>
+                    <li><strong>Phase 5:</strong> Gateway Mode - Implement WebSocket/REST API gateway</li>
+                    <li><strong>Phase 6:</strong> Web3 & Toolkit - Integrate crypto/blockchain tools</li>
+                    <li><strong>Phase 7:</strong> Self-Management - Implement self-config and self-upgrade tools</li>
+                    <li><strong>Phase 8:</strong> Background Services - Implement cron and heartbeat services</li>
+                </ol>
+            </section>
+
+            <section class="card">
+                <h2>Tech Stack</h2>
+                <div class="tech-stack">
+                    <span class="tech-tag">Python 3.12+</span>
+                    <span class="tech-tag">spoon-ai-sdk</span>
+                    <span class="tech-tag">spoon-toolkits</span>
+                    <span class="tech-tag">FastAPI</span>
+                    <span class="tech-tag">Typer</span>
+                    <span class="tech-tag">MCP</span>
+                    <span class="tech-tag">Mem0</span>
+                    <span class="tech-tag">Web3</span>
+                </div>
+                
+                <h3>Dependencies</h3>
+                <ul>
+                    <li><strong>spoon-ai-sdk</strong>: Core framework for LLM, MCP, and skills (v0.4.0+)</li>
+                    <li><strong>spoon-toolkits</strong>: 40+ crypto/blockchain/social tools</li>
+                    <li><strong>FastAPI</strong>: Gateway API implementation</li>
+                    <li><strong>Mem0</strong>: Optional semantic memory</li>
+                </ul>
+            </section>
+
+            <section class="card">
+                <h2>Quick Start</h2>
+                <h3>Requirements</h3>
+                <p>Python 3.12+ (required by spoon-ai-sdk)</p>
+                
+                <h3>Installation (with uv)</h3>
+                <pre style="background: #f8f9fa; padding: 1rem; border-radius: 8px; overflow-x: auto;"># Clone the repository
+git clone https://github.com/XSpoonAi/spoon-bot.git
+cd spoon-bot
+
+# Install with uv
+uv sync --all-extras
+
+# Initialize workspace
+spoon-bot onboard
+
+# Run in interactive mode
+spoon-bot agent</pre>
+
+                <h3>Configuration</h3>
+                <p>Copy <code>.env.example</code> to <code>.env</code> and configure your LLM API keys:</p>
+                <ul>
+                    <li>ANTHROPIC_API_KEY</li>
+                    <li>OPENAI_API_KEY</li>
+                    <li>DEEPSEEK_API_KEY</li>
+                    <li>GEMINI_API_KEY</li>
+                    <li>OPENROUTER_API_KEY</li>
+                </ul>
+            </section>
+        </div>
+
+        <footer>
+            <h3>Spoon-Bot - Empowering Local AI Agents</h3>
+            <p>A sophisticated framework for building autonomous, privacy-focused AI agents</p>
+            <p>Status: <span class="status-badge status-beta">Beta Development</span></p>
+            <p>Repository: <a href="https://github.com/XSpoonAi/spoon-bot" style="color: white; text-decoration: underline;" target="_blank">github.com/XSpoonAi/spoon-bot</a></p>
+        </footer>
+    </div>
+</body>
+</html>
