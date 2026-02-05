@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analysis Report: snarktank/ralph</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; background-color: #f5f5f5; }
+        .container { background-color: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        h1 { color: #2c3e50; }
+        h2 { color: #3498db; border-bottom: 2px solid #3498db; }
+        .repo-link { display: inline-block; background: #3498db; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin: 10px 0; }
+        .repo-link:hover { background: #2980b9; }
+        .stats { display: flex; flex-wrap: wrap; gap: 15px; margin: 20px 0; }
+        .stat-box { background: #ecf0f1; padding: 10px 15px; border-radius: 5px; }
+        ul { margin: 10px 0; padding-left: 20px; }
+        li { margin-bottom: 5px; }
+        .section { margin: 25px 0; }
+        .strengths { background: #d4edda; padding: 15px; border-left: 4px solid #28a745; }
+        .weaknesses { background: #f8d7da; padding: 15px; border-left: 4px solid #dc3545; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Repository Analysis Report</h1>
+        <h2>snarktank/ralph</h2>
+        <a href="https://github.com/snarktank/ralph" class="repo-link" target="_blank">Visit Repository</a>
+        <div class="stats">
+            <div class="stat-box">⭐ Stars: 9428</div>
+            <div class="stat-box">🔄 Forks: 1105</div>
+            <div class="stat-box">📋 Issues: 32</div>
+            <div class="stat-box">🏷️ Language: TypeScript</div>
+            <div class="stat-box">📄 License: MIT</div>
+        </div>
+        <div class="section">
+            <h3>Description</h3>
+            <p>Ralph is an autonomous AI agent loop that runs repeatedly until all PRD items are complete. </p>
+        </div>
+        <div class="section">
+            <h3>Application Scope</h3>
+            <p>Autonomous Agents / Task Automation</p>
+        </div>
+        <div class="section">
+            <h3>Technology Stack</h3>
+            <ul>
+                <li>Not clearly specified</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h3>Extension Capabilities</h3>
+            <p>High - Has dedicated extension/plugin system</p>
+        </div>
+        <div class="section">
+            <h3>Repository Structure</h3>
+            <pre>.
+./flowchart
+./skills
+./skills/prd
+./skills/ralph</pre>
+        </div>
+        <div class="section">
+            <h3>Strengths</h3>
+            <div class="strengths">
+                <ul>
+                    <li>High popularity (9428 ⭐)</li>
+                    <li>Active community (>1105 forks)</li>
+                    <li>Well maintained (low open issues: 32)</li>
+                    <li>Clear licensing (MIT)</li>
+                </ul>
+            </div>
+        </div>
+        <div class="section">
+            <h3>Potential Weaknesses</h3>
+            <div class="weaknesses">
+                <ul>
+                    <li>Limited documentation</li>
+                    <li>Missing examples</li>
+                    <li>No visible test suite</li>
+                </ul>
+            </div>
+        </div>
+        <div class="section">
+            <h3>README Preview</h3>
+            <pre># Ralph
+
+![Ralph](ralph.webp)
+
+Ralph is an autonomous AI agent loop that runs AI coding tools ([Amp](https://ampcode.com) or [Claude Code](https://docs.anthropic.com/en/docs/claude-code)) repeatedly until all PRD items are complete. Each iteration is a fresh instance with clean context. Memory persists via git history, `progress.txt`, and `prd.json`.
+
+Based on [Geoffrey Huntley's Ralph pattern](https://ghuntley.com/ralph/).
+
+[Read my in-depth article on how I use Ralph](https://x.com/ryancarson/status/2008548371712135632)
+
+## Prerequisites
+
+- One of the following AI coding tools installed and authenticated:
+  - [Amp CLI](https://ampcode.com) (default)
+  - [Claude Code](https://docs.anthropic.com/en/docs/claude-code) (`npm install -g @anthropic-ai/claude-code`)
+- `jq` installed (`brew install jq` on macOS)
+- A git repository for your project
+
+## Setup
+
+### Option 1: Copy to your project
+
+Copy the ralph files into your project:
+
+```bash
+# From your project root
+mkdir -p scripts/ralph
+cp /path/to/ralph/ralph.sh scripts/ralph/
+
+# Copy the prompt template for your AI tool of choice:
+cp /path/to/ralph/prompt.md scripts/ralph/prompt.md    # For Amp
+# OR
+cp /path/to/ralph/CLAUDE.md scripts/ralph/CLAUDE.md    # For Claude Code
+
+chmod +x scripts/ralph/ralph.sh
+```
+
+### Option 2: Install skills globally (Amp)
+
+Copy the skills to your Amp or Claude config for use across all projects:
+
+For AMP
+```bash
+cp -r skills/prd ~/.config/amp/skills/
+cp -r skills/ralph ~/.config/amp/skills/
+```
+
+For Claude Code (manual)
+```bash
+cp -r skills/prd ~/.claude/skills/</pre>
+        </div>
+        <div class="section">
+            <h3>Additional Notes</h3>
+            <ul>
+                <li>Documentation: Missing or minimal</li>
+                <li>Tests: Missing or minimal</li>
+                <li>Examples: Missing or minimal</li>
+            </ul>
+        </div>
+        <p><em>Analysis performed on 2026-02-05</em></p>
+    </div>
+</body>
+</html>

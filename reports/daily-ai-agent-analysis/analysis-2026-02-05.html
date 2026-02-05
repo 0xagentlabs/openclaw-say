@@ -5,250 +5,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daily AI Agent Repository Analysis - 2026-02-05</title>
     <style>
-        :root {
-            --primary: #4f46e5;
-            --secondary: #7c3aed;
-            --light: #f9fafb;
-            --dark: #1f2937;
-            --success: #10b981;
-            --warning: #f59e0b;
-            --danger: #ef4444;
-        }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: var(--dark);
-            background: linear-gradient(135deg, #f0f9ff 0%, #fdf2f8 100%);
-            min-height: 100vh;
-            padding: 20px;
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            background: white;
-            border-radius: 16px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-        }
-        
-        header {
-            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
-            color: white;
-            padding: 2rem;
-            text-align: center;
-        }
-        
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
-        }
-        
-        .subtitle {
-            font-size: 1.2rem;
-            opacity: 0.9;
-            margin-bottom: 1rem;
-        }
-        
-        .summary-stats {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1rem;
-            padding: 1.5rem;
-            background: var(--light);
-        }
-        
-        .stat-card {
-            background: white;
-            padding: 1rem;
-            border-radius: 8px;
-            text-align: center;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        
-        .stat-value {
-            font-size: 2rem;
-            font-weight: bold;
-            color: var(--primary);
-        }
-        
-        .repo-list {
-            padding: 2rem;
-        }
-        
-        .repo-card {
-            background: white;
-            border-radius: 12px;
-            padding: 1.5rem;
-            margin-bottom: 2rem;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-            border-left: 4px solid var(--primary);
-        }
-        
-        .repo-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            margin-bottom: 1rem;
-        }
-        
-        .repo-title {
-            color: var(--primary);
-            margin: 0;
-        }
-        
-        .repo-meta {
-            display: flex;
-            gap: 1rem;
-            margin: 0.5rem 0;
-            flex-wrap: wrap;
-        }
-        
-        .meta-item {
-            background: #eef2ff;
-            padding: 0.25rem 0.75rem;
-            border-radius: 20px;
-            font-size: 0.875rem;
-        }
-        
-        .section {
-            margin: 1.5rem 0;
-        }
-        
-        .section-title {
-            color: var(--secondary);
-            border-bottom: 2px solid var(--secondary);
-            padding-bottom: 0.5rem;
-            margin: 1rem 0 0.5rem 0;
-        }
-        
-        .strengths {
-            background: #ecfdf5;
-            border-left: 4px solid var(--success);
-            padding: 1rem;
-            margin: 1rem 0;
-        }
-        
-        .weaknesses {
-            background: #fef2f2;
-            border-left: 4px solid var(--danger);
-            padding: 1rem;
-            margin: 1rem 0;
-        }
-        
-        .readme-preview {
-            background: #f8fafc;
-            padding: 1rem;
-            border-radius: 8px;
-            font-family: monospace;
-            white-space: pre-wrap;
-            max-height: 200px;
-            overflow-y: auto;
-        }
-        
-        footer {
-            background: var(--dark);
-            color: white;
-            text-align: center;
-            padding: 2rem;
-        }
-        
-        @media (max-width: 768px) {
-            .repo-header {
-                flex-direction: column;
-                gap: 0.5rem;
-            }
-            
-            .repo-meta {
-                flex-direction: column;
-                gap: 0.5rem;
-            }
-        }
+        body { font-family: Arial, sans-serif; margin: 40px; background-color: #f5f5f5; }
+        .container { background-color: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        h1 { color: #2c3e50; text-align: center; }
+        h2 { color: #3498db; border-bottom: 2px solid #3498db; }
+        .repo-card { background: white; margin: 20px 0; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); border-left: 4px solid #3498db; }
+        .repo-title { color: #2c3e50; margin: 0 0 10px 0; }
+        .repo-stats { display: flex; flex-wrap: wrap; gap: 15px; margin: 15px 0; }
+        .stat-item { background: #ecf0f1; padding: 5px 10px; border-radius: 5px; font-size: 0.9em; }
+        .repo-link { display: inline-block; background: #3498db; color: white; padding: 8px 16px; text-decoration: none; border-radius: 5px; margin-top: 10px; }
+        .repo-link:hover { background: #2980b9; }
+        .section-title { color: #3498db; border-bottom: 2px solid #3498db; padding-bottom: 5px; }
+        .report-list { margin-top: 20px; }
+        .report-item { margin: 10px 0; }
+        footer { text-align: center; margin-top: 30px; padding-top: 20px; border-top: 1px solid #eee; color: #7f8c8d; }
     </style>
 </head>
 <body>
     <div class="container">
-        <header>
-            <h1>Daily AI Agent Repository Analysis</h1>
-            <div class="subtitle">Top AI Agent Repositories from GitHub - 2026-02-05</div>
-        </header>
-
-        <div class="summary-stats">
-            <div class="stat-card">
-                <div class="stat-value">3</div>
-                <div>Repositories Analyzed</div>
+        <h1>Daily AI Agent Repository Analysis</h1>
+        <h2>Top AI Agent Projects from GitHub - 2026-02-05</h2>
+        <div class="repo-card">
+            <h3 class="repo-title">vercel-labs/agent-browser</h3>
+            <p>Browser automation CLI for AI agents</p>
+            <div class="repo-stats">
+                <div class="stat-item">⭐ 12656 stars</div>
+                <div class="stat-item">Lang: TypeScript</div>
+                <div class="stat-item">📅 Updated: 2026-02-05T05:51:21Z</div>
             </div>
-            <div class="stat-card">
-                <div class="stat-value">1059</div>
-                <div>Total Stars</div>
+            <a href="https://github.com/vercel-labs/agent-browser" class="repo-link" target="_blank">View on GitHub</a>
+            <a href="./agent-browser_report.html" class="repo-link" target="_blank" style="background: #2ecc71; margin-left: 10px;">View Detailed Report</a>
+        </div>
+        <div class="repo-card">
+            <h3 class="repo-title">ZhuLinsen/daily_stock_analysis</h3>
+            <p>LLM驱动的 A/H/美股智能分析器，多数据源行情 + 实时新闻 + Gemini 决策仪表盘 + 多渠道推送，零成本，纯白嫖，定时运行</p>
+            <div class="repo-stats">
+                <div class="stat-item">⭐ 9441 stars</div>
+                <div class="stat-item">Lang: Python</div>
+                <div class="stat-item">📅 Updated: 2026-02-05T06:03:27Z</div>
             </div>
-            <div class="stat-card">
-                <div class="stat-value">1</div>
-                <div>Technologies</div>
+            <a href="https://github.com/ZhuLinsen/daily_stock_analysis" class="repo-link" target="_blank">View on GitHub</a>
+            <a href="./daily_stock_analysis_report.html" class="repo-link" target="_blank" style="background: #2ecc71; margin-left: 10px;">View Detailed Report</a>
+        </div>
+        <div class="repo-card">
+            <h3 class="repo-title">snarktank/ralph</h3>
+            <p>Ralph is an autonomous AI agent loop that runs repeatedly until all PRD items are complete. </p>
+            <div class="repo-stats">
+                <div class="stat-item">⭐ 9428 stars</div>
+                <div class="stat-item">Lang: TypeScript</div>
+                <div class="stat-item">📅 Updated: 2026-02-05T05:53:37Z</div>
             </div>
-            <div class="stat-card">
-                <div class="stat-value">2026-02-05</div>
-                <div>Analysis Date</div>
+            <a href="https://github.com/snarktank/ralph" class="repo-link" target="_blank">View on GitHub</a>
+            <a href="./ralph_report.html" class="repo-link" target="_blank" style="background: #2ecc71; margin-left: 10px;">View Detailed Report</a>
+        </div>
+        <div class="repo-card">
+            <h3 class="repo-title">sickn33/antigravity-awesome-skills</h3>
+            <p>The Ultimate Collection of 600+ Agentic Skills for Claude Code/Antigravity/Cursor. Battle-tested, high-performance skills for AI agents including official skills from Anthropic and Vercel.</p>
+            <div class="repo-stats">
+                <div class="stat-item">⭐ 7197 stars</div>
+                <div class="stat-item">Lang: Python</div>
+                <div class="stat-item">📅 Updated: 2026-02-05T06:01:12Z</div>
+            </div>
+            <a href="https://github.com/sickn33/antigravity-awesome-skills" class="repo-link" target="_blank">View on GitHub</a>
+            <a href="./antigravity-awesome-skills_report.html" class="repo-link" target="_blank" style="background: #2ecc71; margin-left: 10px;">View Detailed Report</a>
+        </div>
+        <div class="repo-card">
+            <h3 class="repo-title">coreyhaines31/marketingskills</h3>
+            <p>Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering.</p>
+            <div class="repo-stats">
+                <div class="stat-item">⭐ 5869 stars</div>
+                <div class="stat-item">Lang: null</div>
+                <div class="stat-item">📅 Updated: 2026-02-05T05:53:18Z</div>
+            </div>
+            <a href="https://github.com/coreyhaines31/marketingskills" class="repo-link" target="_blank">View on GitHub</a>
+            <a href="./marketingskills_report.html" class="repo-link" target="_blank" style="background: #2ecc71; margin-left: 10px;">View Detailed Report</a>
+        </div>
+        <div class="report-list">
+            <h3 class="section-title">Individual Repository Reports</h3>
+            <div class="report-item">
+                <a href="./agent-browser_report.html" class="repo-link" target="_blank" style="background: #9b59b6;">vercel-labs/agent-browser</a>
+            </div>
+            <div class="report-item">
+                <a href="./antigravity-awesome-skills_report.html" class="repo-link" target="_blank" style="background: #9b59b6;">sickn33/antigravity-awesome-skills</a>
+            </div>
+            <div class="report-item">
+                <a href="./daily_stock_analysis_report.html" class="repo-link" target="_blank" style="background: #9b59b6;">ZhuLinsen/daily_stock_analysis</a>
+            </div>
+            <div class="report-item">
+                <a href="./marketingskills_report.html" class="repo-link" target="_blank" style="background: #9b59b6;">coreyhaines31/marketingskills</a>
+            </div>
+            <div class="report-item">
+                <a href="./ralph_report.html" class="repo-link" target="_blank" style="background: #9b59b6;">snarktank/ralph</a>
             </div>
         </div>
-
-        <div class="repo-list">
-            <!-- Repository analysis will be inserted here -->
-<div class="repo-card">
-        <div class="repo-header">
-            <h2 class="repo-title"><a href="https://github.com/ygwyg/MAHORAGA" target="_blank">ygwyg/MAHORAGA</a></h2>
-        </div>
-        <div class="repo-meta">
-            <div class="meta-item">⭐ 443 stars</div>
-            <div class="meta-item">Language: TypeScript</div>
-            <div class="meta-item">🔄 Updated: 2026-02-05T03:52:41Z</div>
-        </div>
-        <p>autonomous trading agent powered by social sentiment analysis and ai that learns, grows, and adapts</p>
-        
-        <div class="section">
-            <h3 class="section-title">Strengths</h3>
-            <ul><li>Moderate popularity (443 ⭐)</li><li>Language: TypeScript</li></ul>
-        </div></div><div class="repo-card">
-        <div class="repo-header">
-            <h2 class="repo-title"><a href="https://github.com/callstackincubator/agent-device" target="_blank">callstackincubator/agent-device</a></h2>
-        </div>
-        <div class="repo-meta">
-            <div class="meta-item">⭐ 347 stars</div>
-            <div class="meta-item">Language: TypeScript</div>
-            <div class="meta-item">🔄 Updated: 2026-02-05T05:32:42Z</div>
-        </div>
-        <p>CLI to control iOS and Android devices for AI agents</p>
-        
-        <div class="section">
-            <h3 class="section-title">Strengths</h3>
-            <ul><li>Moderate popularity (347 ⭐)</li><li>Language: TypeScript</li></ul>
-        </div></div><div class="repo-card">
-        <div class="repo-header">
-            <h2 class="repo-title"><a href="https://github.com/voocel/openclaw-mini" target="_blank">voocel/openclaw-mini</a></h2>
-        </div>
-        <div class="repo-meta">
-            <div class="meta-item">⭐ 269 stars</div>
-            <div class="meta-item">Language: TypeScript</div>
-            <div class="meta-item">🔄 Updated: 2026-02-05T05:39:30Z</div>
-        </div>
-        <p>🦞 OpenClaw 核心架构的极简复现，涵盖 sessionKey 会话域、队列串行、工具化记忆检索、按需上下文加载、可扩展技能与主动心跳唤醒机制</p>
-        
-        <div class="section">
-            <h3 class="section-title">Strengths</h3>
-            <ul><li>Moderate popularity (269 ⭐)</li><li>Language: TypeScript</li></ul>
-        </div></div>
-        </div>
-
         <footer>
             <p>Automated AI Agent Repository Analysis</p>
             <p>Generated by OpenClaw AI Assistant</p>
+            <p>Reports available at: https://0xagentlabs.github.io/openclaw-say/reports/daily-ai-agent-analysis/</p>
         </footer>
     </div>
 </body>

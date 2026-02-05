@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analysis Report: vercel-labs/agent-browser</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; background-color: #f5f5f5; }
+        .container { background-color: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        h1 { color: #2c3e50; }
+        h2 { color: #3498db; border-bottom: 2px solid #3498db; }
+        .repo-link { display: inline-block; background: #3498db; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin: 10px 0; }
+        .repo-link:hover { background: #2980b9; }
+        .stats { display: flex; flex-wrap: wrap; gap: 15px; margin: 20px 0; }
+        .stat-box { background: #ecf0f1; padding: 10px 15px; border-radius: 5px; }
+        ul { margin: 10px 0; padding-left: 20px; }
+        li { margin-bottom: 5px; }
+        .section { margin: 25px 0; }
+        .strengths { background: #d4edda; padding: 15px; border-left: 4px solid #28a745; }
+        .weaknesses { background: #f8d7da; padding: 15px; border-left: 4px solid #dc3545; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Repository Analysis Report</h1>
+        <h2>vercel-labs/agent-browser</h2>
+        <a href="https://github.com/vercel-labs/agent-browser" class="repo-link" target="_blank">Visit Repository</a>
+        <div class="stats">
+            <div class="stat-box">⭐ Stars: 12656</div>
+            <div class="stat-box">🔄 Forks: 718</div>
+            <div class="stat-box">📋 Issues: 158</div>
+            <div class="stat-box">🏷️ Language: TypeScript</div>
+            <div class="stat-box">📄 License: Apache-2.0</div>
+        </div>
+        <div class="section">
+            <h3>Description</h3>
+            <p>Browser automation CLI for AI agents</p>
+        </div>
+        <div class="section">
+            <h3>Application Scope</h3>
+            <p>Autonomous Agents / Task Automation</p>
+        </div>
+        <div class="section">
+            <h3>Technology Stack</h3>
+            <ul>
+                <li>JavaScript/Node.js</li>
+                <li>Dependencies: </li>
+            </ul>
+        </div>
+        <div class="section">
+            <h3>Extension Capabilities</h3>
+            <p>High - Has dedicated extension/plugin system</p>
+        </div>
+        <div class="section">
+            <h3>Repository Structure</h3>
+            <pre>.
+./bin
+./cli
+./cli/src
+./docker
+./docs
+./docs/src
+./docs/src/app
+./docs/src/components
+./scripts
+./skills
+./skills/agent-browser
+./skills/agent-browser/references
+./skills/agent-browser/templates
+./skills/skill-creator
+./skills/skill-creator/references
+./skills/skill-creator/scripts
+./src</pre>
+        </div>
+        <div class="section">
+            <h3>Strengths</h3>
+            <div class="strengths">
+                <ul>
+                    <li>High popularity (12656 ⭐)</li>
+                    <li>Active community (>718 forks)</li>
+                    <li>Good documentation</li>
+                    <li>Test coverage</li>
+                    <li>Relatively well maintained</li>
+                    <li>Clear licensing (Apache-2.0)</li>
+                </ul>
+            </div>
+        </div>
+        <div class="section">
+            <h3>Potential Weaknesses</h3>
+            <div class="weaknesses">
+                <ul>
+                    <li>Missing examples</li>
+                </ul>
+            </div>
+        </div>
+        <div class="section">
+            <h3>README Preview</h3>
+            <pre># agent-browser
+
+Headless browser automation CLI for AI agents. Fast Rust CLI with Node.js fallback.
+
+## Installation
+
+### npm (recommended)
+
+```bash
+npm install -g agent-browser
+agent-browser install  # Download Chromium
+```
+
+### From Source
+
+```bash
+git clone https://github.com/vercel-labs/agent-browser
+cd agent-browser
+pnpm install
+pnpm build
+pnpm build:native   # Requires Rust (https://rustup.rs)
+pnpm link --global  # Makes agent-browser available globally
+agent-browser install
+```
+
+### Linux Dependencies
+
+On Linux, install system dependencies:
+
+```bash
+agent-browser install --with-deps
+# or manually: npx playwright install-deps chromium
+```
+
+## Quick Start
+
+```bash
+agent-browser open example.com
+agent-browser snapshot                    # Get accessibility tree with refs
+agent-browser click @e2                   # Click by ref from snapshot
+agent-browser fill @e3 "test@example.com" # Fill by ref
+agent-browser get text @e1                # Get text by ref
+agent-browser screenshot page.png
+agent-browser close
+```
+
+### Traditional Selectors (also supported)
+
+```bash
+agent-browser click "#submit"</pre>
+        </div>
+        <div class="section">
+            <h3>Additional Notes</h3>
+            <ul>
+                <li>Documentation: Present</li>
+                <li>Tests: Present</li>
+                <li>Examples: Missing or minimal</li>
+            </ul>
+        </div>
+        <p><em>Analysis performed on 2026-02-05</em></p>
+    </div>
+</body>
+</html>
