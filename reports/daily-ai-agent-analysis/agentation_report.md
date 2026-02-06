@@ -4,15 +4,15 @@
 - **项目地址**: https://github.com/benjitaylor/agentation
 - **项目描述**: The visual feedback tool for agents.
 - **主要语言**: TypeScript
-- **星标数**: 1854
-- **复刻数**: 132
-- **开放问题**: 31
+- **星标数**: 1909
+- **复刻数**: 131
+- **开放问题**: 19
 - **许可证**: NOASSERTION
-- **最后更新**: 2026-02-05T03:59:57Z
+- **最后更新**: 2026-02-06T06:09:48Z
 - **主题标签**: ai, design, tools, ui
 
 ## 一句话介绍
-benjitaylor/agentation 是一个具备自动化能力的 TypeScript 自主代理 / 任务自动化 项目，拥有 1854 个星标。
+benjitaylor/agentation 是一个具备自动化能力的 TypeScript 自主代理 / 任务自动化 项目，拥有 1909 个星标。
 
 ## 核心亮点
 检索增强生成(RAG)
@@ -44,22 +44,26 @@ benjitaylor/agentation 是一个具备自动化能力的 TypeScript 自主代理
 ```text
 .
 ./.claude
-./_package-export
-./_package-export/example
-./_package-export/example/public
-./_package-export/example/src
-./_package-export/src
-./_package-export/src/components
-./_package-export/src/utils
+./mcp
+./mcp/src
+./mcp/src/server
+./package
+./package/example
+./package/example/public
+./package/example/src
+./package/hooks
+./package/src
+./package/src/components
+./package/src/utils
 ./skills
 ./skills/agentation
 ./.vscode
 ```
 
 ## 优势分析
-- 显著人气 (1854 ⭐)
-- 活跃社区 (>132 复刻)
-- 维护良好 (低开放问题数: 31)
+- 显著人气 (1909 ⭐)
+- 活跃社区 (>131 复刻)
+- 维护良好 (低开放问题数: 19)
 - 许可证清晰 (NOASSERTION)
 
 ## 潜在不足
@@ -69,9 +73,12 @@ benjitaylor/agentation 是一个具备自动化能力的 TypeScript 自主代理
 
 ## README预览
 ```markdown
-# agentation
+<img src="./package/logo.svg" alt="Agentation" width="50" />
 
-Agentation is an agent-agnostic visual feedback tool. Click elements on your page, add notes, and copy structured output that helps AI coding agents find the exact code you're referring to.
+[![npm version](https://img.shields.io/npm/v/agentation)](https://www.npmjs.com/package/agentation)
+[![downloads](https://img.shields.io/npm/dm/agentation)](https://www.npmjs.com/package/agentation)
+
+**[Agentation](https://agentation.dev)** is an agent-agnostic visual feedback tool. Click elements on your page, add notes, and copy structured output that helps AI coding agents find the exact code you're referring to.
 
 ## Install
 
@@ -115,10 +122,6 @@ Agentation captures class names, selectors, and element positions so AI agents c
 
 - React 18+
 - Desktop browser (mobile not supported)
-
-## Docs
-
-Full documentation at [agentation.dev](https://agentation.dev)
 ```
 
 ## 补充说明
@@ -127,4 +130,4 @@ Full documentation at [agentation.dev](https://agentation.dev)
 - 示例丰富度: 缺失或简单
 
 ---
-*分析时间: 2026-02-05*
+*分析时间: 2026-02-06*
