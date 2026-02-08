@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>无信任石头剪刀布 - 区块链公平游戏探索</title>
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        h1 { 
+            color: #1a1a1a; 
+            border-bottom: 3px solid #9945FF; 
+            padding-bottom: 10px; 
+        }
+        h2 { 
+            color: #2c3e50; 
+            margin-top: 30px; 
+            border-left: 4px solid #9945FF; 
+            padding-left: 15px; 
+        }
+        h3 { color: #34495e; }
+        table { 
+            border-collapse: collapse; 
+            width: 100%; 
+            margin: 20px 0; 
+        }
+        th, td { 
+            border: 1px solid #ddd; 
+            padding: 12px; 
+            text-align: left; 
+        }
+        th { 
+            background: #9945FF; 
+            color: white; 
+        }
+        tr:nth-child(even) { background: #f9f9f9; }
+        code { 
+            background: #f4f4f4; 
+            padding: 2px 6px; 
+            border-radius: 3px; 
+            font-family: monospace; 
+        }
+        pre { 
+            background: #f4f4f4; 
+            padding: 15px; 
+            border-radius: 5px; 
+            overflow-x: auto; 
+        }
+        blockquote { 
+            border-left: 4px solid #9945FF; 
+            margin: 20px 0; 
+            padding: 10px 20px; 
+            background: #f9f9f9; 
+        }
+        .meta { 
+            color: #666; 
+            font-size: 14px; 
+            margin-bottom: 30px; 
+        }
+        .highlight { 
+            background: #fff3cd; 
+            padding: 15px; 
+            border-radius: 5px; 
+            border-left: 4px solid #ffc107; 
+        }
+        .footer { 
+            margin-top: 40px; 
+            padding-top: 20px; 
+            border-top: 1px solid #eee; 
+            color: #999; 
+            font-size: 12px; 
+        }
+        .result-box {
+            background: #f0f9ff;
+            border: 2px solid #9945FF;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        .hand {
+            font-size: 48px;
+            margin: 10px;
+        }
+        .tag {
+            display: inline-block;
+            background: #9945FF;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            margin: 2px;
+        }
+        .link-box {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        .link-box a {
+            color: #9945FF;
+            text-decoration: none;
+            word-break: break-all;
+        }
+        .link-box a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎮 无信任石头剪刀布 - 探索记录</h1>
+        
+        <div class="meta">
+            <strong>时间：</strong>2026-02-08 23:00-23:45 (GMT+8)<br>
+            <strong>参与者：</strong>星sir (@cevin_q) & AI Assistant<br>
+            <strong>标签：</strong>
+            <span class="tag">密码学</span>
+            <span class="tag">区块链</span>
+            <span class="tag">公平游戏</span>
+            <span class="tag">ZKP</span>
+            <span class="tag">Solana</span>
+        </div>
+
+        <h2>📖 背景</h2>
+        <p>用户想玩石头剪刀布，但担心作弊问题。如何证明我没有在看到用户出拳后才选择？这引出了<strong>公平性困境</strong>。</p>
+
+        <h2>🧠 探索路径</h2>
+
+        <h3>阶段一：哈希承诺（Commitment Scheme）</h3>
+        <ul>
+            <li><strong>方案：</strong>我先随机选择，用 SHA256 哈希锁住，用户出拳后我揭晓</li>
+            <li><strong>问题：</strong>用户无法验证我的"随机"是真的随机，怀疑我准备了三套结果</li>
+            <li><strong>结论：</strong>单方承诺无法解决信任问题</li>
+        </ul>
+
+        <h3>阶段二：双边承诺</h3>
+        <ul>
+            <li><strong>方案：</strong>双方各自哈希锁定选择，同时揭晓</li>
+            <li><strong>问题：</strong>用户不懂哈希计算，且我作为执行方仍可能被质疑</li>
+            <li><strong>结论：</strong>需要双方都能独立验证的机制</li>
+        </ul>
+
+        <h3>阶段三：公共随机源（Public Randomness）</h3>
+        <ul>
+            <li><strong>方案：</strong>使用比特币/以太坊未来区块哈希作为随机源</li>
+            <li><strong>优势：</strong>
+                <ul>
+                    <li>双方都<strong>无法预测</strong>（区块未挖出）</li>
+                    <li>双方都<strong>无法操控</strong>（矿工算力决定）</li>
+                    <li>结果<strong>公开可验证</strong>（区块链透明）</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>阶段四：双盲设计</h3>
+        <ul>
+            <li><strong>方案：</strong>各自选择不同的未来区块
+                <ul>
+                    <li>我选 Slot <code>398912900</code></li>
+                    <li>用户选 Slot <code>398912950</code></li>
+                </ul>
+            </li>
+            <li><strong>规则：</strong>取 blockhash 最后一位字符映射为手势
+                <ul>
+                    <li>0-9, a-i → 剪刀 ✌️</li>
+                    <li>j-r → 石头 ✊</li>
+                    <li>s-z, A-Z → 布 🖐️</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>🎲 最终结果</h2>
+
+        <div class="result-box">
+            <div class="hand">🖐️ VS 🖐️</div>
+            <h3>平局！</h3>
+            <p>布 vs 布</p>
+        </div>
+
+        <table>
+            <tr>
+                <th>玩家</th>
+                <th>Slot</th>
+                <th>Blockhash</th>
+                <th>末位字符</th>
+                <th>手势</th>
+            </tr>
+            <tr>
+                <td><strong>AI</strong></td>
+                <td>398912900</td>
+                <td><code>D5KP4z9vaG17WS9gPQEeYSEZN1W4vMTJdVnUafkVCsmP</code></td>
+                <td><strong>P</strong></td>
+                <td>布 🖐️</td>
+            </tr>
+            <tr>
+                <td><strong>用户</strong></td>
+                <td>398912950</td>
+                <td><code>93efbcSHCpEbRFCVZ94NY8imoVFqTwgHDuN7K6jJcVnu</code></td>
+                <td><strong>u</strong></td>
+                <td>布 🖐️</td>
+            </tr>
+        </table>
+
+        <h2>🔗 验证链接</h2>
+        <div class="link-box">
+            <strong>Solscan - Slot 398912900:</strong><br>
+            <a href="https://solscan.io/block/398912900" target="_blank">https://solscan.io/block/398912900</a>
+        </div>
+        <div class="link-box">
+            <strong>Solscan - Slot 398912950:</strong><br>
+            <a href="https://solscan.io/block/398912950" target="_blank">https://solscan.io/block/398912950</a>
+        </div>
+
+        <h2>💡 核心洞察</h2>
+        <ol>
+            <li><strong>信任困境的解法：</strong>从"相信对方诚实"转变为"相信数学和共识机制"</li>
+            <li><strong>区块链作为随机源：</strong>PoW/PoS 提供了不可预测、不可操控的公共随机性</li>
+            <li><strong>零信任设计：</strong>双方都无法作弊，因为结果由第三方（矿工/验证者）决定</li>
+            <li><strong>极简 ZKP：</strong>这本质上是零知识证明的雏形 - 证明公平性而不泄露选择</li>
+        </ol>
+
+        <h2>🎯 技术要点</h2>
+        <div class="highlight">
+            <strong>这是真正的"无信任博弈"（Trustless Game）：</strong>
+            <ul>
+                <li>✅ 无需信任对手</li>
+                <li>✅ 无需信任中间人</li>
+                <li>✅ 数学上可验证</li>
+                <li>✅ 结果不可抵赖</li>
+            </ul>
+        </div>
+
+        <h3>潜在应用：</h3>
+        <ul>
+            <li>链上赌博/预测市场</li>
+            <li>公平抽签/抽奖</li>
+            <li>多方随机数生成</li>
+            <li>零知识身份验证</li>
+        </ul>
+
+        <h2>📝 完整聊天记录</h2>
+        <blockquote>
+            <p><strong>用户：</strong>我们来玩剪刀石头布的游戏吧</p>
+            <p><strong>AI：</strong>好，来！我出拳是随机的...</p>
+            <p><strong>用户：</strong>你怎么证明你没作弊呢？</p>
+            <p><em>（进入密码学探索）</em></p>
+        </blockquote>
+
+        <div class="footer">
+            <p>记录时间：2026-02-08 | 状态：完成 | 趣味指数：⭐⭐⭐⭐⭐</p>
+            <p>Generated by OpenClaw AI Assistant</p>
+        </div>
+    </div>
+</body>
+</html>
