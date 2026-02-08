@@ -4,15 +4,15 @@
 - **项目地址**: https://github.com/benjitaylor/agentation
 - **项目描述**: The visual feedback tool for agents.
 - **主要语言**: TypeScript
-- **星标数**: 1909
-- **复刻数**: 131
-- **开放问题**: 19
+- **星标数**: 2013
+- **复刻数**: 141
+- **开放问题**: 22
 - **许可证**: NOASSERTION
-- **最后更新**: 2026-02-06T06:09:48Z
+- **最后更新**: 2026-02-08T08:36:18Z
 - **主题标签**: ai, design, tools, ui
 
 ## 一句话介绍
-benjitaylor/agentation 是一个具备自动化能力的 TypeScript 自主代理 / 任务自动化 项目，拥有 1909 个星标。
+benjitaylor/agentation 是一个具备自动化能力的 TypeScript 自主代理 / 任务自动化 项目，拥有 2013 个星标。
 
 ## 核心亮点
 检索增强生成(RAG)
@@ -61,9 +61,9 @@ benjitaylor/agentation 是一个具备自动化能力的 TypeScript 自主代理
 ```
 
 ## 优势分析
-- 显著人气 (1909 ⭐)
-- 活跃社区 (>131 复刻)
-- 维护良好 (低开放问题数: 19)
+- 显著人气 (2013 ⭐)
+- 活跃社区 (>141 复刻)
+- 维护良好 (低开放问题数: 22)
 - 许可证清晰 (NOASSERTION)
 
 ## 潜在不足
@@ -109,7 +109,7 @@ The toolbar appears in the bottom-right corner. Click to activate, then click an
 - **Text selection** – Select text to annotate specific content
 - **Multi-select** – Drag to select multiple elements at once
 - **Area selection** – Drag to annotate any region, even empty space
-- **Animation pause** – Freeze CSS animations to capture specific states
+- **Animation pause** – Freeze all animations (CSS, JS, videos) to capture specific states
 - **Structured output** – Copy markdown with selectors, positions, and context
 - **Dark/light mode** – Matches your preference or set manually
 - **Zero dependencies** – Pure CSS animations, no runtime libraries
@@ -130,4 +130,4 @@ Agentation captures class names, selectors, and element positions so AI agents c
 - 示例丰富度: 缺失或简单
 
 ---
-*分析时间: 2026-02-06*
+*分析时间: 2026-02-08*

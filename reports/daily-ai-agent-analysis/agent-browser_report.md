@@ -4,15 +4,15 @@
 - **项目地址**: https://github.com/vercel-labs/agent-browser
 - **项目描述**: Browser automation CLI for AI agents
 - **主要语言**: TypeScript
-- **星标数**: 12837
-- **复刻数**: 732
-- **开放问题**: 160
+- **星标数**: 13180
+- **复刻数**: 762
+- **开放问题**: 171
 - **许可证**: Apache-2.0
-- **最后更新**: 2026-02-06T06:15:16Z
+- **最后更新**: 2026-02-08T08:40:01Z
 - **主题标签**: 
 
 ## 一句话介绍
-vercel-labs/agent-browser 是一个具备自动化能力的 TypeScript 自主代理 / 任务自动化 项目，拥有 12837 个星标。
+vercel-labs/agent-browser 是一个具备自动化能力的 TypeScript 自主代理 / 任务自动化 项目，拥有 13180 个星标。
 
 ## 核心亮点
 检索增强生成(RAG)
@@ -63,8 +63,8 @@ vercel-labs/agent-browser 是一个具备自动化能力的 TypeScript 自主代
 ```
 
 ## 优势分析
-- 极高人气 (12837 ⭐)
-- 活跃社区 (>732 复刻)
+- 极高人气 (13180 ⭐)
+- 活跃社区 (>762 复刻)
 - 良好文档
 - 测试覆盖
 - 相对维护良好
@@ -85,6 +85,13 @@ Headless browser automation CLI for AI agents. Fast Rust CLI with Node.js fallba
 
 ```bash
 npm install -g agent-browser
+agent-browser install  # Download Chromium
+```
+
+### Homebrew (macOS)
+
+```bash
+brew install agent-browser
 agent-browser install  # Download Chromium
 ```
 
@@ -118,13 +125,6 @@ agent-browser click @e2                   # Click by ref from snapshot
 agent-browser fill @e3 "test@example.com" # Fill by ref
 agent-browser get text @e1                # Get text by ref
 agent-browser screenshot page.png
-agent-browser close
-```
-
-### Traditional Selectors (also supported)
-
-```bash
-agent-browser click "#submit"
 ```
 
 ## 补充说明
@@ -133,4 +133,4 @@ agent-browser click "#submit"
 - 示例丰富度: 缺失或简单
 
 ---
-*分析时间: 2026-02-06*
+*分析时间: 2026-02-08*

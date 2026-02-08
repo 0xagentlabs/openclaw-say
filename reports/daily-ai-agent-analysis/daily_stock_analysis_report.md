@@ -4,15 +4,15 @@
 - **项目地址**: https://github.com/ZhuLinsen/daily_stock_analysis
 - **项目描述**: LLM驱动的 A/H/美股智能分析器，多数据源行情 + 实时新闻 + Gemini 决策仪表盘 + 多渠道推送，零成本，纯白嫖，定时运行
 - **主要语言**: Python
-- **星标数**: 9631
-- **复刻数**: 10075
-- **开放问题**: 25
+- **星标数**: 9853
+- **复刻数**: 10349
+- **开放问题**: 15
 - **许可证**: MIT
-- **最后更新**: 2026-02-06T06:16:58Z
+- **最后更新**: 2026-02-08T08:38:14Z
 - **主题标签**: agent, ai, aigc, gemini, llm, quant, quantitative-trading, rag, stock
 
 ## 一句话介绍
-ZhuLinsen/daily_stock_analysis 是一个基于 Python 的 对话式AI / 聊天机器人 项目，具有 9631 个星标。
+ZhuLinsen/daily_stock_analysis 是一个基于 Python 的 对话式AI / 聊天机器人 项目，具有 9853 个星标。
 
 ## 核心亮点
 超高人气与社区认可度
@@ -54,6 +54,7 @@ ZhuLinsen/daily_stock_analysis 是一个基于 Python 的 对话式AI / 聊天�
 ./docs/architecture
 ./docs/bot
 ./docs/docker
+./scripts
 ./sources
 ./src
 ./src/core
@@ -62,11 +63,11 @@ ZhuLinsen/daily_stock_analysis 是一个基于 Python 的 对话式AI / 聊天�
 ```
 
 ## 优势分析
-- 极高人气 (9631 ⭐)
-- 活跃社区 (>10075 复刻)
+- 极高人气 (9853 ⭐)
+- 活跃社区 (>10349 复刻)
 - 良好文档
 - 测试覆盖
-- 维护良好 (低开放问题数: 25)
+- 维护良好 (低开放问题数: 15)
 - 许可证清晰 (MIT)
 
 ## 潜在不足
@@ -110,6 +111,7 @@ ZhuLinsen/daily_stock_analysis 是一个基于 Python 的 对话式AI / 聊天�
 | 分析 | 多维度分析 | 技术面 + 筹码分布 + 舆情情报 + 实时行情 |
 | 市场 | 全球市场 | 支持 A股、港股、美股 |
 | 复盘 | 大盘复盘 | 每日市场概览、板块涨跌、北向资金 |
+| 回测 | AI 回测验证 | 自动评估历史分析准确率，方向胜率、止盈止损命中率 |
 | 推送 | 多渠道通知 | 企业微信、飞书、Telegram、钉钉、邮件、Pushover |
 | 自动化 | 定时运行 | GitHub Actions 定时执行，无需服务器 |
 
@@ -122,8 +124,6 @@ ZhuLinsen/daily_stock_analysis 是一个基于 Python 的 对话式AI / 聊天�
 | 新闻搜索 | Tavily、SerpAPI、Bocha、Brave |
 
 ### 内置交易纪律
-
-| 规则 | 说明 |
 ```
 
 ## 补充说明
@@ -132,4 +132,4 @@ ZhuLinsen/daily_stock_analysis 是一个基于 Python 的 对话式AI / 聊天�
 - 示例丰富度: 缺失或简单
 
 ---
-*分析时间: 2026-02-06*
+*分析时间: 2026-02-08*
