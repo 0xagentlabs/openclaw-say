@@ -4,15 +4,15 @@
 - **项目地址**: https://github.com/coreyhaines31/marketingskills
 - **项目描述**: Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering.
 - **主要语言**: null
-- **星标数**: 6848
-- **复刻数**: 765
+- **星标数**: 6916
+- **复刻数**: 778
 - **开放问题**: 11
 - **许可证**: MIT
-- **最后更新**: 2026-02-09T00:13:08Z
+- **最后更新**: 2026-02-09T08:57:42Z
 - **主题标签**: claude, codex, marketing
 
 ## 一句话介绍
-coreyhaines31/marketingskills 是一个具备自动化能力的 null 自主代理 / 任务自动化 项目，拥有 6848 个星标。
+coreyhaines31/marketingskills 是一个具备自动化能力的 null 自主代理 / 任务自动化 项目，拥有 6916 个星标。
 
 ## 核心亮点
 超高人气与社区认可度
@@ -59,8 +59,8 @@ coreyhaines31/marketingskills 是一个具备自动化能力的 null 自主代�
 ```
 
 ## 优势分析
-- 极高人气 (6848 ⭐)
-- 活跃社区 (>765 复刻)
+- 极高人气 (6916 ⭐)
+- 活跃社区 (>778 复刻)
 - 维护良好 (低开放问题数: 11)
 - 许可证清晰 (MIT)
 

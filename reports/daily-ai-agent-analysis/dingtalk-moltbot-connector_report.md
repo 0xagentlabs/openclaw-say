@@ -4,15 +4,15 @@
 - **项目地址**: https://github.com/DingTalk-Real-AI/dingtalk-moltbot-connector
 - **项目描述**: 将 钉钉机器人 / 钉钉 DEAP Agent 连接到 OpenClaw Gateway 的OpenClaw Plugin，支持 AI Card 流式响应
 - **主要语言**: TypeScript
-- **星标数**: 1201
-- **复刻数**: 69
-- **开放问题**: 26
+- **星标数**: 1208
+- **复刻数**: 71
+- **开放问题**: 29
 - **许可证**: MIT
-- **最后更新**: 2026-02-08T19:35:31Z
+- **最后更新**: 2026-02-09T07:42:32Z
 - **主题标签**: 
 
 ## 一句话介绍
-DingTalk-Real-AI/dingtalk-moltbot-connector 是一个基于 TypeScript 的 对话式AI / 聊天机器人 项目，具有 1201 个星标。
+DingTalk-Real-AI/dingtalk-moltbot-connector 是一个基于 TypeScript 的 对话式AI / 聊天机器人 项目，具有 1208 个星标。
 
 ## 核心亮点
 活跃的开发维护
@@ -46,9 +46,9 @@ DingTalk-Real-AI/dingtalk-moltbot-connector 是一个基于 TypeScript 的 对�
 ```
 
 ## 优势分析
-- 显著人气 (1201 ⭐)
-- 社区兴趣 (69 复刻)
-- 维护良好 (低开放问题数: 26)
+- 显著人气 (1208 ⭐)
+- 社区兴趣 (71 复刻)
+- 维护良好 (低开放问题数: 29)
 - 许可证清晰 (MIT)
 
 ## 潜在不足
