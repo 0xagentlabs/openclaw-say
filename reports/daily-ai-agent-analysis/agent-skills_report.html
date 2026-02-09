@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>项目分析报告: supabase/agent-skills</title>
+    <title>项目分析报告: callstackincubator/agent-skills</title>
     <style>
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 20px; background-color: #f8f9fa; }
         .container { max-width: 1200px; margin: 0 auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
@@ -30,40 +30,39 @@
 <body>
     <div class="container">
         <h1>项目分析报告</h1>
-        <h2>supabase/agent-skills</h2>
-        <a href="https://github.com/supabase/agent-skills" class="repo-link" target="_blank">访问项目主页</a>
+        <h2>callstackincubator/agent-skills</h2>
+        <a href="https://github.com/callstackincubator/agent-skills" class="repo-link" target="_blank">访问项目主页</a>
         <a href="../index.html" class="repo-link" style="background:#636e72;" target="_blank">返回项目聚合器首页</a>
         <div class="summary-box">
             <h3>项目摘要</h3>
-            <p><strong>一句话介绍:</strong> supabase/agent-skills 是一个具备自动化能力的 TypeScript 自主代理 / 任务自动化 项目，拥有 1140 个星标。</p>
-            <p><strong>核心亮点:</strong> 强大的扩展性</p>
+            <p><strong>一句话介绍:</strong> callstackincubator/agent-skills 是一个基于 null 的 对话式AI / 聊天机器人 项目，具有 813 个星标。</p>
+            <p><strong>核心亮点:</strong> 长期记忆管理</p>
         </div>
         <div class="stats">
-            <div class="stat-card">⭐ <strong>星标</strong><br>1140</div>
-            <div class="stat-card">🔄 <strong>复刻</strong><br>66</div>
-            <div class="stat-card">📋 <strong>问题</strong><br>13</div>
-            <div class="stat-card">🏷️ <strong>语言</strong><br>TypeScript</div>
-            <div class="stat-card">📄 <strong>许可</strong><br>None</div>
+            <div class="stat-card">⭐ <strong>星标</strong><br>813</div>
+            <div class="stat-card">🔄 <strong>复刻</strong><br>42</div>
+            <div class="stat-card">📋 <strong>问题</strong><br>4</div>
+            <div class="stat-card">🏷️ <strong>语言</strong><br>null</div>
+            <div class="stat-card">📄 <strong>许可</strong><br>MIT</div>
         </div>
         <div class="section">
             <h3>项目描述</h3>
-            <p>Agent Skills to help developers using AI agents with Supabase</p>
+            <p>A collection of agent-optimized React Native skills for AI coding assistants.</p>
         </div>
         <div class="section">
             <h3>应用领域</h3>
-            <p>自主代理 / 任务自动化</p>
+            <p>对话式AI / 聊天机器人</p>
         </div>
         <div class="section tech-stack">
             <h3>技术栈</h3>
             <ul>
-                <li>JavaScript/Node.js</li>
-                <li>依赖包: </li>
+                <li>技术栈未明确指定</li>
             </ul>
         </div>
         <div class="features">
             <h3 style="color:white;">核心特性</h3>
             <ul style="color:white;">
-                <li>未识别出核心特性</li>
+                <li>长期记忆管理</li>
             </ul>
         </div>
         <div class="execution-flow">
@@ -85,92 +84,94 @@
         <div class="section">
             <h3>仓库结构</h3>
             <pre>.
-./assets
-./packages
-./packages/skills-build
-./packages/skills-build/src
+./.claude
+./.claude/skills
+./.claude/skills/validate-skills
+./docs
 ./skills
-./skills/supabase-postgres-best-practices
-./skills/supabase-postgres-best-practices/references</pre>
+./skills/react-native-best-practices
+./skills/react-native-best-practices/agents
+./skills/react-native-best-practices/references</pre>
         </div>
         <div class="strengths">
             <h3 style="color:white;">优势分析</h3>
             <ul style="color:white;">
-                <li>显著人气 (1140 ⭐)</li>
-                <li>社区兴趣 (66 复刻)</li>
-                <li>测试覆盖</li>
-                <li>维护良好 (低开放问题数: 13)</li>
+                <li>持续增长 (813 ⭐)</li>
+                <li>社区兴趣 (42 复刻)</li>
+                <li>良好文档</li>
+                <li>维护良好 (低开放问题数: 4)</li>
+                <li>许可证清晰 (MIT)</li>
             </ul>
         </div>
         <div class="weaknesses">
             <h3 style="color:white;">潜在不足</h3>
             <ul style="color:white;">
-                <li>文档有限</li>
                 <li>缺少示例</li>
+                <li>无可见测试套件</li>
             </ul>
         </div>
         <div class="section">
             <h3>README预览</h3>
-            <pre>![Supabase Agent Skills](assets/og.png)
+            <pre># Agent Skills
 
-# Supabase Agent Skills
-
-
-Agent Skills to help developers using AI agents with Supabase. Agent Skills are
-folders of instructions, scripts, and resources that agents like Claude Code,
-Cursor, Github Copilot, etc... can discover and use to do things more accurately
-and efficiently.
-
-The skills in this repo follow the [Agent Skills](https://agentskills.io/)
-format.
-
-## Installation
-
-```bash
-npx skills add supabase/agent-skills
-```
-
-### Claude Code Plugin
-
-You can also install the skills in this repo as Claude Code plugins
-
-```bash
-/plugin marketplace add supabase/agent-skills
-/plugin install postgres-best-practices@supabase-agent-skills
-```
+A collection of agent-optimized skills for AI coding assistants. Skills provide structured, actionable instructions for domain-specific tasks.
 
 ## Available Skills
 
-<details>
-<summary><strong>supabase-postgres-best-practices</strong></summary>
+| Skill                                                                | Description                                             |
+| -------------------------------------------------------------------- | ------------------------------------------------------- |
+| [react-native-best-practices](./skills/react-native-best-practices/) | React Native optimization best practices from Callstack |
+| [github](./skills/github/)                                           | GitHub workflow patterns for PRs, code review, branching |
 
-Postgres performance optimization guidelines from Supabase. Contains references
-across 8 categories, prioritized by impact.
+## React Native Best Practices
 
-**Use when:**
+Performance optimization skills based on [**The Ultimate Guide to React Native Optimization**](https://www.callstack.com/ebooks/the-ultimate-guide-to-react-native-optimization) by [Callstack](https://www.callstack.com/).
 
-- Writing SQL queries or designing schemas
-- Implementing indexes or query optimization
-- Reviewing database performance issues
-- Configuring connection pooling or scaling
-- Working with Row-Level Security (RLS)
+Covers:
 
-**Categories covered:**
+- **JavaScript/React**: Profiling, FPS, re-renders, lists, state management, animations
+- **Native**: iOS/Android profiling, TTI, memory management, Turbo Modules
+- **Bundling**: Bundle analysis, tree shaking, R8, app size optimization
 
-- Query Performance (Critical)
-- Connection Management (Critical)
-- Schema Design (High)
-- Concurrency & Locking (Medium-High)</pre>
+### Quick Start
+
+#### Install as Claude Code Plugin
+
+**1. Add the marketplace:**
+```bash
+/plugin marketplace add callstackincubator/agent-skills
+```
+
+**2. Install the skill:**
+```bash
+/plugin install react-native-best-practices@callstack-agent-skills
+```
+
+Or use the interactive menu:
+```bash
+/plugin menu
+```
+
+**For local development:**
+```bash
+claude --plugin-dir ./path/to/agent-skills
+```
+
+Once installed, Claude will automatically use the React Native best practices skill when working on React Native projects.
+
+#### Use with Other AI Assistants
+
+All major AI coding assistants support the Agent Skills standard.</pre>
         </div>
         <div class="section">
             <h3>补充说明</h3>
             <ul>
-                <li>文档完善度: 缺失或简单</li>
-                <li>测试覆盖度: 完整</li>
+                <li>文档完善度: 完整</li>
+                <li>测试覆盖度: 缺失或简单</li>
                 <li>示例丰富度: 缺失或简单</li>
             </ul>
         </div>
-        <p><em>分析时间: 2026-02-08</em></p>
+        <p><em>分析时间: 2026-02-09</em></p>
     </div>
 </body>
 </html>
