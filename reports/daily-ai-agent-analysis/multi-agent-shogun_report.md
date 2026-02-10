@@ -4,15 +4,15 @@
 - **项目地址**: https://github.com/yohey-w/multi-agent-shogun
 - **项目描述**: Samurai-inspired multi-agent system for Claude Code. Orchestrate parallel AI tasks via tmux with shogun → karo → ashigaru hierarchy.
 - **主要语言**: Shell
-- **星标数**: 787
+- **星标数**: 797
 - **复刻数**: 176
-- **开放问题**: 1
+- **开放问题**: 3
 - **许可证**: MIT
-- **最后更新**: 2026-02-10T00:56:49Z
+- **最后更新**: 2026-02-10T08:53:26Z
 - **主题标签**: ai-agent, anthropic, automation, claude-code, llm, multi-agent, parallel-processing, samurai, shogun, tmux
 
 ## 一句话介绍
-yohey-w/multi-agent-shogun 是一个具备自动化能力的 Shell 自主代理 / 任务自动化 项目，拥有 787 个星标。
+yohey-w/multi-agent-shogun 是一个具备自动化能力的 Shell 自主代理 / 任务自动化 项目，拥有 797 个星标。
 
 ## 核心亮点
 长期记忆管理
@@ -59,11 +59,11 @@ yohey-w/multi-agent-shogun 是一个具备自动化能力的 Shell 自主代理 
 ```
 
 ## 优势分析
-- 持续增长 (787 ⭐)
+- 持续增长 (797 ⭐)
 - 活跃社区 (>176 复刻)
 - 良好文档
 - 测试覆盖
-- 维护良好 (低开放问题数: 1)
+- 维护良好 (低开放问题数: 3)
 - 许可证清晰 (MIT)
 
 ## 潜在不足
