@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>项目分析报告: benjitaylor/agentation</title>
+    <title>项目分析报告: yohey-w/multi-agent-shogun</title>
     <style>
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 20px; background-color: #f8f9fa; }
         .container { max-width: 1200px; margin: 0 auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
@@ -30,24 +30,24 @@
 <body>
     <div class="container">
         <h1>项目分析报告</h1>
-        <h2>benjitaylor/agentation</h2>
-        <a href="https://github.com/benjitaylor/agentation" class="repo-link" target="_blank">访问项目主页</a>
+        <h2>yohey-w/multi-agent-shogun</h2>
+        <a href="https://github.com/yohey-w/multi-agent-shogun" class="repo-link" target="_blank">访问项目主页</a>
         <a href="../index.html" class="repo-link" style="background:#636e72;" target="_blank">返回项目聚合器首页</a>
         <div class="summary-box">
             <h3>项目摘要</h3>
-            <p><strong>一句话介绍:</strong> benjitaylor/agentation 是一个具备自动化能力的 TypeScript 自主代理 / 任务自动化 项目，拥有 2055 个星标。</p>
-            <p><strong>核心亮点:</strong> 检索增强生成(RAG)</p>
+            <p><strong>一句话介绍:</strong> yohey-w/multi-agent-shogun 是一个具备自动化能力的 Shell 自主代理 / 任务自动化 项目，拥有 786 个星标。</p>
+            <p><strong>核心亮点:</strong> 长期记忆管理</p>
         </div>
         <div class="stats">
-            <div class="stat-card">⭐ <strong>星标</strong><br>2055</div>
-            <div class="stat-card">🔄 <strong>复刻</strong><br>147</div>
-            <div class="stat-card">📋 <strong>问题</strong><br>23</div>
-            <div class="stat-card">🏷️ <strong>语言</strong><br>TypeScript</div>
-            <div class="stat-card">📄 <strong>许可</strong><br>NOASSERTION</div>
+            <div class="stat-card">⭐ <strong>星标</strong><br>786</div>
+            <div class="stat-card">🔄 <strong>复刻</strong><br>176</div>
+            <div class="stat-card">📋 <strong>问题</strong><br>1</div>
+            <div class="stat-card">🏷️ <strong>语言</strong><br>Shell</div>
+            <div class="stat-card">📄 <strong>许可</strong><br>MIT</div>
         </div>
         <div class="section">
             <h3>项目描述</h3>
-            <p>The visual feedback tool for agents.</p>
+            <p>Samurai-inspired multi-agent system for Claude Code. Orchestrate parallel AI tasks via tmux with shogun → karo → ashigaru hierarchy.</p>
         </div>
         <div class="section">
             <h3>应用领域</h3>
@@ -56,14 +56,13 @@
         <div class="section tech-stack">
             <h3>技术栈</h3>
             <ul>
-                <li>JavaScript/Node.js</li>
-                <li>依赖包: </li>
+                <li>技术栈未明确指定</li>
             </ul>
         </div>
         <div class="features">
             <h3 style="color:white;">核心特性</h3>
             <ul style="color:white;">
-                <li>检索增强生成(RAG)</li>
+                <li>长期记忆管理</li>
             </ul>
         </div>
         <div class="execution-flow">
@@ -85,96 +84,96 @@
         <div class="section">
             <h3>仓库结构</h3>
             <pre>.
+./agents
+./agents/default
 ./.claude
-./mcp
-./mcp/src
-./mcp/src/server
-./package
-./package/example
-./package/example/public
-./package/example/src
-./package/hooks
-./package/src
-./package/src/components
-./package/src/utils
+./config
+./context
+./docs
+./images
+./images/screenshots
+./lib
+./saytask
+./scripts
 ./skills
-./skills/agentation
-./.vscode</pre>
+./skills/skill-creator
+./templates</pre>
         </div>
         <div class="strengths">
             <h3 style="color:white;">优势分析</h3>
             <ul style="color:white;">
-                <li>显著人气 (2055 ⭐)</li>
-                <li>活跃社区 (>147 复刻)</li>
-                <li>维护良好 (低开放问题数: 23)</li>
-                <li>许可证清晰 (NOASSERTION)</li>
+                <li>持续增长 (786 ⭐)</li>
+                <li>活跃社区 (>176 复刻)</li>
+                <li>良好文档</li>
+                <li>测试覆盖</li>
+                <li>维护良好 (低开放问题数: 1)</li>
+                <li>许可证清晰 (MIT)</li>
             </ul>
         </div>
         <div class="weaknesses">
             <h3 style="color:white;">潜在不足</h3>
             <ul style="color:white;">
-                <li>文档有限</li>
                 <li>缺少示例</li>
-                <li>无可见测试套件</li>
             </ul>
         </div>
         <div class="section">
             <h3>README预览</h3>
-            <pre><img src="./package/logo.svg" alt="Agentation" width="50" />
+            <pre><div align="center">
 
-[![npm version](https://img.shields.io/npm/v/agentation)](https://www.npmjs.com/package/agentation)
-[![downloads](https://img.shields.io/npm/dm/agentation)](https://www.npmjs.com/package/agentation)
+# multi-agent-shogun
 
-**[Agentation](https://agentation.dev)** is an agent-agnostic visual feedback tool. Click elements on your page, add notes, and copy structured output that helps AI coding agents find the exact code you're referring to.
+**Command your AI army like a feudal warlord.**
 
-## Install
+Run 10 AI coding agents in parallel — **Claude Code, OpenAI Codex, GitHub Copilot, Kimi Code** — orchestrated through a samurai-inspired hierarchy with zero coordination overhead.
 
-```bash
-npm install agentation -D
+**Talk Coding, not Vibe Coding. Speak to your phone, AI executes.**
+
+[![GitHub Stars](https://img.shields.io/github/stars/yohey-w/multi-agent-shogun?style=social)](https://github.com/yohey-w/multi-agent-shogun)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![v3.0 Multi-CLI](https://img.shields.io/badge/v3.0-Multi--CLI_Support-ff6600?style=flat-square&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiI+PHRleHQgeD0iMCIgeT0iMTIiIGZvbnQtc2l6ZT0iMTIiPuKalTwvdGV4dD48L3N2Zz4=)](https://github.com/yohey-w/multi-agent-shogun)
+[![Shell](https://img.shields.io/badge/Shell%2FBash-100%25-green)]()
+
+[English](README.md) | [日本語](README_ja.md)
+
+</div>
+
+<!-- <p align="center">
+  <img src="assets/screenshots/tmux_multiagent_9panes.png" alt="multi-agent-shogun: 9 panes running in parallel" width="800">
+</p> -->
+
+<p align="center"><i>One Karo (manager) coordinating 8 Ashigaru (workers) — real session, no mock data.</i></p>
+
+---
+
+## What is this?
+
+**multi-agent-shogun** is a system that runs multiple AI coding CLI instances simultaneously, orchestrating them like a feudal Japanese army. Supports **Claude Code**, **OpenAI Codex**, **GitHub Copilot**, and **Kimi Code**.
+
+**Why use it?**
+- One command spawns 8 AI workers executing in parallel
+- Zero wait time — give your next order while tasks run in the background
+- AI remembers your preferences across sessions (Memory MCP)
+- Real-time progress on a dashboard
+
 ```
-
-## Usage
-
-```tsx
-import { Agentation } from 'agentation';
-
-function App() {
-  return (
-    <>
-      <YourApp />
-      <Agentation />
-    </>
-  );
-}
-```
-
-The toolbar appears in the bottom-right corner. Click to activate, then click any element to annotate it.
-
-## Features
-
-- **Click to annotate** – Click any element with automatic selector identification
-- **Text selection** – Select text to annotate specific content
-- **Multi-select** – Drag to select multiple elements at once
-- **Area selection** – Drag to annotate any region, even empty space
-- **Animation pause** – Freeze all animations (CSS, JS, videos) to capture specific states
-- **Structured output** – Copy markdown with selectors, positions, and context
-- **Dark/light mode** – Matches your preference or set manually
-- **Zero dependencies** – Pure CSS animations, no runtime libraries
-
-## How it works
-
-Agentation captures class names, selectors, and element positions so AI agents can `grep` for the exact code you're referring to. Instead of describing "the blue button in the sidebar," you give the agent `.sidebar > button.primary` and your feedback.
-
-## Requirements
-
-- React 18+
-- Desktop browser (mobile not supported)</pre>
+        You (上様 / The Lord)
+             │
+             ▼  Give orders
+      ┌─────────────┐
+      │   SHOGUN    │  ← Receives your command, delegates instantly
+      └──────┬──────┘
+             │  YAML + tmux
+      ┌──────▼──────┐
+      │    KARO     │  ← Distributes tasks to workers
+      └──────┬──────┘
+             │
+    ┌─┬─┬─┬─┴─┬─┬─┬─┐</pre>
         </div>
         <div class="section">
             <h3>补充说明</h3>
             <ul>
-                <li>文档完善度: 缺失或简单</li>
-                <li>测试覆盖度: 缺失或简单</li>
+                <li>文档完善度: 完整</li>
+                <li>测试覆盖度: 完整</li>
                 <li>示例丰富度: 缺失或简单</li>
             </ul>
         </div>
