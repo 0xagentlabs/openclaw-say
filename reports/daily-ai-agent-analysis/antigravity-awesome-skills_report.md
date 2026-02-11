@@ -4,15 +4,15 @@
 - **项目地址**: https://github.com/sickn33/antigravity-awesome-skills
 - **项目描述**: The Ultimate Collection of 700+ Agentic Skills for Claude Code/Antigravity/Cursor. Battle-tested, high-performance skills for AI agents including official skills from Anthropic and Vercel.
 - **主要语言**: Python
-- **星标数**: 8176
-- **复刻数**: 1690
-- **开放问题**: 1
+- **星标数**: 8307
+- **复刻数**: 1709
+- **开放问题**: 0
 - **许可证**: MIT
-- **最后更新**: 2026-02-10T08:56:48Z
+- **最后更新**: 2026-02-11T00:25:19Z
 - **主题标签**: agentic-skills, ai-agents, antigravity, autonomous-coding, claude-code, mcp, react-patterns, security-auditing
 
 ## 一句话介绍
-sickn33/antigravity-awesome-skills 是一个具备自动化能力的 Python 自主代理 / 任务自动化 项目，拥有 8176 个星标。
+sickn33/antigravity-awesome-skills 是一个具备自动化能力的 Python 自主代理 / 任务自动化 项目，拥有 8307 个星标。
 
 ## 核心亮点
 超高人气与社区认可度
@@ -62,10 +62,10 @@ sickn33/antigravity-awesome-skills 是一个具备自动化能力的 Python 自�
 ```
 
 ## 优势分析
-- 极高人气 (8176 ⭐)
-- 活跃社区 (>1690 复刻)
+- 极高人气 (8307 ⭐)
+- 活跃社区 (>1709 复刻)
 - 良好文档
-- 维护良好 (低开放问题数: 1)
+- 维护良好 (低开放问题数: 0)
 - 许可证清晰 (MIT)
 
 ## 潜在不足
@@ -74,9 +74,9 @@ sickn33/antigravity-awesome-skills 是一个具备自动化能力的 Python 自�
 
 ## README预览
 ```markdown
-# 🌌 Antigravity Awesome Skills: 713+ Agentic Skills for Claude Code, Gemini CLI, Cursor, Copilot & More
+# 🌌 Antigravity Awesome Skills: 715+ Agentic Skills for Claude Code, Gemini CLI, Cursor, Copilot & More
 
-> **The Ultimate Collection of 713+ Universal Agentic Skills for AI Coding Assistants — Claude Code, Gemini CLI, Codex CLI, Antigravity IDE, GitHub Copilot, Cursor, OpenCode, AdaL**
+> **The Ultimate Collection of 715+ Universal Agentic Skills for AI Coding Assistants — Claude Code, Gemini CLI, Codex CLI, Antigravity IDE, GitHub Copilot, Cursor, OpenCode, AdaL**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Claude Code](https://img.shields.io/badge/Claude%20Code-Anthropic-purple)](https://claude.ai)
@@ -92,7 +92,7 @@ sickn33/antigravity-awesome-skills 是一个具备自动化能力的 Python 自�
 
 If this project helps you, you can [support it here](https://buymeacoffee.com/sickn33) or simply ⭐ the repo.
 
-**Antigravity Awesome Skills** is a curated, battle-tested library of **713 high-performance agentic skills** designed to work seamlessly across all major AI coding assistants:
+**Antigravity Awesome Skills** is a curated, battle-tested library of **715 high-performance agentic skills** designed to work seamlessly across all major AI coding assistants:
 
 - 🟣 **Claude Code** (Anthropic CLI)
 - 🔵 **Gemini CLI** (Google DeepMind)
@@ -112,8 +112,9 @@ This repository provides essential skills to transform your AI assistant into a 
 - [🛠️ Installation](#installation)
 - [🧯 Troubleshooting](#troubleshooting)
 - [🎁 Curated Collections (Bundles)](#curated-collections)
+- [🧭 Antigravity Workflows](#antigravity-workflows)
 - [📦 Features & Categories](#features--categories)
-- [📚 Browse 713+ Skills](#browse-713-skills)
+- [📚 Browse 715+ Skills](#browse-715-skills)
 - [🤝 How to Contribute](#how-to-contribute)
 - [🤝 Community](#community)
 - [☕ Support the Project](#support-the-project)
@@ -122,8 +123,6 @@ This repository provides essential skills to transform your AI assistant into a 
 - [⚖️ License](#license)
 - [🌟 Star History](#star-history)
 - [🏷️ GitHub Topics](#github-topics)
-
----
 ```
 
 ## 补充说明
@@ -132,4 +131,4 @@ This repository provides essential skills to transform your AI assistant into a 
 - 示例丰富度: 缺失或简单
 
 ---
-*分析时间: 2026-02-10*
+*分析时间: 2026-02-11*

@@ -4,15 +4,15 @@
 - **项目地址**: https://github.com/callstackincubator/agent-skills
 - **项目描述**: A collection of agent-optimized React Native skills for AI coding assistants.
 - **主要语言**: null
-- **星标数**: 818
+- **星标数**: 824
 - **复刻数**: 42
-- **开放问题**: 4
+- **开放问题**: 3
 - **许可证**: MIT
-- **最后更新**: 2026-02-10T06:39:55Z
+- **最后更新**: 2026-02-11T00:25:44Z
 - **主题标签**: 
 
 ## 一句话介绍
-callstackincubator/agent-skills 是一个基于 null 的 对话式AI / 聊天机器人 项目，具有 818 个星标。
+callstackincubator/agent-skills 是一个基于 null 的 对话式AI / 聊天机器人 项目，具有 824 个星标。
 
 ## 核心亮点
 长期记忆管理
@@ -50,13 +50,16 @@ callstackincubator/agent-skills 是一个基于 null 的 对话式AI / 聊天机
 ./skills/react-native-best-practices
 ./skills/react-native-best-practices/agents
 ./skills/react-native-best-practices/references
+./skills/upgrading-react-native
+./skills/upgrading-react-native/agents
+./skills/upgrading-react-native/references
 ```
 
 ## 优势分析
-- 持续增长 (818 ⭐)
+- 持续增长 (824 ⭐)
 - 社区兴趣 (42 复刻)
 - 良好文档
-- 维护良好 (低开放问题数: 4)
+- 维护良好 (低开放问题数: 3)
 - 许可证清晰 (MIT)
 
 ## 潜在不足
@@ -75,6 +78,7 @@ A collection of agent-optimized skills for AI coding assistants. Skills provide 
 | -------------------------------------------------------------------- | ------------------------------------------------------- |
 | [react-native-best-practices](./skills/react-native-best-practices/) | React Native optimization best practices from Callstack |
 | [github](./skills/github/)                                           | GitHub workflow patterns for PRs, code review, branching |
+| [upgrading-react-native](./skills/upgrading-react-native/)           | React Native upgrade workflow: templates, dependencies, and common pitfalls |
 
 ## React Native Best Practices
 
@@ -113,8 +117,6 @@ claude --plugin-dir ./path/to/agent-skills
 Once installed, Claude will automatically use the React Native best practices skill when working on React Native projects.
 
 #### Use with Other AI Assistants
-
-All major AI coding assistants support the Agent Skills standard.
 ```
 
 ## 补充说明
@@ -123,4 +125,4 @@ All major AI coding assistants support the Agent Skills standard.
 - 示例丰富度: 缺失或简单
 
 ---
-*分析时间: 2026-02-10*
+*分析时间: 2026-02-11*

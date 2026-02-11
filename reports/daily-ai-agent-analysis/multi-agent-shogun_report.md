@@ -4,15 +4,15 @@
 - **项目地址**: https://github.com/yohey-w/multi-agent-shogun
 - **项目描述**: Samurai-inspired multi-agent system for Claude Code. Orchestrate parallel AI tasks via tmux with shogun → karo → ashigaru hierarchy.
 - **主要语言**: Shell
-- **星标数**: 797
-- **复刻数**: 176
-- **开放问题**: 3
+- **星标数**: 812
+- **复刻数**: 179
+- **开放问题**: 0
 - **许可证**: MIT
-- **最后更新**: 2026-02-10T08:53:26Z
+- **最后更新**: 2026-02-11T00:25:23Z
 - **主题标签**: ai-agent, anthropic, automation, claude-code, llm, multi-agent, parallel-processing, samurai, shogun, tmux
 
 ## 一句话介绍
-yohey-w/multi-agent-shogun 是一个具备自动化能力的 Shell 自主代理 / 任务自动化 项目，拥有 797 个星标。
+yohey-w/multi-agent-shogun 是一个具备自动化能力的 Shell 自主代理 / 任务自动化 项目，拥有 812 个星标。
 
 ## 核心亮点
 长期记忆管理
@@ -50,6 +50,8 @@ yohey-w/multi-agent-shogun 是一个具备自动化能力的 Shell 自主代理 
 ./docs
 ./images
 ./images/screenshots
+./images/screenshots/hero
+./images/screenshots/masked
 ./lib
 ./saytask
 ./scripts
@@ -59,11 +61,11 @@ yohey-w/multi-agent-shogun 是一个具备自动化能力的 Shell 自主代理 
 ```
 
 ## 优势分析
-- 持续增长 (797 ⭐)
-- 活跃社区 (>176 复刻)
+- 持续增长 (812 ⭐)
+- 活跃社区 (>179 复刻)
 - 良好文档
 - 测试覆盖
-- 维护良好 (低开放问题数: 3)
+- 维护良好 (低开放问题数: 0)
 - 许可证清晰 (MIT)
 
 ## 潜在不足
@@ -90,9 +92,14 @@ Run 10 AI coding agents in parallel — **Claude Code, OpenAI Codex, GitHub Copi
 
 </div>
 
-<!-- <p align="center">
-  <img src="assets/screenshots/tmux_multiagent_9panes.png" alt="multi-agent-shogun: 9 panes running in parallel" width="800">
-</p> -->
+<p align="center">
+  <img src="images/screenshots/hero/latest-translucent-20260210-190453.png" alt="Latest translucent command session in the Shogun pane" width="940">
+</p>
+
+<p align="center">
+  <img src="images/screenshots/hero/latest-translucent-20260208-084602.png" alt="Quick natural-language command in the Shogun pane" width="420">
+  <img src="images/company-creed-all-panes.png" alt="Karo and Ashigaru panes reacting in parallel" width="520">
+</p>
 
 <p align="center"><i>One Karo (manager) coordinating 8 Ashigaru (workers) — real session, no mock data.</i></p>
 
@@ -116,11 +123,6 @@ Run 10 AI coding agents in parallel — **Claude Code, OpenAI Codex, GitHub Copi
       │   SHOGUN    │  ← Receives your command, delegates instantly
       └──────┬──────┘
              │  YAML + tmux
-      ┌──────▼──────┐
-      │    KARO     │  ← Distributes tasks to workers
-      └──────┬──────┘
-             │
-    ┌─┬─┬─┬─┴─┬─┬─┬─┐
 ```
 
 ## 补充说明
@@ -129,4 +131,4 @@ Run 10 AI coding agents in parallel — **Claude Code, OpenAI Codex, GitHub Copi
 - 示例丰富度: 缺失或简单
 
 ---
-*分析时间: 2026-02-10*
+*分析时间: 2026-02-11*
