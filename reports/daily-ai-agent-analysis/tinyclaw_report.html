@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>项目分析报告: benjitaylor/agentation</title>
+    <title>项目分析报告: jlia0/tinyclaw</title>
     <style>
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 20px; background-color: #f8f9fa; }
         .container { max-width: 1200px; margin: 0 auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
@@ -30,28 +30,28 @@
 <body>
     <div class="container">
         <h1>项目分析报告</h1>
-        <h2>benjitaylor/agentation</h2>
-        <a href="https://github.com/benjitaylor/agentation" class="repo-link" target="_blank">访问项目主页</a>
+        <h2>jlia0/tinyclaw</h2>
+        <a href="https://github.com/jlia0/tinyclaw" class="repo-link" target="_blank">访问项目主页</a>
         <a href="../index.html" class="repo-link" style="background:#636e72;" target="_blank">返回项目聚合器首页</a>
         <div class="summary-box">
             <h3>项目摘要</h3>
-            <p><strong>一句话介绍:</strong> benjitaylor/agentation 是一个具备自动化能力的 TypeScript 自主代理 / 任务自动化 项目，拥有 2115 个星标。</p>
-            <p><strong>核心亮点:</strong> 检索增强生成(RAG)</p>
+            <p><strong>一句话介绍:</strong> jlia0/tinyclaw 是一个基于 Shell 的 对话式AI / 聊天机器人 项目，具有 853 个星标。</p>
+            <p><strong>核心亮点:</strong> 活跃的开发维护</p>
         </div>
         <div class="stats">
-            <div class="stat-card">⭐ <strong>星标</strong><br>2115</div>
-            <div class="stat-card">🔄 <strong>复刻</strong><br>154</div>
-            <div class="stat-card">📋 <strong>问题</strong><br>23</div>
-            <div class="stat-card">🏷️ <strong>语言</strong><br>TypeScript</div>
-            <div class="stat-card">📄 <strong>许可</strong><br>NOASSERTION</div>
+            <div class="stat-card">⭐ <strong>星标</strong><br>853</div>
+            <div class="stat-card">🔄 <strong>复刻</strong><br>115</div>
+            <div class="stat-card">📋 <strong>问题</strong><br>9</div>
+            <div class="stat-card">🏷️ <strong>语言</strong><br>Shell</div>
+            <div class="stat-card">📄 <strong>许可</strong><br>None</div>
         </div>
         <div class="section">
             <h3>项目描述</h3>
-            <p>The visual feedback tool for agents.</p>
+            <p>TinyClaw is a team of AI agents that acts as your 24/7 personal assistant</p>
         </div>
         <div class="section">
             <h3>应用领域</h3>
-            <p>自主代理 / 任务自动化</p>
+            <p>对话式AI / 聊天机器人</p>
         </div>
         <div class="section tech-stack">
             <h3>技术栈</h3>
@@ -63,7 +63,7 @@
         <div class="features">
             <h3 style="color:white;">核心特性</h3>
             <ul style="color:white;">
-                <li>检索增强生成(RAG)</li>
+                <li>未识别出核心特性</li>
             </ul>
         </div>
         <div class="execution-flow">
@@ -80,100 +80,91 @@
         </div>
         <div class="section">
             <h3>扩展能力</h3>
-            <p>高 - 具备专门的插件/扩展系统</p>
+            <p>低至中 - 代码中检测到扩展能力</p>
         </div>
         <div class="section">
             <h3>仓库结构</h3>
             <pre>.
+./bin
 ./.claude
-./mcp
-./mcp/src
-./mcp/src/server
-./package
-./package/example
-./package/example/public
-./package/example/src
-./package/hooks
-./package/src
-./package/src/components
-./package/src/utils
-./skills
-./skills/agentation
-./.vscode</pre>
+./.claude/hooks
+./docs
+./lib
+./scripts
+./src</pre>
         </div>
         <div class="strengths">
             <h3 style="color:white;">优势分析</h3>
             <ul style="color:white;">
-                <li>显著人气 (2115 ⭐)</li>
-                <li>活跃社区 (>154 复刻)</li>
-                <li>维护良好 (低开放问题数: 23)</li>
-                <li>许可证清晰 (NOASSERTION)</li>
+                <li>持续增长 (853 ⭐)</li>
+                <li>活跃社区 (>115 复刻)</li>
+                <li>良好文档</li>
+                <li>维护良好 (低开放问题数: 9)</li>
             </ul>
         </div>
         <div class="weaknesses">
             <h3 style="color:white;">潜在不足</h3>
             <ul style="color:white;">
-                <li>文档有限</li>
                 <li>缺少示例</li>
                 <li>无可见测试套件</li>
             </ul>
         </div>
         <div class="section">
             <h3>README预览</h3>
-            <pre><img src="./package/logo.svg" alt="Agentation" width="50" />
+            <pre># TinyClaw 🦞
 
-[![npm version](https://img.shields.io/npm/v/agentation)](https://www.npmjs.com/package/agentation)
-[![downloads](https://img.shields.io/npm/dm/agentation)](https://www.npmjs.com/package/agentation)
+**Multi-agent, multi-channel, 24/7 AI assistant**
 
-**[Agentation](https://agentation.dev)** is an agent-agnostic visual feedback tool. Click elements on your page, add notes, and copy structured output that helps AI coding agents find the exact code you're referring to.
+Run multiple AI agents simultaneously with isolated workspaces and conversation contexts. Route messages to specialized agents using simple `@agent_id` syntax.
 
-## Install
+## ✨ Features
+
+- ✅ **Multi-agent** - Run multiple isolated AI agents with specialized roles
+- ✅ **Multiple AI providers** - Anthropic Claude (Sonnet/Opus) and OpenAI (GPT/Codex)
+- ✅ **Multi-channel** - Discord, WhatsApp, and Telegram
+- ✅ **Parallel processing** - Agents process messages concurrently
+- ✅ **Persistent sessions** - Conversation context maintained across restarts
+- ✅ **File-based queue** - No race conditions, reliable message handling
+- ✅ **24/7 operation** - Runs in tmux for always-on availability
+
+## 🚀 Quick Start
+
+### Prerequisites
+
+- macOS or Linux
+- Node.js v14+
+- tmux
+- Bash 4.0+ (macOS: `brew install bash`)
+- [Claude Code CLI](https://claude.com/claude-code) (for Anthropic provider)
+- [Codex CLI](https://docs.openai.com/codex) (for OpenAI provider)
+
+### Installation
+
+**Option 1: One-line Install (Recommended)**
 
 ```bash
-npm install agentation -D
+curl -fsSL https://raw.githubusercontent.com/jlia0/tinyclaw/main/scripts/remote-install.sh | bash
 ```
 
-## Usage
+**Option 2: From Release**
 
-```tsx
-import { Agentation } from 'agentation';
-
-function App() {
-  return (
-    <>
-      <YourApp />
-      <Agentation />
-    </>
-  );
-}
+```bash
+wget https://github.com/jlia0/tinyclaw/releases/latest/download/tinyclaw-bundle.tar.gz
+tar -xzf tinyclaw-bundle.tar.gz
+cd tinyclaw && ./scripts/install.sh
 ```
 
-The toolbar appears in the bottom-right corner. Click to activate, then click any element to annotate it.
+**Option 3: From Source**
 
-## Features
-
-- **Click to annotate** – Click any element with automatic selector identification
-- **Text selection** – Select text to annotate specific content
-- **Multi-select** – Drag to select multiple elements at once
-- **Area selection** – Drag to annotate any region, even empty space
-- **Animation pause** – Freeze all animations (CSS, JS, videos) to capture specific states
-- **Structured output** – Copy markdown with selectors, positions, and context
-- **Dark/light mode** – Matches your preference or set manually
-- **Zero dependencies** – Pure CSS animations, no runtime libraries
-
-## How it works
-
-Agentation captures class names, selectors, and element positions so AI agents can `grep` for the exact code you're referring to. Instead of describing "the blue button in the sidebar," you give the agent `.sidebar > button.primary` and your feedback.
-
-## Requirements
-
-- React 18+
-- Desktop browser (mobile not supported)</pre>
+```bash
+git clone https://github.com/jlia0/tinyclaw.git
+cd tinyclaw && npm install && ./scripts/install.sh
+```</pre>
         </div>
         <div class="section">
             <h3>补充说明</h3>
             <ul>
-                <li>文档完善度: 缺失或简单</li>
+                <li>文档完善度: 完整</li>
                 <li>测试覆盖度: 缺失或简单</li>
                 <li>示例丰富度: 缺失或简单</li>
             </ul>

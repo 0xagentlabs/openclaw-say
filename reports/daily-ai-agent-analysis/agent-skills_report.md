@@ -4,15 +4,15 @@
 - **项目地址**: https://github.com/callstackincubator/agent-skills
 - **项目描述**: A collection of agent-optimized React Native skills for AI coding assistants.
 - **主要语言**: null
-- **星标数**: 837
-- **复刻数**: 43
-- **开放问题**: 4
+- **星标数**: 843
+- **复刻数**: 45
+- **开放问题**: 5
 - **许可证**: MIT
-- **最后更新**: 2026-02-11T21:09:20Z
+- **最后更新**: 2026-02-12T08:06:06Z
 - **主题标签**: 
 
 ## 一句话介绍
-callstackincubator/agent-skills 是一个基于 null 的 对话式AI / 聊天机器人 项目，具有 837 个星标。
+callstackincubator/agent-skills 是一个基于 null 的 对话式AI / 聊天机器人 项目，具有 843 个星标。
 
 ## 核心亮点
 长期记忆管理
@@ -56,10 +56,10 @@ callstackincubator/agent-skills 是一个基于 null 的 对话式AI / 聊天机
 ```
 
 ## 优势分析
-- 持续增长 (837 ⭐)
-- 社区兴趣 (43 复刻)
+- 持续增长 (843 ⭐)
+- 社区兴趣 (45 复刻)
 - 良好文档
-- 维护良好 (低开放问题数: 4)
+- 维护良好 (低开放问题数: 5)
 - 许可证清晰 (MIT)
 
 ## 潜在不足

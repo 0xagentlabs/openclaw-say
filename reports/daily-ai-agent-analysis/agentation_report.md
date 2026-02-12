@@ -4,15 +4,15 @@
 - **项目地址**: https://github.com/benjitaylor/agentation
 - **项目描述**: The visual feedback tool for agents.
 - **主要语言**: TypeScript
-- **星标数**: 2110
-- **复刻数**: 151
-- **开放问题**: 26
+- **星标数**: 2115
+- **复刻数**: 154
+- **开放问题**: 23
 - **许可证**: NOASSERTION
-- **最后更新**: 2026-02-11T20:37:00Z
+- **最后更新**: 2026-02-12T08:50:58Z
 - **主题标签**: ai, design, tools, ui
 
 ## 一句话介绍
-benjitaylor/agentation 是一个具备自动化能力的 TypeScript 自主代理 / 任务自动化 项目，拥有 2110 个星标。
+benjitaylor/agentation 是一个具备自动化能力的 TypeScript 自主代理 / 任务自动化 项目，拥有 2115 个星标。
 
 ## 核心亮点
 检索增强生成(RAG)
@@ -61,9 +61,9 @@ benjitaylor/agentation 是一个具备自动化能力的 TypeScript 自主代理
 ```
 
 ## 优势分析
-- 显著人气 (2110 ⭐)
-- 活跃社区 (>151 复刻)
-- 维护良好 (低开放问题数: 26)
+- 显著人气 (2115 ⭐)
+- 活跃社区 (>154 复刻)
+- 维护良好 (低开放问题数: 23)
 - 许可证清晰 (NOASSERTION)
 
 ## 潜在不足
