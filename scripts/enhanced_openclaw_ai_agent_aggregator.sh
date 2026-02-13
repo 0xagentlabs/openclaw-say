@@ -29,17 +29,87 @@ cd "$REPORT_DIR"
 
 echo "开始分析 $DATE 的顶级AI Agent项目..."
 
+# Clone the target repository FIRST so we have the history file
+if [ ! -d "$WORKSPACE_DIR" ]; then
+    git clone "https://github.com/$REPO_OWNER/$REPO_NAME.git" "$WORKSPACE_DIR"
+fi
+
+# Function to filter out recent projects
+filter_projects() {
+  local search_results_json=$1
+  local history_file="$WORKSPACE_DIR/reports/daily-ai-agent-analysis/history.json"
+  
+  # Ensure directory exists for history file
+  mkdir -p "$(dirname "$history_file")"
+
+  if [ ! -f "$history_file" ]; then
+    echo "[]" > "$history_file"
+  fi
+  
+  # Calculate date 3 days ago
+  local date_threshold=$(date -d '3 days ago' +%s)
+  
+  # Extract items from search results
+  local items=$(echo "$search_results_json" | jq -r '.items')
+  
+  # Filter using jq
+  echo "$items" | jq --arg threshold "$date_threshold" --slurpfile history "$history_file" '
+    # Flatten history projects from the last 3 days
+    ($history[0] | map(select((.date | strptime("%Y-%m-%d") | mktime) >= ($threshold | tonumber))) | map(.projects[]) | unique) as $recent_projects |
+    
+    # Filter current items
+    map(select(
+      .full_name as $name |
+      ($recent_projects | index($name) | not)
+    )) |
+    
+    # Take top 8
+    .[0:8] |
+    .[] |
+    "\(.full_name)|\(.html_url)|\(.description // "No description")|\(.language // "Unknown")|\(.stargazers_count)|\(.updated_at)|\(.topics | join(", "))"
+  ' | sed 's/"//g' # Clean up extra quotes if any remain from jq output
+}
+
 # Step 1: Search for top AI Agent repositories on GitHub
 echo "搜索顶级AI Agent项目..."
+
+# Calculate the start date for the search (e.g., created in the last 30 days)
+SEARCH_DATE=$(date -d '30 days ago' +%Y-%m-%d)
+
+# Fetch current search results (increased to 50 to allow for filtering)
 SEARCH_RESULTS=$(gh api \
   -H "Accept: application/vnd.github.v3+json" \
-  "search/repositories?q=ai+agent+created:>$(date -d '30 days ago' +%Y-%m-%d)&sort=stars&order=desc&per_page=8")
+  "search/repositories?q=ai+agent+created:>$SEARCH_DATE&sort=stars&order=desc&per_page=50")
 
-# Step 2: Process the search results
-TOP_REPOS=$(echo "$SEARCH_RESULTS" | jq -r '.items[0:8] | .[] | "\(.full_name)|\(.html_url)|\(.description)|\(.language)|\(.stargazers_count)|\(.updated_at)|\(.topics | join(", "))"')
+# Step 2: Process and Filter results
+echo "过滤最近3天已展示的项目..."
 
-echo "找到顶级项目："
+# Ensure WORKSPACE_DIR exists (it should, from the git clone above)
+TOP_REPOS=$(filter_projects "$SEARCH_RESULTS")
+
+# If filtering removed everything (unlikely with 50 results), fallback to top 8 raw
+if [ -z "$TOP_REPOS" ]; then
+    echo "警告: 过滤后无剩余项目，回退到原始Top 8..."
+    TOP_REPOS=$(echo "$SEARCH_RESULTS" | jq -r '.items[0:8] | .[] | "\(.full_name)|\(.html_url)|\(.description // "No description")|\(.language // "Unknown")|\(.stargazers_count)|\(.updated_at)|\(.topics | join(", "))"')
+fi
+
+echo "找到顶级项目 (已过滤):"
 echo "$TOP_REPOS"
+
+# Update history file with today's selection
+HISTORY_FILE="$WORKSPACE_DIR/reports/daily-ai-agent-analysis/history.json"
+# Parse the project names from the current selection
+CURRENT_PROJECTS_JSON=$(echo "$TOP_REPOS" | cut -d"|" -f1 | jq -R . | jq -s .)
+
+# Load existing history or create empty array, then append new entry
+if [ -f "$HISTORY_FILE" ]; then
+  # Read existing, add new, sort by date desc, keep top 30
+  jq --arg date "$DATE" --argjson new_projects "$CURRENT_PROJECTS_JSON" \
+    '. + [{"date": $date, "projects": $new_projects}] | sort_by(.date) | reverse | .[0:30]' \
+    "$HISTORY_FILE" > "${HISTORY_FILE}.tmp" && mv "${HISTORY_FILE}.tmp" "$HISTORY_FILE"
+else
+  echo "[{\"date\": \"$DATE\", \"projects\": $CURRENT_PROJECTS_JSON}]" > "$HISTORY_FILE"
+fi
 
 # Function to analyze a single repository
 analyze_repo() {
