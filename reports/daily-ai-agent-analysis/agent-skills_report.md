@@ -1,30 +1,31 @@
-# 项目分析报告: callstackincubator/agent-skills
+# 项目分析报告: supabase/agent-skills
 
 ## 项目概览
-- **项目地址**: https://github.com/callstackincubator/agent-skills
-- **项目描述**: A collection of agent-optimized React Native skills for AI coding assistants.
-- **主要语言**: null
-- **星标数**: 843
-- **复刻数**: 45
-- **开放问题**: 5
+- **项目地址**: https://github.com/supabase/agent-skills
+- **项目描述**: Agent Skills to help developers using AI agents with Supabase
+- **主要语言**: TypeScript
+- **星标数**: 1274
+- **复刻数**: 72
+- **开放问题**: 10
 - **许可证**: MIT
-- **最后更新**: 2026-02-12T08:06:06Z
-- **主题标签**: 
+- **最后更新**: 2026-02-12T22:02:14Z
+- **主题标签**: ai, ai-agents, skills, supabase
 
 ## 一句话介绍
-callstackincubator/agent-skills 是一个基于 null 的 对话式AI / 聊天机器人 项目，具有 843 个星标。
+supabase/agent-skills 是一个具备自动化能力的 TypeScript 自主代理 / 任务自动化 项目，拥有 1274 个星标。
 
 ## 核心亮点
-长期记忆管理
+强大的扩展性
 
 ## 应用领域
-对话式AI / 聊天机器人
+自主代理 / 任务自动化
 
 ## 技术栈
-- 技术栈未明确指定
+- JavaScript/Node.js
+- 依赖包: 
 
 ## 核心特性
-- 长期记忆管理
+- 未识别出核心特性
 
 ## 扩展能力
 高 - 具备专门的插件/扩展系统
@@ -42,87 +43,84 @@ callstackincubator/agent-skills 是一个基于 null 的 对话式AI / 聊天机
 ## 仓库结构
 ```text
 .
-./.claude
-./.claude/skills
-./.claude/skills/validate-skills
-./docs
+./assets
+./packages
+./packages/skills-build
+./packages/skills-build/src
 ./skills
-./skills/react-native-best-practices
-./skills/react-native-best-practices/agents
-./skills/react-native-best-practices/references
-./skills/upgrading-react-native
-./skills/upgrading-react-native/agents
-./skills/upgrading-react-native/references
+./skills/supabase-postgres-best-practices
+./skills/supabase-postgres-best-practices/references
 ```
 
 ## 优势分析
-- 持续增长 (843 ⭐)
-- 社区兴趣 (45 复刻)
-- 良好文档
-- 维护良好 (低开放问题数: 5)
+- 显著人气 (1274 ⭐)
+- 社区兴趣 (72 复刻)
+- 测试覆盖
+- 维护良好 (低开放问题数: 10)
 - 许可证清晰 (MIT)
 
 ## 潜在不足
+- 文档有限
 - 缺少示例
-- 无可见测试套件
 
 ## README预览
 ```markdown
-# Agent Skills
+![Supabase Agent Skills](assets/og.png)
 
-A collection of agent-optimized skills for AI coding assistants. Skills provide structured, actionable instructions for domain-specific tasks.
+# Supabase Agent Skills
+
+
+Agent Skills to help developers using AI agents with Supabase. Agent Skills are
+folders of instructions, scripts, and resources that agents like Claude Code,
+Cursor, Github Copilot, etc... can discover and use to do things more accurately
+and efficiently.
+
+The skills in this repo follow the [Agent Skills](https://agentskills.io/)
+format.
+
+## Installation
+
+```bash
+npx skills add supabase/agent-skills
+```
+
+### Claude Code Plugin
+
+You can also install the skills in this repo as Claude Code plugins
+
+```bash
+/plugin marketplace add supabase/agent-skills
+/plugin install postgres-best-practices@supabase-agent-skills
+```
 
 ## Available Skills
 
-| Skill                                                                | Description                                             |
-| -------------------------------------------------------------------- | ------------------------------------------------------- |
-| [react-native-best-practices](./skills/react-native-best-practices/) | React Native optimization best practices from Callstack |
-| [github](./skills/github/)                                           | GitHub workflow patterns for PRs, code review, branching |
-| [upgrading-react-native](./skills/upgrading-react-native/)           | React Native upgrade workflow: templates, dependencies, and common pitfalls |
+<details>
+<summary><strong>supabase-postgres-best-practices</strong></summary>
 
-## React Native Best Practices
+Postgres performance optimization guidelines from Supabase. Contains references
+across 8 categories, prioritized by impact.
 
-Performance optimization skills based on [**The Ultimate Guide to React Native Optimization**](https://www.callstack.com/ebooks/the-ultimate-guide-to-react-native-optimization) by [Callstack](https://www.callstack.com/).
+**Use when:**
 
-Covers:
+- Writing SQL queries or designing schemas
+- Implementing indexes or query optimization
+- Reviewing database performance issues
+- Configuring connection pooling or scaling
+- Working with Row-Level Security (RLS)
 
-- **JavaScript/React**: Profiling, FPS, re-renders, lists, state management, animations
-- **Native**: iOS/Android profiling, TTI, memory management, Turbo Modules
-- **Bundling**: Bundle analysis, tree shaking, R8, app size optimization
+**Categories covered:**
 
-### Quick Start
-
-#### Install as Claude Code Plugin
-
-**1. Add the marketplace:**
-```bash
-/plugin marketplace add callstackincubator/agent-skills
-```
-
-**2. Install the skill:**
-```bash
-/plugin install react-native-best-practices@callstack-agent-skills
-```
-
-Or use the interactive menu:
-```bash
-/plugin menu
-```
-
-**For local development:**
-```bash
-claude --plugin-dir ./path/to/agent-skills
-```
-
-Once installed, Claude will automatically use the React Native best practices skill when working on React Native projects.
-
-#### Use with Other AI Assistants
+- Query Performance (Critical)
+- Connection Management (Critical)
+- Schema Design (High)
+- Concurrency & Locking (Medium-High)
 ```
 
 ## 补充说明
-- 文档完善度: 完整
-- 测试覆盖度: 缺失或简单
+- 文档完善度: 缺失或简单
+- 测试覆盖度: 完整
 - 示例丰富度: 缺失或简单
 
 ---
-*分析时间: 2026-02-12*
+*分析时间: 2026-02-13*

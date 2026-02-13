@@ -3,16 +3,16 @@
 ## 项目概览
 - **项目地址**: https://github.com/jlia0/tinyclaw
 - **项目描述**: TinyClaw is a team of AI agents that acts as your 24/7 personal assistant
-- **主要语言**: Shell
-- **星标数**: 853
-- **复刻数**: 115
-- **开放问题**: 9
+- **主要语言**: TypeScript
+- **星标数**: 899
+- **复刻数**: 123
+- **开放问题**: 10
 - **许可证**: None
-- **最后更新**: 2026-02-12T08:59:38Z
+- **最后更新**: 2026-02-13T00:27:29Z
 - **主题标签**: 
 
 ## 一句话介绍
-jlia0/tinyclaw 是一个基于 Shell 的 对话式AI / 聊天机器人 项目，具有 853 个星标。
+jlia0/tinyclaw 是一个基于 TypeScript 的 对话式AI / 聊天机器人 项目，具有 899 个星标。
 
 ## 核心亮点
 活跃的开发维护
@@ -43,20 +43,24 @@ jlia0/tinyclaw 是一个基于 Shell 的 对话式AI / 聊天机器人 项目，
 ## 仓库结构
 ```text
 .
+./.agents
+./.agents/skills
+./.agents/skills/skill-creator
 ./bin
-./.claude
-./.claude/hooks
 ./docs
 ./lib
 ./scripts
 ./src
+./src/channels
+./src/lib
+./src/visualizer
 ```
 
 ## 优势分析
-- 持续增长 (853 ⭐)
-- 活跃社区 (>115 复刻)
+- 持续增长 (899 ⭐)
+- 活跃社区 (>123 复刻)
 - 良好文档
-- 维护良好 (低开放问题数: 9)
+- 维护良好 (低开放问题数: 10)
 
 ## 潜在不足
 - 缺少示例
@@ -73,9 +77,11 @@ Run multiple AI agents simultaneously with isolated workspaces and conversation 
 ## ✨ Features
 
 - ✅ **Multi-agent** - Run multiple isolated AI agents with specialized roles
+- ✅ **Team collaboration** - Agents hand off work to teammates via chain execution and fan-out
 - ✅ **Multiple AI providers** - Anthropic Claude (Sonnet/Opus) and OpenAI (GPT/Codex)
 - ✅ **Multi-channel** - Discord, WhatsApp, and Telegram
 - ✅ **Parallel processing** - Agents process messages concurrently
+- ✅ **Live TUI dashboard** - Real-time team visualizer for monitoring agent chains
 - ✅ **Persistent sessions** - Conversation context maintained across restarts
 - ✅ **File-based queue** - No race conditions, reliable message handling
 - ✅ **24/7 operation** - Runs in tmux for always-on availability
@@ -113,7 +119,6 @@ cd tinyclaw && ./scripts/install.sh
 git clone https://github.com/jlia0/tinyclaw.git
 cd tinyclaw && npm install && ./scripts/install.sh
 ```
-```
 
 ## 补充说明
 - 文档完善度: 完整
@@ -121,4 +126,4 @@ cd tinyclaw && npm install && ./scripts/install.sh
 - 示例丰富度: 缺失或简单
 
 ---
-*分析时间: 2026-02-12*
+*分析时间: 2026-02-13*
