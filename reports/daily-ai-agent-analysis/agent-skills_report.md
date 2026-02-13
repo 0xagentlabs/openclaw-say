@@ -4,15 +4,15 @@
 - **项目地址**: https://github.com/supabase/agent-skills
 - **项目描述**: Agent Skills to help developers using AI agents with Supabase
 - **主要语言**: TypeScript
-- **星标数**: 1274
-- **复刻数**: 72
+- **星标数**: 1286
+- **复刻数**: 73
 - **开放问题**: 10
 - **许可证**: MIT
-- **最后更新**: 2026-02-12T22:02:14Z
+- **最后更新**: 2026-02-13T08:40:18Z
 - **主题标签**: ai, ai-agents, skills, supabase
 
 ## 一句话介绍
-supabase/agent-skills 是一个具备自动化能力的 TypeScript 自主代理 / 任务自动化 项目，拥有 1274 个星标。
+supabase/agent-skills 是一个具备自动化能力的 TypeScript 自主代理 / 任务自动化 项目，拥有 1286 个星标。
 
 ## 核心亮点
 强大的扩展性
@@ -53,8 +53,8 @@ supabase/agent-skills 是一个具备自动化能力的 TypeScript 自主代理 
 ```
 
 ## 优势分析
-- 显著人气 (1274 ⭐)
-- 社区兴趣 (72 复刻)
+- 显著人气 (1286 ⭐)
+- 社区兴趣 (73 复刻)
 - 测试覆盖
 - 维护良好 (低开放问题数: 10)
 - 许可证清晰 (MIT)
