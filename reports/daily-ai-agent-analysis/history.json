@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026-02-14",
+    "projects": [
+      "rivet-dev/sandbox-agent",
+      "luccast/crabwalk",
+      "snwfdhmp/awesome-ralph",
+      "tinyfish-io/tinyfish-cookbook",
+      "run-bigpig/jcp",
+      "BankrBot/openclaw-skills",
+      "six2dez/burp-ai-agent",
+      "WordPress/agent-skills"
+    ]
+  },
+  {
     "date": "2026-02-13",
     "projects": [
       "coreyhaines31/marketingskills",
