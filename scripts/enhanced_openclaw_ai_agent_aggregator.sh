@@ -1120,6 +1120,23 @@ git commit -m "添加每日AI Agent项目聚合分析报告 $DATE - 增强版UI"
 # Push to the repository
 git push origin main
 
+# Step 6: Deploy to Root (Fix for Issue #9)
+# Copy the aggregator index to the root index.html to make it the landing page
+# We need to adjust the relative links to point to the reports directory
+ROOT_INDEX="$WORKSPACE_DIR/index.html"
+sed 's|href="./|href="reports/daily-ai-agent-analysis/|g' "$WORKSPACE_DIR/reports/daily-ai-agent-analysis/index.html" > "$ROOT_INDEX"
+
+# Also need to fix the analysis link which might not have ./ prefix in some contexts, but our script used ./
+# Check if there are other links needing fix.
+# The script uses: href="./${repo_name}_report.html" and href="./analysis-$DATE.html"
+# The sed above handles these.
+
+# Commit the root index change
+cd "$WORKSPACE_DIR"
+git add index.html
+git commit -m "Deploy: Update root index.html with latest aggregator content" || echo "Root index already up to date"
+git push origin main
+
 echo "详细报告已生成并成功上传！"
 echo "项目聚合器首页: https://0xagentlabs.github.io/openclaw-say/reports/daily-ai-agent-analysis/index.html"
 echo "今日报告: https://0xagentlabs.github.io/openclaw-say/reports/daily-ai-agent-analysis/analysis-$DATE.html"
