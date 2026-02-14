@@ -1375,8 +1375,6 @@
                 });
             }
 
-            elements.dateInput.value = current;
-
             // 更新导航按钮状态
             const hasPrev = state.availableDates.length === 0 || state.availableDates.includes(getOffsetDate(current, -1));
             const hasNext = current !== today && (state.availableDates.length === 0 || state.availableDates.includes(getOffsetDate(current, 1)));
