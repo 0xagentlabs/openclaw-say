@@ -1,18 +1,18 @@
-# 项目分析报告: WordPress/agent-skills
+# 项目分析报告: supabase/agent-skills
 
 ## 项目概览
-- **项目地址**: https://github.com/WordPress/agent-skills
-- **项目描述**: Expert-level WordPress knowledge for AI coding assistants - blocks, themes, plugins, and best practices
-- **主要语言**: JavaScript
-- **星标数**: 601
-- **复刻数**: 82
-- **开放问题**: 13
-- **许可证**: NOASSERTION
-- **最后更新**: 2026-02-14T00:19:14Z
-- **主题标签**: 
+- **项目地址**: https://github.com/supabase/agent-skills
+- **项目描述**: Agent Skills to help developers using AI agents with Supabase
+- **主要语言**: TypeScript
+- **星标数**: 1309
+- **复刻数**: 75
+- **开放问题**: 6
+- **许可证**: MIT
+- **最后更新**: 2026-02-14T05:56:05Z
+- **主题标签**: ai, ai-agents, skills, supabase
 
 ## 一句话介绍
-WordPress/agent-skills 是一个具备自动化能力的 JavaScript 自主代理 / 任务自动化 项目，拥有 601 个星标。
+supabase/agent-skills 是一个具备自动化能力的 TypeScript 自主代理 / 任务自动化 项目，拥有 1309 个星标。
 
 ## 核心亮点
 强大的扩展性
@@ -21,7 +21,8 @@ WordPress/agent-skills 是一个具备自动化能力的 JavaScript 自主代理
 自主代理 / 任务自动化
 
 ## 技术栈
-- 技术栈未明确指定
+- JavaScript/Node.js
+- 依赖包: 
 
 ## 核心特性
 - 未识别出核心特性
@@ -42,92 +43,83 @@ WordPress/agent-skills 是一个具备自动化能力的 JavaScript 自主代理
 ## 仓库结构
 ```text
 .
+./assets
+./packages
+./packages/skills-build
+./packages/skills-build/src
 ./skills
-./skills/wordpress-router
-./skills/wordpress-router/references
-./skills/wp-block-development
-./skills/wp-block-development/references
-./skills/wp-block-development/scripts
-./skills/wp-interactivity-api
-./skills/wp-performance
-./skills/wp-performance/references
-./skills/wp-performance/scripts
-./skills/wp-phpstan
-./skills/wp-phpstan/references
-./skills/wp-phpstan/scripts
-./skills/wp-wpcli-and-ops
-./skills/wp-wpcli-and-ops/references
-./skills/wp-wpcli-and-ops/scripts
+./skills/supabase-postgres-best-practices
+./skills/supabase-postgres-best-practices/references
 ```
 
 ## 优势分析
-- 持续增长 (601 ⭐)
-- 社区兴趣 (82 复刻)
-- 良好文档
-- 维护良好 (低开放问题数: 13)
-- 许可证清晰 (NOASSERTION)
+- 显著人气 (1309 ⭐)
+- 社区兴趣 (75 复刻)
+- 测试覆盖
+- 维护良好 (低开放问题数: 6)
+- 许可证清晰 (MIT)
 
 ## 潜在不足
+- 文档有限
 - 缺少示例
-- 无可见测试套件
 
 ## README预览
 ```markdown
-# Agent Skills for WordPress
+![Supabase Agent Skills](assets/og.png)
 
-**Teach AI coding assistants how to build WordPress the right way.**
+# Supabase Agent Skills
 
-Agent Skills are portable bundles of instructions, checklists, and scripts that help AI assistants (Claude, Copilot, Codex, Cursor, etc.) understand WordPress development patterns, avoid common mistakes, and follow best practices.
 
-> **AI Authorship Disclosure:** These skills were generated using GPT-5.2 Codex (High Reasoning) from official Gutenberg and WordPress documentation, then reviewed and edited by WordPress contributors. We tested skills with AI assistants and iterated based on results. This is v1, and skills will improve as the community uses them and contributes fixes. See [docs/ai-authorship.md](docs/ai-authorship.md) for details. ([WordPress AI Guidelines](https://make.wordpress.org/ai/handbook/ai-guidelines/))
+Agent Skills to help developers using AI agents with Supabase. Agent Skills are
+folders of instructions, scripts, and resources that agents like Claude Code,
+Cursor, Github Copilot, etc... can discover and use to do things more accurately
+and efficiently.
 
-## Why Agent Skills?
+The skills in this repo follow the [Agent Skills](https://agentskills.io/)
+format.
 
-AI coding assistants are powerful, but they often:
-- Generate outdated WordPress patterns (pre-Gutenberg, pre-block themes)
-- Miss critical security considerations in plugin development
-- Skip proper block deprecations, causing "Invalid block" errors
-- Ignore existing tooling in your repo
+## Installation
 
-Agent Skills solve this by giving AI assistants **expert-level WordPress knowledge** in a format they can actually use.
+```bash
+npx skills add supabase/agent-skills
+```
+
+### Claude Code Plugin
+
+You can also install the skills in this repo as Claude Code plugins
+
+```bash
+/plugin marketplace add supabase/agent-skills
+/plugin install postgres-best-practices@supabase-agent-skills
+```
 
 ## Available Skills
 
-| Skill | What it teaches |
-|-------|-----------------|
-| **wordpress-router** | Classifies WordPress repos and routes to the right workflow |
-| **wp-project-triage** | Detects project type, tooling, and versions automatically |
-| **wp-block-development** | Gutenberg blocks: `block.json`, attributes, rendering, deprecations |
-| **wp-block-themes** | Block themes: `theme.json`, templates, patterns, style variations |
-| **wp-plugin-development** | Plugin architecture, hooks, settings API, security |
-| **wp-rest-api** | REST API routes/endpoints, schema, auth, and response shaping |
-| **wp-interactivity-api** | Frontend interactivity with `data-wp-*` directives and stores |
-| **wp-abilities-api** | Capability-based permissions and REST API authentication |
-| **wp-wpcli-and-ops** | WP-CLI commands, automation, multisite, search-replace |
-| **wp-performance** | Profiling, caching, database optimization, Server-Timing |
-| **wp-phpstan** | PHPStan static analysis for WordPress projects (config, baselines, WP-specific typing) |
-| **wp-playground** | WordPress Playground for instant local environments |
-| **wpds** | WordPress Design System |
+<details>
+<summary><strong>supabase-postgres-best-practices</strong></summary>
 
-## Quick Start
+Postgres performance optimization guidelines from Supabase. Contains references
+across 8 categories, prioritized by impact.
 
-### Install globally for Claude Code
+**Use when:**
 
-```bash
-# Clone agent-skills
-git clone https://github.com/WordPress/agent-skills.git
-cd agent-skills
+- Writing SQL queries or designing schemas
+- Implementing indexes or query optimization
+- Reviewing database performance issues
+- Configuring connection pooling or scaling
+- Working with Row-Level Security (RLS)
 
-# Build the distribution
-node shared/scripts/skillpack-build.mjs --clean
+**Categories covered:**
 
-# Install all skills globally (available across all projects)
-node shared/scripts/skillpack-install.mjs --global
+- Query Performance (Critical)
+- Connection Management (Critical)
+- Schema Design (High)
+- Concurrency & Locking (Medium-High)
 ```
 
 ## 补充说明
-- 文档完善度: 完整
-- 测试覆盖度: 缺失或简单
+- 文档完善度: 缺失或简单
+- 测试覆盖度: 完整
 - 示例丰富度: 缺失或简单
 
 ---

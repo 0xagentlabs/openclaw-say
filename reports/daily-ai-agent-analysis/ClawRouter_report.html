@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>项目分析报告: AvdLee/SwiftUI-Agent-Skill</title>
+    <title>项目分析报告: BlockRunAI/ClawRouter</title>
     <style>
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 20px; background-color: #f8f9fa; }
         .container { max-width: 1200px; margin: 0 auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
@@ -30,24 +30,24 @@
 <body>
     <div class="container">
         <h1>项目分析报告</h1>
-        <h2>AvdLee/SwiftUI-Agent-Skill</h2>
-        <a href="https://github.com/AvdLee/SwiftUI-Agent-Skill" class="repo-link" target="_blank">访问项目主页</a>
+        <h2>BlockRunAI/ClawRouter</h2>
+        <a href="https://github.com/BlockRunAI/ClawRouter" class="repo-link" target="_blank">访问项目主页</a>
         <a href="../index.html" class="repo-link" style="background:#636e72;" target="_blank">返回项目聚合器首页</a>
         <div class="summary-box">
             <h3>项目摘要</h3>
-            <p><strong>一句话介绍:</strong> AvdLee/SwiftUI-Agent-Skill 是一个具备自动化能力的 null 自主代理 / 任务自动化 项目，拥有 1447 个星标。</p>
-            <p><strong>核心亮点:</strong> 活跃的开发维护</p>
+            <p><strong>一句话介绍:</strong> BlockRunAI/ClawRouter 是一个具备自动化能力的 TypeScript 自主代理 / 任务自动化 项目，拥有 2390 个星标。</p>
+            <p><strong>核心亮点:</strong> 强大的扩展性</p>
         </div>
         <div class="stats">
-            <div class="stat-card">⭐ <strong>星标</strong><br>1447</div>
-            <div class="stat-card">🔄 <strong>复刻</strong><br>70</div>
-            <div class="stat-card">📋 <strong>问题</strong><br>3</div>
-            <div class="stat-card">🏷️ <strong>语言</strong><br>null</div>
+            <div class="stat-card">⭐ <strong>星标</strong><br>2390</div>
+            <div class="stat-card">🔄 <strong>复刻</strong><br>244</div>
+            <div class="stat-card">📋 <strong>问题</strong><br>9</div>
+            <div class="stat-card">🏷️ <strong>语言</strong><br>TypeScript</div>
             <div class="stat-card">📄 <strong>许可</strong><br>MIT</div>
         </div>
         <div class="section">
             <h3>项目描述</h3>
-            <p>Add expert SwiftUI Best Practices guidance to your AI coding tool (Agent Skills open format).</p>
+            <p>The agent-native LLM router powering OpenClaw — by BlockRun</p>
         </div>
         <div class="section">
             <h3>应用领域</h3>
@@ -56,7 +56,8 @@
         <div class="section tech-stack">
             <h3>技术栈</h3>
             <ul>
-                <li>技术栈未明确指定</li>
+                <li>JavaScript/Node.js</li>
+                <li>依赖包: "openai",, "anthropic",</li>
             </ul>
         </div>
         <div class="features">
@@ -79,90 +80,97 @@
         </div>
         <div class="section">
             <h3>扩展能力</h3>
-            <p>低至中 - 代码中检测到扩展能力</p>
+            <p>高 - 具备专门的插件/扩展系统</p>
         </div>
         <div class="section">
             <h3>仓库结构</h3>
             <pre>.
-./.claude-plugin
-./swiftui-expert-skill
-./swiftui-expert-skill/references</pre>
+./assets
+./docs
+./docs/plans
+./scripts
+./skills
+./skills/clawrouter
+./src
+./src/compression
+./src/compression/layers
+./src/router</pre>
         </div>
         <div class="strengths">
             <h3 style="color:white;">优势分析</h3>
             <ul style="color:white;">
-                <li>显著人气 (1447 ⭐)</li>
-                <li>社区兴趣 (70 复刻)</li>
-                <li>维护良好 (低开放问题数: 3)</li>
+                <li>显著人气 (2390 ⭐)</li>
+                <li>活跃社区 (>244 复刻)</li>
+                <li>良好文档</li>
+                <li>测试覆盖</li>
+                <li>维护良好 (低开放问题数: 9)</li>
                 <li>许可证清晰 (MIT)</li>
             </ul>
         </div>
         <div class="weaknesses">
             <h3 style="color:white;">潜在不足</h3>
             <ul style="color:white;">
-                <li>文档有限</li>
                 <li>缺少示例</li>
-                <li>无可见测试套件</li>
             </ul>
         </div>
         <div class="section">
             <h3>README预览</h3>
-            <pre># SwiftUI Expert Skill
+            <pre>![ClawRouter Banner](assets/banner.png)
 
-Expert guidance for any AI coding tool that supports the [Agent Skills open format](https://agentskills.io/home) — modern SwiftUI APIs, state management, performance, and iOS 26+ Liquid Glass adoption.
+<div align="center">
 
-This repository distills practical SwiftUI best practices into actionable, concise references for agents and code review workflows.
+Route every request to the cheapest model that can handle it.
+One wallet, 30+ models, zero API keys.
 
-## Who this is for
-- Teams adopting modern SwiftUI APIs who want quick, correct defaults
-- Developers reviewing or refactoring SwiftUI views and data flow
-- Anyone shipping performant lists, scrolling, sheets, and navigation in SwiftUI
+[![npm](https://img.shields.io/npm/v/@blockrun/clawrouter.svg)](https://npmjs.com/package/@blockrun/clawrouter)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.7-blue.svg)](https://typescriptlang.org)
+[![Node](https://img.shields.io/badge/node-%E2%89%A520-brightgreen.svg)](https://nodejs.org)
+[![USDC Hackathon Winner](https://img.shields.io/badge/🏆_USDC_Hackathon-Agentic_Commerce_Winner-gold)](https://x.com/USDC/status/2021625822294216977)
 
-## See also my other skills:
-- [Swift Concurrency Expert](https://github.com/AvdLee/Swift-Concurrency-Agent-Skill)
-- [Core Data Expert](https://github.com/AvdLee/Core-Data-Agent-Skill)
+[Docs](https://blockrun.ai/docs) &middot; [Models](https://blockrun.ai/models) &middot; [vs OpenRouter](docs/vs-openrouter.md) &middot; [Configuration](docs/configuration.md) &middot; [Features](docs/features.md) &middot; [Troubleshooting](docs/troubleshooting.md) &middot; [Telegram](https://t.me/blockrunAI) &middot; [X](https://x.com/BlockRunAI)
 
-## How to Use This Skill
+**Winner — Agentic Commerce Track** at the [USDC AI Agent Hackathon](https://x.com/USDC/status/2021625822294216977)<br>
+_The world's first hackathon run entirely by AI agents, powered by USDC_
 
-### Option A: Using skills.sh (recommended)
-Install this skill with a single command:
+</div>
 
-```bash
-npx skills add https://github.com/avdlee/swiftui-agent-skill --skill swiftui-expert-skill
+---
+
+```
+"What is 2+2?"            → NVIDIA Kimi     $0.001/M   saved ~100%
+"Summarize this article"  → Grok Code Fast  $1.50/M    saved 94%
+"Build a React component" → Gemini 2.5 Pro  $10.00/M   best balance
+"Prove this theorem"      → Grok 4.1 Fast   $0.50/M    reasoning
+"Run 50 parallel searches"→ Kimi K2.5       $2.40/M    agentic swarm
 ```
 
-For more information, [visit the skills.sh platform page](https://skills.sh/avdlee/swiftui-agent-skill/swiftui-expert-skill).
+## Why ClawRouter?
 
-Then use the skill in your AI agent, for example:
-> Use the swiftui expert skill and review the current SwiftUI code for state-management and modern API improvements
+- **4 routing profiles** — auto (balanced), eco (95.9-100% savings), premium (best quality), free (zero cost)
+- **100% local routing** — 15-dimension weighted scoring runs on your machine in <1ms
+- **Zero external calls** — no API calls for routing decisions, ever
+- **30+ models** — OpenAI, Anthropic, Google, DeepSeek, xAI, Moonshot through one wallet
+- **x402 micropayments** — pay per request with USDC on Base, no API keys
+- **Open source** — MIT licensed, fully inspectable routing logic
 
-### Option B: Claude Code Plugin
+### Ask Your OpenClaw How ClawRouter Saves You Money
 
-#### Personal Usage
-To install this Skill for your personal use in Claude Code:
+<img src="docs/clawrouter-savings.png" alt="ClawRouter savings explanation" width="600">
 
-1. Add the marketplace:
+---
 
-```bash
-/plugin marketplace add AvdLee/SwiftUI-Agent-Skill
-```
+## Quick Start (2 mins)
 
-2. Install the Skill:
+**Inspired by Andreas** — we've updated our installation script:
 
-```bash
-/plugin install swiftui-expert@swiftui-expert-skill
-```
-
-#### Project Configuration
-To automatically provide this Skill to everyone working in a repository, configure the repository's `.claude/settings.json`:
-
-```json</pre>
+```bash</pre>
         </div>
         <div class="section">
             <h3>补充说明</h3>
             <ul>
-                <li>文档完善度: 缺失或简单</li>
-                <li>测试覆盖度: 缺失或简单</li>
+                <li>文档完善度: 完整</li>
+                <li>测试覆盖度: 完整</li>
                 <li>示例丰富度: 缺失或简单</li>
             </ul>
         </div>

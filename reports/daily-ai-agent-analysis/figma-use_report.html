@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>项目分析报告: AvdLee/SwiftUI-Agent-Skill</title>
+    <title>项目分析报告: dannote/figma-use</title>
     <style>
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 20px; background-color: #f8f9fa; }
         .container { max-width: 1200px; margin: 0 auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
@@ -30,24 +30,24 @@
 <body>
     <div class="container">
         <h1>项目分析报告</h1>
-        <h2>AvdLee/SwiftUI-Agent-Skill</h2>
-        <a href="https://github.com/AvdLee/SwiftUI-Agent-Skill" class="repo-link" target="_blank">访问项目主页</a>
+        <h2>dannote/figma-use</h2>
+        <a href="https://github.com/dannote/figma-use" class="repo-link" target="_blank">访问项目主页</a>
         <a href="../index.html" class="repo-link" style="background:#636e72;" target="_blank">返回项目聚合器首页</a>
         <div class="summary-box">
             <h3>项目摘要</h3>
-            <p><strong>一句话介绍:</strong> AvdLee/SwiftUI-Agent-Skill 是一个具备自动化能力的 null 自主代理 / 任务自动化 项目，拥有 1447 个星标。</p>
+            <p><strong>一句话介绍:</strong> dannote/figma-use 是一个具备自动化能力的 TypeScript 自主代理 / 任务自动化 项目，拥有 389 个星标。</p>
             <p><strong>核心亮点:</strong> 活跃的开发维护</p>
         </div>
         <div class="stats">
-            <div class="stat-card">⭐ <strong>星标</strong><br>1447</div>
-            <div class="stat-card">🔄 <strong>复刻</strong><br>70</div>
-            <div class="stat-card">📋 <strong>问题</strong><br>3</div>
-            <div class="stat-card">🏷️ <strong>语言</strong><br>null</div>
+            <div class="stat-card">⭐ <strong>星标</strong><br>389</div>
+            <div class="stat-card">🔄 <strong>复刻</strong><br>27</div>
+            <div class="stat-card">📋 <strong>问题</strong><br>1</div>
+            <div class="stat-card">🏷️ <strong>语言</strong><br>TypeScript</div>
             <div class="stat-card">📄 <strong>许可</strong><br>MIT</div>
         </div>
         <div class="section">
             <h3>项目描述</h3>
-            <p>Add expert SwiftUI Best Practices guidance to your AI coding tool (Agent Skills open format).</p>
+            <p>Control Figma from the command line. Full read/write access for AI agents — create shapes, text, components, set styles, export images. 100+ commands.</p>
         </div>
         <div class="section">
             <h3>应用领域</h3>
@@ -56,7 +56,8 @@
         <div class="section tech-stack">
             <h3>技术栈</h3>
             <ul>
-                <li>技术栈未明确指定</li>
+                <li>JavaScript/Node.js</li>
+                <li>依赖包: </li>
             </ul>
         </div>
         <div class="features">
@@ -84,16 +85,32 @@
         <div class="section">
             <h3>仓库结构</h3>
             <pre>.
-./.claude-plugin
-./swiftui-expert-skill
-./swiftui-expert-skill/references</pre>
+./assets
+./bin
+./examples
+./packages
+./packages/cli
+./packages/cli/src
+./packages/cli/tests
+./packages/linter
+./packages/linter/src
+./packages/linter/tests
+./packages/mcp
+./packages/mcp/src
+./packages/mcp/tests
+./packages/plugin
+./packages/plugin/src
+./packages/render
+./packages/render/src
+./packages/shared</pre>
         </div>
         <div class="strengths">
             <h3 style="color:white;">优势分析</h3>
             <ul style="color:white;">
-                <li>显著人气 (1447 ⭐)</li>
-                <li>社区兴趣 (70 复刻)</li>
-                <li>维护良好 (低开放问题数: 3)</li>
+                <li>持续增长 (389 ⭐)</li>
+                <li>社区兴趣 (27 复刻)</li>
+                <li>丰富示例</li>
+                <li>维护良好 (低开放问题数: 1)</li>
                 <li>许可证清晰 (MIT)</li>
             </ul>
         </div>
@@ -101,69 +118,68 @@
             <h3 style="color:white;">潜在不足</h3>
             <ul style="color:white;">
                 <li>文档有限</li>
-                <li>缺少示例</li>
                 <li>无可见测试套件</li>
             </ul>
         </div>
         <div class="section">
             <h3>README预览</h3>
-            <pre># SwiftUI Expert Skill
+            <pre># figma-use
 
-Expert guidance for any AI coding tool that supports the [Agent Skills open format](https://agentskills.io/home) — modern SwiftUI APIs, state management, performance, and iOS 26+ Liquid Glass adoption.
-
-This repository distills practical SwiftUI best practices into actionable, concise references for agents and code review workflows.
-
-## Who this is for
-- Teams adopting modern SwiftUI APIs who want quick, correct defaults
-- Developers reviewing or refactoring SwiftUI views and data flow
-- Anyone shipping performant lists, scrolling, sheets, and navigation in SwiftUI
-
-## See also my other skills:
-- [Swift Concurrency Expert](https://github.com/AvdLee/Swift-Concurrency-Agent-Skill)
-- [Core Data Expert](https://github.com/AvdLee/Core-Data-Agent-Skill)
-
-## How to Use This Skill
-
-### Option A: Using skills.sh (recommended)
-Install this skill with a single command:
+CLI for Figma. Control it from the terminal — with commands or JSX.
 
 ```bash
-npx skills add https://github.com/avdlee/swiftui-agent-skill --skill swiftui-expert-skill
+# Create and style
+figma-use create frame --width 400 --height 300 --fill "#FFF" --layout VERTICAL --gap 16
+figma-use create icon mdi:home --size 32 --color "#3B82F6"
+figma-use set layout 1:23 --mode GRID --cols "1fr 1fr 1fr" --gap 16
+
+# Or render JSX
+echo '<Frame style={{display: "grid", cols: "1fr 1fr", gap: 16}}>
+  <Frame style={{bg: "#3B82F6", h: 100}} />
+  <Frame style={{bg: "#10B981", h: 100}} />
+</Frame>' | figma-use render --stdin --x 100 --y 100
 ```
 
-For more information, [visit the skills.sh platform page](https://skills.sh/avdlee/swiftui-agent-skill/swiftui-expert-skill).
+## Why
 
-Then use the skill in your AI agent, for example:
-> Use the swiftui expert skill and review the current SwiftUI code for state-management and modern API improvements
+Figma's official MCP plugin can read files but can't modify them. This one can.
 
-### Option B: Claude Code Plugin
+LLMs know CLI. LLMs know React. This combines both.
 
-#### Personal Usage
-To install this Skill for your personal use in Claude Code:
+CLI commands are compact — easy to read, easy to generate, easy to chain. When a task involves dozens of operations, every saved token matters.
 
-1. Add the marketplace:
+JSX is how LLMs already think about UI. They've seen millions of React components. Describing a Figma layout as `<Frame><Text>` is natural for them — no special training, no verbose schemas.
+
+## Demo
+
+<table>
+<tr>
+<td width="50%">
+<a href="https://youtu.be/9eSYVZRle7o">
+<img src="https://img.youtube.com/vi/9eSYVZRle7o/maxresdefault.jpg" alt="Button components demo" width="100%">
+</a>
+<p align="center"><b>▶️ Button components</b></p>
+</td>
+<td width="50%">
+<a href="https://youtu.be/efJWp2Drzb4">
+<img src="https://img.youtube.com/vi/efJWp2Drzb4/maxresdefault.jpg" alt="Calendar demo" width="100%">
+</a>
+<p align="center"><b>▶️ Tailwind UI calendar</b></p>
+</td>
+</tr>
+</table>
+
+## Installation
 
 ```bash
-/plugin marketplace add AvdLee/SwiftUI-Agent-Skill
-```
-
-2. Install the Skill:
-
-```bash
-/plugin install swiftui-expert@swiftui-expert-skill
-```
-
-#### Project Configuration
-To automatically provide this Skill to everyone working in a repository, configure the repository's `.claude/settings.json`:
-
-```json</pre>
+npm install -g figma-use</pre>
         </div>
         <div class="section">
             <h3>补充说明</h3>
             <ul>
                 <li>文档完善度: 缺失或简单</li>
                 <li>测试覆盖度: 缺失或简单</li>
-                <li>示例丰富度: 缺失或简单</li>
+                <li>示例丰富度: 完整</li>
             </ul>
         </div>
         <p><em>分析时间: 2026-02-14</em></p>

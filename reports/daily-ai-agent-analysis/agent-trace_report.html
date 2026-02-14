@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>项目分析报告: AvdLee/SwiftUI-Agent-Skill</title>
+    <title>项目分析报告: cursor/agent-trace</title>
     <style>
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 20px; background-color: #f8f9fa; }
         .container { max-width: 1200px; margin: 0 auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
@@ -30,24 +30,24 @@
 <body>
     <div class="container">
         <h1>项目分析报告</h1>
-        <h2>AvdLee/SwiftUI-Agent-Skill</h2>
-        <a href="https://github.com/AvdLee/SwiftUI-Agent-Skill" class="repo-link" target="_blank">访问项目主页</a>
+        <h2>cursor/agent-trace</h2>
+        <a href="https://github.com/cursor/agent-trace" class="repo-link" target="_blank">访问项目主页</a>
         <a href="../index.html" class="repo-link" style="background:#636e72;" target="_blank">返回项目聚合器首页</a>
         <div class="summary-box">
             <h3>项目摘要</h3>
-            <p><strong>一句话介绍:</strong> AvdLee/SwiftUI-Agent-Skill 是一个具备自动化能力的 null 自主代理 / 任务自动化 项目，拥有 1447 个星标。</p>
-            <p><strong>核心亮点:</strong> 活跃的开发维护</p>
+            <p><strong>一句话介绍:</strong> cursor/agent-trace 是一个具备自动化能力的 TypeScript 自主代理 / 任务自动化 项目，拥有 559 个星标。</p>
+            <p><strong>核心亮点:</strong> 检索增强生成(RAG)</p>
         </div>
         <div class="stats">
-            <div class="stat-card">⭐ <strong>星标</strong><br>1447</div>
-            <div class="stat-card">🔄 <strong>复刻</strong><br>70</div>
-            <div class="stat-card">📋 <strong>问题</strong><br>3</div>
-            <div class="stat-card">🏷️ <strong>语言</strong><br>null</div>
-            <div class="stat-card">📄 <strong>许可</strong><br>MIT</div>
+            <div class="stat-card">⭐ <strong>星标</strong><br>559</div>
+            <div class="stat-card">🔄 <strong>复刻</strong><br>45</div>
+            <div class="stat-card">📋 <strong>问题</strong><br>8</div>
+            <div class="stat-card">🏷️ <strong>语言</strong><br>TypeScript</div>
+            <div class="stat-card">📄 <strong>许可</strong><br>None</div>
         </div>
         <div class="section">
             <h3>项目描述</h3>
-            <p>Add expert SwiftUI Best Practices guidance to your AI coding tool (Agent Skills open format).</p>
+            <p>A standard format for tracing AI-generated code.</p>
         </div>
         <div class="section">
             <h3>应用领域</h3>
@@ -56,13 +56,14 @@
         <div class="section tech-stack">
             <h3>技术栈</h3>
             <ul>
-                <li>技术栈未明确指定</li>
+                <li>JavaScript/Node.js</li>
+                <li>依赖包: </li>
             </ul>
         </div>
         <div class="features">
             <h3 style="color:white;">核心特性</h3>
             <ul style="color:white;">
-                <li>未识别出核心特性</li>
+                <li>检索增强生成(RAG)</li>
             </ul>
         </div>
         <div class="execution-flow">
@@ -84,17 +85,20 @@
         <div class="section">
             <h3>仓库结构</h3>
             <pre>.
-./.claude-plugin
-./swiftui-expert-skill
-./swiftui-expert-skill/references</pre>
+./assets
+./assets/fonts
+./assets/images
+./assets/logo
+./.claude
+./.cursor
+./reference</pre>
         </div>
         <div class="strengths">
             <h3 style="color:white;">优势分析</h3>
             <ul style="color:white;">
-                <li>显著人气 (1447 ⭐)</li>
-                <li>社区兴趣 (70 复刻)</li>
-                <li>维护良好 (低开放问题数: 3)</li>
-                <li>许可证清晰 (MIT)</li>
+                <li>持续增长 (559 ⭐)</li>
+                <li>社区兴趣 (45 复刻)</li>
+                <li>维护良好 (低开放问题数: 8)</li>
             </ul>
         </div>
         <div class="weaknesses">
@@ -107,56 +111,55 @@
         </div>
         <div class="section">
             <h3>README预览</h3>
-            <pre># SwiftUI Expert Skill
+            <pre># Agent Trace
 
-Expert guidance for any AI coding tool that supports the [Agent Skills open format](https://agentskills.io/home) — modern SwiftUI APIs, state management, performance, and iOS 26+ Liquid Glass adoption.
+**Version**: 0.1.0<br>
+**Status**: RFC<br>
+**Date**: January 2026
 
-This repository distills practical SwiftUI best practices into actionable, concise references for agents and code review workflows.
+## Abstract
 
-## Who this is for
-- Teams adopting modern SwiftUI APIs who want quick, correct defaults
-- Developers reviewing or refactoring SwiftUI views and data flow
-- Anyone shipping performant lists, scrolling, sheets, and navigation in SwiftUI
+Agent Trace is an open specification for tracing AI-generated code. It provides a vendor-neutral format for recording AI contributions alongside human authorship in version-controlled codebases.
 
-## See also my other skills:
-- [Swift Concurrency Expert](https://github.com/AvdLee/Swift-Concurrency-Agent-Skill)
-- [Core Data Expert](https://github.com/AvdLee/Core-Data-Agent-Skill)
+## Table of Contents
 
-## How to Use This Skill
+1. [Motivation](#1-motivation)
+2. [Goals](#2-goals)
+3. [Non-Goals](#3-non-goals)
+4. [Terminology](#4-terminology)
+5. [Architecture Overview](#5-architecture-overview)
+6. [Core Specification](#6-core-specification)
+7. [Extensibility](#7-extensibility)
+8. [Reference Implementation](#8-reference-implementation)
+9. [Appendix](#appendix)
 
-### Option A: Using skills.sh (recommended)
-Install this skill with a single command:
+---
 
-```bash
-npx skills add https://github.com/avdlee/swiftui-agent-skill --skill swiftui-expert-skill
-```
+## 1. Motivation
 
-For more information, [visit the skills.sh platform page](https://skills.sh/avdlee/swiftui-agent-skill/swiftui-expert-skill).
+As agents write more code, it's important to understand what came from AI versus humans. This attribution is both the models used as well as the related agent conversations. Agent Trace defines an open, interoperable standard for recording this attribution data.
 
-Then use the skill in your AI agent, for example:
-> Use the swiftui expert skill and review the current SwiftUI code for state-management and modern API improvements
+---
 
-### Option B: Claude Code Plugin
+## 2. Goals
 
-#### Personal Usage
-To install this Skill for your personal use in Claude Code:
+1. **Interoperability**: Any compliant tool can read and write attribution data.
+2. **Granularity**: Support attribution for models used at file and line granularity.
+3. **Extensibility**: Vendors can add custom metadata without breaking compatibility.
+4. **Human & Agent Readable**: Attribution data is readable without special tooling.
 
-1. Add the marketplace:
+---
 
-```bash
-/plugin marketplace add AvdLee/SwiftUI-Agent-Skill
-```
+## 3. Non-Goals
 
-2. Install the Skill:
+1. **Code Ownership**: Agent Trace does not track legal ownership or copyright.
+2. **Training Data Provenance**: We don't track what training data influenced AI outputs.
+3. **Quality Assessment**: We don't evaluate whether AI contributions are good or bad.
+4. **UI Agnostic**: Agent Trace does not require any specific interface.
 
-```bash
-/plugin install swiftui-expert@swiftui-expert-skill
-```
+---
 
-#### Project Configuration
-To automatically provide this Skill to everyone working in a repository, configure the repository's `.claude/settings.json`:
-
-```json</pre>
+## 4. Terminology</pre>
         </div>
         <div class="section">
             <h3>补充说明</h3>

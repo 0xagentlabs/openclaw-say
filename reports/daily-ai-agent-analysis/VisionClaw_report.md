@@ -3,16 +3,16 @@
 ## 项目概览
 - **项目地址**: https://github.com/sseanliu/VisionClaw
 - **项目描述**: Real-time AI assistant for Meta Ray-Ban smart glasses -- voice + vision + agentic actions via Gemini Live and OpenClaw
-- **主要语言**: Unknown
-- **星标数**: 855
-- **复刻数**: 149
+- **主要语言**: null
+- **星标数**: 899
+- **复刻数**: 162
 - **开放问题**: 7
 - **许可证**: NOASSERTION
-- **最后更新**: 2026-02-13T08:58:17Z
+- **最后更新**: 2026-02-14T06:03:13Z
 - **主题标签**: 
 
 ## 一句话介绍
-sseanliu/VisionClaw 是一个基于 Unknown 的 开发者工具 / 代码辅助 项目，提升开发效率，拥有 855 个星标。
+sseanliu/VisionClaw 是一个基于 null 的 开发者工具 / 代码辅助 项目，提升开发效率，拥有 899 个星标。
 
 ## 核心亮点
 多模态处理
@@ -51,8 +51,8 @@ sseanliu/VisionClaw 是一个基于 Unknown 的 开发者工具 / 代码辅助 �
 ```
 
 ## 优势分析
-- 持续增长 (855 ⭐)
-- 活跃社区 (>149 复刻)
+- 持续增长 (899 ⭐)
+- 活跃社区 (>162 复刻)
 - 维护良好 (低开放问题数: 7)
 - 许可证清晰 (NOASSERTION)
 
@@ -120,4 +120,4 @@ Gemini Live API (WebSocket)
 - 示例丰富度: 缺失或简单
 
 ---
-*分析时间: 2026-02-13*
+*分析时间: 2026-02-14*

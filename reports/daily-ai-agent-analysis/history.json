@@ -2,6 +2,19 @@
   {
     "date": "2026-02-14",
     "projects": [
+      "BlockRunAI/ClawRouter",
+      "callstackincubator/agent-device",
+      "softaworks/agent-toolkit",
+      "cursor/agent-trace",
+      "ygwyg/MAHORAGA",
+      "jingkaihe/matchlock",
+      "ValueCell-ai/ClawX",
+      "dannote/figma-use"
+    ]
+  },
+  {
+    "date": "2026-02-14",
+    "projects": [
       "rivet-dev/sandbox-agent",
       "luccast/crabwalk",
       "snwfdhmp/awesome-ralph",

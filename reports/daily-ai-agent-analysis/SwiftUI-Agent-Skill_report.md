@@ -3,16 +3,16 @@
 ## 项目概览
 - **项目地址**: https://github.com/AvdLee/SwiftUI-Agent-Skill
 - **项目描述**: Add expert SwiftUI Best Practices guidance to your AI coding tool (Agent Skills open format).
-- **主要语言**: Unknown
-- **星标数**: 1418
-- **复刻数**: 69
+- **主要语言**: null
+- **星标数**: 1447
+- **复刻数**: 70
 - **开放问题**: 3
 - **许可证**: MIT
-- **最后更新**: 2026-02-13T08:05:38Z
+- **最后更新**: 2026-02-14T04:21:34Z
 - **主题标签**: 
 
 ## 一句话介绍
-AvdLee/SwiftUI-Agent-Skill 是一个具备自动化能力的 Unknown 自主代理 / 任务自动化 项目，拥有 1418 个星标。
+AvdLee/SwiftUI-Agent-Skill 是一个具备自动化能力的 null 自主代理 / 任务自动化 项目，拥有 1447 个星标。
 
 ## 核心亮点
 活跃的开发维护
@@ -48,8 +48,8 @@ AvdLee/SwiftUI-Agent-Skill 是一个具备自动化能力的 Unknown 自主代�
 ```
 
 ## 优势分析
-- 显著人气 (1418 ⭐)
-- 社区兴趣 (69 复刻)
+- 显著人气 (1447 ⭐)
+- 社区兴趣 (70 复刻)
 - 维护良好 (低开放问题数: 3)
 - 许可证清晰 (MIT)
 
@@ -118,4 +118,4 @@ To automatically provide this Skill to everyone working in a repository, configu
 - 示例丰富度: 缺失或简单
 
 ---
-*分析时间: 2026-02-13*
+*分析时间: 2026-02-14*

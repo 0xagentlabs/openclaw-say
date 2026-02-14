@@ -4,15 +4,15 @@
 - **项目地址**: https://github.com/yohey-w/multi-agent-shogun
 - **项目描述**: Samurai-inspired multi-agent system for Claude Code. Orchestrate parallel AI tasks via tmux with shogun → karo → ashigaru hierarchy.
 - **主要语言**: Shell
-- **星标数**: 852
-- **复刻数**: 191
-- **开放问题**: 6
+- **星标数**: 859
+- **复刻数**: 192
+- **开放问题**: 9
 - **许可证**: MIT
-- **最后更新**: 2026-02-13T08:54:51Z
+- **最后更新**: 2026-02-14T04:55:03Z
 - **主题标签**: ai-agent, anthropic, automation, claude-code, llm, multi-agent, parallel-processing, samurai, shogun, tmux
 
 ## 一句话介绍
-yohey-w/multi-agent-shogun 是一个具备自动化能力的 Shell 自主代理 / 任务自动化 项目，拥有 852 个星标。
+yohey-w/multi-agent-shogun 是一个具备自动化能力的 Shell 自主代理 / 任务自动化 项目，拥有 859 个星标。
 
 ## 核心亮点
 长期记忆管理
@@ -61,11 +61,11 @@ yohey-w/multi-agent-shogun 是一个具备自动化能力的 Shell 自主代理 
 ```
 
 ## 优势分析
-- 持续增长 (852 ⭐)
-- 活跃社区 (>191 复刻)
+- 持续增长 (859 ⭐)
+- 活跃社区 (>192 复刻)
 - 良好文档
 - 测试覆盖
-- 维护良好 (低开放问题数: 6)
+- 维护良好 (低开放问题数: 9)
 - 许可证清晰 (MIT)
 
 ## 潜在不足
@@ -85,7 +85,7 @@ Run 10 AI coding agents in parallel — **Claude Code, OpenAI Codex, GitHub Copi
 
 [![GitHub Stars](https://img.shields.io/github/stars/yohey-w/multi-agent-shogun?style=social)](https://github.com/yohey-w/multi-agent-shogun)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![v3.0 Multi-CLI](https://img.shields.io/badge/v3.0-Multi--CLI_Support-ff6600?style=flat-square&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiI+PHRleHQgeD0iMCIgeT0iMTIiIGZvbnQtc2l6ZT0iMTIiPuKalTwvdGV4dD48L3N2Zz4=)](https://github.com/yohey-w/multi-agent-shogun)
+[![v3.4 Stop Hook + Gunshi](https://img.shields.io/badge/v3.4-Stop_Hook_%2B_Gunshi-ff6600?style=flat-square&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiI+PHRleHQgeD0iMCIgeT0iMTIiIGZvbnQtc2l6ZT0iMTIiPuKalTwvdGV4dD48L3N2Zz4=)](https://github.com/yohey-w/multi-agent-shogun)
 [![Shell](https://img.shields.io/badge/Shell%2FBash-100%25-green)]()
 
 [English](README.md) | [日本語](README_ja.md)
@@ -131,4 +131,4 @@ Run 10 AI coding agents in parallel — **Claude Code, OpenAI Codex, GitHub Copi
 - 示例丰富度: 缺失或简单
 
 ---
-*分析时间: 2026-02-13*
+*分析时间: 2026-02-14*
