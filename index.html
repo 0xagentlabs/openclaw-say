@@ -3,601 +3,384 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🦞 OpenClaw AI Agent 项目聚合器 - 2026-02-14</title>
+    <title>🤖 AI 技术报告索引 - OpenClaw Say</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        :root {
-            --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            --card-bg: rgba(255, 255, 255, 0.95);
-            --hover-gradient: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
-            --accent-color: #74b9ff;
-            --positive-color: #00b894;
-            --negative-color: #d63031;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
+        * { box-sizing: border-box; }
         body {
-            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-            background: var(--primary-gradient);
-            min-height: 100vh;
-            padding: 20px;
-            position: relative;
-            overflow-x: hidden;
-        }
-
-        body::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="white" opacity="0.1"/><circle cx="75" cy="75" r="1" fill="white" opacity="0.1"/><circle cx="50" cy="10" r="0.5" fill="white" opacity="0.1"/><circle cx="10" cy="90" r="0.5" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
-            opacity: 0.3;
-            pointer-events: none;
-        }
-
-        .container {
-            max-width: 1400px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
             margin: 0 auto;
-            position: relative;
-            z-index: 1;
-        }
-
-        .header {
-            text-align: center;
-            color: white;
-            margin-bottom: 40px;
-            animation: fadeInUp 1s ease-out;
-        }
-
-        .header h1 {
-            font-size: 3.5rem;
-            margin: 0 0 15px 0;
-            text-shadow: 3px 3px 6px rgba(0,0,0,0.3);
-            background: linear-gradient(to right, #ffffff, #f1f3f4);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        .header .subtitle {
-            font-size: 1.4rem;
-            opacity: 0.9;
-            margin-bottom: 25px;
-            font-weight: 300;
-        }
-
-        .stats-bar {
-            background: rgba(255,255,255,0.15);
-            backdrop-filter: blur(10px);
-            border-radius: 15px;
             padding: 20px;
-            margin: 20px auto;
-            max-width: 800px;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            color: white;
-            font-size: 1.1rem;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
         }
-
-        .intro {
-            background: var(--card-bg);
-            border-radius: 20px;
-            padding: 30px;
-            margin: 30px auto;
-            max-width: 800px;
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+        h1 { 
+            color: #1a1a1a; 
+            border-bottom: 3px solid #4CAF50; 
+            padding-bottom: 15px;
+            margin-bottom: 30px;
             text-align: center;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            border: 1px solid rgba(255,255,255,0.2);
-            animation: fadeIn 1.5s ease-out;
+            font-size: 2.2rem;
         }
-
-        .intro h2 {
-            color: #2d3436;
-            margin-bottom: 15px;
-            font-size: 1.8rem;
-        }
-
-        .intro p {
-            color: #636e72;
-            line-height: 1.6;
-            margin: 10px 0;
-            font-size: 1.1rem;
-        }
-
-        .projects-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-            gap: 30px;
-            margin: 40px 0;
-        }
-
-        .project-card {
-            background: var(--card-bg);
-            border-radius: 20px;
-            padding: 30px;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
-            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            border: 1px solid rgba(255,255,255,0.2);
-            position: relative;
-            overflow: hidden;
-            animation: slideIn 0.6s ease-out;
-        }
-
-        .project-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
-            transition: left 0.5s;
-        }
-
-        .project-card:hover {
-            transform: translateY(-10px) scale(1.02);
-            box-shadow: 0 25px 50px rgba(0,0,0,0.15);
-        }
-
-        .project-card:hover::before {
-            left: 100%;
-        }
-
-        .project-title {
-            color: #2d3436;
-            margin: 0 0 15px 0;
+        h2 { 
+            color: #2c3e50; 
+            margin-top: 40px; 
+            border-left: 4px solid #4CAF50; 
+            padding-left: 15px;
             font-size: 1.5rem;
+        }
+        h3 { 
+            color: #34495e; 
+            margin-top: 25px;
+        }
+        p { margin: 15px 0; }
+        table { 
+            border-collapse: collapse; 
+            width: 100%; 
+            margin: 20px 0;
+            background: white;
+        }
+        th, td { 
+            border: 1px solid #ddd; 
+            padding: 12px; 
+            text-align: left; 
+        }
+        th { 
+            background: #4CAF50; 
+            color: white; 
             font-weight: 600;
-            display: flex;
-            align-items: center;
-            gap: 10px;
         }
-
-        .project-title i {
-            color: var(--accent-color);
+        tr:nth-child(even) { background: #f9f9f9; }
+        tr:hover { background: #f0f0f0; }
+        code { 
+            background: #f4f4f4; 
+            padding: 2px 6px; 
+            border-radius: 3px; 
+            font-family: 'Consolas', 'Monaco', monospace;
+            font-size: 0.9em;
         }
-
-        .project-description {
-            color: #636e72;
-            margin: 15px 0;
-            line-height: 1.6;
-            font-size: 1rem;
+        pre { 
+            background: #f8f8f8; 
+            padding: 15px; 
+            border-radius: 5px;
+            overflow-x: auto;
+            border-left: 3px solid #4CAF50;
         }
-
-        .project-stats {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
+        blockquote { 
+            border-left: 4px solid #4CAF50; 
+            margin: 20px 0; 
+            padding: 15px 20px; 
+            background: #f9f9f9;
+            font-style: italic;
+        }
+        ul, ol { padding-left: 25px; }
+        li { margin: 8px 0; }
+        .meta { 
+            color: #666; 
+            font-size: 14px; 
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+            text-align: center;
+        }
+        .highlight { 
+            background: #fff3cd; 
+            padding: 15px; 
+            border-radius: 5px; 
+            border-left: 4px solid #ffc107; 
             margin: 20px 0;
         }
-
-        .stat-item {
-            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-            padding: 10px 18px;
-            border-radius: 25px;
-            font-size: 0.9rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-        }
-
-        .highlight-feature {
-            background: linear-gradient(135deg, #ffeaa7, #fdcb6e);
-            padding: 18px;
-            border-radius: 15px;
+        .tip { 
+            background: #d4edda; 
+            padding: 15px; 
+            border-radius: 5px; 
+            border-left: 4px solid #28a745; 
             margin: 20px 0;
-            border-left: 5px solid #e17055;
-            position: relative;
+        }
+        .warning { 
+            background: #f8d7da; 
+            padding: 15px; 
+            border-radius: 5px; 
+            border-left: 4px solid #dc3545; 
+            margin: 20px 0;
+        }
+        .footer { 
+            margin-top: 50px; 
+            padding-top: 20px; 
+            border-top: 2px solid #eee; 
+            color: #999; 
+            font-size: 12px;
+            text-align: center;
+        }
+        a { color: #4CAF50; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        hr { border: none; border-top: 1px solid #eee; margin: 30px 0; }
+        img { max-width: 100%; height: auto; border-radius: 5px; }
+        @media (max-width: 768px) {
+            body { padding: 10px; }
+            .container { padding: 20px; }
+            h1 { font-size: 24px; }
+            h2 { font-size: 20px; }
         }
 
-        .highlight-feature::before {
-            content: '✨';
-            position: absolute;
-            top: 10px;
-            right: 15px;
-            font-size: 1.2rem;
+        /* Product Updates Section Styles */
+        .product-updates-section {
+            margin: 40px 0;
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid #e9ecef;
         }
-
-        .highlight-feature strong {
+        .product-updates-section h2 {
             color: #2d3436;
-            font-size: 1.1rem;
+            border-bottom: 2px solid #dee2e6;
+            padding-bottom: 15px;
+            margin-bottom: 25px;
+            border-left: none;
+            padding-left: 0;
         }
-
-        .summary-section {
-            background: linear-gradient(135deg, #a29bfe, #6c5ce7);
-            color: white;
+        .updates-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        .source-column {
+            background: white;
             padding: 20px;
-            border-radius: 15px;
-            margin: 15px 0;
+            border-radius: 8px;
+            border-left: 4px solid #0984e3;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        .source-column h3 {
+            color: #0984e3;
+            margin-top: 0;
+            margin-bottom: 15px;
             font-size: 1.1rem;
         }
-
-        .button-group {
+        .source-column ul {
+            padding-left: 0;
+            list-style: none;
+            margin: 0;
+        }
+        .source-column li {
+            margin-bottom: 10px;
+            padding-left: 0;
+        }
+        .source-column a {
+            color: #444;
+            text-decoration: none;
+            display: block;
+            padding: 5px 0;
+            border-bottom: 1px dotted #eee;
+        }
+        .source-column a:hover {
+            color: #0984e3;
+            text-decoration: none;
+        }
+        .source-column .date {
+            color: #999;
+            font-size: 0.8em;
+            display: block;
+            margin-top: 2px;
+        }
+        .youtube-channels {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px dashed #ddd;
+        }
+        .youtube-channels h3 {
+            color: #c4302b;
+            margin-top: 0;
+        }
+        .channel-links {
             display: flex;
             gap: 15px;
-            margin-top: 20px;
             flex-wrap: wrap;
         }
-
-        .view-details, .github-link, .daily-report-link {
+        .channel-links a {
+            background: #c4302b;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 0.9em;
             display: inline-flex;
             align-items: center;
-            gap: 8px;
-            padding: 12px 24px;
+            gap: 5px;
+        }
+        .channel-links a:hover {
+            background: #a02020;
             text-decoration: none;
-            border-radius: 25px;
-            font-weight: 500;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-        }
-
-        .view-details {
-            background: linear-gradient(135deg, #74b9ff, #0984e3);
-            color: white;
-        }
-
-        .github-link {
-            background: linear-gradient(135deg, #2d3436, #636e72);
-            color: white;
-        }
-
-        .daily-report-link {
-            background: linear-gradient(135deg, #00b894, #00cec9);
-            color: white;
-        }
-
-        .view-details:hover, .github-link:hover, .daily-report-link:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(0,0,0,0.15);
-        }
-
-        .last-updated {
-            text-align: center;
-            color: rgba(255,255,255,0.8);
-            margin-top: 40px;
-            font-size: 1rem;
-            padding: 20px;
-        }
-
-        @keyframes fadeInUp {
-            from { opacity: 0; transform: translateY(30px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-
-        @keyframes slideIn {
-            from { opacity: 0; transform: translateX(-20px); }
-            to { opacity: 1; transform: translateX(0); }
-        }
-
-        @media (max-width: 768px) {
-            .header h1 { font-size: 2.5rem; }
-            .header .subtitle { font-size: 1.1rem; }
-            .projects-grid { grid-template-columns: 1fr; }
-            .stats-bar { flex-direction: column; gap: 10px; }
-            .button-group { flex-direction: column; }
-        }
-
-        .floating-element {
-            position: fixed;
-            font-size: 2rem;
-            opacity: 0.1;
-            z-index: 0;
-            animation: float 6s ease-in-out infinite;
-        }
-
-        @keyframes float {
-            0%, 100% { transform: translateY(0px) rotate(0deg); }
-            50% { transform: translateY(-20px) rotate(10deg); }
         }
     </style>
 </head>
 <body>
-    <div class="floating-element" style="top: 10%; left: 5%; animation-delay: 0s;">🤖</div>
-    <div class="floating-element" style="top: 20%; right: 10%; animation-delay: 1s;">🧠</div>
-    <div class="floating-element" style="bottom: 15%; left: 15%; animation-delay: 2s;">💡</div>
-    <div class="floating-element" style="bottom: 25%; right: 20%; animation-delay: 3s;">🔗</div>
-
     <div class="container">
-        <div class="header">
-            <h1><i class="fas fa-robot"></i> OpenClaw AI Agent 项目聚合器</h1>
-            <div class="subtitle">每日聚合 GitHub 上最受欢迎的 AI Agent 项目</div>
-            <div class="stats-bar">
-                <div><i class="fas fa-calendar-day"></i> 更新日期: 2026-02-14</div>
-                <div><i class="fas fa-sync-alt"></i> 自动更新: 每日14:25</div>
-                <div><i class="fas fa-globe"></i> 数据源: GitHub API</div>
+        <h1>🤖 AI 技术报告索引</h1>
+        <p class="meta">这里汇集了每日 AI 技术趋势简报和 GitHub AI 项目分析报告。点击下方链接即可查看历史记录。</p>
+
+        <!-- 行业动态 & 产品更新 -->
+        <div class="product-updates-section">
+            <h2><i class="fas fa-newspaper"></i> 行业动态 & 产品更新</h2>
+            <div class="updates-grid">
+                <div class="source-column">
+                    <h3><i class="fas fa-robot"></i> OpenAI</h3>
+                    <ul>
+                        <li><a href="https://openai.com/index/new-result-theoretical-physics" target="_blank">GPT-5.2 derives a new result in theoretical physics<span class="date">(2/13/2026)</span></a></li>
+                        <li><a href="https://openai.com/index/introducing-lockdown-mode-and-elevated-risk-labels-in-chatgpt" target="_blank">Introducing Lockdown Mode and Elevated Risk labels in ChatGPT<span class="date">(2/13/2026)</span></a></li>
+                        <li><a href="https://openai.com/index/beyond-rate-limits" target="_blank">Beyond rate limits: scaling access to Codex and Sora<span class="date">(2/13/2026)</span></a></li>
+                        <li><a href="https://openai.com/index/scaling-social-science-research" target="_blank">Scaling social science research<span class="date">(2/13/2026)</span></a></li>
+                        <li><a href="https://openai.com/index/introducing-gpt-5-3-codex-spark" target="_blank">Introducing GPT-5.3-Codex-Spark<span class="date">(2/12/2026)</span></a></li>
+                    </ul>
+                </div>
+                <div class="source-column">
+                    <h3><i class="fab fa-google"></i> Google AI</h3>
+                    <ul>
+                        <li><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-deep-think/" target="_blank">Gemini 3 Deep Think: Advancing science, research and engineering<span class="date">(2/13/2026)</span></a></li>
+                        <li><a href="https://blog.google/products-and-platforms/products/photos/ask-button-ask-photos-tips/" target="_blank">9 fun questions to try asking Google Photos<span class="date">(2/11/2026)</span></a></li>
+                        <li><a href="https://blog.google/innovation-and-ai/technology/safety-security/safer-internet-day-2026-kids-teens/" target="_blank">Helping kids and teens learn and grow online on Safer Internet Day<span class="date">(2/10/2026)</span></a></li>
+                        <li><a href="https://blog.google/company-news/outreach-and-initiatives/accessibility/natively-adaptive-interfaces-ai-accessibility/" target="_blank">Natively Adaptive Interfaces: A new framework for AI accessibility<span class="date">(2/6/2026)</span></a></li>
+                        <li><a href="https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/us-ski-snowboard-tool-winter-olympics-2026/" target="_blank">How Google Cloud is helping Team USA elevate their tricks with AI<span class="date">(2/6/2026)</span></a></li>
+                    </ul>
+                </div>
+                <div class="source-column">
+                    <h3><i class="fas fa-rocket"></i> Product Hunt</h3>
+                    <ul>
+                        <li><a href="https://www.producthunt.com/products/goclaw" target="_blank">GoClaw<span class="date">(2/14/2026)</span></a></li>
+                        <li><a href="https://www.producthunt.com/products/lovon" target="_blank">Lovon AI Therapy<span class="date">(2/14/2026)</span></a></li>
+                        <li><a href="https://www.producthunt.com/products/cosmic-light" target="_blank">Cosmic-light<span class="date">(2/14/2026)</span></a></li>
+                        <li><a href="https://www.producthunt.com/products/flowgrid" target="_blank">FlowGrid<span class="date">(2/14/2026)</span></a></li>
+                        <li><a href="https://www.producthunt.com/products/mybikefitting" target="_blank">MyBikeFitting<span class="date">(2/14/2026)</span></a></li>
+                    </ul>
+                </div>
+                <div class="source-column">
+                    <h3><i class="fas fa-brain"></i> Anthropic</h3>
+                    <ul>
+                        <li><a href="https://www.anthropic.com/news/anthropic-codepath-partnership" target="_blank">Anthropic partners with CodePath to bring Claude to the US's largest collegiate computer science program<span class="date">(2/14/2026)</span></a></li>
+                        <li><a href="https://www.anthropic.com/news/chris-liddell-appointed-anthropic-board" target="_blank">Chris Liddell appointed to Anthropic's board of directors<span class="date">(2/13/2026)</span></a></li>
+                        <li><a href="https://www.anthropic.com/news/anthropic-raises-30-billion-series-g-funding-380-billion-post-money-valuation" target="_blank">Anthropic raises $30 billion in Series G funding at $380 billion post-money valuation<span class="date">(2/13/2026)</span></a></li>
+                        <li><a href="https://www.anthropic.com/news/donate-public-first-action" target="_blank">Anthropic is donating $20 million to Public First Action<span class="date">(2/12/2026)</span></a></li>
+                        <li><a href="https://www.anthropic.com/news/covering-electricity-price-increases" target="_blank">Covering electricity price increases from our data centers<span class="date">(2/12/2026)</span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="youtube-channels">
+                <h3><i class="fab fa-youtube"></i> 推荐 AI 频道</h3>
+                <div class="channel-links">
+                    <a href="https://www.youtube.com/@TwoMinutePapers" target="_blank"><i class="fas fa-play"></i> Two Minute Papers</a>
+                    <a href="https://www.youtube.com/@mreflow" target="_blank"><i class="fas fa-play"></i> Matt Wolfe</a>
+                    <a href="https://www.youtube.com/@aiexplained-official" target="_blank"><i class="fas fa-play"></i> AI Explained</a>
+                </div>
             </div>
         </div>
 
-        <div class="intro">
-            <h2><i class="fas fa-star"></i> 项目特色</h2>
-            <p>本聚合器每日自动分析 GitHub 上排名最靠前的 AI Agent 项目</p>
-            <p>提供一句话介绍、核心亮点和详细技术报告</p>
-            <p>所有分析均为自动化生成，帮助您快速了解最新的 AI Agent 技术趋势</p>
-            <div class="button-group" style="justify-content: center; margin-top: 20px;">
-                <a href="#daily-report" class="daily-report-link">
-                    <i class="fas fa-file-alt"></i> 查看今日报告
-                </a>
-            </div>
+        <h2>📅 每日 AI 技术简报</h2>
+        <p>汇总 YouTube 上每日最新的 AI 技术分享视频，重点关注模型发布、架构创新、Agent 技术等前沿动向。</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>日期</th>
+                    <th>报告链接</th>
+                    <th>内容概述</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2026-02-14</td>
+                    <td><a href="./20260214-AI-Daily-Report.html">20260214-AI-Daily-Report.html</a></td>
+                    <td>最新 AI 视频精选与行业动态</td>
+                </tr>
+                <tr>
+                    <td>2026-02-13</td>
+                    <td><a href="./20260213-AI-Daily-Report.html">20260213-AI-Daily-Report.html</a></td>
+                    <td>AI 技术趋势与产品发布</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>🐙 每日 GitHub AI 项目分析</h2>
+        <p>自动分析 GitHub 上热门的 AI Agent 相关项目，提供项目简介和技术要点。</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>日期</th>
+                    <th>报告链接</th>
+                    <th>项目数量</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2026-02-14</td>
+                    <td><a href="./reports/daily-ai-agent-analysis/analysis-2026-02-14.html">analysis-2026-02-14.html</a></td>
+                    <td>10 个热门项目</td>
+                </tr>
+                <tr>
+                    <td>2026-02-13</td>
+                    <td><a href="./reports/daily-ai-agent-analysis/analysis-2026-02-13.html">analysis-2026-02-13.html</a></td>
+                    <td>8 个热门项目</td>
+                </tr>
+                <tr>
+                    <td>2026-02-12</td>
+                    <td><a href="./reports/daily-ai-agent-analysis/analysis-2026-02-12.html">analysis-2026-02-12.html</a></td>
+                    <td>8 个热门项目</td>
+                </tr>
+                <tr>
+                    <td>2026-02-11</td>
+                    <td><a href="./reports/daily-ai-agent-analysis/analysis-2026-02-11.html">analysis-2026-02-11.html</a></td>
+                    <td>8 个热门项目</td>
+                </tr>
+                <tr>
+                    <td>2026-02-10</td>
+                    <td><a href="./reports/daily-ai-agent-analysis/analysis-2026-02-10.html">analysis-2026-02-10.html</a></td>
+                    <td>8 个热门项目</td>
+                </tr>
+                <tr>
+                    <td>2026-02-09</td>
+                    <td><a href="./reports/daily-ai-agent-analysis/analysis-2026-02-09.html">analysis-2026-02-09.html</a></td>
+                    <td>8 个热门项目</td>
+                </tr>
+                <tr>
+                    <td>2026-02-08</td>
+                    <td><a href="./reports/daily-ai-agent-analysis/analysis-2026-02-08.html">analysis-2026-02-08.html</a></td>
+                    <td>8 个热门项目</td>
+                </tr>
+                <tr>
+                    <td>2026-02-06</td>
+                    <td><a href="./reports/daily-ai-agent-analysis/analysis-2026-02-06.html">analysis-2026-02-06.html</a></td>
+                    <td>8 个热门项目</td>
+                </tr>
+                <tr>
+                    <td>2026-02-05</td>
+                    <td><a href="./reports/daily-ai-agent-analysis/analysis-2026-02-05.html">analysis-2026-02-05.html</a></td>
+                    <td>8 个热门项目</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="tip">
+            <strong>💡 提示：</strong>所有报告均为自动生成，每日更新。您可以通过上方的表格访问历史报告，或通过下方的快捷链接查看最新内容。
         </div>
 
-        <h2 style="text-align: center; color: white; margin: 40px 0 30px; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">
-            <i class="fas fa-fire"></i> 今日热门 AI Agent 项目
-        </h2>
-<div class="product-updates-section" style="margin: 40px 0; background: white; padding: 30px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);"><h2 style="color: #2d3436; border-bottom: 2px solid #eee; padding-bottom: 15px; margin-bottom: 25px;"><i class="fas fa-newspaper"></i> 行业动态 & 视频精选</h2><div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;"><div class="source-column"><h3 style="color: #0984e3; border-left: 4px solid #0984e3; padding-left: 10px;">OpenAI</h3><ul style="padding-left: 20px;"><li style="margin-bottom: 8px;"><a href="https://openai.com/index/new-result-theoretical-physics" target="_blank" style="color: #444; text-decoration: none;">GPT-5.2 derives a new result in theoretical physics</a> <span style="color: #999; font-size: 0.8em;">(2/13/2026)</span></li><li style="margin-bottom: 8px;"><a href="https://openai.com/index/introducing-lockdown-mode-and-elevated-risk-labels-in-chatgpt" target="_blank" style="color: #444; text-decoration: none;">Introducing Lockdown Mode and Elevated Risk labels in ChatGPT</a> <span style="color: #999; font-size: 0.8em;">(2/13/2026)</span></li><li style="margin-bottom: 8px;"><a href="https://openai.com/index/beyond-rate-limits" target="_blank" style="color: #444; text-decoration: none;">Beyond rate limits: scaling access to Codex and Sora</a> <span style="color: #999; font-size: 0.8em;">(2/13/2026)</span></li><li style="margin-bottom: 8px;"><a href="https://openai.com/index/scaling-social-science-research" target="_blank" style="color: #444; text-decoration: none;">Scaling social science research</a> <span style="color: #999; font-size: 0.8em;">(2/13/2026)</span></li><li style="margin-bottom: 8px;"><a href="https://openai.com/index/introducing-gpt-5-3-codex-spark" target="_blank" style="color: #444; text-decoration: none;">Introducing GPT-5.3-Codex-Spark</a> <span style="color: #999; font-size: 0.8em;">(2/12/2026)</span></li></ul></div><div class="source-column"><h3 style="color: #0984e3; border-left: 4px solid #0984e3; padding-left: 10px;">Google AI</h3><ul style="padding-left: 20px;"><li style="margin-bottom: 8px;"><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-deep-think/" target="_blank" style="color: #444; text-decoration: none;">Gemini 3 Deep Think: Advancing science, research and engineering</a> <span style="color: #999; font-size: 0.8em;">(2/13/2026)</span></li><li style="margin-bottom: 8px;"><a href="https://blog.google/products-and-platforms/products/photos/ask-button-ask-photos-tips/" target="_blank" style="color: #444; text-decoration: none;">9 fun questions to try asking Google Photos</a> <span style="color: #999; font-size: 0.8em;">(2/11/2026)</span></li><li style="margin-bottom: 8px;"><a href="https://blog.google/innovation-and-ai/technology/safety-security/safer-internet-day-2026-kids-teens/" target="_blank" style="color: #444; text-decoration: none;">Helping kids and teens learn and grow online on Safer Internet Day</a> <span style="color: #999; font-size: 0.8em;">(2/10/2026)</span></li><li style="margin-bottom: 8px;"><a href="https://blog.google/company-news/outreach-and-initiatives/accessibility/natively-adaptive-interfaces-ai-accessibility/" target="_blank" style="color: #444; text-decoration: none;">Natively Adaptive Interfaces: A new framework for AI accessibility</a> <span style="color: #999; font-size: 0.8em;">(2/6/2026)</span></li><li style="margin-bottom: 8px;"><a href="https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/us-ski-snowboard-tool-winter-olympics-2026/" target="_blank" style="color: #444; text-decoration: none;">How Google Cloud is helping Team USA elevate their tricks with AI</a> <span style="color: #999; font-size: 0.8em;">(2/6/2026)</span></li></ul></div><div class="source-column"><h3 style="color: #0984e3; border-left: 4px solid #0984e3; padding-left: 10px;">Product Hunt</h3><ul style="padding-left: 20px;"><li style="margin-bottom: 8px;"><a href="https://www.producthunt.com/products/goclaw" target="_blank" style="color: #444; text-decoration: none;">GoClaw</a> <span style="color: #999; font-size: 0.8em;">(2/14/2026)</span></li><li style="margin-bottom: 8px;"><a href="https://www.producthunt.com/products/lovon" target="_blank" style="color: #444; text-decoration: none;">Lovon AI Therapy</a> <span style="color: #999; font-size: 0.8em;">(2/14/2026)</span></li><li style="margin-bottom: 8px;"><a href="https://www.producthunt.com/products/cosmic-light" target="_blank" style="color: #444; text-decoration: none;">Cosmic-light</a> <span style="color: #999; font-size: 0.8em;">(2/14/2026)</span></li><li style="margin-bottom: 8px;"><a href="https://www.producthunt.com/products/flowgrid" target="_blank" style="color: #444; text-decoration: none;">FlowGrid</a> <span style="color: #999; font-size: 0.8em;">(2/14/2026)</span></li><li style="margin-bottom: 8px;"><a href="https://www.producthunt.com/products/mybikefitting" target="_blank" style="color: #444; text-decoration: none;">MyBikeFitting</a> <span style="color: #999; font-size: 0.8em;">(2/14/2026)</span></li></ul></div><div class="source-column"><h3 style="color: #0984e3; border-left: 4px solid #0984e3; padding-left: 10px;">Anthropic</h3><ul style="padding-left: 20px;"><li style="margin-bottom: 8px;"><a href="https://www.anthropic.com/news/anthropic-codepath-partnership" target="_blank" style="color: #444; text-decoration: none;">Anthropic partners with CodePath to bring Claude to the US’s largest collegiate computer science program</a> <span style="color: #999; font-size: 0.8em;">(2/14/2026)</span></li><li style="margin-bottom: 8px;"><a href="https://www.anthropic.com/news/chris-liddell-appointed-anthropic-board" target="_blank" style="color: #444; text-decoration: none;">Chris Liddell appointed to Anthropic’s board of directors</a> <span style="color: #999; font-size: 0.8em;">(2/13/2026)</span></li><li style="margin-bottom: 8px;"><a href="https://www.anthropic.com/news/anthropic-raises-30-billion-series-g-funding-380-billion-post-money-valuation" target="_blank" style="color: #444; text-decoration: none;">Anthropic raises $30 billion in Series G funding at $380 billion post-money valuation</a> <span style="color: #999; font-size: 0.8em;">(2/13/2026)</span></li><li style="margin-bottom: 8px;"><a href="https://www.anthropic.com/news/donate-public-first-action" target="_blank" style="color: #444; text-decoration: none;">Anthropic is donating $20 million to Public First Action</a> <span style="color: #999; font-size: 0.8em;">(2/12/2026)</span></li><li style="margin-bottom: 8px;"><a href="https://www.anthropic.com/news/covering-electricity-price-increases" target="_blank" style="color: #444; text-decoration: none;">Covering electricity price increases from our data centers</a> <span style="color: #999; font-size: 0.8em;">(2/12/2026)</span></li></ul></div></div><div style="margin-top: 30px; padding-top: 20px; border-top: 1px dashed #ddd;"><h3 style="color: #c4302b; margin-top: 0;"><i class="fab fa-youtube"></i> 推荐 AI 频道</h3><div style="display: flex; gap: 15px; flex-wrap: wrap;"><a href="https://www.youtube.com/@TwoMinutePapers" target="_blank" style="background: #c4302b; color: white; padding: 8px 15px; border-radius: 20px; text-decoration: none; font-size: 0.9em;"><i class="fas fa-play"></i> Two Minute Papers</a><a href="https://www.youtube.com/@mreflow" target="_blank" style="background: #c4302b; color: white; padding: 8px 15px; border-radius: 20px; text-decoration: none; font-size: 0.9em;"><i class="fas fa-play"></i> Matt Wolfe</a><a href="https://www.youtube.com/@aiexplained-official" target="_blank" style="background: #c4302b; color: white; padding: 8px 15px; border-radius: 20px; text-decoration: none; font-size: 0.9em;"><i class="fas fa-play"></i> AI Explained</a></div></div></div>
-        <div class="project-card">
-            <h3 class="project-title">
-                <i class="fab fa-github"></i> jo-inc/camofox-browser
-            </h3>
-            <div class="project-stats">
-                <div class="stat-item">
-                    <i class="fas fa-star"></i> 389 星标
-                </div>
-                <div class="stat-item">
-                    <i class="fas fa-code"></i> 
-                </div>
-                <div class="stat-item">
-                    <i class="fas fa-clock"></i> 2026-02-14T07:48:22Z
-                </div>
-            </div>
-            <p class="project-description">Headless browser automation server for AI agents to visit sites that are usually blocked</p>
-            <div class="highlight-feature">
-                <strong>核心亮点:</strong> 检索增强生成(RAG)
-            </div>
-            <div class="summary-section">
-                <strong>一句话介绍:</strong> jo-inc/camofox-browser 是一个具备自动化能力的 JavaScript 自主代理 / 任务自动化 项目，拥有 389 个星标。
-            </div>
-            <div class="button-group">
-                <a href="reports/daily-ai-agent-analysis/camofox-browser_report.html" class="view-details" target="_blank">
-                    <i class="fas fa-external-link-alt"></i> 详情报告
-                </a>
-                <a href="https://github.com/jo-inc/camofox-browser" class="github-link" target="_blank">
-                    <i class="fab fa-github"></i> GitHub
-                </a>
-            </div>
+        <div class="highlight">
+            <strong>🚀 快捷导航：</strong>
+            <ul style="margin-top: 10px;">
+                <li><a href="./20260214-AI-Daily-Report.html">查看最新 AI 视频简报 (2026-02-14)</a></li>
+                <li><a href="./reports/daily-ai-agent-analysis/analysis-2026-02-14.html">查看最新 GitHub 项目分析 (2026-02-14)</a></li>
+            </ul>
         </div>
-        <div class="project-card">
-            <h3 class="project-title">
-                <i class="fab fa-github"></i> qufei1993/skills-hub
-            </h3>
-            <div class="project-stats">
-                <div class="stat-item">
-                    <i class="fas fa-star"></i> 389 星标
-                </div>
-                <div class="stat-item">
-                    <i class="fas fa-code"></i> 
-                </div>
-                <div class="stat-item">
-                    <i class="fas fa-clock"></i> 2026-02-14T02:48:24Z
-                </div>
-            </div>
-            <p class="project-description">A cross-platform desktop app to manage Agent Skills in one place and sync them to multiple AI coding tools’ global skills directories — “Install once, sync everywhere”.</p>
-            <div class="highlight-feature">
-                <strong>核心亮点:</strong> 活跃的开发维护
-            </div>
-            <div class="summary-section">
-                <strong>一句话介绍:</strong> qufei1993/skills-hub 是一个具备自动化能力的 Rust 自主代理 / 任务自动化 项目，拥有 389 个星标。
-            </div>
-            <div class="button-group">
-                <a href="reports/daily-ai-agent-analysis/skills-hub_report.html" class="view-details" target="_blank">
-                    <i class="fas fa-external-link-alt"></i> 详情报告
-                </a>
-                <a href="https://github.com/qufei1993/skills-hub" class="github-link" target="_blank">
-                    <i class="fab fa-github"></i> GitHub
-                </a>
-            </div>
-        </div>
-        <div class="project-card">
-            <h3 class="project-title">
-                <i class="fab fa-github"></i> aeromomo/claw-compactor
-            </h3>
-            <div class="project-stats">
-                <div class="stat-item">
-                    <i class="fas fa-star"></i> 387 星标
-                </div>
-                <div class="stat-item">
-                    <i class="fas fa-code"></i> 
-                </div>
-                <div class="stat-item">
-                    <i class="fas fa-clock"></i> 2026-02-14T07:23:49Z
-                </div>
-            </div>
-            <p class="project-description">🦞 Claw Compactor — The 98% Crusher. Cut your AI agent token spend in half with 5 layered compression techniques.</p>
-            <div class="highlight-feature">
-                <strong>核心亮点:</strong> 长期记忆管理
-            </div>
-            <div class="summary-section">
-                <strong>一句话介绍:</strong> aeromomo/claw-compactor 是一个具备自动化能力的 Python 自主代理 / 任务自动化 项目，拥有 387 个星标。
-            </div>
-            <div class="button-group">
-                <a href="reports/daily-ai-agent-analysis/claw-compactor_report.html" class="view-details" target="_blank">
-                    <i class="fas fa-external-link-alt"></i> 详情报告
-                </a>
-                <a href="https://github.com/aeromomo/claw-compactor" class="github-link" target="_blank">
-                    <i class="fab fa-github"></i> GitHub
-                </a>
-            </div>
-        </div>
-        <div class="project-card">
-            <h3 class="project-title">
-                <i class="fab fa-github"></i> coollabsio/jean
-            </h3>
-            <div class="project-stats">
-                <div class="stat-item">
-                    <i class="fas fa-star"></i> 369 星标
-                </div>
-                <div class="stat-item">
-                    <i class="fas fa-code"></i> 
-                </div>
-                <div class="stat-item">
-                    <i class="fas fa-clock"></i> 2026-02-14T05:24:22Z
-                </div>
-            </div>
-            <p class="project-description">Your AI dev team, parallelized.</p>
-            <div class="highlight-feature">
-                <strong>核心亮点:</strong> 活跃的开发维护
-            </div>
-            <div class="summary-section">
-                <strong>一句话介绍:</strong> coollabsio/jean 是一个基于 TypeScript 的 对话式AI / 聊天机器人 项目，具有 369 个星标。
-            </div>
-            <div class="button-group">
-                <a href="reports/daily-ai-agent-analysis/jean_report.html" class="view-details" target="_blank">
-                    <i class="fas fa-external-link-alt"></i> 详情报告
-                </a>
-                <a href="https://github.com/coollabsio/jean" class="github-link" target="_blank">
-                    <i class="fab fa-github"></i> GitHub
-                </a>
-            </div>
-        </div>
-        <div class="project-card">
-            <h3 class="project-title">
-                <i class="fab fa-github"></i> crshdn/mission-control
-            </h3>
-            <div class="project-stats">
-                <div class="stat-item">
-                    <i class="fas fa-star"></i> 367 星标
-                </div>
-                <div class="stat-item">
-                    <i class="fas fa-code"></i> 
-                </div>
-                <div class="stat-item">
-                    <i class="fas fa-clock"></i> 2026-02-14T06:14:26Z
-                </div>
-            </div>
-            <p class="project-description">AI Agent Orchestration Dashboard - Manage AI agents, assign tasks, and coordinate multi-agent collaboration via OpenClaw Gateway.</p>
-            <div class="highlight-feature">
-                <strong>核心亮点:</strong> 活跃的开发维护
-            </div>
-            <div class="summary-section">
-                <strong>一句话介绍:</strong> crshdn/mission-control 是一个具备自动化能力的 TypeScript 自主代理 / 任务自动化 项目，拥有 367 个星标。
-            </div>
-            <div class="button-group">
-                <a href="reports/daily-ai-agent-analysis/mission-control_report.html" class="view-details" target="_blank">
-                    <i class="fas fa-external-link-alt"></i> 详情报告
-                </a>
-                <a href="https://github.com/crshdn/mission-control" class="github-link" target="_blank">
-                    <i class="fab fa-github"></i> GitHub
-                </a>
-            </div>
-        </div>
-        <div class="project-card">
-            <h3 class="project-title">
-                <i class="fab fa-github"></i> nhevers/MoltBrain
-            </h3>
-            <div class="project-stats">
-                <div class="stat-item">
-                    <i class="fas fa-star"></i> 365 星标
-                </div>
-                <div class="stat-item">
-                    <i class="fas fa-code"></i> 
-                </div>
-                <div class="stat-item">
-                    <i class="fas fa-clock"></i> 2026-02-14T00:51:13Z
-                </div>
-            </div>
-            <p class="project-description">Long-term memory layer for OpenClaw & MoltBook agents that learns and recalls your project context automatically.</p>
-            <div class="highlight-feature">
-                <strong>核心亮点:</strong> 长期记忆管理
-            </div>
-            <div class="summary-section">
-                <strong>一句话介绍:</strong> nhevers/MoltBrain 是一个基于 TypeScript 的 开发者工具 / 代码辅助 项目，提升开发效率，拥有 365 个星标。
-            </div>
-            <div class="button-group">
-                <a href="reports/daily-ai-agent-analysis/MoltBrain_report.html" class="view-details" target="_blank">
-                    <i class="fas fa-external-link-alt"></i> 详情报告
-                </a>
-                <a href="https://github.com/nhevers/MoltBrain" class="github-link" target="_blank">
-                    <i class="fab fa-github"></i> GitHub
-                </a>
-            </div>
-        </div>
-        <div class="project-card">
-            <h3 class="project-title">
-                <i class="fab fa-github"></i> voocel/openclaw-mini
-            </h3>
-            <div class="project-stats">
-                <div class="stat-item">
-                    <i class="fas fa-star"></i> 355 星标
-                </div>
-                <div class="stat-item">
-                    <i class="fas fa-code"></i> 
-                </div>
-                <div class="stat-item">
-                    <i class="fas fa-clock"></i> 2026-02-14T07:29:50Z
-                </div>
-            </div>
-            <p class="project-description">🦞 OpenClaw 核心架构的极简复现，涵盖 sessionKey 会话域、队列串行、工具化记忆检索、按需上下文加载、可扩展技能与主动心跳唤醒机制</p>
-            <div class="highlight-feature">
-                <strong>核心亮点:</strong> 长期记忆管理
-            </div>
-            <div class="summary-section">
-                <strong>一句话介绍:</strong> voocel/openclaw-mini 是一个具备自动化能力的 TypeScript 自主代理 / 任务自动化 项目，拥有 355 个星标。
-            </div>
-            <div class="button-group">
-                <a href="reports/daily-ai-agent-analysis/openclaw-mini_report.html" class="view-details" target="_blank">
-                    <i class="fas fa-external-link-alt"></i> 详情报告
-                </a>
-                <a href="https://github.com/voocel/openclaw-mini" class="github-link" target="_blank">
-                    <i class="fab fa-github"></i> GitHub
-                </a>
-            </div>
-        </div>
-        <div class="project-card">
-            <h3 class="project-title">
-                <i class="fab fa-github"></i> always-further/nono
-            </h3>
-            <div class="project-stats">
-                <div class="stat-item">
-                    <i class="fas fa-star"></i> 347 星标
-                </div>
-                <div class="stat-item">
-                    <i class="fas fa-code"></i> 
-                </div>
-                <div class="stat-item">
-                    <i class="fas fa-clock"></i> 2026-02-14T06:22:42Z
-                </div>
-            </div>
-            <p class="project-description">Secure, kernel-enforced sandbox for AI agents, MCP and LLM workloads. Capability-based isolation with secure key management and blocking of destructive actions in a zero-trust environment.</p>
-            <div class="highlight-feature">
-                <strong>核心亮点:</strong> 检索增强生成(RAG)
-            </div>
-            <div class="summary-section">
-                <strong>一句话介绍:</strong> always-further/nono 是一个基于 Rust 的 对话式AI / 聊天机器人 项目，具有 347 个星标。
-            </div>
-            <div class="button-group">
-                <a href="reports/daily-ai-agent-analysis/nono_report.html" class="view-details" target="_blank">
-                    <i class="fas fa-external-link-alt"></i> 详情报告
-                </a>
-                <a href="https://github.com/always-further/nono" class="github-link" target="_blank">
-                    <i class="fab fa-github"></i> GitHub
-                </a>
-            </div>
-        </div>
-        <div id="daily-report" class="intro" style="margin-top: 50px; background: linear-gradient(135deg, #74b9ff, #0984e3); color: white;">
-            <h2 style="color: white;"><i class="fas fa-chart-line"></i> 今日综合报告</h2>
-            <p>查看今天的完整AI Agent项目分析报告</p>
-            <div class="button-group" style="justify-content: center; margin-top: 20px;">
-                <a href="reports/daily-ai-agent-analysis/analysis-2026-02-14.html" class="daily-report-link" target="_blank">
-                    <i class="fas fa-file-contract"></i> 今日详细报告
-                </a>
-            </div>
-        </div>
-        <div class="last-updated">
-            <p><i class="fas fa-history"></i> 最后更新: 2026-02-14</p>
-            <p><i class="fas fa-bolt"></i> 下一个更新周期: 北京时间明日14:25</p>
-            <p><i class="fas fa-rocket"></i> powered by OpenClaw AI Assistant</p>
+
+        <div class="footer">
+            <p>Generated by OpenClaw · 2026-02-14</p>
+            <p style="margin-top: 10px; color: #aaa;">数据来源：YouTube AI 频道、GitHub API、Product Hunt、OpenAI Blog、Google AI Blog、Anthropic Blog</p>
         </div>
     </div>
 </body>
