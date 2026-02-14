@@ -1021,12 +1021,7 @@
         
         <nav class="app-bar-center">
             <div class="nav-tabs" id="navTabs">
-                <button class="nav-tab active" data-source="all">
-                    <span class="icon">🏠</span>
-                    首页
-                    <span class="count" id="countAll">0</span>
-                </button>
-                <button class="nav-tab" data-source="github">
+                <button class="nav-tab active" data-source="github">
                     <span class="icon">⭐</span>
                     GitHub
                     <span class="count" id="countGitHub">0</span>
@@ -1189,7 +1184,7 @@
     <script>
         // 应用状态
         const state = {
-            currentFilter: 'all',
+            currentFilter: 'github', // 默认显示GitHub
             data: null,
             isLoading: true,
             error: null,
@@ -1206,7 +1201,6 @@
             refreshBtn: document.getElementById('refreshBtn'),
             navTabs: document.querySelectorAll('.nav-tab'),
             counts: {
-                all: document.getElementById('countAll'),
                 github: document.getElementById('countGitHub'),
                 youtube: document.getElementById('countYouTube'),
                 producthunt: document.getElementById('countProductHunt')
@@ -1465,7 +1459,8 @@
                 state.error = null;
                 
                 updateCounts();
-                renderCards(state.data.items);
+                // 根据当前选中的tab过滤显示，而不是显示全部
+                filterData(state.currentFilter);
                 
             } catch (error) {
                 console.error('加载数据失败:', error);
@@ -1479,7 +1474,6 @@
         function updateCounts() {
             if (!state.data) return;
             
-            elements.counts.all.textContent = state.data.summary.total || 0;
             elements.counts.github.textContent = state.data.summary.github || 0;
             elements.counts.youtube.textContent = state.data.summary.youtube || 0;
             elements.counts.producthunt.textContent = state.data.summary.producthunt || 0;
@@ -1489,21 +1483,17 @@
         function filterData(source) {
             if (!state.data) return;
             
-            let filtered = state.data.items;
-            
-            if (source !== 'all') {
-                filtered = state.data.items.filter(item => item.source === source);
-            }
+            // 只显示对应分类的数据
+            const filtered = state.data.items.filter(item => item.source === source);
             
             const titles = {
-                all: { title: '📋 今日精选', desc: '来自全球 AI 社区的最新动态' },
                 github: { title: '⭐ GitHub 热门', desc: '最新最热门的 AI 开源项目' },
                 youtube: { title: '▶️ YouTube 精选', desc: '值得一看的 AI 视频内容' },
                 producthunt: { title: '🚀 Product Hunt', desc: '最新发布的 AI 产品' }
             };
             
             elements.sectionTitle.textContent = titles[source].title;
-            renderCards(filtered);
+            renderCards(filtered, source);
         }
 
         // 获取 source 图标
@@ -1554,12 +1544,18 @@
         }
 
         // 渲染卡片
-        function renderCards(items) {
+        function renderCards(items, source) {
             if (items.length === 0) {
+                const sourceNames = {
+                    github: 'GitHub',
+                    youtube: 'YouTube',
+                    producthunt: 'Product Hunt'
+                };
                 elements.contentContainer.innerHTML = `
                     <div class="empty">
                         <div class="empty-icon">📭</div>
-                        <p>暂无数据</p>
+                        <p>${sourceNames[source] || ''} 暂无数据</p>
+                        <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.5rem;">该日期暂无${sourceNames[source] || ''}内容，请尝试切换其他日期或分类</p>
                     </div>
                 `;
                 return;
