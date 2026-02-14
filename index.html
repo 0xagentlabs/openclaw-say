@@ -545,6 +545,160 @@
         .date-today-btn:hover {
             background: rgba(255,255,255,0.2);
         }
+
+        /* 日历弹窗 */
+        .calendar-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.5);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 2000;
+        }
+
+        .calendar-modal.active {
+            display: flex;
+        }
+
+        .calendar-container {
+            background: var(--bg-primary);
+            border-radius: 16px;
+            padding: 20px;
+            width: 90%;
+            max-width: 400px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+
+        .calendar-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 16px;
+        }
+
+        .calendar-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .calendar-nav {
+            display: flex;
+            gap: 8px;
+        }
+
+        .calendar-nav-btn {
+            width: 32px;
+            height: 32px;
+            border: none;
+            background: var(--bg-secondary);
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+            transition: background 0.2s;
+        }
+
+        .calendar-nav-btn:hover {
+            background: var(--bg-hover);
+        }
+
+        .calendar-weekdays {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 4px;
+            margin-bottom: 8px;
+        }
+
+        .calendar-weekday {
+            text-align: center;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            padding: 8px 0;
+        }
+
+        .calendar-days {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 4px;
+        }
+
+        .calendar-day {
+            aspect-ratio: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: all 0.2s;
+            position: relative;
+        }
+
+        .calendar-day:hover:not(.empty):not(.disabled) {
+            background: var(--bg-hover);
+        }
+
+        .calendar-day.empty {
+            cursor: default;
+        }
+
+        .calendar-day.disabled {
+            color: var(--text-muted);
+            cursor: not-allowed;
+        }
+
+        .calendar-day.today {
+            background: var(--accent);
+            color: white;
+            font-weight: 600;
+        }
+
+        .calendar-day.selected {
+            box-shadow: 0 0 0 2px var(--accent);
+        }
+
+        .calendar-day.has-data::after {
+            content: '';
+            position: absolute;
+            bottom: 4px;
+            width: 4px;
+            height: 4px;
+            background: var(--green);
+            border-radius: 50%;
+        }
+
+        /* 快速选择 */
+        .calendar-quick-select {
+            display: flex;
+            gap: 8px;
+            margin-top: 16px;
+            padding-top: 16px;
+            border-top: 1px solid var(--border);
+            flex-wrap: wrap;
+        }
+
+        .calendar-quick-btn {
+            padding: 8px 16px;
+            border: 1px solid var(--border);
+            background: var(--bg-secondary);
+            border-radius: 20px;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .calendar-quick-btn:hover {
+            background: var(--bg-hover);
+            border-color: var(--accent);
+        }
         
         /* 内容区域 */
         .content-wrapper {
@@ -924,7 +1078,6 @@
                     <button class="date-nav-btn" id="prevDate" title="上一天">‹</button>
                     <div class="date-selector" id="dateSelector">
                         <span class="date-display" id="dateDisplay">今日</span>
-                        <input type="date" id="dateInput" class="date-input">
                     </div>
                     <button class="date-nav-btn" id="nextDate" title="下一天">›</button>
                     <button class="date-today-btn" id="todayBtn">今天</button>
@@ -994,6 +1147,35 @@
         </div>
     </div>
 
+    <!-- 日历弹窗 -->
+    <div class="calendar-modal" id="calendarModal">
+        <div class="calendar-container">
+            <div class="calendar-header">
+                <span class="calendar-title" id="calendarTitle">2026年2月</span>
+                <div class="calendar-nav">
+                    <button class="calendar-nav-btn" id="calendarPrevMonth">‹</button>
+                    <button class="calendar-nav-btn" id="calendarNextMonth">›</button>
+                </div>
+            </div>
+            <div class="calendar-weekdays">
+                <div class="calendar-weekday">日</div>
+                <div class="calendar-weekday">一</div>
+                <div class="calendar-weekday">二</div>
+                <div class="calendar-weekday">三</div>
+                <div class="calendar-weekday">四</div>
+                <div class="calendar-weekday">五</div>
+                <div class="calendar-weekday">六</div>
+            </div>
+            <div class="calendar-days" id="calendarDays"></div>
+            <div class="calendar-quick-select">
+                <button class="calendar-quick-btn" data-days="0">今天</button>
+                <button class="calendar-quick-btn" data-days="1">昨天</button>
+                <button class="calendar-quick-btn" data-days="7">7天内</button>
+                <button class="calendar-quick-btn" data-days="30">30天内</button>
+            </div>
+        </div>
+    </div>
+
     <!-- Footer -->
     <footer>
         <div class="footer-links">
@@ -1012,7 +1194,8 @@
             isLoading: true,
             error: null,
             currentDate: new Date().toISOString().split('T')[0],
-            availableDates: []
+            availableDates: [],
+            calendarMonth: new Date()
         };
 
         // DOM 元素
@@ -1030,10 +1213,15 @@
             },
             // 日期选择器元素
             dateDisplay: document.getElementById('dateDisplay'),
-            dateInput: document.getElementById('dateInput'),
             prevDate: document.getElementById('prevDate'),
             nextDate: document.getElementById('nextDate'),
-            todayBtn: document.getElementById('todayBtn')
+            todayBtn: document.getElementById('todayBtn'),
+            // 日历元素
+            calendarModal: document.getElementById('calendarModal'),
+            calendarTitle: document.getElementById('calendarTitle'),
+            calendarDays: document.getElementById('calendarDays'),
+            calendarPrevMonth: document.getElementById('calendarPrevMonth'),
+            calendarNextMonth: document.getElementById('calendarNextMonth')
         };
 
         // 初始化
@@ -1060,11 +1248,7 @@
             });
 
             // 日期选择器事件
-            elements.dateInput.addEventListener('change', (e) => {
-                if (e.target.value) {
-                    navigateToDate(e.target.value);
-                }
-            });
+            elements.dateDisplay.addEventListener('click', openCalendar);
 
             elements.prevDate.addEventListener('click', () => {
                 navigateToAdjacentDate(-1);
@@ -1076,6 +1260,24 @@
 
             elements.todayBtn.addEventListener('click', () => {
                 navigateToDate(new Date().toISOString().split('T')[0]);
+            });
+
+            // 日历事件
+            elements.calendarPrevMonth.addEventListener('click', () => changeCalendarMonth(-1));
+            elements.calendarNextMonth.addEventListener('click', () => changeCalendarMonth(1));
+            elements.calendarModal.addEventListener('click', (e) => {
+                if (e.target === elements.calendarModal) closeCalendar();
+            });
+
+            // 快速选择按钮
+            document.querySelectorAll('.calendar-quick-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const days = parseInt(btn.dataset.days);
+                    const date = new Date();
+                    date.setDate(date.getDate() - days);
+                    navigateToDate(date.toISOString().split('T')[0]);
+                    closeCalendar();
+                });
             });
         }
 
@@ -1090,6 +1292,70 @@
             });
             elements.currentDate.textContent = `📅 ${dateStr}`;
             updateDateDisplay();
+        }
+
+        // ===== 日历功能 =====
+        function openCalendar() {
+            state.calendarMonth = new Date(state.currentDate);
+            renderCalendar();
+            elements.calendarModal.classList.add('active');
+        }
+
+        function closeCalendar() {
+            elements.calendarModal.classList.remove('active');
+        }
+
+        function changeCalendarMonth(offset) {
+            state.calendarMonth.setMonth(state.calendarMonth.getMonth() + offset);
+            renderCalendar();
+        }
+
+        function renderCalendar() {
+            const year = state.calendarMonth.getFullYear();
+            const month = state.calendarMonth.getMonth();
+
+            elements.calendarTitle.textContent = `${year}年${month + 1}月`;
+
+            const firstDay = new Date(year, month, 1);
+            const lastDay = new Date(year, month + 1, 0);
+            const startPadding = firstDay.getDay();
+            const daysInMonth = lastDay.getDate();
+
+            const today = new Date().toISOString().split('T')[0];
+            const current = state.currentDate;
+
+            let html = '';
+
+            // 空白填充
+            for (let i = 0; i < startPadding; i++) {
+                html += '<div class="calendar-day empty"></div>';
+            }
+
+            // 日期
+            for (let day = 1; day <= daysInMonth; day++) {
+                const dateStr = `${year}-${String(month + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
+                const isToday = dateStr === today;
+                const isSelected = dateStr === current;
+                const hasData = state.availableDates.includes(dateStr);
+
+                const classes = ['calendar-day'];
+                if (isToday) classes.push('today');
+                if (isSelected) classes.push('selected');
+                if (hasData) classes.push('has-data');
+
+                html += `<div class="${classes.join(' ')}" data-date="${dateStr}">${day}</div>`;
+            }
+
+            elements.calendarDays.innerHTML = html;
+
+            // 添加点击事件
+            elements.calendarDays.querySelectorAll('.calendar-day:not(.empty)').forEach(dayEl => {
+                dayEl.addEventListener('click', () => {
+                    const date = dayEl.dataset.date;
+                    navigateToDate(date);
+                    closeCalendar();
+                });
+            });
         }
 
         // 更新日期显示
