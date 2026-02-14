@@ -1,12 +1,12 @@
 // scripts/fetch_product_updates.js
 const https = require('https');
-const { URL } = require('url');
+const fs = require('fs');
+const path = require('path');
 
 const SOURCES = [
-    // OpenAI: Try news RSS or blog RSS
     { name: 'OpenAI', urls: ['https://openai.com/news/rss.xml', 'https://openai.com/blog/rss.xml'] },
-    // Anthropic: Try feed or rss.xml
-    { name: 'Anthropic', urls: ['https://www.anthropic.com/feed', 'https://www.anthropic.com/rss.xml', 'https://www.anthropic.com/index.xml'] },
+    // Use the reliable third-party generated feed for Anthropic
+    { name: 'Anthropic', urls: ['https://raw.githubusercontent.com/Olshansk/rss-feeds/refs/heads/main/feeds/feed_anthropic.xml'] },
     { name: 'Google AI', urls: ['https://blog.google/technology/ai/rss/'] },
     { name: 'Product Hunt', urls: ['https://www.producthunt.com/feed?category=artificial-intelligence'] }
 ];
@@ -14,7 +14,8 @@ const SOURCES = [
 // Simple RSS Parser using Regex
 function parseRSS(xml, sourceName) {
     const items = [];
-    const cleanXML = xml.replace(/<(\/?)([^:>\s]+:)?([^>]+)>/g, "<$1$3>"); 
+    // Remove CDATA
+    const cleanXML = xml.replace(/<!\[CDATA\[(.*?)\]\]>/g, '$1'); 
 
     const itemRegex = /<item>([\s\S]*?)<\/item>|<entry>([\s\S]*?)<\/entry>/g;
     let match;
@@ -24,7 +25,7 @@ function parseRSS(xml, sourceName) {
         
         let title = "No Title";
         const titleMatch = content.match(/<title[^>]*>([\s\S]*?)<\/title>/);
-        if (titleMatch) title = titleMatch[1].replace(/<!\[CDATA\[(.*?)\]\]>/g, '$1').trim();
+        if (titleMatch) title = titleMatch[1].trim();
 
         let link = "";
         const linkMatch = content.match(/<link[^>]*>([^<]+)<\/link>/);
@@ -41,7 +42,7 @@ function parseRSS(xml, sourceName) {
         if (title !== "No Title") {
             items.push({
                 source: sourceName,
-                title: title.replace(/&amp;/g, '&').replace(/&#x27;/g, "'"),
+                title: title.replace(/&amp;/g, '&').replace(/&#x27;/g, "'").replace(/&#39;/g, "'"),
                 link: link,
                 date: date
             });
@@ -81,6 +82,24 @@ async function fetchSource(source) {
     return [];
 }
 
+function generateMarkdown(updates) {
+    let md = "## 📢 AI Product Updates\n\n";
+    const grouped = {};
+    updates.forEach(u => {
+        if (!grouped[u.source]) grouped[u.source] = [];
+        grouped[u.source].push(u);
+    });
+
+    for (const source in grouped) {
+        md += `### ${source}\n`;
+        grouped[source].forEach(item => {
+            md += `- [${item.title}](${item.link}) - _${item.date}_\n`;
+        });
+        md += "\n";
+    }
+    return md;
+}
+
 (async () => {
     console.log("Starting update check...");
     const allUpdates = [];
@@ -95,6 +114,9 @@ async function fetchSource(source) {
         }
     }
 
-    console.log("\n--- JSON OUTPUT ---");
-    console.log(JSON.stringify(allUpdates, null, 2));
+    const md = generateMarkdown(allUpdates);
+    const outputPath = path.join(__dirname, '../product_updates.md');
+    fs.writeFileSync(outputPath, md);
+    console.log(`\nReport saved to ${outputPath}`);
+    console.log(md);
 })();
