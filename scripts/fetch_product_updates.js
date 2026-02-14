@@ -7,7 +7,7 @@ const SOURCES = [
     { name: 'OpenAI', urls: ['https://openai.com/news/rss.xml', 'https://openai.com/blog/rss.xml'] },
     { name: 'Google AI', urls: ['https://blog.google/technology/ai/rss/'] },
     { name: 'Product Hunt', urls: ['https://www.producthunt.com/feed?category=artificial-intelligence'] },
-    { name: 'Matt Wolfe (YouTube)', urls: ['https://www.youtube.com/feeds/videos.xml?channel_id=UCuK2Mf5As9OKfWU7XV6yzCg'] }
+    { name: 'Two Minute Papers (YouTube)', urls: ['https://www.youtube.com/feeds/videos.xml?channel_id=UCbfYPyITQ-7l4upoX8nvctg'] }
 ];
 
 function fetchURL(url) {
@@ -132,7 +132,7 @@ function generateMarkdown(updates) {
 
 function generateHTML(updates) {
     let html = '<div class="product-updates-section" style="margin: 40px 0; background: white; padding: 30px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">';
-    html += '<h2 style="color: #2d3436; border-bottom: 2px solid #eee; padding-bottom: 15px; margin-bottom: 25px;"><i class="fas fa-newspaper"></i> 行业动态 & 新品发布</h2>';
+    html += '<h2 style="color: #2d3436; border-bottom: 2px solid #eee; padding-bottom: 15px; margin-bottom: 25px;"><i class="fas fa-newspaper"></i> 行业动态 & 视频精选</h2>';
     
     const grouped = {};
     

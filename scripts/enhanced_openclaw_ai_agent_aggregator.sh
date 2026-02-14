@@ -32,6 +32,9 @@ echo "开始分析 $DATE 的顶级AI Agent项目..."
 # Clone the target repository FIRST so we have the history file
 if [ ! -d "$WORKSPACE_DIR" ]; then
     git clone "https://github.com/$REPO_OWNER/$REPO_NAME.git" "$WORKSPACE_DIR"
+else
+    # Update existing repo
+    (cd "$WORKSPACE_DIR" && git pull origin main)
 fi
 
 # Step 0.5: Fetch Product Updates (New Integration)
