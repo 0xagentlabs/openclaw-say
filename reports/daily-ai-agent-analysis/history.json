@@ -2,14 +2,14 @@
   {
     "date": "2026-02-14",
     "projects": [
-      "BlockRunAI/ClawRouter",
-      "callstackincubator/agent-device",
-      "softaworks/agent-toolkit",
-      "cursor/agent-trace",
-      "ygwyg/MAHORAGA",
-      "jingkaihe/matchlock",
-      "ValueCell-ai/ClawX",
-      "dannote/figma-use"
+      "jo-inc/camofox-browser",
+      "qufei1993/skills-hub",
+      "aeromomo/claw-compactor",
+      "coollabsio/jean",
+      "crshdn/mission-control",
+      "nhevers/MoltBrain",
+      "voocel/openclaw-mini",
+      "always-further/nono"
     ]
   },
   {
@@ -23,6 +23,19 @@
       "BankrBot/openclaw-skills",
       "six2dez/burp-ai-agent",
       "WordPress/agent-skills"
+    ]
+  },
+  {
+    "date": "2026-02-14",
+    "projects": [
+      "BlockRunAI/ClawRouter",
+      "callstackincubator/agent-device",
+      "softaworks/agent-toolkit",
+      "cursor/agent-trace",
+      "ygwyg/MAHORAGA",
+      "jingkaihe/matchlock",
+      "ValueCell-ai/ClawX",
+      "dannote/figma-use"
     ]
   },
   {
