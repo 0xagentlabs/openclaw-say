@@ -458,6 +458,92 @@
         .hero p {
             font-size: 1rem;
             opacity: 0.9;
+            margin-bottom: 1.5rem;
+        }
+
+        /* 日期选择器 */
+        .date-picker {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .date-nav-btn {
+            width: 40px;
+            height: 40px;
+            border: none;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s;
+            backdrop-filter: blur(4px);
+        }
+
+        .date-nav-btn:hover:not(:disabled) {
+            background: rgba(255,255,255,0.3);
+            transform: scale(1.05);
+        }
+
+        .date-nav-btn:disabled {
+            opacity: 0.4;
+            cursor: not-allowed;
+        }
+
+        .date-selector {
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+
+        .date-display {
+            padding: 10px 20px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 24px;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+            backdrop-filter: blur(4px);
+            min-width: 120px;
+            text-align: center;
+        }
+
+        .date-display:hover {
+            background: rgba(255,255,255,0.3);
+        }
+
+        .date-input {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            cursor: pointer;
+        }
+
+        .date-today-btn {
+            padding: 10px 20px;
+            border: 1px solid rgba(255,255,255,0.3);
+            background: transparent;
+            color: white;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: all 0.2s;
+            backdrop-filter: blur(4px);
+        }
+
+        .date-today-btn:hover {
+            background: rgba(255,255,255,0.2);
         }
         
         /* 内容区域 */
@@ -832,6 +918,17 @@
                 <div class="hero-date" id="currentDate">📅 加载中...</div>
                 <h1>AI 智能前沿日报</h1>
                 <p>汇聚 GitHub、YouTube、Product Hunt 最新 AI 动态</p>
+                
+                <!-- 日期选择器 -->
+                <div class="date-picker">
+                    <button class="date-nav-btn" id="prevDate" title="上一天">‹</button>
+                    <div class="date-selector" id="dateSelector">
+                        <span class="date-display" id="dateDisplay">今日</span>
+                        <input type="date" id="dateInput" class="date-input">
+                    </div>
+                    <button class="date-nav-btn" id="nextDate" title="下一天">›</button>
+                    <button class="date-today-btn" id="todayBtn">今天</button>
+                </div>
             </div>
         </section>
 
@@ -913,7 +1010,9 @@
             currentFilter: 'all',
             data: null,
             isLoading: true,
-            error: null
+            error: null,
+            currentDate: new Date().toISOString().split('T')[0],
+            availableDates: []
         };
 
         // DOM 元素
@@ -928,7 +1027,13 @@
                 github: document.getElementById('countGitHub'),
                 youtube: document.getElementById('countYouTube'),
                 producthunt: document.getElementById('countProductHunt')
-            }
+            },
+            // 日期选择器元素
+            dateDisplay: document.getElementById('dateDisplay'),
+            dateInput: document.getElementById('dateInput'),
+            prevDate: document.getElementById('prevDate'),
+            nextDate: document.getElementById('nextDate'),
+            todayBtn: document.getElementById('todayBtn')
         };
 
         // 初始化
@@ -953,9 +1058,28 @@
             elements.refreshBtn.addEventListener('click', () => {
                 loadData();
             });
+
+            // 日期选择器事件
+            elements.dateInput.addEventListener('change', (e) => {
+                if (e.target.value) {
+                    navigateToDate(e.target.value);
+                }
+            });
+
+            elements.prevDate.addEventListener('click', () => {
+                navigateToAdjacentDate(-1);
+            });
+
+            elements.nextDate.addEventListener('click', () => {
+                navigateToAdjacentDate(1);
+            });
+
+            elements.todayBtn.addEventListener('click', () => {
+                navigateToDate(new Date().toISOString().split('T')[0]);
+            });
         }
 
-        // 设置当前日期
+        // 设置当前日期显示
         function setCurrentDate() {
             const today = new Date();
             const dateStr = today.toLocaleDateString('zh-CN', {
@@ -965,6 +1089,54 @@
                 weekday: 'long'
             });
             elements.currentDate.textContent = `📅 ${dateStr}`;
+            updateDateDisplay();
+        }
+
+        // 更新日期显示
+        function updateDateDisplay() {
+            const today = new Date().toISOString().split('T')[0];
+            const current = state.currentDate;
+
+            if (current === today) {
+                elements.dateDisplay.textContent = '今日';
+            } else if (current === getOffsetDate(today, -1)) {
+                elements.dateDisplay.textContent = '昨天';
+            } else {
+                const date = new Date(current);
+                elements.dateDisplay.textContent = date.toLocaleDateString('zh-CN', {
+                    month: 'short',
+                    day: 'numeric'
+                });
+            }
+
+            elements.dateInput.value = current;
+
+            // 更新导航按钮状态
+            const hasPrev = state.availableDates.length === 0 || state.availableDates.includes(getOffsetDate(current, -1));
+            const hasNext = current !== today && (state.availableDates.length === 0 || state.availableDates.includes(getOffsetDate(current, 1)));
+
+            elements.prevDate.disabled = !hasPrev;
+            elements.nextDate.disabled = !hasNext;
+        }
+
+        // 获取偏移日期
+        function getOffsetDate(dateStr, days) {
+            const date = new Date(dateStr);
+            date.setDate(date.getDate() + days);
+            return date.toISOString().split('T')[0];
+        }
+
+        // 导航到指定日期
+        function navigateToDate(dateStr) {
+            state.currentDate = dateStr;
+            updateDateDisplay();
+            loadData();
+        }
+
+        // 导航到相邻日期
+        function navigateToAdjacentDate(offset) {
+            const newDate = getOffsetDate(state.currentDate, offset);
+            navigateToDate(newDate);
         }
 
         // 设置激活的Tab
@@ -979,6 +1151,28 @@
             state.currentFilter = source;
         }
 
+        // 扫描可用日期
+        async function scanAvailableDates() {
+            const dates = [];
+            const today = new Date();
+            // 扫描最近30天
+            for (let i = 0; i < 30; i++) {
+                const date = new Date(today);
+                date.setDate(date.getDate() - i);
+                const dateStr = date.toISOString().split('T')[0];
+                try {
+                    const response = await fetch(`data/combined/${dateStr}.json`, { method: 'HEAD' });
+                    if (response.ok) {
+                        dates.push(dateStr);
+                    }
+                } catch (e) {
+                    // 忽略错误
+                }
+            }
+            state.availableDates = dates;
+            return dates;
+        }
+
         // 加载数据
         async function loadData() {
             state.isLoading = true;
@@ -990,13 +1184,14 @@
             `;
 
             try {
-                const today = new Date().toISOString().split('T')[0];
-                let response = await fetch(`data/combined/${today}.json`);
-                
+                // 使用当前选择的日期加载数据
+                let response = await fetch(`data/combined/${state.currentDate}.json`);
+
+                // 如果指定日期不存在，回退到最新数据
                 if (!response.ok) {
                     response = await fetch('data/combined/latest.json');
                 }
-                
+
                 if (!response.ok) {
                     throw new Error('无法加载数据');
                 }
