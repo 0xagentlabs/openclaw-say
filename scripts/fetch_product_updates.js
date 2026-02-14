@@ -129,6 +129,44 @@ function generateMarkdown(updates) {
     return md;
 }
 
+function generateHTML(updates) {
+    let html = '<div class="product-updates-section" style="margin: 40px 0; background: white; padding: 30px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">';
+    html += '<h2 style="color: #2d3436; border-bottom: 2px solid #eee; padding-bottom: 15px; margin-bottom: 25px;"><i class="fas fa-newspaper"></i> 行业动态 & 新品发布</h2>';
+    
+    const grouped = {};
+    
+    // DeepSeek
+    const deepSeekItems = updates.filter(u => u.title.toLowerCase().includes('deepseek'));
+    if (deepSeekItems.length > 0) {
+        html += '<div style="background: #fff3cd; padding: 15px; border-radius: 10px; margin-bottom: 20px; border-left: 5px solid #ffc107;">';
+        html += '<h3 style="color: #856404; margin-top: 0;"><i class="fas fa-fire"></i> DeepSeek 动态</h3><ul style="list-style: none; padding-left: 0;">';
+        deepSeekItems.forEach(item => {
+             html += `<li style="margin-bottom: 10px;"><a href="${item.link}" target="_blank" style="color: #2d3436; text-decoration: none; font-weight: 500;">${item.title}</a> <span style="color: #666; font-size: 0.9em;">- ${item.source}</span></li>`;
+        });
+        html += '</ul></div>';
+    }
+
+    updates.forEach(u => {
+        if (!grouped[u.source]) grouped[u.source] = [];
+        grouped[u.source].push(u);
+    });
+
+    html += '<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">';
+
+    for (const source in grouped) {
+        html += `<div class="source-column">`;
+        html += `<h3 style="color: #0984e3; border-left: 4px solid #0984e3; padding-left: 10px;">${source}</h3>`;
+        html += '<ul style="padding-left: 20px;">';
+        grouped[source].forEach(item => {
+            html += `<li style="margin-bottom: 8px;"><a href="${item.link}" target="_blank" style="color: #444; text-decoration: none;">${item.title}</a> <span style="color: #999; font-size: 0.8em;">(${new Date(item.date).toLocaleDateString()})</span></li>`;
+        });
+        html += '</ul></div>';
+    }
+    
+    html += '</div></div>';
+    return html;
+}
+
 (async () => {
     console.log("Starting update check...");
     const allUpdates = [];
@@ -157,8 +195,12 @@ function generateMarkdown(updates) {
     console.log(`Total items found: ${allUpdates.length}`);
 
     const md = generateMarkdown(allUpdates);
-    const outputPath = path.join(__dirname, '../product_updates.md');
-    fs.writeFileSync(outputPath, md);
-    console.log(`\nReport saved to ${outputPath}`);
-    console.log(md);
+    const mdPath = path.join(__dirname, '../product_updates.md');
+    fs.writeFileSync(mdPath, md);
+    
+    const html = generateHTML(allUpdates);
+    const htmlPath = path.join(__dirname, '../product_updates.html');
+    fs.writeFileSync(htmlPath, html);
+
+    console.log(`\nReports saved to ${mdPath} and ${htmlPath}`);
 })();

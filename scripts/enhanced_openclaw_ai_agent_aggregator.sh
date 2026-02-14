@@ -34,6 +34,25 @@ if [ ! -d "$WORKSPACE_DIR" ]; then
     git clone "https://github.com/$REPO_OWNER/$REPO_NAME.git" "$WORKSPACE_DIR"
 fi
 
+# Step 0.5: Fetch Product Updates (New Integration)
+echo "正在获取产品动态..."
+PRODUCT_UPDATES_HTML=""
+if [ -f "$WORKSPACE_DIR/scripts/fetch_product_updates.js" ]; then
+    # Run the fetch script
+    # It writes to ../product_updates.html relative to script, so $WORKSPACE_DIR/product_updates.html
+    echo "Running fetch_product_updates.js..."
+    (cd "$WORKSPACE_DIR/scripts" && node fetch_product_updates.js)
+    
+    if [ -f "$WORKSPACE_DIR/product_updates.html" ]; then
+        PRODUCT_UPDATES_HTML=$(cat "$WORKSPACE_DIR/product_updates.html")
+        echo "产品动态获取成功。"
+    else
+         echo "Warning: product_updates.html extraction failed."
+    fi
+else
+    echo "Warning: fetch_product_updates.js script not found in $WORKSPACE_DIR/scripts."
+fi
+
 # Function to filter out recent projects
 filter_projects() {
   local search_results_json=$1
@@ -977,6 +996,11 @@ INDEX_HTML_FILE="$REPORT_DIR/index.html"
     echo "        <h2 style=\"text-align: center; color: white; margin: 40px 0 30px; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);\">"
     echo "            <i class=\"fas fa-fire\"></i> 今日热门 AI Agent 项目"
     echo "        </h2>"
+    
+    # Inject Product Updates
+    if [ ! -z "$PRODUCT_UPDATES_HTML" ]; then
+        echo "$PRODUCT_UPDATES_HTML"
+    fi
     
     # Generate project cards for the index
     while IFS='|' read -r full_name html_url description language stars updated_at topics; do
