@@ -3,290 +3,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Reports Index - OpenClaw</title>
-    <style>
-        * { box-sizing: border-box; }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            line-height: 1.6;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            color: #333;
-            background: #f5f5f5;
-        }
-        .container {
-            background: white;
-            padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        }
-        h1 { 
-            color: #1a1a1a; 
-            border-bottom: 3px solid #4CAF50; 
-            padding-bottom: 15px;
-            margin-bottom: 30px;
-            text-align: center;
-        }
-        h2 { 
-            color: #2c3e50; 
-            margin-top: 40px; 
-            border-left: 4px solid #4CAF50; 
-            padding-left: 15px;
-        }
-        h3 { 
-            color: #34495e; 
-            margin-top: 25px;
-        }
-        p { margin: 15px 0; }
-        table { 
-            border-collapse: collapse; 
-            width: 100%; 
-            margin: 20px 0;
-            background: white;
-        }
-        th, td { 
-            border: 1px solid #ddd; 
-            padding: 12px; 
-            text-align: left; 
-        }
-        th { 
-            background: #4CAF50; 
-            color: white; 
-            font-weight: 600;
-        }
-        tr:nth-child(even) { background: #f9f9f9; }
-        tr:hover { background: #f0f0f0; }
-        code { 
-            background: #f4f4f4; 
-            padding: 2px 6px; 
-            border-radius: 3px; 
-            font-family: 'Consolas', 'Monaco', monospace;
-            font-size: 0.9em;
-        }
-        pre { 
-            background: #f8f8f8; 
-            padding: 15px; 
-            border-radius: 5px; 
-            overflow-x: auto;
-            border-left: 3px solid #4CAF50;
-        }
-        blockquote { 
-            border-left: 4px solid #4CAF50; 
-            margin: 20px 0; 
-            padding: 15px 20px; 
-            background: #f9f9f9;
-            font-style: italic;
-        }
-        ul, ol { padding-left: 25px; }
-        li { margin: 8px 0; }
-        .meta { 
-            color: #666; 
-            font-size: 14px; 
-            margin-bottom: 30px;
-            padding-bottom: 20px;
-            border-bottom: 1px solid #eee;
-        }
-        .highlight { 
-            background: #fff3cd; 
-            padding: 15px; 
-            border-radius: 5px; 
-            border-left: 4px solid #ffc107; 
-            margin: 20px 0;
-        }
-        .tip { 
-            background: #d4edda; 
-            padding: 15px; 
-            border-radius: 5px; 
-            border-left: 4px solid #28a745; 
-            margin: 20px 0;
-        }
-        .warning { 
-            background: #f8d7da; 
-            padding: 15px; 
-            border-radius: 5px; 
-            border-left: 4px solid #dc3545; 
-            margin: 20px 0;
-        }
-        .loading {
-            text-align: center;
-            padding: 20px;
-            color: #666;
-        }
-        .error {
-            background: #f8d7da;
-            color: #721c24;
-            padding: 15px;
-            border-radius: 5px;
-            border-left: 4px solid #dc3545;
-            margin: 20px 0;
-        }
-        .footer { 
-            margin-top: 50px; 
-            padding-top: 20px; 
-            border-top: 2px solid #eee; 
-            color: #999; 
-            font-size: 12px;
-            text-align: center;
-        }
-        a { color: #4CAF50; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        hr { border: none; border-top: 1px solid #eee; margin: 30px 0; }
-        img { max-width: 100%; height: auto; border-radius: 5px; }
-        @media (max-width: 768px) {
-            body { padding: 10px; }
-            .container { padding: 20px; }
-            h1 { font-size: 24px; }
-            h2 { font-size: 20px; }
-        }
-    </style>
+    <title>AI Pulse Hub - 商业化 AI 资讯前哨</title>
+    <meta name="description" content="聚合每日 AI 技术趋势、GitHub 项目分析与商业洞察。">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤖</text></svg>">
 </head>
 <body>
-    <div class="container">
-        <h1>🤖 AI 技术报告索引</h1>
-        <p class="meta">这里汇集了每日 AI 技术趋势简报和 GitHub AI 项目分析报告。数据实时从仓库获取，自动更新。</p>
 
-        <h2>📅 每日 AI 技术简报</h2>
-        <p>汇总 YouTube 上每日最新的 AI 技术分享视频，重点关注模型发布、架构创新、Agent 技术等前沿动向。</p>
-        <div id="daily-reports-loading" class="loading">正在加载...</div>
-        <div id="daily-reports-error" class="error" style="display: none;"></div>
-        <table id="daily-reports-table" style="display: none;">
-            <thead>
-                <tr>
-                    <th>日期</th>
-                    <th>报告链接</th>
-                </tr>
-            </thead>
-            <tbody id="daily-reports-body">
-            </tbody>
-        </table>
-
-        <h2>🐙 每日 GitHub AI 项目分析</h2>
-        <p>自动分析 GitHub 上热门的 AI Agent 相关项目，提供项目简介和技术要点。</p>
-        <div id="github-reports-loading" class="loading">正在加载...</div>
-        <div id="github-reports-error" class="error" style="display: none;"></div>
-        <table id="github-reports-table" style="display: none;">
-            <thead>
-                <tr>
-                    <th>日期</th>
-                    <th>报告链接</th>
-                </tr>
-            </thead>
-            <tbody id="github-reports-body">
-            </tbody>
-        </table>
-
-        <div class="footer">
-            <p>Generated by OpenClaw · 动态更新</p>
+    <header class="site-header">
+        <div class="container nav-wrapper">
+            <a href="#" class="brand">AI Pulse Hub</a>
+            <nav class="nav-links">
+                <a href="#">首页</a>
+                <a href="#daily">技术日报</a>
+                <a href="#github">GitHub 趋势</a>
+                <a href="https://github.com/0xagentlabs/openclaw-say" target="_blank">关于我们</a>
+            </nav>
         </div>
-    </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>洞察 AI 时代的每一个脉搏</h1>
+            <p>每日更新全球 AI 技术动态、开源项目趋势与深度商业分析。</p>
+        </div>
+    </section>
+
+    <main class="container main-content">
+        
+        <div id="daily">
+            <h2 class="section-title">📅 最新技术日报</h2>
+            <div id="daily-container" class="card-grid">
+                <div class="loading">正在获取最新数据...</div>
+            </div>
+        </div>
+
+        <div id="github">
+            <h2 class="section-title">🐙 GitHub Agent 趋势</h2>
+            <div id="github-container" class="card-grid">
+                <div class="loading">正在分析开源生态...</div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© 2026 0xAgentLabs. Powered by OpenClaw & GitHub Pages.</p>
+        </div>
+    </footer>
 
     <script>
-        // GitHub 仓库配置
+        // Configuration
         const REPO_OWNER = '0xagentlabs';
         const REPO_NAME = 'openclaw-say';
         const BRANCH = 'main';
 
-        // 格式化日期显示
+        // Helper: Format Date
         function formatDate(filename) {
-            // 匹配 YYYYMMDD 格式
             const match = filename.match(/(\d{4})(\d{2})(\d{2})/);
-            if (match) {
-                return `${match[1]}-${match[2]}-${match[3]}`;
-            }
-            // 匹配 YYYY-MM-DD 格式
+            if (match) return `${match[1]}-${match[2]}-${match[3]}`;
             const match2 = filename.match(/(\d{4})-(\d{2})-(\d{2})/);
-            if (match2) {
-                return `${match2[1]}-${match2[2]}-${match2[3]}`;
-            }
-            return filename;
+            if (match2) return `${match2[1]}-${match2[2]}-${match2[3]}`;
+            return 'Unknown Date';
         }
 
-        // 加载每日 AI 报告
-        async function loadDailyReports() {
-            const loadingEl = document.getElementById('daily-reports-loading');
-            const errorEl = document.getElementById('daily-reports-error');
-            const tableEl = document.getElementById('daily-reports-table');
-            const tbodyEl = document.getElementById('daily-reports-body');
+        // Helper: Create Card HTML
+        function createCard(title, date, link, tag) {
+            return `
+                <article class="card">
+                    <div class="card-body">
+                        <span class="card-tag">${tag}</span>
+                        <h3 class="card-title">
+                            <a href="${link}">${title}</a>
+                        </h3>
+                        <div class="card-date">
+                            <span>🕒 ${date}</span>
+                        </div>
+                    </div>
+                </article>
+            `;
+        }
+
+        // Fetch Data
+        async function loadContent() {
+            const dailyContainer = document.getElementById('daily-container');
+            const githubContainer = document.getElementById('github-container');
 
             try {
-                const response = await fetch(`https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/?ref=${BRANCH}`);
-                if (!response.ok) throw new Error('Failed to fetch');
-                
-                const data = await response.json();
-                
-                // 过滤出 AI Daily Report 文件
-                const reports = data
+                // Fetch Root for Daily Reports
+                const rootRes = await fetch(`https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/?ref=${BRANCH}`);
+                if (!rootRes.ok) throw new Error('API Rate Limit or Network Error');
+                const rootData = await rootRes.json();
+
+                // Process Daily Reports
+                const dailyReports = rootData
                     .filter(item => item.type === 'file' && item.name.match(/^\d{8}-AI-Daily-Report\.html$/))
-                    .sort((a, b) => b.name.localeCompare(a.name)); // 倒序排列，最新的在前
+                    .sort((a, b) => b.name.localeCompare(a.name))
+                    .slice(0, 6); // Top 6
 
-                if (reports.length === 0) {
-                    loadingEl.textContent = '暂无报告';
-                    return;
+                if (dailyReports.length > 0) {
+                    dailyContainer.innerHTML = dailyReports.map(item => {
+                        const date = formatDate(item.name);
+                        return createCard(`AI Technology Daily Report - ${date}`, date, item.path, 'Daily Brief');
+                    }).join('');
+                } else {
+                    dailyContainer.innerHTML = '<div class="error">暂无日报数据</div>';
                 }
 
-                tbodyEl.innerHTML = reports.map(report => `
-                    <tr>
-                        <td>${formatDate(report.name)}</td>
-                        <td><a href="./${report.name}">${report.name}</a></td>
-                    </tr>
-                `).join('');
+                // Process GitHub Reports (Sub-folder)
+                // Note: This requires a second API call. If folder doesn't exist yet, handle gracefully.
+                try {
+                    const ghRes = await fetch(`https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/reports/daily-ai-agent-analysis?ref=${BRANCH}`);
+                    if (ghRes.ok) {
+                        const ghData = await ghRes.json();
+                        const ghReports = ghData
+                            .filter(item => item.type === 'file' && item.name.match(/^analysis-\d{4}-\d{2}-\d{2}\.html$/))
+                            .sort((a, b) => b.name.localeCompare(a.name))
+                            .slice(0, 6);
 
-                loadingEl.style.display = 'none';
-                tableEl.style.display = 'table';
+                        if (ghReports.length > 0) {
+                            githubContainer.innerHTML = ghReports.map(item => {
+                                const date = formatDate(item.name);
+                                return createCard(`GitHub Agent Ecosystem Analysis`, date, item.path, 'Trend Report');
+                            }).join('');
+                        } else {
+                            githubContainer.innerHTML = '<div class="error">暂无趋势报告</div>';
+                        }
+                    } else {
+                         // Folder might not exist yet
+                        githubContainer.innerHTML = '<div class="loading">暂无 GitHub 趋势数据 (目录未建立)</div>';
+                    }
+                } catch (e) {
+                    console.log('GitHub reports folder not found or empty');
+                    githubContainer.innerHTML = '<div class="loading">暂无数据</div>';
+                }
+
             } catch (error) {
-                loadingEl.style.display = 'none';
-                errorEl.textContent = '加载失败，请稍后刷新重试';
-                errorEl.style.display = 'block';
-                console.error('Error loading daily reports:', error);
+                console.error(error);
+                dailyContainer.innerHTML = '<div class="error">无法加载数据 (可能是 GitHub API 限流)，请稍后刷新。</div>';
             }
         }
 
-        // 加载 GitHub AI 项目分析报告
-        async function loadGithubReports() {
-            const loadingEl = document.getElementById('github-reports-loading');
-            const errorEl = document.getElementById('github-reports-error');
-            const tableEl = document.getElementById('github-reports-table');
-            const tbodyEl = document.getElementById('github-reports-body');
-
-            try {
-                const response = await fetch(`https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/reports/daily-ai-agent-analysis?ref=${BRANCH}`);
-                if (!response.ok) throw new Error('Failed to fetch');
-                
-                const data = await response.json();
-                
-                // 过滤出 analysis-YYYY-MM-DD.html 文件
-                const reports = data
-                    .filter(item => item.type === 'file' && item.name.match(/^analysis-\d{4}-\d{2}-\d{2}\.html$/))
-                    .sort((a, b) => b.name.localeCompare(a.name)); // 倒序排列
-
-                if (reports.length === 0) {
-                    loadingEl.textContent = '暂无报告';
-                    return;
-                }
-
-                tbodyEl.innerHTML = reports.map(report => `
-                    <tr>
-                        <td>${formatDate(report.name)}</td>
-                        <td><a href="./reports/daily-ai-agent-analysis/${report.name}">${report.name}</a></td>
-                    </tr>
-                `).join('');
-
-                loadingEl.style.display = 'none';
-                tableEl.style.display = 'table';
-            } catch (error) {
-                loadingEl.style.display = 'none';
-                errorEl.textContent = '加载失败，请稍后刷新重试';
-                errorEl.style.display = 'block';
-                console.error('Error loading github reports:', error);
-            }
-        }
-
-        // 页面加载时执行
-        document.addEventListener('DOMContentLoaded', () => {
-            loadDailyReports();
-            loadGithubReports();
-        });
+        // Init
+        document.addEventListener('DOMContentLoaded', loadContent);
     </script>
 </body>
 </html>
