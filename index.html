@@ -1451,7 +1451,12 @@
                 }
 
                 if (!response.ok) {
-                    throw new Error('无法加载数据');
+                    // 404时显示空状态
+                    state.data = { items: [], summary: { github: 0, youtube: 0, producthunt: 0 } };
+                    state.isLoading = false;
+                    updateCounts();
+                    filterData(state.currentFilter);
+                    return;
                 }
                 
                 state.data = await response.json();
