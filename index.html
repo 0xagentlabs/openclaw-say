@@ -26,20 +26,22 @@
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎯</text></svg>">
     
     <style>
-        /* CSS 变量定义 */
+        /* Gmail风格CSS变量 */
         :root {
-            --bg-primary: #0a192f;
-            --bg-secondary: #112240;
-            --bg-card: #1d2d4d;
-            --accent: #64ffda;
-            --accent-hover: #4dd0b8;
-            --text-primary: #e6f1ff;
-            --text-secondary: #8892b0;
-            --text-muted: #5c6b8f;
-            --border: #233554;
-            --shadow: rgba(2, 12, 27, 0.7);
-            --gradient-start: #0a192f;
-            --gradient-end: #112240;
+            --bg-primary: #ffffff;
+            --bg-secondary: #f6f8fc;
+            --bg-hover: #eaecf0;
+            --accent: #1a73e8;
+            --accent-hover: #1557b0;
+            --text-primary: #202124;
+            --text-secondary: #5f6368;
+            --text-muted: #80868b;
+            --border: #dadce0;
+            --shadow: rgba(60, 64, 67, 0.15);
+            --shadow-lg: rgba(60, 64, 67, 0.25);
+            --red: #ea4335;
+            --yellow: #fbbc04;
+            --green: #34a853;
         }
         
         /* 重置样式 */
@@ -54,246 +56,271 @@
         }
         
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            background-color: var(--bg-primary);
+            font-family: 'Google Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background-color: var(--bg-secondary);
             color: var(--text-primary);
             line-height: 1.6;
             min-height: 100vh;
         }
         
-        /* 导航栏 */
-        .navbar {
+        /* ===== Gmail风格顶部导航栏 ===== */
+        .app-bar {
             position: fixed;
             top: 0;
             left: 0;
             right: 0;
-            height: 70px;
-            background: rgba(10, 25, 47, 0.95);
-            backdrop-filter: blur(10px);
+            height: 64px;
+            background: var(--bg-primary);
             border-bottom: 1px solid var(--border);
             z-index: 1000;
             display: flex;
             align-items: center;
-            padding: 0 5%;
-            transition: all 0.3s ease;
+            padding: 0 16px;
+            box-shadow: 0 1px 2px var(--shadow);
         }
         
-        .navbar.scrolled {
-            height: 60px;
-            background: rgba(10, 25, 47, 0.98);
-            box-shadow: 0 4px 20px var(--shadow);
-        }
-        
-        .nav-brand {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: var(--text-primary);
-            text-decoration: none;
+        /* 左侧：Logo */
+        .app-bar-left {
             display: flex;
             align-items: center;
-            gap: 0.5rem;
+            gap: 12px;
+            min-width: 200px;
         }
         
-        .nav-brand span {
-            color: var(--accent);
-        }
-        
-        .nav-brand::before {
-            content: '🎯';
-            font-size: 1.8rem;
-        }
-        
-        .nav-links {
-            display: flex;
-            gap: 2rem;
-            margin-left: auto;
-        }
-        
-        .nav-links a {
-            color: var(--text-secondary);
-            text-decoration: none;
-            font-size: 0.95rem;
-            font-weight: 500;
-            transition: color 0.3s ease;
-            position: relative;
-        }
-        
-        .nav-links a:hover {
-            color: var(--accent);
-        }
-        
-        .nav-links a::after {
-            content: '';
-            position: absolute;
-            bottom: -5px;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: var(--accent);
-            transition: width 0.3s ease;
-        }
-        
-        .nav-links a:hover::after {
-            width: 100%;
-        }
-        
-        .nav-toggle {
-            display: none;
-            background: none;
+        .menu-btn {
+            width: 40px;
+            height: 40px;
             border: none;
-            color: var(--accent);
-            font-size: 1.5rem;
+            background: transparent;
+            border-radius: 50%;
             cursor: pointer;
-        }
-        
-        /* 主要内容区 */
-        main {
-            padding-top: 70px;
-        }
-        
-        /* Hero 区域 */
-        .hero {
-            min-height: 60vh;
             display: flex;
             align-items: center;
             justify-content: center;
-            text-align: center;
-            padding: 4rem 5%;
-            background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
-            position: relative;
-            overflow: hidden;
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            transition: background 0.2s;
         }
         
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: 
-                radial-gradient(circle at 20% 50%, rgba(100, 255, 218, 0.05) 0%, transparent 50%),
-                radial-gradient(circle at 80% 80%, rgba(100, 255, 218, 0.03) 0%, transparent 50%);
+        .menu-btn:hover {
+            background: var(--bg-hover);
+        }
+        
+        .app-logo {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            font-size: 1.4rem;
+            font-weight: 500;
+            color: var(--text-primary);
+        }
+        
+        .app-logo::before {
+            content: '🎯';
+            font-size: 1.6rem;
+        }
+        
+        .app-logo span {
+            color: var(--accent);
+            font-weight: 600;
+        }
+        
+        /* 中间：Tab导航 */
+        .app-bar-center {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .nav-tabs {
+            display: flex;
+            gap: 8px;
+            background: var(--bg-secondary);
+            padding: 4px;
+            border-radius: 24px;
+        }
+        
+        .nav-tab {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 20px;
+            border: none;
+            background: transparent;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            font-weight: 500;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.2s;
+            white-space: nowrap;
+        }
+        
+        .nav-tab:hover {
+            background: var(--bg-hover);
+            color: var(--text-primary);
+        }
+        
+        .nav-tab.active {
+            background: var(--bg-primary);
+            color: var(--accent);
+            box-shadow: 0 1px 3px var(--shadow);
+        }
+        
+        .nav-tab .icon {
+            font-size: 1rem;
+        }
+        
+        .nav-tab .count {
+            background: var(--bg-hover);
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+        }
+        
+        .nav-tab.active .count {
+            background: var(--accent);
+            color: white;
+        }
+        
+        /* 右侧：操作区 */
+        .app-bar-right {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            min-width: 200px;
+            justify-content: flex-end;
+        }
+        
+        .icon-btn {
+            width: 40px;
+            height: 40px;
+            border: none;
+            background: transparent;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            transition: background 0.2s;
+        }
+        
+        .icon-btn:hover {
+            background: var(--bg-hover);
+        }
+        
+        .user-avatar {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: var(--accent);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            font-size: 0.9rem;
+            cursor: pointer;
+            border: 2px solid transparent;
+            transition: border-color 0.2s;
+        }
+        
+        .user-avatar:hover {
+            border-color: var(--accent);
+        }
+        
+        /* ===== 主内容区 ===== */
+        main {
+            padding-top: 64px;
+        }
+        
+        /* Hero区域 - 简化版 */
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 3rem 5%;
+            text-align: center;
         }
         
         .hero-content {
-            position: relative;
-            z-index: 1;
-            max-width: 800px;
-        }
-        
-        .hero h1 {
-            font-size: clamp(2.5rem, 5vw, 4rem);
-            font-weight: 800;
-            margin-bottom: 1.5rem;
-            line-height: 1.2;
-        }
-        
-        .hero h1 .accent {
-            color: var(--accent);
-            display: block;
-        }
-        
-        .hero p {
-            font-size: clamp(1rem, 2vw, 1.25rem);
-            color: var(--text-secondary);
-            margin-bottom: 2rem;
             max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
+            margin: 0 auto;
         }
         
         .hero-date {
             display: inline-block;
-            background: var(--bg-card);
-            padding: 0.5rem 1.5rem;
-            border-radius: 30px;
-            font-size: 0.9rem;
-            color: var(--accent);
-            border: 1px solid var(--border);
-            margin-bottom: 1.5rem;
+            background: rgba(255,255,255,0.2);
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            margin-bottom: 1rem;
+            backdrop-filter: blur(4px);
         }
         
-        /* 数据源切换 */
-        .data-source-tabs {
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-            padding: 2rem 5%;
-            background: var(--bg-secondary);
-            border-bottom: 1px solid var(--border);
-            flex-wrap: wrap;
+        .hero h1 {
+            font-size: clamp(1.8rem, 4vw, 2.5rem);
+            font-weight: 600;
+            margin-bottom: 0.75rem;
         }
         
-        .tab-btn {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            color: var(--text-secondary);
-            padding: 0.75rem 1.5rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-size: 0.95rem;
-            font-weight: 500;
-            transition: all 0.3s ease;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-        
-        .tab-btn:hover {
-            border-color: var(--accent);
-            color: var(--accent);
-            transform: translateY(-2px);
-        }
-        
-        .tab-btn.active {
-            background: rgba(100, 255, 218, 0.1);
-            border-color: var(--accent);
-            color: var(--accent);
-        }
-        
-        .tab-btn .icon {
-            font-size: 1.1rem;
-        }
-        
-        .tab-btn .count {
-            background: var(--bg-primary);
-            padding: 0.2rem 0.6rem;
-            border-radius: 12px;
-            font-size: 0.8rem;
-            margin-left: 0.5rem;
+        .hero p {
+            font-size: 1rem;
+            opacity: 0.9;
         }
         
         /* 内容区域 */
-        .content-section {
-            padding: 3rem 5%;
-            max-width: 1400px;
+        .content-wrapper {
+            max-width: 1200px;
             margin: 0 auto;
+            padding: 2rem;
         }
         
         .section-header {
-            text-align: center;
-            margin-bottom: 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 1.5rem;
         }
         
         .section-header h2 {
-            font-size: 2rem;
-            margin-bottom: 0.5rem;
+            font-size: 1.25rem;
+            font-weight: 500;
+            color: var(--text-primary);
             display: flex;
             align-items: center;
-            justify-content: center;
             gap: 0.5rem;
         }
         
-        .section-header p {
+        .refresh-btn {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            padding: 8px 16px;
+            border: 1px solid var(--border);
+            background: var(--bg-primary);
             color: var(--text-secondary);
+            border-radius: 20px;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: all 0.2s;
         }
         
-        /* 卡片网格 */
+        .refresh-btn:hover {
+            background: var(--bg-hover);
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+        
+        /* 卡片网格 - Gmail风格 */
         .card-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-            gap: 2rem;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 1rem;
         }
         
         @media (max-width: 768px) {
@@ -302,40 +329,34 @@
             }
         }
         
-        @media (min-width: 1200px) {
-            .card-grid {
-                grid-template-columns: repeat(3, 1fr);
-            }
-        }
-        
-        /* 卡片样式 */
+        /* 卡片样式 - 扁平化 */
         .card {
-            background: var(--bg-card);
+            background: var(--bg-primary);
             border: 1px solid var(--border);
             border-radius: 12px;
             overflow: hidden;
-            transition: all 0.3s ease;
+            transition: all 0.2s;
             display: flex;
             flex-direction: column;
-            height: 100%;
         }
         
         .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 30px -10px var(--shadow);
+            box-shadow: 0 4px 12px var(--shadow);
+            transform: translateY(-2px);
             border-color: var(--accent);
         }
         
         .card-image {
             width: 100%;
-            height: 180px;
+            height: 160px;
             object-fit: cover;
             background: var(--bg-secondary);
             display: flex;
             align-items: center;
             justify-content: center;
             color: var(--text-muted);
-            font-size: 3rem;
+            font-size: 2.5rem;
+            position: relative;
         }
         
         .card-image img {
@@ -344,43 +365,45 @@
             object-fit: cover;
         }
         
+        .card-source-badge {
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            padding: 4px 12px;
+            border-radius: 16px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            backdrop-filter: blur(4px);
+        }
+        
+        .card-source-badge.github {
+            background: rgba(26, 115, 232, 0.9);
+            color: white;
+        }
+        
+        .card-source-badge.youtube {
+            background: rgba(234, 67, 53, 0.9);
+            color: white;
+        }
+        
+        .card-source-badge.producthunt {
+            background: rgba(251, 188, 4, 0.9);
+            color: var(--text-primary);
+        }
+        
         .card-content {
-            padding: 1.5rem;
+            padding: 1.25rem;
             flex: 1;
             display: flex;
             flex-direction: column;
         }
         
-        .card-source {
-            display: inline-block;
-            font-size: 0.75rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            margin-bottom: 0.75rem;
-            padding: 0.25rem 0.75rem;
-            border-radius: 4px;
-        }
-        
-        .card-source.github {
-            background: rgba(100, 255, 218, 0.15);
-            color: var(--accent);
-        }
-        
-        .card-source.youtube {
-            background: rgba(255, 100, 100, 0.15);
-            color: #ff6464;
-        }
-        
-        .card-source.producthunt {
-        background: rgba(255, 165, 0, 0.15);
-            color: #ffa500;
-        }
-        
         .card h3 {
-            font-size: 1.1rem;
-            font-weight: 600;
-            margin-bottom: 0.75rem;
+            font-size: 1rem;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
             line-height: 1.4;
             display: -webkit-box;
             -webkit-line-clamp: 2;
@@ -391,7 +414,7 @@
         .card h3 a {
             color: var(--text-primary);
             text-decoration: none;
-            transition: color 0.3s ease;
+            transition: color 0.2s;
         }
         
         .card h3 a:hover {
@@ -400,10 +423,10 @@
         
         .card p {
             color: var(--text-secondary);
-            font-size: 0.9rem;
-            line-height: 1.6;
+            font-size: 0.875rem;
+            line-height: 1.5;
             display: -webkit-box;
-            -webkit-line-clamp: 3;
+            -webkit-line-clamp: 2;
             -webkit-box-orient: vertical;
             overflow: hidden;
             flex: 1;
@@ -415,7 +438,7 @@
             margin-top: 1rem;
             padding-top: 1rem;
             border-top: 1px solid var(--border);
-            font-size: 0.85rem;
+            font-size: 0.8rem;
             color: var(--text-muted);
             flex-wrap: wrap;
         }
@@ -423,7 +446,7 @@
         .card-meta span {
             display: flex;
             align-items: center;
-            gap: 0.3rem;
+            gap: 4px;
         }
         
         /* 加载状态 */
@@ -434,12 +457,12 @@
         }
         
         .loading-spinner {
-            width: 50px;
-            height: 50px;
+            width: 40px;
+            height: 40px;
             border: 3px solid var(--border);
             border-top-color: var(--accent);
             border-radius: 50%;
-            animation: spin 1s linear infinite;
+            animation: spin 0.8s linear infinite;
             margin: 0 auto 1rem;
         }
         
@@ -447,56 +470,40 @@
             to { transform: rotate(360deg); }
         }
         
-        /* 错误状态 */
-        .error {
+        /* 错误/空状态 */
+        .error, .empty {
             text-align: center;
             padding: 4rem;
             color: var(--text-secondary);
         }
         
-        .error-icon {
-            font-size: 4rem;
+        .error-icon, .empty-icon {
+            font-size: 3rem;
             margin-bottom: 1rem;
-        }
-        
-        /* 空状态 */
-        .empty {
-            text-align: center;
-            padding: 4rem;
-            color: var(--text-secondary);
         }
         
         /* Footer */
         footer {
-            background: var(--bg-secondary);
+            background: var(--bg-primary);
             border-top: 1px solid var(--border);
-            padding: 3rem 5%;
+            padding: 2rem;
             text-align: center;
-            margin-top: 4rem;
-        }
-        
-        .footer-brand {
-            font-size: 1.5rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-        }
-        
-        .footer-brand span {
-            color: var(--accent);
+            margin-top: 3rem;
         }
         
         .footer-links {
             display: flex;
             justify-content: center;
-            gap: 2rem;
-            margin-bottom: 1.5rem;
+            gap: 1.5rem;
+            margin-bottom: 1rem;
             flex-wrap: wrap;
         }
         
         .footer-links a {
             color: var(--text-secondary);
             text-decoration: none;
-            transition: color 0.3s ease;
+            font-size: 0.9rem;
+            transition: color 0.2s;
         }
         
         .footer-links a:hover {
@@ -505,39 +512,51 @@
         
         .footer-copyright {
             color: var(--text-muted);
-            font-size: 0.9rem;
+            font-size: 0.85rem;
         }
         
-        /* 响应式导航 */
+        /* 响应式 - 移动端导航 */
         @media (max-width: 768px) {
-            .nav-links {
+            .app-bar {
+                padding: 0 12px;
+            }
+            
+            .app-bar-left {
+                min-width: auto;
+            }
+            
+            .app-logo {
+                font-size: 1.1rem;
+            }
+            
+            .app-logo span {
                 display: none;
-                position: absolute;
-                top: 70px;
-                left: 0;
-                right: 0;
-                background: var(--bg-secondary);
-                flex-direction: column;
-                padding: 1rem 5%;
-                border-bottom: 1px solid var(--border);
             }
             
-            .nav-links.active {
-                display: flex;
+            .nav-tabs {
+                gap: 4px;
+                padding: 2px;
             }
             
-            .nav-toggle {
-                display: block;
-                margin-left: auto;
+            .nav-tab {
+                padding: 6px 12px;
+                font-size: 0.8rem;
             }
             
-            .data-source-tabs {
-                gap: 0.5rem;
+            .nav-tab .count {
+                display: none;
             }
             
-            .tab-btn {
-                padding: 0.6rem 1rem;
-                font-size: 0.85rem;
+            .app-bar-right {
+                min-width: auto;
+            }
+            
+            .content-wrapper {
+                padding: 1rem;
+            }
+            
+            .card-grid {
+                grid-template-columns: 1fr;
             }
         }
         
@@ -545,7 +564,7 @@
         @keyframes fadeIn {
             from {
                 opacity: 0;
-                transform: translateY(20px);
+                transform: translateY(10px);
             }
             to {
                 opacity: 1;
@@ -554,70 +573,74 @@
         }
         
         .card {
-            animation: fadeIn 0.5s ease forwards;
+            animation: fadeIn 0.3s ease forwards;
         }
         
-        .card:nth-child(1) { animation-delay: 0.1s; }
-        .card:nth-child(2) { animation-delay: 0.2s; }
-        .card:nth-child(3) { animation-delay: 0.3s; }
-        .card:nth-child(4) { animation-delay: 0.4s; }
-        .card:nth-child(5) { animation-delay: 0.5s; }
-        .card:nth-child(6) { animation-delay: 0.6s; }
+        .card:nth-child(1) { animation-delay: 0.05s; }
+        .card:nth-child(2) { animation-delay: 0.1s; }
+        .card:nth-child(3) { animation-delay: 0.15s; }
+        .card:nth-child(4) { animation-delay: 0.2s; }
+        .card:nth-child(5) { animation-delay: 0.25s; }
+        .card:nth-child(6) { animation-delay: 0.3s; }
     </style>
 </head>
 <body>
-    <!-- 导航栏 -->
-    <nav class="navbar" id="navbar">
-        <a href="/" class="nav-brand">OpenClaw <span>Say</span></a>
-        <div class="nav-links" id="navLinks">
-            <a href="#daily">日报</a>
-            <a href="#github">GitHub</a>
-            <a href="#youtube">YouTube</a>
-            <a href="#producthunt">Product Hunt</a>
-            <a href="https://github.com/0xagentlabs/openclaw-say" target="_blank">GitHub</a>
+    <!-- Gmail风格顶部应用栏 -->
+    <header class="app-bar">
+        <div class="app-bar-left">
+            <button class="menu-btn" id="menuBtn">☰</button>
+            <a href="/" class="app-logo">OpenClaw <span>Say</span></a>
         </div>
-        <button class="nav-toggle" id="navToggle">☰</button>
-    </nav>
+        
+        <nav class="app-bar-center">
+            <div class="nav-tabs" id="navTabs">
+                <button class="nav-tab active" data-source="all">
+                    <span class="icon">🏠</span>
+                    首页
+                    <span class="count" id="countAll">0</span>
+                </button>
+                <button class="nav-tab" data-source="github">
+                    <span class="icon">⭐</span>
+                    GitHub
+                    <span class="count" id="countGitHub">0</span>
+                </button>
+                <button class="nav-tab" data-source="youtube">
+                    <span class="icon">▶️</span>
+                    YouTube
+                    <span class="count" id="countYouTube">0</span>
+                </button>
+                <button class="nav-tab" data-source="producthunt">
+                    <span class="icon">🚀</span>
+                    Product Hunt
+                    <span class="count" id="countProductHunt">0</span>
+                </button>
+            </div>
+        </nav>
+        
+        <div class="app-bar-right">
+            <button class="icon-btn" title="帮助">❓</button>
+            <button class="icon-btn" title="设置">⚙️</button>
+            <div class="user-avatar" id="userAvatar">?</div>
+        </div>
+    </header>
 
     <main>
-        <!-- Hero 区域 -->
+        <!-- Hero区域 -->
         <section class="hero">
             <div class="hero-content">
                 <div class="hero-date" id="currentDate">📅 加载中...</div>
-                <h1>AI 智能 <span class="accent">前沿日报</span></h1>
-                <p>汇聚 GitHub 热门项目、YouTube 精选视频、Product Hunt 最新产品，一站式掌握 AI 行业脉搏</p>
+                <h1>AI 智能前沿日报</h1>
+                <p>汇聚 GitHub、YouTube、Product Hunt 最新 AI 动态</p>
             </div>
         </section>
 
-        <!-- 数据源切换 -->
-        <div class="data-source-tabs" id="dataSourceTabs">
-            <button class="tab-btn active" data-source="all">
-                <span class="icon">📊</span>
-                全部
-                <span class="count" id="countAll">0</span>
-            </button>
-            <button class="tab-btn" data-source="github">
-                <span class="icon">⭐</span>
-                GitHub
-                <span class="count" id="countGitHub">0</span>
-            </button>
-            <button class="tab-btn" data-source="youtube">
-                <span class="icon">▶️</span>
-                YouTube
-                <span class="count" id="countYouTube">0</span>
-            </button>
-            <button class="tab-btn" data-source="producthunt">
-                <span class="icon">🚀</span>
-                Product Hunt
-                <span class="count" id="countProductHunt">0</span>
-            </button>
-        </div>
-
         <!-- 内容区域 -->
-        <section class="content-section" id="daily">
+        <section class="content-wrapper">
             <div class="section-header">
                 <h2 id="sectionTitle">📋 今日精选</h2>
-                <p id="sectionDesc">来自全球 AI 社区的最新动态</p>
+                <button class="refresh-btn" id="refreshBtn">
+                    🔄 刷新数据
+                </button>
             </div>
             
             <div id="contentContainer">
@@ -631,13 +654,12 @@
 
     <!-- Footer -->
     <footer>
-        <div class="footer-brand">OpenClaw <span>Say</span></div>
         <div class="footer-links">
             <a href="https://github.com/0xagentlabs/openclaw-say" target="_blank">GitHub</a>
             <a href="https://github.com/0xagentlabs/openclaw-say/issues" target="_blank">反馈问题</a>
             <a href="https://github.com/0xagentlabs/openclaw-say/blob/main/README.md" target="_blank">关于</a>
         </div>
-        <p class="footer-copyright">&copy; 2026 OpenClaw Team. Built with ❤️ for AI enthusiasts.</p>
+        <p class="footer-copyright">© 2026 OpenClaw Team · Built with ❤️</p>
     </footer>
 
     <script>
@@ -651,14 +673,11 @@
 
         // DOM 元素
         const elements = {
-            navbar: document.getElementById('navbar'),
-            navToggle: document.getElementById('navToggle'),
-            navLinks: document.getElementById('navLinks'),
             currentDate: document.getElementById('currentDate'),
             contentContainer: document.getElementById('contentContainer'),
             sectionTitle: document.getElementById('sectionTitle'),
-            sectionDesc: document.getElementById('sectionDesc'),
-            tabBtns: document.querySelectorAll('.tab-btn'),
+            refreshBtn: document.getElementById('refreshBtn'),
+            navTabs: document.querySelectorAll('.nav-tab'),
             counts: {
                 all: document.getElementById('countAll'),
                 github: document.getElementById('countGitHub'),
@@ -676,27 +695,18 @@
 
         // 设置事件监听
         function setupEventListeners() {
-            // 导航栏滚动效果
-            window.addEventListener('scroll', () => {
-                if (window.scrollY > 50) {
-                    elements.navbar.classList.add('scrolled');
-                } else {
-                    elements.navbar.classList.remove('scrolled');
-                }
-            });
-
-            // 移动端菜单切换
-            elements.navToggle.addEventListener('click', () => {
-                elements.navLinks.classList.toggle('active');
-            });
-
-            // 数据源切换
-            elements.tabBtns.forEach(btn => {
-                btn.addEventListener('click', () => {
-                    const source = btn.dataset.source;
+            // Tab切换
+            elements.navTabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    const source = tab.dataset.source;
                     setActiveTab(source);
                     filterData(source);
                 });
+            });
+
+            // 刷新按钮
+            elements.refreshBtn.addEventListener('click', () => {
+                loadData();
             });
         }
 
@@ -712,13 +722,13 @@
             elements.currentDate.textContent = `📅 ${dateStr}`;
         }
 
-        // 设置激活的标签
+        // 设置激活的Tab
         function setActiveTab(source) {
-            elements.tabBtns.forEach(btn => {
-                if (btn.dataset.source === source) {
-                    btn.classList.add('active');
+            elements.navTabs.forEach(tab => {
+                if (tab.dataset.source === source) {
+                    tab.classList.add('active');
                 } else {
-                    btn.classList.remove('active');
+                    tab.classList.remove('active');
                 }
             });
             state.currentFilter = source;
@@ -726,25 +736,29 @@
 
         // 加载数据
         async function loadData() {
+            state.isLoading = true;
+            elements.contentContainer.innerHTML = `
+                <div class="loading">
+                    <div class="loading-spinner"></div>
+                    <p>正在加载数据...</p>
+                </div>
+            `;
+
             try {
-                // 获取今天的日期
                 const today = new Date().toISOString().split('T')[0];
-                
-                // 尝试加载今天的数据
                 let response = await fetch(`data/combined/${today}.json`);
                 
-                // 如果今天数据不存在，尝试加载最新数据
                 if (!response.ok) {
                     response = await fetch('data/combined/latest.json');
                 }
                 
-                // 如果还是失败，使用示例数据
                 if (!response.ok) {
                     throw new Error('无法加载数据');
                 }
                 
                 state.data = await response.json();
                 state.isLoading = false;
+                state.error = null;
                 
                 updateCounts();
                 renderCards(state.data.items);
@@ -777,7 +791,6 @@
                 filtered = state.data.items.filter(item => item.source === source);
             }
             
-            // 更新标题
             const titles = {
                 all: { title: '📋 今日精选', desc: '来自全球 AI 社区的最新动态' },
                 github: { title: '⭐ GitHub 热门', desc: '最新最热门的 AI 开源项目' },
@@ -786,8 +799,6 @@
             };
             
             elements.sectionTitle.textContent = titles[source].title;
-            elements.sectionDesc.textContent = titles[source].desc;
-            
             renderCards(filtered);
         }
 
@@ -833,22 +844,12 @@
             return parts.map(p => `<span>${p}</span>`).join('');
         }
 
-        // 获取默认图片
-        function getDefaultImage(source) {
-            const images = {
-                github: '⭐',
-                youtube: '▶️',
-                producthunt: '🚀'
-            };
-            return images[source] || '📄';
-        }
-
         // 渲染卡片
         function renderCards(items) {
             if (items.length === 0) {
                 elements.contentContainer.innerHTML = `
                     <div class="empty">
-                        <div style="font-size: 4rem; margin-bottom: 1rem;">📭</div>
+                        <div class="empty-icon">📭</div>
                         <p>暂无数据</p>
                     </div>
                 `;
@@ -858,12 +859,11 @@
             const cardsHTML = items.map(item => `
                 <article class="card" data-source="${item.source}">
                     <div class="card-image">
-                        ${item.image ? `<img src="${item.image}" alt="${item.title}" onerror="this.parentElement.innerHTML='${getDefaultImage(item.source)}'">` : getDefaultImage(item.source)}
+                        ${item.image ? `<img src="${item.image}" alt="${item.title}" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">` : ''}
+                        <div class="card-source-badge ${item.source}">${getSourceIcon(item.source)} ${item.source}</div>
+                        <div style="display:${item.image ? 'none' : 'flex'}; align-items:center; justify-content:center; width:100%; height:100%; font-size:2.5rem;">${getSourceIcon(item.source)}</div>
                     </div>
                     <div class="card-content">
-                        <span class="card-source ${item.source}">
-                            ${getSourceIcon(item.source)} ${item.source}
-                        </span>
                         <h3>
                             <a href="${item.url}" target="_blank" rel="noopener noreferrer">
                                 ${item.title}
