@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>详情 - OpenClaw Say</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎯</text></svg>">
+    
+    <style>
+        :root {
+            --bg-primary: #ffffff;
+            --bg-secondary: #f6f8fc;
+            --bg-hover: #eaecf0;
+            --accent: #1a73e8;
+            --accent-hover: #1557b0;
+            --text-primary: #202124;
+            --text-secondary: #5f6368;
+            --text-muted: #80868b;
+            --border: #dadce0;
+            --shadow: rgba(60, 64, 67, 0.15);
+            --shadow-lg: rgba(60, 64, 67, 0.25);
+            --github: #1a73e8;
+            --youtube: #ea4335;
+            --producthunt: #fbbc04;
+        }
+        
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Google Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background-color: var(--bg-secondary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        
+        /* 顶部导航 */
+        .app-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 64px;
+            background: var(--bg-primary);
+            border-bottom: 1px solid var(--border);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            padding: 0 16px;
+            box-shadow: 0 1px 2px var(--shadow);
+        }
+        
+        .app-bar-left {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .back-btn {
+            width: 40px;
+            height: 40px;
+            border: none;
+            background: transparent;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            transition: background 0.2s;
+        }
+        
+        .back-btn:hover {
+            background: var(--bg-hover);
+        }
+        
+        .app-logo {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            font-size: 1.4rem;
+            font-weight: 500;
+            color: var(--text-primary);
+        }
+        
+        .app-logo::before {
+            content: '🎯';
+            font-size: 1.6rem;
+        }
+        
+        .app-logo span {
+            color: var(--accent);
+            font-weight: 600;
+        }
+        
+        /* 主内容 */
+        main {
+            padding-top: 64px;
+            max-width: 800px;
+            margin: 0 auto;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        
+        /* 加载状态 */
+        .loading {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 60vh;
+            color: var(--text-secondary);
+        }
+        
+        .loading-spinner {
+            width: 40px;
+            height: 40px;
+            border: 3px solid var(--border);
+            border-top-color: var(--accent);
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+            margin-bottom: 1rem;
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        
+        /* 错误状态 */
+        .error {
+            text-align: center;
+            padding: 4rem 2rem;
+            color: var(--text-secondary);
+        }
+        
+        .error-icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+        
+        /* 详情内容 */
+        .detail-container {
+            background: var(--bg-primary);
+            border-radius: 16px;
+            margin: 2rem 0;
+            overflow: hidden;
+            box-shadow: 0 2px 8px var(--shadow);
+        }
+        
+        .detail-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            background: var(--bg-secondary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-muted);
+            font-size: 4rem;
+            position: relative;
+        }
+        
+        .detail-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .detail-source-badge {
+            position: absolute;
+            top: 16px;
+            left: 16px;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: white;
+        }
+        
+        .detail-source-badge.github {
+            background: var(--github);
+        }
+        
+        .detail-source-badge.youtube {
+            background: var(--youtube);
+        }
+        
+        .detail-source-badge.producthunt {
+            background: var(--producthunt);
+            color: var(--text-primary);
+        }
+        
+        .detail-content {
+            padding: 2rem;
+        }
+        
+        .detail-header {
+            margin-bottom: 1.5rem;
+        }
+        
+        .detail-title {
+            font-size: 1.75rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            line-height: 1.4;
+            margin-bottom: 1rem;
+        }
+        
+        .detail-meta {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+        
+        .detail-meta span {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        
+        .detail-description {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background: var(--bg-secondary);
+            border-radius: 12px;
+        }
+        
+        /* 操作按钮 */
+        .detail-actions {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+        }
+        
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            text-decoration: none;
+            border: none;
+        }
+        
+        .btn-primary {
+            background: var(--accent);
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background: var(--accent-hover);
+        }
+        
+        .btn-secondary {
+            background: var(--bg-secondary);
+            color: var(--text-primary);
+            border: 1px solid var(--border);
+        }
+        
+        .btn-secondary:hover {
+            background: var(--bg-hover);
+        }
+        
+        /* 额外信息 */
+        .detail-extras {
+            border-top: 1px solid var(--border);
+            padding-top: 1.5rem;
+        }
+        
+        .detail-extras h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+        
+        .detail-tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-bottom: 1.5rem;
+        }
+        
+        .tag {
+            padding: 6px 12px;
+            background: var(--bg-secondary);
+            border-radius: 16px;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+        
+        .detail-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+        }
+        
+        .stat-item {
+            padding: 1rem;
+            background: var(--bg-secondary);
+            border-radius: 12px;
+            text-align: center;
+        }
+        
+        .stat-value {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--accent);
+        }
+        
+        .stat-label {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-top: 4px;
+        }
+        
+        /* 相关推荐 */
+        .related-section {
+            margin-top: 3rem;
+            padding-bottom: 3rem;
+        }
+        
+        .related-section h2 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .related-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1rem;
+        }
+        
+        .related-card {
+            background: var(--bg-primary);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1rem;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        
+        .related-card:hover {
+            box-shadow: 0 4px 12px var(--shadow);
+            border-color: var(--accent);
+        }
+        
+        .related-card h4 {
+            font-size: 0.95rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--text-primary);
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        
+        .related-card p {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--bg-primary);
+            border-top: 1px solid var(--border);
+            padding: 2rem;
+            text-align: center;
+            margin-top: 2rem;
+        }
+        
+        .footer-copyright {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+        
+        /* 响应式 */
+        @media (max-width: 600px) {
+            .detail-image {
+                height: 200px;
+            }
+            
+            .detail-content {
+                padding: 1.5rem;
+            }
+            
+            .detail-title {
+                font-size: 1.4rem;
+            }
+            
+            .detail-actions {
+                flex-direction: column;
+            }
+            
+            .btn {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 顶部导航 -->
+    <header class="app-bar">
+        <div class="app-bar-left">
+            <button class="back-btn" onclick="history.back()">←</button>
+            <a href="/" class="app-logo">OpenClaw <span>Say</span></a>
+        </div>
+    </header>
+
+    <main>
+        <div id="content">
+            <div class="loading">
+                <div class="loading-spinner"></div>
+                <p>加载中...</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p class="footer-copyright">© 2026 OpenClaw Team · Built with ❤️</p>
+    </footer>
+
+    <script>
+        // 获取URL参数
+        function getUrlParams() {
+            const params = new URLSearchParams(window.location.search);
+            return {
+                id: params.get('id'),
+                date: params.get('date') || new Date().toISOString().split('T')[0]
+            };
+        }
+        
+        // 获取source图标
+        function getSourceIcon(source) {
+            const icons = {
+                github: '⭐',
+                youtube: '▶️',
+                producthunt: '🚀'
+            };
+            return icons[source] || '📄';
+        }
+        
+        // 格式化元数据
+        function formatMetadata(item) {
+            const parts = [];
+            
+            if (item.source === 'github') {
+                if (item.metadata.stars !== undefined) {
+                    parts.push(`⭐ ${item.metadata.stars.toLocaleString()} stars`);
+                }
+                if (item.metadata.language) {
+                    parts.push(`💻 ${item.metadata.language}`);
+                }
+            } else if (item.source === 'youtube') {
+                if (item.metadata.views) {
+                    parts.push(`▶️ ${item.metadata.views} views`);
+                }
+                if (item.metadata.channel) {
+                    parts.push(`📺 ${item.metadata.channel}`);
+                }
+            } else if (item.source === 'producthunt') {
+                if (item.metadata.votes !== undefined) {
+                    parts.push(`⬆️ ${item.metadata.votes} votes`);
+                }
+            }
+            
+            return parts;
+        }
+        
+        // 加载数据
+        async function loadData() {
+            const { id, date } = getUrlParams();
+            
+            if (!id) {
+                showError('缺少内容ID');
+                return;
+            }
+            
+            try {
+                // 尝试加载指定日期的数据
+                let response = await fetch(`data/combined/${date}.json`);
+                
+                // 如果不存在，尝试最新数据
+                if (!response.ok) {
+                    response = await fetch('data/combined/latest.json');
+                }
+                
+                if (!response.ok) {
+                    throw new Error('无法加载数据');
+                }
+                
+                const data = await response.json();
+                const item = data.items.find(i => i.id === id);
+                
+                if (!item) {
+                    throw new Error('内容未找到');
+                }
+                
+                renderDetail(item, data.items);
+                
+            } catch (error) {
+                console.error('加载失败:', error);
+                showError(error.message || '加载失败，请稍后重试');
+            }
+        }
+        
+        // 渲染详情页
+        function renderDetail(item, allItems) {
+            const metaParts = formatMetadata(item);
+            const content = document.getElementById('content');
+            
+            // 获取相关推荐（同类型的其他项目）
+            const related = allItems
+                .filter(i => i.source === item.source && i.id !== item.id)
+                .slice(0, 3);
+            
+            content.innerHTML = `
+                <article class="detail-container">
+                    <div class="detail-image">
+                        ${item.image ? `<img src="${item.image}" alt="${item.title}" onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=\\'font-size:4rem;\\'>${getSourceIcon(item.source)}</div>'">` : `<div>${getSourceIcon(item.source)}</div>`}
+                        <span class="detail-source-badge ${item.source}">${getSourceIcon(item.source)} ${item.source}</span>
+                    </div>
+                    
+                    <div class="detail-content">
+                        <div class="detail-header">
+                            <h1 class="detail-title">${item.title}</h1>
+                            <div class="detail-meta">
+                                ${metaParts.map(p => `<span>${p}</span>`).join('')}
+                                <span>📅 ${new Date(item.publishedAt || Date.now()).toLocaleDateString('zh-CN')}</span>
+                            </div>
+                        </div>
+                        
+                        <div class="detail-description">
+                            ${item.description || '暂无描述'}
+                        </div>
+                        
+                        <div class="detail-actions">
+                            <a href="${item.url}" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                                🔗 访问原文
+                            </a>
+                            <button class="btn btn-secondary" onclick="shareContent()">
+                                📤 分享
+                            </button>
+                        </div>
+                        
+                        <div class="detail-extras">
+                            <h3>🏷️ 标签</h3>
+                            <div class="detail-tags">
+                                <span class="tag">${item.source}</span>
+                                <span class="tag">${item.category || 'AI'}</span>
+                                <span class="tag">${new Date(item.publishedAt || Date.now()).getFullYear()}</span>
+                            </div>
+                            
+                            ${renderStats(item)}
+                        </div>
+                    </div>
+                </article>
+                
+                ${related.length > 0 ? renderRelated(related, date) : ''}
+            `;
+        }
+        
+        // 渲染统计数据
+        function renderStats(item) {
+            const stats = [];
+            
+            if (item.source === 'github') {
+                if (item.metadata.stars !== undefined) {
+                    stats.push({ value: item.metadata.stars.toLocaleString(), label: 'Stars' });
+                }
+            } else if (item.source === 'youtube') {
+                if (item.metadata.views) {
+                    stats.push({ value: item.metadata.views, label: 'Views' });
+                }
+            } else if (item.source === 'producthunt') {
+                if (item.metadata.votes !== undefined) {
+                    stats.push({ value: item.metadata.votes.toLocaleString(), label: 'Votes' });
+                }
+            }
+            
+            if (stats.length === 0) return '';
+            
+            return `
+                <h3>📊 数据</h3>
+                <div class="detail-stats">
+                    ${stats.map(s => `
+                        <div class="stat-item">
+                            <div class="stat-value">${s.value}</div>
+                            <div class="stat-label">${s.label}</div>
+                        </div>
+                    `).join('')}
+                </div>
+            `;
+        }
+        
+        // 渲染相关推荐
+        function renderRelated(items, date) {
+            return `
+                <section class="related-section">
+                    <h2>📎 相关推荐</h2>
+                    <div class="related-grid">
+                        ${items.map(item => `
+                            <div class="related-card" onclick="location.href='item.html?id=${item.id}&date=${date}'">
+                                <h4>${item.title}</h4>
+                                <p>${item.description || '暂无描述'}</p>
+                            </div>
+                        `).join('')}
+                    </div>
+                </section>
+            `;
+        }
+        
+        // 显示错误
+        function showError(message) {
+            document.getElementById('content').innerHTML = `
+                <div class="error">
+                    <div class="error-icon">⚠️</div>
+                    <h3>出错了</h3>
+                    <p>${message}</p>
+                    <a href="/" style="display: inline-block; margin-top: 1rem; color: var(--accent);">← 返回首页</a>
+                </div>
+            `;
+        }
+        
+        // 分享功能
+        function shareContent() {
+            if (navigator.share) {
+                navigator.share({
+                    title: document.querySelector('.detail-title')?.textContent || 'OpenClaw Say',
+                    url: window.location.href
+                });
+            } else {
+                // 复制链接到剪贴板
+                navigator.clipboard.writeText(window.location.href).then(() => {
+                    alert('链接已复制到剪贴板');
+                });
+            }
+        }
+        
+        // 初始化
+        document.addEventListener('DOMContentLoaded', loadData);
+    </script>
+</body>
+</html>

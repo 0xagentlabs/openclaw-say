@@ -1089,6 +1089,11 @@
             return parts.map(p => `<span>${p}</span>`).join('');
         }
 
+        // 获取当前日期
+        function getCurrentDate() {
+            return state.data?.date || new Date().toISOString().split('T')[0];
+        }
+
         // 渲染卡片
         function renderCards(items) {
             if (items.length === 0) {
@@ -1100,9 +1105,10 @@
                 `;
                 return;
             }
-            
+
+            const currentDate = getCurrentDate();
             const cardsHTML = items.map(item => `
-                <article class="card" data-source="${item.source}">
+                <article class="card" data-source="${item.source}" onclick="location.href='item.html?id=${item.id}&date=${currentDate}'" style="cursor: pointer;">
                     <div class="card-image">
                         ${item.image ? `<img src="${item.image}" alt="${item.title}" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">` : ''}
                         <div class="card-source-badge ${item.source}">${getSourceIcon(item.source)} ${item.source}</div>
@@ -1110,9 +1116,7 @@
                     </div>
                     <div class="card-content">
                         <h3>
-                            <a href="${item.url}" target="_blank" rel="noopener noreferrer">
-                                ${item.title}
-                            </a>
+                            <span style="color: var(--text-primary); text-decoration: none;">${item.title}</span>
                         </h3>
                         <p>${item.description || '暂无描述'}</p>
                         <div class="card-meta">
@@ -1121,7 +1125,7 @@
                     </div>
                 </article>
             `).join('');
-            
+
             elements.contentContainer.innerHTML = `<div class="card-grid">${cardsHTML}</div>`;
         }
 
