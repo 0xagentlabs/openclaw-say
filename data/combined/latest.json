@@ -1,0 +1,417 @@
+{
+  "date": "2026-02-14",
+  "generatedAt": "2026-02-14T08:10:24.693Z",
+  "summary": {
+    "total": 23,
+    "github": 8,
+    "youtube": 10,
+    "producthunt": 5
+  },
+  "items": [
+    {
+      "id": "producthunt-fallback-1771056621820-0",
+      "source": "producthunt",
+      "title": "ChatGPT",
+      "description": "OpenAI 的对话式 AI 助手",
+      "url": "https://chat.openai.com",
+      "image": "https://via.placeholder.com/400x300/0a192f/64ffda?text=ChatGPT",
+      "metadata": {
+        "votes": 50000,
+        "source": "Product Hunt"
+      },
+      "publishedAt": "2026-02-14",
+      "category": "product"
+    },
+    {
+      "id": "producthunt-fallback-1771056621820-1",
+      "source": "producthunt",
+      "title": "Claude",
+      "description": "Anthropic 的 AI 助手，擅长长文本理解",
+      "url": "https://claude.ai",
+      "image": "https://via.placeholder.com/400x300/0a192f/64ffda?text=Claude",
+      "metadata": {
+        "votes": 30000,
+        "source": "Product Hunt"
+      },
+      "publishedAt": "2026-02-14",
+      "category": "product"
+    },
+    {
+      "id": "producthunt-fallback-1771056621820-2",
+      "source": "producthunt",
+      "title": "Midjourney",
+      "description": "AI 图像生成工具",
+      "url": "https://www.midjourney.com",
+      "image": "https://via.placeholder.com/400x300/0a192f/64ffda?text=Midjourney",
+      "metadata": {
+        "votes": 25000,
+        "source": "Product Hunt"
+      },
+      "publishedAt": "2026-02-14",
+      "category": "product"
+    },
+    {
+      "id": "producthunt-fallback-1771056621820-3",
+      "source": "producthunt",
+      "title": "Notion AI",
+      "description": "Notion 内置的 AI 写作助手",
+      "url": "https://www.notion.so/product/ai",
+      "image": "https://via.placeholder.com/400x300/0a192f/64ffda?text=Notion+AI",
+      "metadata": {
+        "votes": 20000,
+        "source": "Product Hunt"
+      },
+      "publishedAt": "2026-02-14",
+      "category": "product"
+    },
+    {
+      "id": "producthunt-fallback-1771056621820-4",
+      "source": "producthunt",
+      "title": "Perplexity",
+      "description": "AI 驱动的搜索引擎",
+      "url": "https://www.perplexity.ai",
+      "image": "https://via.placeholder.com/400x300/0a192f/64ffda?text=Perplexity",
+      "metadata": {
+        "votes": 18000,
+        "source": "Product Hunt"
+      },
+      "publishedAt": "2026-02-14",
+      "category": "product"
+    },
+    {
+      "id": "youtube-video-1771056594180-0",
+      "source": "youtube",
+      "title": "Why Humanoid Robots Won't Replace Humans Yet",
+      "description": "🎙️ If you love this show, please leave us a 5-Star Review and share your favorite episodes with friends: https://link.chtbl.com/KE3gp3MV\n—\nCheck Out Matt’s Stuff:\n• Future Tools - https://futuretools...",
+      "url": "https://www.youtube.com/shorts/DjrtIZYn5XE",
+      "image": "https://i1.ytimg.com/vi/DjrtIZYn5XE/hqdefault.jpg",
+      "metadata": {
+        "views": "1.1K",
+        "channel": "Matt Wolfe",
+        "videoId": "video-1771056594180-0"
+      },
+      "publishedAt": "2026-02-13",
+      "category": "video"
+    },
+    {
+      "id": "youtube-eGpIXJ0C4ds",
+      "source": "youtube",
+      "title": "Anthropic Found Out Why AIs Go Insane",
+      "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\n📝 The paper is available here:\nhttps://www.anthropic.com/research/assistant-axis\n\nOur Patreon if you wish to suppor...",
+      "url": "https://www.youtube.com/watch?v=eGpIXJ0C4ds",
+      "image": "https://i2.ytimg.com/vi/eGpIXJ0C4ds/hqdefault.jpg",
+      "metadata": {
+        "views": "150.3K",
+        "channel": "Two Minute Papers",
+        "videoId": "eGpIXJ0C4ds"
+      },
+      "publishedAt": "2026-02-12",
+      "category": "video"
+    },
+    {
+      "id": "youtube-video-1771056594180-1",
+      "source": "youtube",
+      "title": "How I Built a $3M/Year AI Business With 0 Funding",
+      "description": "🎙️ If you love this show, please leave us a 5-Star Review and share your favorite episodes with friends: https://link.chtbl.com/KE3gp3MV\n—\nCheck Out Matt’s Stuff:\n• Future Tools - https://futuretools...",
+      "url": "https://www.youtube.com/shorts/EarM9L44HtM",
+      "image": "https://i2.ytimg.com/vi/EarM9L44HtM/hqdefault.jpg",
+      "metadata": {
+        "views": "1.3K",
+        "channel": "Matt Wolfe",
+        "videoId": "video-1771056594180-1"
+      },
+      "publishedAt": "2026-02-11",
+      "category": "video"
+    },
+    {
+      "id": "youtube-vsK4Gb7Eys8",
+      "source": "youtube",
+      "title": "Physics Simulation Just Crossed A Line",
+      "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\n📝 The paper is available here:\nhttps://sig25ddmpd.github.io/\n\nOur Patreon if you wish to support us: https://www.pa...",
+      "url": "https://www.youtube.com/watch?v=vsK4Gb7Eys8",
+      "image": "https://i3.ytimg.com/vi/vsK4Gb7Eys8/hqdefault.jpg",
+      "metadata": {
+        "views": "46.6K",
+        "channel": "Two Minute Papers",
+        "videoId": "vsK4Gb7Eys8"
+      },
+      "publishedAt": "2026-02-10",
+      "category": "video"
+    },
+    {
+      "id": "youtube-en8aDnS-d18",
+      "source": "youtube",
+      "title": "AI Agents Are Now Hiring Humans. We Need to Talk",
+      "description": "*Get our AI news cheat sheet: 20+ prompts for the latest models and tools* https://clickhubspot.com/hpb\nEpisode 96: How terrified should you really be about a social network with no humans allowed? Ma...",
+      "url": "https://www.youtube.com/watch?v=en8aDnS-d18",
+      "image": "https://i2.ytimg.com/vi/en8aDnS-d18/hqdefault.jpg",
+      "metadata": {
+        "views": "4.8K",
+        "channel": "Matt Wolfe",
+        "videoId": "en8aDnS-d18"
+      },
+      "publishedAt": "2026-02-10",
+      "category": "video"
+    },
+    {
+      "id": "youtube-video-1771056594180-3",
+      "source": "youtube",
+      "title": "I Interviewed AI Arnold Schwarzenegger (You Won't Believe This)",
+      "description": "🎙️ If you love this show, please leave us a 5-Star Review and share your favorite episodes with friends: https://link.chtbl.com/KE3gp3MV\n—\nCheck Out Matt’s Stuff:\n• Future Tools - https://futuretools...",
+      "url": "https://www.youtube.com/shorts/EIK6LxV50j0",
+      "image": "https://i2.ytimg.com/vi/EIK6LxV50j0/hqdefault.jpg",
+      "metadata": {
+        "views": "985",
+        "channel": "Matt Wolfe",
+        "videoId": "video-1771056594180-3"
+      },
+      "publishedAt": "2026-02-09",
+      "category": "video"
+    },
+    {
+      "id": "github-1152833832",
+      "source": "github",
+      "title": "TheAgentContextLab/OneContext",
+      "description": " OneContext is an Agent Self-Managed Context layer, it gives your team a unified context for AII AI Agents. ",
+      "url": "https://github.com/TheAgentContextLab/OneContext",
+      "image": "https://opengraph.githubassets.com/1/TheAgentContextLab/OneContext",
+      "metadata": {
+        "stars": 848,
+        "language": "Unknown",
+        "topics": [],
+        "updatedAt": "2026-02-14T07:11:13Z",
+        "createdAt": "2026-02-08T14:06:55Z"
+      },
+      "publishedAt": "2026-02-08",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1151130619",
+      "source": "github",
+      "title": "sseanliu/VisionClaw",
+      "description": "Real-time AI assistant for Meta Ray-Ban smart glasses -- voice + vision + agentic actions via Gemini Live and OpenClaw",
+      "url": "https://github.com/sseanliu/VisionClaw",
+      "image": "https://opengraph.githubassets.com/1/sseanliu/VisionClaw",
+      "metadata": {
+        "stars": 903,
+        "language": "Unknown",
+        "topics": [],
+        "updatedAt": "2026-02-14T07:37:20Z",
+        "createdAt": "2026-02-06T04:54:31Z"
+      },
+      "publishedAt": "2026-02-06",
+      "category": "ai-agent"
+    },
+    {
+      "id": "youtube-RaNay3x0Fmk",
+      "source": "youtube",
+      "title": "NVIDIA’s New AI: Erasing Reality",
+      "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\n📝 The paper and the code are now available here:\nhttps://dvirsamuel.github.io/omnimattezero.github.io/\nhttps://gith...",
+      "url": "https://www.youtube.com/watch?v=RaNay3x0Fmk",
+      "image": "https://i3.ytimg.com/vi/RaNay3x0Fmk/hqdefault.jpg",
+      "metadata": {
+        "views": "62.6K",
+        "channel": "Two Minute Papers",
+        "videoId": "RaNay3x0Fmk"
+      },
+      "publishedAt": "2026-02-06",
+      "category": "video"
+    },
+    {
+      "id": "youtube-video-1771056594180-4",
+      "source": "youtube",
+      "title": "Why AI is the New Nuclear Arms Race",
+      "description": "🎙️ If you love this show, please leave us a 5-Star Review and share your favorite episodes with friends: https://link.chtbl.com/KE3gp3MV\n—\nCheck Out Matt’s Stuff:\n• Future Tools - https://futuretools...",
+      "url": "https://www.youtube.com/shorts/mRS9IF5TyMc",
+      "image": "https://i2.ytimg.com/vi/mRS9IF5TyMc/hqdefault.jpg",
+      "metadata": {
+        "views": "1.3K",
+        "channel": "Matt Wolfe",
+        "videoId": "video-1771056594180-4"
+      },
+      "publishedAt": "2026-02-06",
+      "category": "video"
+    },
+    {
+      "id": "youtube-fFL7la73RO4",
+      "source": "youtube",
+      "title": "New DeepSeek Research - The Future Is Here!",
+      "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\nI use DeepSeek there by running an instance with enough GPU VRAM and using ollama.\n\n📝 The #DeepSeek paper is availab...",
+      "url": "https://www.youtube.com/watch?v=fFL7la73RO4",
+      "image": "https://i3.ytimg.com/vi/fFL7la73RO4/hqdefault.jpg",
+      "metadata": {
+        "views": "270.9K",
+        "channel": "Two Minute Papers",
+        "videoId": "fFL7la73RO4"
+      },
+      "publishedAt": "2026-02-04",
+      "category": "video"
+    },
+    {
+      "id": "github-1149071982",
+      "source": "github",
+      "title": "BlockRunAI/ClawRouter",
+      "description": "The agent-native LLM router powering OpenClaw — by BlockRun",
+      "url": "https://github.com/BlockRunAI/ClawRouter",
+      "image": "https://opengraph.githubassets.com/1/BlockRunAI/ClawRouter",
+      "metadata": {
+        "stars": 2392,
+        "language": "TypeScript",
+        "topics": [
+          "ai",
+          "ai-agents",
+          "anthropic",
+          "cost-optimization",
+          "crypto",
+          "deepseek",
+          "gemini",
+          "llm",
+          "llm-router",
+          "micropayments",
+          "openai",
+          "openclaw",
+          "smart-routing",
+          "usdc",
+          "x402"
+        ],
+        "updatedAt": "2026-02-14T07:58:13Z",
+        "createdAt": "2026-02-03T17:32:00Z"
+      },
+      "publishedAt": "2026-02-03",
+      "category": "ai-agent"
+    },
+    {
+      "id": "youtube-4RtUJkjrKMI",
+      "source": "youtube",
+      "title": "Surprise Video - What A Time To Be Alive!",
+      "description": "Thank you so much everyone, this was amazing fun!\n\nVocals: Carolina Padrón\nDrums: Federico Gucciardo\nBass: Lagos Bfingerz\n\nGuitar tab is available here for free, no paywall nonsense: https://www.dropb...",
+      "url": "https://www.youtube.com/watch?v=4RtUJkjrKMI",
+      "image": "https://i1.ytimg.com/vi/4RtUJkjrKMI/hqdefault.jpg",
+      "metadata": {
+        "views": "37.2K",
+        "channel": "Two Minute Papers",
+        "videoId": "4RtUJkjrKMI"
+      },
+      "publishedAt": "2026-01-31",
+      "category": "video"
+    },
+    {
+      "id": "github-1144107326",
+      "source": "github",
+      "title": "DingTalk-Real-AI/dingtalk-moltbot-connector",
+      "description": "将 钉钉机器人 / 钉钉 DEAP Agent 连接到 OpenClaw Gateway 的OpenClaw Plugin，支持 AI Card 流式响应",
+      "url": "https://github.com/DingTalk-Real-AI/dingtalk-moltbot-connector",
+      "image": "https://opengraph.githubassets.com/1/DingTalk-Real-AI/dingtalk-moltbot-connector",
+      "metadata": {
+        "stars": 1247,
+        "language": "TypeScript",
+        "topics": [],
+        "updatedAt": "2026-02-14T04:48:23Z",
+        "createdAt": "2026-01-28T09:51:24Z"
+      },
+      "publishedAt": "2026-01-28",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1141706975",
+      "source": "github",
+      "title": "yohey-w/multi-agent-shogun",
+      "description": "Samurai-inspired multi-agent system for Claude Code. Orchestrate parallel AI tasks via tmux with shogun → karo → ashigaru hierarchy.",
+      "url": "https://github.com/yohey-w/multi-agent-shogun",
+      "image": "https://opengraph.githubassets.com/1/yohey-w/multi-agent-shogun",
+      "metadata": {
+        "stars": 864,
+        "language": "Shell",
+        "topics": [
+          "ai-agent",
+          "anthropic",
+          "automation",
+          "claude-code",
+          "llm",
+          "multi-agent",
+          "parallel-processing",
+          "samurai",
+          "shogun",
+          "tmux"
+        ],
+        "updatedAt": "2026-02-14T08:09:03Z",
+        "createdAt": "2026-01-25T09:29:19Z"
+      },
+      "publishedAt": "2026-01-25",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1139114532",
+      "source": "github",
+      "title": "AvdLee/SwiftUI-Agent-Skill",
+      "description": "Add expert SwiftUI Best Practices guidance to your AI coding tool (Agent Skills open format).",
+      "url": "https://github.com/AvdLee/SwiftUI-Agent-Skill",
+      "image": "https://opengraph.githubassets.com/1/AvdLee/SwiftUI-Agent-Skill",
+      "metadata": {
+        "stars": 1450,
+        "language": "Unknown",
+        "topics": [],
+        "updatedAt": "2026-02-14T07:50:25Z",
+        "createdAt": "2026-01-21T14:42:30Z"
+      },
+      "publishedAt": "2026-01-21",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1136608164",
+      "source": "github",
+      "title": "benjitaylor/agentation",
+      "description": "The visual feedback tool for agents.",
+      "url": "https://github.com/benjitaylor/agentation",
+      "image": "https://opengraph.githubassets.com/1/benjitaylor/agentation",
+      "metadata": {
+        "stars": 2154,
+        "language": "TypeScript",
+        "topics": [
+          "ai",
+          "design",
+          "tools",
+          "ui"
+        ],
+        "updatedAt": "2026-02-14T06:18:57Z",
+        "createdAt": "2026-01-18T02:01:24Z"
+      },
+      "publishedAt": "2026-01-18",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1135501937",
+      "source": "github",
+      "title": "supabase/agent-skills",
+      "description": "Agent Skills to help developers using AI agents with Supabase",
+      "url": "https://github.com/supabase/agent-skills",
+      "image": "https://opengraph.githubassets.com/1/supabase/agent-skills",
+      "metadata": {
+        "stars": 1310,
+        "language": "TypeScript",
+        "topics": [
+          "ai",
+          "ai-agents",
+          "skills",
+          "supabase"
+        ],
+        "updatedAt": "2026-02-14T07:17:35Z",
+        "createdAt": "2026-01-16T07:28:01Z"
+      },
+      "publishedAt": "2026-01-16",
+      "category": "ai-agent"
+    }
+  ],
+  "stats": {
+    "categories": {
+      "product": 5,
+      "video": 10,
+      "ai-agent": 8
+    },
+    "sources": {
+      "producthunt": 5,
+      "youtube": 10,
+      "github": 8
+    }
+  }
+}

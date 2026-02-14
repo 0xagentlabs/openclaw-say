@@ -1,0 +1,74 @@
+{
+  "version": "1.0.0",
+  "description": "OpenClay Say 日报系统数据源配置",
+  "sources": {
+    "github": {
+      "name": "GitHub",
+      "enabled": true,
+      "config": {
+        "searchQuery": "ai agent created:>30days",
+        "sort": "stars",
+        "order": "desc",
+        "perPage": 50,
+        "filterDays": 3,
+        "maxResults": 8
+      },
+      "outputDir": "data/github"
+    },
+    "youtube": {
+      "name": "YouTube",
+      "enabled": true,
+      "config": {
+        "channels": [
+          {
+            "id": "UCbfYPyITQ-7l4upoX8nvctg",
+            "name": "Two Minute Papers",
+            "rssUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UCbfYPyITQ-7l4upoX8nvctg"
+          },
+          {
+            "id": "UCuK2Mf5As9OKfWU7XV6yzCg",
+            "name": "Matt Wolfe",
+            "rssUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UCuK2Mf5As9OKfWU7XV6yzCg"
+          }
+        ],
+        "maxVideosPerChannel": 5,
+        "fallbackVideos": [
+          {
+            "id": "fallback-1",
+            "title": "AI 研究前沿精选",
+            "description": "每日精选 AI 研究论文和技术突破",
+            "url": "https://www.youtube.com/@TwoMinutePapers",
+            "image": "https://img.youtube.com/vi/default/maxresdefault.jpg",
+            "channel": "Two Minute Papers"
+          }
+        ]
+      },
+      "outputDir": "data/youtube"
+    },
+    "producthunt": {
+      "name": "Product Hunt",
+      "enabled": true,
+      "config": {
+        "category": "artificial-intelligence",
+        "rssUrl": "https://www.producthunt.com/feed?category=artificial-intelligence",
+        "maxResults": 10,
+        "fallbackProducts": []
+      },
+      "outputDir": "data/producthunt"
+    }
+  },
+  "combined": {
+    "outputDir": "data/combined",
+    "schema": {
+      "id": "string",
+      "source": "enum(github|youtube|producthunt)",
+      "title": "string",
+      "description": "string",
+      "url": "string",
+      "image": "string",
+      "metadata": "object",
+      "publishedAt": "string(YYYY-MM-DD)",
+      "category": "enum(ai-agent|video|product)"
+    }
+  }
+}
