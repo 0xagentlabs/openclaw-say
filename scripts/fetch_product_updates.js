@@ -6,8 +6,7 @@ const path = require('path');
 const SOURCES = [
     { name: 'OpenAI', urls: ['https://openai.com/news/rss.xml', 'https://openai.com/blog/rss.xml'] },
     { name: 'Google AI', urls: ['https://blog.google/technology/ai/rss/'] },
-    { name: 'Product Hunt', urls: ['https://www.producthunt.com/feed?category=artificial-intelligence'] },
-    { name: 'Two Minute Papers (YouTube)', urls: ['https://www.youtube.com/feeds/videos.xml?channel_id=UCbfYPyITQ-7l4upoX8nvctg'] }
+    { name: 'Product Hunt', urls: ['https://www.producthunt.com/feed?category=artificial-intelligence'] }
 ];
 
 function fetchURL(url) {
@@ -164,7 +163,18 @@ function generateHTML(updates) {
         html += '</ul></div>';
     }
     
+    html += '</div>';
+
+    // Static YouTube Section
+    html += '<div style="margin-top: 30px; padding-top: 20px; border-top: 1px dashed #ddd;">';
+    html += '<h3 style="color: #c4302b; margin-top: 0;"><i class="fab fa-youtube"></i> 推荐 AI 频道</h3>';
+    html += '<div style="display: flex; gap: 15px; flex-wrap: wrap;">';
+    html += '<a href="https://www.youtube.com/@TwoMinutePapers" target="_blank" style="background: #c4302b; color: white; padding: 8px 15px; border-radius: 20px; text-decoration: none; font-size: 0.9em;"><i class="fas fa-play"></i> Two Minute Papers</a>';
+    html += '<a href="https://www.youtube.com/@mreflow" target="_blank" style="background: #c4302b; color: white; padding: 8px 15px; border-radius: 20px; text-decoration: none; font-size: 0.9em;"><i class="fas fa-play"></i> Matt Wolfe</a>';
+    html += '<a href="https://www.youtube.com/@aiexplained-official" target="_blank" style="background: #c4302b; color: white; padding: 8px 15px; border-radius: 20px; text-decoration: none; font-size: 0.9em;"><i class="fas fa-play"></i> AI Explained</a>';
     html += '</div></div>';
+    
+    html += '</div>';
     return html;
 }
 
