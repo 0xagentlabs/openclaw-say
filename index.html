@@ -3,151 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Pulse Hub - 商业化 AI 资讯前哨</title>
-    <meta name="description" content="聚合每日 AI 技术趋势、GitHub 项目分析与商业洞察。">
-    <link rel="stylesheet" href="assets/css/main.css">
-    <!-- Favicon -->
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤖</text></svg>">
+    <meta name="description" content="OpenClaw Say - 专业的 AI 资讯聚合平台，追踪 arXiv 论文、产品发布与行业动态。">
+    <meta name="keywords" content="AI, Artificial Intelligence, Machine Learning, Deep Learning, Tech News, OpenClaw">
+    <meta name="author" content="OpenClaw Team">
+    <title>OpenClaw Say - AI 智能前沿资讯</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
     <header class="site-header">
-        <div class="container nav-wrapper">
-            <a href="#" class="brand">AI Pulse Hub</a>
-            <nav class="nav-links">
-                <a href="#">首页</a>
-                <a href="#daily">技术日报</a>
-                <a href="#github">GitHub 趋势</a>
-                <a href="https://github.com/0xagentlabs/openclaw-say" target="_blank">关于我们</a>
+        <div class="container">
+            <a href="/" class="logo">OpenClaw <span class="accent">Say</span></a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#daily">日报</a></li>
+                    <li><a href="#weekly">周报</a></li>
+                    <li><a href="#papers">论文追踪</a></li>
+                    <li><a href="#products">产品动态</a></li>
+                </ul>
             </nav>
         </div>
     </header>
 
-    <section class="hero">
-        <div class="container">
-            <h1>洞察 AI 时代的每一个脉搏</h1>
-            <p>每日更新全球 AI 技术动态、开源项目趋势与深度商业分析。</p>
-        </div>
-    </section>
-
-    <main class="container main-content">
-        
-        <div id="daily">
-            <h2 class="section-title">📅 最新技术日报</h2>
-            <div id="daily-container" class="card-grid">
-                <div class="loading">正在获取最新数据...</div>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1 class="hero-title">洞察 AI <span class="accent">未来趋势</span></h1>
+                <p class="hero-subtitle">汇聚全球顶尖 AI 资讯，从 arXiv 论文到硅谷产品发布，一站式掌握行业脉搏。</p>
+                <div class="hero-actions">
+                    <a href="#latest" class="btn btn-primary">最新动态</a>
+                    <a href="https://github.com/0xagentlabs/openclaw-say" class="btn btn-outline" target="_blank">GitHub 仓库</a>
+                </div>
             </div>
-        </div>
+        </section>
 
-        <div id="github">
-            <h2 class="section-title">🐙 GitHub Agent 趋势</h2>
-            <div id="github-container" class="card-grid">
-                <div class="loading">正在分析开源生态...</div>
+        <section id="latest" class="featured-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>最新洞察</h2>
+                    <a href="/archives" class="view-all">查看全部 &rarr;</a>
+                </div>
+                <div class="card-grid">
+                    <!-- Placeholder Content -->
+                    <article class="news-card">
+                        <div class="card-tag">arXiv 热门</div>
+                        <h3>DeepSeek-V3 技术报告深度解析</h3>
+                        <p>探索新一代开源模型架构创新与训练策略，性能比肩闭源 SOTA。</p>
+                        <div class="card-meta">
+                            <span>2026-02-14</span>
+                            <span>•</span>
+                            <span>深度学习</span>
+                        </div>
+                    </article>
+                    <article class="news-card">
+                        <div class="card-tag">产品发布</div>
+                        <h3>Gemini 1.5 Pro 开放多模态长上下文窗口</h3>
+                        <p>Google 发布最新模型更新，支持 10M token 上下文，重定义文档分析能力。</p>
+                        <div class="card-meta">
+                            <span>2026-02-13</span>
+                            <span>•</span>
+                            <span>大模型</span>
+                        </div>
+                    </article>
+                    <article class="news-card">
+                        <div class="card-tag">行业动态</div>
+                        <h3>OpenAI Sora 公测计划曝光</h3>
+                        <p>视频生成领域迎来重大突破，好莱坞或将面临洗牌。</p>
+                        <div class="card-meta">
+                            <span>2026-02-12</span>
+                            <span>•</span>
+                            <span>AIGC</span>
+                        </div>
+                    </article>
+                </div>
             </div>
-        </div>
-
+        </section>
     </main>
 
     <footer class="site-footer">
         <div class="container">
-            <p>© 2026 0xAgentLabs. Powered by OpenClaw & GitHub Pages.</p>
+            <div class="footer-content">
+                <div class="footer-brand">
+                    OpenClaw <span class="accent">Say</span>
+                </div>
+                <p class="copyright">&copy; 2026 OpenClaw Team. Built with GitHub Pages.</p>
+            </div>
         </div>
     </footer>
-
-    <script>
-        // Configuration
-        const REPO_OWNER = '0xagentlabs';
-        const REPO_NAME = 'openclaw-say';
-        const BRANCH = 'main';
-
-        // Helper: Format Date
-        function formatDate(filename) {
-            const match = filename.match(/(\d{4})(\d{2})(\d{2})/);
-            if (match) return `${match[1]}-${match[2]}-${match[3]}`;
-            const match2 = filename.match(/(\d{4})-(\d{2})-(\d{2})/);
-            if (match2) return `${match2[1]}-${match2[2]}-${match2[3]}`;
-            return 'Unknown Date';
-        }
-
-        // Helper: Create Card HTML
-        function createCard(title, date, link, tag) {
-            return `
-                <article class="card">
-                    <div class="card-body">
-                        <span class="card-tag">${tag}</span>
-                        <h3 class="card-title">
-                            <a href="${link}">${title}</a>
-                        </h3>
-                        <div class="card-date">
-                            <span>🕒 ${date}</span>
-                        </div>
-                    </div>
-                </article>
-            `;
-        }
-
-        // Fetch Data
-        async function loadContent() {
-            const dailyContainer = document.getElementById('daily-container');
-            const githubContainer = document.getElementById('github-container');
-
-            try {
-                // Fetch Root for Daily Reports
-                const rootRes = await fetch(`https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/?ref=${BRANCH}`);
-                if (!rootRes.ok) throw new Error('API Rate Limit or Network Error');
-                const rootData = await rootRes.json();
-
-                // Process Daily Reports
-                const dailyReports = rootData
-                    .filter(item => item.type === 'file' && item.name.match(/^\d{8}-AI-Daily-Report\.html$/))
-                    .sort((a, b) => b.name.localeCompare(a.name))
-                    .slice(0, 6); // Top 6
-
-                if (dailyReports.length > 0) {
-                    dailyContainer.innerHTML = dailyReports.map(item => {
-                        const date = formatDate(item.name);
-                        return createCard(`AI Technology Daily Report - ${date}`, date, item.path, 'Daily Brief');
-                    }).join('');
-                } else {
-                    dailyContainer.innerHTML = '<div class="error">暂无日报数据</div>';
-                }
-
-                // Process GitHub Reports (Sub-folder)
-                // Note: This requires a second API call. If folder doesn't exist yet, handle gracefully.
-                try {
-                    const ghRes = await fetch(`https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/reports/daily-ai-agent-analysis?ref=${BRANCH}`);
-                    if (ghRes.ok) {
-                        const ghData = await ghRes.json();
-                        const ghReports = ghData
-                            .filter(item => item.type === 'file' && item.name.match(/^analysis-\d{4}-\d{2}-\d{2}\.html$/))
-                            .sort((a, b) => b.name.localeCompare(a.name))
-                            .slice(0, 6);
-
-                        if (ghReports.length > 0) {
-                            githubContainer.innerHTML = ghReports.map(item => {
-                                const date = formatDate(item.name);
-                                return createCard(`GitHub Agent Ecosystem Analysis`, date, item.path, 'Trend Report');
-                            }).join('');
-                        } else {
-                            githubContainer.innerHTML = '<div class="error">暂无趋势报告</div>';
-                        }
-                    } else {
-                         // Folder might not exist yet
-                        githubContainer.innerHTML = '<div class="loading">暂无 GitHub 趋势数据 (目录未建立)</div>';
-                    }
-                } catch (e) {
-                    console.log('GitHub reports folder not found or empty');
-                    githubContainer.innerHTML = '<div class="loading">暂无数据</div>';
-                }
-
-            } catch (error) {
-                console.error(error);
-                dailyContainer.innerHTML = '<div class="error">无法加载数据 (可能是 GitHub API 限流)，请稍后刷新。</div>';
-            }
-        }
-
-        // Init
-        document.addEventListener('DOMContentLoaded', loadContent);
-    </script>
 </body>
 </html>
