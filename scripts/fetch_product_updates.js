@@ -6,7 +6,8 @@ const path = require('path');
 const SOURCES = [
     { name: 'OpenAI', urls: ['https://openai.com/news/rss.xml', 'https://openai.com/blog/rss.xml'] },
     { name: 'Google AI', urls: ['https://blog.google/technology/ai/rss/'] },
-    { name: 'Product Hunt', urls: ['https://www.producthunt.com/feed?category=artificial-intelligence'] }
+    { name: 'Product Hunt', urls: ['https://www.producthunt.com/feed?category=artificial-intelligence'] },
+    { name: 'Matt Wolfe (YouTube)', urls: ['https://www.youtube.com/feeds/videos.xml?channel_id=UCuK2Mf5As9OKfWU7XV6yzCg'] }
 ];
 
 function fetchURL(url) {

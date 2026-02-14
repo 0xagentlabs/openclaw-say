@@ -100,8 +100,17 @@ SEARCH_RESULTS=$(gh api \
   -H "Accept: application/vnd.github.v3+json" \
   "search/repositories?q=ai+agent+created:>$SEARCH_DATE&sort=stars&order=desc&per_page=50")
 
+# Validation: Check if search results are valid JSON and contain items
+if ! echo "$SEARCH_RESULTS" | jq -e '.items' > /dev/null; then
+    echo "Error: GitHub API returned invalid response or no items."
+    echo "Response: $SEARCH_RESULTS"
+    # Fallback to a mock/empty list or exit, but for now let's try to continue with empty to show at least the Product Updates
+    SEARCH_RESULTS='{"items":[]}'
+fi
+
 # Step 2: Process and Filter results
 echo "过滤最近3天已展示的项目..."
+
 
 # Ensure WORKSPACE_DIR exists (it should, from the git clone above)
 TOP_REPOS=$(filter_projects "$SEARCH_RESULTS")
