@@ -1161,7 +1161,7 @@
                 date.setDate(date.getDate() - i);
                 const dateStr = date.toISOString().split('T')[0];
                 try {
-                    const response = await fetch(`data/combined/${dateStr}.json`, { method: 'HEAD' });
+                    const response = await fetch(`./data/combined/${dateStr}.json`, { method: 'HEAD' });
                     if (response.ok) {
                         dates.push(dateStr);
                     }
@@ -1184,12 +1184,12 @@
             `;
 
             try {
-                // 使用当前选择的日期加载数据
-                let response = await fetch(`data/combined/${state.currentDate}.json`);
+                // 使用当前选择的日期加载数据 - 使用相对路径
+                let response = await fetch(`./data/combined/${state.currentDate}.json`);
 
                 // 如果指定日期不存在，回退到最新数据
                 if (!response.ok) {
-                    response = await fetch('data/combined/latest.json');
+                    response = await fetch('./data/combined/latest.json');
                 }
 
                 if (!response.ok) {
@@ -1303,7 +1303,7 @@
 
             const currentDate = getCurrentDate();
             const cardsHTML = items.map(item => `
-                <article class="card" data-source="${item.source}" onclick="location.href='item.html?id=${item.id}&date=${currentDate}'" style="cursor: pointer;">
+                <article class="card" data-source="${item.source}" onclick="location.href='./item.html?id=${item.id}&date=${currentDate}'" style="cursor: pointer;">
                     <div class="card-image">
                         ${item.image ? `<img src="${item.image}" alt="${item.title}" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">` : ''}
                         <div class="card-source-badge ${item.source}">${getSourceIcon(item.source)} ${item.source}</div>

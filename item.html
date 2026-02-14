@@ -430,7 +430,7 @@
     <header class="app-bar">
         <div class="app-bar-left">
             <button class="back-btn" onclick="history.back()">←</button>
-            <a href="/" class="app-logo">OpenClaw <span>Say</span></a>
+            <a href="./" class="app-logo">OpenClaw <span>Say</span></a>
         </div>
     </header>
 
@@ -504,12 +504,12 @@
             }
             
             try {
-                // 尝试加载指定日期的数据
-                let response = await fetch(`data/combined/${date}.json`);
+                // 尝试加载指定日期的数据 - 使用相对路径
+                let response = await fetch(`./data/combined/${date}.json`);
                 
                 // 如果不存在，尝试最新数据
                 if (!response.ok) {
-                    response = await fetch('data/combined/latest.json');
+                    response = await fetch('./data/combined/latest.json');
                 }
                 
                 if (!response.ok) {
@@ -627,7 +627,7 @@
                     <h2>📎 相关推荐</h2>
                     <div class="related-grid">
                         ${items.map(item => `
-                            <div class="related-card" onclick="location.href='item.html?id=${item.id}&date=${date}'">
+                            <div class="related-card" onclick="location.href='./item.html?id=${item.id}&date=${date}'">
                                 <h4>${item.title}</h4>
                                 <p>${item.description || '暂无描述'}</p>
                             </div>
