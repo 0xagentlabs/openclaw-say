@@ -1,15 +1,45 @@
 {
   "date": "2026-02-15",
-  "generatedAt": "2026-02-15T00:43:27.665Z",
+  "generatedAt": "2026-02-15T06:29:43.640Z",
   "summary": {
-    "total": 23,
-    "github": 8,
-    "youtube": 10,
+    "total": 27,
+    "github": 20,
+    "youtube": 2,
     "producthunt": 5
   },
   "items": [
     {
-      "id": "producthunt-fallback-1771116207631-0",
+      "id": "youtube-fallback-2",
+      "source": "youtube",
+      "title": "Two Minute Papers",
+      "description": "每日 AI 研究论文精华",
+      "url": "https://www.youtube.com/@TwoMinutePapers",
+      "image": "https://img.youtube.com/vi/placeholder/maxresdefault.jpg",
+      "metadata": {
+        "views": "N/A",
+        "channel": "Two Minute Papers",
+        "videoId": "fallback-2"
+      },
+      "publishedAt": "2026-02-15",
+      "category": "video"
+    },
+    {
+      "id": "youtube-fallback-3",
+      "source": "youtube",
+      "title": "Matt Wolfe",
+      "description": "AI 工具和创意应用探索",
+      "url": "https://www.youtube.com/@mreflow",
+      "image": "https://img.youtube.com/vi/placeholder/maxresdefault.jpg",
+      "metadata": {
+        "views": "N/A",
+        "channel": "Matt Wolfe",
+        "videoId": "fallback-3"
+      },
+      "publishedAt": "2026-02-15",
+      "category": "video"
+    },
+    {
+      "id": "producthunt-fallback-1771136983612-0",
       "source": "producthunt",
       "title": "ChatGPT",
       "description": "OpenAI 的对话式 AI 助手",
@@ -23,7 +53,7 @@
       "category": "product"
     },
     {
-      "id": "producthunt-fallback-1771116207631-1",
+      "id": "producthunt-fallback-1771136983612-1",
       "source": "producthunt",
       "title": "Claude",
       "description": "Anthropic 的 AI 助手，擅长长文本理解",
@@ -37,7 +67,7 @@
       "category": "product"
     },
     {
-      "id": "producthunt-fallback-1771116207631-2",
+      "id": "producthunt-fallback-1771136983612-2",
       "source": "producthunt",
       "title": "Midjourney",
       "description": "AI 图像生成工具",
@@ -51,7 +81,7 @@
       "category": "product"
     },
     {
-      "id": "producthunt-fallback-1771116207631-3",
+      "id": "producthunt-fallback-1771136983612-3",
       "source": "producthunt",
       "title": "Notion AI",
       "description": "Notion 内置的 AI 写作助手",
@@ -65,7 +95,7 @@
       "category": "product"
     },
     {
-      "id": "producthunt-fallback-1771116207631-4",
+      "id": "producthunt-fallback-1771136983612-4",
       "source": "producthunt",
       "title": "Perplexity",
       "description": "AI 驱动的搜索引擎",
@@ -79,124 +109,94 @@
       "category": "product"
     },
     {
-      "id": "youtube-video-1771116206774-0",
-      "source": "youtube",
-      "title": "Why Humanoid Robots Won't Replace Humans Yet",
-      "description": "🎙️ If you love this show, please leave us a 5-Star Review and share your favorite episodes with friends: https://link.chtbl.com/KE3gp3MV\n—\nCheck Out Matt’s Stuff:\n• Future Tools - https://futuretools...",
-      "url": "https://www.youtube.com/shorts/DjrtIZYn5XE",
-      "image": "https://i1.ytimg.com/vi/DjrtIZYn5XE/hqdefault.jpg",
+      "id": "github-1154042797",
+      "source": "github",
+      "title": "aeromomo/claw-compactor",
+      "description": "🦞 Claw Compactor — The 98% Crusher. Cut your AI agent token spend in half with 5 layered compression techniques.",
+      "url": "https://github.com/aeromomo/claw-compactor",
+      "image": "https://opengraph.githubassets.com/1/aeromomo/claw-compactor",
       "metadata": {
-        "views": "1.3K",
-        "channel": "Matt Wolfe",
-        "videoId": "video-1771116206774-0"
-      },
-      "publishedAt": "2026-02-13",
-      "category": "video"
-    },
-    {
-      "id": "youtube-eGpIXJ0C4ds",
-      "source": "youtube",
-      "title": "Anthropic Found Out Why AIs Go Insane",
-      "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\n📝 The paper is available here:\nhttps://www.anthropic.com/research/assistant-axis\n\nOur Patreon if you wish to suppor...",
-      "url": "https://www.youtube.com/watch?v=eGpIXJ0C4ds",
-      "image": "https://i2.ytimg.com/vi/eGpIXJ0C4ds/hqdefault.jpg",
-      "metadata": {
-        "views": "167.4K",
-        "channel": "Two Minute Papers",
-        "videoId": "eGpIXJ0C4ds"
-      },
-      "publishedAt": "2026-02-12",
-      "category": "video"
-    },
-    {
-      "id": "youtube-video-1771116206774-1",
-      "source": "youtube",
-      "title": "How I Built a $3M/Year AI Business With 0 Funding",
-      "description": "🎙️ If you love this show, please leave us a 5-Star Review and share your favorite episodes with friends: https://link.chtbl.com/KE3gp3MV\n—\nCheck Out Matt’s Stuff:\n• Future Tools - https://futuretools...",
-      "url": "https://www.youtube.com/shorts/EarM9L44HtM",
-      "image": "https://i2.ytimg.com/vi/EarM9L44HtM/hqdefault.jpg",
-      "metadata": {
-        "views": "1.3K",
-        "channel": "Matt Wolfe",
-        "videoId": "video-1771116206774-1"
-      },
-      "publishedAt": "2026-02-11",
-      "category": "video"
-    },
-    {
-      "id": "youtube-vsK4Gb7Eys8",
-      "source": "youtube",
-      "title": "Physics Simulation Just Crossed A Line",
-      "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\n📝 The paper is available here:\nhttps://sig25ddmpd.github.io/\n\nOur Patreon if you wish to support us: https://www.pa...",
-      "url": "https://www.youtube.com/watch?v=vsK4Gb7Eys8",
-      "image": "https://i3.ytimg.com/vi/vsK4Gb7Eys8/hqdefault.jpg",
-      "metadata": {
-        "views": "47.7K",
-        "channel": "Two Minute Papers",
-        "videoId": "vsK4Gb7Eys8"
+        "stars": 472,
+        "language": "Python",
+        "topics": [],
+        "updatedAt": "2026-02-15T06:26:11Z",
+        "createdAt": "2026-02-10T00:27:08Z"
       },
       "publishedAt": "2026-02-10",
-      "category": "video"
+      "category": "ai-agent"
     },
     {
-      "id": "youtube-en8aDnS-d18",
-      "source": "youtube",
-      "title": "AI Agents Are Now Hiring Humans. We Need to Talk",
-      "description": "*Get our AI news cheat sheet: 20+ prompts for the latest models and tools* https://clickhubspot.com/hpb\nEpisode 96: How terrified should you really be about a social network with no humans allowed? Ma...",
-      "url": "https://www.youtube.com/watch?v=en8aDnS-d18",
-      "image": "https://i2.ytimg.com/vi/en8aDnS-d18/hqdefault.jpg",
+      "id": "github-1153190876",
+      "source": "github",
+      "title": "zilliztech/memsearch",
+      "description": "A Markdown-first memory system, a standalone library for any AI agent. Inspired by OpenClaw.",
+      "url": "https://github.com/zilliztech/memsearch",
+      "image": "https://opengraph.githubassets.com/1/zilliztech/memsearch",
       "metadata": {
-        "views": "4.9K",
-        "channel": "Matt Wolfe",
-        "videoId": "en8aDnS-d18"
-      },
-      "publishedAt": "2026-02-10",
-      "category": "video"
-    },
-    {
-      "id": "youtube-video-1771116206774-3",
-      "source": "youtube",
-      "title": "I Interviewed AI Arnold Schwarzenegger (You Won't Believe This)",
-      "description": "🎙️ If you love this show, please leave us a 5-Star Review and share your favorite episodes with friends: https://link.chtbl.com/KE3gp3MV\n—\nCheck Out Matt’s Stuff:\n• Future Tools - https://futuretools...",
-      "url": "https://www.youtube.com/shorts/EIK6LxV50j0",
-      "image": "https://i2.ytimg.com/vi/EIK6LxV50j0/hqdefault.jpg",
-      "metadata": {
-        "views": "987",
-        "channel": "Matt Wolfe",
-        "videoId": "video-1771116206774-3"
+        "stars": 397,
+        "language": "Python",
+        "topics": [
+          "agent",
+          "agent-memory",
+          "claude-code",
+          "claude-code-plugin",
+          "clawdbot",
+          "embeddings",
+          "memory",
+          "milvus",
+          "openclaw",
+          "progressive-disclosure",
+          "rag",
+          "semantic-search"
+        ],
+        "updatedAt": "2026-02-15T06:18:56Z",
+        "createdAt": "2026-02-09T02:29:16Z"
       },
       "publishedAt": "2026-02-09",
-      "category": "video"
+      "category": "ai-agent"
     },
     {
-      "id": "youtube-RaNay3x0Fmk",
-      "source": "youtube",
-      "title": "NVIDIA’s New AI: Erasing Reality",
-      "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\n📝 The paper and the code are now available here:\nhttps://dvirsamuel.github.io/omnimattezero.github.io/\nhttps://gith...",
-      "url": "https://www.youtube.com/watch?v=RaNay3x0Fmk",
-      "image": "https://i3.ytimg.com/vi/RaNay3x0Fmk/hqdefault.jpg",
+      "id": "github-1150822093",
+      "source": "github",
+      "title": "jingkaihe/matchlock",
+      "description": "Matchlock secures AI agent workloads with a Linux-based sandbox.",
+      "url": "https://github.com/jingkaihe/matchlock",
+      "image": "https://opengraph.githubassets.com/1/jingkaihe/matchlock",
       "metadata": {
-        "views": "62.9K",
-        "channel": "Two Minute Papers",
-        "videoId": "RaNay3x0Fmk"
+        "stars": 439,
+        "language": "Go",
+        "topics": [],
+        "updatedAt": "2026-02-15T02:45:16Z",
+        "createdAt": "2026-02-05T18:22:39Z"
       },
-      "publishedAt": "2026-02-06",
-      "category": "video"
+      "publishedAt": "2026-02-05",
+      "category": "ai-agent"
     },
     {
-      "id": "youtube-video-1771116206774-4",
-      "source": "youtube",
-      "title": "Why AI is the New Nuclear Arms Race",
-      "description": "🎙️ If you love this show, please leave us a 5-Star Review and share your favorite episodes with friends: https://link.chtbl.com/KE3gp3MV\n—\nCheck Out Matt’s Stuff:\n• Future Tools - https://futuretools...",
-      "url": "https://www.youtube.com/shorts/mRS9IF5TyMc",
-      "image": "https://i2.ytimg.com/vi/mRS9IF5TyMc/hqdefault.jpg",
+      "id": "github-1150626239",
+      "source": "github",
+      "title": "ValueCell-ai/ClawX",
+      "description": "ClawX is a desktop app that provides a graphical interface for OpenClaw AI agents. It turns CLI-based AI orchestration into a desktop experience without using the terminal. We’ve moved from clawx.dev to claw-x.com.",
+      "url": "https://github.com/ValueCell-ai/ClawX",
+      "image": "https://opengraph.githubassets.com/1/ValueCell-ai/ClawX",
       "metadata": {
-        "views": "1.3K",
-        "channel": "Matt Wolfe",
-        "videoId": "video-1771116206774-4"
+        "stars": 438,
+        "language": "TypeScript",
+        "topics": [
+          "agent",
+          "agentic-ai",
+          "agents",
+          "ai",
+          "clawdbot",
+          "moltbot",
+          "openclaw",
+          "skill"
+        ],
+        "updatedAt": "2026-02-15T06:20:59Z",
+        "createdAt": "2026-02-05T13:58:36Z"
       },
-      "publishedAt": "2026-02-06",
-      "category": "video"
+      "publishedAt": "2026-02-05",
+      "category": "ai-agent"
     },
     {
       "id": "github-1149626116",
@@ -206,44 +206,75 @@
       "url": "https://github.com/run-bigpig/jcp",
       "image": "https://opengraph.githubassets.com/1/run-bigpig/jcp",
       "metadata": {
-        "stars": 697,
+        "stars": 699,
         "language": "Go",
         "topics": [],
-        "updatedAt": "2026-02-14T17:07:10Z",
+        "updatedAt": "2026-02-15T04:03:58Z",
         "createdAt": "2026-02-04T10:29:51Z"
       },
       "publishedAt": "2026-02-04",
       "category": "ai-agent"
     },
     {
-      "id": "youtube-fFL7la73RO4",
-      "source": "youtube",
-      "title": "New DeepSeek Research - The Future Is Here!",
-      "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\nI use DeepSeek there by running an instance with enough GPU VRAM and using ollama.\n\n📝 The #DeepSeek paper is availab...",
-      "url": "https://www.youtube.com/watch?v=fFL7la73RO4",
-      "image": "https://i3.ytimg.com/vi/fFL7la73RO4/hqdefault.jpg",
+      "id": "github-1146981739",
+      "source": "github",
+      "title": "ygwyg/MAHORAGA",
+      "description": "autonomous trading agent powered by social sentiment analysis and ai that learns, grows, and adapts",
+      "url": "https://github.com/ygwyg/MAHORAGA",
+      "image": "https://opengraph.githubassets.com/1/ygwyg/MAHORAGA",
       "metadata": {
-        "views": "272.1K",
-        "channel": "Two Minute Papers",
-        "videoId": "fFL7la73RO4"
+        "stars": 488,
+        "language": "TypeScript",
+        "topics": [],
+        "updatedAt": "2026-02-14T20:43:30Z",
+        "createdAt": "2026-02-01T01:49:05Z"
       },
-      "publishedAt": "2026-02-04",
-      "category": "video"
+      "publishedAt": "2026-02-01",
+      "category": "ai-agent"
     },
     {
-      "id": "youtube-4RtUJkjrKMI",
-      "source": "youtube",
-      "title": "Surprise Video - What A Time To Be Alive!",
-      "description": "Thank you so much everyone, this was amazing fun!\n\nVocals: Carolina Padrón\nDrums: Federico Gucciardo\nBass: Lagos Bfingerz\n\nGuitar tab is available here for free, no paywall nonsense: https://www.dropb...",
-      "url": "https://www.youtube.com/watch?v=4RtUJkjrKMI",
-      "image": "https://i1.ytimg.com/vi/4RtUJkjrKMI/hqdefault.jpg",
+      "id": "github-1146664329",
+      "source": "github",
+      "title": "crshdn/mission-control",
+      "description": "AI Agent Orchestration Dashboard - Manage AI agents, assign tasks, and coordinate multi-agent collaboration via OpenClaw Gateway.",
+      "url": "https://github.com/crshdn/mission-control",
+      "image": "https://opengraph.githubassets.com/1/crshdn/mission-control",
       "metadata": {
-        "views": "37.3K",
-        "channel": "Two Minute Papers",
-        "videoId": "4RtUJkjrKMI"
+        "stars": 377,
+        "language": "TypeScript",
+        "topics": [
+          "aiagent",
+          "automation",
+          "openclaw"
+        ],
+        "updatedAt": "2026-02-15T05:53:14Z",
+        "createdAt": "2026-01-31T13:27:48Z"
       },
       "publishedAt": "2026-01-31",
-      "category": "video"
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1146193768",
+      "source": "github",
+      "title": "callstackincubator/agent-device",
+      "description": "CLI to control iOS and Android devices for AI agents",
+      "url": "https://github.com/callstackincubator/agent-device",
+      "image": "https://opengraph.githubassets.com/1/callstackincubator/agent-device",
+      "metadata": {
+        "stars": 600,
+        "language": "TypeScript",
+        "topics": [
+          "agentic-ai",
+          "agents",
+          "automation",
+          "mobile",
+          "testing"
+        ],
+        "updatedAt": "2026-02-15T04:01:57Z",
+        "createdAt": "2026-01-30T18:41:54Z"
+      },
+      "publishedAt": "2026-01-30",
+      "category": "ai-agent"
     },
     {
       "id": "github-1143535772",
@@ -253,7 +284,7 @@
       "url": "https://github.com/six2dez/burp-ai-agent",
       "image": "https://opengraph.githubassets.com/1/six2dez/burp-ai-agent",
       "metadata": {
-        "stars": 612,
+        "stars": 615,
         "language": "Kotlin",
         "topics": [
           "ai",
@@ -271,8 +302,25 @@
           "security",
           "web-security"
         ],
-        "updatedAt": "2026-02-14T16:06:00Z",
+        "updatedAt": "2026-02-15T05:16:04Z",
         "createdAt": "2026-01-27T17:44:17Z"
+      },
+      "publishedAt": "2026-01-27",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1143687300",
+      "source": "github",
+      "title": "cursor/agent-trace",
+      "description": "A standard format for tracing AI-generated code.",
+      "url": "https://github.com/cursor/agent-trace",
+      "image": "https://opengraph.githubassets.com/1/cursor/agent-trace",
+      "metadata": {
+        "stars": 563,
+        "language": "TypeScript",
+        "topics": [],
+        "updatedAt": "2026-02-15T03:06:02Z",
+        "createdAt": "2026-01-27T22:07:15Z"
       },
       "publishedAt": "2026-01-27",
       "category": "ai-agent"
@@ -285,11 +333,28 @@
       "url": "https://github.com/BankrBot/openclaw-skills",
       "image": "https://opengraph.githubassets.com/1/BankrBot/openclaw-skills",
       "metadata": {
-        "stars": 657,
+        "stars": 664,
         "language": "Shell",
         "topics": [],
-        "updatedAt": "2026-02-15T00:26:45Z",
+        "updatedAt": "2026-02-15T06:00:07Z",
         "createdAt": "2026-01-26T18:45:39Z"
+      },
+      "publishedAt": "2026-01-26",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1142274728",
+      "source": "github",
+      "title": "jo-inc/camofox-browser",
+      "description": "Headless browser automation server for AI agents to visit sites that are usually blocked",
+      "url": "https://github.com/jo-inc/camofox-browser",
+      "image": "https://opengraph.githubassets.com/1/jo-inc/camofox-browser",
+      "metadata": {
+        "stars": 416,
+        "language": "JavaScript",
+        "topics": [],
+        "updatedAt": "2026-02-15T05:52:27Z",
+        "createdAt": "2026-01-26T07:31:13Z"
       },
       "publishedAt": "2026-01-26",
       "category": "ai-agent"
@@ -302,7 +367,7 @@
       "url": "https://github.com/rivet-dev/sandbox-agent",
       "image": "https://opengraph.githubassets.com/1/rivet-dev/sandbox-agent",
       "metadata": {
-        "stars": 827,
+        "stars": 828,
         "language": "Rust",
         "topics": [
           "agent",
@@ -316,7 +381,7 @@
           "opencode",
           "sandbox"
         ],
-        "updatedAt": "2026-02-14T22:51:23Z",
+        "updatedAt": "2026-02-15T03:01:17Z",
         "createdAt": "2026-01-25T10:03:02Z"
       },
       "publishedAt": "2026-01-25",
@@ -330,7 +395,7 @@
       "url": "https://github.com/luccast/crabwalk",
       "image": "https://opengraph.githubassets.com/1/luccast/crabwalk",
       "metadata": {
-        "stars": 772,
+        "stars": 773,
         "language": "TypeScript",
         "topics": [
           "ai",
@@ -339,8 +404,25 @@
           "moltbot",
           "monitoring"
         ],
-        "updatedAt": "2026-02-14T22:31:27Z",
+        "updatedAt": "2026-02-15T05:54:13Z",
         "createdAt": "2026-01-25T23:00:59Z"
+      },
+      "publishedAt": "2026-01-25",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1141582887",
+      "source": "github",
+      "title": "qufei1993/skills-hub",
+      "description": "A cross-platform desktop app to manage Agent Skills in one place and sync them to multiple AI coding tools’ global skills directories — “Install once, sync everywhere”.",
+      "url": "https://github.com/qufei1993/skills-hub",
+      "image": "https://opengraph.githubassets.com/1/qufei1993/skills-hub",
+      "metadata": {
+        "stars": 390,
+        "language": "Rust",
+        "topics": [],
+        "updatedAt": "2026-02-14T20:22:16Z",
+        "createdAt": "2026-01-25T03:31:21Z"
       },
       "publishedAt": "2026-01-25",
       "category": "ai-agent"
@@ -353,7 +435,7 @@
       "url": "https://github.com/tinyfish-io/tinyfish-cookbook",
       "image": "https://opengraph.githubassets.com/1/tinyfish-io/tinyfish-cookbook",
       "metadata": {
-        "stars": 732,
+        "stars": 734,
         "language": "TypeScript",
         "topics": [
           "agent",
@@ -366,7 +448,7 @@
           "web-agents",
           "web-automation"
         ],
-        "updatedAt": "2026-02-14T22:15:49Z",
+        "updatedAt": "2026-02-15T04:11:31Z",
         "createdAt": "2026-01-22T19:41:14Z"
       },
       "publishedAt": "2026-01-22",
@@ -380,10 +462,10 @@
       "url": "https://github.com/WordPress/agent-skills",
       "image": "https://opengraph.githubassets.com/1/WordPress/agent-skills",
       "metadata": {
-        "stars": 608,
+        "stars": 609,
         "language": "JavaScript",
         "topics": [],
-        "updatedAt": "2026-02-14T23:09:54Z",
+        "updatedAt": "2026-02-15T04:35:29Z",
         "createdAt": "2026-01-20T01:21:50Z"
       },
       "publishedAt": "2026-01-20",
@@ -397,7 +479,7 @@
       "url": "https://github.com/snwfdhmp/awesome-ralph",
       "image": "https://opengraph.githubassets.com/1/snwfdhmp/awesome-ralph",
       "metadata": {
-        "stars": 718,
+        "stars": 720,
         "language": "Unknown",
         "topics": [
           "ai-coding",
@@ -408,23 +490,71 @@
           "ralph-wiggum",
           "vibe-coding"
         ],
-        "updatedAt": "2026-02-14T23:18:27Z",
+        "updatedAt": "2026-02-15T04:42:24Z",
         "createdAt": "2026-01-19T08:42:54Z"
       },
       "publishedAt": "2026-01-19",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1137485434",
+      "source": "github",
+      "title": "softaworks/agent-toolkit",
+      "description": "A curated collection of skills for AI coding agents. Skills are packaged instructions and scripts that extend agent capabilities across development, documentation, planning, and professional workflows.",
+      "url": "https://github.com/softaworks/agent-toolkit",
+      "image": "https://opengraph.githubassets.com/1/softaworks/agent-toolkit",
+      "metadata": {
+        "stars": 587,
+        "language": "Python",
+        "topics": [
+          "agent-skills",
+          "ai",
+          "automation",
+          "claude",
+          "claude-code",
+          "coding-agent",
+          "development"
+        ],
+        "updatedAt": "2026-02-15T06:20:36Z",
+        "createdAt": "2026-01-19T12:35:40Z"
+      },
+      "publishedAt": "2026-01-19",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1136348782",
+      "source": "github",
+      "title": "dannote/figma-use",
+      "description": "Control Figma from the command line. Full read/write access for AI agents — create shapes, text, components, set styles, export images. 100+ commands.",
+      "url": "https://github.com/dannote/figma-use",
+      "image": "https://opengraph.githubassets.com/1/dannote/figma-use",
+      "metadata": {
+        "stars": 391,
+        "language": "TypeScript",
+        "topics": [
+          "ai-agents",
+          "automation",
+          "cli",
+          "design",
+          "figma"
+        ],
+        "updatedAt": "2026-02-15T01:55:35Z",
+        "createdAt": "2026-01-17T14:29:36Z"
+      },
+      "publishedAt": "2026-01-17",
       "category": "ai-agent"
     }
   ],
   "stats": {
     "categories": {
+      "video": 2,
       "product": 5,
-      "video": 10,
-      "ai-agent": 8
+      "ai-agent": 20
     },
     "sources": {
+      "youtube": 2,
       "producthunt": 5,
-      "youtube": 10,
-      "github": 8
+      "github": 20
     }
   }
 }

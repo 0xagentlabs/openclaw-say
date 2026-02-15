@@ -3,7 +3,7 @@
   "count": 5,
   "items": [
     {
-      "id": "producthunt-fallback-1771116207631-0",
+      "id": "producthunt-fallback-1771136983612-0",
       "source": "producthunt",
       "title": "ChatGPT",
       "description": "OpenAI 的对话式 AI 助手",
@@ -17,7 +17,7 @@
       "category": "product"
     },
     {
-      "id": "producthunt-fallback-1771116207631-1",
+      "id": "producthunt-fallback-1771136983612-1",
       "source": "producthunt",
       "title": "Claude",
       "description": "Anthropic 的 AI 助手，擅长长文本理解",
@@ -31,7 +31,7 @@
       "category": "product"
     },
     {
-      "id": "producthunt-fallback-1771116207631-2",
+      "id": "producthunt-fallback-1771136983612-2",
       "source": "producthunt",
       "title": "Midjourney",
       "description": "AI 图像生成工具",
@@ -45,7 +45,7 @@
       "category": "product"
     },
     {
-      "id": "producthunt-fallback-1771116207631-3",
+      "id": "producthunt-fallback-1771136983612-3",
       "source": "producthunt",
       "title": "Notion AI",
       "description": "Notion 内置的 AI 写作助手",
@@ -59,7 +59,7 @@
       "category": "product"
     },
     {
-      "id": "producthunt-fallback-1771116207631-4",
+      "id": "producthunt-fallback-1771136983612-4",
       "source": "producthunt",
       "title": "Perplexity",
       "description": "AI 驱动的搜索引擎",

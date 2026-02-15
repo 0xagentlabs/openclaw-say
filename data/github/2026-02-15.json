@@ -1,6 +1,6 @@
 {
   "date": "2026-02-15",
-  "count": 8,
+  "count": 20,
   "items": [
     {
       "id": "github-1141720197",
@@ -10,7 +10,7 @@
       "url": "https://github.com/rivet-dev/sandbox-agent",
       "image": "https://opengraph.githubassets.com/1/rivet-dev/sandbox-agent",
       "metadata": {
-        "stars": 827,
+        "stars": 828,
         "language": "Rust",
         "topics": [
           "agent",
@@ -24,7 +24,7 @@
           "opencode",
           "sandbox"
         ],
-        "updatedAt": "2026-02-14T22:51:23Z",
+        "updatedAt": "2026-02-15T03:01:17Z",
         "createdAt": "2026-01-25T10:03:02Z"
       },
       "publishedAt": "2026-01-25",
@@ -38,7 +38,7 @@
       "url": "https://github.com/luccast/crabwalk",
       "image": "https://opengraph.githubassets.com/1/luccast/crabwalk",
       "metadata": {
-        "stars": 772,
+        "stars": 773,
         "language": "TypeScript",
         "topics": [
           "ai",
@@ -47,7 +47,7 @@
           "moltbot",
           "monitoring"
         ],
-        "updatedAt": "2026-02-14T22:31:27Z",
+        "updatedAt": "2026-02-15T05:54:13Z",
         "createdAt": "2026-01-25T23:00:59Z"
       },
       "publishedAt": "2026-01-25",
@@ -61,7 +61,7 @@
       "url": "https://github.com/tinyfish-io/tinyfish-cookbook",
       "image": "https://opengraph.githubassets.com/1/tinyfish-io/tinyfish-cookbook",
       "metadata": {
-        "stars": 732,
+        "stars": 734,
         "language": "TypeScript",
         "topics": [
           "agent",
@@ -74,7 +74,7 @@
           "web-agents",
           "web-automation"
         ],
-        "updatedAt": "2026-02-14T22:15:49Z",
+        "updatedAt": "2026-02-15T04:11:31Z",
         "createdAt": "2026-01-22T19:41:14Z"
       },
       "publishedAt": "2026-01-22",
@@ -88,7 +88,7 @@
       "url": "https://github.com/snwfdhmp/awesome-ralph",
       "image": "https://opengraph.githubassets.com/1/snwfdhmp/awesome-ralph",
       "metadata": {
-        "stars": 718,
+        "stars": 720,
         "language": "Unknown",
         "topics": [
           "ai-coding",
@@ -99,7 +99,7 @@
           "ralph-wiggum",
           "vibe-coding"
         ],
-        "updatedAt": "2026-02-14T23:18:27Z",
+        "updatedAt": "2026-02-15T04:42:24Z",
         "createdAt": "2026-01-19T08:42:54Z"
       },
       "publishedAt": "2026-01-19",
@@ -113,10 +113,10 @@
       "url": "https://github.com/run-bigpig/jcp",
       "image": "https://opengraph.githubassets.com/1/run-bigpig/jcp",
       "metadata": {
-        "stars": 697,
+        "stars": 699,
         "language": "Go",
         "topics": [],
-        "updatedAt": "2026-02-14T17:07:10Z",
+        "updatedAt": "2026-02-15T04:03:58Z",
         "createdAt": "2026-02-04T10:29:51Z"
       },
       "publishedAt": "2026-02-04",
@@ -130,10 +130,10 @@
       "url": "https://github.com/BankrBot/openclaw-skills",
       "image": "https://opengraph.githubassets.com/1/BankrBot/openclaw-skills",
       "metadata": {
-        "stars": 657,
+        "stars": 664,
         "language": "Shell",
         "topics": [],
-        "updatedAt": "2026-02-15T00:26:45Z",
+        "updatedAt": "2026-02-15T06:00:07Z",
         "createdAt": "2026-01-26T18:45:39Z"
       },
       "publishedAt": "2026-01-26",
@@ -147,7 +147,7 @@
       "url": "https://github.com/six2dez/burp-ai-agent",
       "image": "https://opengraph.githubassets.com/1/six2dez/burp-ai-agent",
       "metadata": {
-        "stars": 612,
+        "stars": 615,
         "language": "Kotlin",
         "topics": [
           "ai",
@@ -165,7 +165,7 @@
           "security",
           "web-security"
         ],
-        "updatedAt": "2026-02-14T16:06:00Z",
+        "updatedAt": "2026-02-15T05:16:04Z",
         "createdAt": "2026-01-27T17:44:17Z"
       },
       "publishedAt": "2026-01-27",
@@ -179,13 +179,263 @@
       "url": "https://github.com/WordPress/agent-skills",
       "image": "https://opengraph.githubassets.com/1/WordPress/agent-skills",
       "metadata": {
-        "stars": 608,
+        "stars": 609,
         "language": "JavaScript",
         "topics": [],
-        "updatedAt": "2026-02-14T23:09:54Z",
+        "updatedAt": "2026-02-15T04:35:29Z",
         "createdAt": "2026-01-20T01:21:50Z"
       },
       "publishedAt": "2026-01-20",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1146193768",
+      "source": "github",
+      "title": "callstackincubator/agent-device",
+      "description": "CLI to control iOS and Android devices for AI agents",
+      "url": "https://github.com/callstackincubator/agent-device",
+      "image": "https://opengraph.githubassets.com/1/callstackincubator/agent-device",
+      "metadata": {
+        "stars": 600,
+        "language": "TypeScript",
+        "topics": [
+          "agentic-ai",
+          "agents",
+          "automation",
+          "mobile",
+          "testing"
+        ],
+        "updatedAt": "2026-02-15T04:01:57Z",
+        "createdAt": "2026-01-30T18:41:54Z"
+      },
+      "publishedAt": "2026-01-30",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1137485434",
+      "source": "github",
+      "title": "softaworks/agent-toolkit",
+      "description": "A curated collection of skills for AI coding agents. Skills are packaged instructions and scripts that extend agent capabilities across development, documentation, planning, and professional workflows.",
+      "url": "https://github.com/softaworks/agent-toolkit",
+      "image": "https://opengraph.githubassets.com/1/softaworks/agent-toolkit",
+      "metadata": {
+        "stars": 587,
+        "language": "Python",
+        "topics": [
+          "agent-skills",
+          "ai",
+          "automation",
+          "claude",
+          "claude-code",
+          "coding-agent",
+          "development"
+        ],
+        "updatedAt": "2026-02-15T06:20:36Z",
+        "createdAt": "2026-01-19T12:35:40Z"
+      },
+      "publishedAt": "2026-01-19",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1143687300",
+      "source": "github",
+      "title": "cursor/agent-trace",
+      "description": "A standard format for tracing AI-generated code.",
+      "url": "https://github.com/cursor/agent-trace",
+      "image": "https://opengraph.githubassets.com/1/cursor/agent-trace",
+      "metadata": {
+        "stars": 563,
+        "language": "TypeScript",
+        "topics": [],
+        "updatedAt": "2026-02-15T03:06:02Z",
+        "createdAt": "2026-01-27T22:07:15Z"
+      },
+      "publishedAt": "2026-01-27",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1146981739",
+      "source": "github",
+      "title": "ygwyg/MAHORAGA",
+      "description": "autonomous trading agent powered by social sentiment analysis and ai that learns, grows, and adapts",
+      "url": "https://github.com/ygwyg/MAHORAGA",
+      "image": "https://opengraph.githubassets.com/1/ygwyg/MAHORAGA",
+      "metadata": {
+        "stars": 488,
+        "language": "TypeScript",
+        "topics": [],
+        "updatedAt": "2026-02-14T20:43:30Z",
+        "createdAt": "2026-02-01T01:49:05Z"
+      },
+      "publishedAt": "2026-02-01",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1154042797",
+      "source": "github",
+      "title": "aeromomo/claw-compactor",
+      "description": "🦞 Claw Compactor — The 98% Crusher. Cut your AI agent token spend in half with 5 layered compression techniques.",
+      "url": "https://github.com/aeromomo/claw-compactor",
+      "image": "https://opengraph.githubassets.com/1/aeromomo/claw-compactor",
+      "metadata": {
+        "stars": 472,
+        "language": "Python",
+        "topics": [],
+        "updatedAt": "2026-02-15T06:26:11Z",
+        "createdAt": "2026-02-10T00:27:08Z"
+      },
+      "publishedAt": "2026-02-10",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1150822093",
+      "source": "github",
+      "title": "jingkaihe/matchlock",
+      "description": "Matchlock secures AI agent workloads with a Linux-based sandbox.",
+      "url": "https://github.com/jingkaihe/matchlock",
+      "image": "https://opengraph.githubassets.com/1/jingkaihe/matchlock",
+      "metadata": {
+        "stars": 439,
+        "language": "Go",
+        "topics": [],
+        "updatedAt": "2026-02-15T02:45:16Z",
+        "createdAt": "2026-02-05T18:22:39Z"
+      },
+      "publishedAt": "2026-02-05",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1150626239",
+      "source": "github",
+      "title": "ValueCell-ai/ClawX",
+      "description": "ClawX is a desktop app that provides a graphical interface for OpenClaw AI agents. It turns CLI-based AI orchestration into a desktop experience without using the terminal. We’ve moved from clawx.dev to claw-x.com.",
+      "url": "https://github.com/ValueCell-ai/ClawX",
+      "image": "https://opengraph.githubassets.com/1/ValueCell-ai/ClawX",
+      "metadata": {
+        "stars": 438,
+        "language": "TypeScript",
+        "topics": [
+          "agent",
+          "agentic-ai",
+          "agents",
+          "ai",
+          "clawdbot",
+          "moltbot",
+          "openclaw",
+          "skill"
+        ],
+        "updatedAt": "2026-02-15T06:20:59Z",
+        "createdAt": "2026-02-05T13:58:36Z"
+      },
+      "publishedAt": "2026-02-05",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1142274728",
+      "source": "github",
+      "title": "jo-inc/camofox-browser",
+      "description": "Headless browser automation server for AI agents to visit sites that are usually blocked",
+      "url": "https://github.com/jo-inc/camofox-browser",
+      "image": "https://opengraph.githubassets.com/1/jo-inc/camofox-browser",
+      "metadata": {
+        "stars": 416,
+        "language": "JavaScript",
+        "topics": [],
+        "updatedAt": "2026-02-15T05:52:27Z",
+        "createdAt": "2026-01-26T07:31:13Z"
+      },
+      "publishedAt": "2026-01-26",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1153190876",
+      "source": "github",
+      "title": "zilliztech/memsearch",
+      "description": "A Markdown-first memory system, a standalone library for any AI agent. Inspired by OpenClaw.",
+      "url": "https://github.com/zilliztech/memsearch",
+      "image": "https://opengraph.githubassets.com/1/zilliztech/memsearch",
+      "metadata": {
+        "stars": 397,
+        "language": "Python",
+        "topics": [
+          "agent",
+          "agent-memory",
+          "claude-code",
+          "claude-code-plugin",
+          "clawdbot",
+          "embeddings",
+          "memory",
+          "milvus",
+          "openclaw",
+          "progressive-disclosure",
+          "rag",
+          "semantic-search"
+        ],
+        "updatedAt": "2026-02-15T06:18:56Z",
+        "createdAt": "2026-02-09T02:29:16Z"
+      },
+      "publishedAt": "2026-02-09",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1136348782",
+      "source": "github",
+      "title": "dannote/figma-use",
+      "description": "Control Figma from the command line. Full read/write access for AI agents — create shapes, text, components, set styles, export images. 100+ commands.",
+      "url": "https://github.com/dannote/figma-use",
+      "image": "https://opengraph.githubassets.com/1/dannote/figma-use",
+      "metadata": {
+        "stars": 391,
+        "language": "TypeScript",
+        "topics": [
+          "ai-agents",
+          "automation",
+          "cli",
+          "design",
+          "figma"
+        ],
+        "updatedAt": "2026-02-15T01:55:35Z",
+        "createdAt": "2026-01-17T14:29:36Z"
+      },
+      "publishedAt": "2026-01-17",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1141582887",
+      "source": "github",
+      "title": "qufei1993/skills-hub",
+      "description": "A cross-platform desktop app to manage Agent Skills in one place and sync them to multiple AI coding tools’ global skills directories — “Install once, sync everywhere”.",
+      "url": "https://github.com/qufei1993/skills-hub",
+      "image": "https://opengraph.githubassets.com/1/qufei1993/skills-hub",
+      "metadata": {
+        "stars": 390,
+        "language": "Rust",
+        "topics": [],
+        "updatedAt": "2026-02-14T20:22:16Z",
+        "createdAt": "2026-01-25T03:31:21Z"
+      },
+      "publishedAt": "2026-01-25",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1146664329",
+      "source": "github",
+      "title": "crshdn/mission-control",
+      "description": "AI Agent Orchestration Dashboard - Manage AI agents, assign tasks, and coordinate multi-agent collaboration via OpenClaw Gateway.",
+      "url": "https://github.com/crshdn/mission-control",
+      "image": "https://opengraph.githubassets.com/1/crshdn/mission-control",
+      "metadata": {
+        "stars": 377,
+        "language": "TypeScript",
+        "topics": [
+          "aiagent",
+          "automation",
+          "openclaw"
+        ],
+        "updatedAt": "2026-02-15T05:53:14Z",
+        "createdAt": "2026-01-31T13:27:48Z"
+      },
+      "publishedAt": "2026-01-31",
       "category": "ai-agent"
     }
   ]

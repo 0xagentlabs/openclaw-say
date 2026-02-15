@@ -15,7 +15,7 @@ const CONFIG = {
   sort: 'stars',
   order: 'desc',
   perPage: 50,
-  maxResults: 8,
+  maxResults: 20,
   filterDays: 3
 };
 

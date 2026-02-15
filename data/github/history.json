@@ -22,7 +22,19 @@
       "run-bigpig/jcp",
       "BankrBot/openclaw-skills",
       "six2dez/burp-ai-agent",
-      "WordPress/agent-skills"
+      "WordPress/agent-skills",
+      "callstackincubator/agent-device",
+      "softaworks/agent-toolkit",
+      "cursor/agent-trace",
+      "ygwyg/MAHORAGA",
+      "aeromomo/claw-compactor",
+      "jingkaihe/matchlock",
+      "ValueCell-ai/ClawX",
+      "jo-inc/camofox-browser",
+      "zilliztech/memsearch",
+      "dannote/figma-use",
+      "qufei1993/skills-hub",
+      "crshdn/mission-control"
     ]
   }
 ]
