@@ -11,5 +11,18 @@
       "yohey-w/multi-agent-shogun",
       "TheAgentContextLab/OneContext"
     ]
+  },
+  {
+    "date": "2026-02-15",
+    "projects": [
+      "rivet-dev/sandbox-agent",
+      "luccast/crabwalk",
+      "tinyfish-io/tinyfish-cookbook",
+      "snwfdhmp/awesome-ralph",
+      "run-bigpig/jcp",
+      "BankrBot/openclaw-skills",
+      "six2dez/burp-ai-agent",
+      "WordPress/agent-skills"
+    ]
   }
 ]
