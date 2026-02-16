@@ -36,5 +36,30 @@
       "qufei1993/skills-hub",
       "crshdn/mission-control"
     ]
+  },
+  {
+    "date": "2026-02-16",
+    "projects": [
+      "coollabsio/jean",
+      "always-further/nono",
+      "nhevers/MoltBrain",
+      "voocel/openclaw-mini",
+      "nrslib/takt",
+      "BradGroux/veritas-kanban",
+      "rohitg00/skillkit",
+      "ramziddin/solid-skills",
+      "vueuse/skills",
+      "aitytech/agentkits-marketing",
+      "openperf/brief",
+      "YuJunZhiXue/github-skill-forge",
+      "RunanywhereAI/on-device-browser-agent",
+      "stablyai/agent-slack",
+      "DataDog/pup",
+      "opencmit/JoinAI-Agent",
+      "yan5xu/code-relay",
+      "mikeyobrien/rho",
+      "RefoundAI/lenny-skills",
+      "openperf/openclaw-cloud"
+    ]
   }
 ]

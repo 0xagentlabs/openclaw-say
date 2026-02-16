@@ -1,0 +1,450 @@
+{
+  "date": "2026-02-16",
+  "count": 20,
+  "items": [
+    {
+      "id": "github-1140389139",
+      "source": "github",
+      "title": "coollabsio/jean",
+      "description": "Your AI dev team, parallelized.",
+      "url": "https://github.com/coollabsio/jean",
+      "image": "https://opengraph.githubassets.com/1/coollabsio/jean",
+      "metadata": {
+        "stars": 381,
+        "language": "TypeScript",
+        "topics": [
+          "agent",
+          "ai",
+          "claude-code",
+          "git",
+          "parallel",
+          "worktree"
+        ],
+        "updatedAt": "2026-02-15T22:59:02Z",
+        "createdAt": "2026-01-23T07:59:41Z"
+      },
+      "publishedAt": "2026-01-23",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1146550474",
+      "source": "github",
+      "title": "always-further/nono",
+      "description": "Secure, kernel-enforced sandbox for AI agents, MCP and LLM workloads. Capability-based isolation with secure key management and blocking of destructive actions in a zero-trust environment.",
+      "url": "https://github.com/always-further/nono",
+      "image": "https://opengraph.githubassets.com/1/always-further/nono",
+      "metadata": {
+        "stars": 367,
+        "language": "Rust",
+        "topics": [
+          "agent",
+          "agentic-ai",
+          "ai-agent-security",
+          "ai-agents",
+          "ai-security",
+          "code-execution",
+          "cybersecurity",
+          "isolation",
+          "linux-security",
+          "llm",
+          "mcp",
+          "open-source",
+          "prompt-injection",
+          "runtime-security",
+          "sandbox",
+          "security",
+          "sigstore",
+          "supply-chain-security",
+          "zero-trust"
+        ],
+        "updatedAt": "2026-02-15T20:00:39Z",
+        "createdAt": "2026-01-31T09:25:45Z"
+      },
+      "publishedAt": "2026-01-31",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1142649206",
+      "source": "github",
+      "title": "nhevers/MoltBrain",
+      "description": "Long-term memory layer for OpenClaw & MoltBook agents that learns and recalls your project context automatically.",
+      "url": "https://github.com/nhevers/MoltBrain",
+      "image": "https://opengraph.githubassets.com/1/nhevers/MoltBrain",
+      "metadata": {
+        "stars": 366,
+        "language": "TypeScript",
+        "topics": [
+          "ai",
+          "claude",
+          "claude-code",
+          "mcp",
+          "memory",
+          "nodejs",
+          "plugin",
+          "typescript"
+        ],
+        "updatedAt": "2026-02-15T14:34:19Z",
+        "createdAt": "2026-01-26T17:22:52Z"
+      },
+      "publishedAt": "2026-01-26",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1147148934",
+      "source": "github",
+      "title": "voocel/openclaw-mini",
+      "description": "🦞 OpenClaw 核心架构的极简复现，涵盖 sessionKey 会话域、队列串行、工具化记忆检索、按需上下文加载、可扩展技能与主动心跳唤醒机制",
+      "url": "https://github.com/voocel/openclaw-mini",
+      "image": "https://opengraph.githubassets.com/1/voocel/openclaw-mini",
+      "metadata": {
+        "stars": 357,
+        "language": "TypeScript",
+        "topics": [
+          "agent",
+          "ai",
+          "clawdbot",
+          "openclaw"
+        ],
+        "updatedAt": "2026-02-15T15:15:43Z",
+        "createdAt": "2026-02-01T09:24:33Z"
+      },
+      "publishedAt": "2026-02-01",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1141592887",
+      "source": "github",
+      "title": "nrslib/takt",
+      "description": "TAKT Agent Koordination Topology - Define how AI agents coordinate, where humans intervene, and what gets recorded — in YAML",
+      "url": "https://github.com/nrslib/takt",
+      "image": "https://opengraph.githubassets.com/1/nrslib/takt",
+      "metadata": {
+        "stars": 347,
+        "language": "TypeScript",
+        "topics": [
+          "agent-orchestration",
+          "agent-team",
+          "ai-agents",
+          "claude-code",
+          "codex",
+          "multi-agent",
+          "opencode"
+        ],
+        "updatedAt": "2026-02-15T17:12:59Z",
+        "createdAt": "2026-01-25T04:05:48Z"
+      },
+      "publishedAt": "2026-01-25",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1142309893",
+      "source": "github",
+      "title": "BradGroux/veritas-kanban",
+      "description": "The unfiltered truth about where your project stands. Lightweight kanban built for the agentic AI era.",
+      "url": "https://github.com/BradGroux/veritas-kanban",
+      "image": "https://opengraph.githubassets.com/1/BradGroux/veritas-kanban",
+      "metadata": {
+        "stars": 338,
+        "language": "TypeScript",
+        "topics": [
+          "ai-agents",
+          "developer-tools",
+          "kanban",
+          "local-first",
+          "pino",
+          "project-management",
+          "react",
+          "task-management",
+          "typescript",
+          "vite"
+        ],
+        "updatedAt": "2026-02-15T22:10:12Z",
+        "createdAt": "2026-01-26T08:35:20Z"
+      },
+      "publishedAt": "2026-01-26",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1138376193",
+      "source": "github",
+      "title": "rohitg00/skillkit",
+      "description": "Supercharge AI coding agents with portable skills. Install, translate & share skills across Claude Code, Cursor, Codex, Copilot & 40 more",
+      "url": "https://github.com/rohitg00/skillkit",
+      "image": "https://opengraph.githubassets.com/1/rohitg00/skillkit",
+      "metadata": {
+        "stars": 327,
+        "language": "TypeScript",
+        "topics": [
+          "agent-skills",
+          "agentskills",
+          "ai",
+          "cli",
+          "codex",
+          "cursor",
+          "gemini",
+          "opencode",
+          "skills"
+        ],
+        "updatedAt": "2026-02-15T14:06:41Z",
+        "createdAt": "2026-01-20T15:41:14Z"
+      },
+      "publishedAt": "2026-01-20",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1139993345",
+      "source": "github",
+      "title": "ramziddin/solid-skills",
+      "description": "AI agent skill for writing senior-engineer quality code through SOLID principles, TDD, and clean architecture",
+      "url": "https://github.com/ramziddin/solid-skills",
+      "image": "https://opengraph.githubassets.com/1/ramziddin/solid-skills",
+      "metadata": {
+        "stars": 323,
+        "language": "Unknown",
+        "topics": [],
+        "updatedAt": "2026-02-13T12:04:35Z",
+        "createdAt": "2026-01-22T17:27:52Z"
+      },
+      "publishedAt": "2026-01-22",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1140788023",
+      "source": "github",
+      "title": "vueuse/skills",
+      "description": "Agent Skills for VueUse",
+      "url": "https://github.com/vueuse/skills",
+      "image": "https://opengraph.githubassets.com/1/vueuse/skills",
+      "metadata": {
+        "stars": 311,
+        "language": "TypeScript",
+        "topics": [
+          "agent-skills",
+          "agents",
+          "ai",
+          "skills",
+          "vue",
+          "vueuse"
+        ],
+        "updatedAt": "2026-02-15T16:01:32Z",
+        "createdAt": "2026-01-23T19:03:02Z"
+      },
+      "publishedAt": "2026-01-23",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1141100288",
+      "source": "github",
+      "title": "aitytech/agentkits-marketing",
+      "description": "Enterprise-grade AI marketing automation for Claude Code, Cursor, GitHub Copilot, and any AI assistant supporting agents & skills",
+      "url": "https://github.com/aitytech/agentkits-marketing",
+      "image": "https://opengraph.githubassets.com/1/aitytech/agentkits-marketing",
+      "metadata": {
+        "stars": 287,
+        "language": "Python",
+        "topics": [],
+        "updatedAt": "2026-02-15T23:19:50Z",
+        "createdAt": "2026-01-24T08:44:05Z"
+      },
+      "publishedAt": "2026-01-24",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1152653916",
+      "source": "github",
+      "title": "openperf/brief",
+      "description": "AI Agent Service Agreement",
+      "url": "https://github.com/openperf/brief",
+      "image": "https://opengraph.githubassets.com/1/openperf/brief",
+      "metadata": {
+        "stars": 276,
+        "language": "TypeScript",
+        "topics": [],
+        "updatedAt": "2026-02-15T23:43:46Z",
+        "createdAt": "2026-02-08T07:54:01Z"
+      },
+      "publishedAt": "2026-02-08",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1139906417",
+      "source": "github",
+      "title": "YuJunZhiXue/github-skill-forge",
+      "description": "一个\"制造技能的技能\"。这个工具自动化了将任意 GitHub 仓库转换为标准化技能的全过程，是扩展 AI Agent 能力的核心工具。",
+      "url": "https://github.com/YuJunZhiXue/github-skill-forge",
+      "image": "https://opengraph.githubassets.com/1/YuJunZhiXue/github-skill-forge",
+      "metadata": {
+        "stars": 273,
+        "language": "Python",
+        "topics": [],
+        "updatedAt": "2026-02-15T08:23:34Z",
+        "createdAt": "2026-01-22T15:17:36Z"
+      },
+      "publishedAt": "2026-01-22",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1137120690",
+      "source": "github",
+      "title": "RunanywhereAI/on-device-browser-agent",
+      "description": "On-device AI browser automation using WebLLM. No cloud, no API keys, fully private.",
+      "url": "https://github.com/RunanywhereAI/on-device-browser-agent",
+      "image": "https://opengraph.githubassets.com/1/RunanywhereAI/on-device-browser-agent",
+      "metadata": {
+        "stars": 272,
+        "language": "TypeScript",
+        "topics": [],
+        "updatedAt": "2026-02-15T22:48:47Z",
+        "createdAt": "2026-01-18T23:59:51Z"
+      },
+      "publishedAt": "2026-01-18",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1149299036",
+      "source": "github",
+      "title": "stablyai/agent-slack",
+      "description": "Slack automation CLI for AI agents",
+      "url": "https://github.com/stablyai/agent-slack",
+      "image": "https://opengraph.githubassets.com/1/stablyai/agent-slack",
+      "metadata": {
+        "stars": 265,
+        "language": "TypeScript",
+        "topics": [],
+        "updatedAt": "2026-02-15T14:02:16Z",
+        "createdAt": "2026-02-04T00:33:03Z"
+      },
+      "publishedAt": "2026-02-04",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1149169439",
+      "source": "github",
+      "title": "DataDog/pup",
+      "description": "A Go-based command-line wrapper for easy interaction with Datadog APIs. Perfectly fit for an AI agent to use.",
+      "url": "https://github.com/DataDog/pup",
+      "image": "https://opengraph.githubassets.com/1/DataDog/pup",
+      "metadata": {
+        "stars": 258,
+        "language": "Go",
+        "topics": [
+          "cli",
+          "client",
+          "datadog",
+          "observability"
+        ],
+        "updatedAt": "2026-02-15T21:42:37Z",
+        "createdAt": "2026-02-03T19:56:25Z"
+      },
+      "publishedAt": "2026-02-03",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1148647935",
+      "source": "github",
+      "title": "opencmit/JoinAI-Agent",
+      "description": "暂无描述",
+      "url": "https://github.com/opencmit/JoinAI-Agent",
+      "image": "https://opengraph.githubassets.com/1/opencmit/JoinAI-Agent",
+      "metadata": {
+        "stars": 256,
+        "language": "TypeScript",
+        "topics": [],
+        "updatedAt": "2026-02-14T04:27:41Z",
+        "createdAt": "2026-02-03T07:49:13Z"
+      },
+      "publishedAt": "2026-02-03",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1154281830",
+      "source": "github",
+      "title": "yan5xu/code-relay",
+      "description": "AI Coding Agent 工作协议 — 跨会话记忆、多仓库全局视野、结构化上下文管理",
+      "url": "https://github.com/yan5xu/code-relay",
+      "image": "https://opengraph.githubassets.com/1/yan5xu/code-relay",
+      "metadata": {
+        "stars": 249,
+        "language": "Unknown",
+        "topics": [],
+        "updatedAt": "2026-02-15T21:00:16Z",
+        "createdAt": "2026-02-10T07:58:02Z"
+      },
+      "publishedAt": "2026-02-10",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1148511700",
+      "source": "github",
+      "title": "mikeyobrien/rho",
+      "description": "An AI agent that stays running, remembers across sessions, and checks in on its own. macOS, Linux, Android. Built on Pi.",
+      "url": "https://github.com/mikeyobrien/rho",
+      "image": "https://opengraph.githubassets.com/1/mikeyobrien/rho",
+      "metadata": {
+        "stars": 248,
+        "language": "TypeScript",
+        "topics": [
+          "pi-coding-agent"
+        ],
+        "updatedAt": "2026-02-15T20:48:27Z",
+        "createdAt": "2026-02-03T03:39:05Z"
+      },
+      "publishedAt": "2026-02-03",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1145269520",
+      "source": "github",
+      "title": "RefoundAI/lenny-skills",
+      "description": "86 product management skills from Lenny's Podcast for Claude Code and AI agents. Hiring, user research, strategy, shipping, and more.",
+      "url": "https://github.com/RefoundAI/lenny-skills",
+      "image": "https://opengraph.githubassets.com/1/RefoundAI/lenny-skills",
+      "metadata": {
+        "stars": 235,
+        "language": "Unknown",
+        "topics": [
+          "ai-agents",
+          "ai-assistant",
+          "claude",
+          "claude-code",
+          "lenny-rachitsky",
+          "llm",
+          "pm-tools",
+          "product-management",
+          "product-skills",
+          "skills"
+        ],
+        "updatedAt": "2026-02-15T18:57:44Z",
+        "createdAt": "2026-01-29T16:14:48Z"
+      },
+      "publishedAt": "2026-01-29",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1149463075",
+      "source": "github",
+      "title": "openperf/openclaw-cloud",
+      "description": "Give your AI Agent a cloud-native life. Deploy once, converse everywhere.",
+      "url": "https://github.com/openperf/openclaw-cloud",
+      "image": "https://opengraph.githubassets.com/1/openperf/openclaw-cloud",
+      "metadata": {
+        "stars": 234,
+        "language": "TypeScript",
+        "topics": [
+          "ai",
+          "ai-agent",
+          "clawbot",
+          "clawhub",
+          "openai",
+          "openclaw",
+          "react",
+          "skills"
+        ],
+        "updatedAt": "2026-02-15T17:17:56Z",
+        "createdAt": "2026-02-04T06:20:49Z"
+      },
+      "publishedAt": "2026-02-04",
+      "category": "ai-agent"
+    }
+  ]
+}
