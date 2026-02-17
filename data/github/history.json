@@ -61,5 +61,30 @@
       "RefoundAI/lenny-skills",
       "openperf/openclaw-cloud"
     ]
+  },
+  {
+    "date": "2026-02-17",
+    "projects": [
+      "BlockRunAI/ClawRouter",
+      "AvdLee/SwiftUI-Agent-Skill",
+      "DingTalk-Real-AI/dingtalk-openclaw-connector",
+      "sseanliu/VisionClaw",
+      "yohey-w/multi-agent-shogun",
+      "TheAgentContextLab/OneContext",
+      "unitedbyai/droidclaw",
+      "klawsh/klaw.sh",
+      "pocketpaw/pocketpaw",
+      "aarondfrancis/counselors",
+      "win4r/team-tasks",
+      "opencmit/alphora",
+      "rivet-dev/sandbox-agent",
+      "tinyfish-io/tinyfish-cookbook",
+      "luccast/crabwalk",
+      "snwfdhmp/awesome-ralph",
+      "BankrBot/openclaw-skills",
+      "run-bigpig/jcp",
+      "ygwyg/MAHORAGA",
+      "six2dez/burp-ai-agent"
+    ]
   }
 ]

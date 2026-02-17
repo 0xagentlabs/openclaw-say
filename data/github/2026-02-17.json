@@ -1,0 +1,448 @@
+{
+  "date": "2026-02-17",
+  "count": 20,
+  "items": [
+    {
+      "id": "github-1149071982",
+      "source": "github",
+      "title": "BlockRunAI/ClawRouter",
+      "description": "The agent-native LLM router powering OpenClaw — by BlockRun",
+      "url": "https://github.com/BlockRunAI/ClawRouter",
+      "image": "https://opengraph.githubassets.com/1/BlockRunAI/ClawRouter",
+      "metadata": {
+        "stars": 2609,
+        "language": "TypeScript",
+        "topics": [
+          "ai",
+          "ai-agents",
+          "anthropic",
+          "cost-optimization",
+          "crypto",
+          "deepseek",
+          "gemini",
+          "llm",
+          "llm-router",
+          "micropayments",
+          "openai",
+          "openclaw",
+          "smart-routing",
+          "usdc",
+          "x402"
+        ],
+        "updatedAt": "2026-02-16T23:59:48Z",
+        "createdAt": "2026-02-03T17:32:00Z"
+      },
+      "publishedAt": "2026-02-03",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1139114532",
+      "source": "github",
+      "title": "AvdLee/SwiftUI-Agent-Skill",
+      "description": "Add expert SwiftUI Best Practices guidance to your AI coding tool (Agent Skills open format).",
+      "url": "https://github.com/AvdLee/SwiftUI-Agent-Skill",
+      "image": "https://opengraph.githubassets.com/1/AvdLee/SwiftUI-Agent-Skill",
+      "metadata": {
+        "stars": 1499,
+        "language": "Unknown",
+        "topics": [],
+        "updatedAt": "2026-02-16T19:52:24Z",
+        "createdAt": "2026-01-21T14:42:30Z"
+      },
+      "publishedAt": "2026-01-21",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1144107326",
+      "source": "github",
+      "title": "DingTalk-Real-AI/dingtalk-openclaw-connector",
+      "description": "将 钉钉机器人 / 钉钉 DEAP Agent 连接到 OpenClaw Gateway 的OpenClaw Plugin，支持 AI Card 流式响应",
+      "url": "https://github.com/DingTalk-Real-AI/dingtalk-openclaw-connector",
+      "image": "https://opengraph.githubassets.com/1/DingTalk-Real-AI/dingtalk-openclaw-connector",
+      "metadata": {
+        "stars": 1255,
+        "language": "TypeScript",
+        "topics": [],
+        "updatedAt": "2026-02-16T15:47:08Z",
+        "createdAt": "2026-01-28T09:51:24Z"
+      },
+      "publishedAt": "2026-01-28",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1151130619",
+      "source": "github",
+      "title": "sseanliu/VisionClaw",
+      "description": "Real-time AI assistant for Meta Ray-Ban smart glasses -- voice + vision + agentic actions via Gemini Live and OpenClaw",
+      "url": "https://github.com/sseanliu/VisionClaw",
+      "image": "https://opengraph.githubassets.com/1/sseanliu/VisionClaw",
+      "metadata": {
+        "stars": 976,
+        "language": "Unknown",
+        "topics": [],
+        "updatedAt": "2026-02-16T23:26:35Z",
+        "createdAt": "2026-02-06T04:54:31Z"
+      },
+      "publishedAt": "2026-02-06",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1141706975",
+      "source": "github",
+      "title": "yohey-w/multi-agent-shogun",
+      "description": "Samurai-inspired multi-agent system for Claude Code. Orchestrate parallel AI tasks via tmux with shogun → karo → ashigaru hierarchy.",
+      "url": "https://github.com/yohey-w/multi-agent-shogun",
+      "image": "https://opengraph.githubassets.com/1/yohey-w/multi-agent-shogun",
+      "metadata": {
+        "stars": 887,
+        "language": "Shell",
+        "topics": [
+          "ai-agent",
+          "anthropic",
+          "automation",
+          "claude-code",
+          "llm",
+          "multi-agent",
+          "parallel-processing",
+          "samurai",
+          "shogun",
+          "tmux"
+        ],
+        "updatedAt": "2026-02-16T23:48:02Z",
+        "createdAt": "2026-01-25T09:29:19Z"
+      },
+      "publishedAt": "2026-01-25",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1152833832",
+      "source": "github",
+      "title": "TheAgentContextLab/OneContext",
+      "description": " OneContext is an Agent Self-Managed Context layer, it gives your team a unified context for AII AI Agents. ",
+      "url": "https://github.com/TheAgentContextLab/OneContext",
+      "image": "https://opengraph.githubassets.com/1/TheAgentContextLab/OneContext",
+      "metadata": {
+        "stars": 853,
+        "language": "Unknown",
+        "topics": [],
+        "updatedAt": "2026-02-16T10:16:14Z",
+        "createdAt": "2026-02-08T14:06:55Z"
+      },
+      "publishedAt": "2026-02-08",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1151091760",
+      "source": "github",
+      "title": "unitedbyai/droidclaw",
+      "description": "turn old phones into ai agents - give it a goal in plain english. it reads the screen, thinks about what to do, taps and types via adb, and repeats until the job is done. ",
+      "url": "https://github.com/unitedbyai/droidclaw",
+      "image": "https://opengraph.githubassets.com/1/unitedbyai/droidclaw",
+      "metadata": {
+        "stars": 322,
+        "language": "TypeScript",
+        "topics": [],
+        "updatedAt": "2026-02-16T23:36:05Z",
+        "createdAt": "2026-02-06T03:29:38Z"
+      },
+      "publishedAt": "2026-02-06",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1158269547",
+      "source": "github",
+      "title": "klawsh/klaw.sh",
+      "description": "kubectl for AI Agents",
+      "url": "https://github.com/klawsh/klaw.sh",
+      "image": "https://opengraph.githubassets.com/1/klawsh/klaw.sh",
+      "metadata": {
+        "stars": 318,
+        "language": "Go",
+        "topics": [
+          "agents",
+          "ai-agents",
+          "orchestration"
+        ],
+        "updatedAt": "2026-02-16T23:56:29Z",
+        "createdAt": "2026-02-15T04:18:19Z"
+      },
+      "publishedAt": "2026-02-15",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1148290190",
+      "source": "github",
+      "title": "pocketpaw/pocketpaw",
+      "description": "Your AI agent in 30 seconds. Not 30 hours. Self-hosted, open-source personal AI with desktop installer, multi-agent Command Center(Deep Work), and 7-layer security. Anthropic, OpenAI, or Ollama.",
+      "url": "https://github.com/pocketpaw/pocketpaw",
+      "image": "https://opengraph.githubassets.com/1/pocketpaw/pocketpaw",
+      "metadata": {
+        "stars": 271,
+        "language": "Python",
+        "topics": [
+          "ai-agents",
+          "cli",
+          "jarvis-assistant",
+          "multi-agent-systems",
+          "ollama",
+          "open-source",
+          "personal-assistant",
+          "python",
+          "security",
+          "self-hosted",
+          "telegram-bot-ai-assistant"
+        ],
+        "updatedAt": "2026-02-16T22:15:54Z",
+        "createdAt": "2026-02-02T19:48:57Z"
+      },
+      "publishedAt": "2026-02-02",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1153958981",
+      "source": "github",
+      "title": "aarondfrancis/counselors",
+      "description": "Fan out prompts to multiple AI coding agents in parallel",
+      "url": "https://github.com/aarondfrancis/counselors",
+      "image": "https://opengraph.githubassets.com/1/aarondfrancis/counselors",
+      "metadata": {
+        "stars": 241,
+        "language": "TypeScript",
+        "topics": [],
+        "updatedAt": "2026-02-16T21:29:09Z",
+        "createdAt": "2026-02-09T21:32:01Z"
+      },
+      "publishedAt": "2026-02-09",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1153274807",
+      "source": "github",
+      "title": "win4r/team-tasks",
+      "description": "Multi-agent pipeline coordination: Linear, DAG, and Debate modes for AI agent orchestration",
+      "url": "https://github.com/win4r/team-tasks",
+      "image": "https://opengraph.githubassets.com/1/win4r/team-tasks",
+      "metadata": {
+        "stars": 234,
+        "language": "Python",
+        "topics": [
+          "openclaw",
+          "openclaw-skill",
+          "openclaw-skills"
+        ],
+        "updatedAt": "2026-02-16T19:45:46Z",
+        "createdAt": "2026-02-09T05:33:11Z"
+      },
+      "publishedAt": "2026-02-09",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1148628738",
+      "source": "github",
+      "title": "opencmit/alphora",
+      "description": "A Production-Ready Framework for Building Composable AI Agents",
+      "url": "https://github.com/opencmit/alphora",
+      "image": "https://opengraph.githubassets.com/1/opencmit/alphora",
+      "metadata": {
+        "stars": 232,
+        "language": "Python",
+        "topics": [
+          "agent-framework",
+          "ai-agents",
+          "llm",
+          "multi-agent-systems"
+        ],
+        "updatedAt": "2026-02-16T23:01:33Z",
+        "createdAt": "2026-02-03T07:18:35Z"
+      },
+      "publishedAt": "2026-02-03",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1141720197",
+      "source": "github",
+      "title": "rivet-dev/sandbox-agent",
+      "description": "Run Coding Agents in Sandboxes. Control Them Over HTTP. Supports Claude Code, Codex, OpenCode, and Amp.",
+      "url": "https://github.com/rivet-dev/sandbox-agent",
+      "image": "https://opengraph.githubassets.com/1/rivet-dev/sandbox-agent",
+      "metadata": {
+        "stars": 850,
+        "language": "Rust",
+        "topics": [
+          "agent",
+          "ai",
+          "amp",
+          "claude",
+          "claude-code",
+          "codex",
+          "daytona",
+          "e2b",
+          "opencode",
+          "sandbox"
+        ],
+        "updatedAt": "2026-02-16T23:57:25Z",
+        "createdAt": "2026-01-25T10:03:02Z"
+      },
+      "publishedAt": "2026-01-25",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1140071348",
+      "source": "github",
+      "title": "tinyfish-io/tinyfish-cookbook",
+      "description": "A collection of sample apps and recipes built with the TinyFish web agent. Open-source examples for you to learn & build!",
+      "url": "https://github.com/tinyfish-io/tinyfish-cookbook",
+      "image": "https://opengraph.githubassets.com/1/tinyfish-io/tinyfish-cookbook",
+      "metadata": {
+        "stars": 796,
+        "language": "TypeScript",
+        "topics": [
+          "agent",
+          "agentic",
+          "ai",
+          "cookbook",
+          "examples",
+          "tinyfish",
+          "typescript",
+          "web-agents",
+          "web-automation"
+        ],
+        "updatedAt": "2026-02-16T23:24:54Z",
+        "createdAt": "2026-01-22T19:41:14Z"
+      },
+      "publishedAt": "2026-01-22",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1142077363",
+      "source": "github",
+      "title": "luccast/crabwalk",
+      "description": "🦀 Crabwalk 🦀 Real-time companion monitor for OpenClaw agents.",
+      "url": "https://github.com/luccast/crabwalk",
+      "image": "https://opengraph.githubassets.com/1/luccast/crabwalk",
+      "metadata": {
+        "stars": 777,
+        "language": "TypeScript",
+        "topics": [
+          "ai",
+          "ai-agents",
+          "clawdbot",
+          "moltbot",
+          "monitoring"
+        ],
+        "updatedAt": "2026-02-16T23:07:15Z",
+        "createdAt": "2026-01-25T23:00:59Z"
+      },
+      "publishedAt": "2026-01-25",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1137340296",
+      "source": "github",
+      "title": "snwfdhmp/awesome-ralph",
+      "description": "A curated list of resources about Ralph, the AI coding technique that runs AI coding agents in automated loops until specifications are fulfilled.",
+      "url": "https://github.com/snwfdhmp/awesome-ralph",
+      "image": "https://opengraph.githubassets.com/1/snwfdhmp/awesome-ralph",
+      "metadata": {
+        "stars": 724,
+        "language": "Unknown",
+        "topics": [
+          "ai-coding",
+          "claude",
+          "claude-code",
+          "ralph",
+          "ralph-loop",
+          "ralph-wiggum",
+          "vibe-coding"
+        ],
+        "updatedAt": "2026-02-16T13:05:04Z",
+        "createdAt": "2026-01-19T08:42:54Z"
+      },
+      "publishedAt": "2026-01-19",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1142701705",
+      "source": "github",
+      "title": "BankrBot/openclaw-skills",
+      "description": "Moltbot skill library for AI agents. Including polymarket, crypto trading, DeFi operations,  automation, and more. Open a PR to add skills. ",
+      "url": "https://github.com/BankrBot/openclaw-skills",
+      "image": "https://opengraph.githubassets.com/1/BankrBot/openclaw-skills",
+      "metadata": {
+        "stars": 707,
+        "language": "Shell",
+        "topics": [],
+        "updatedAt": "2026-02-16T23:58:21Z",
+        "createdAt": "2026-01-26T18:45:39Z"
+      },
+      "publishedAt": "2026-01-26",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1149626116",
+      "source": "github",
+      "title": "run-bigpig/jcp",
+      "description": "韭菜盘 (JCP AI) - AI 驱动的智能A股分析系统，基于 Wails + Go + React，支持多 Agent 协作分析",
+      "url": "https://github.com/run-bigpig/jcp",
+      "image": "https://opengraph.githubassets.com/1/run-bigpig/jcp",
+      "metadata": {
+        "stars": 704,
+        "language": "Go",
+        "topics": [],
+        "updatedAt": "2026-02-16T02:10:11Z",
+        "createdAt": "2026-02-04T10:29:51Z"
+      },
+      "publishedAt": "2026-02-04",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1146981739",
+      "source": "github",
+      "title": "ygwyg/MAHORAGA",
+      "description": "autonomous trading agent powered by social sentiment analysis and ai that learns, grows, and adapts",
+      "url": "https://github.com/ygwyg/MAHORAGA",
+      "image": "https://opengraph.githubassets.com/1/ygwyg/MAHORAGA",
+      "metadata": {
+        "stars": 656,
+        "language": "TypeScript",
+        "topics": [],
+        "updatedAt": "2026-02-16T23:08:03Z",
+        "createdAt": "2026-02-01T01:49:05Z"
+      },
+      "publishedAt": "2026-02-01",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1143535772",
+      "source": "github",
+      "title": "six2dez/burp-ai-agent",
+      "description": "Burp Suite extension that adds built-in MCP tooling, AI-assisted analysis, privacy controls, passive and active scanning and more",
+      "url": "https://github.com/six2dez/burp-ai-agent",
+      "image": "https://opengraph.githubassets.com/1/six2dez/burp-ai-agent",
+      "metadata": {
+        "stars": 625,
+        "language": "Kotlin",
+        "topics": [
+          "ai",
+          "appsec",
+          "bugbounty",
+          "burp",
+          "burp-extensions",
+          "burp-plugin",
+          "burp-suite",
+          "hacking",
+          "kotlin",
+          "llm",
+          "mcp",
+          "pentesting",
+          "security",
+          "web-security"
+        ],
+        "updatedAt": "2026-02-16T13:53:27Z",
+        "createdAt": "2026-01-27T17:44:17Z"
+      },
+      "publishedAt": "2026-01-27",
+      "category": "ai-agent"
+    }
+  ]
+}

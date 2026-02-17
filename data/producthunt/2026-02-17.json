@@ -1,0 +1,76 @@
+{
+  "date": "2026-02-17",
+  "count": 5,
+  "items": [
+    {
+      "id": "producthunt-fallback-1771286414278-0",
+      "source": "producthunt",
+      "title": "ChatGPT",
+      "description": "OpenAI 的对话式 AI 助手",
+      "url": "https://chat.openai.com",
+      "image": "https://via.placeholder.com/400x300/0a192f/64ffda?text=ChatGPT",
+      "metadata": {
+        "votes": 50000,
+        "source": "Product Hunt"
+      },
+      "publishedAt": "2026-02-17",
+      "category": "product"
+    },
+    {
+      "id": "producthunt-fallback-1771286414278-1",
+      "source": "producthunt",
+      "title": "Claude",
+      "description": "Anthropic 的 AI 助手，擅长长文本理解",
+      "url": "https://claude.ai",
+      "image": "https://via.placeholder.com/400x300/0a192f/64ffda?text=Claude",
+      "metadata": {
+        "votes": 30000,
+        "source": "Product Hunt"
+      },
+      "publishedAt": "2026-02-17",
+      "category": "product"
+    },
+    {
+      "id": "producthunt-fallback-1771286414278-2",
+      "source": "producthunt",
+      "title": "Midjourney",
+      "description": "AI 图像生成工具",
+      "url": "https://www.midjourney.com",
+      "image": "https://via.placeholder.com/400x300/0a192f/64ffda?text=Midjourney",
+      "metadata": {
+        "votes": 25000,
+        "source": "Product Hunt"
+      },
+      "publishedAt": "2026-02-17",
+      "category": "product"
+    },
+    {
+      "id": "producthunt-fallback-1771286414278-3",
+      "source": "producthunt",
+      "title": "Notion AI",
+      "description": "Notion 内置的 AI 写作助手",
+      "url": "https://www.notion.so/product/ai",
+      "image": "https://via.placeholder.com/400x300/0a192f/64ffda?text=Notion+AI",
+      "metadata": {
+        "votes": 20000,
+        "source": "Product Hunt"
+      },
+      "publishedAt": "2026-02-17",
+      "category": "product"
+    },
+    {
+      "id": "producthunt-fallback-1771286414278-4",
+      "source": "producthunt",
+      "title": "Perplexity",
+      "description": "AI 驱动的搜索引擎",
+      "url": "https://www.perplexity.ai",
+      "image": "https://via.placeholder.com/400x300/0a192f/64ffda?text=Perplexity",
+      "metadata": {
+        "votes": 18000,
+        "source": "Product Hunt"
+      },
+      "publishedAt": "2026-02-17",
+      "category": "product"
+    }
+  ]
+}
