@@ -86,5 +86,30 @@
       "ygwyg/MAHORAGA",
       "six2dez/burp-ai-agent"
     ]
+  },
+  {
+    "date": "2026-02-18",
+    "projects": [
+      "aeromomo/claw-compactor",
+      "ValueCell-ai/ClawX",
+      "WordPress/agent-skills",
+      "callstackincubator/agent-device",
+      "cursor/agent-trace",
+      "zilliztech/memsearch",
+      "jo-inc/camofox-browser",
+      "jingkaihe/matchlock",
+      "crshdn/mission-control",
+      "qufei1993/skills-hub",
+      "spacedriveapp/spacebot",
+      "Versatly/clawvault",
+      "SamuelQZQ/auto-coding-agent-demo",
+      "zylos-ai/zylos-core",
+      "BlockRunAI/ClawRouter",
+      "AvdLee/SwiftUI-Agent-Skill",
+      "DingTalk-Real-AI/dingtalk-openclaw-connector",
+      "sseanliu/VisionClaw",
+      "yohey-w/multi-agent-shogun",
+      "TheAgentContextLab/OneContext"
+    ]
   }
 ]

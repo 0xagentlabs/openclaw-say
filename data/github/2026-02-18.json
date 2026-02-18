@@ -1,0 +1,415 @@
+{
+  "date": "2026-02-18",
+  "count": 20,
+  "items": [
+    {
+      "id": "github-1154042797",
+      "source": "github",
+      "title": "aeromomo/claw-compactor",
+      "description": "🦞 Claw Compactor — The 98% Crusher. Cut your AI agent token spend in half with 5 layered compression techniques.",
+      "url": "https://github.com/aeromomo/claw-compactor",
+      "image": "https://opengraph.githubassets.com/1/aeromomo/claw-compactor",
+      "metadata": {
+        "stars": 706,
+        "language": "Python",
+        "topics": [],
+        "updatedAt": "2026-02-18T00:00:07Z",
+        "createdAt": "2026-02-10T00:27:08Z"
+      },
+      "publishedAt": "2026-02-10",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1150626239",
+      "source": "github",
+      "title": "ValueCell-ai/ClawX",
+      "description": "ClawX is a desktop app that provides a graphical interface for OpenClaw AI agents. It turns CLI-based AI orchestration into a desktop experience without using the terminal. We’ve moved from clawx.dev to claw-x.com.",
+      "url": "https://github.com/ValueCell-ai/ClawX",
+      "image": "https://opengraph.githubassets.com/1/ValueCell-ai/ClawX",
+      "metadata": {
+        "stars": 669,
+        "language": "TypeScript",
+        "topics": [
+          "agent",
+          "agentic-ai",
+          "agents",
+          "ai",
+          "clawdbot",
+          "moltbot",
+          "openclaw",
+          "skill"
+        ],
+        "updatedAt": "2026-02-17T23:45:20Z",
+        "createdAt": "2026-02-05T13:58:36Z"
+      },
+      "publishedAt": "2026-02-05",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1137891086",
+      "source": "github",
+      "title": "WordPress/agent-skills",
+      "description": "Expert-level WordPress knowledge for AI coding assistants - blocks, themes, plugins, and best practices",
+      "url": "https://github.com/WordPress/agent-skills",
+      "image": "https://opengraph.githubassets.com/1/WordPress/agent-skills",
+      "metadata": {
+        "stars": 632,
+        "language": "JavaScript",
+        "topics": [],
+        "updatedAt": "2026-02-17T23:36:27Z",
+        "createdAt": "2026-01-20T01:21:50Z"
+      },
+      "publishedAt": "2026-01-20",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1146193768",
+      "source": "github",
+      "title": "callstackincubator/agent-device",
+      "description": "CLI to control iOS and Android devices for AI agents",
+      "url": "https://github.com/callstackincubator/agent-device",
+      "image": "https://opengraph.githubassets.com/1/callstackincubator/agent-device",
+      "metadata": {
+        "stars": 621,
+        "language": "TypeScript",
+        "topics": [
+          "agentic-ai",
+          "agents",
+          "automation",
+          "mobile",
+          "testing"
+        ],
+        "updatedAt": "2026-02-17T21:37:46Z",
+        "createdAt": "2026-01-30T18:41:54Z"
+      },
+      "publishedAt": "2026-01-30",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1143687300",
+      "source": "github",
+      "title": "cursor/agent-trace",
+      "description": "A standard format for tracing AI-generated code.",
+      "url": "https://github.com/cursor/agent-trace",
+      "image": "https://opengraph.githubassets.com/1/cursor/agent-trace",
+      "metadata": {
+        "stars": 576,
+        "language": "TypeScript",
+        "topics": [],
+        "updatedAt": "2026-02-17T22:34:39Z",
+        "createdAt": "2026-01-27T22:07:15Z"
+      },
+      "publishedAt": "2026-01-27",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1153190876",
+      "source": "github",
+      "title": "zilliztech/memsearch",
+      "description": "A Markdown-first memory system, a standalone library for any AI agent. Inspired by OpenClaw.",
+      "url": "https://github.com/zilliztech/memsearch",
+      "image": "https://opengraph.githubassets.com/1/zilliztech/memsearch",
+      "metadata": {
+        "stars": 485,
+        "language": "Python",
+        "topics": [
+          "agent",
+          "agent-memory",
+          "claude-code",
+          "claude-code-plugin",
+          "clawdbot",
+          "embeddings",
+          "memory",
+          "milvus",
+          "openclaw",
+          "progressive-disclosure",
+          "rag",
+          "semantic-search"
+        ],
+        "updatedAt": "2026-02-17T23:36:48Z",
+        "createdAt": "2026-02-09T02:29:16Z"
+      },
+      "publishedAt": "2026-02-09",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1142274728",
+      "source": "github",
+      "title": "jo-inc/camofox-browser",
+      "description": "Headless browser automation server for AI agents to visit sites that are usually blocked",
+      "url": "https://github.com/jo-inc/camofox-browser",
+      "image": "https://opengraph.githubassets.com/1/jo-inc/camofox-browser",
+      "metadata": {
+        "stars": 462,
+        "language": "JavaScript",
+        "topics": [],
+        "updatedAt": "2026-02-17T23:36:51Z",
+        "createdAt": "2026-01-26T07:31:13Z"
+      },
+      "publishedAt": "2026-01-26",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1150822093",
+      "source": "github",
+      "title": "jingkaihe/matchlock",
+      "description": "Matchlock secures AI agent workloads with a Linux-based sandbox.",
+      "url": "https://github.com/jingkaihe/matchlock",
+      "image": "https://opengraph.githubassets.com/1/jingkaihe/matchlock",
+      "metadata": {
+        "stars": 452,
+        "language": "Go",
+        "topics": [],
+        "updatedAt": "2026-02-17T23:52:58Z",
+        "createdAt": "2026-02-05T18:22:39Z"
+      },
+      "publishedAt": "2026-02-05",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1146664329",
+      "source": "github",
+      "title": "crshdn/mission-control",
+      "description": "AI Agent Orchestration Dashboard - Manage AI agents, assign tasks, and coordinate multi-agent collaboration via OpenClaw Gateway.",
+      "url": "https://github.com/crshdn/mission-control",
+      "image": "https://opengraph.githubassets.com/1/crshdn/mission-control",
+      "metadata": {
+        "stars": 435,
+        "language": "TypeScript",
+        "topics": [
+          "aiagent",
+          "automation",
+          "openclaw"
+        ],
+        "updatedAt": "2026-02-17T23:41:22Z",
+        "createdAt": "2026-01-31T13:27:48Z"
+      },
+      "publishedAt": "2026-01-31",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1141582887",
+      "source": "github",
+      "title": "qufei1993/skills-hub",
+      "description": "A cross-platform desktop app to manage Agent Skills in one place and sync them to multiple AI coding tools’ global skills directories — “Install once, sync everywhere”.",
+      "url": "https://github.com/qufei1993/skills-hub",
+      "image": "https://opengraph.githubassets.com/1/qufei1993/skills-hub",
+      "metadata": {
+        "stars": 390,
+        "language": "Rust",
+        "topics": [],
+        "updatedAt": "2026-02-16T17:01:59Z",
+        "createdAt": "2026-01-25T03:31:21Z"
+      },
+      "publishedAt": "2026-01-25",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1155816493",
+      "source": "github",
+      "title": "spacedriveapp/spacebot",
+      "description": "An AI agent for teams, communities, and multi-user environments.",
+      "url": "https://github.com/spacedriveapp/spacebot",
+      "image": "https://opengraph.githubassets.com/1/spacedriveapp/spacebot",
+      "metadata": {
+        "stars": 359,
+        "language": "Rust",
+        "topics": [
+          "agent",
+          "ai"
+        ],
+        "updatedAt": "2026-02-17T23:47:43Z",
+        "createdAt": "2026-02-11T23:53:16Z"
+      },
+      "publishedAt": "2026-02-11",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1145951452",
+      "source": "github",
+      "title": "Versatly/clawvault",
+      "description": "🐘 An elephant never forgets. Structured memory system for AI agents.",
+      "url": "https://github.com/Versatly/clawvault",
+      "image": "https://opengraph.githubassets.com/1/Versatly/clawvault",
+      "metadata": {
+        "stars": 249,
+        "language": "TypeScript",
+        "topics": [],
+        "updatedAt": "2026-02-17T20:13:02Z",
+        "createdAt": "2026-01-30T12:32:28Z"
+      },
+      "publishedAt": "2026-01-30",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1157403551",
+      "source": "github",
+      "title": "SamuelQZQ/auto-coding-agent-demo",
+      "description": "一个长达 10 小时的 AI 全自动编程实验",
+      "url": "https://github.com/SamuelQZQ/auto-coding-agent-demo",
+      "image": "https://opengraph.githubassets.com/1/SamuelQZQ/auto-coding-agent-demo",
+      "metadata": {
+        "stars": 245,
+        "language": "TypeScript",
+        "topics": [],
+        "updatedAt": "2026-02-17T15:39:51Z",
+        "createdAt": "2026-02-13T19:25:20Z"
+      },
+      "publishedAt": "2026-02-13",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1147789463",
+      "source": "github",
+      "title": "zylos-ai/zylos-core",
+      "description": "Give your AI a life — open-source agent infrastructure for team collaboration.",
+      "url": "https://github.com/zylos-ai/zylos-core",
+      "image": "https://opengraph.githubassets.com/1/zylos-ai/zylos-core",
+      "metadata": {
+        "stars": 245,
+        "language": "JavaScript",
+        "topics": [
+          "ai",
+          "ai-worker",
+          "own-your-data",
+          "personal-ai-assistant",
+          "self-evolving",
+          "team-collaboration"
+        ],
+        "updatedAt": "2026-02-17T23:55:15Z",
+        "createdAt": "2026-02-02T07:56:39Z"
+      },
+      "publishedAt": "2026-02-02",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1149071982",
+      "source": "github",
+      "title": "BlockRunAI/ClawRouter",
+      "description": "The agent-native LLM router powering OpenClaw — by BlockRunAI",
+      "url": "https://github.com/BlockRunAI/ClawRouter",
+      "image": "https://opengraph.githubassets.com/1/BlockRunAI/ClawRouter",
+      "metadata": {
+        "stars": 2711,
+        "language": "TypeScript",
+        "topics": [
+          "ai",
+          "ai-agents",
+          "anthropic",
+          "cost-optimization",
+          "crypto",
+          "deepseek",
+          "gemini",
+          "llm",
+          "llm-router",
+          "micropayments",
+          "openai",
+          "openclaw",
+          "smart-routing",
+          "usdc",
+          "x402"
+        ],
+        "updatedAt": "2026-02-18T00:00:20Z",
+        "createdAt": "2026-02-03T17:32:00Z"
+      },
+      "publishedAt": "2026-02-03",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1139114532",
+      "source": "github",
+      "title": "AvdLee/SwiftUI-Agent-Skill",
+      "description": "Add expert SwiftUI Best Practices guidance to your AI coding tool (Agent Skills open format).",
+      "url": "https://github.com/AvdLee/SwiftUI-Agent-Skill",
+      "image": "https://opengraph.githubassets.com/1/AvdLee/SwiftUI-Agent-Skill",
+      "metadata": {
+        "stars": 1520,
+        "language": "Unknown",
+        "topics": [],
+        "updatedAt": "2026-02-17T22:01:16Z",
+        "createdAt": "2026-01-21T14:42:30Z"
+      },
+      "publishedAt": "2026-01-21",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1144107326",
+      "source": "github",
+      "title": "DingTalk-Real-AI/dingtalk-openclaw-connector",
+      "description": "将 钉钉机器人 / 钉钉 DEAP Agent 连接到 OpenClaw Gateway 的OpenClaw Plugin，支持 AI Card 流式响应",
+      "url": "https://github.com/DingTalk-Real-AI/dingtalk-openclaw-connector",
+      "image": "https://opengraph.githubassets.com/1/DingTalk-Real-AI/dingtalk-openclaw-connector",
+      "metadata": {
+        "stars": 1259,
+        "language": "TypeScript",
+        "topics": [],
+        "updatedAt": "2026-02-17T15:25:34Z",
+        "createdAt": "2026-01-28T09:51:24Z"
+      },
+      "publishedAt": "2026-01-28",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1151130619",
+      "source": "github",
+      "title": "sseanliu/VisionClaw",
+      "description": "Real-time AI assistant for Meta Ray-Ban smart glasses -- voice + vision + agentic actions via Gemini Live and OpenClaw",
+      "url": "https://github.com/sseanliu/VisionClaw",
+      "image": "https://opengraph.githubassets.com/1/sseanliu/VisionClaw",
+      "metadata": {
+        "stars": 1002,
+        "language": "Unknown",
+        "topics": [],
+        "updatedAt": "2026-02-17T23:50:48Z",
+        "createdAt": "2026-02-06T04:54:31Z"
+      },
+      "publishedAt": "2026-02-06",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1141706975",
+      "source": "github",
+      "title": "yohey-w/multi-agent-shogun",
+      "description": "Samurai-inspired multi-agent system for Claude Code. Orchestrate parallel AI tasks via tmux with shogun → karo → ashigaru hierarchy.",
+      "url": "https://github.com/yohey-w/multi-agent-shogun",
+      "image": "https://opengraph.githubassets.com/1/yohey-w/multi-agent-shogun",
+      "metadata": {
+        "stars": 902,
+        "language": "Shell",
+        "topics": [
+          "ai-agent",
+          "anthropic",
+          "automation",
+          "claude-code",
+          "llm",
+          "multi-agent",
+          "parallel-processing",
+          "samurai",
+          "shogun",
+          "tmux"
+        ],
+        "updatedAt": "2026-02-17T22:36:21Z",
+        "createdAt": "2026-01-25T09:29:19Z"
+      },
+      "publishedAt": "2026-01-25",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1152833832",
+      "source": "github",
+      "title": "TheAgentContextLab/OneContext",
+      "description": " OneContext is an Agent Self-Managed Context layer, it gives your team a unified context for AII AI Agents. ",
+      "url": "https://github.com/TheAgentContextLab/OneContext",
+      "image": "https://opengraph.githubassets.com/1/TheAgentContextLab/OneContext",
+      "metadata": {
+        "stars": 859,
+        "language": "Unknown",
+        "topics": [],
+        "updatedAt": "2026-02-17T23:28:32Z",
+        "createdAt": "2026-02-08T14:06:55Z"
+      },
+      "publishedAt": "2026-02-08",
+      "category": "ai-agent"
+    }
+  ]
+}
