@@ -39,7 +39,7 @@ mkdir -p "$DATA_DIR"/{github,youtube,producthunt,combined}
 mkdir -p "$SCRIPT_DIR/collectors"
 
 # 检查采集脚本是否存在
-COLLECTORS=("collect_github.js" "collect_youtube.js" "collect_producthunt.js" "merge_data.js")
+COLLECTORS=("collect_github.js" "enrich_github_data.py" "collect_youtube.js" "collect_producthunt.js" "merge_data.js")
 for script in "${COLLECTORS[@]}"; do
     if [ ! -f "$SCRIPT_DIR/collectors/$script" ]; then
         echo -e "${RED}❌ 采集脚本不存在: $script${NC}"
@@ -60,7 +60,12 @@ run_collector() {
     echo -e "${YELLOW}🚀 开始采集: $name${NC}"
     cd "$SCRIPT_DIR/collectors"
     
-    if node "$script"; then
+    local cmd="node"
+    if [[ "$script" == *.py ]]; then
+        cmd="python3"
+    fi
+    
+    if $cmd "$script"; then
         echo -e "${GREEN}✅ $name 采集完成${NC}"
         return 0
     else
@@ -73,6 +78,7 @@ run_collector() {
 # 1. 采集 GitHub 数据
 echo "═══════════════════════════════════════════════════════════"
 run_collector "GitHub" "collect_github.js"
+run_collector "GitHub Analysis" "enrich_github_data.py"
 echo ""
 
 # 2. 采集 YouTube 数据

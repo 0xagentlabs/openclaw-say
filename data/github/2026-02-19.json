@@ -1,0 +1,599 @@
+{
+  "date": "2026-02-19",
+  "count": 20,
+  "items": [
+    {
+      "id": "github-1154009261",
+      "source": "github",
+      "title": "PeonPing/peon-ping",
+      "description": "Warcraft III Peon voice notifications (+ more!) for Claude Code, Codex, IDEs, and any AI agent. Stop babysitting your terminal. Employ a Peon today.",
+      "url": "https://github.com/PeonPing/peon-ping",
+      "image": "https://opengraph.githubassets.com/1/PeonPing/peon-ping",
+      "metadata": {
+        "stars": 2466,
+        "language": "Shell",
+        "topics": [
+          "ai",
+          "ai-engineering",
+          "antigravity",
+          "claude-code",
+          "codex",
+          "cursor",
+          "opencode",
+          "terminal"
+        ],
+        "updatedAt": "2026-02-18T23:02:24Z",
+        "createdAt": "2026-02-09T23:12:48Z"
+      },
+      "analysis": {
+        "summary": "Peon-ping enhances the AI coding agent experience by providing audio and visual notifications (voice lines, on-screen banners) for agent events, helping developers stay in flow and receive timely feedback.",
+        "background": "AI coding agents often operate silently, causing developers to lose focus, tab away, and waste time waiting for tasks to complete or for input prompts. Peon-ping solves this by integrating game-character voice lines and bold on-screen notifications to alert users when their AI agent finishes a task, requires permission, or encounters an error, thereby improving workflow, reducing context switching, and maintaining developer engagement. It also includes a unique 'Peon Trainer' feature to encourage physical activity during coding sessions.",
+        "implementation": "The project integrates with various AI coding agents (e.g., Claude Code, GitHub Copilot, Codex) and IDEs across macOS, WSL2, Linux, and Windows, offering multiple installation options including Homebrew and platform-specific installer scripts. It uses a configuration file (`config.json`) for granular control over volume, notification categories, display styles (overlay banners or standard system notifications), and sound pack rotation. Peon-ping implements the open-source Coding Event Sound Pack Specification (CESP) for event standardization and includes an MCP (Model Context Protocol) server, allowing AI agents to directly select and play sounds via tool calls. Remote development environments (SSH, Devcontainers, Codespaces) are supported through an audio relay daemon, and mobile notifications are possible via ntfy integration. The 'Peon Trainer' feature provides timed exercise reminders that piggyback on coding session activity.",
+        "extension": "Users can extend peon-ping's functionality by creating and installing custom sound packs or by adding personalized audio files for the 'Peon Trainer' feature. The adherence to the CESP standard and the use of an adapter model facilitate integration with new agentic IDEs. The MCP server allows advanced AI agents to programmatically choose and play context-specific sounds, enabling more sophisticated and agent-driven notification behaviors. Configuration options for pack rotation and individual category toggling also allow for significant personalization.",
+        "highlights": "Peon-ping's primary highlight is its innovative approach to developer productivity by gamifying AI agent feedback, turning silent operations into engaging, actionable events with voice lines from popular games. Its comprehensive support for a wide array of AI coding agents and IDEs, coupled with cross-platform compatibility, makes it broadly accessible. The adoption of the CESP open standard promotes a more unified ecosystem for coding event sounds. Furthermore, the inclusion of an MCP server provides a powerful mechanism for AI agents to control their own auditory feedback, offering a highly intelligent and customizable user experience. The 'Peon Trainer' adds a unique wellness dimension, distinguishing it from typical developer tools by encouraging physical breaks."
+      },
+      "publishedAt": "2026-02-09",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1147402226",
+      "source": "github",
+      "title": "localgpt-app/localgpt",
+      "description": "AI assistant on local device & world generations.",
+      "url": "https://github.com/localgpt-app/localgpt",
+      "image": "https://opengraph.githubassets.com/1/localgpt-app/localgpt",
+      "metadata": {
+        "stars": 975,
+        "language": "Rust",
+        "topics": [
+          "agent",
+          "ai",
+          "rust",
+          "world"
+        ],
+        "updatedAt": "2026-02-18T21:13:20Z",
+        "createdAt": "2026-02-01T17:32:52Z"
+      },
+      "analysis": {
+        "summary": "LocalGPT 是一个基于 Rust 构建的、专注于本地设备的人工智能助手，具备持久化记忆、自主任务执行和多层安全防护，并与 OpenClaw 兼容。",
+        "background": "LocalGPT 旨在解决用户对 AI 助手数据隐私和本地运行的需求。它允许用户的数据完全保留在本地设备上，提供无需云端依赖的自主学习和任务处理能力。该项目适用于关注数据隐私、需要离线运行 AI 功能、以及寻求高度可定制和安全本地 AI 解决方案的开发者和用户。",
+        "implementation": "该项目使用 **Rust** 语言开发，并利用 **Tokio** 进行异步操作，**Axum** 构建 HTTP API。其核心架构包括基于 XDG 兼容目录的 Markdown 文件（`MEMORY.md`, `HEARTBEAT.md`, `SOUL.md`）作为持久化记忆存储。数据索引和检索通过 **SQLite** 实现，其中 FTS5 用于全文搜索，sqlite-vec 和 **fastembed** 用于本地嵌入式的语义搜索。它支持多种 LLM 提供商（Anthropic、OpenAI、xAI、Ollama、GLM）及本地 OpenAI 兼容服务器。安全方面，LocalGPT 采用了多层防御机制，包括：**内核强制沙箱**（Linux 上的 Landlock LSM + seccomp-bpf，macOS 上的 Seatbelt，以及所有平台的 rlimits）、通过 HMAC-SHA256 签名的自定义策略文件（`LocalGPT.md`）以及多种**提示注入防御**措施。此外，还包含一个用于世界生成的独立二进制 `localgpt-gen`（基于 **Bevy** 游戏引擎）和一个实验性的基于 WebAssembly 的 Egui Web UI。",
+        "extension": "LocalGPT 提供了多种扩展和集成方式：\n*   **配置**：通过 `config.toml` 文件高度定制 LLM 提供商、API 密钥、网页搜索、心跳机制和记忆工作区路径等。\n*   **自定义规则**：通过签名的 `LocalGPT.md` 文件定义代理的行为和安全策略。\n*   **OpenClaw 兼容性**：与 OpenClaw 的 SOUL、MEMORY、HEARTBEAT Markdown 文件及技能格式兼容，实现生态系统内的互操作。\n*   **HTTP API**：守护进程运行后提供一套 RESTful API，用于程序化地进行聊天、记忆搜索、会话管理和状态查询。\n*   **Telegram Bot**：集成 Telegram 机器人，实现远程访问和交互。\n*   **生成模式（Gen Mode）**：独立的 `localgpt-gen` 二进制提供了一个基于 Bevy 引擎的生成式框架，允许用户创建和修改三维场景，并进行 glTF 导出。",
+        "highlights": "*   **极致本地化与隐私保护**：作为一个单一二进制文件在本地设备上完整运行，无需 Node.js、Docker 或 Python，确保用户数据完全私有和安全。\n*   **持久化与语义化记忆**：基于 Markdown 的知识库，结合 SQLite FTS5 的全文搜索和 sqlite-vec 的本地嵌入式语义搜索，实现持续学习和丰富的上下文理解。\n*   **深度防御安全架构**：具备内核强制沙箱、加密签名的自定义策略文件（`LocalGPT.md`）、全面的提示注入防御机制和不可篡改的审计日志，提供了业界领先的安全保障。\n*   **自主任务执行**：独特的“自主心跳”机制允许代理在后台独立执行任务。\n*   **灵活的 LLM 支持**：兼容 Anthropic、OpenAI、xAI、Ollama 等多种 LLM 提供商，并支持本地 OpenAI 兼容服务器，提供了极大的模型选择灵活性。\n*   **OpenClaw 生态兼容**：与 OpenClaw 的记忆和技能格式无缝集成，便于利用现有生态资源。\n*   **多样化交互界面**：提供命令行 (CLI)、Web UI、桌面 GUI 和 Telegram 机器人等多种交互方式，满足不同用户需求。\n*   **独特的生成模式 (Gen Mode)**：通过一个独立的 Bevy 引擎驱动的二进制文件实现世界生成功能，展示了超越传统对话助手的创新能力。\n*   **Rust 原生性能**：得益于 Rust 语言的特性，项目在性能、可靠性和安全性方面表现出色。"
+      },
+      "publishedAt": "2026-02-01",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1146550474",
+      "source": "github",
+      "title": "always-further/nono",
+      "description": "Secure, kernel-enforced sandbox CLI and SDKs for AI agents, MCP and LLM workloads. Capability-based isolation with secure key management and blocking of destructive actions in a zero-trust environment.",
+      "url": "https://github.com/always-further/nono",
+      "image": "https://opengraph.githubassets.com/1/always-further/nono",
+      "metadata": {
+        "stars": 448,
+        "language": "Rust",
+        "topics": [
+          "agent",
+          "agentic-ai",
+          "ai-agent-security",
+          "ai-agents",
+          "ai-security",
+          "code-execution",
+          "cybersecurity",
+          "isolation",
+          "linux-security",
+          "llm",
+          "mcp",
+          "open-source",
+          "prompt-injection",
+          "runtime-security",
+          "sandbox",
+          "security",
+          "sigstore",
+          "supply-chain-security",
+          "zero-trust"
+        ],
+        "updatedAt": "2026-02-18T22:54:04Z",
+        "createdAt": "2026-01-31T09:25:45Z"
+      },
+      "analysis": {
+        "summary": "Secure, kernel-enforced sandbox CLI and SDKs for AI agents, MCP and LLM workloads. Capability-based isolation with secure key management and blocking of destructive actions in a zero-trust environment.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-01-31",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1152653916",
+      "source": "github",
+      "title": "openperf/brief",
+      "description": "AI Agent Service Agreement",
+      "url": "https://github.com/openperf/brief",
+      "image": "https://opengraph.githubassets.com/1/openperf/brief",
+      "metadata": {
+        "stars": 433,
+        "language": "TypeScript",
+        "topics": [],
+        "updatedAt": "2026-02-18T23:42:46Z",
+        "createdAt": "2026-02-08T07:54:01Z"
+      },
+      "analysis": {
+        "summary": "Brief is the first open protocol for explicit agent delegation, designed to transform chaotic multi-agent handoffs into structured, auditable task briefings using human-readable Markdown.",
+        "background": "The AI agent ecosystem lacks a standardized method for formal task delegation between agents, leading to an 'Implicit Handoff' problem characterized by context loss, decision conflicts, and fragile multi-agent systems. Brief addresses this critical gap by providing a formal, standardized semantic layer for inter-agent task delegation, complementing existing protocols for tool invocation (MCP), agent discovery/transport (A2A), and agent capabilities (Agent Skills). It is applicable in any scenario requiring structured, auditable communication and task distribution among AI agents.",
+        "implementation": "The protocol is fundamentally implemented using two simple Markdown files: `.brief.md` for task requests and `.response.md` for results, both incorporating YAML frontmatter for structured metadata (e.g., `id`, `delegator`, `delegatee`, `timestamp`, `status`). It is developed as a TypeScript SDK (`brief-sdk`) providing functionalities to `create`, `parse`, `createResponse`, and `createSubBrief`, as well as a `Trace` utility for auditing delegation chains. The core architecture comprises modules for Brief, Response, Trace, Parser, Validator, and Types, ensuring a robust and type-safe implementation. It explicitly avoids new DSLs or binary formats to maintain simplicity and human-readability.",
+        "extension": "Brief is designed for extensibility and integration. The TypeScript SDK allows developers to programmatically create, parse, and manage Brief documents within their agent systems. It inherently supports cascading delegation (A→B→C) and fan-out delegation (A→B || C) through built-in mechanisms for creating sub-briefs with automatic `parentId`, `maxDepth`, and `currentDepth` tracking. The protocol's open, Markdown-based nature encourages integration with various agent frameworks and applications without framework lock-in, enabling developers to build custom workflows atop the standardized delegation structure.",
+        "highlights": "Brief's key highlights include its innovative approach to solving the 'Implicit Handoff' problem by formalizing inter-agent delegation, making it the first open protocol in this domain. It offers explicit context isolation via an 'explicit contract' for each task, full auditability through trace logs, and native support for complex multi-agent patterns like cascading and fan-out delegation with built-in depth control. Its human-readable Markdown format with YAML frontmatter drastically reduces the learning curve compared to complex framework APIs. Crucially, it acts as a semantic layer that complements and integrates seamlessly with existing AI agent standards like MCP and A2A, rather than replacing them, filling a vital missing piece in the multi-agent ecosystem."
+      },
+      "publishedAt": "2026-02-08",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1140389139",
+      "source": "github",
+      "title": "coollabsio/jean",
+      "description": "Your AI dev team, parallelized.",
+      "url": "https://github.com/coollabsio/jean",
+      "image": "https://opengraph.githubassets.com/1/coollabsio/jean",
+      "metadata": {
+        "stars": 419,
+        "language": "TypeScript",
+        "topics": [
+          "agent",
+          "ai",
+          "claude-code",
+          "git",
+          "parallel",
+          "worktree"
+        ],
+        "updatedAt": "2026-02-18T23:18:22Z",
+        "createdAt": "2026-01-23T07:59:41Z"
+      },
+      "analysis": {
+        "summary": "Your AI dev team, parallelized.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-01-23",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1141592887",
+      "source": "github",
+      "title": "nrslib/takt",
+      "description": "TAKT Agent Koordination Topology - Define how AI agents coordinate, where humans intervene, and what gets recorded — in YAML",
+      "url": "https://github.com/nrslib/takt",
+      "image": "https://opengraph.githubassets.com/1/nrslib/takt",
+      "metadata": {
+        "stars": 372,
+        "language": "TypeScript",
+        "topics": [
+          "agent-orchestration",
+          "agent-team",
+          "ai-agents",
+          "claude-code",
+          "codex",
+          "multi-agent",
+          "opencode"
+        ],
+        "updatedAt": "2026-02-18T14:11:11Z",
+        "createdAt": "2026-01-25T04:05:48Z"
+      },
+      "analysis": {
+        "summary": "TAKT Agent Koordination Topology - Define how AI agents coordinate, where humans intervene, and what gets recorded — in YAML",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-01-25",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1147148934",
+      "source": "github",
+      "title": "voocel/openclaw-mini",
+      "description": "🦞 OpenClaw 核心架构的极简复现，涵盖 sessionKey 会话域、队列串行、工具化记忆检索、按需上下文加载、可扩展技能与主动心跳唤醒机制",
+      "url": "https://github.com/voocel/openclaw-mini",
+      "image": "https://opengraph.githubassets.com/1/voocel/openclaw-mini",
+      "metadata": {
+        "stars": 371,
+        "language": "TypeScript",
+        "topics": [
+          "agent",
+          "ai",
+          "clawdbot",
+          "openclaw"
+        ],
+        "updatedAt": "2026-02-18T20:11:59Z",
+        "createdAt": "2026-02-01T09:24:33Z"
+      },
+      "analysis": {
+        "summary": "🦞 OpenClaw 核心架构的极简复现，涵盖 sessionKey 会话域、队列串行、工具化记忆检索、按需上下文加载、可扩展技能与主动心跳唤醒机制",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-01",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1142649206",
+      "source": "github",
+      "title": "nhevers/MoltBrain",
+      "description": "Long-term memory layer for OpenClaw & MoltBook agents that learns and recalls your project context automatically.",
+      "url": "https://github.com/nhevers/MoltBrain",
+      "image": "https://opengraph.githubassets.com/1/nhevers/MoltBrain",
+      "metadata": {
+        "stars": 367,
+        "language": "TypeScript",
+        "topics": [
+          "ai",
+          "claude",
+          "claude-code",
+          "mcp",
+          "memory",
+          "nodejs",
+          "plugin",
+          "typescript"
+        ],
+        "updatedAt": "2026-02-18T19:44:19Z",
+        "createdAt": "2026-01-26T17:22:52Z"
+      },
+      "analysis": {
+        "summary": "Long-term memory layer for OpenClaw & MoltBook agents that learns and recalls your project context automatically.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-01-26",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1142309893",
+      "source": "github",
+      "title": "BradGroux/veritas-kanban",
+      "description": "The unfiltered truth about where your project stands. Lightweight kanban built for the agentic AI era.",
+      "url": "https://github.com/BradGroux/veritas-kanban",
+      "image": "https://opengraph.githubassets.com/1/BradGroux/veritas-kanban",
+      "metadata": {
+        "stars": 353,
+        "language": "TypeScript",
+        "topics": [
+          "ai-agents",
+          "developer-tools",
+          "kanban",
+          "local-first",
+          "pino",
+          "project-management",
+          "react",
+          "task-management",
+          "typescript",
+          "vite"
+        ],
+        "updatedAt": "2026-02-18T22:38:43Z",
+        "createdAt": "2026-01-26T08:35:20Z"
+      },
+      "analysis": {
+        "summary": "The unfiltered truth about where your project stands. Lightweight kanban built for the agentic AI era.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-01-26",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1139993345",
+      "source": "github",
+      "title": "ramziddin/solid-skills",
+      "description": "AI agent skill for writing senior-engineer quality code through SOLID principles, TDD, and clean architecture",
+      "url": "https://github.com/ramziddin/solid-skills",
+      "image": "https://opengraph.githubassets.com/1/ramziddin/solid-skills",
+      "metadata": {
+        "stars": 326,
+        "language": "Unknown",
+        "topics": [],
+        "updatedAt": "2026-02-18T15:40:33Z",
+        "createdAt": "2026-01-22T17:27:52Z"
+      },
+      "analysis": {
+        "summary": "AI agent skill for writing senior-engineer quality code through SOLID principles, TDD, and clean architecture",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-01-22",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1140788023",
+      "source": "github",
+      "title": "vueuse/skills",
+      "description": "Agent Skills for VueUse",
+      "url": "https://github.com/vueuse/skills",
+      "image": "https://opengraph.githubassets.com/1/vueuse/skills",
+      "metadata": {
+        "stars": 313,
+        "language": "TypeScript",
+        "topics": [
+          "agent-skills",
+          "agents",
+          "ai",
+          "skills",
+          "vue",
+          "vueuse"
+        ],
+        "updatedAt": "2026-02-17T12:51:02Z",
+        "createdAt": "2026-01-23T19:03:02Z"
+      },
+      "analysis": {
+        "summary": "Agent Skills for VueUse",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-01-23",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1141100288",
+      "source": "github",
+      "title": "aitytech/agentkits-marketing",
+      "description": "Enterprise-grade AI marketing automation for Claude Code, Cursor, GitHub Copilot, and any AI assistant supporting agents & skills",
+      "url": "https://github.com/aitytech/agentkits-marketing",
+      "image": "https://opengraph.githubassets.com/1/aitytech/agentkits-marketing",
+      "metadata": {
+        "stars": 296,
+        "language": "Python",
+        "topics": [],
+        "updatedAt": "2026-02-18T21:34:40Z",
+        "createdAt": "2026-01-24T08:44:05Z"
+      },
+      "analysis": {
+        "summary": "Enterprise-grade AI marketing automation for Claude Code, Cursor, GitHub Copilot, and any AI assistant supporting agents & skills",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-01-24",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1146153471",
+      "source": "github",
+      "title": "openakita/openakita",
+      "description": "An open-source AI assistant framework with skills and agent architecture",
+      "url": "https://github.com/openakita/openakita",
+      "image": "https://opengraph.githubassets.com/1/openakita/openakita",
+      "metadata": {
+        "stars": 288,
+        "language": "Python",
+        "topics": [
+          "agent",
+          "ai",
+          "assistant",
+          "automation",
+          "clawd",
+          "clawdbot",
+          "openclaw",
+          "python"
+        ],
+        "updatedAt": "2026-02-18T23:20:23Z",
+        "createdAt": "2026-01-30T17:36:05Z"
+      },
+      "analysis": {
+        "summary": "An open-source AI assistant framework with skills and agent architecture",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-01-30",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1149169439",
+      "source": "github",
+      "title": "datadog-labs/pup",
+      "description": "Give your AI agent a Pup — a CLI companion with 200+ commands across 33 Datadog products.",
+      "url": "https://github.com/datadog-labs/pup",
+      "image": "https://opengraph.githubassets.com/1/datadog-labs/pup",
+      "metadata": {
+        "stars": 285,
+        "language": "Go",
+        "topics": [
+          "cli",
+          "client",
+          "datadog",
+          "observability"
+        ],
+        "updatedAt": "2026-02-18T23:42:56Z",
+        "createdAt": "2026-02-03T19:56:25Z"
+      },
+      "analysis": {
+        "summary": "Give your AI agent a Pup — a CLI companion with 200+ commands across 33 Datadog products.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-03",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1149299036",
+      "source": "github",
+      "title": "stablyai/agent-slack",
+      "description": "Slack automation CLI for AI agents",
+      "url": "https://github.com/stablyai/agent-slack",
+      "image": "https://opengraph.githubassets.com/1/stablyai/agent-slack",
+      "metadata": {
+        "stars": 275,
+        "language": "TypeScript",
+        "topics": [],
+        "updatedAt": "2026-02-18T19:52:24Z",
+        "createdAt": "2026-02-04T00:33:03Z"
+      },
+      "analysis": {
+        "summary": "agent-slack是一个基于TypeScript和Bun构建的Slack自动化命令行接口（CLI）工具，专为AI代理（agents）设计，用于以高效令牌（token-efficient）的方式与Slack进行交互。",
+        "background": "该项目旨在解决AI代理与Slack集成时面临的两个主要问题：一是LLM处理冗余数据导致的令牌消耗高昂，通过默认输出紧凑JSON、最小化重复和清除空/null字段来降低成本；二是为了简化认证流程，提供零配置认证，使其在安装Slack桌面版后即可自动工作。它适用于AI代理需要读取、搜索Slack消息和文件、处理附件、发送消息、添加表情符号以及将Slack Canvas内容转换为Markdown等场景。",
+        "implementation": "agent-slack采用TypeScript和Bun构建，提供一个命令行接口，包含`auth`（认证）、`message`（消息操作）、`user`（用户管理）、`search`（搜索）和`canvas`（Canvas获取）等子命令。其核心架构强调输出的令牌效率，所有命令输出均为经过严格修剪（pruned）的JSON格式。认证机制支持零配置，通过读取Slack桌面本地数据或Chrome数据进行自动认证，也支持通过环境变量设置`SLACK_TOKEN`和`SLACK_COOKIE_D`。附件会自动下载到临时目录，并以本地绝对路径的形式返回给代理。安装推荐通过Bun（使用`install.sh`脚本）或npm进行。",
+        "extension": "该项目可以直接作为一个AI代理技能集成到Claude Code、Codex、Cursor等LLM中，通过`skills.sh`或手动安装`skills/agent-slack/`目录下的技能实现。这意味着其他开发者可以利用其提供的CLI命令作为API，在自己的AI代理或自动化脚本中调用，以编程方式控制Slack的各种操作，从而扩展其功能。由于输出统一为JSON，也便于第三方系统进行解析和处理。",
+        "highlights": "主要亮点包括：1. **令牌高效输出**：默认提供紧凑、无冗余、裁剪空/null字段的JSON输出，显著降低LLM处理Slack数据时的令牌成本。2. **零配置认证**：无需复杂设置，通过检测Slack桌面版或Chrome数据实现自动认证，极大简化了AI代理的部署和使用。3. **无Python依赖**：避免了Python环境可能带来的兼容性和安装问题。4. **强大的功能集**：涵盖消息读写、文件和消息搜索（支持高级过滤）、附件自动下载（并返回本地路径）、Slack Canvas转Markdown等，满足AI代理与Slack交互的广泛需求。5. **原生Agent Skill集成**：提供即插即用的代理技能包，方便主流LLM直接调用。"
+      },
+      "publishedAt": "2026-02-04",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1139906417",
+      "source": "github",
+      "title": "YuJunZhiXue/github-skill-forge",
+      "description": "一个\"制造技能的技能\"。这个工具自动化了将任意 GitHub 仓库转换为标准化技能的全过程，是扩展 AI Agent 能力的核心工具。",
+      "url": "https://github.com/YuJunZhiXue/github-skill-forge",
+      "image": "https://opengraph.githubassets.com/1/YuJunZhiXue/github-skill-forge",
+      "metadata": {
+        "stars": 275,
+        "language": "Python",
+        "topics": [],
+        "updatedAt": "2026-02-16T22:50:56Z",
+        "createdAt": "2026-01-22T15:17:36Z"
+      },
+      "analysis": {
+        "summary": "GitHub Skill Forge是一个将任何GitHub仓库一键转换为AI助手（如Trae）可直接理解和调用的“技能包”的工具。",
+        "background": "该项目旨在解决AI助手在处理GitHub项目时遇到的代码量大、配置复杂、手动操作繁琐等问题，通过简化AI助手对开源项目的理解和调用过程，提升AI助手利用GitHub开源代码的效率。",
+        "implementation": "项目核心脚本`scripts/forge.py`使用Python编写，架构上利用GitHub API进行云端（Zero-Clone）仓库扫描。它通过Smart RAG技术智能提取核心代码和文档，生成`context_bundle.md`作为AI的专用上下文。为绕过GitHub访问频率限制，内置多组API镜像站，支持自动轮换和多线程抓取。此外，还具备基于Stars数和活跃度的项目质量初筛功能。用户可通过`.env`文件配置GitHub Personal Access Token以提高访问权限和频率，并支持自定义API镜像站。",
+        "extension": "用户可以通过修改`scripts/forge.py`中的`api_mirrors`列表来添加或调整API镜像站。同时，在`.env`文件中配置多个GitHub Personal Access Token可以应对大规模抓取需求。`SKILL.md`作为AI的操作说明书，也为未来AI行为的定制提供了基础。",
+        "highlights": [
+          "**一键转换：** 用户只需提供GitHub仓库链接，即可将任何仓库快速转化为AI助手可直接调用的技能包，无需手动下载代码或复杂配置。",
+          "**全程云端 (Zero-Clone)：** 直接通过GitHub API扫描仓库，不克隆代码到本地，节省资源并显著提升处理速度。",
+          "**Smart RAG核心提取：** 智能识别并提炼仓库中最核心的代码逻辑和文档，生成精简的`context_bundle.md`，帮助AI高效掌握项目精髓。",
+          "**镜像加速与抗限制：** 内置多组API镜像站，支持自动轮换和多线程抓取，有效规避GitHub的API访问频率限制。",
+          "**质量初筛：** 自动评估项目的Stars数量和活跃度，帮助用户快速识别高质量项目，避免不成熟或废弃的项目。",
+          "**AI友好集成：** 支持通过自然语言对话直接唤醒AI助手来执行技能转换任务，极大提升了用户交互的智能化和便捷性。"
+        ]
+      },
+      "publishedAt": "2026-01-22",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1154281830",
+      "source": "github",
+      "title": "yan5xu/code-relay",
+      "description": "AI Coding Agent 工作协议 — 跨会话记忆、多仓库全局视野、结构化上下文管理",
+      "url": "https://github.com/yan5xu/code-relay",
+      "image": "https://opengraph.githubassets.com/1/yan5xu/code-relay",
+      "metadata": {
+        "stars": 257,
+        "language": "Unknown",
+        "topics": [],
+        "updatedAt": "2026-02-18T14:56:36Z",
+        "createdAt": "2026-02-10T07:58:02Z"
+      },
+      "analysis": {
+        "summary": "Code Relay is a structured protocol for AI coding agents designed to enhance their capabilities with self-bootstrapping, cross-session memory, multi-repository awareness, and safe, scoped execution.",
+        "background": "AI coding agents in real-world projects often face challenges such as cross-session amnesia, limited context windows, lack of standardized workflows, and multi-repository blindness. Code Relay addresses these issues by providing a structured framework that enables agents to maintain context across sessions, gain a global view of multi-repository projects, and operate within defined and safe execution scopes. It is suitable for developers and teams using AI agents for complex, iterative, and large-scale software development across multiple interconnected repositories.",
+        "implementation": "Code Relay is implemented as a protocol defined through a set of structured Markdown and YAML files. Its core components include a Boot Sequence for automated context restoration, HANDOFF / CHECKPOINT for structured, zero-loss state saving and restoration, SCOPE for controlling write access, and Worktree Isolation for task-specific development environments. The architecture supports a workspace structure that sits above multiple independent Git repositories, providing a 'global view' to the agent. It offers two main collaboration modes: GitHub Collaboration Mode, which uses GitHub Issues and Project Boards for state management, and Local File Collaboration Mode, which relies on local files like STATUS.yml, PROGRAM.md, SCOPE.yml, and HANDOFF.md. The protocol is compatible with various AI coding agents capable of reading project files, such as OpenCode, Cursor, and GitHub Copilot.",
+        "extension": "The protocol is designed for extensibility through its file-based configuration using Markdown and YAML, allowing users to customize and define workflows. The presence of `SUB-AGENT.md` indicates a mechanism for orchestrating and integrating sub-agents. Users can choose between GitHub or Local collaboration modes, adapting the protocol to different operational environments and team preferences. Its open, file-centric nature promotes compatibility with any AI coding agent that can interact with the filesystem, enabling broad integration and future custom tool development.",
+        "highlights": "Code Relay's key highlights include its innovative HANDOFF / CHECKPOINT mechanism, which provides a proactive, structured, and zero-loss method for saving and restoring agent context, directly addressing the limitations of lossy context window compression. It features native multi-repository support, enabling agents to have a 'global view' and understand relationships across different repositories (frontend, backend, infrastructure) without requiring a monorepo setup. Other significant aspects are its self-bootstrapping capability for autonomous context loading, structured workflows, safe scoped execution via `SCOPE` controls, and task isolation using worktrees. The protocol adheres to design principles of a single source of truth and file-based communication, enhancing its robustness and broad compatibility with existing AI coding agent tools."
+      },
+      "publishedAt": "2026-02-10",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1148647935",
+      "source": "github",
+      "title": "opencmit/JoinAI-Agent",
+      "description": "暂无描述",
+      "url": "https://github.com/opencmit/JoinAI-Agent",
+      "image": "https://opengraph.githubassets.com/1/opencmit/JoinAI-Agent",
+      "metadata": {
+        "stars": 256,
+        "language": "TypeScript",
+        "topics": [],
+        "updatedAt": "2026-02-14T04:27:41Z",
+        "createdAt": "2026-02-03T07:49:13Z"
+      },
+      "analysis": {
+        "summary": "JoinAI-Agent 是一个通用型 AI Agent，由中国移动自研，旨在通过感知、规划、执行到协作的闭环能力，系统性地解决复杂任务场景，并支持工具和Agent的可插拔扩展。",
+        "background": "JoinAI-Agent 源自中国移动自研的九天·聚智智能Agent平台，旨在定义下一代企业级Agent引擎核心能力，解决复杂任务场景中的AI Agent能力闭环构建问题，推动Agent技术在企业级应用中的发展。其开源目的在于打破技术壁垒，加速行业协作，持续赋能各行业的智能化升级。适用于需要AI Agent进行感知、规划、执行和协作的复杂任务场景，以及企业级应用中需集成多功能Agent和工具，并要求安全沙箱环境执行代码、文件操作及浏览器自动化的场景。",
+        "implementation": "JoinAI-Agent 采用前后端分离的架构，前端支持文件上传和沙箱任务追踪，后端基于DAG执行引擎。技术栈包括 Python 3.12+ (后端)、Node.js 20+ (前端)、Docker 和 Docker Compose (部署)，前端使用 React。核心能力包括内置多种专业子Agent（如信息整合、代码专家、报告生成、研究员、图像解析等）和丰富的工具生态（如Web搜索、文件操作、代码执行、浏览器自动化）。它集成 MCP (可插拔工具) 和 A2A (Agent间协作) 协议，通过 E2B 沙箱环境提供安全的代码执行和浏览器自动化功能。支持多种大型语言模型（LLM），包括 OpenAI API 兼容接口（如 gpt-5、DeepSeek-V3.2-Exp）和多模态视觉语言模型（VL model，如 Qwen-VL-plus）。",
+        "extension": "项目支持端到端的二次开发和定制化扩展，用户可以一键部署后进行深层次开发。其标准化协议支持（MCP 和 A2A）允许用户插拔和自定义工具与Agent，例如通过配置 JSON 文件来自行配置 MCP 工具和 A2A Agent。前后端分离的模块化设计也使得系统易于集成和维护。",
+        "highlights": "JoinAI-Agent 的亮点在于其卓越的性能（在 GAIA 基准测试中综合得分 90.70，位列榜首），以及其作为中国移动自研企业级Agent平台的背景。它创新性地构建了从感知、规划、执行到协作的完整闭环能力，是定义下一代企业级Agent引擎的先驱。其作为端到端完整产品，支持一键部署和开箱即用，并提供灵活的二次开发能力。标准化协议（MCP 和 A2A）支持工具和Agent的可插拔扩展与协作。此外，基于 E2B 的安全沙箱执行环境、丰富的内置专业子Agent和工具生态（包括强大的浏览器自动化能力）以及灵活的模块化架构设计，使其在功能和安全性方面均具有显著优势。"
+      },
+      "publishedAt": "2026-02-03",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1148511700",
+      "source": "github",
+      "title": "mikeyobrien/rho",
+      "description": "An AI agent that stays running, remembers across sessions, and checks in on its own. macOS, Linux, Android. Built on Pi.",
+      "url": "https://github.com/mikeyobrien/rho",
+      "image": "https://opengraph.githubassets.com/1/mikeyobrien/rho",
+      "metadata": {
+        "stars": 254,
+        "language": "TypeScript",
+        "topics": [
+          "pi-coding-agent"
+        ],
+        "updatedAt": "2026-02-18T17:46:34Z",
+        "createdAt": "2026-02-03T03:39:05Z"
+      },
+      "analysis": {
+        "summary": "An autonomous, persistent AI agent that runs locally on various platforms, remembers past interactions, and performs scheduled check-ins, allowing users to own their data and LLM provider.",
+        "background": "Rho addresses the need for a continuously running, privacy-preserving personal AI assistant that operates directly on the user's device, eliminating reliance on cloud services for data storage and LLM processing. It solves the problem of an AI forgetting context by maintaining a persistent 'brain' and proactively managing tasks and reminders through a 'heartbeat' mechanism. It's suitable for users who desire an intelligent agent for various platforms (desktop, mobile) that can handle scheduling, external communication (email, Telegram), system interactions (notifications, clipboard), and UI automation, all while keeping their data local.",
+        "implementation": "Built upon the `pi coding agent` framework, Rho is primarily implemented with Node.js (TypeScript for extensions) and relies on `tmux` and `git` as prerequisites. Its core architecture includes a persistent 'brain' stored as an append-only `brain.jsonl` file, managing behaviors, identity, learnings, and tasks. Functionality is extended through 'skills' (markdown-based runbooks that the agent interprets) and 'extensions' (TypeScript modules running within the `pi` process that register new tools and manage state). It integrates with external services like Brave Search and xAI Grok for information retrieval and supports UI automation on Android via Tasker. Configuration is managed through `init.toml`, and the Web UI uses RPC and WebSockets for real-time interaction.",
+        "extension": "Rho offers extensive extensibility through two primary mechanisms: 'Skills' and 'Extensions.' Skills are markdown files, essentially runbooks following the Agent Skills spec, that define new capabilities for the agent to execute using its built-in tools. Extensions are TypeScript code that runs within the `pi` process, allowing for the registration of new LLM tools, custom UI components, lifecycle event hooks, and persistent state management. Users can also configure the agent's 'brain' via direct `brain.jsonl` editing or the `/brain` tool, add structured reference material to the 'vault,' and integrate with external skill providers like Vercel and ClawHub using the `rho skills` command.",
+        "highlights": "Key highlights include Rho's local-first and privacy-centric design ('Your data stays on your device. No cloud for your memories'), its LLM provider agnosticism, and its cross-platform compatibility (macOS, Linux, Android, iPhone via SSH). The persistent 'heartbeat' and 'brain' provide continuous operation and context retention, making it a truly 'staying running' and 'remembering' agent. Its modular architecture distinguishes between declarative 'Skills' (runbooks) and programmatic 'Extensions' (TypeScript code), offering flexible ways to expand capabilities. Unique features like Agent Email for external communication and a Web UI for comprehensive management (including real-time chat, memory browsing, task management, and inline code review) further differentiate it, alongside its robust Tasker integration for Android UI automation."
+      },
+      "publishedAt": "2026-02-03",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1149463075",
+      "source": "github",
+      "title": "openperf/openclaw-cloud",
+      "description": "Give your AI Agent a cloud-native life. Deploy once, converse everywhere.",
+      "url": "https://github.com/openperf/openclaw-cloud",
+      "image": "https://opengraph.githubassets.com/1/openperf/openclaw-cloud",
+      "metadata": {
+        "stars": 250,
+        "language": "TypeScript",
+        "topics": [
+          "ai",
+          "ai-agent",
+          "clawbot",
+          "clawhub",
+          "openai",
+          "openclaw",
+          "react",
+          "skills"
+        ],
+        "updatedAt": "2026-02-17T12:29:23Z",
+        "createdAt": "2026-02-04T06:20:49Z"
+      },
+      "analysis": {
+        "summary": "OpenClaw Cloud 是一个专为 AI Agent 生态设计的云原生统一调度中枢，提供一键部署、多平台对话、技能热插拔和集中管理能力。",
+        "background": "针对 AI Agent 部署、配置和集成过程繁琐的问题，OpenClaw Cloud 旨在提供一个高效解决方案，让开发者能够专注于 Agent 核心能力的创造。它适用于希望简化 AI Agent 基础设施管理，实现多渠道对话和灵活技能扩展的场景。",
+        "implementation": "该项目采用云原生架构，支持 Docker 一键部署。前端技术栈为 React 19、TypeScript 和 Tailwind CSS 4；后端使用 Node.js、Express 和 tRPC 11；数据层通过 Drizzle ORM 操作 MySQL 8+ 或 TiDB 数据库。",
+        "extension": "OpenClaw Cloud 具备高度可扩展性，支持用户通过 ClawHub 市场安装社区技能，或创建并热插拔私有技能，无需重启即可生效。项目提供了详尽的插件开发指南、技能编写指南以及 tRPC API 参考，方便开发者进行二次开发和功能扩展。",
+        "highlights": "主要亮点包括：云原生架构和 Docker 一键部署，极大地简化了环境配置；支持全渠道无缝对话（如 Element、Telegram、Discord）；提供技能自定义和热插拔机制，增强了 Agent 的灵活性；拥有统一且直观的管理面板，便于监控 Agent 实例状态和管理资源；通过实例隔离确保数据安全与隐私；同时，项目100%开源，社区驱动，遵循 MIT License。"
+      },
+      "publishedAt": "2026-02-04",
+      "category": "ai-agent"
+    }
+  ]
+}

@@ -111,5 +111,30 @@
       "yohey-w/multi-agent-shogun",
       "TheAgentContextLab/OneContext"
     ]
+  },
+  {
+    "date": "2026-02-19",
+    "projects": [
+      "PeonPing/peon-ping",
+      "localgpt-app/localgpt",
+      "always-further/nono",
+      "openperf/brief",
+      "coollabsio/jean",
+      "nrslib/takt",
+      "voocel/openclaw-mini",
+      "nhevers/MoltBrain",
+      "BradGroux/veritas-kanban",
+      "ramziddin/solid-skills",
+      "vueuse/skills",
+      "aitytech/agentkits-marketing",
+      "openakita/openakita",
+      "datadog-labs/pup",
+      "stablyai/agent-slack",
+      "YuJunZhiXue/github-skill-forge",
+      "yan5xu/code-relay",
+      "opencmit/JoinAI-Agent",
+      "mikeyobrien/rho",
+      "openperf/openclaw-cloud"
+    ]
   }
 ]

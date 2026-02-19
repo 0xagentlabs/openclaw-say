@@ -238,6 +238,38 @@
             border-radius: 12px;
         }
         
+        .detail-analysis {
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border);
+        }
+        
+        .detail-analysis h2 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--accent);
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .detail-analysis h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 0.8rem;
+            margin-top: 1.5rem;
+            border-left: 4px solid var(--accent);
+            padding-left: 12px;
+        }
+        
+        .detail-analysis p {
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+        
         /* 操作按钮 */
         .detail-actions {
             display: flex;
@@ -531,6 +563,32 @@
             }
         }
         
+        // 渲染深度分析
+        function renderAnalysis(item) {
+            if (!item.analysis) return '';
+            
+            return `
+                <div class="detail-analysis">
+                    <h2>🔍 深度分析</h2>
+                    
+                    <h3>📖 项目介绍</h3>
+                    <p>${item.analysis.introduction || '暂无'}</p>
+                    
+                    <h3>🌍 应用背景</h3>
+                    <p>${item.analysis.background || '暂无'}</p>
+                    
+                    <h3>⚙️ 实现方式</h3>
+                    <p>${item.analysis.implementation || '暂无'}</p>
+                    
+                    <h3>🔌 扩展方式</h3>
+                    <p>${item.analysis.extension || '暂无'}</p>
+                    
+                    <h3>✨ 亮点功能</h3>
+                    <p>${item.analysis.highlights || '暂无'}</p>
+                </div>
+            `;
+        }
+
         // 渲染详情页
         function renderDetail(item, allItems) {
             const metaParts = formatMetadata(item);
@@ -560,6 +618,8 @@
                         <div class="detail-description">
                             ${item.description || '暂无描述'}
                         </div>
+                        
+                        ${renderAnalysis(item)}
                         
                         <div class="detail-actions">
                             <a href="${item.url}" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
