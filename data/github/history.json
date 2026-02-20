@@ -136,5 +136,30 @@
       "mikeyobrien/rho",
       "openperf/openclaw-cloud"
     ]
+  },
+  {
+    "date": "2026-02-20",
+    "projects": [
+      "tinyfish-io/tinyfish-cookbook",
+      "rivet-dev/sandbox-agent",
+      "netease-youdao/LobsterAI",
+      "BankrBot/openclaw-skills",
+      "unitedbyai/droidclaw",
+      "luccast/crabwalk",
+      "ygwyg/MAHORAGA",
+      "run-bigpig/jcp",
+      "six2dez/burp-ai-agent",
+      "klawsh/klaw.sh",
+      "pocketpaw/pocketpaw",
+      "aarondfrancis/counselors",
+      "marswei/seaseed-clawerse",
+      "microclaw/microclaw",
+      "Cranot/roam-code",
+      "opencmit/alphora",
+      "BlockRunAI/ClawRouter",
+      "PeonPing/peon-ping",
+      "DingTalk-Real-AI/dingtalk-openclaw-connector",
+      "sseanliu/VisionClaw"
+    ]
   }
 ]
