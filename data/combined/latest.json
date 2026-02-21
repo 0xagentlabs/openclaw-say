@@ -1,6 +1,6 @@
 {
   "date": "2026-02-21",
-  "generatedAt": "2026-02-21T12:42:10.095Z",
+  "generatedAt": "2026-02-21T12:52:43.704Z",
   "summary": {
     "total": 35,
     "github": 20,
@@ -9,7 +9,7 @@
   },
   "items": [
     {
-      "id": "producthunt-fallback-1771677730066-0",
+      "id": "producthunt-fallback-1771678363675-0",
       "source": "producthunt",
       "title": "ChatGPT",
       "description": "OpenAI 的对话式 AI 助手",
@@ -23,7 +23,7 @@
       "category": "product"
     },
     {
-      "id": "producthunt-fallback-1771677730066-1",
+      "id": "producthunt-fallback-1771678363675-1",
       "source": "producthunt",
       "title": "Claude",
       "description": "Anthropic 的 AI 助手，擅长长文本理解",
@@ -37,7 +37,7 @@
       "category": "product"
     },
     {
-      "id": "producthunt-fallback-1771677730066-2",
+      "id": "producthunt-fallback-1771678363675-2",
       "source": "producthunt",
       "title": "Midjourney",
       "description": "AI 图像生成工具",
@@ -51,7 +51,7 @@
       "category": "product"
     },
     {
-      "id": "producthunt-fallback-1771677730066-3",
+      "id": "producthunt-fallback-1771678363675-3",
       "source": "producthunt",
       "title": "Notion AI",
       "description": "Notion 内置的 AI 写作助手",
@@ -65,7 +65,7 @@
       "category": "product"
     },
     {
-      "id": "producthunt-fallback-1771677730066-4",
+      "id": "producthunt-fallback-1771678363675-4",
       "source": "producthunt",
       "title": "Perplexity",
       "description": "AI 驱动的搜索引擎",
@@ -79,7 +79,7 @@
       "category": "product"
     },
     {
-      "id": "youtube-video-1771677729039-0",
+      "id": "youtube-video-1771678363296-0",
       "source": "youtube",
       "title": "How to Clone Yourself with AI",
       "description": "🎙️ If you love this show, please leave us a 5-Star Review and share your favorite episodes with friends: https://link.chtbl.com/KE3gp3MV\n—\nCheck Out Matt’s Stuff:\n• Future Tools - https://futuretools...",
@@ -88,7 +88,7 @@
       "metadata": {
         "views": "510",
         "channel": "Matt Wolfe",
-        "videoId": "video-1771677729039-0"
+        "videoId": "video-1771678363296-0"
       },
       "publishedAt": "2026-02-20",
       "category": "video"
@@ -101,7 +101,7 @@
       "url": "https://www.youtube.com/watch?v=B6GJjvR6txg",
       "image": "https://i3.ytimg.com/vi/B6GJjvR6txg/hqdefault.jpg",
       "metadata": {
-        "views": "39.8K",
+        "views": "39.9K",
         "channel": "Two Minute Papers",
         "videoId": "B6GJjvR6txg"
       },
@@ -133,7 +133,7 @@
       "category": "ai-agent"
     },
     {
-      "id": "youtube-video-1771677729039-1",
+      "id": "youtube-video-1771678363296-1",
       "source": "youtube",
       "title": "Anthropic is Absolutely Trolling OpenAI Right Now",
       "description": "🎙️ If you love this show, please leave us a 5-Star Review and share your favorite episodes with friends: https://link.chtbl.com/KE3gp3MV\n—\nCheck Out Matt’s Stuff:\n• Future Tools - https://futuretools...",
@@ -142,7 +142,7 @@
       "metadata": {
         "views": "3.7K",
         "channel": "Matt Wolfe",
-        "videoId": "video-1771677729039-1"
+        "videoId": "video-1771678363296-1"
       },
       "publishedAt": "2026-02-18",
       "category": "video"
@@ -163,7 +163,7 @@
       "category": "video"
     },
     {
-      "id": "youtube-video-1771677729039-3",
+      "id": "youtube-video-1771678363296-3",
       "source": "youtube",
       "title": "Can ChatGPT Actually Replace Your Doctor?",
       "description": "🎙️ If you love this show, please leave us a 5-Star Review and share your favorite episodes with friends: https://link.chtbl.com/KE3gp3MV\n—\nCheck Out Matt’s Stuff:\n• Future Tools - https://futuretools...",
@@ -172,7 +172,7 @@
       "metadata": {
         "views": "835",
         "channel": "Matt Wolfe",
-        "videoId": "video-1771677729039-3"
+        "videoId": "video-1771678363296-3"
       },
       "publishedAt": "2026-02-16",
       "category": "video"
@@ -200,10 +200,10 @@
       "url": "https://github.com/SamuelQZQ/auto-coding-agent-demo",
       "image": "https://opengraph.githubassets.com/1/SamuelQZQ/auto-coding-agent-demo",
       "metadata": {
-        "stars": 318,
+        "stars": 319,
         "language": "TypeScript",
         "topics": [],
-        "updatedAt": "2026-02-21T12:35:02Z",
+        "updatedAt": "2026-02-21T12:44:57Z",
         "createdAt": "2026-02-13T19:25:20Z"
       },
       "analysis": {
@@ -217,7 +217,7 @@
       "category": "ai-agent"
     },
     {
-      "id": "youtube-video-1771677729039-4",
+      "id": "youtube-video-1771678363296-4",
       "source": "youtube",
       "title": "Why Humanoid Robots Won't Replace Humans Yet",
       "description": "🎙️ If you love this show, please leave us a 5-Star Review and share your favorite episodes with friends: https://link.chtbl.com/KE3gp3MV\n—\nCheck Out Matt’s Stuff:\n• Future Tools - https://futuretools...",
@@ -226,7 +226,7 @@
       "metadata": {
         "views": "2.2K",
         "channel": "Matt Wolfe",
-        "videoId": "video-1771677729039-4"
+        "videoId": "video-1771678363296-4"
       },
       "publishedAt": "2026-02-13",
       "category": "video"
@@ -263,7 +263,7 @@
       "url": "https://www.youtube.com/watch?v=eGpIXJ0C4ds",
       "image": "https://i2.ytimg.com/vi/eGpIXJ0C4ds/hqdefault.jpg",
       "metadata": {
-        "views": "209.6K",
+        "views": "209.7K",
         "channel": "Two Minute Papers",
         "videoId": "eGpIXJ0C4ds"
       },
@@ -592,7 +592,7 @@
       "url": "https://github.com/callstackincubator/agent-device",
       "image": "https://opengraph.githubassets.com/1/callstackincubator/agent-device",
       "metadata": {
-        "stars": 721,
+        "stars": 720,
         "language": "TypeScript",
         "topics": [
           "agentic-ai",
@@ -601,7 +601,7 @@
           "mobile",
           "testing"
         ],
-        "updatedAt": "2026-02-21T11:39:40Z",
+        "updatedAt": "2026-02-21T12:46:28Z",
         "createdAt": "2026-01-30T18:41:54Z"
       },
       "analysis": {
@@ -646,7 +646,7 @@
       "url": "https://github.com/manaflow-ai/cmux",
       "image": "https://opengraph.githubassets.com/1/manaflow-ai/cmux",
       "metadata": {
-        "stars": 892,
+        "stars": 899,
         "language": "Swift",
         "topics": [
           "amp",
@@ -658,7 +658,7 @@
           "terminal",
           "tmux"
         ],
-        "updatedAt": "2026-02-21T12:39:45Z",
+        "updatedAt": "2026-02-21T12:51:23Z",
         "createdAt": "2026-01-28T10:03:24Z"
       },
       "analysis": {
