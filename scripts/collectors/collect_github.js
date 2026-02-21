@@ -147,8 +147,23 @@ JSON 结构示例:
 
     return JSON.parse(jsonStr);
   } catch (error) {
-    console.warn(`⚠️ Gemini 分析失败 (${repoName}): ${error.message}`);
+    // console.warn(`⚠️ Gemini 分析失败 (${repoName}): ${error.message}`);
+    // 降低日志噪音，仅在 DEBUG 模式或首次失败时详细输出
     return null;
+  }
+}
+
+/**
+ * 检查 Gemini 是否可用
+ */
+function isGeminiAvailable() {
+  try {
+    // 尝试简单的 echo 测试，快速失败
+    execSync('gemini "echo test"', { timeout: 5000, stdio: 'ignore' });
+    return true;
+  } catch (e) {
+    console.warn('⚠️ Gemini CLI 不可用或需要验证，将跳过深度分析。');
+    return false;
   }
 }
 
@@ -194,6 +209,8 @@ function filterRecentProjects(items, days = 3) {
   return items.filter(item => !recentProjects.has(item.full_name));
 }
 
+const GEMINI_AVAILABLE = isGeminiAvailable();
+
 /**
  * 转换并增强 GitHub 项目数据
  */
@@ -208,7 +225,7 @@ async function processProjects(repos) {
     
     // 2. Gemini 分析
     let analysis = null;
-    if (readme) {
+    if (GEMINI_AVAILABLE && readme) {
       analysis = analyzeWithGemini(readme, repo.full_name);
     }
 

@@ -161,5 +161,30 @@
       "DingTalk-Real-AI/dingtalk-openclaw-connector",
       "sseanliu/VisionClaw"
     ]
+  },
+  {
+    "date": "2026-02-21",
+    "projects": [
+      "ValueCell-ai/ClawX",
+      "TheAgentContextLab/OneContext",
+      "aeromomo/claw-compactor",
+      "yohey-w/multi-agent-shogun",
+      "manaflow-ai/cmux",
+      "spacedriveapp/spacebot",
+      "callstackincubator/agent-device",
+      "cursor/agent-trace",
+      "zylos-ai/zylos-core",
+      "zilliztech/memsearch",
+      "jo-inc/camofox-browser",
+      "Nasiko-Labs/nasiko",
+      "crshdn/mission-control",
+      "jingkaihe/matchlock",
+      "qufei1993/skills-hub",
+      "BakeLens/crust",
+      "abhi1693/openclaw-mission-control",
+      "SamuelQZQ/auto-coding-agent-demo",
+      "Versatly/clawvault",
+      "TraderAlice/OpenAlice"
+    ]
   }
 ]
