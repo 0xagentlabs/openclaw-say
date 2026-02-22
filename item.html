@@ -555,7 +555,7 @@
                     throw new Error('内容未找到');
                 }
                 
-                renderDetail(item, data.items);
+                renderDetail(item, data.items, date);
                 
             } catch (error) {
                 console.error('加载失败:', error);
@@ -590,7 +590,7 @@
         }
 
         // 渲染详情页
-        function renderDetail(item, allItems) {
+        function renderDetail(item, allItems, date) {
             const metaParts = formatMetadata(item);
             const content = document.getElementById('content');
             
