@@ -186,5 +186,30 @@
       "Versatly/clawvault",
       "TraderAlice/OpenAlice"
     ]
+  },
+  {
+    "date": "2026-02-22",
+    "projects": [
+      "localgpt-app/localgpt",
+      "openperf/brief",
+      "always-further/nono",
+      "openakita/openakita",
+      "nrslib/takt",
+      "voocel/openclaw-mini",
+      "BradGroux/veritas-kanban",
+      "nhevers/MoltBrain",
+      "Dicklesworthstone/pi_agent_rust",
+      "Pickle-Pixel/ApplyPilot",
+      "datadog-labs/pup",
+      "aitytech/agentkits-marketing",
+      "ghostsecurity/skills",
+      "BlockRunAI/ClawRouter",
+      "PeonPing/peon-ping",
+      "netease-youdao/LobsterAI",
+      "DingTalk-Real-AI/dingtalk-openclaw-connector",
+      "sseanliu/VisionClaw",
+      "ValueCell-ai/ClawX",
+      "manaflow-ai/cmux"
+    ]
   }
 ]
