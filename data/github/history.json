@@ -211,5 +211,30 @@
       "ValueCell-ai/ClawX",
       "manaflow-ai/cmux"
     ]
+  },
+  {
+    "date": "2026-02-23",
+    "projects": [
+      "unitedbyai/droidclaw",
+      "rivet-dev/sandbox-agent",
+      "BankrBot/openclaw-skills",
+      "luccast/crabwalk",
+      "ygwyg/MAHORAGA",
+      "run-bigpig/jcp",
+      "six2dez/burp-ai-agent",
+      "Leonxlnx/taste-skill",
+      "klawsh/klaw.sh",
+      "pocketpaw/pocketpaw",
+      "marswei/seaseed-clawerse",
+      "aarondfrancis/counselors",
+      "samvallad33/vestige",
+      "microclaw/microclaw",
+      "Gentleman-Programming/engram",
+      "BlockRunAI/ClawRouter",
+      "PeonPing/peon-ping",
+      "netease-youdao/LobsterAI",
+      "manaflow-ai/cmux",
+      "DingTalk-Real-AI/dingtalk-openclaw-connector"
+    ]
   }
 ]
