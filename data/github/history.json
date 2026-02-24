@@ -236,5 +236,30 @@
       "manaflow-ai/cmux",
       "DingTalk-Real-AI/dingtalk-openclaw-connector"
     ]
+  },
+  {
+    "date": "2026-02-24",
+    "projects": [
+      "spacedriveapp/spacebot",
+      "TheAgentContextLab/OneContext",
+      "aeromomo/claw-compactor",
+      "callstackincubator/agent-device",
+      "zylos-ai/zylos-core",
+      "abhi1693/openclaw-mission-control",
+      "crshdn/mission-control",
+      "jo-inc/camofox-browser",
+      "cursor/agent-trace",
+      "stephengpope/thepopebot",
+      "zilliztech/memsearch",
+      "TraderAlice/OpenAlice",
+      "Nasiko-Labs/nasiko",
+      "jingkaihe/matchlock",
+      "tomascupr/sandstorm",
+      "superhq-ai/shuru",
+      "BakeLens/crust",
+      "SamuelQZQ/auto-coding-agent-demo",
+      "quoroom-ai/room",
+      "Cranot/roam-code"
+    ]
   }
 ]

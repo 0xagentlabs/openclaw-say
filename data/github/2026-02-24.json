@@ -1,0 +1,549 @@
+{
+  "date": "2026-02-24",
+  "count": 20,
+  "items": [
+    {
+      "id": "github-1155816493",
+      "source": "github",
+      "title": "spacedriveapp/spacebot",
+      "description": "An AI agent for teams, communities, and multi-user environments.",
+      "url": "https://github.com/spacedriveapp/spacebot",
+      "image": "https://opengraph.githubassets.com/1/spacedriveapp/spacebot",
+      "metadata": {
+        "stars": 1194,
+        "language": "Rust",
+        "topics": [
+          "agent",
+          "ai"
+        ],
+        "updatedAt": "2026-02-23T23:58:27Z",
+        "createdAt": "2026-02-11T23:53:16Z"
+      },
+      "analysis": {
+        "summary": "An AI agent for teams, communities, and multi-user environments.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-11",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1152833832",
+      "source": "github",
+      "title": "TheAgentContextLab/OneContext",
+      "description": " OneContext is an Agent Self-Managed Context layer, it gives your team a unified context for AII AI Agents. ",
+      "url": "https://github.com/TheAgentContextLab/OneContext",
+      "image": "https://opengraph.githubassets.com/1/TheAgentContextLab/OneContext",
+      "metadata": {
+        "stars": 1131,
+        "language": "Unknown",
+        "topics": [],
+        "updatedAt": "2026-02-23T22:43:02Z",
+        "createdAt": "2026-02-08T14:06:55Z"
+      },
+      "analysis": {
+        "summary": " OneContext is an Agent Self-Managed Context layer, it gives your team a unified context for AII AI Agents. ",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-08",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1154042797",
+      "source": "github",
+      "title": "aeromomo/claw-compactor",
+      "description": "🦞 Claw Compactor — The 98% Crusher. Cut your AI agent token spend in half with 5 layered compression techniques.",
+      "url": "https://github.com/aeromomo/claw-compactor",
+      "image": "https://opengraph.githubassets.com/1/aeromomo/claw-compactor",
+      "metadata": {
+        "stars": 1018,
+        "language": "Python",
+        "topics": [],
+        "updatedAt": "2026-02-23T23:15:48Z",
+        "createdAt": "2026-02-10T00:27:08Z"
+      },
+      "analysis": {
+        "summary": "🦞 Claw Compactor — The 98% Crusher. Cut your AI agent token spend in half with 5 layered compression techniques.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-10",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1146193768",
+      "source": "github",
+      "title": "callstackincubator/agent-device",
+      "description": "CLI to control iOS and Android devices for AI agents",
+      "url": "https://github.com/callstackincubator/agent-device",
+      "image": "https://opengraph.githubassets.com/1/callstackincubator/agent-device",
+      "metadata": {
+        "stars": 789,
+        "language": "TypeScript",
+        "topics": [
+          "agentic-ai",
+          "agents",
+          "automation",
+          "mobile",
+          "testing"
+        ],
+        "updatedAt": "2026-02-23T23:01:01Z",
+        "createdAt": "2026-01-30T18:41:54Z"
+      },
+      "analysis": {
+        "summary": "CLI to control iOS and Android devices for AI agents",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-01-30",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1147789463",
+      "source": "github",
+      "title": "zylos-ai/zylos-core",
+      "description": "Give your AI a life — open-source agent infrastructure for team collaboration.",
+      "url": "https://github.com/zylos-ai/zylos-core",
+      "image": "https://opengraph.githubassets.com/1/zylos-ai/zylos-core",
+      "metadata": {
+        "stars": 767,
+        "language": "JavaScript",
+        "topics": [
+          "ai",
+          "ai-worker",
+          "own-your-data",
+          "personal-ai-assistant",
+          "self-evolving",
+          "team-collaboration"
+        ],
+        "updatedAt": "2026-02-23T23:35:16Z",
+        "createdAt": "2026-02-02T07:56:39Z"
+      },
+      "analysis": {
+        "summary": "Give your AI a life — open-source agent infrastructure for team collaboration.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-02",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1147379948",
+      "source": "github",
+      "title": "abhi1693/openclaw-mission-control",
+      "description": "AI Agent Orchestration Dashboard - Manage AI agents, assign tasks, and coordinate multi-agent collaboration via OpenClaw Gateway.",
+      "url": "https://github.com/abhi1693/openclaw-mission-control",
+      "image": "https://opengraph.githubassets.com/1/abhi1693/openclaw-mission-control",
+      "metadata": {
+        "stars": 744,
+        "language": "TypeScript",
+        "topics": [
+          "ai-agents",
+          "automation",
+          "openclaw",
+          "orchestration"
+        ],
+        "updatedAt": "2026-02-23T23:53:44Z",
+        "createdAt": "2026-02-01T16:53:45Z"
+      },
+      "analysis": {
+        "summary": "AI Agent Orchestration Dashboard - Manage AI agents, assign tasks, and coordinate multi-agent collaboration via OpenClaw Gateway.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-01",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1146664329",
+      "source": "github",
+      "title": "crshdn/mission-control",
+      "description": "AI Agent Orchestration Dashboard - Manage AI agents, assign tasks, and coordinate multi-agent collaboration via OpenClaw Gateway.",
+      "url": "https://github.com/crshdn/mission-control",
+      "image": "https://opengraph.githubassets.com/1/crshdn/mission-control",
+      "metadata": {
+        "stars": 699,
+        "language": "TypeScript",
+        "topics": [
+          "aiagent",
+          "automation",
+          "openclaw"
+        ],
+        "updatedAt": "2026-02-23T23:16:59Z",
+        "createdAt": "2026-01-31T13:27:48Z"
+      },
+      "analysis": {
+        "summary": "AI Agent Orchestration Dashboard - Manage AI agents, assign tasks, and coordinate multi-agent collaboration via OpenClaw Gateway.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-01-31",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1142274728",
+      "source": "github",
+      "title": "jo-inc/camofox-browser",
+      "description": "Headless browser automation server for AI agents to visit sites that are usually blocked",
+      "url": "https://github.com/jo-inc/camofox-browser",
+      "image": "https://opengraph.githubassets.com/1/jo-inc/camofox-browser",
+      "metadata": {
+        "stars": 647,
+        "language": "JavaScript",
+        "topics": [],
+        "updatedAt": "2026-02-23T22:46:15Z",
+        "createdAt": "2026-01-26T07:31:13Z"
+      },
+      "analysis": {
+        "summary": "Headless browser automation server for AI agents to visit sites that are usually blocked",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-01-26",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1143687300",
+      "source": "github",
+      "title": "cursor/agent-trace",
+      "description": "A standard format for tracing AI-generated code.",
+      "url": "https://github.com/cursor/agent-trace",
+      "image": "https://opengraph.githubassets.com/1/cursor/agent-trace",
+      "metadata": {
+        "stars": 599,
+        "language": "TypeScript",
+        "topics": [],
+        "updatedAt": "2026-02-23T20:10:37Z",
+        "createdAt": "2026-01-27T22:07:15Z"
+      },
+      "analysis": {
+        "summary": "A standard format for tracing AI-generated code.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-01-27",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1147600037",
+      "source": "github",
+      "title": "stephengpope/thepopebot",
+      "description": "The Pope Bot is an autonomous AI agent that you can configure and build to do just about anything you want, all day, everyday, 24/7.",
+      "url": "https://github.com/stephengpope/thepopebot",
+      "image": "https://opengraph.githubassets.com/1/stephengpope/thepopebot",
+      "metadata": {
+        "stars": 598,
+        "language": "JavaScript",
+        "topics": [],
+        "updatedAt": "2026-02-23T23:56:48Z",
+        "createdAt": "2026-02-02T01:25:10Z"
+      },
+      "analysis": {
+        "summary": "The Pope Bot is an autonomous AI agent that you can configure and build to do just about anything you want, all day, everyday, 24/7.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-02",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1153190876",
+      "source": "github",
+      "title": "zilliztech/memsearch",
+      "description": "A Markdown-first memory system, a standalone library for any AI agent. Inspired by OpenClaw.",
+      "url": "https://github.com/zilliztech/memsearch",
+      "image": "https://opengraph.githubassets.com/1/zilliztech/memsearch",
+      "metadata": {
+        "stars": 586,
+        "language": "Python",
+        "topics": [
+          "agent",
+          "agent-memory",
+          "claude-code",
+          "claude-code-plugin",
+          "clawdbot",
+          "embeddings",
+          "memory",
+          "milvus",
+          "openclaw",
+          "progressive-disclosure",
+          "rag",
+          "semantic-search"
+        ],
+        "updatedAt": "2026-02-23T23:56:56Z",
+        "createdAt": "2026-02-09T02:29:16Z"
+      },
+      "analysis": {
+        "summary": "A Markdown-first memory system, a standalone library for any AI agent. Inspired by OpenClaw.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-09",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1161025758",
+      "source": "github",
+      "title": "TraderAlice/OpenAlice",
+      "description": "File-driven AI trading agent engine for crypto and securities markets",
+      "url": "https://github.com/TraderAlice/OpenAlice",
+      "image": "https://opengraph.githubassets.com/1/TraderAlice/OpenAlice",
+      "metadata": {
+        "stars": 576,
+        "language": "TypeScript",
+        "topics": [],
+        "updatedAt": "2026-02-23T23:31:28Z",
+        "createdAt": "2026-02-18T16:42:55Z"
+      },
+      "analysis": {
+        "summary": "File-driven AI trading agent engine for crypto and securities markets",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-18",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1156170875",
+      "source": "github",
+      "title": "Nasiko-Labs/nasiko",
+      "description": "Developer Control Plane for your AI Agents",
+      "url": "https://github.com/Nasiko-Labs/nasiko",
+      "image": "https://opengraph.githubassets.com/1/Nasiko-Labs/nasiko",
+      "metadata": {
+        "stars": 532,
+        "language": "Python",
+        "topics": [],
+        "updatedAt": "2026-02-22T20:16:04Z",
+        "createdAt": "2026-02-12T10:45:29Z"
+      },
+      "analysis": {
+        "summary": "Developer Control Plane for your AI Agents",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-12",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1150822093",
+      "source": "github",
+      "title": "jingkaihe/matchlock",
+      "description": "Matchlock secures AI agent workloads with a Linux-based sandbox.",
+      "url": "https://github.com/jingkaihe/matchlock",
+      "image": "https://opengraph.githubassets.com/1/jingkaihe/matchlock",
+      "metadata": {
+        "stars": 471,
+        "language": "Go",
+        "topics": [],
+        "updatedAt": "2026-02-23T22:47:10Z",
+        "createdAt": "2026-02-05T18:22:39Z"
+      },
+      "analysis": {
+        "summary": "Matchlock secures AI agent workloads with a Linux-based sandbox.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-05",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1157928891",
+      "source": "github",
+      "title": "tomascupr/sandstorm",
+      "description": "Run Claude agents in secure cloud sandboxes — via API, CLI, or Slack. One call. Full agent. Zero infrastructure.",
+      "url": "https://github.com/tomascupr/sandstorm",
+      "image": "https://opengraph.githubassets.com/1/tomascupr/sandstorm",
+      "metadata": {
+        "stars": 399,
+        "language": "Python",
+        "topics": [
+          "agent-sdk",
+          "ai",
+          "ai-agents",
+          "anthropic",
+          "claude",
+          "e2b",
+          "fastapi",
+          "llm",
+          "python",
+          "sandbox",
+          "slack-bot"
+        ],
+        "updatedAt": "2026-02-23T23:21:18Z",
+        "createdAt": "2026-02-14T14:26:15Z"
+      },
+      "analysis": {
+        "summary": "Run Claude agents in secure cloud sandboxes — via API, CLI, or Slack. One call. Full agent. Zero infrastructure.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-14",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1160327105",
+      "source": "github",
+      "title": "superhq-ai/shuru",
+      "description": "A local-first microVM sandbox for running AI agents safely on macOS",
+      "url": "https://github.com/superhq-ai/shuru",
+      "image": "https://opengraph.githubassets.com/1/superhq-ai/shuru",
+      "metadata": {
+        "stars": 384,
+        "language": "Rust",
+        "topics": [],
+        "updatedAt": "2026-02-23T23:48:41Z",
+        "createdAt": "2026-02-17T20:09:15Z"
+      },
+      "analysis": {
+        "summary": "A local-first microVM sandbox for running AI agents safely on macOS",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-17",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1148739617",
+      "source": "github",
+      "title": "BakeLens/crust",
+      "description": "🌟 Open Source AI Agent Security Infrastructure — intercepts and blocks dangerous agent behaviors before they happen. Just one command! Join us to build safer Human-AI Symbiosis! ",
+      "url": "https://github.com/BakeLens/crust",
+      "image": "https://opengraph.githubassets.com/1/BakeLens/crust",
+      "metadata": {
+        "stars": 375,
+        "language": "Go",
+        "topics": [
+          "agentic",
+          "security"
+        ],
+        "updatedAt": "2026-02-23T22:33:09Z",
+        "createdAt": "2026-02-03T10:04:32Z"
+      },
+      "analysis": {
+        "summary": "🌟 Open Source AI Agent Security Infrastructure — intercepts and blocks dangerous agent behaviors before they happen. Just one command! Join us to build safer Human-AI Symbiosis! ",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-03",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1157403551",
+      "source": "github",
+      "title": "SamuelQZQ/auto-coding-agent-demo",
+      "description": "一个长达 10 小时的 AI 全自动编程实验",
+      "url": "https://github.com/SamuelQZQ/auto-coding-agent-demo",
+      "image": "https://opengraph.githubassets.com/1/SamuelQZQ/auto-coding-agent-demo",
+      "metadata": {
+        "stars": 360,
+        "language": "TypeScript",
+        "topics": [],
+        "updatedAt": "2026-02-23T17:23:01Z",
+        "createdAt": "2026-02-13T19:25:20Z"
+      },
+      "analysis": {
+        "summary": "一个长达 10 小时的 AI 全自动编程实验",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-13",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1161940285",
+      "source": "github",
+      "title": "quoroom-ai/room",
+      "description": "Autonomous AI agents will earn money — with or without us. It's already happening behind closed doors. We believe this should be studied in the open, where everyone can watch, learn, and build on the results.  Quoroom is a public experiment: let's see what a swarm of AI agents can actually do when given a goal and a wallet.",
+      "url": "https://github.com/quoroom-ai/room",
+      "image": "https://opengraph.githubassets.com/1/quoroom-ai/room",
+      "metadata": {
+        "stars": 360,
+        "language": "TypeScript",
+        "topics": [
+          "ai",
+          "automaton",
+          "claude",
+          "claudecode",
+          "linux",
+          "llm",
+          "macos",
+          "openclaw",
+          "windows"
+        ],
+        "updatedAt": "2026-02-23T22:57:55Z",
+        "createdAt": "2026-02-19T17:35:25Z"
+      },
+      "analysis": {
+        "summary": "Autonomous AI agents will earn money — with or without us. It's already happening behind closed doors. We believe this should be studied in the open, where everyone can watch, learn, and build on the results.  Quoroom is a public experiment: let's see what a swarm of AI agents can actually do when given a goal and a wallet.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-19",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1153451691",
+      "source": "github",
+      "title": "Cranot/roam-code",
+      "description": "Architectural intelligence layer for AI coding agents — structural graph, architecture governance, multi-agent orchestration, vulnerability mapping. 94 commands, 26 languages, 100% local.",
+      "url": "https://github.com/Cranot/roam-code",
+      "image": "https://opengraph.githubassets.com/1/Cranot/roam-code",
+      "metadata": {
+        "stars": 324,
+        "language": "Python",
+        "topics": [],
+        "updatedAt": "2026-02-23T23:57:34Z",
+        "createdAt": "2026-02-09T10:11:37Z"
+      },
+      "analysis": {
+        "summary": "Architectural intelligence layer for AI coding agents — structural graph, architecture governance, multi-agent orchestration, vulnerability mapping. 94 commands, 26 languages, 100% local.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-09",
+      "category": "ai-agent"
+    }
+  ]
+}
