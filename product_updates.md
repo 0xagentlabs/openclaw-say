@@ -1,30 +1,30 @@
 ## 📢 AI Product Updates
 
 ### OpenAI
-- [GPT-5.2 derives a new result in theoretical physics](https://openai.com/index/new-result-theoretical-physics) - _Fri, 13 Feb 2026 11:00:00 GMT_
-- [Introducing Lockdown Mode and Elevated Risk labels in ChatGPT](https://openai.com/index/introducing-lockdown-mode-and-elevated-risk-labels-in-chatgpt) - _Fri, 13 Feb 2026 10:00:00 GMT_
-- [Beyond rate limits: scaling access to Codex and Sora](https://openai.com/index/beyond-rate-limits) - _Fri, 13 Feb 2026 09:00:00 GMT_
-- [Scaling social science research](https://openai.com/index/scaling-social-science-research) - _Fri, 13 Feb 2026 09:00:00 GMT_
-- [Introducing GPT-5.3-Codex-Spark](https://openai.com/index/introducing-gpt-5-3-codex-spark) - _Thu, 12 Feb 2026 10:00:00 GMT_
+- [Why we no longer evaluate SWE-bench Verified](https://openai.com/index/why-we-no-longer-evaluate-swe-bench-verified) - _Mon, 23 Feb 2026 11:00:00 GMT_
+- [OpenAI announces Frontier Alliance Partners](https://openai.com/index/frontier-alliance-partners) - _Mon, 23 Feb 2026 05:30:00 GMT_
+- [Our First Proof submissions](https://openai.com/index/first-proof-submissions) - _Fri, 20 Feb 2026 14:30:00 GMT_
+- [Advancing independent research on AI alignment](https://openai.com/index/advancing-independent-research-ai-alignment) - _Thu, 19 Feb 2026 10:00:00 GMT_
+- [Introducing OpenAI for India](https://openai.com/index/openai-for-india) - _Wed, 18 Feb 2026 21:00:00 GMT_
 
 ### Google AI
-- [Gemini 3 Deep Think: Advancing science, research and engineering](https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-deep-think/) - _Thu, 12 Feb 2026 16:13:00 +0000_
-- [9 fun questions to try asking Google Photos](https://blog.google/products-and-platforms/products/photos/ask-button-ask-photos-tips/) - _Tue, 10 Feb 2026 17:00:00 +0000_
-- [Helping kids and teens learn and grow online on Safer Internet Day](https://blog.google/innovation-and-ai/technology/safety-security/safer-internet-day-2026-kids-teens/) - _Tue, 10 Feb 2026 02:30:00 +0000_
-- [Natively Adaptive Interfaces: A new framework for AI accessibility](https://blog.google/company-news/outreach-and-initiatives/accessibility/natively-adaptive-interfaces-ai-accessibility/) - _Thu, 05 Feb 2026 17:00:00 +0000_
-- [How Google Cloud is helping Team USA elevate their tricks with AI](https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/us-ski-snowboard-tool-winter-olympics-2026/) - _Thu, 05 Feb 2026 16:00:00 +0000_
+- [“No technology has me dreaming bigger than AI”](https://blog.google/company-news/inside-google/message-ceo/sundar-pichai-ai-impact-summit-2026/) - _Thu, 19 Feb 2026 04:30:00 +0000_
+- [AI Impact Summit 2026](https://blog.google/innovation-and-ai/technology/ai/ai-impact-summit-2026-collection/) - _Thu, 19 Feb 2026 04:30:00 +0000_
+- [A new way to express yourself: Gemini can now create music](https://blog.google/innovation-and-ai/products/gemini-app/lyria-3/) - _Wed, 18 Feb 2026 16:00:00 +0000_
+- [AI Impact Summit 2026: How we’re partnering to make AI work for everyone](https://blog.google/innovation-and-ai/technology/ai/ai-impact-summit-2026-india/) - _Wed, 18 Feb 2026 10:30:00 +0000_
+- [Our 2026 Responsible AI Progress Report](https://blog.google/innovation-and-ai/products/responsible-ai-2026-report-ongoing-work/) - _Tue, 17 Feb 2026 22:30:00 +0000_
 
 ### Product Hunt
-- [GoClaw](https://www.producthunt.com/products/goclaw) - _2026-02-13T23:13:55-08:00_
-- [MyBikeFitting](https://www.producthunt.com/products/mybikefitting) - _2026-02-13T23:31:30-08:00_
-- [FlowGrid](https://www.producthunt.com/products/flowgrid) - _2026-02-13T23:08:24-08:00_
-- [Cosmic-light](https://www.producthunt.com/products/cosmic-light) - _2026-02-13T22:03:20-08:00_
-- [Code Arena](https://www.producthunt.com/products/arena-5) - _2026-02-13T23:39:02-08:00_
+- [OpenHunt](https://www.producthunt.com/products/openhunt) - _2026-02-23T16:56:29-08:00_
+- [SkillForge](https://www.producthunt.com/products/skillforge-2) - _2026-02-23T16:58:42-08:00_
+- [Wispr Flow for Android](https://www.producthunt.com/products/wisprflow) - _2026-02-23T17:47:12-08:00_
+- [Siteline](https://www.producthunt.com/products/siteline) - _2026-02-23T17:48:38-08:00_
+- [Cuto](https://www.producthunt.com/products/cuto) - _2026-02-23T16:58:42-08:00_
 
 ### Anthropic
-- [Anthropic partners with CodePath to bring Claude to the US’s largest collegiate computer science program](https://www.anthropic.com/news/anthropic-codepath-partnership) - _2026-02-13T20:47:00.000Z_
-- [Chris Liddell appointed to Anthropic’s board of directors](https://www.anthropic.com/news/chris-liddell-appointed-anthropic-board) - _2026-02-13T14:57:00.000Z_
-- [Anthropic raises $30 billion in Series G funding at $380 billion post-money valuation](https://www.anthropic.com/news/anthropic-raises-30-billion-series-g-funding-380-billion-post-money-valuation) - _2026-02-12T19:00:00.000Z_
-- [Anthropic is donating $20 million to Public First Action](https://www.anthropic.com/news/donate-public-first-action) - _2026-02-12T11:45:00.000Z_
-- [Covering electricity price increases from our data centers](https://www.anthropic.com/news/covering-electricity-price-increases) - _2026-02-11T20:23:00.000Z_
+- [Detecting and preventing distillation attacks ](https://www.anthropic.com/news/detecting-and-preventing-distillation-attacks) - _2026-02-23T18:00:00.000Z_
+- [Making frontier cybersecurity capabilities available to defenders](https://www.anthropic.com/news/claude-code-security) - _2026-02-20T17:59:00.000Z_
+- [Anthropic and the Government of Rwanda sign MOU for AI in health and education](https://www.anthropic.com/news/anthropic-rwanda-mou) - _2026-02-17T20:37:00.000Z_
+- [Introducing Claude Sonnet 4.6](https://www.anthropic.com/news/claude-sonnet-4-6) - _2026-02-17T18:00:00.000Z_
+- [Anthropic and Infosys collaborate to build AI agents for telecommunications and other regulated industries](https://www.anthropic.com/news/anthropic-infosys) - _2026-02-17T06:19:07.669Z_
 
