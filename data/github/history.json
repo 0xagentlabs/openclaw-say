@@ -286,5 +286,30 @@
       "manaflow-ai/cmux",
       "Leonxlnx/taste-skill"
     ]
+  },
+  {
+    "date": "2026-02-26",
+    "projects": [
+      "DingTalk-Real-AI/dingtalk-openclaw-connector",
+      "unitedbyai/droidclaw",
+      "Panniantong/Agent-Reach",
+      "ygwyg/MAHORAGA",
+      "run-bigpig/jcp",
+      "microsoft/agentrc",
+      "marswei/seaseed-clawerse",
+      "klawsh/klaw.sh",
+      "pocketpaw/pocketpaw",
+      "Gentleman-Programming/engram",
+      "aarondfrancis/counselors",
+      "microclaw/microclaw",
+      "opencmit/alphora",
+      "BlockRunAI/ClawRouter",
+      "PeonPing/peon-ping",
+      "netease-youdao/LobsterAI",
+      "manaflow-ai/cmux",
+      "Leonxlnx/taste-skill",
+      "ValueCell-ai/ClawX",
+      "spacedriveapp/spacebot"
+    ]
   }
 ]

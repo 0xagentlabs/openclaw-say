@@ -1,0 +1,585 @@
+{
+  "date": "2026-02-26",
+  "count": 20,
+  "items": [
+    {
+      "id": "github-1144107326",
+      "source": "github",
+      "title": "DingTalk-Real-AI/dingtalk-openclaw-connector",
+      "description": "将 钉钉机器人 / 钉钉 DEAP Agent 连接到 OpenClaw Gateway 的OpenClaw Plugin，支持 AI Card 流式响应",
+      "url": "https://github.com/DingTalk-Real-AI/dingtalk-openclaw-connector",
+      "image": "https://opengraph.githubassets.com/1/DingTalk-Real-AI/dingtalk-openclaw-connector",
+      "metadata": {
+        "stars": 1308,
+        "language": "TypeScript",
+        "topics": [],
+        "updatedAt": "2026-02-25T22:28:55Z",
+        "createdAt": "2026-01-28T09:51:24Z"
+      },
+      "analysis": {
+        "summary": "将 钉钉机器人 / 钉钉 DEAP Agent 连接到 OpenClaw Gateway 的OpenClaw Plugin，支持 AI Card 流式响应",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-01-28",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1151091760",
+      "source": "github",
+      "title": "unitedbyai/droidclaw",
+      "description": "turn old phones into ai agents - give it a goal in plain english. it reads the screen, thinks about what to do, taps and types via adb, and repeats until the job is done. ",
+      "url": "https://github.com/unitedbyai/droidclaw",
+      "image": "https://opengraph.githubassets.com/1/unitedbyai/droidclaw",
+      "metadata": {
+        "stars": 971,
+        "language": "TypeScript",
+        "topics": [],
+        "updatedAt": "2026-02-25T21:54:09Z",
+        "createdAt": "2026-02-06T03:29:38Z"
+      },
+      "analysis": {
+        "summary": "turn old phones into ai agents - give it a goal in plain english. it reads the screen, thinks about what to do, taps and types via adb, and repeats until the job is done. ",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-06",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1165277268",
+      "source": "github",
+      "title": "Panniantong/Agent-Reach",
+      "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
+      "url": "https://github.com/Panniantong/Agent-Reach",
+      "image": "https://opengraph.githubassets.com/1/Panniantong/Agent-Reach",
+      "metadata": {
+        "stars": 929,
+        "language": "Python",
+        "topics": [
+          "agent-infrastructure",
+          "ai-agent",
+          "ai-search",
+          "automation",
+          "bilibili",
+          "claude-code",
+          "cli",
+          "cursor",
+          "free-api",
+          "llm-tools",
+          "mcp",
+          "python",
+          "reddit-scraper",
+          "twitter-scraper",
+          "web-scraper",
+          "xiaohongshu",
+          "youtube-transcript"
+        ],
+        "updatedAt": "2026-02-25T23:59:52Z",
+        "createdAt": "2026-02-24T02:10:24Z"
+      },
+      "analysis": {
+        "summary": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-24",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1146981739",
+      "source": "github",
+      "title": "ygwyg/MAHORAGA",
+      "description": "autonomous trading agent powered by social sentiment analysis and ai that learns, grows, and adapts",
+      "url": "https://github.com/ygwyg/MAHORAGA",
+      "image": "https://opengraph.githubassets.com/1/ygwyg/MAHORAGA",
+      "metadata": {
+        "stars": 759,
+        "language": "TypeScript",
+        "topics": [],
+        "updatedAt": "2026-02-25T19:21:28Z",
+        "createdAt": "2026-02-01T01:49:05Z"
+      },
+      "analysis": {
+        "summary": "autonomous trading agent powered by social sentiment analysis and ai that learns, grows, and adapts",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-01",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1149626116",
+      "source": "github",
+      "title": "run-bigpig/jcp",
+      "description": "韭菜盘 (JCP AI) - AI 驱动的智能A股分析系统，基于 Wails + Go + React，支持多 Agent 协作分析",
+      "url": "https://github.com/run-bigpig/jcp",
+      "image": "https://opengraph.githubassets.com/1/run-bigpig/jcp",
+      "metadata": {
+        "stars": 747,
+        "language": "Go",
+        "topics": [],
+        "updatedAt": "2026-02-25T18:39:03Z",
+        "createdAt": "2026-02-04T10:29:51Z"
+      },
+      "analysis": {
+        "summary": "韭菜盘 (JCP AI) - AI 驱动的智能A股分析系统，基于 Wails + Go + React，支持多 Agent 协作分析",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-04",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1144786495",
+      "source": "github",
+      "title": "microsoft/agentrc",
+      "description": "Get your repo ready for AI.",
+      "url": "https://github.com/microsoft/agentrc",
+      "image": "https://opengraph.githubassets.com/1/microsoft/agentrc",
+      "metadata": {
+        "stars": 624,
+        "language": "TypeScript",
+        "topics": [],
+        "updatedAt": "2026-02-25T19:13:21Z",
+        "createdAt": "2026-01-29T03:37:22Z"
+      },
+      "analysis": {
+        "summary": "Get your repo ready for AI.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-01-29",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1158054300",
+      "source": "github",
+      "title": "marswei/seaseed-clawerse",
+      "description": "Open-source implementation of SeaSeed.ai v1.0 (codename: Clawerse). AI ocean world platform for multi-agent social, tasks and compute collaboration.",
+      "url": "https://github.com/marswei/seaseed-clawerse",
+      "image": "https://opengraph.githubassets.com/1/marswei/seaseed-clawerse",
+      "metadata": {
+        "stars": 578,
+        "language": "JavaScript",
+        "topics": [],
+        "updatedAt": "2026-02-25T23:30:24Z",
+        "createdAt": "2026-02-14T18:13:42Z"
+      },
+      "analysis": {
+        "summary": "Open-source implementation of SeaSeed.ai v1.0 (codename: Clawerse). AI ocean world platform for multi-agent social, tasks and compute collaboration.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-14",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1158269547",
+      "source": "github",
+      "title": "klawsh/klaw.sh",
+      "description": "kubectl for AI Agents",
+      "url": "https://github.com/klawsh/klaw.sh",
+      "image": "https://opengraph.githubassets.com/1/klawsh/klaw.sh",
+      "metadata": {
+        "stars": 549,
+        "language": "Go",
+        "topics": [
+          "agents",
+          "ai-agents",
+          "orchestration"
+        ],
+        "updatedAt": "2026-02-25T19:52:51Z",
+        "createdAt": "2026-02-15T04:18:19Z"
+      },
+      "analysis": {
+        "summary": "kubectl for AI Agents",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-15",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1148290190",
+      "source": "github",
+      "title": "pocketpaw/pocketpaw",
+      "description": "Your AI agent in 30 seconds. Not 30 hours. Self-hosted, open-source personal AI with desktop installer, multi-agent Command Center(Deep Work), and 7-layer security. Anthropic, OpenAI, or Ollama.",
+      "url": "https://github.com/pocketpaw/pocketpaw",
+      "image": "https://opengraph.githubassets.com/1/pocketpaw/pocketpaw",
+      "metadata": {
+        "stars": 496,
+        "language": "Python",
+        "topics": [
+          "ai-agents",
+          "cli",
+          "jarvis-assistant",
+          "multi-agent-systems",
+          "ollama",
+          "open-source",
+          "personal-assistant",
+          "python",
+          "security",
+          "self-hosted",
+          "telegram-bot-ai-assistant"
+        ],
+        "updatedAt": "2026-02-25T18:07:07Z",
+        "createdAt": "2026-02-02T19:48:57Z"
+      },
+      "analysis": {
+        "summary": "Your AI agent in 30 seconds. Not 30 hours. Self-hosted, open-source personal AI with desktop installer, multi-agent Command Center(Deep Work), and 7-layer security. Anthropic, OpenAI, or Ollama.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-02",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1159234860",
+      "source": "github",
+      "title": "Gentleman-Programming/engram",
+      "description": "Persistent memory system for AI coding agents. Agent-agnostic Go binary with SQLite + FTS5, MCP server, HTTP API, CLI, and TUI.",
+      "url": "https://github.com/Gentleman-Programming/engram",
+      "image": "https://opengraph.githubassets.com/1/Gentleman-Programming/engram",
+      "metadata": {
+        "stars": 483,
+        "language": "Go",
+        "topics": [],
+        "updatedAt": "2026-02-25T22:23:02Z",
+        "createdAt": "2026-02-16T13:38:41Z"
+      },
+      "analysis": {
+        "summary": "Persistent memory system for AI coding agents. Agent-agnostic Go binary with SQLite + FTS5, MCP server, HTTP API, CLI, and TUI.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-16",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1153958981",
+      "source": "github",
+      "title": "aarondfrancis/counselors",
+      "description": "Fan out prompts to multiple AI coding agents in parallel",
+      "url": "https://github.com/aarondfrancis/counselors",
+      "image": "https://opengraph.githubassets.com/1/aarondfrancis/counselors",
+      "metadata": {
+        "stars": 453,
+        "language": "TypeScript",
+        "topics": [],
+        "updatedAt": "2026-02-25T23:58:53Z",
+        "createdAt": "2026-02-09T21:32:01Z"
+      },
+      "analysis": {
+        "summary": "Fan out prompts to multiple AI coding agents in parallel",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-09",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1152019564",
+      "source": "github",
+      "title": "microclaw/microclaw",
+      "description": "🦀An agentic AI assistant that lives in your chats, inspired by nanoclaw and incorporating some of its design ideas. Built with Rust 🦀",
+      "url": "https://github.com/microclaw/microclaw",
+      "image": "https://opengraph.githubassets.com/1/microclaw/microclaw",
+      "metadata": {
+        "stars": 407,
+        "language": "Rust",
+        "topics": [
+          "bot",
+          "nanoclaw",
+          "openclaw",
+          "rust"
+        ],
+        "updatedAt": "2026-02-25T21:53:11Z",
+        "createdAt": "2026-02-07T08:28:51Z"
+      },
+      "analysis": {
+        "summary": "🦀An agentic AI assistant that lives in your chats, inspired by nanoclaw and incorporating some of its design ideas. Built with Rust 🦀",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-07",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1148628738",
+      "source": "github",
+      "title": "opencmit/alphora",
+      "description": "A Production-Ready Framework for Building Composable AI Agents",
+      "url": "https://github.com/opencmit/alphora",
+      "image": "https://opengraph.githubassets.com/1/opencmit/alphora",
+      "metadata": {
+        "stars": 318,
+        "language": "Python",
+        "topics": [
+          "agent-framework",
+          "ai-agents",
+          "llm",
+          "multi-agent-systems"
+        ],
+        "updatedAt": "2026-02-25T23:16:12Z",
+        "createdAt": "2026-02-03T07:18:35Z"
+      },
+      "analysis": {
+        "summary": "A Production-Ready Framework for Building Composable AI Agents",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-03",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1149071982",
+      "source": "github",
+      "title": "BlockRunAI/ClawRouter",
+      "description": "The agent-native LLM router empowering OpenClaw — by BlockRunAI",
+      "url": "https://github.com/BlockRunAI/ClawRouter",
+      "image": "https://opengraph.githubassets.com/1/BlockRunAI/ClawRouter",
+      "metadata": {
+        "stars": 3537,
+        "language": "TypeScript",
+        "topics": [
+          "ai",
+          "ai-agents",
+          "anthropic",
+          "cost-optimization",
+          "crypto",
+          "deepseek",
+          "gemini",
+          "llm",
+          "llm-router",
+          "micropayments",
+          "openai",
+          "openclaw",
+          "smart-routing",
+          "usdc",
+          "x402"
+        ],
+        "updatedAt": "2026-02-25T23:57:38Z",
+        "createdAt": "2026-02-03T17:32:00Z"
+      },
+      "analysis": {
+        "summary": "The agent-native LLM router empowering OpenClaw — by BlockRunAI",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-03",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1154009261",
+      "source": "github",
+      "title": "PeonPing/peon-ping",
+      "description": "Warcraft III Peon voice notifications (+ more!) for Claude Code, Codex, IDEs, and any AI agent. Stop babysitting your terminal. Employ a Peon today.",
+      "url": "https://github.com/PeonPing/peon-ping",
+      "image": "https://opengraph.githubassets.com/1/PeonPing/peon-ping",
+      "metadata": {
+        "stars": 2828,
+        "language": "Shell",
+        "topics": [
+          "ai",
+          "ai-engineering",
+          "antigravity",
+          "claude-code",
+          "codex",
+          "cursor",
+          "opencode",
+          "terminal"
+        ],
+        "updatedAt": "2026-02-25T23:51:48Z",
+        "createdAt": "2026-02-09T23:12:48Z"
+      },
+      "analysis": {
+        "summary": "Warcraft III Peon voice notifications (+ more!) for Claude Code, Codex, IDEs, and any AI agent. Stop babysitting your terminal. Employ a Peon today.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-09",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1156137396",
+      "source": "github",
+      "title": "netease-youdao/LobsterAI",
+      "description": "Your 24/7 all-scenario AI agent that gets work done for you.",
+      "url": "https://github.com/netease-youdao/LobsterAI",
+      "image": "https://opengraph.githubassets.com/1/netease-youdao/LobsterAI",
+      "metadata": {
+        "stars": 2453,
+        "language": "TypeScript",
+        "topics": [],
+        "updatedAt": "2026-02-25T22:31:50Z",
+        "createdAt": "2026-02-12T09:56:20Z"
+      },
+      "analysis": {
+        "summary": "Your 24/7 all-scenario AI agent that gets work done for you.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-12",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1144115288",
+      "source": "github",
+      "title": "manaflow-ai/cmux",
+      "description": "Ghostty-based macOS terminal with vertical tabs and notifications for AI coding agents",
+      "url": "https://github.com/manaflow-ai/cmux",
+      "image": "https://opengraph.githubassets.com/1/manaflow-ai/cmux",
+      "metadata": {
+        "stars": 1806,
+        "language": "Swift",
+        "topics": [
+          "amp",
+          "claude-code",
+          "codex",
+          "gemini",
+          "ghostty",
+          "opencode",
+          "terminal",
+          "tmux"
+        ],
+        "updatedAt": "2026-02-25T23:55:30Z",
+        "createdAt": "2026-01-28T10:03:24Z"
+      },
+      "analysis": {
+        "summary": "Ghostty-based macOS terminal with vertical tabs and notifications for AI coding agents",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-01-28",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1162099055",
+      "source": "github",
+      "title": "Leonxlnx/taste-skill",
+      "description": "Taste-Skill (High-Agency Frontend) - gives your AI good taste. stops the AI from generating boring, generic, \"slop\" ",
+      "url": "https://github.com/Leonxlnx/taste-skill",
+      "image": "https://opengraph.githubassets.com/1/Leonxlnx/taste-skill",
+      "metadata": {
+        "stars": 1569,
+        "language": "Unknown",
+        "topics": [
+          "agent",
+          "ai",
+          "coding",
+          "lowcode",
+          "nocode",
+          "skill",
+          "skills",
+          "vibecoding"
+        ],
+        "updatedAt": "2026-02-25T23:53:30Z",
+        "createdAt": "2026-02-19T21:44:05Z"
+      },
+      "analysis": {
+        "summary": "Taste-Skill (High-Agency Frontend) - gives your AI good taste. stops the AI from generating boring, generic, \"slop\" ",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-19",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1150626239",
+      "source": "github",
+      "title": "ValueCell-ai/ClawX",
+      "description": "ClawX is a desktop app that provides a graphical interface for OpenClaw AI agents. It turns CLI-based AI orchestration into a desktop experience without using the terminal. We’ve moved from clawx.dev to claw-x.com.",
+      "url": "https://github.com/ValueCell-ai/ClawX",
+      "image": "https://opengraph.githubassets.com/1/ValueCell-ai/ClawX",
+      "metadata": {
+        "stars": 1544,
+        "language": "TypeScript",
+        "topics": [
+          "agent",
+          "agentic-ai",
+          "agents",
+          "ai",
+          "clawdbot",
+          "moltbot",
+          "openclaw",
+          "skill"
+        ],
+        "updatedAt": "2026-02-25T23:58:07Z",
+        "createdAt": "2026-02-05T13:58:36Z"
+      },
+      "analysis": {
+        "summary": "ClawX is a desktop app that provides a graphical interface for OpenClaw AI agents. It turns CLI-based AI orchestration into a desktop experience without using the terminal. We’ve moved from clawx.dev to claw-x.com.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-05",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1155816493",
+      "source": "github",
+      "title": "spacedriveapp/spacebot",
+      "description": "An AI agent for teams, communities, and multi-user environments.",
+      "url": "https://github.com/spacedriveapp/spacebot",
+      "image": "https://opengraph.githubassets.com/1/spacedriveapp/spacebot",
+      "metadata": {
+        "stars": 1362,
+        "language": "Rust",
+        "topics": [
+          "agent",
+          "ai"
+        ],
+        "updatedAt": "2026-02-25T23:42:51Z",
+        "createdAt": "2026-02-11T23:53:16Z"
+      },
+      "analysis": {
+        "summary": "An AI agent for teams, communities, and multi-user environments.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-11",
+      "category": "ai-agent"
+    }
+  ]
+}

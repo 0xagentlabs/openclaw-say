@@ -1,0 +1,349 @@
+{
+  "date": "2026-02-26",
+  "count": 20,
+  "sources": [
+    "rotated"
+  ],
+  "items": [
+    {
+      "id": "producthunt-rotated-57-0",
+      "source": "producthunt",
+      "title": "Dify",
+      "description": "Open-source LLM app development platform",
+      "url": "https://www.google.com/search?q=Dify%20AI%20tool",
+      "image": "https://ui-avatars.com/api/?name=D&background=0a192f&color=64ffda&size=400",
+      "metadata": {
+        "votes": 3800,
+        "topics": [
+          "developer"
+        ],
+        "source": "rotated"
+      },
+      "publishedAt": "2026-02-26",
+      "category": "product"
+    },
+    {
+      "id": "producthunt-rotated-57-1",
+      "source": "producthunt",
+      "title": "Flowise",
+      "description": "Drag & drop UI to build LLM flows",
+      "url": "https://www.google.com/search?q=Flowise%20AI%20tool",
+      "image": "https://ui-avatars.com/api/?name=F&background=0a192f&color=64ffda&size=400",
+      "metadata": {
+        "votes": 3600,
+        "topics": [
+          "developer"
+        ],
+        "source": "rotated"
+      },
+      "publishedAt": "2026-02-26",
+      "category": "product"
+    },
+    {
+      "id": "producthunt-rotated-57-2",
+      "source": "producthunt",
+      "title": "AutoGPT",
+      "description": "Autonomous AI agent framework",
+      "url": "https://www.google.com/search?q=AutoGPT%20AI%20tool",
+      "image": "https://ui-avatars.com/api/?name=A&background=0a192f&color=64ffda&size=400",
+      "metadata": {
+        "votes": 15000,
+        "topics": [
+          "agent"
+        ],
+        "source": "rotated"
+      },
+      "publishedAt": "2026-02-26",
+      "category": "product"
+    },
+    {
+      "id": "producthunt-rotated-57-3",
+      "source": "producthunt",
+      "title": "BabyAGI",
+      "description": "AI-powered task management system",
+      "url": "https://www.google.com/search?q=BabyAGI%20AI%20tool",
+      "image": "https://ui-avatars.com/api/?name=B&background=0a192f&color=64ffda&size=400",
+      "metadata": {
+        "votes": 6800,
+        "topics": [
+          "agent"
+        ],
+        "source": "rotated"
+      },
+      "publishedAt": "2026-02-26",
+      "category": "product"
+    },
+    {
+      "id": "producthunt-rotated-57-4",
+      "source": "producthunt",
+      "title": "Superagent",
+      "description": "No-code autonomous AI agent framework",
+      "url": "https://www.google.com/search?q=Superagent%20AI%20tool",
+      "image": "https://ui-avatars.com/api/?name=S&background=0a192f&color=64ffda&size=400",
+      "metadata": {
+        "votes": 3200,
+        "topics": [
+          "agent"
+        ],
+        "source": "rotated"
+      },
+      "publishedAt": "2026-02-26",
+      "category": "product"
+    },
+    {
+      "id": "producthunt-rotated-57-5",
+      "source": "producthunt",
+      "title": "AgentGPT",
+      "description": "Deploy autonomous AI agents in browser",
+      "url": "https://www.google.com/search?q=AgentGPT%20AI%20tool",
+      "image": "https://ui-avatars.com/api/?name=A&background=0a192f&color=64ffda&size=400",
+      "metadata": {
+        "votes": 8500,
+        "topics": [
+          "agent"
+        ],
+        "source": "rotated"
+      },
+      "publishedAt": "2026-02-26",
+      "category": "product"
+    },
+    {
+      "id": "producthunt-rotated-57-6",
+      "source": "producthunt",
+      "title": "GPT-Engineer",
+      "description": "AI software engineer that writes code",
+      "url": "https://www.google.com/search?q=GPT-Engineer%20AI%20tool",
+      "image": "https://ui-avatars.com/api/?name=G&background=0a192f&color=64ffda&size=400",
+      "metadata": {
+        "votes": 9200,
+        "topics": [
+          "developer"
+        ],
+        "source": "rotated"
+      },
+      "publishedAt": "2026-02-26",
+      "category": "product"
+    },
+    {
+      "id": "producthunt-rotated-57-7",
+      "source": "producthunt",
+      "title": "Aider",
+      "description": "AI pair programming in your terminal",
+      "url": "https://www.google.com/search?q=Aider%20AI%20tool",
+      "image": "https://ui-avatars.com/api/?name=A&background=0a192f&color=64ffda&size=400",
+      "metadata": {
+        "votes": 4500,
+        "topics": [
+          "developer"
+        ],
+        "source": "rotated"
+      },
+      "publishedAt": "2026-02-26",
+      "category": "product"
+    },
+    {
+      "id": "producthunt-rotated-57-8",
+      "source": "producthunt",
+      "title": "Continue",
+      "description": "Open-source AI code assistant",
+      "url": "https://www.google.com/search?q=Continue%20AI%20tool",
+      "image": "https://ui-avatars.com/api/?name=C&background=0a192f&color=64ffda&size=400",
+      "metadata": {
+        "votes": 5200,
+        "topics": [
+          "developer"
+        ],
+        "source": "rotated"
+      },
+      "publishedAt": "2026-02-26",
+      "category": "product"
+    },
+    {
+      "id": "producthunt-rotated-57-9",
+      "source": "producthunt",
+      "title": "Codeium",
+      "description": "Free AI coding assistant",
+      "url": "https://www.google.com/search?q=Codeium%20AI%20tool",
+      "image": "https://ui-avatars.com/api/?name=C&background=0a192f&color=64ffda&size=400",
+      "metadata": {
+        "votes": 11000,
+        "topics": [
+          "developer"
+        ],
+        "source": "rotated"
+      },
+      "publishedAt": "2026-02-26",
+      "category": "product"
+    },
+    {
+      "id": "producthunt-rotated-57-10",
+      "source": "producthunt",
+      "title": "Tabnine",
+      "description": "AI code completion for teams",
+      "url": "https://www.google.com/search?q=Tabnine%20AI%20tool",
+      "image": "https://ui-avatars.com/api/?name=T&background=0a192f&color=64ffda&size=400",
+      "metadata": {
+        "votes": 7200,
+        "topics": [
+          "developer"
+        ],
+        "source": "rotated"
+      },
+      "publishedAt": "2026-02-26",
+      "category": "product"
+    },
+    {
+      "id": "producthunt-rotated-57-11",
+      "source": "producthunt",
+      "title": "Sourcegraph Cody",
+      "description": "AI coding assistant for enterprise",
+      "url": "https://www.google.com/search?q=Sourcegraph%20Cody%20AI%20tool",
+      "image": "https://ui-avatars.com/api/?name=SC&background=0a192f&color=64ffda&size=400",
+      "metadata": {
+        "votes": 4800,
+        "topics": [
+          "developer"
+        ],
+        "source": "rotated"
+      },
+      "publishedAt": "2026-02-26",
+      "category": "product"
+    },
+    {
+      "id": "producthunt-rotated-57-12",
+      "source": "producthunt",
+      "title": "GitHub Copilot",
+      "description": "AI pair programmer",
+      "url": "https://www.google.com/search?q=GitHub%20Copilot%20AI%20tool",
+      "image": "https://ui-avatars.com/api/?name=GC&background=0a192f&color=64ffda&size=400",
+      "metadata": {
+        "votes": 25000,
+        "topics": [
+          "developer"
+        ],
+        "source": "rotated"
+      },
+      "publishedAt": "2026-02-26",
+      "category": "product"
+    },
+    {
+      "id": "producthunt-rotated-57-13",
+      "source": "producthunt",
+      "title": "Amazon CodeWhisperer",
+      "description": "AI code generator from Amazon",
+      "url": "https://www.google.com/search?q=Amazon%20CodeWhisperer%20AI%20tool",
+      "image": "https://ui-avatars.com/api/?name=AC&background=0a192f&color=64ffda&size=400",
+      "metadata": {
+        "votes": 6200,
+        "topics": [
+          "developer"
+        ],
+        "source": "rotated"
+      },
+      "publishedAt": "2026-02-26",
+      "category": "product"
+    },
+    {
+      "id": "producthunt-rotated-57-14",
+      "source": "producthunt",
+      "title": "Gemini Code Assist",
+      "description": "Google's AI coding assistant",
+      "url": "https://www.google.com/search?q=Gemini%20Code%20Assist%20AI%20tool",
+      "image": "https://ui-avatars.com/api/?name=GC&background=0a192f&color=64ffda&size=400",
+      "metadata": {
+        "votes": 5800,
+        "topics": [
+          "developer"
+        ],
+        "source": "rotated"
+      },
+      "publishedAt": "2026-02-26",
+      "category": "product"
+    },
+    {
+      "id": "producthunt-rotated-57-15",
+      "source": "producthunt",
+      "title": "Phind",
+      "description": "AI search engine for developers",
+      "url": "https://www.google.com/search?q=Phind%20AI%20tool",
+      "image": "https://ui-avatars.com/api/?name=P&background=0a192f&color=64ffda&size=400",
+      "metadata": {
+        "votes": 4200,
+        "topics": [
+          "developer"
+        ],
+        "source": "rotated"
+      },
+      "publishedAt": "2026-02-26",
+      "category": "product"
+    },
+    {
+      "id": "producthunt-rotated-57-16",
+      "source": "producthunt",
+      "title": "Devin",
+      "description": "First AI software engineer",
+      "url": "https://www.google.com/search?q=Devin%20AI%20tool",
+      "image": "https://ui-avatars.com/api/?name=D&background=0a192f&color=64ffda&size=400",
+      "metadata": {
+        "votes": 18000,
+        "topics": [
+          "agent"
+        ],
+        "source": "rotated"
+      },
+      "publishedAt": "2026-02-26",
+      "category": "product"
+    },
+    {
+      "id": "producthunt-rotated-57-17",
+      "source": "producthunt",
+      "title": "Cognition",
+      "description": "AI teammate for engineering",
+      "url": "https://www.google.com/search?q=Cognition%20AI%20tool",
+      "image": "https://ui-avatars.com/api/?name=C&background=0a192f&color=64ffda&size=400",
+      "metadata": {
+        "votes": 9500,
+        "topics": [
+          "agent"
+        ],
+        "source": "rotated"
+      },
+      "publishedAt": "2026-02-26",
+      "category": "product"
+    },
+    {
+      "id": "producthunt-rotated-57-18",
+      "source": "producthunt",
+      "title": "OpenHands",
+      "description": "Open-source AI software engineer",
+      "url": "https://www.google.com/search?q=OpenHands%20AI%20tool",
+      "image": "https://ui-avatars.com/api/?name=O&background=0a192f&color=64ffda&size=400",
+      "metadata": {
+        "votes": 3800,
+        "topics": [
+          "agent"
+        ],
+        "source": "rotated"
+      },
+      "publishedAt": "2026-02-26",
+      "category": "product"
+    },
+    {
+      "id": "producthunt-rotated-57-19",
+      "source": "producthunt",
+      "title": "SWE-agent",
+      "description": "Agent that fixes GitHub issues",
+      "url": "https://www.google.com/search?q=SWE-agent%20AI%20tool",
+      "image": "https://ui-avatars.com/api/?name=S&background=0a192f&color=64ffda&size=400",
+      "metadata": {
+        "votes": 3200,
+        "topics": [
+          "agent"
+        ],
+        "source": "rotated"
+      },
+      "publishedAt": "2026-02-26",
+      "category": "product"
+    }
+  ]
+}
