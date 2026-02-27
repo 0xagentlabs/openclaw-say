@@ -311,5 +311,30 @@
       "ValueCell-ai/ClawX",
       "spacedriveapp/spacebot"
     ]
+  },
+  {
+    "date": "2026-02-27",
+    "projects": [
+      "aeromomo/claw-compactor",
+      "abhi1693/openclaw-mission-control",
+      "callstackincubator/agent-device",
+      "zylos-ai/zylos-core",
+      "stephengpope/thepopebot",
+      "crshdn/mission-control",
+      "TraderAlice/OpenAlice",
+      "zilliztech/memsearch",
+      "jayminwest/overstory",
+      "FireRedTeam/FireRed-OpenStoryline",
+      "Nasiko-Labs/nasiko",
+      "jingkaihe/matchlock",
+      "superhq-ai/shuru",
+      "quoroom-ai/room",
+      "tomascupr/sandstorm",
+      "SamuelQZQ/auto-coding-agent-demo",
+      "BakeLens/crust",
+      "Cranot/roam-code",
+      "harshkedia177/axon",
+      "BlockRunAI/ClawRouter"
+    ]
   }
 ]

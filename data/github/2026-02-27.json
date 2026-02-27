@@ -1,0 +1,600 @@
+{
+  "date": "2026-02-27",
+  "count": 20,
+  "items": [
+    {
+      "id": "github-1154042797",
+      "source": "github",
+      "title": "aeromomo/claw-compactor",
+      "description": "🦞 Claw Compactor — The 98% Crusher. Cut your AI agent token spend in half with 5 layered compression techniques.",
+      "url": "https://github.com/aeromomo/claw-compactor",
+      "image": "https://opengraph.githubassets.com/1/aeromomo/claw-compactor",
+      "metadata": {
+        "stars": 1103,
+        "language": "Python",
+        "topics": [],
+        "updatedAt": "2026-02-26T23:24:46Z",
+        "createdAt": "2026-02-10T00:27:08Z"
+      },
+      "analysis": {
+        "summary": "🦞 Claw Compactor — The 98% Crusher. Cut your AI agent token spend in half with 5 layered compression techniques.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-10",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1147379948",
+      "source": "github",
+      "title": "abhi1693/openclaw-mission-control",
+      "description": "AI Agent Orchestration Dashboard - Manage AI agents, assign tasks, and coordinate multi-agent collaboration via OpenClaw Gateway.",
+      "url": "https://github.com/abhi1693/openclaw-mission-control",
+      "image": "https://opengraph.githubassets.com/1/abhi1693/openclaw-mission-control",
+      "metadata": {
+        "stars": 982,
+        "language": "TypeScript",
+        "topics": [
+          "ai-agents",
+          "automation",
+          "openclaw",
+          "orchestration"
+        ],
+        "updatedAt": "2026-02-26T23:56:42Z",
+        "createdAt": "2026-02-01T16:53:45Z"
+      },
+      "analysis": {
+        "summary": "AI Agent Orchestration Dashboard - Manage AI agents, assign tasks, and coordinate multi-agent collaboration via OpenClaw Gateway.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-01",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1146193768",
+      "source": "github",
+      "title": "callstackincubator/agent-device",
+      "description": "CLI to control iOS and Android devices for AI agents",
+      "url": "https://github.com/callstackincubator/agent-device",
+      "image": "https://opengraph.githubassets.com/1/callstackincubator/agent-device",
+      "metadata": {
+        "stars": 842,
+        "language": "TypeScript",
+        "topics": [
+          "agentic-ai",
+          "agents",
+          "automation",
+          "mobile",
+          "testing"
+        ],
+        "updatedAt": "2026-02-26T19:01:26Z",
+        "createdAt": "2026-01-30T18:41:54Z"
+      },
+      "analysis": {
+        "summary": "CLI to control iOS and Android devices for AI agents",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-01-30",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1147789463",
+      "source": "github",
+      "title": "zylos-ai/zylos-core",
+      "description": "Give your AI a life — open-source agent infrastructure for team collaboration.",
+      "url": "https://github.com/zylos-ai/zylos-core",
+      "image": "https://opengraph.githubassets.com/1/zylos-ai/zylos-core",
+      "metadata": {
+        "stars": 837,
+        "language": "JavaScript",
+        "topics": [
+          "ai",
+          "ai-worker",
+          "own-your-data",
+          "personal-ai-assistant",
+          "self-evolving",
+          "team-collaboration"
+        ],
+        "updatedAt": "2026-02-26T23:49:17Z",
+        "createdAt": "2026-02-02T07:56:39Z"
+      },
+      "analysis": {
+        "summary": "Give your AI a life — open-source agent infrastructure for team collaboration.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-02",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1147600037",
+      "source": "github",
+      "title": "stephengpope/thepopebot",
+      "description": "The Pope Bot is an autonomous AI agent that you can configure and build to do just about anything you want, all day, everyday, 24/7.",
+      "url": "https://github.com/stephengpope/thepopebot",
+      "image": "https://opengraph.githubassets.com/1/stephengpope/thepopebot",
+      "metadata": {
+        "stars": 826,
+        "language": "JavaScript",
+        "topics": [],
+        "updatedAt": "2026-02-26T21:27:36Z",
+        "createdAt": "2026-02-02T01:25:10Z"
+      },
+      "analysis": {
+        "summary": "The Pope Bot is an autonomous AI agent that you can configure and build to do just about anything you want, all day, everyday, 24/7.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-02",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1146664329",
+      "source": "github",
+      "title": "crshdn/mission-control",
+      "description": "AI Agent Orchestration Dashboard - Manage AI agents, assign tasks, and coordinate multi-agent collaboration via OpenClaw Gateway.",
+      "url": "https://github.com/crshdn/mission-control",
+      "image": "https://opengraph.githubassets.com/1/crshdn/mission-control",
+      "metadata": {
+        "stars": 822,
+        "language": "TypeScript",
+        "topics": [
+          "aiagent",
+          "automation",
+          "openclaw"
+        ],
+        "updatedAt": "2026-02-26T23:05:53Z",
+        "createdAt": "2026-01-31T13:27:48Z"
+      },
+      "analysis": {
+        "summary": "AI Agent Orchestration Dashboard - Manage AI agents, assign tasks, and coordinate multi-agent collaboration via OpenClaw Gateway.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-01-31",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1161025758",
+      "source": "github",
+      "title": "TraderAlice/OpenAlice",
+      "description": "File-driven AI trading agent engine for crypto and securities markets",
+      "url": "https://github.com/TraderAlice/OpenAlice",
+      "image": "https://opengraph.githubassets.com/1/TraderAlice/OpenAlice",
+      "metadata": {
+        "stars": 661,
+        "language": "TypeScript",
+        "topics": [],
+        "updatedAt": "2026-02-27T00:00:05Z",
+        "createdAt": "2026-02-18T16:42:55Z"
+      },
+      "analysis": {
+        "summary": "File-driven AI trading agent engine for crypto and securities markets",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-18",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1153190876",
+      "source": "github",
+      "title": "zilliztech/memsearch",
+      "description": "A Markdown-first memory system, a standalone library for any AI agent. Inspired by OpenClaw.",
+      "url": "https://github.com/zilliztech/memsearch",
+      "image": "https://opengraph.githubassets.com/1/zilliztech/memsearch",
+      "metadata": {
+        "stars": 621,
+        "language": "Python",
+        "topics": [
+          "agent",
+          "agent-memory",
+          "claude-code",
+          "claude-code-plugin",
+          "clawdbot",
+          "embeddings",
+          "memory",
+          "milvus",
+          "openclaw",
+          "progressive-disclosure",
+          "rag",
+          "semantic-search"
+        ],
+        "updatedAt": "2026-02-26T21:43:31Z",
+        "createdAt": "2026-02-09T02:29:16Z"
+      },
+      "analysis": {
+        "summary": "A Markdown-first memory system, a standalone library for any AI agent. Inspired by OpenClaw.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-09",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1156351367",
+      "source": "github",
+      "title": "jayminwest/overstory",
+      "description": "Multi-agent orchestration for AI coding agents — pluggable runtime adapters for Claude Code, Pi, and more",
+      "url": "https://github.com/jayminwest/overstory",
+      "image": "https://opengraph.githubassets.com/1/jayminwest/overstory",
+      "metadata": {
+        "stars": 542,
+        "language": "TypeScript",
+        "topics": [
+          "agent-swarms",
+          "ai-agents",
+          "claude-code",
+          "tmux"
+        ],
+        "updatedAt": "2026-02-26T22:50:15Z",
+        "createdAt": "2026-02-12T14:53:58Z"
+      },
+      "analysis": {
+        "summary": "Multi-agent orchestration for AI coding agents — pluggable runtime adapters for Claude Code, Pi, and more",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-12",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1152159038",
+      "source": "github",
+      "title": "FireRedTeam/FireRed-OpenStoryline",
+      "description": "FireRed-OpenStoryline is an AI video editing agent that transforms manual editing into intention-driven directing through natural language interaction, LLM-powered planning, and precise tool orchestration. It facilitates transparent, human-in-the-loop creation with reusable Style Skills for consistent, professional storytelling.",
+      "url": "https://github.com/FireRedTeam/FireRed-OpenStoryline",
+      "image": "https://opengraph.githubassets.com/1/FireRedTeam/FireRed-OpenStoryline",
+      "metadata": {
+        "stars": 530,
+        "language": "Python",
+        "topics": [
+          "agent",
+          "chatbot",
+          "langchain",
+          "mcp",
+          "skills",
+          "video",
+          "video-cut",
+          "video-editing",
+          "video-editing-tools"
+        ],
+        "updatedAt": "2026-02-26T23:03:46Z",
+        "createdAt": "2026-02-07T13:03:57Z"
+      },
+      "analysis": {
+        "summary": "FireRed-OpenStoryline is an AI video editing agent that transforms manual editing into intention-driven directing through natural language interaction, LLM-powered planning, and precise tool orchestration. It facilitates transparent, human-in-the-loop creation with reusable Style Skills for consistent, professional storytelling.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-07",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1156170875",
+      "source": "github",
+      "title": "Nasiko-Labs/nasiko",
+      "description": "Developer Control Plane for your AI Agents",
+      "url": "https://github.com/Nasiko-Labs/nasiko",
+      "image": "https://opengraph.githubassets.com/1/Nasiko-Labs/nasiko",
+      "metadata": {
+        "stars": 528,
+        "language": "Python",
+        "topics": [],
+        "updatedAt": "2026-02-25T20:30:49Z",
+        "createdAt": "2026-02-12T10:45:29Z"
+      },
+      "analysis": {
+        "summary": "Developer Control Plane for your AI Agents",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-12",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1150822093",
+      "source": "github",
+      "title": "jingkaihe/matchlock",
+      "description": "Matchlock secures AI agent workloads with a Linux-based sandbox.",
+      "url": "https://github.com/jingkaihe/matchlock",
+      "image": "https://opengraph.githubassets.com/1/jingkaihe/matchlock",
+      "metadata": {
+        "stars": 494,
+        "language": "Go",
+        "topics": [],
+        "updatedAt": "2026-02-26T23:58:35Z",
+        "createdAt": "2026-02-05T18:22:39Z"
+      },
+      "analysis": {
+        "summary": "Matchlock secures AI agent workloads with a Linux-based sandbox.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-05",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1160327105",
+      "source": "github",
+      "title": "superhq-ai/shuru",
+      "description": "A local-first microVM sandbox for running AI agents safely on macOS",
+      "url": "https://github.com/superhq-ai/shuru",
+      "image": "https://opengraph.githubassets.com/1/superhq-ai/shuru",
+      "metadata": {
+        "stars": 468,
+        "language": "Rust",
+        "topics": [],
+        "updatedAt": "2026-02-26T23:38:31Z",
+        "createdAt": "2026-02-17T20:09:15Z"
+      },
+      "analysis": {
+        "summary": "A local-first microVM sandbox for running AI agents safely on macOS",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-17",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1161940285",
+      "source": "github",
+      "title": "quoroom-ai/room",
+      "description": "Autonomous AI agents will earn money — with or without us. It's already happening behind closed doors. We believe this should be studied in the open, where everyone can watch, learn, and build on the results.  Quoroom is a public experiment: let's see what a swarm of AI agents can actually do when given a goal and a wallet.",
+      "url": "https://github.com/quoroom-ai/room",
+      "image": "https://opengraph.githubassets.com/1/quoroom-ai/room",
+      "metadata": {
+        "stars": 436,
+        "language": "TypeScript",
+        "topics": [
+          "ai",
+          "automaton",
+          "claude",
+          "claudecode",
+          "giminiapi",
+          "linux",
+          "llm",
+          "macos",
+          "openclaw",
+          "windows"
+        ],
+        "updatedAt": "2026-02-26T22:45:52Z",
+        "createdAt": "2026-02-19T17:35:25Z"
+      },
+      "analysis": {
+        "summary": "Autonomous AI agents will earn money — with or without us. It's already happening behind closed doors. We believe this should be studied in the open, where everyone can watch, learn, and build on the results.  Quoroom is a public experiment: let's see what a swarm of AI agents can actually do when given a goal and a wallet.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-19",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1157928891",
+      "source": "github",
+      "title": "tomascupr/sandstorm",
+      "description": "Run Claude agents in secure cloud sandboxes — via API, CLI, or Slack. One call. Full agent. Zero infrastructure.",
+      "url": "https://github.com/tomascupr/sandstorm",
+      "image": "https://opengraph.githubassets.com/1/tomascupr/sandstorm",
+      "metadata": {
+        "stars": 412,
+        "language": "Python",
+        "topics": [
+          "agent-sdk",
+          "ai",
+          "ai-agents",
+          "anthropic",
+          "claude",
+          "e2b",
+          "fastapi",
+          "llm",
+          "python",
+          "sandbox",
+          "slack-bot"
+        ],
+        "updatedAt": "2026-02-26T17:29:03Z",
+        "createdAt": "2026-02-14T14:26:15Z"
+      },
+      "analysis": {
+        "summary": "Run Claude agents in secure cloud sandboxes — via API, CLI, or Slack. One call. Full agent. Zero infrastructure.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-14",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1157403551",
+      "source": "github",
+      "title": "SamuelQZQ/auto-coding-agent-demo",
+      "description": "一个长达 10 小时的 AI 全自动编程实验",
+      "url": "https://github.com/SamuelQZQ/auto-coding-agent-demo",
+      "image": "https://opengraph.githubassets.com/1/SamuelQZQ/auto-coding-agent-demo",
+      "metadata": {
+        "stars": 398,
+        "language": "TypeScript",
+        "topics": [],
+        "updatedAt": "2026-02-26T13:15:53Z",
+        "createdAt": "2026-02-13T19:25:20Z"
+      },
+      "analysis": {
+        "summary": "一个长达 10 小时的 AI 全自动编程实验",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-13",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1148739617",
+      "source": "github",
+      "title": "BakeLens/crust",
+      "description": "🌟 Open Source AI Agent Security Infrastructure — intercepts and blocks dangerous agent behaviors before they happen. Just one command! Join us to build safer Human-AI Symbiosis! ",
+      "url": "https://github.com/BakeLens/crust",
+      "image": "https://opengraph.githubassets.com/1/BakeLens/crust",
+      "metadata": {
+        "stars": 388,
+        "language": "Go",
+        "topics": [
+          "agentic",
+          "security"
+        ],
+        "updatedAt": "2026-02-26T20:45:19Z",
+        "createdAt": "2026-02-03T10:04:32Z"
+      },
+      "analysis": {
+        "summary": "🌟 Open Source AI Agent Security Infrastructure — intercepts and blocks dangerous agent behaviors before they happen. Just one command! Join us to build safer Human-AI Symbiosis! ",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-03",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1153451691",
+      "source": "github",
+      "title": "Cranot/roam-code",
+      "description": "Architectural intelligence layer for AI coding agents — structural graph, architecture governance, multi-agent orchestration, vulnerability mapping. 94 commands, 26 languages, 100% local.",
+      "url": "https://github.com/Cranot/roam-code",
+      "image": "https://opengraph.githubassets.com/1/Cranot/roam-code",
+      "metadata": {
+        "stars": 345,
+        "language": "Python",
+        "topics": [
+          "ai-coding",
+          "architecture",
+          "cli",
+          "code-analysis",
+          "code-graph",
+          "code-intelligence",
+          "code-quality",
+          "mcp-server",
+          "static-analysis",
+          "tree-sitter"
+        ],
+        "updatedAt": "2026-02-26T23:23:08Z",
+        "createdAt": "2026-02-09T10:11:37Z"
+      },
+      "analysis": {
+        "summary": "Architectural intelligence layer for AI coding agents — structural graph, architecture governance, multi-agent orchestration, vulnerability mapping. 94 commands, 26 languages, 100% local.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-09",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1163168741",
+      "source": "github",
+      "title": "harshkedia177/axon",
+      "description": "Graph-powered code intelligence engine — indexes codebases into a knowledge graph, exposed via MCP tools for AI agents and a CLI for developers.",
+      "url": "https://github.com/harshkedia177/axon",
+      "image": "https://opengraph.githubassets.com/1/harshkedia177/axon",
+      "metadata": {
+        "stars": 334,
+        "language": "Python",
+        "topics": [
+          "claude-code",
+          "code-analysis",
+          "code-intelligence",
+          "dead-code-detection",
+          "knowledge-graph",
+          "mcp",
+          "python",
+          "static-analysis",
+          "tree-sitter",
+          "typescript"
+        ],
+        "updatedAt": "2026-02-26T23:50:21Z",
+        "createdAt": "2026-02-21T07:41:02Z"
+      },
+      "analysis": {
+        "summary": "Graph-powered code intelligence engine — indexes codebases into a knowledge graph, exposed via MCP tools for AI agents and a CLI for developers.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-21",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1149071982",
+      "source": "github",
+      "title": "BlockRunAI/ClawRouter",
+      "description": "The agent-native LLM router empowering OpenClaw — by BlockRunAI",
+      "url": "https://github.com/BlockRunAI/ClawRouter",
+      "image": "https://opengraph.githubassets.com/1/BlockRunAI/ClawRouter",
+      "metadata": {
+        "stars": 3632,
+        "language": "TypeScript",
+        "topics": [
+          "ai",
+          "ai-agents",
+          "anthropic",
+          "cost-optimization",
+          "crypto",
+          "deepseek",
+          "gemini",
+          "llm",
+          "llm-router",
+          "micropayments",
+          "openai",
+          "openclaw",
+          "smart-routing",
+          "usdc",
+          "x402"
+        ],
+        "updatedAt": "2026-02-26T23:51:24Z",
+        "createdAt": "2026-02-03T17:32:00Z"
+      },
+      "analysis": {
+        "summary": "The agent-native LLM router empowering OpenClaw — by BlockRunAI",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-03",
+      "category": "ai-agent"
+    }
+  ]
+}
