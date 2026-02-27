@@ -1,13 +1,29 @@
 {
   "date": "2026-02-27",
-  "generatedAt": "2026-02-27T00:00:22.775Z",
+  "generatedAt": "2026-02-27T01:30:00.000Z",
   "summary": {
-    "total": 50,
+    "total": 51,
     "github": 20,
     "youtube": 10,
-    "producthunt": 20
+    "producthunt": 20,
+    "report": 1
   },
   "items": [
+    {
+      "id": "ai-daily-report-20260227",
+      "source": "report",
+      "title": "🤖 2026-02-27 AI 每日精选视讯与新闻",
+      "description": "今日AI日报涵盖6个精选YouTube视频：IBM的2026趋势预测、AI工程师视角、数据驱动的六大趋势、a16z的代理分析、Lex Fridman的深度对话，以及软件行业变革预测。还包括2026年2月AI模型大战、推理模型崛起等独家行业资讯。",
+      "url": "./20260227-AI-Daily-Report.html",
+      "image": "https://ui-avatars.com/api/?name=AI&background=667eea&color=fff&size=400",
+      "metadata": {
+        "videos": 6,
+        "type": "AI Daily Report",
+        "reportDate": "2026-02-27"
+      },
+      "publishedAt": "2026-02-27",
+      "category": "report"
+    },
     {
       "id": "producthunt-rotated-58-0",
       "source": "producthunt",
@@ -1097,12 +1113,14 @@
     "categories": {
       "product": 20,
       "video": 10,
-      "ai-agent": 20
+      "ai-agent": 20,
+      "report": 1
     },
     "sources": {
       "producthunt": 20,
       "youtube": 10,
-      "github": 20
+      "github": 20,
+      "report": 1
     }
   }
 }
