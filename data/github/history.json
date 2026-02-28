@@ -336,5 +336,30 @@
       "harshkedia177/axon",
       "BlockRunAI/ClawRouter"
     ]
+  },
+  {
+    "date": "2026-02-28",
+    "projects": [
+      "sseanliu/VisionClaw",
+      "localgpt-app/localgpt",
+      "EvoMap/evolver",
+      "openakita/openakita",
+      "openperf/brief",
+      "always-further/nono",
+      "SixHq/Overture",
+      "Pickle-Pixel/ApplyPilot",
+      "bradygaster/squad",
+      "Dicklesworthstone/pi_agent_rust",
+      "voocel/openclaw-mini",
+      "deanpeters/Product-Manager-Skills",
+      "datadog-labs/pup",
+      "ghostsecurity/skills",
+      "alexknowshtml/api2cli",
+      "BlockRunAI/ClawRouter",
+      "PeonPing/peon-ping",
+      "netease-youdao/LobsterAI",
+      "Panniantong/Agent-Reach",
+      "ValueCell-ai/ClawX"
+    ]
   }
 ]

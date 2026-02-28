@@ -1,0 +1,349 @@
+{
+  "date": "2026-02-28",
+  "count": 20,
+  "sources": [
+    "rotated"
+  ],
+  "items": [
+    {
+      "id": "producthunt-rotated-59-0",
+      "source": "producthunt",
+      "title": "Gemini Code Assist",
+      "description": "Google's AI coding assistant",
+      "url": "https://www.google.com/search?q=Gemini%20Code%20Assist%20AI%20tool",
+      "image": "https://ui-avatars.com/api/?name=GC&background=0a192f&color=64ffda&size=400",
+      "metadata": {
+        "votes": 5800,
+        "topics": [
+          "developer"
+        ],
+        "source": "rotated"
+      },
+      "publishedAt": "2026-02-28",
+      "category": "product"
+    },
+    {
+      "id": "producthunt-rotated-59-1",
+      "source": "producthunt",
+      "title": "Phind",
+      "description": "AI search engine for developers",
+      "url": "https://www.google.com/search?q=Phind%20AI%20tool",
+      "image": "https://ui-avatars.com/api/?name=P&background=0a192f&color=64ffda&size=400",
+      "metadata": {
+        "votes": 4200,
+        "topics": [
+          "developer"
+        ],
+        "source": "rotated"
+      },
+      "publishedAt": "2026-02-28",
+      "category": "product"
+    },
+    {
+      "id": "producthunt-rotated-59-2",
+      "source": "producthunt",
+      "title": "Devin",
+      "description": "First AI software engineer",
+      "url": "https://www.google.com/search?q=Devin%20AI%20tool",
+      "image": "https://ui-avatars.com/api/?name=D&background=0a192f&color=64ffda&size=400",
+      "metadata": {
+        "votes": 18000,
+        "topics": [
+          "agent"
+        ],
+        "source": "rotated"
+      },
+      "publishedAt": "2026-02-28",
+      "category": "product"
+    },
+    {
+      "id": "producthunt-rotated-59-3",
+      "source": "producthunt",
+      "title": "Cognition",
+      "description": "AI teammate for engineering",
+      "url": "https://www.google.com/search?q=Cognition%20AI%20tool",
+      "image": "https://ui-avatars.com/api/?name=C&background=0a192f&color=64ffda&size=400",
+      "metadata": {
+        "votes": 9500,
+        "topics": [
+          "agent"
+        ],
+        "source": "rotated"
+      },
+      "publishedAt": "2026-02-28",
+      "category": "product"
+    },
+    {
+      "id": "producthunt-rotated-59-4",
+      "source": "producthunt",
+      "title": "OpenHands",
+      "description": "Open-source AI software engineer",
+      "url": "https://www.google.com/search?q=OpenHands%20AI%20tool",
+      "image": "https://ui-avatars.com/api/?name=O&background=0a192f&color=64ffda&size=400",
+      "metadata": {
+        "votes": 3800,
+        "topics": [
+          "agent"
+        ],
+        "source": "rotated"
+      },
+      "publishedAt": "2026-02-28",
+      "category": "product"
+    },
+    {
+      "id": "producthunt-rotated-59-5",
+      "source": "producthunt",
+      "title": "SWE-agent",
+      "description": "Agent that fixes GitHub issues",
+      "url": "https://www.google.com/search?q=SWE-agent%20AI%20tool",
+      "image": "https://ui-avatars.com/api/?name=S&background=0a192f&color=64ffda&size=400",
+      "metadata": {
+        "votes": 3200,
+        "topics": [
+          "agent"
+        ],
+        "source": "rotated"
+      },
+      "publishedAt": "2026-02-28",
+      "category": "product"
+    },
+    {
+      "id": "producthunt-rotated-59-6",
+      "source": "producthunt",
+      "title": "Claude Artifacts",
+      "description": "Create interactive apps with Claude",
+      "url": "https://www.google.com/search?q=Claude%20Artifacts%20AI%20tool",
+      "image": "https://ui-avatars.com/api/?name=CA&background=0a192f&color=64ffda&size=400",
+      "metadata": {
+        "votes": 8800,
+        "topics": [
+          "creative"
+        ],
+        "source": "rotated"
+      },
+      "publishedAt": "2026-02-28",
+      "category": "product"
+    },
+    {
+      "id": "producthunt-rotated-59-7",
+      "source": "producthunt",
+      "title": "ChatGPT Canvas",
+      "description": "Collaborative workspace for coding",
+      "url": "https://www.google.com/search?q=ChatGPT%20Canvas%20AI%20tool",
+      "image": "https://ui-avatars.com/api/?name=CC&background=0a192f&color=64ffda&size=400",
+      "metadata": {
+        "votes": 9500,
+        "topics": [
+          "creative"
+        ],
+        "source": "rotated"
+      },
+      "publishedAt": "2026-02-28",
+      "category": "product"
+    },
+    {
+      "id": "producthunt-rotated-59-8",
+      "source": "producthunt",
+      "title": "Bolt.new",
+      "description": "Prompt, run, edit, deploy full-stack apps",
+      "url": "https://www.google.com/search?q=Bolt.new%20AI%20tool",
+      "image": "https://ui-avatars.com/api/?name=B&background=0a192f&color=64ffda&size=400",
+      "metadata": {
+        "votes": 11000,
+        "topics": [
+          "developer"
+        ],
+        "source": "rotated"
+      },
+      "publishedAt": "2026-02-28",
+      "category": "product"
+    },
+    {
+      "id": "producthunt-rotated-59-9",
+      "source": "producthunt",
+      "title": "Lovable",
+      "description": "Full-stack app builder with AI",
+      "url": "https://www.google.com/search?q=Lovable%20AI%20tool",
+      "image": "https://ui-avatars.com/api/?name=L&background=0a192f&color=64ffda&size=400",
+      "metadata": {
+        "votes": 7200,
+        "topics": [
+          "developer"
+        ],
+        "source": "rotated"
+      },
+      "publishedAt": "2026-02-28",
+      "category": "product"
+    },
+    {
+      "id": "producthunt-rotated-59-10",
+      "source": "producthunt",
+      "title": "Tempo",
+      "description": "AI-powered React IDE",
+      "url": "https://www.google.com/search?q=Tempo%20AI%20tool",
+      "image": "https://ui-avatars.com/api/?name=T&background=0a192f&color=64ffda&size=400",
+      "metadata": {
+        "votes": 4800,
+        "topics": [
+          "developer"
+        ],
+        "source": "rotated"
+      },
+      "publishedAt": "2026-02-28",
+      "category": "product"
+    },
+    {
+      "id": "producthunt-rotated-59-11",
+      "source": "producthunt",
+      "title": "Create",
+      "description": "Build apps with AI",
+      "url": "https://www.google.com/search?q=Create%20AI%20tool",
+      "image": "https://ui-avatars.com/api/?name=C&background=0a192f&color=64ffda&size=400",
+      "metadata": {
+        "votes": 3600,
+        "topics": [
+          "developer"
+        ],
+        "source": "rotated"
+      },
+      "publishedAt": "2026-02-28",
+      "category": "product"
+    },
+    {
+      "id": "producthunt-rotated-59-12",
+      "source": "producthunt",
+      "title": "Trickle",
+      "description": "Turn screenshots into editable apps",
+      "url": "https://www.google.com/search?q=Trickle%20AI%20tool",
+      "image": "https://ui-avatars.com/api/?name=T&background=0a192f&color=64ffda&size=400",
+      "metadata": {
+        "votes": 5200,
+        "topics": [
+          "design"
+        ],
+        "source": "rotated"
+      },
+      "publishedAt": "2026-02-28",
+      "category": "product"
+    },
+    {
+      "id": "producthunt-rotated-59-13",
+      "source": "producthunt",
+      "title": "Screenshot to Code",
+      "description": "Convert screenshots to HTML/Tailwind",
+      "url": "https://www.google.com/search?q=Screenshot%20to%20Code%20AI%20tool",
+      "image": "https://ui-avatars.com/api/?name=ST&background=0a192f&color=64ffda&size=400",
+      "metadata": {
+        "votes": 9200,
+        "topics": [
+          "developer"
+        ],
+        "source": "rotated"
+      },
+      "publishedAt": "2026-02-28",
+      "category": "product"
+    },
+    {
+      "id": "producthunt-rotated-59-14",
+      "source": "producthunt",
+      "title": "Animagic",
+      "description": "AI-powered animation tool",
+      "url": "https://www.google.com/search?q=Animagic%20AI%20tool",
+      "image": "https://ui-avatars.com/api/?name=A&background=0a192f&color=64ffda&size=400",
+      "metadata": {
+        "votes": 4200,
+        "topics": [
+          "creative"
+        ],
+        "source": "rotated"
+      },
+      "publishedAt": "2026-02-28",
+      "category": "product"
+    },
+    {
+      "id": "producthunt-rotated-59-15",
+      "source": "producthunt",
+      "title": "Spline AI",
+      "description": "Generate 3D objects with AI",
+      "url": "https://www.google.com/search?q=Spline%20AI%20AI%20tool",
+      "image": "https://ui-avatars.com/api/?name=SA&background=0a192f&color=64ffda&size=400",
+      "metadata": {
+        "votes": 6800,
+        "topics": [
+          "creative"
+        ],
+        "source": "rotated"
+      },
+      "publishedAt": "2026-02-28",
+      "category": "product"
+    },
+    {
+      "id": "producthunt-rotated-59-16",
+      "source": "producthunt",
+      "title": "Meshy",
+      "description": "AI 3D model generator",
+      "url": "https://www.google.com/search?q=Meshy%20AI%20tool",
+      "image": "https://ui-avatars.com/api/?name=M&background=0a192f&color=64ffda&size=400",
+      "metadata": {
+        "votes": 5500,
+        "topics": [
+          "creative"
+        ],
+        "source": "rotated"
+      },
+      "publishedAt": "2026-02-28",
+      "category": "product"
+    },
+    {
+      "id": "producthunt-rotated-59-17",
+      "source": "producthunt",
+      "title": "Tripo3D",
+      "description": "Generate 3D from images or text",
+      "url": "https://www.google.com/search?q=Tripo3D%20AI%20tool",
+      "image": "https://ui-avatars.com/api/?name=T&background=0a192f&color=64ffda&size=400",
+      "metadata": {
+        "votes": 3800,
+        "topics": [
+          "creative"
+        ],
+        "source": "rotated"
+      },
+      "publishedAt": "2026-02-28",
+      "category": "product"
+    },
+    {
+      "id": "producthunt-rotated-59-18",
+      "source": "producthunt",
+      "title": "Luma AI",
+      "description": "3D capture and generation",
+      "url": "https://www.google.com/search?q=Luma%20AI%20AI%20tool",
+      "image": "https://ui-avatars.com/api/?name=LA&background=0a192f&color=64ffda&size=400",
+      "metadata": {
+        "votes": 6200,
+        "topics": [
+          "creative"
+        ],
+        "source": "rotated"
+      },
+      "publishedAt": "2026-02-28",
+      "category": "product"
+    },
+    {
+      "id": "producthunt-rotated-59-19",
+      "source": "producthunt",
+      "title": "Kaiber",
+      "description": "AI video generation for artists",
+      "url": "https://www.google.com/search?q=Kaiber%20AI%20tool",
+      "image": "https://ui-avatars.com/api/?name=K&background=0a192f&color=64ffda&size=400",
+      "metadata": {
+        "votes": 4800,
+        "topics": [
+          "creative"
+        ],
+        "source": "rotated"
+      },
+      "publishedAt": "2026-02-28",
+      "category": "product"
+    }
+  ]
+}
