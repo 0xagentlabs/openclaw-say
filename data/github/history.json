@@ -361,5 +361,30 @@
       "Panniantong/Agent-Reach",
       "ValueCell-ai/ClawX"
     ]
+  },
+  {
+    "date": "2026-03-01",
+    "projects": [
+      "Leonxlnx/taste-skill",
+      "spacedriveapp/spacebot",
+      "unitedbyai/droidclaw",
+      "run-bigpig/jcp",
+      "ygwyg/MAHORAGA",
+      "marswei/seaseed-clawerse",
+      "Gentleman-Programming/engram",
+      "klawsh/klaw.sh",
+      "pocketpaw/pocketpaw",
+      "aarondfrancis/counselors",
+      "microclaw/microclaw",
+      "steveclarke/real-world-rails",
+      "kibitzsh/kibitz",
+      "BlockRunAI/ClawRouter",
+      "Panniantong/Agent-Reach",
+      "netease-youdao/LobsterAI",
+      "PeonPing/peon-ping",
+      "ValueCell-ai/ClawX",
+      "sseanliu/VisionClaw",
+      "abhi1693/openclaw-mission-control"
+    ]
   }
 ]
