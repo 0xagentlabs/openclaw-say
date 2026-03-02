@@ -386,5 +386,30 @@
       "sseanliu/VisionClaw",
       "abhi1693/openclaw-mission-control"
     ]
+  },
+  {
+    "date": "2026-03-02",
+    "projects": [
+      "aeromomo/claw-compactor",
+      "stephengpope/thepopebot",
+      "zylos-ai/zylos-core",
+      "Nasiko-Labs/nasiko",
+      "TraderAlice/OpenAlice",
+      "ringhyacinth/Star-Office-UI",
+      "zilliztech/memsearch",
+      "jayminwest/overstory",
+      "FireRedTeam/FireRed-OpenStoryline",
+      "quoroom-ai/room",
+      "jingkaihe/matchlock",
+      "superhq-ai/shuru",
+      "SamuelQZQ/auto-coding-agent-demo",
+      "builderz-labs/mission-control",
+      "harshkedia177/axon",
+      "tomascupr/sandstorm",
+      "BakeLens/crust",
+      "AlexAnys/awesome-openclaw-usecases-zh",
+      "BlockRunAI/ClawRouter",
+      "Panniantong/Agent-Reach"
+    ]
   }
 ]
