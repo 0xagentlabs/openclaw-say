@@ -411,5 +411,30 @@
       "BlockRunAI/ClawRouter",
       "Panniantong/Agent-Reach"
     ]
+  },
+  {
+    "date": "2026-03-03",
+    "projects": [
+      "memovai/mimiclaw",
+      "openperf/brief",
+      "deanpeters/Product-Manager-Skills",
+      "SixHq/Overture",
+      "bradygaster/squad",
+      "Pickle-Pixel/ApplyPilot",
+      "Dicklesworthstone/pi_agent_rust",
+      "adolfousier/opencrabs",
+      "nextlevelbuilder/goclaw",
+      "Cranot/roam-code",
+      "datadog-labs/pup",
+      "liangdabiao/Seedance2-Storyboard-Generator",
+      "alexknowshtml/api2cli",
+      "papercomputeco/stereOS",
+      "carmahhawwari/ui-design-brain",
+      "BlockRunAI/ClawRouter",
+      "Panniantong/Agent-Reach",
+      "netease-youdao/LobsterAI",
+      "PeonPing/peon-ping",
+      "ValueCell-ai/ClawX"
+    ]
   }
 ]
