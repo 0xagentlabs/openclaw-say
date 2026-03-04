@@ -436,5 +436,30 @@
       "PeonPing/peon-ping",
       "ValueCell-ai/ClawX"
     ]
+  },
+  {
+    "date": "2026-03-04",
+    "projects": [
+      "zeroclaw-labs/zeroclaw",
+      "Leonxlnx/taste-skill",
+      "spacedriveapp/spacebot",
+      "sseanliu/VisionClaw",
+      "unitedbyai/droidclaw",
+      "run-bigpig/jcp",
+      "marswei/seaseed-clawerse",
+      "Gentleman-Programming/engram",
+      "klawsh/klaw.sh",
+      "aarondfrancis/counselors",
+      "cft0808/edict",
+      "microclaw/microclaw",
+      "aspasskiy/GoGogot",
+      "kibitzsh/kibitz",
+      "steveclarke/real-world-rails",
+      "sangrokjung/claude-forge",
+      "bcurts/agentchattr",
+      "Panniantong/Agent-Reach",
+      "BlockRunAI/ClawRouter",
+      "memovai/mimiclaw"
+    ]
   }
 ]
