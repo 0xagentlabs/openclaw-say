@@ -1,0 +1,1653 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenClaw Channel Plugin 开发完全指南</title>
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.7;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 50px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+        h1 { 
+            color: #1a1a1a; 
+            border-bottom: 4px solid #FF6B35; 
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+            font-size: 2.2em;
+        }
+        h2 { 
+            color: #2c3e50; 
+            margin-top: 50px; 
+            border-left: 5px solid #FF6B35; 
+            padding-left: 18px;
+            font-size: 1.6em;
+        }
+        h3 { 
+            color: #34495e; 
+            margin-top: 35px;
+            font-size: 1.3em;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+        h4 {
+            color: #555;
+            margin-top: 25px;
+            font-size: 1.1em;
+        }
+        p { margin: 18px 0; }
+        table { 
+            border-collapse: collapse; 
+            width: 100%; 
+            margin: 25px 0;
+            background: white;
+            font-size: 0.95em;
+        }
+        th, td { 
+            border: 1px solid #e0e0e0; 
+            padding: 14px; 
+            text-align: left; 
+        }
+        th { 
+            background: #FF6B35; 
+            color: white; 
+            font-weight: 600;
+        }
+        tr:nth-child(even) { background: #fafafa; }
+        tr:hover { background: #f5f5f5; }
+        code { 
+            background: #f4f4f4; 
+            padding: 3px 8px; 
+            border-radius: 4px; 
+            font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+            font-size: 0.9em;
+            color: #e83e8c;
+        }
+        pre { 
+            background: #2d2d2d; 
+            color: #f8f8f2;
+            padding: 20px; 
+            border-radius: 8px; 
+            overflow-x: auto;
+            border-left: 4px solid #FF6B35;
+            font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+            font-size: 0.9em;
+            line-height: 1.5;
+        }
+        pre code {
+            background: transparent;
+            color: inherit;
+            padding: 0;
+            font-size: inherit;
+        }
+        blockquote { 
+            border-left: 4px solid #FF6B35; 
+            margin: 25px 0; 
+            padding: 20px 25px; 
+            background: #fff8f5;
+        }
+        ul, ol { padding-left: 30px; }
+        li { margin: 10px 0; }
+        .meta { 
+            color: #666; 
+            font-size: 15px; 
+            margin-bottom: 40px;
+            padding-bottom: 25px;
+            border-bottom: 2px solid #eee;
+        }
+        .highlight { 
+            background: #fff8e1; 
+            padding: 20px; 
+            border-radius: 8px; 
+            border-left: 4px solid #ffc107; 
+            margin: 25px 0;
+        }
+        .tip { 
+            background: #e8f5e9; 
+            padding: 20px; 
+            border-radius: 8px; 
+            border-left: 4px solid #4caf50; 
+            margin: 25px 0;
+        }
+        .warning { 
+            background: #ffebee; 
+            padding: 20px; 
+            border-radius: 8px; 
+            border-left: 4px solid #f44336; 
+            margin: 25px 0;
+        }
+        .info {
+            background: #e3f2fd;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #2196f3;
+            margin: 25px 0;
+        }
+        .footer { 
+            margin-top: 60px; 
+            padding-top: 30px; 
+            border-top: 2px solid #eee; 
+            color: #999; 
+            font-size: 13px;
+            text-align: center;
+        }
+        a { color: #FF6B35; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        hr { border: none; border-top: 1px solid #eee; margin: 40px 0; }
+        .toc {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 10px;
+            margin: 30px 0;
+        }
+        .toc h3 { margin-top: 0; border-bottom: none; }
+        .toc ul { list-style: none; padding-left: 0; }
+        .toc li { margin: 8px 0; }
+        .toc a { color: #333; }
+        .toc a:hover { color: #FF6B35; }
+        .step {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid #FF6B35;
+        }
+        .step-title {
+            font-weight: bold;
+            color: #FF6B35;
+            margin-bottom: 10px;
+        }
+        .method-signature {
+            background: #f0f0f0;
+            padding: 15px;
+            border-radius: 6px;
+            font-family: monospace;
+            margin: 15px 0;
+            border-left: 3px solid #666;
+        }
+        @media (max-width: 768px) {
+            body { padding: 10px; }
+            .container { padding: 25px; }
+            h1 { font-size: 1.8em; }
+            h2 { font-size: 1.4em; }
+            pre { padding: 15px; font-size: 0.85em; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🦞 OpenClaw Channel Plugin 开发完全指南</h1>
+        
+        <div class="meta">
+            <strong>版本：</strong>v1.0 &nbsp;|&nbsp; 
+            <strong>更新日期：</strong>2026年3月5日 &nbsp;|&nbsp; 
+            <strong>适用版本：</strong>OpenClaw 2026.3.x+
+        </div>
+
+        <div class="toc">
+            <h3>📑 目录</h3>
+            <ul>
+                <li><a href="#overview">1. 概述与架构</a></li>
+                <li><a href="#quickstart">2. 快速开始</a></li>
+                <li><a href="#core-concepts">3. 核心概念</a></li>
+                <li><a href="#message-flow">4. 消息流转详解</a></li>
+                <li><a href="#account-management">5. 多账户管理</a></li>
+                <li><a href="#message-types">6. 消息类型处理</a></li>
+                <li><a href="#extension-methods">7. 扩展方法</a></li>
+                <li><a href="#complete-example">8. 完整示例代码</a></li>
+                <li><a href="#configuration">9. 配置指南</a></li>
+                <li><a href="#debugging">10. 调试与故障排除</a></li>
+                <li><a href="#best-practices">11. 最佳实践</a></li>
+            </ul>
+        </div>
+
+        <h2 id="overview">1. 概述与架构</h2>
+        
+        <h3>1.1 什么是 Channel Plugin？</h3>
+        <p>Channel Plugin 是 OpenClaw 的扩展模块，用于将 OpenClaw 连接到各种消息平台（如微信、钉钉、飞书、Slack 等）。通过 Channel Plugin，你可以让 AI Agent 在这些平台上接收消息并发送回复。</p>
+
+        <h3>1.2 架构概览</h3>
+        <pre><code>┌─────────────────────────────────────────────────────────────────┐
+│                        外部消息平台                              │
+│           (微信/钉钉/飞书/Slack/Discord/微博...)                  │
+└───────────────────────────┬─────────────────────────────────────┘
+                            │ HTTP/WebSocket/Webhook
+                            ▼
+┌─────────────────────────────────────────────────────────────────┐
+│                     Channel Plugin 层                            │
+│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐          │
+│  │   输入适配器  │  │   账户管理   │  │   输出适配器  │          │
+│  │  (Inbound)   │  │  (Account)   │  │  (Outbound)  │          │
+│  └──────────────┘  └──────────────┘  └──────────────┘          │
+└───────────────────────────┬─────────────────────────────────────┘
+                            │ api.receiveMessage()
+                            ▼
+┌─────────────────────────────────────────────────────────────────┐
+│                     OpenClaw Gateway                             │
+│              (消息路由 + AI Agent 调度)                          │
+└───────────────────────────┬─────────────────────────────────────┘
+                            │ outbound.sendText()
+                            ▼
+┌─────────────────────────────────────────────────────────────────┐
+│                     Channel Plugin 层                            │
+│                    (将回复发送到平台)                            │
+└─────────────────────────────────────────────────────────────────┘</code></pre>
+
+        <h3>1.3 核心组件</h3>
+        <table>
+            <tr>
+                <th>组件</th>
+                <th>职责</th>
+                <th>关键 API</th>
+            </tr>
+            <tr>
+                <td><strong>Inbound (输入)</strong></td>
+                <td>接收外部平台消息，转发给 Gateway</td>
+                <td><code>api.receiveMessage()</code></td>
+            </tr>
+            <tr>
+                <td><strong>Outbound (输出)</strong></td>
+                <td>接收 Gateway 回复，发送到外部平台</td>
+                <td><code>outbound.sendText()</code></td>
+            </tr>
+            <tr>
+                <td><strong>Account (账户)</strong></td>
+                <td>管理多账户配置和状态</td>
+                <td><code>config.listAccountIds()</code></td>
+            </tr>
+            <tr>
+                <td><strong>Config (配置)</strong></td>
+                <td>读取用户配置的参数</td>
+                <td><code>api.config.get()</code></td>
+            </tr>
+        </table>
+
+        <h2 id="quickstart">2. 快速开始</h2>
+
+        <h3>2.1 项目结构</h3>
+        <pre><code>my-channel-plugin/
+├── openclaw.plugin.json    # 插件元数据（必需）
+├── package.json            # npm 配置（可选）
+├── tsconfig.json           # TypeScript 配置（推荐）
+├── README.md               # 使用文档
+└── src/
+    ├── index.ts            # 主入口文件（必需）
+    └── types.ts            # 类型定义（可选）</code></pre>
+
+        <h3>2.2 最小可运行示例</h3>
+        
+        <div class="step">
+            <div class="step-title">步骤 1：创建插件元数据</div>
+            <p>创建 <code>openclaw.plugin.json</code>：</p>
+            <pre><code>{
+  "id": "my-channel",
+  "name": "My Channel Plugin",
+  "version": "1.0.0",
+  "entry": "./src/index.ts",
+  "configSchema": {
+    "type": "object",
+    "properties": {
+      "apiKey": { "type": "string" },
+      "webhookPort": { "type": "number", "default": 3000 }
+    }
+  }
+}</code></pre>
+        </div>
+
+        <div class="step">
+            <div class="step-title">步骤 2：编写主入口文件</div>
+            <p>创建 <code>src/index.ts</code>：</p>
+            <pre><code>import type { PluginAPI } from "openclaw/plugin-sdk/core";
+
+export default function register(api: PluginAPI) {
+  const logger = api.logger;
+  const config = api.config.get();
+  
+  logger.info("My Channel Plugin 启动中...");
+
+  // 注册 Channel
+  api.registerChannel({
+    plugin: {
+      id: "my-channel",
+      
+      meta: {
+        id: "my-channel",
+        label: "My Channel",
+        selectionLabel: "My Channel (Custom)",
+        blurb: "自定义 Channel 插件示例",
+      },
+      
+      capabilities: {
+        chatTypes: ["direct", "group"],
+      },
+      
+      config: {
+        listAccountIds: (cfg) => 
+          Object.keys(cfg.channels?.["my-channel"]?.accounts ?? {}),
+        
+        resolveAccount: (cfg, accountId) => 
+          cfg.channels?.["my-channel"]?.accounts?.[accountId ?? "default"],
+      },
+      
+      outbound: {
+        deliveryMode: "direct",
+        
+        sendText: async ({ text, chatId, accountId }) => {
+          logger.info(`发送消息到 ${chatId}: ${text}`);
+          // 在这里实现消息发送逻辑
+          return { ok: true };
+        },
+      },
+    },
+  });
+}</code></pre>
+        </div>
+
+        <div class="step">
+            <div class="step-title">步骤 3：安装插件</div>
+            <pre><code># 本地链接安装（开发模式）
+openclaw plugins install -l ./my-channel-plugin
+
+# 或 npm 安装（发布后）
+openclaw plugins install @your-scope/my-channel-plugin
+
+# 重启 Gateway
+openclaw gateway restart</code></pre>
+        </div>
+
+        <div class="step">
+            <div class="step-title">步骤 4：配置 Channel</div>
+            <p>在 <code>~/.openclaw/config.json</code> 中添加配置：</p>
+            <pre><code>{
+  "channels": {
+    "my-channel": {
+      "accounts": {
+        "default": {
+          "enabled": true,
+          "apiKey": "your-api-key"
+        }
+      }
+    }
+  },
+  "bindings": [
+    { "match": { "channel": "my-channel" }, "agentId": "main" }
+  ]
+}</code></pre>
+        </div>
+
+        <h2 id="core-concepts">3. 核心概念</h2>
+
+        <h3>3.1 Plugin API 详解</h3>
+        
+        <h4>api 对象</h4>
+        <div class="method-signature">
+interface PluginAPI {
+  logger: Logger;                    // 日志记录器
+  config: ConfigAPI;                 // 配置访问
+  registerChannel(opts: ChannelRegistration): void;
+  registerGatewayMethod(name: string, handler: Function): void;
+  registerCommand(cmd: Command): void;
+  registerService(service: Service): void;
+}
+        </div>
+
+        <h4>api.receiveMessage() - 接收消息</h4>
+        <p>当外部平台有消息时，调用此方法将消息传递给 OpenClaw Gateway：</p>
+        <pre><code>await api.receiveMessage({
+  channel: "my-channel",        // Channel ID（必需）
+  accountId: "default",         // 账户 ID（多账户场景）
+  chatType: "direct",           // 聊天类型: direct | group | channel
+  chatId: "user_123",           // 对话/群组 ID（必需）
+  senderId: "user_123",         // 发送者 ID
+  senderName: "张三",            // 发送者昵称（可选）
+  body: "你好",                  // 消息内容（必需）
+  messageId: "msg_001",         // 消息 ID（用于回复追踪）
+  timestamp: Date.now(),        // 时间戳（毫秒）
+  
+  // 媒体消息（可选）
+  media: {
+    type: "image",              // image | audio | video | file
+    url: "https://example.com/img.jpg",
+    mimeType: "image/jpeg",
+    fileName: "photo.jpg",
+    fileSize: 1024000,
+  },
+  
+  // 引用回复（可选）
+  replyTo: {
+    messageId: "msg_000",
+    body: "被引用的消息内容",
+  },
+  
+  // 群组信息（可选）
+  groupInfo: {
+    groupId: "group_123",
+    groupName: "测试群",
+  },
+});</code></pre>
+
+        <h4>outbound.sendText() - 发送消息</h4>
+        <p>Gateway 生成回复后，会调用此方法：</p>
+        <pre><code>outbound: {
+  deliveryMode: "direct",
+  
+  sendText: async (params) => {
+    const {
+      text,           // 回复文本内容
+      chatId,         // 目标对话 ID
+      accountId,      // 账户 ID
+      senderId,       // 发送者 ID（原消息发送者）
+      messageId,      // 原消息 ID（用于回复）
+      threadId,       // 线程/话题 ID
+      channelData,    // 通道特定数据
+    } = params;
+    
+    // 实现发送逻辑
+    await sendToExternalPlatform(chatId, text);
+    
+    return { 
+      ok: true, 
+      messageId: "reply_001"  // 可选：返回发送的消息 ID
+    };
+  },
+}</code></pre>
+
+        <h3>3.2 Channel 配置对象详解</h3>
+        <pre><code>const myChannel = {
+  // ========== 基础信息 ==========
+  id: "my-channel",                    // Channel 唯一标识
+  
+  meta: {
+    id: "my-channel",
+    label: "My Channel",               // 显示名称
+    selectionLabel: "My Channel (API)", // 选择界面标签
+    docsPath: "/channels/my-channel",   // 文档路径
+    docsLabel: "my-channel",
+    blurb: "简短的描述文字",
+    order: 10,                         // 排序权重
+    aliases: ["mc", "mychannel"],      // 别名
+    preferOver: ["other-channel"],     // 优先于其他 Channel
+  },
+  
+  // ========== 能力声明 ==========
+  capabilities: {
+    chatTypes: ["direct", "group"],    // 支持的聊天类型
+    
+    // 媒体支持（可选）
+    media: {
+      inbound: ["image", "audio", "file"],
+      outbound: ["image", "audio"],
+    },
+    
+    // 高级功能（可选）
+    threads: true,                     // 支持话题/线程
+    mentions: true,                    // 支持 @提及
+    reactions: false,                  // 不支持表情反应
+    formatting: ["markdown", "html"],  // 支持的格式
+  },
+  
+  // ========== 账户管理 ==========
+  config: {
+    // 列出所有账户 ID
+    listAccountIds: (cfg) => {
+      return Object.keys(cfg.channels?.["my-channel"]?.accounts ?? {});
+    },
+    
+    // 解析账户配置
+    resolveAccount: (cfg, accountId) => {
+      return cfg.channels?.["my-channel"]?.accounts?.[accountId ?? "default"];
+    },
+  },
+  
+  // ========== 输出适配器 ==========
+  outbound: {
+    deliveryMode: "direct",            // direct | queued | batched
+    
+    sendText: async (params) => {
+      // 发送文本消息
+    },
+    
+    // 发送媒体（可选）
+    sendMedia: async (params) => {
+      const { type, url, chatId } = params;
+      // 发送图片/语音/文件
+    },
+  },
+  
+  // ========== 安全策略 ==========
+  security: {
+    dmPolicy: "open",                  // open | pairing | allowlist
+    allowFrom: [],                     // 白名单用户 ID
+  },
+};</code></pre>
+
+        <h2 id="message-flow">4. 消息流转详解</h2>
+
+        <h3>4.1 完整数据流</h3>
+        <pre><code>┌────────────────────────────────────────────────────────────────────────┐
+│ 阶段 1: 外部平台 → Plugin (Inbound)                                      │
+└────────────────────────────────────────────────────────────────────────┘
+
+用户在外部平台发送消息
+        │
+        ▼
+┌─────────────────┐
+│  你的 Webhook   │  ← HTTP POST / WebSocket / 轮询
+│    服务器       │
+└────────┬────────┘
+         │
+         ▼
+┌──────────────────────────────────────────────────┐
+│  解析消息格式                                     │
+│  - 提取 userId, chatId, text                     │
+│  - 处理媒体文件                                  │
+│  - 验证签名/Token                                │
+└────────┬─────────────────────────────────────────┘
+         │
+         ▼
+┌──────────────────────────────────────────────────┐
+│  api.receiveMessage({                            │
+│    channel: "my-channel",                        │
+│    accountId: "default",                         │
+│    chatId: msg.from_user.id,                     │
+│    senderId: msg.from_user.id,                   │
+│    body: msg.text,                               │
+│    ...                                           │
+│  })                                              │
+└──────────────────────────────────────────────────┘
+
+┌────────────────────────────────────────────────────────────────────────┐
+│ 阶段 2: Gateway → AI Agent                                               │
+└────────────────────────────────────────────────────────────────────────┘
+
+OpenClaw Gateway 接收消息
+        │
+        ▼
+┌──────────────────────────────────────────────────┐
+│  1. 查找匹配的 Binding                            │
+│     (根据 channel + accountId + chatType)        │
+└────────┬─────────────────────────────────────────┘
+         │
+         ▼
+┌──────────────────────────────────────────────────┐
+│  2. 路由到对应的 Agent                            │
+│     - 加载系统提示词                             │
+│     - 构建消息上下文                             │
+└────────┬─────────────────────────────────────────┘
+         │
+         ▼
+┌──────────────────────────────────────────────────┐
+│  3. AI Agent 处理                                 │
+│     - 理解用户意图                               │
+│     - 调用工具（如果需要）                       │
+│     - 生成回复内容                               │
+└──────────────────────────────────────────────────┘
+
+┌────────────────────────────────────────────────────────────────────────┐
+│ 阶段 3: Gateway → Plugin (Outbound)                                      │
+└────────────────────────────────────────────────────────────────────────┘
+
+AI 生成回复
+        │
+        ▼
+┌──────────────────────────────────────────────────┐
+│  outbound.sendText({                             │
+│    text: "AI 生成的回复内容",                     │
+│    chatId: "user_123",                           │
+│    accountId: "default",                         │
+│    ...                                           │
+│  })                                              │
+└────────┬─────────────────────────────────────────┘
+         │
+         ▼
+┌──────────────────────────────────────────────────┐
+│  调用外部平台 API                                 │
+│  - 构造请求体                                    │
+│  - 添加认证信息                                  │
+│  - 发送 HTTP 请求                                │
+└────────┬─────────────────────────────────────────┘
+         │
+         ▼
+┌──────────────────────────────────────────────────┐
+│  用户在外部平台看到回复                           │
+└──────────────────────────────────────────────────┘</code></pre>
+
+        <h3>4.2 时序图</h3>
+        <pre><code>外部平台    Plugin Inbound    Gateway    AI Agent    Plugin Outbound    外部平台
+   │              │              │           │              │              │
+   │ ────────────>│              │           │              │              │
+   │   用户消息    │              │           │              │              │
+   │              │              │           │              │              │
+   │              │ ────────────>│           │              │              │
+   │              │ receiveMessage            │              │              │
+   │              │              │           │              │              │
+   │              │              │ ─────────>│              │              │
+   │              │              │   转发消息 │              │              │
+   │              │              │           │              │              │
+   │              │              │           │ 处理中...     │              │
+   │              │              │           │              │              │
+   │              │              │ <─────────│              │              │
+   │              │              │   返回回复 │              │              │
+   │              │              │           │              │              │
+   │              │              │ ──────────>│             │              │
+   │              │              │  sendText()              │              │
+   │              │              │           │              │              │
+   │              │              │           │              │ ────────────>│
+   │              │              │           │              │  发送消息     │
+   │              │              │           │              │              │
+   │              │              │           │              │ <────────────│
+   │              │              │           │              │  发送成功     │
+   │              │              │           │              │              │
+   │ <────────────────────────────────────────────────────────────────────│
+   │                           用户看到回复                                │</code></pre>
+
+        <h2 id="account-management">5. 多账户管理</h2>
+
+        <h3>5.1 为什么需要多账户？</h3>
+        <ul>
+            <li><strong>环境隔离</strong>：生产环境 vs 测试环境</li>
+            <li><strong>多租户</strong>：为不同客户/团队提供独立服务</li>
+            <li><strong>故障转移</strong>：主账户异常时切换到备用账户</li>
+            <li><strong>负载均衡</strong>：分散请求到多个账户</li>
+        </ul>
+
+        <h3>5.2 配置结构</h3>
+        <pre><code>{
+  "channels": {
+    "my-channel": {
+      "accounts": {
+        // 账户 1：生产环境
+        "production": {
+          "enabled": true,
+          "apiKey": "prod_key_xxx",
+          "apiSecret": "prod_secret_xxx",
+          "webhookPort": 3000
+        },
+        // 账户 2：测试环境
+        "staging": {
+          "enabled": true,
+          "apiKey": "staging_key_xxx",
+          "apiSecret": "staging_secret_xxx",
+          "webhookPort": 3001
+        },
+        // 账户 3：备用
+        "backup": {
+          "enabled": false,  // 默认禁用
+          "apiKey": "backup_key_xxx",
+          "apiSecret": "backup_secret_xxx"
+        }
+      }
+    }
+  }
+}</code></pre>
+
+        <h3>5.3 多账户实现代码</h3>
+        <pre><code>import type { PluginAPI } from "openclaw/plugin-sdk/core";
+import { randomUUID } from "crypto";
+
+interface AccountConfig {
+  enabled: boolean;
+  apiKey: string;
+  apiSecret: string;
+  webhookPort: number;
+}
+
+export default function register(api: PluginAPI) {
+  const logger = api.logger;
+  const config = api.config.get();
+  
+  // 存储每个账户的连接
+  const accountConnections = new Map<string, any>();
+  
+  // ========== 获取所有启用的账户 ==========
+  const channelConfig = config.channels?.["my-channel"];
+  const accounts: Record<string, AccountConfig> = channelConfig?.accounts ?? {};
+  
+  const enabledAccounts = Object.entries(accounts)
+    .filter(([_, cfg]) => cfg.enabled)
+    .map(([id]) => id);
+  
+  logger.info(`找到 ${enabledAccounts.length} 个启用的账户: ${enabledAccounts.join(", ")}`);
+  
+  // ========== 为每个账户创建连接 ==========
+  for (const accountId of enabledAccounts) {
+    const accountCfg = accounts[accountId];
+    
+    // 创建连接（例如 WebSocket、HTTP 客户端等）
+    const connection = createConnection(accountId, accountCfg);
+    accountConnections.set(accountId, connection);
+    
+    // 设置消息接收处理器
+    setupMessageHandler(accountId, connection, api);
+  }
+  
+  // ========== 创建连接 ==========
+  function createConnection(accountId: string, cfg: AccountConfig) {
+    logger.info(`[${accountId}] 创建连接...`);
+    
+    // 示例：创建 WebSocket 连接
+    // const ws = new WebSocket(`wss://api.example.com?key=${cfg.apiKey}`);
+    
+    // 示例：创建 HTTP 服务器接收 Webhook
+    // const app = express();
+    // app.listen(cfg.webhookPort);
+    
+    return {
+      accountId,
+      config: cfg,
+      // ws 或 http 实例
+    };
+  }
+  
+  // ========== 消息接收处理 ==========
+  function setupMessageHandler(accountId: string, connection: any, api: PluginAPI) {
+    // 当收到外部消息时
+    const handleMessage = async (externalMsg: any) => {
+      try {
+        // 转换为 OpenClaw 消息格式
+        const message = {
+          channel: "my-channel",
+          accountId: accountId,           // 关键：标识来自哪个账户
+          chatType: externalMsg.isGroup ? "group" : "direct",
+          chatId: externalMsg.chatId,
+          senderId: externalMsg.userId,
+          senderName: externalMsg.nickname,
+          body: externalMsg.text,
+          messageId: externalMsg.id || randomUUID(),
+          timestamp: Date.now(),
+        };
+        
+        // 发送到 Gateway
+        await api.receiveMessage(message);
+        
+      } catch (error) {
+        logger.error(`[${accountId}] 处理消息失败:`, error);
+      }
+    };
+    
+    // 绑定到连接（根据实际连接类型）
+    // connection.ws.on("message", handleMessage);
+    // 或
+    // connection.app.post("/webhook", (req, res) => {
+    //   handleMessage(req.body);
+    //   res.json({ ok: true });
+    // });
+  }
+  
+  // ========== 注册 Channel ==========
+  api.registerChannel({
+    plugin: {
+      id: "my-channel",
+      
+      meta: {
+        id: "my-channel",
+        label: "My Channel",
+        selectionLabel: "My Channel (多账户支持)",
+        blurb: "支持多账户的 Channel 插件",
+      },
+      
+      capabilities: {
+        chatTypes: ["direct", "group"],
+      },
+      
+      config: {
+        // 列出所有账户
+        listAccountIds: (cfg) => {
+          return Object.keys(cfg.channels?.["my-channel"]?.accounts ?? {});
+        },
+        
+        // 解析账户配置
+        resolveAccount: (cfg, accountId) => {
+          const accounts = cfg.channels?.["my-channel"]?.accounts ?? {};
+          return accounts[accountId ?? "default"];
+        },
+      },
+      
+      outbound: {
+        deliveryMode: "direct",
+        
+        sendText: async (params) => {
+          const { text, chatId, accountId } = params;
+          
+          // 找到对应账户的连接
+          const connection = accountConnections.get(accountId);
+          if (!connection) {
+            logger.error(`[${accountId}] 未找到连接`);
+            return { ok: false, error: "Account not connected" };
+          }
+          
+          // 实现发送逻辑
+          try {
+            // await connection.api.sendMessage(chatId, text);
+            logger.info(`[${accountId}] 发送消息到 ${chatId}: ${text}`);
+            return { ok: true };
+          } catch (error) {
+            logger.error(`[${accountId}] 发送失败:`, error);
+            return { ok: false, error: String(error) };
+          }
+        },
+      },
+    },
+  });
+}</code></pre>
+
+        <h2 id="message-types">6. 消息类型处理</h2>
+
+        <h3>6.1 支持的消息类型</h3>
+        <table>
+            <tr>
+                <th>类型</th>
+                <th>描述</th>
+                <th>Content-Type</th>
+            </tr>
+            <tr>
+                <td><code>text</code></td>
+                <td>纯文本消息</td>
+                <td>text/plain</td>
+            </tr>
+            <tr>
+                <td><code>image</code></td>
+                <td>图片（JPG/PNG/GIF）</td>
+                <td>image/*</td>
+            </tr>
+            <tr>
+                <td><code>audio</code></td>
+                <td>语音/音频</td>
+                <td>audio/*</td>
+            </tr>
+            <tr>
+                <td><code>video</code></td>
+                <td>视频</td>
+                <td>video/*</td>
+            </tr>
+            <tr>
+                <td><code>file</code></td>
+                <td>任意文件</td>
+                <td>application/*</td>
+            </tr>
+            <tr>
+                <td><code>location</code></td>
+                <td>地理位置</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td><code>sticker</code></td>
+                <td>表情包/贴图</td>
+                <td>image/*</td>
+            </tr>
+        </table>
+
+        <h3>6.2 接收媒体消息</h3>
+        <pre><code>async function handleIncomingMessage(externalMsg: any) {
+  let media = undefined;
+  
+  // 处理图片消息
+  if (externalMsg.type === "image") {
+    media = {
+      type: "image",
+      url: externalMsg.imageUrl,           // 图片 URL
+      mimeType: "image/jpeg",
+      fileName: "image.jpg",
+      fileSize: externalMsg.fileSize,
+    };
+  }
+  
+  // 处理语音消息
+  if (externalMsg.type === "voice") {
+    media = {
+      type: "audio",
+      url: externalMsg.voiceUrl,
+      mimeType: "audio/mpeg",
+      fileName: "voice.mp3",
+      duration: externalMsg.duration,      // 语音时长（秒）
+    };
+  }
+  
+  // 处理文件消息
+  if (externalMsg.type === "file") {
+    media = {
+      type: "file",
+      url: externalMsg.fileUrl,
+      mimeType: externalMsg.mimeType,
+      fileName: externalMsg.fileName,
+      fileSize: externalMsg.fileSize,
+    };
+  }
+  
+  await api.receiveMessage({
+    channel: "my-channel",
+    chatId: externalMsg.chatId,
+    senderId: externalMsg.userId,
+    body: externalMsg.text || "",         // 媒体消息可能没有文本
+    media: media,
+    // ... 其他字段
+  });
+}</code></pre>
+
+        <h3>6.3 发送媒体消息</h3>
+        <pre><code>outbound: {
+  deliveryMode: "direct",
+  
+  // 发送文本
+  sendText: async (params) => {
+    const { text, chatId } = params;
+    await platformAPI.sendText(chatId, text);
+    return { ok: true };
+  },
+  
+  // 发送媒体（可选但推荐实现）
+  sendMedia: async (params) => {
+    const { type, url, chatId, mimeType, fileName } = params;
+    
+    switch (type) {
+      case "image":
+        await platformAPI.sendImage(chatId, url);
+        break;
+      case "audio":
+        await platformAPI.sendVoice(chatId, url);
+        break;
+      case "video":
+        await platformAPI.sendVideo(chatId, url);
+        break;
+      case "file":
+        await platformAPI.sendFile(chatId, url, fileName);
+        break;
+    }
+    
+    return { ok: true };
+  },
+}</code></pre>
+
+        <h3>6.4 富文本和 Markdown</h3>
+        <pre><code>// 接收带格式的消息
+await api.receiveMessage({
+  channel: "my-channel",
+  chatId: "user_123",
+  senderId: "user_123",
+  body: "**粗体** 和 *斜体* 文本",
+  formatting: {
+    format: "markdown",     // markdown | html
+    entities: [
+      { type: "bold", offset: 0, length: 4 },
+      { type: "italic", offset: 9, length: 4 },
+    ],
+  },
+});
+
+// 发送时处理格式
+outbound: {
+  sendText: async (params) => {
+    const { text, formatting } = params;
+    
+    // 根据平台能力选择格式
+    if (platformSupportsMarkdown) {
+      await sendMarkdown(text);
+    } else {
+      // 转换为纯文本
+      const plainText = text.replace(/\*\*|\*|__/g, "");
+      await sendPlainText(plainText);
+    }
+  },
+}</code></pre>
+
+        <h2 id="extension-methods">7. 扩展方法</h2>
+
+        <h3>7.1 注册 Gateway RPC 方法</h3>
+        <pre><code>// 让其他组件可以调用你的插件
+api.registerGatewayMethod("my-channel.status", ({ respond }) => {
+  respond(true, {
+    connected: true,
+    accounts: enabledAccounts,
+    uptime: Date.now() - startTime,
+  });
+});
+
+api.registerGatewayMethod("my-channel.send", async ({ params, respond }) => {
+  const { chatId, text, accountId } = params;
+  
+  try {
+    const connection = accountConnections.get(accountId);
+    await connection.api.sendMessage(chatId, text);
+    respond(true, { sent: true });
+  } catch (error) {
+    respond(false, { error: String(error) });
+  }
+});</code></pre>
+
+        <h3>7.2 注册 CLI 命令</h3>
+        <pre><code>api.registerCli(({ program }) => {
+  // 添加自定义命令
+  program
+    .command("my-channel:status")
+    .description("查看 Channel 状态")
+    .action(async () => {
+      console.log("Channel 状态: 运行中");
+      console.log("已连接账户:", enabledAccounts.join(", "));
+    });
+    
+  program
+    .command("my-channel:send")
+    .description("发送测试消息")
+    .argument("<chat-id>", "目标对话 ID")
+    .argument("<message>", "消息内容")
+    .option("-a, --account <account>", "指定账户", "default")
+    .action(async (chatId, message, options) => {
+      // 实现发送逻辑
+    });
+});</code></pre>
+
+        <h3>7.3 注册自动回复命令</h3>
+        <pre><code>// 无需经过 AI Agent，直接响应的命令
+api.registerCommand({
+  name: "status",
+  description: "查看 Channel 状态",
+  handler: (ctx) => {
+    return {
+      text: `Channel: my-channel
+状态: 运行中
+账户: ${ctx.accountId || "default"}
+时间: ${new Date().toISOString()}`,
+    };
+  },
+});
+
+// 带参数的命令
+api.registerCommand({
+  name: "switch",
+  description: "切换账户",
+  acceptsArgs: true,
+  requireAuth: true,  // 需要授权用户
+  handler: async (ctx) => {
+    const targetAccount = ctx.args?.trim();
+    if (!targetAccount) {
+      return { text: "请指定目标账户" };
+    }
+    
+    // 执行切换逻辑
+    return { text: `已切换到账户: ${targetAccount}` };
+  },
+});</code></pre>
+
+        <h3>7.4 注册后台服务</h3>
+        <pre><code>api.registerService({
+  id: "my-channel-monitor",
+  
+  start: async () => {
+    logger.info("启动监控服务...");
+    
+    // 启动健康检查
+    const healthCheck = setInterval(() => {
+      for (const [accountId, conn] of accountConnections) {
+        if (!conn.isConnected()) {
+          logger.warn(`[${accountId}] 连接断开，尝试重连...`);
+          reconnect(accountId);
+        }
+      }
+    }, 30000);  // 每 30 秒检查一次
+    
+    return { healthCheck };
+  },
+  
+  stop: async (state) => {
+    logger.info("停止监控服务...");
+    clearInterval(state.healthCheck);
+  },
+});</code></pre>
+
+        <h3>7.5 使用技能（Skills）</h3>
+        <pre><code>// 在插件中提供技能
+// 文件: skills/my-channel-ops/SKILL.md
+
+api.registerSkill({
+  id: "my-channel-ops",
+  name: "My Channel Operations",
+  description: "My Channel 运维技能",
+  path: "./skills/my-channel-ops",
+});</code></pre>
+
+        <h2 id="complete-example">8. 完整示例代码</h2>
+
+        <h3>8.1 TCP Client Channel（完整版）</h3>
+        <pre><code>import type { PluginAPI } from "openclaw/plugin-sdk/core";
+import net from "net";
+import { randomUUID } from "crypto";
+
+interface TCPAccountConfig {
+  enabled: boolean;
+  host: string;
+  port: number;
+  reconnectInterval?: number;
+  authToken?: string;
+}
+
+export default function register(api: PluginAPI) {
+  const logger = api.logger;
+  const config = api.config.get();
+  
+  const channelId = "tcp-client";
+  const sockets = new Map<string, net.Socket>();
+  const messageBuffer = new Map<string, string>(); // 用于处理粘包
+  
+  // ========== 初始化账户 ==========
+  const accounts: Record<string, TCPAccountConfig> = 
+    config.channels?.[channelId]?.accounts ?? {};
+  
+  const enabledAccounts = Object.entries(accounts)
+    .filter(([_, cfg]) => cfg.enabled)
+    .map(([id, cfg]) => ({ id, config: cfg }));
+  
+  logger.info(`[${channelId}] 初始化 ${enabledAccounts.length} 个账户`);
+  
+  // ========== 创建 TCP 连接 ==========
+  for (const { id: accountId, config: accountCfg } of enabledAccounts) {
+    createConnection(accountId, accountCfg);
+  }
+  
+  function createConnection(accountId: string, cfg: TCPAccountConfig) {
+    const socket = new net.Socket();
+    const reconnectInterval = cfg.reconnectInterval ?? 5000;
+    
+    let isConnected = false;
+    
+    const connect = () => {
+      logger.info(`[${accountId}] 连接到 ${cfg.host}:${cfg.port}...`);
+      socket.connect(cfg.port, cfg.host);
+    };
+    
+    socket.on("connect", () => {
+      isConnected = true;
+      logger.info(`[${accountId}] ✅ TCP 连接成功`);
+      
+      // 发送认证信息
+      if (cfg.authToken) {
+        sendMessage({
+          type: "auth",
+          token: cfg.authToken,
+          client: "openclaw",
+        });
+      }
+    });
+    
+    socket.on("data", (data) => {
+      const chunk = data.toString();
+      const buffer = (messageBuffer.get(accountId) || "") + chunk;
+      
+      // 按换行符分割（处理粘包）
+      const lines = buffer.split("\n");
+      messageBuffer.set(accountId, lines.pop() || ""); // 保留未完整部分
+      
+      for (const line of lines) {
+        if (!line.trim()) continue;
+        
+        try {
+          const msg = JSON.parse(line);
+          handleIncomingMessage(accountId, msg);
+        } catch (e) {
+          logger.error(`[${accountId}] JSON 解析失败:`, line);
+        }
+      }
+    });
+    
+    socket.on("close", () => {
+      if (isConnected) {
+        isConnected = false;
+        logger.warn(`[${accountId}] 连接断开，${reconnectInterval}ms 后重连...`);
+        setTimeout(connect, reconnectInterval);
+      }
+    });
+    
+    socket.on("error", (err) => {
+      logger.error(`[${accountId}] 连接错误:`, err.message);
+    });
+    
+    sockets.set(accountId, socket);
+    connect();
+    
+    // 发送消息辅助函数
+    function sendMessage(data: any) {
+      if (socket.writable) {
+        socket.write(JSON.stringify(data) + "\n");
+      }
+    }
+  }
+  
+  // ========== 处理接收到的消息 ==========
+  async function handleIncomingMessage(accountId: string, msg: any) {
+    logger.debug(`[${accountId}] 收到消息:`, msg);
+    
+    switch (msg.type) {
+      case "message":
+        await api.receiveMessage({
+          channel: channelId,
+          accountId: accountId,
+          chatType: msg.chatType || "direct",
+          chatId: msg.chatId,
+          senderId: msg.userId,
+          senderName: msg.nickname,
+          body: msg.text || "",
+          messageId: msg.id || randomUUID(),
+          timestamp: msg.timestamp || Date.now(),
+          media: msg.media,
+        });
+        break;
+        
+      case "ping":
+        // 心跳响应
+        const socket = sockets.get(accountId);
+        if (socket?.writable) {
+          socket.write(JSON.stringify({ type: "pong" }) + "\n");
+        }
+        break;
+        
+      case "error":
+        logger.error(`[${accountId}] 服务器错误:`, msg.error);
+        break;
+    }
+  }
+  
+  // ========== 注册 Channel ==========
+  api.registerChannel({
+    plugin: {
+      id: channelId,
+      
+      meta: {
+        id: channelId,
+        label: "TCP Client",
+        selectionLabel: "TCP Client (多账户)",
+        blurb: "通过 TCP 连接接入外部消息系统",
+      },
+      
+      capabilities: {
+        chatTypes: ["direct", "group"],
+        media: {
+          inbound: ["image", "audio", "file"],
+          outbound: ["text"],
+        },
+      },
+      
+      config: {
+        listAccountIds: (cfg) => 
+          Object.keys(cfg.channels?.[channelId]?.accounts ?? {}),
+        
+        resolveAccount: (cfg, accountId) => 
+          cfg.channels?.[channelId]?.accounts?.[accountId ?? "default"],
+      },
+      
+      outbound: {
+        deliveryMode: "direct",
+        
+        sendText: async (params) => {
+          const { text, chatId, accountId, senderId } = params;
+          const socket = sockets.get(accountId);
+          
+          if (!socket || !socket.writable) {
+            return { ok: false, error: `账户 ${accountId} 未连接` };
+          }
+          
+          const message = {
+            type: "reply",
+            to: chatId,
+            text: text,
+            timestamp: Date.now(),
+            replyTo: senderId,
+          };
+          
+          socket.write(JSON.stringify(message) + "\n");
+          return { ok: true };
+        },
+      },
+    },
+  });
+  
+  // ========== 注册状态命令 ==========
+  api.registerCommand({
+    name: "tcp-status",
+    description: "查看 TCP Client 连接状态",
+    handler: () => {
+      const statuses = [];
+      for (const [accountId, socket] of sockets) {
+        statuses.push({
+          account: accountId,
+          connected: socket.readyState === "open",
+          writable: socket.writable,
+        });
+      }
+      
+      return {
+        text: `TCP Client 状态:\n\n${
+          statuses.map(s => 
+            `- ${s.account}: ${s.connected ? "🟢 已连接" : "🔴 断开"}`
+          ).join("\n")
+        }`,
+      };
+    },
+  });
+}</code></pre>
+
+        <h3>8.2 Webhook Channel（HTTP 接收）</h3>
+        <pre><code>import type { PluginAPI } from "openclaw/plugin-sdk/core";
+import express from "express";
+import bodyParser from "body-parser";
+
+export default function register(api: PluginAPI) {
+  const logger = api.logger;
+  const config = api.config.get();
+  
+  const channelId = "webhook-channel";
+  const channelConfig = config.channels?.[channelId];
+  
+  const webhookPort = channelConfig?.webhookPort ?? 3456;
+  const webhookPath = channelConfig?.webhookPath ?? "/webhook";
+  const secretToken = channelConfig?.secretToken; // 用于验证签名
+  
+  // 创建 Express 应用
+  const app = express();
+  app.use(bodyParser.json());
+  app.use(bodyParser.urlencoded({ extended: true }));
+  
+  // 健康检查端点
+  app.get("/health", (req, res) => {
+    res.json({ status: "ok", channel: channelId });
+  });
+  
+  // Webhook 接收端点
+  app.post(webhookPath, async (req, res) => {
+    try {
+      // 验证签名（可选）
+      if (secretToken) {
+        const signature = req.headers["x-signature"];
+        if (!verifySignature(req.body, signature, secretToken)) {
+          res.status(401).json({ error: "Invalid signature" });
+          return;
+        }
+      }
+      
+      // 解析消息
+      const { text, user_id, chat_id, message_id, account_id } = req.body;
+      
+      if (!text || !user_id) {
+        res.status(400).json({ error: "Missing required fields" });
+        return;
+      }
+      
+      // 转发给 Gateway
+      await api.receiveMessage({
+        channel: channelId,
+        accountId: account_id || "default",
+        chatType: req.body.is_group ? "group" : "direct",
+        chatId: chat_id || user_id,
+        senderId: user_id,
+        senderName: req.body.nickname,
+        body: text,
+        messageId: message_id || randomUUID(),
+        timestamp: Date.now(),
+        media: req.body.media,
+      });
+      
+      // 立即返回成功（异步处理）
+      res.json({ received: true, messageId: message_id });
+      
+    } catch (error) {
+      logger.error("处理 webhook 失败:", error);
+      res.status(500).json({ error: "Internal error" });
+    }
+  });
+  
+  // 启动 HTTP 服务器
+  const server = app.listen(webhookPort, () => {
+    logger.info(`[${channelId}] Webhook 监听在 http://localhost:${webhookPort}${webhookPath}`);
+  });
+  
+  // 注册 Channel
+  api.registerChannel({
+    plugin: {
+      id: channelId,
+      
+      meta: {
+        id: channelId,
+        label: "Webhook Channel",
+        selectionLabel: "Webhook Channel (HTTP)",
+        blurb: "通过 HTTP Webhook 接收消息",
+      },
+      
+      capabilities: {
+        chatTypes: ["direct", "group"],
+      },
+      
+      config: {
+        listAccountIds: () => ["default"],
+        resolveAccount: () => ({ enabled: true }),
+      },
+      
+      outbound: {
+        deliveryMode: "direct",
+        
+        sendText: async (params) => {
+          const { text, chatId } = params;
+          
+          // 这里可以实现回调机制
+          // 例如通过另一个 webhook 或轮询队列
+          logger.info(`[${channelId}] 需要发送回复到 ${chatId}: ${text}`);
+          
+          return { ok: true };
+        },
+      },
+    },
+  });
+  
+  // 应用关闭时清理
+  process.on("SIGTERM", () => {
+    server.close(() => {
+      logger.info(`[${channelId}] HTTP 服务器已关闭`);
+    });
+  });
+}
+
+// 签名验证辅助函数
+function verifySignature(body: any, signature: string, secret: string): boolean {
+  // 实现 HMAC 签名验证
+  // const expected = crypto.createHmac("sha256", secret).update(JSON.stringify(body)).digest("hex");
+  // return signature === expected;
+  return true; // 占位实现
+}</code></pre>
+
+        <h2 id="configuration">9. 配置指南</h2>
+
+        <h3>9.1 用户配置示例</h3>
+        <pre><code>{
+  "channels": {
+    "my-channel": {
+      "accounts": {
+        "default": {
+          "enabled": true,
+          "apiKey": "your-api-key",
+          "apiSecret": "your-api-secret",
+          "webhookPort": 3000,
+          "webhookHost": "0.0.0.0",
+          "reconnectInterval": 5000
+        }
+      },
+      "dmPolicy": "open",
+      "groupPolicy": "allowlist",
+      "allowFrom": ["admin_user_id"]
+    }
+  },
+  
+  "bindings": [
+    {
+      "match": {
+        "channel": "my-channel",
+        "accountId": "default"
+      },
+      "agentId": "main",
+      "systemPrompt": "你是一个专业的客服助手..."
+    }
+  ]
+}</code></pre>
+
+        <h3>9.2 配置验证 Schema</h3>
+        <pre><code>// openclaw.plugin.json
+{
+  "id": "my-channel",
+  "name": "My Channel Plugin",
+  "version": "1.0.0",
+  "entry": "./src/index.ts",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "apiKey": {
+        "type": "string",
+        "description": "API 密钥"
+      },
+      "apiSecret": {
+        "type": "string",
+        "description": "API 密钥（敏感）"
+      },
+      "webhookPort": {
+        "type": "number",
+        "default": 3000,
+        "minimum": 1,
+        "maximum": 65535
+      },
+      "webhookHost": {
+        "type": "string",
+        "default": "0.0.0.0"
+      },
+      "reconnectInterval": {
+        "type": "number",
+        "default": 5000,
+        "minimum": 1000
+      },
+      "dmPolicy": {
+        "type": "string",
+        "enum": ["open", "pairing", "allowlist"],
+        "default": "open"
+      }
+    },
+    "required": ["apiKey"]
+  },
+  "uiHints": {
+    "apiKey": {
+      "label": "API 密钥",
+      "placeholder": "请输入 API 密钥"
+    },
+    "apiSecret": {
+      "label": "API 密钥",
+      "sensitive": true  // 在 UI 中显示为密码输入框
+    },
+    "webhookPort": {
+      "label": "Webhook 端口"
+    }
+  }
+}</code></pre>
+
+        <h2 id="debugging">10. 调试与故障排除</h2>
+
+        <h3>10.1 日志记录</h3>
+        <pre><code>// 使用 api.logger 记录日志
+api.logger.debug("调试信息", { extra: "data" });  // 仅在 debug 模式显示
+api.logger.info("一般信息");
+api.logger.warn("警告信息");
+api.logger.error("错误信息", error);
+
+// 推荐：为每个账户添加前缀
+logger.info(`[${accountId}] 连接成功`);</code></pre>
+
+        <h3>10.2 常用调试命令</h3>
+        <pre><code># 查看插件列表
+openclaw plugins list
+
+# 查看插件详情
+openclaw plugins info my-channel
+
+# 查看 Channel 状态
+openclaw channels status
+
+# 查看 Gateway 日志
+openclaw logs
+
+# 或实时跟踪日志
+tail -f ~/.openclaw/logs/gateway.log | grep "my-channel"
+
+# 测试发送消息（需要实现 Gateway RPC）
+openclaw rpc my-channel.send '{"chatId":"user_123","text":"测试"}'</code></pre>
+
+        <h3>10.3 常见问题</h3>
+        <table>
+            <tr>
+                <th>问题</th>
+                <th>可能原因</th>
+                <th>解决方案</th>
+            </tr>
+            <tr>
+                <td>插件未加载</td>
+                <td>路径错误或格式问题</td>
+                <td>检查 openclaw.plugin.json 格式，确认 entry 路径</td>
+            </tr>
+            <tr>
+                <td>收不到消息</td>
+                <td>Webhook 未正确配置</td>
+                <td>检查端口、路径是否正确，防火墙是否放行</td>
+            </tr>
+            <tr>
+                <td>消息发送失败</td>
+                <td>账户配置错误或连接断开</td>
+                <td>检查账户配置，查看日志中的连接状态</td>
+            </tr>
+            <tr>
+                <td>多账户混乱</td>
+                <td>accountId 未正确传递</td>
+                <td>确保 receiveMessage 和 sendText 都包含正确的 accountId</td>
+            </tr>
+        </table>
+
+        <h2 id="best-practices">11. 最佳实践</h2>
+
+        <h3>11.1 开发规范</h3>
+        <ul>
+            <li><strong>错误处理</strong>：始终使用 try-catch 包裹异步操作，避免未捕获的异常导致插件崩溃</li>
+            <li><strong>重连机制</strong>：对于长连接（WebSocket/TCP），实现自动重连逻辑</li>
+            <li><strong>消息确认</strong>：重要的发送操作应等待确认后再返回成功</li>
+            <li><strong>资源清理</strong>：在插件关闭时正确释放资源（关闭连接、停止服务器）</li>
+        </ul>
+
+        <h3>11.2 安全建议</h3>
+        <ul>
+            <li>敏感配置（API 密钥、Token）标记为 <code>sensitive: true</code></li>
+            <li>验证 Webhook 签名，防止伪造请求</li>
+            <li>限制可访问的来源 IP（如果平台支持）</li>
+            <li>使用 HTTPS 而非 HTTP（生产环境）</li>
+        </ul>
+
+        <h3>11.3 性能优化</h3>
+        <ul>
+            <li>批量处理消息而非逐条发送（如果平台支持）</li>
+            <li>缓存账户配置，避免频繁读取</li>
+            <li>使用连接池管理多个账户连接</li>
+            <li>对于大文件，考虑使用流式传输</li>
+        </ul>
+
+        <div class="tip">
+            <strong>💡 提示</strong><br>
+            开发 Channel Plugin 时，建议先从一个简单的 Echo Bot 开始，验证基本的消息收发流程，再逐步添加复杂功能。
+        </div>
+
+        <div class="footer">
+            <p>Generated by Nova 🌟 · OpenClaw Channel Plugin 开发指南 · 2026-03-05</p>
+        </div>
+    </div>
+</body>
+</html>
