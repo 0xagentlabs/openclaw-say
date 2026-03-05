@@ -461,5 +461,30 @@
       "BlockRunAI/ClawRouter",
       "memovai/mimiclaw"
     ]
+  },
+  {
+    "date": "2026-03-05",
+    "projects": [
+      "builderz-labs/mission-control",
+      "aeromomo/claw-compactor",
+      "Nasiko-Labs/nasiko",
+      "TraderAlice/OpenAlice",
+      "zilliztech/memsearch",
+      "jayminwest/overstory",
+      "FireRedTeam/FireRed-OpenStoryline",
+      "AlexAnys/awesome-openclaw-usecases-zh",
+      "SamuelQZQ/auto-coding-agent-demo",
+      "superhq-ai/shuru",
+      "jingkaihe/matchlock",
+      "harshkedia177/axon",
+      "tomascupr/sandstorm",
+      "GreenSheep01201/claw-empire",
+      "win4r/team-tasks",
+      "ghostsecurity/skills",
+      "zeroclaw-labs/zeroclaw",
+      "Panniantong/Agent-Reach",
+      "memovai/mimiclaw",
+      "netease-youdao/LobsterAI"
+    ]
   }
 ]
