@@ -1,0 +1,621 @@
+{
+  "date": "2026-03-08",
+  "count": 20,
+  "items": [
+    {
+      "id": "github-1156956890",
+      "source": "github",
+      "title": "zeroclaw-labs/zeroclaw",
+      "description": "Fast, small, and fully autonomous AI assistant infrastructure — deploy anywhere, swap anything 🦀",
+      "url": "https://github.com/zeroclaw-labs/zeroclaw",
+      "image": "https://opengraph.githubassets.com/1/zeroclaw-labs/zeroclaw",
+      "metadata": {
+        "stars": 24287,
+        "language": "Rust",
+        "topics": [
+          "agent",
+          "agentic",
+          "ai",
+          "openclaw"
+        ],
+        "updatedAt": "2026-03-07T23:57:17Z",
+        "createdAt": "2026-02-13T08:56:04Z"
+      },
+      "analysis": {
+        "summary": "Fast, small, and fully autonomous AI assistant infrastructure — deploy anywhere, swap anything 🦀",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-13",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1171026502",
+      "source": "github",
+      "title": "googleworkspace/cli",
+      "description": "Google Workspace CLI — one command-line tool for Drive, Gmail, Calendar, Sheets, Docs, Chat, Admin, and more. Dynamically built from Google Discovery Service. Includes AI agent skills.",
+      "url": "https://github.com/googleworkspace/cli",
+      "image": "https://opengraph.githubassets.com/1/googleworkspace/cli",
+      "metadata": {
+        "stars": 15234,
+        "language": "Rust",
+        "topics": [
+          "agent-skills",
+          "ai-agent",
+          "automation",
+          "cli",
+          "discovery-api",
+          "gemini-cli-extension",
+          "google-admin",
+          "google-api",
+          "google-calendar",
+          "google-chat",
+          "google-docs",
+          "google-drive",
+          "google-sheets",
+          "google-workspace",
+          "oauth2",
+          "rust"
+        ],
+        "updatedAt": "2026-03-08T00:00:07Z",
+        "createdAt": "2026-03-02T19:46:06Z"
+      },
+      "analysis": {
+        "summary": "Google Workspace CLI — one command-line tool for Drive, Gmail, Calendar, Sheets, Docs, Chat, Admin, and more. Dynamically built from Google Discovery Service. Includes AI agent skills.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-03-02",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1165277268",
+      "source": "github",
+      "title": "Panniantong/Agent-Reach",
+      "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
+      "url": "https://github.com/Panniantong/Agent-Reach",
+      "image": "https://opengraph.githubassets.com/1/Panniantong/Agent-Reach",
+      "metadata": {
+        "stars": 6829,
+        "language": "Python",
+        "topics": [
+          "agent-infrastructure",
+          "ai-agent",
+          "ai-search",
+          "automation",
+          "bilibili",
+          "claude-code",
+          "cli",
+          "cursor",
+          "free-api",
+          "llm-tools",
+          "mcp",
+          "python",
+          "reddit-scraper",
+          "twitter-scraper",
+          "web-scraper",
+          "xiaohongshu",
+          "youtube-transcript"
+        ],
+        "updatedAt": "2026-03-07T23:45:21Z",
+        "createdAt": "2026-02-24T02:10:24Z"
+      },
+      "analysis": {
+        "summary": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-24",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1164832776",
+      "source": "github",
+      "title": "cft0808/edict",
+      "description": "🏛️ 三省六部制 · OpenClaw Multi-Agent Orchestration System — 9 specialized AI agents with real-time dashboard, model config, and full audit trails",
+      "url": "https://github.com/cft0808/edict",
+      "image": "https://opengraph.githubassets.com/1/cft0808/edict",
+      "metadata": {
+        "stars": 5098,
+        "language": "Python",
+        "topics": [
+          "ai-agents",
+          "ai-orchestration",
+          "autonomous-agents",
+          "claude",
+          "dashboard",
+          "kanban",
+          "llm",
+          "multi-agent",
+          "openai",
+          "openclaw",
+          "orchestration",
+          "python",
+          "workflow-automation"
+        ],
+        "updatedAt": "2026-03-07T23:55:28Z",
+        "createdAt": "2026-02-23T14:35:04Z"
+      },
+      "analysis": {
+        "summary": "🏛️ 三省六部制 · OpenClaw Multi-Agent Orchestration System — 9 specialized AI agents with real-time dashboard, model config, and full audit trails",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-23",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1156137396",
+      "source": "github",
+      "title": "netease-youdao/LobsterAI",
+      "description": "Your 24/7 all-scenario AI agent that gets work done for you.",
+      "url": "https://github.com/netease-youdao/LobsterAI",
+      "image": "https://opengraph.githubassets.com/1/netease-youdao/LobsterAI",
+      "metadata": {
+        "stars": 3578,
+        "language": "TypeScript",
+        "topics": [],
+        "updatedAt": "2026-03-07T19:47:51Z",
+        "createdAt": "2026-02-12T09:56:20Z"
+      },
+      "analysis": {
+        "summary": "Your 24/7 all-scenario AI agent that gets work done for you.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-12",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1154009261",
+      "source": "github",
+      "title": "PeonPing/peon-ping",
+      "description": "Warcraft III Peon voice notifications (+ more!) for Claude Code, Codex, IDEs, and any AI agent. Stop babysitting your terminal. Employ a Peon today.",
+      "url": "https://github.com/PeonPing/peon-ping",
+      "image": "https://opengraph.githubassets.com/1/PeonPing/peon-ping",
+      "metadata": {
+        "stars": 3408,
+        "language": "Shell",
+        "topics": [
+          "ai",
+          "ai-engineering",
+          "antigravity",
+          "claude-code",
+          "codex",
+          "cursor",
+          "opencode",
+          "terminal"
+        ],
+        "updatedAt": "2026-03-07T23:52:50Z",
+        "createdAt": "2026-02-09T23:12:48Z"
+      },
+      "analysis": {
+        "summary": "Warcraft III Peon voice notifications (+ more!) for Claude Code, Codex, IDEs, and any AI agent. Stop babysitting your terminal. Employ a Peon today.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-09",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1162099055",
+      "source": "github",
+      "title": "Leonxlnx/taste-skill",
+      "description": "Taste-Skill (High-Agency Frontend) - gives your AI good taste. stops the AI from generating boring, generic, \"slop\" ",
+      "url": "https://github.com/Leonxlnx/taste-skill",
+      "image": "https://opengraph.githubassets.com/1/Leonxlnx/taste-skill",
+      "metadata": {
+        "stars": 2429,
+        "language": "Unknown",
+        "topics": [
+          "agent",
+          "ai",
+          "coding",
+          "lowcode",
+          "nocode",
+          "skill",
+          "skills",
+          "vibecoding"
+        ],
+        "updatedAt": "2026-03-07T23:59:08Z",
+        "createdAt": "2026-02-19T21:44:05Z"
+      },
+      "analysis": {
+        "summary": "Taste-Skill (High-Agency Frontend) - gives your AI good taste. stops the AI from generating boring, generic, \"slop\" ",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-19",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1156797572",
+      "source": "github",
+      "title": "builderz-labs/mission-control",
+      "description": "The open-source dashboard for AI agent orchestration. Manage agent fleets, track tasks, monitor costs, and orchestrate workflows — with direct CLI integration, GitHub sync, and real-time monitoring.",
+      "url": "https://github.com/builderz-labs/mission-control",
+      "image": "https://opengraph.githubassets.com/1/builderz-labs/mission-control",
+      "metadata": {
+        "stars": 1922,
+        "language": "TypeScript",
+        "topics": [
+          "agent-orchestration",
+          "dashboard",
+          "nextjs",
+          "openclaw",
+          "sqlite"
+        ],
+        "updatedAt": "2026-03-07T23:04:16Z",
+        "createdAt": "2026-02-13T04:06:19Z"
+      },
+      "analysis": {
+        "summary": "The open-source dashboard for AI agent orchestration. Manage agent fleets, track tasks, monitor costs, and orchestrate workflows — with direct CLI integration, GitHub sync, and real-time monitoring.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-13",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1174820787",
+      "source": "github",
+      "title": "karpathy/autoresearch",
+      "description": "AI agents running research on single-GPU nanochat training automatically",
+      "url": "https://github.com/karpathy/autoresearch",
+      "image": "https://opengraph.githubassets.com/1/karpathy/autoresearch",
+      "metadata": {
+        "stars": 1880,
+        "language": "Python",
+        "topics": [],
+        "updatedAt": "2026-03-07T23:59:32Z",
+        "createdAt": "2026-03-06T22:00:43Z"
+      },
+      "analysis": {
+        "summary": "AI agents running research on single-GPU nanochat training automatically",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-03-06",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1155816493",
+      "source": "github",
+      "title": "spacedriveapp/spacebot",
+      "description": "An AI agent for teams, communities, and multi-user environments.",
+      "url": "https://github.com/spacedriveapp/spacebot",
+      "image": "https://opengraph.githubassets.com/1/spacedriveapp/spacebot",
+      "metadata": {
+        "stars": 1608,
+        "language": "Rust",
+        "topics": [
+          "agent",
+          "agentic",
+          "ai",
+          "automation",
+          "developer-tools",
+          "enterprise",
+          "messaging"
+        ],
+        "updatedAt": "2026-03-07T22:26:35Z",
+        "createdAt": "2026-02-11T23:53:16Z"
+      },
+      "analysis": {
+        "summary": "An AI agent for teams, communities, and multi-user environments.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-11",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1154042797",
+      "source": "github",
+      "title": "aeromomo/claw-compactor",
+      "description": "🦞 Claw Compactor — The 98% Crusher. Cut your AI agent token spend in half with 5 layered compression techniques.",
+      "url": "https://github.com/aeromomo/claw-compactor",
+      "image": "https://opengraph.githubassets.com/1/aeromomo/claw-compactor",
+      "metadata": {
+        "stars": 1299,
+        "language": "Python",
+        "topics": [],
+        "updatedAt": "2026-03-07T23:50:13Z",
+        "createdAt": "2026-02-10T00:27:08Z"
+      },
+      "analysis": {
+        "summary": "🦞 Claw Compactor — The 98% Crusher. Cut your AI agent token spend in half with 5 layered compression techniques.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-10",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1152653916",
+      "source": "github",
+      "title": "openperf/brief",
+      "description": "AI Agent Service Agreement",
+      "url": "https://github.com/openperf/brief",
+      "image": "https://opengraph.githubassets.com/1/openperf/brief",
+      "metadata": {
+        "stars": 1177,
+        "language": "TypeScript",
+        "topics": [],
+        "updatedAt": "2026-03-07T23:48:44Z",
+        "createdAt": "2026-02-08T07:54:01Z"
+      },
+      "analysis": {
+        "summary": "AI Agent Service Agreement",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-08",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1173845549",
+      "source": "github",
+      "title": "twostraws/SwiftUI-Agent-Skill",
+      "description": "SwiftUI agent skill for Claude Code, Codex, and other AI tools.",
+      "url": "https://github.com/twostraws/SwiftUI-Agent-Skill",
+      "image": "https://opengraph.githubassets.com/1/twostraws/SwiftUI-Agent-Skill",
+      "metadata": {
+        "stars": 1052,
+        "language": "Unknown",
+        "topics": [],
+        "updatedAt": "2026-03-07T23:57:36Z",
+        "createdAt": "2026-03-05T20:13:14Z"
+      },
+      "analysis": {
+        "summary": "SwiftUI agent skill for Claude Code, Codex, and other AI tools.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-03-05",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1156170875",
+      "source": "github",
+      "title": "Nasiko-Labs/nasiko",
+      "description": "Developer Control Plane for your AI Agents",
+      "url": "https://github.com/Nasiko-Labs/nasiko",
+      "image": "https://opengraph.githubassets.com/1/Nasiko-Labs/nasiko",
+      "metadata": {
+        "stars": 960,
+        "language": "Python",
+        "topics": [],
+        "updatedAt": "2026-03-07T23:57:15Z",
+        "createdAt": "2026-02-12T10:45:29Z"
+      },
+      "analysis": {
+        "summary": "Developer Control Plane for your AI Agents",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-12",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1164376059",
+      "source": "github",
+      "title": "AlexAnys/awesome-openclaw-usecases-zh",
+      "description": "🇨🇳 OpenClaw（个人智能体）中文最佳用例大全 | 40 个真实场景（国内特色 + 海外的国内生态适配）：自动化办公、内容创作、服务器运维、个人助理、知识管理 | 新手友好 | Chinese guide for OpenClaw AI agent use cases",
+      "url": "https://github.com/AlexAnys/awesome-openclaw-usecases-zh",
+      "image": "https://opengraph.githubassets.com/1/AlexAnys/awesome-openclaw-usecases-zh",
+      "metadata": {
+        "stars": 950,
+        "language": "Unknown",
+        "topics": [
+          "ai-agent",
+          "ai-assistant",
+          "ai-automation",
+          "ai-tools",
+          "automation",
+          "awesome-list",
+          "chinese",
+          "claude",
+          "content-creation",
+          "devops",
+          "knowledge-management",
+          "llm",
+          "openclaw",
+          "personal-assistant",
+          "productivity",
+          "self-hosting",
+          "telegram-bot",
+          "use-cases",
+          "workflow-automation",
+          "zh-cn"
+        ],
+        "updatedAt": "2026-03-07T23:40:40Z",
+        "createdAt": "2026-02-23T02:20:51Z"
+      },
+      "analysis": {
+        "summary": "🇨🇳 OpenClaw（个人智能体）中文最佳用例大全 | 40 个真实场景（国内特色 + 海外的国内生态适配）：自动化办公、内容创作、服务器运维、个人助理、知识管理 | 新手友好 | Chinese guide for OpenClaw AI agent use cases",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-23",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1161025758",
+      "source": "github",
+      "title": "TraderAlice/OpenAlice",
+      "description": "File-driven AI trading agent engine for crypto and securities markets",
+      "url": "https://github.com/TraderAlice/OpenAlice",
+      "image": "https://opengraph.githubassets.com/1/TraderAlice/OpenAlice",
+      "metadata": {
+        "stars": 936,
+        "language": "TypeScript",
+        "topics": [],
+        "updatedAt": "2026-03-07T23:24:41Z",
+        "createdAt": "2026-02-18T16:42:55Z"
+      },
+      "analysis": {
+        "summary": "File-driven AI trading agent engine for crypto and securities markets",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-18",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1152159038",
+      "source": "github",
+      "title": "FireRedTeam/FireRed-OpenStoryline",
+      "description": "FireRed-OpenStoryline is an AI video editing agent that transforms manual editing into intention-driven directing through natural language interaction, LLM-powered planning, and precise tool orchestration. It facilitates transparent, human-in-the-loop creation with reusable Style Skills for consistent, professional storytelling.",
+      "url": "https://github.com/FireRedTeam/FireRed-OpenStoryline",
+      "image": "https://opengraph.githubassets.com/1/FireRedTeam/FireRed-OpenStoryline",
+      "metadata": {
+        "stars": 809,
+        "language": "Python",
+        "topics": [
+          "agent",
+          "chatbot",
+          "langchain",
+          "mcp",
+          "skills",
+          "video",
+          "video-cut",
+          "video-editing",
+          "video-editing-tools"
+        ],
+        "updatedAt": "2026-03-07T23:55:48Z",
+        "createdAt": "2026-02-07T13:03:57Z"
+      },
+      "analysis": {
+        "summary": "FireRed-OpenStoryline is an AI video editing agent that transforms manual editing into intention-driven directing through natural language interaction, LLM-powered planning, and precise tool orchestration. It facilitates transparent, human-in-the-loop creation with reusable Style Skills for consistent, professional storytelling.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-07",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1153190876",
+      "source": "github",
+      "title": "zilliztech/memsearch",
+      "description": "A Markdown-first memory system, a standalone library for any AI agent. Inspired by OpenClaw.",
+      "url": "https://github.com/zilliztech/memsearch",
+      "image": "https://opengraph.githubassets.com/1/zilliztech/memsearch",
+      "metadata": {
+        "stars": 785,
+        "language": "Python",
+        "topics": [
+          "agent",
+          "agent-memory",
+          "claude-code",
+          "claude-code-plugin",
+          "clawdbot",
+          "embeddings",
+          "memory",
+          "milvus",
+          "openclaw",
+          "progressive-disclosure",
+          "rag",
+          "semantic-search"
+        ],
+        "updatedAt": "2026-03-07T23:50:58Z",
+        "createdAt": "2026-02-09T02:29:16Z"
+      },
+      "analysis": {
+        "summary": "A Markdown-first memory system, a standalone library for any AI agent. Inspired by OpenClaw.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-09",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1156351367",
+      "source": "github",
+      "title": "jayminwest/overstory",
+      "description": "Multi-agent orchestration for AI coding agents — pluggable runtime adapters for Claude Code, Pi, and more",
+      "url": "https://github.com/jayminwest/overstory",
+      "image": "https://opengraph.githubassets.com/1/jayminwest/overstory",
+      "metadata": {
+        "stars": 776,
+        "language": "TypeScript",
+        "topics": [
+          "agent-swarms",
+          "ai-agents",
+          "claude-code",
+          "tmux"
+        ],
+        "updatedAt": "2026-03-07T22:12:10Z",
+        "createdAt": "2026-02-12T14:53:58Z"
+      },
+      "analysis": {
+        "summary": "Multi-agent orchestration for AI coding agents — pluggable runtime adapters for Claude Code, Pi, and more",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-12",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1159234860",
+      "source": "github",
+      "title": "Gentleman-Programming/engram",
+      "description": "Persistent memory system for AI coding agents. Agent-agnostic Go binary with SQLite + FTS5, MCP server, HTTP API, CLI, and TUI.",
+      "url": "https://github.com/Gentleman-Programming/engram",
+      "image": "https://opengraph.githubassets.com/1/Gentleman-Programming/engram",
+      "metadata": {
+        "stars": 763,
+        "language": "Go",
+        "topics": [],
+        "updatedAt": "2026-03-07T23:36:08Z",
+        "createdAt": "2026-02-16T13:38:41Z"
+      },
+      "analysis": {
+        "summary": "Persistent memory system for AI coding agents. Agent-agnostic Go binary with SQLite + FTS5, MCP server, HTTP API, CLI, and TUI.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-16",
+      "category": "ai-agent"
+    }
+  ]
+}

@@ -486,5 +486,30 @@
       "memovai/mimiclaw",
       "netease-youdao/LobsterAI"
     ]
+  },
+  {
+    "date": "2026-03-08",
+    "projects": [
+      "zeroclaw-labs/zeroclaw",
+      "googleworkspace/cli",
+      "Panniantong/Agent-Reach",
+      "cft0808/edict",
+      "netease-youdao/LobsterAI",
+      "PeonPing/peon-ping",
+      "Leonxlnx/taste-skill",
+      "builderz-labs/mission-control",
+      "karpathy/autoresearch",
+      "spacedriveapp/spacebot",
+      "aeromomo/claw-compactor",
+      "openperf/brief",
+      "twostraws/SwiftUI-Agent-Skill",
+      "Nasiko-Labs/nasiko",
+      "AlexAnys/awesome-openclaw-usecases-zh",
+      "TraderAlice/OpenAlice",
+      "FireRedTeam/FireRed-OpenStoryline",
+      "zilliztech/memsearch",
+      "jayminwest/overstory",
+      "Gentleman-Programming/engram"
+    ]
   }
 ]
