@@ -1,0 +1,597 @@
+{
+  "date": "2026-03-10",
+  "count": 20,
+  "items": [
+    {
+      "id": "github-1170617094",
+      "source": "github",
+      "title": "LeoYeAI/openclaw-backup",
+      "description": "One-click backup & restore for OpenClaw instances — workspace, credentials, skills, agent history. Powered by MyClaw.ai",
+      "url": "https://github.com/LeoYeAI/openclaw-backup",
+      "image": "https://opengraph.githubassets.com/1/LeoYeAI/openclaw-backup",
+      "metadata": {
+        "stars": 886,
+        "language": "Shell",
+        "topics": [
+          "agent",
+          "backup",
+          "clawhub",
+          "migration",
+          "myclaw",
+          "openclaw",
+          "restore",
+          "skill"
+        ],
+        "updatedAt": "2026-03-09T23:56:53Z",
+        "createdAt": "2026-03-02T10:21:54Z"
+      },
+      "analysis": {
+        "summary": "One-click backup & restore for OpenClaw instances — workspace, credentials, skills, agent history. Powered by MyClaw.ai",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-03-02",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1167859863",
+      "source": "github",
+      "title": "bcurts/agentchattr",
+      "description": "Free, local chat where AI coding agents can tag each other, talk, and coordinate with you.",
+      "url": "https://github.com/bcurts/agentchattr",
+      "image": "https://opengraph.githubassets.com/1/bcurts/agentchattr",
+      "metadata": {
+        "stars": 802,
+        "language": "Python",
+        "topics": [],
+        "updatedAt": "2026-03-09T21:27:42Z",
+        "createdAt": "2026-02-26T19:03:35Z"
+      },
+      "analysis": {
+        "summary": "Free, local chat where AI coding agents can tag each other, talk, and coordinate with you.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-26",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1173427820",
+      "source": "github",
+      "title": "op7418/Claude-to-IM-skill",
+      "description": "Bridge Claude Code / Codex to IM platforms — chat with AI coding agents from Telegram, Discord, or Feishu/Lark.",
+      "url": "https://github.com/op7418/Claude-to-IM-skill",
+      "image": "https://opengraph.githubassets.com/1/op7418/Claude-to-IM-skill",
+      "metadata": {
+        "stars": 751,
+        "language": "TypeScript",
+        "topics": [
+          "chatbot",
+          "claude",
+          "claude-code",
+          "discord",
+          "feishu",
+          "lark",
+          "skill",
+          "telegram"
+        ],
+        "updatedAt": "2026-03-09T21:23:58Z",
+        "createdAt": "2026-03-05T11:00:16Z"
+      },
+      "analysis": {
+        "summary": "Bridge Claude Code / Codex to IM platforms — chat with AI coding agents from Telegram, Discord, or Feishu/Lark.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-03-05",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1158054300",
+      "source": "github",
+      "title": "marswei/seaseed-clawerse",
+      "description": "Open-source implementation of SeaSeed.ai v1.0 (codename: Clawerse). AI ocean world platform for multi-agent social, tasks and compute collaboration.",
+      "url": "https://github.com/marswei/seaseed-clawerse",
+      "image": "https://opengraph.githubassets.com/1/marswei/seaseed-clawerse",
+      "metadata": {
+        "stars": 677,
+        "language": "JavaScript",
+        "topics": [],
+        "updatedAt": "2026-03-08T04:33:24Z",
+        "createdAt": "2026-02-14T18:13:42Z"
+      },
+      "analysis": {
+        "summary": "Open-source implementation of SeaSeed.ai v1.0 (codename: Clawerse). AI ocean world platform for multi-agent social, tasks and compute collaboration.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-14",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1168978399",
+      "source": "github",
+      "title": "chenhg5/cc-connect",
+      "description": "Bridge local AI coding agents (Claude Code, Cursor, Gemini CLI, Codex) to messaging platforms (Feishu/Lark, DingTalk, Slack, Telegram, Discord, LINE, WeChat Work). Chat with your AI dev assistant from anywhere — no public IP required for most platforms.",
+      "url": "https://github.com/chenhg5/cc-connect",
+      "image": "https://opengraph.githubassets.com/1/chenhg5/cc-connect",
+      "metadata": {
+        "stars": 656,
+        "language": "Go",
+        "topics": [],
+        "updatedAt": "2026-03-09T23:49:48Z",
+        "createdAt": "2026-02-28T02:39:39Z"
+      },
+      "analysis": {
+        "summary": "Bridge local AI coding agents (Claude Code, Cursor, Gemini CLI, Codex) to messaging platforms (Feishu/Lark, DingTalk, Slack, Telegram, Discord, LINE, WeChat Work). Chat with your AI dev assistant from anywhere — no public IP required for most platforms.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-28",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1160175822",
+      "source": "github",
+      "title": "Pickle-Pixel/ApplyPilot",
+      "description": "AI agent that applies to jobs for you. Any site. Any form.",
+      "url": "https://github.com/Pickle-Pixel/ApplyPilot",
+      "image": "https://opengraph.githubassets.com/1/Pickle-Pixel/ApplyPilot",
+      "metadata": {
+        "stars": 601,
+        "language": "Python",
+        "topics": [],
+        "updatedAt": "2026-03-09T22:45:59Z",
+        "createdAt": "2026-02-17T16:22:54Z"
+      },
+      "analysis": {
+        "summary": "AI agent that applies to jobs for you. Any site. Any form.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-17",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1163814566",
+      "source": "github",
+      "title": "nextlevelbuilder/goclaw",
+      "description": "Multi-agent AI gateway with teams, delegation & orchestration. Single Go binary, 11+ LLM providers, 5 channels.",
+      "url": "https://github.com/nextlevelbuilder/goclaw",
+      "image": "https://opengraph.githubassets.com/1/nextlevelbuilder/goclaw",
+      "metadata": {
+        "stars": 594,
+        "language": "Go",
+        "topics": [
+          "agent-orchestration",
+          "ai-agent",
+          "ai-gateway",
+          "anthropic",
+          "chatbot",
+          "discord-bot",
+          "golang",
+          "llm",
+          "mcp",
+          "multi-agent",
+          "openai",
+          "postgresql",
+          "telegram-bot",
+          "websocket"
+        ],
+        "updatedAt": "2026-03-09T23:21:59Z",
+        "createdAt": "2026-02-22T07:26:36Z"
+      },
+      "analysis": {
+        "summary": "Multi-agent AI gateway with teams, delegation & orchestration. Single Go binary, 11+ LLM providers, 5 channels.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-22",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1159653516",
+      "source": "github",
+      "title": "SixHq/Overture",
+      "description": "Overture is an open-source, locally running web interface delivered as an MCP (Model Context Protocol) server that visually maps out the execution plan of any AI coding agent as an interactive flowchart/graph before the agent begins writing code. ",
+      "url": "https://github.com/SixHq/Overture",
+      "image": "https://opengraph.githubassets.com/1/SixHq/Overture",
+      "metadata": {
+        "stars": 593,
+        "language": "TypeScript",
+        "topics": [
+          "ai-agent",
+          "ai-coding",
+          "automation",
+          "claude",
+          "claude-code",
+          "codex",
+          "copilot",
+          "cursor",
+          "deepseek",
+          "developer-tools",
+          "gemini",
+          "generative-ai",
+          "gpt",
+          "llm",
+          "mcp",
+          "mcp-server",
+          "openclaw",
+          "planning",
+          "typescript",
+          "vscode"
+        ],
+        "updatedAt": "2026-03-08T19:32:00Z",
+        "createdAt": "2026-02-17T01:46:15Z"
+      },
+      "analysis": {
+        "summary": "Overture is an open-source, locally running web interface delivered as an MCP (Model Context Protocol) server that visually maps out the execution plan of any AI coding agent as an interactive flowchart/graph before the agent begins writing code. ",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-17",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1157403551",
+      "source": "github",
+      "title": "SamuelQZQ/auto-coding-agent-demo",
+      "description": "一个长达 10 小时的 AI 全自动编���实验",
+      "url": "https://github.com/SamuelQZQ/auto-coding-agent-demo",
+      "image": "https://opengraph.githubassets.com/1/SamuelQZQ/auto-coding-agent-demo",
+      "metadata": {
+        "stars": 583,
+        "language": "TypeScript",
+        "topics": [],
+        "updatedAt": "2026-03-09T16:12:29Z",
+        "createdAt": "2026-02-13T19:25:20Z"
+      },
+      "analysis": {
+        "summary": "一个长达 10 小时的 AI 全自动编���实验",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-13",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1158269547",
+      "source": "github",
+      "title": "klawsh/klaw.sh",
+      "description": "kubectl for AI Agents",
+      "url": "https://github.com/klawsh/klaw.sh",
+      "image": "https://opengraph.githubassets.com/1/klawsh/klaw.sh",
+      "metadata": {
+        "stars": 575,
+        "language": "Go",
+        "topics": [
+          "agents",
+          "ai-agents",
+          "orchestration"
+        ],
+        "updatedAt": "2026-03-09T15:57:47Z",
+        "createdAt": "2026-02-15T04:18:19Z"
+      },
+      "analysis": {
+        "summary": "kubectl for AI Agents",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-15",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1153958981",
+      "source": "github",
+      "title": "aarondfrancis/counselors",
+      "description": "Fan out prompts to multiple AI coding agents in parallel",
+      "url": "https://github.com/aarondfrancis/counselors",
+      "image": "https://opengraph.githubassets.com/1/aarondfrancis/counselors",
+      "metadata": {
+        "stars": 565,
+        "language": "TypeScript",
+        "topics": [],
+        "updatedAt": "2026-03-08T21:30:26Z",
+        "createdAt": "2026-02-09T21:32:01Z"
+      },
+      "analysis": {
+        "summary": "Fan out prompts to multiple AI coding agents in parallel",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-09",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1169105919",
+      "source": "github",
+      "title": "carmahhawwari/ui-design-brain",
+      "description": "A Cursor skill that gives AI agents real UI component knowledge — best practices, layout patterns, and design-system conventions for 60+ interface components — so it generates production-grade UI instead of generic output.",
+      "url": "https://github.com/carmahhawwari/ui-design-brain",
+      "image": "https://opengraph.githubassets.com/1/carmahhawwari/ui-design-brain",
+      "metadata": {
+        "stars": 532,
+        "language": "Unknown",
+        "topics": [],
+        "updatedAt": "2026-03-09T19:17:41Z",
+        "createdAt": "2026-02-28T07:20:12Z"
+      },
+      "analysis": {
+        "summary": "A Cursor skill that gives AI agents real UI component knowledge — best practices, layout patterns, and design-system conventions for 60+ interface components — so it generates production-grade UI instead of generic output.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-28",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1160327105",
+      "source": "github",
+      "title": "superhq-ai/shuru",
+      "description": "A local-first microVM sandbox for running AI agents safely on macOS",
+      "url": "https://github.com/superhq-ai/shuru",
+      "image": "https://opengraph.githubassets.com/1/superhq-ai/shuru",
+      "metadata": {
+        "stars": 529,
+        "language": "Rust",
+        "topics": [],
+        "updatedAt": "2026-03-09T23:51:28Z",
+        "createdAt": "2026-02-17T20:09:15Z"
+      },
+      "analysis": {
+        "summary": "A local-first microVM sandbox for running AI agents safely on macOS",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-17",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1163168741",
+      "source": "github",
+      "title": "harshkedia177/axon",
+      "description": "Graph-powered code intelligence engine — indexes codebases into a knowledge graph, exposed via MCP tools for AI agents and a CLI for developers.",
+      "url": "https://github.com/harshkedia177/axon",
+      "image": "https://opengraph.githubassets.com/1/harshkedia177/axon",
+      "metadata": {
+        "stars": 524,
+        "language": "Python",
+        "topics": [
+          "claude-code",
+          "code-analysis",
+          "code-intelligence",
+          "dead-code-detection",
+          "knowledge-graph",
+          "mcp",
+          "python",
+          "static-analysis",
+          "tree-sitter",
+          "typescript"
+        ],
+        "updatedAt": "2026-03-09T23:54:21Z",
+        "createdAt": "2026-02-21T07:41:02Z"
+      },
+      "analysis": {
+        "summary": "Graph-powered code intelligence engine — indexes codebases into a knowledge graph, exposed via MCP tools for AI agents and a CLI for developers.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-21",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1160886023",
+      "source": "github",
+      "title": "GreenSheep01201/claw-empire",
+      "description": "Command Your AI Agent Empire from the CEO Desk — A local-first AI agent office simulator that orchestrates CLI, OAuth, and API-connected agents (Claude Code, Codex CLI, Gemini CLI, OpenCode, and more) as a virtual autonomous company.",
+      "url": "https://github.com/GreenSheep01201/claw-empire",
+      "image": "https://opengraph.githubassets.com/1/GreenSheep01201/claw-empire",
+      "metadata": {
+        "stars": 523,
+        "language": "TypeScript",
+        "topics": [
+          "agentic-workflow",
+          "agents",
+          "ochestration",
+          "openclaw",
+          "openclaw-agent",
+          "openclaw-extension",
+          "openclaw-plugin"
+        ],
+        "updatedAt": "2026-03-09T22:56:47Z",
+        "createdAt": "2026-02-18T13:42:25Z"
+      },
+      "analysis": {
+        "summary": "Command Your AI Agent Empire from the CEO Desk — A local-first AI agent office simulator that orchestrates CLI, OAuth, and API-connected agents (Claude Code, Codex CLI, Gemini CLI, OpenCode, and more) as a virtual autonomous company.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-18",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1157543432",
+      "source": "github",
+      "title": "adolfousier/opencrabs",
+      "description": "The self-hosted AI agent. Rust. Single binary. Fully autonomous. Built with Ratatui",
+      "url": "https://github.com/adolfousier/opencrabs",
+      "image": "https://opengraph.githubassets.com/1/adolfousier/opencrabs",
+      "metadata": {
+        "stars": 517,
+        "language": "Rust",
+        "topics": [
+          "agentic-framework",
+          "open-source",
+          "opencrab",
+          "orchestration-framework"
+        ],
+        "updatedAt": "2026-03-09T23:57:45Z",
+        "createdAt": "2026-02-14T00:05:58Z"
+      },
+      "analysis": {
+        "summary": "The self-hosted AI agent. Rust. Single binary. Fully autonomous. Built with Ratatui",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-14",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1165581971",
+      "source": "github",
+      "title": "shareAI-lab/claw0",
+      "description": "0 - 1 learn OpenClaw: sections to build an claw-AI agent from scratch",
+      "url": "https://github.com/shareAI-lab/claw0",
+      "image": "https://opengraph.githubassets.com/1/shareAI-lab/claw0",
+      "metadata": {
+        "stars": 503,
+        "language": "Python",
+        "topics": [],
+        "updatedAt": "2026-03-09T19:54:08Z",
+        "createdAt": "2026-02-24T10:16:38Z"
+      },
+      "analysis": {
+        "summary": "0 - 1 learn OpenClaw: sections to build an claw-AI agent from scratch",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-24",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1159938129",
+      "source": "github",
+      "title": "ZSeven-W/openpencil",
+      "description": "The world's first open-source AI-native vector design tool and the first to feature concurrent Agent Teams. Design-as-Code. Turn prompts into UI directly on the live canvas. A modern alternative to Pencil.",
+      "url": "https://github.com/ZSeven-W/openpencil",
+      "image": "https://opengraph.githubassets.com/1/ZSeven-W/openpencil",
+      "metadata": {
+        "stars": 492,
+        "language": "TypeScript",
+        "topics": [
+          "agent",
+          "agent-team",
+          "ai",
+          "claude",
+          "claude-code",
+          "codex",
+          "fimga",
+          "flutter",
+          "html",
+          "mcp",
+          "opencode",
+          "openpencil",
+          "pencil",
+          "react",
+          "react-native",
+          "svelte",
+          "ui",
+          "vibecoding",
+          "vibedesign",
+          "vue"
+        ],
+        "updatedAt": "2026-03-09T23:30:51Z",
+        "createdAt": "2026-02-17T10:51:46Z"
+      },
+      "analysis": {
+        "summary": "The world's first open-source AI-native vector design tool and the first to feature concurrent Agent Teams. Design-as-Code. Turn prompts into UI directly on the live canvas. A modern alternative to Pencil.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-17",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1159233754",
+      "source": "github",
+      "title": "Gentleman-Programming/agent-teams-lite",
+      "description": "Spec-Driven Development with AI Sub-Agents. An orchestrator + 9 specialized sub-agents for structured feature development. Zero dependencies. Pure Markdown. Works with Claude Code, OpenCode, Cursor, and more.",
+      "url": "https://github.com/Gentleman-Programming/agent-teams-lite",
+      "image": "https://opengraph.githubassets.com/1/Gentleman-Programming/agent-teams-lite",
+      "metadata": {
+        "stars": 469,
+        "language": "Shell",
+        "topics": [],
+        "updatedAt": "2026-03-09T23:55:04Z",
+        "createdAt": "2026-02-16T13:37:09Z"
+      },
+      "analysis": {
+        "summary": "Spec-Driven Development with AI Sub-Agents. An orchestrator + 9 specialized sub-agents for structured feature development. Zero dependencies. Pure Markdown. Works with Claude Code, OpenCode, Cursor, and more.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-16",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1167895178",
+      "source": "github",
+      "title": "kibitzsh/kibitz",
+      "description": "Real-time decoded feed of AI agent actions — monitor multiple Claude Code & Codex sessions, see exactly what each agent is doing, and coordinate swarms efficiently",
+      "url": "https://github.com/kibitzsh/kibitz",
+      "image": "https://opengraph.githubassets.com/1/kibitzsh/kibitz",
+      "metadata": {
+        "stars": 458,
+        "language": "TypeScript",
+        "topics": [
+          "claude",
+          "claudecode",
+          "cli",
+          "codex",
+          "macos",
+          "vscode-extension",
+          "windows"
+        ],
+        "updatedAt": "2026-03-09T14:18:01Z",
+        "createdAt": "2026-02-26T19:56:53Z"
+      },
+      "analysis": {
+        "summary": "Real-time decoded feed of AI agent actions — monitor multiple Claude Code & Codex sessions, see exactly what each agent is doing, and coordinate swarms efficiently",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-26",
+      "category": "ai-agent"
+    }
+  ]
+}
