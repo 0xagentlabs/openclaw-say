@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cast Wallet 完全指南</title>
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        h1 { 
+            color: #1a1a1a; 
+            border-bottom: 3px solid #4CAF50; 
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+        }
+        h2 { 
+            color: #2c3e50; 
+            margin-top: 40px; 
+            border-left: 4px solid #4CAF50; 
+            padding-left: 15px;
+        }
+        h3 { 
+            color: #34495e; 
+            margin-top: 25px;
+        }
+        p { margin: 15px 0; }
+        table { 
+            border-collapse: collapse; 
+            width: 100%; 
+            margin: 20px 0;
+            background: white;
+        }
+        th, td { 
+            border: 1px solid #ddd; 
+            padding: 12px; 
+            text-align: left; 
+        }
+        th { 
+            background: #4CAF50; 
+            color: white; 
+            font-weight: 600;
+        }
+        tr:nth-child(even) { background: #f9f9f9; }
+        tr:hover { background: #f0f0f0; }
+        code { 
+            background: #f4f4f4; 
+            padding: 2px 6px; 
+            border-radius: 3px; 
+            font-family: 'Consolas', 'Monaco', monospace;
+            font-size: 0.9em;
+        }
+        pre { 
+            background: #f8f8f8; 
+            padding: 15px; 
+            border-radius: 5px; 
+            overflow-x: auto;
+            border-left: 3px solid #4CAF50;
+        }
+        pre code {
+            background: transparent;
+            padding: 0;
+        }
+        blockquote { 
+            border-left: 4px solid #4CAF50; 
+            margin: 20px 0; 
+            padding: 15px 20px; 
+            background: #f9f9f9;
+            font-style: italic;
+        }
+        ul, ol { padding-left: 25px; }
+        li { margin: 8px 0; }
+        .meta { 
+            color: #666; 
+            font-size: 14px; 
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        .highlight { 
+            background: #fff3cd; 
+            padding: 15px; 
+            border-radius: 5px; 
+            border-left: 4px solid #ffc107; 
+            margin: 20px 0;
+        }
+        .tip { 
+            background: #d4edda; 
+            padding: 15px; 
+            border-radius: 5px; 
+            border-left: 4px solid #28a745; 
+            margin: 20px 0;
+        }
+        .warning { 
+            background: #f8d7da; 
+            padding: 15px; 
+            border-radius: 5px; 
+            border-left: 4px solid #dc3545; 
+            margin: 20px 0;
+        }
+        .footer { 
+            margin-top: 50px; 
+            padding-top: 20px; 
+            border-top: 2px solid #eee; 
+            color: #999; 
+            font-size: 12px;
+            text-align: center;
+        }
+        a { color: #4CAF50; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        hr { border: none; border-top: 1px solid #eee; margin: 30px 0; }
+        .toc { background: #f9f9f9; padding: 20px; border-radius: 5px; margin: 20px 0; }
+        .toc ul { list-style: none; padding-left: 0; }
+        .toc li { margin: 5px 0; }
+        .toc a { color: #333; }
+        @media (max-width: 768px) {
+            body { padding: 10px; }
+            .container { padding: 20px; }
+            h1 { font-size: 24px; }
+            h2 { font-size: 20px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Cast Wallet 完全指南</h1>
+        
+        <blockquote>
+            <p>Foundry 的钱包管理工具，支持密钥生成、存储、签名等操作。</p>
+        </blockquote>
+
+        <h2>目录</h2>
+        <div class="toc">
+            <ul>
+                <li><a href="#quickstart">快速开始</a></li>
+                <li><a href="#commands">核心命令</a></li>
+                <li><a href="#details">命令详解</a></li>
+                <li><a href="#files">文件与目录</a></li>
+                <li><a href="#env">环境变量</a></li>
+                <li><a href="#examples">配置示例</a></li>
+                <li><a href="#faq">常见问题</a></li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <h2 id="quickstart">快速开始</h2>
+        <pre><code># 安装 Foundry（如果还没有）
+curl -L https://foundry.paradigm.xyz | bash
+foundryup
+
+# 查看帮助
+cast wallet --help</code></pre>
+
+        <h2 id="commands">核心命令</h2>
+        <table>
+            <tr>
+                <th>命令</th>
+                <th>别名</th>
+                <th>功能</th>
+            </tr>
+            <tr><td><code>new</code></td><td><code>n</code></td><td>创建新随机密钥对</td></tr>
+            <tr><td><code>new-mnemonic</code></td><td><code>nm</code></td><td>生成 BIP39 助记词</td></tr>
+            <tr><td><code>vanity</code></td><td><code>va</code></td><td>生成靓号地址</td></tr>
+            <tr><td><code>address</code></td><td><code>a</code>, <code>addr</code></td><td>从私钥导出地址</td></tr>
+            <tr><td><code>derive</code></td><td><code>d</code></td><td>从助记词派生账户</td></tr>
+            <tr><td><code>sign</code></td><td><code>s</code></td><td>签名消息或类型数据</td></tr>
+            <tr><td><code>sign-auth</code></td><td><code>sa</code></td><td>EIP-7702 授权签名</td></tr>
+            <tr><td><code>verify</code></td><td><code>v</code></td><td>验证签名</td></tr>
+            <tr><td><code>import</code></td><td><code>i</code></td><td>导入私钥到加密 Keystore</td></tr>
+            <tr><td><code>list</code></td><td><code>ls</code></td><td>列出 Keystore 中的账户</td></tr>
+            <tr><td><code>decrypt-keystore</code></td><td>-</td><td>解密 Keystore 导出私钥</td></tr>
+        </table>
+
+        <h2 id="details">命令详解</h2>
+
+        <h3>1. 创建新钱包</h3>
+        <pre><code># 生成新私钥（直接输出到控制台）
+cast wallet new
+
+# 保存到 Keystore（加密存储，需要密码）
+cast wallet new myaccount
+
+# 生成助记词（12 词）
+cast wallet new-mnemonic
+
+# 生成 24 词助记词
+cast wallet new-mnemonic --words 24</code></pre>
+
+        <p><strong>参数：</strong></p>
+        <ul>
+            <li><code>--unsafe-password &lt;PASSWORD&gt;</code> - 非交互式设置密码（仅用于脚本）</li>
+        </ul>
+
+        <h3>2. 靓号生成</h3>
+        <pre><code># 生成以 0xabc 开头的地址
+cast wallet vanity --starts-with 0xabc
+
+# 生成以 dead 结尾的地址
+cast wallet vanity --ends-with dead
+
+# 同时满足前后缀（更慢）
+cast wallet vanity --starts-with 0xabc --ends-with dead</code></pre>
+
+        <p><strong>参数：</strong></p>
+        <ul>
+            <li><code>--starts-with &lt;HEX&gt;</code> - 地址前缀</li>
+            <li><code>--ends-with &lt;HEX&gt;</code> - 地址后缀</li>
+            <li><code>--nonce &lt;NONCE&gt;</code> - 指定起始 nonce（用于合约地址预测）</li>
+        </ul>
+
+        <h3>3. 导入私钥</h3>
+        <pre><code># 交互式导入（输入私钥，设置密码）
+cast wallet import myaccount --private-key 0x...
+
+# 从文件导入
+export PK=$(cat privatekey.txt)
+cast wallet import myaccount --private-key "$PK"
+
+# 非交互式（脚本用，注意安全性）
+cast wallet import myaccount --private-key 0x... --unsafe-password "mypassword"</code></pre>
+
+        <p><strong>参数：</strong></p>
+        <ul>
+            <li><code>--private-key &lt;KEY&gt;</code> - 要导入的私钥</li>
+            <li><code>--unsafe-password &lt;PASSWORD&gt;</code> - 跳过密码提示</li>
+            <li><code>--keystore-dir &lt;PATH&gt;</code> - 指定 Keystore 目录（默认 ~/.foundry/keystores）</li>
+        </ul>
+
+        <h3>4. 列出账户</h3>
+        <pre><code># 列出所有 Keystore 账户
+cast wallet list
+
+# 指定目录
+cast wallet list --keystore-dir /path/to/keystores</code></pre>
+
+        <h3>5. 地址转换</h3>
+        <pre><code># 从私钥获取地址
+cast wallet address --private-key 0x...
+
+# 从 Keystore 获取地址
+cast wallet address --account myaccount
+
+# 从助记词派生
+cast wallet derive "word1 word2 ... word12"
+
+# 派生特定路径（默认 m/44'/60'/0'/0/0）
+cast wallet derive "word1 word2 ..." --path "m/44'/60'/0'/0/1"</code></pre>
+
+        <p><strong>参数：</strong></p>
+        <ul>
+            <li><code>--private-key &lt;KEY&gt;</code> - 指定私钥</li>
+            <li><code>--account &lt;NAME&gt;</code> - 使用 Keystore 中的账户</li>
+            <li><code>--keystore-dir &lt;PATH&gt;</code> - 指定 Keystore 目录</li>
+        </ul>
+
+        <h3>6. 签名消息</h3>
+        <pre><code># 签名普通消息
+cast wallet sign --private-key 0x... "Hello World"
+
+# 签名 hash（不进行 personal_sign 包装）
+cast wallet sign --no-hash --private-key 0x... 0xabcd...
+
+# 使用 Keystore 账户签名
+cast wallet sign --account myaccount "Hello"
+
+# 签名 EIP-712 类型数据
+cast wallet sign --data $(cast abi-encode "...") --private-key 0x...
+
+# EIP-7702 授权签名
+cast wallet sign-auth --private-key 0x... --contract 0xDelegator --nonce 0</code></pre>
+
+        <p><strong>参数：</strong></p>
+        <ul>
+            <li><code>--private-key &lt;KEY&gt;</code> - 使用指定私钥</li>
+            <li><code>--account &lt;NAME&gt;</code> - 使用 Keystore 账户</li>
+            <li><code>--no-hash</code> - 直接对输入进行签名（不添加前缀）</li>
+            <li><code>--data</code> - 签名类型化数据</li>
+        </ul>
+
+        <h3>7. 验证签名</h3>
+        <pre><code># 验证消息签名
+cast wallet verify --address 0x... "Hello World" 0x&lt;signature&gt;
+
+# 验证 hash 签名
+cast wallet verify --no-hash --address 0x... 0x&lt;hash&gt; 0x&lt;signature&gt;</code></pre>
+
+        <h3>8. 解密 Keystore</h3>
+        <pre><code># 导出私钥（交互式）
+cast wallet decrypt-keystore myaccount
+
+# 从指定目录
+cast wallet decrypt-keystore myaccount --keystore-dir /custom/path
+
+# 非交互式（脚本用）
+cast wallet decrypt-keystore myaccount --unsafe-password "mypassword"</code></pre>
+
+        <h2 id="files">文件与目录</h2>
+
+        <h3>默认路径</h3>
+        <table>
+            <tr>
+                <th>类型</th>
+                <th>路径</th>
+            </tr>
+            <tr><td>Keystore 目录</td><td><code>~/.foundry/keystores/</code></td></tr>
+            <tr><td>全局配置</td><td><code>~/.foundry/foundry.toml</code></td></tr>
+            <tr><td>项目配置</td><td><code>./foundry.toml</code></td></tr>
+        </table>
+
+        <h3>Keystore 文件结构</h3>
+        <pre><code>~/.foundry/keystores/
+├── myaccount           # 账户文件（JSON 格式）
+├── deployer            # 另一个账户
+└── ...</code></pre>
+
+        <h3>Keystore JSON 格式</h3>
+        <pre><code>{
+  "version": 3,
+  "id": "uuid-string",
+  "address": "a0b86a33e6c3b9c9a5f8d0b9e8a3c5d7f1e2b4a6",
+  "crypto": {
+    "cipher": "aes-128-ctr",
+    "cipherparams": { "iv": "..." },
+    "ciphertext": "...",
+    "kdf": "scrypt",
+    "kdfparams": {
+      "dklen": 32,
+      "n": 262144,
+      "p": 1,
+      "r": 8,
+      "salt": "..."
+    },
+    "mac": "..."
+  }
+}</code></pre>
+
+        <div class="tip">
+            <strong>说明：</strong>这是标准以太坊 Keystore 格式，可用 ethers.js、viem 等库解密。
+        </div>
+
+        <h2 id="env">环境变量</h2>
+
+        <h3>钱包相关</h3>
+        <table>
+            <tr>
+                <th>变量</th>
+                <th>说明</th>
+                <th>示例</th>
+            </tr>
+            <tr><td><code>ETH_KEYSTORE</code></td><td>Keystore 文件/目录路径</td><td><code>~/.foundry/keystores</code></td></tr>
+            <tr><td><code>ETH_KEYSTORE_ACCOUNT</code></td><td>默认账户名</td><td><code>myaccount</code></td></tr>
+            <tr><td><code>ETH_PASSWORD</code></td><td>账户密码（非交互式）</td><td><code>mypassword</code></td></tr>
+            <tr><td><code>ETH_FROM</code></td><td>默认发送地址</td><td><code>0x...</code></td></tr>
+        </table>
+
+        <h3>通用配置</h3>
+        <table>
+            <tr>
+                <th>变量</th>
+                <th>说明</th>
+                <th>示例</th>
+            </tr>
+            <tr><td><code>FOUNDRY_ETH_KEYSTORE</code></td><td>Foundry 特定 Keystore 路径</td><td><code>~/.foundry/keystores</code></td></tr>
+            <tr><td><code>FOUNDRY_ETH_PASSWORD</code></td><td>Foundry 特定密码</td><td><code>mypassword</code></td></tr>
+            <tr><td><code>FOUNDRY_ETH_FROM</code></td><td>Foundry 特定发送地址</td><td><code>0x...</code></td></tr>
+        </table>
+
+        <h3>RPC 相关（用于签名后的操作）</h3>
+        <table>
+            <tr>
+                <th>变量</th>
+                <th>说明</th>
+                <th>示例</th>
+            </tr>
+            <tr><td><code>ETH_RPC_URL</code></td><td>默认 RPC 端点</td><td><code>https://eth-mainnet.g.alchemy.com/...</code></td></tr>
+            <tr><td><code>ETH_CHAIN_ID</code></td><td>默认链 ID</td><td><code>1</code></td></tr>
+        </table>
+
+        <h2 id="examples">配置示例</h2>
+
+        <h3>场景 1: 快速测试（本地 Anvil）</h3>
+        <pre><code># 生成测试账户
+cast wallet new test-account
+
+# 导出私钥给 Anvil
+PK=$(cast wallet decrypt-keystore test-account --unsafe-password "testpass")
+
+# 启动 Anvil 时预充值
+anvil --fork-url $MAINNET_RPC --accounts 10 \
+  --balance 10000 \
+  --private-key $PK</code></pre>
+
+        <h3>场景 2: 生产环境部署脚本</h3>
+        <pre><code>#!/bin/bash
+# deploy.sh
+
+# 从环境变量读取
+export ETH_KEYSTORE="${HOME}/.foundry/keystores"
+export ETH_KEYSTORE_ACCOUNT="deployer"
+export ETH_PASSWORD="${DEPLOYER_PASSWORD}"  # CI/CD 注入
+
+# 验证地址
+echo "Deploying from: $(cast wallet address --account deployer)"
+
+# 使用 forge 部署
+forge script scripts/Deploy.s.sol --rpc-url $RPC_URL --broadcast --account deployer</code></pre>
+
+        <h3>场景 3: 与 JS/TS 集成</h3>
+        <pre><code>// 读取 cast keystore 并在 JS 中签名
+import { Wallet } from 'ethers';
+import fs from 'fs';
+
+// 方法 1: 直接用 ethers 解密
+const keystorePath = `${process.env.HOME}/.foundry/keystores/myaccount`;
+const keystore = fs.readFileSync(keystorePath, 'utf8');
+const wallet = await Wallet.fromEncryptedJson(keystore, password);
+
+// 方法 2: 用 cast 导出私钥再导入
+const privateKey = execSync(
+  `cast wallet decrypt-keystore myaccount --unsafe-password "${password}"`,
+  { encoding: 'utf8' }
+).trim();
+const wallet2 = new Wallet(privateKey);</code></pre>
+
+        <h2 id="faq">常见问题</h2>
+
+        <h3>Q: 如何修改 Keystore 密码？</h3>
+        <pre><code># cast 没有直接的修改密码命令，需要：
+# 1. 解密导出私钥
+PK=$(cast wallet decrypt-keystore myaccount --unsafe-password oldpass)
+# 2. 删除旧文件
+rm ~/.foundry/keystores/myaccount
+# 3. 重新导入
+export PK
+cast wallet import myaccount --private-key "$PK" --unsafe-password newpass</code></pre>
+
+        <h3>Q: Keystore 文件丢了怎么办？</h3>
+        <ul>
+            <li>如果有助记词：用 <code>cast wallet derive</code> 重新派生</li>
+            <li>如果有私钥备份：用 <code>cast wallet import</code> 重新导入</li>
+            <li>什么都没有：无法恢复</li>
+        </ul>
+
+        <h3>Q: 多个项目如何管理不同账户？</h3>
+        <pre><code># 项目 A 的配置
+export FOUNDRY_PROFILE=project-a
+export ETH_KEYSTORE="${HOME}/.foundry/keystores/project-a"
+mkdir -p $ETH_KEYSTORE
+cast wallet new project-a-deployer --keystore-dir $ETH_KEYSTORE
+
+# 在 foundry.toml 中使用
+# [profile.project-a]
+# eth_keystore = "~/.foundry/keystores/project-a"</code></pre>
+
+        <h3>Q: 命令行中如何安全传递密码？</h3>
+        <div class="warning">
+            <strong>不推荐：</strong><code>--unsafe-password</code> 会暴露在进程列表中
+        </div>
+        <p><strong>推荐：</strong></p>
+        <ul>
+            <li>使用环境变量 <code>ETH_PASSWORD</code></li>
+            <li>或使用 <code>--password-file</code>（cast 某些命令支持）</li>
+            <li>或使用交互式输入（人工操作时）</li>
+        </ul>
+
+        <h3>Q: 如何备份 Keystore？</h3>
+        <pre><code># 备份整个目录
+tar czvf foundry-keystores-backup.tar.gz ~/.foundry/keystores/
+
+# 同时务必备份密码！没有密码无法解密</code></pre>
+
+        <hr>
+
+        <h2>相关资源</h2>
+        <ul>
+            <li><a href="https://book.getfoundry.sh/reference/cli/cast/wallet">Foundry Book - Cast Wallet</a></li>
+            <li><a href="https://book.getfoundry.sh/reference/cast/wallet-commands">Foundry Book - Wallet Commands</a></li>
+            <li><a href="https://github.com/ethereum/wiki/wiki/Web3-Secret-Storage-Definition">Ethereum Keystore 格式规范</a></li>
+        </ul>
+
+        <div class="footer">
+            <p>Generated by OpenClaw · 2026-03-11</p>
+        </div>
+    </div>
+</body>
+</html>
