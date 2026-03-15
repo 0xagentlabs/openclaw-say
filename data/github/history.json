@@ -536,5 +536,30 @@
       "Gentleman-Programming/agent-teams-lite",
       "kibitzsh/kibitz"
     ]
+  },
+  {
+    "date": "2026-03-15",
+    "projects": [
+      "karpathy/autoresearch",
+      "googleworkspace/cli",
+      "cft0808/edict",
+      "Panniantong/Agent-Reach",
+      "tanweai/pua",
+      "Leonxlnx/taste-skill",
+      "twostraws/SwiftUI-Agent-Skill",
+      "AlexAnys/awesome-openclaw-usecases-zh",
+      "Gentleman-Programming/engram",
+      "chenhg5/cc-connect",
+      "TraderAlice/OpenAlice",
+      "op7418/Claude-to-IM-skill",
+      "ghostwright/ghost-os",
+      "LeoYeAI/openclaw-backup",
+      "pasky/chrome-cdp-skill",
+      "bcurts/agentchattr",
+      "chrisworsey55/atlas-gic",
+      "nextlevelbuilder/goclaw",
+      "GreenSheep01201/claw-empire",
+      "Gentleman-Programming/agent-teams-lite"
+    ]
   }
 ]
