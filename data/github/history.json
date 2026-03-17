@@ -1,43 +1,5 @@
 [
   {
-    "date": "2026-02-14",
-    "projects": [
-      "BlockRunAI/ClawRouter",
-      "benjitaylor/agentation",
-      "AvdLee/SwiftUI-Agent-Skill",
-      "supabase/agent-skills",
-      "DingTalk-Real-AI/dingtalk-moltbot-connector",
-      "sseanliu/VisionClaw",
-      "yohey-w/multi-agent-shogun",
-      "TheAgentContextLab/OneContext"
-    ]
-  },
-  {
-    "date": "2026-02-15",
-    "projects": [
-      "rivet-dev/sandbox-agent",
-      "luccast/crabwalk",
-      "tinyfish-io/tinyfish-cookbook",
-      "snwfdhmp/awesome-ralph",
-      "run-bigpig/jcp",
-      "BankrBot/openclaw-skills",
-      "six2dez/burp-ai-agent",
-      "WordPress/agent-skills",
-      "callstackincubator/agent-device",
-      "softaworks/agent-toolkit",
-      "cursor/agent-trace",
-      "ygwyg/MAHORAGA",
-      "aeromomo/claw-compactor",
-      "jingkaihe/matchlock",
-      "ValueCell-ai/ClawX",
-      "jo-inc/camofox-browser",
-      "zilliztech/memsearch",
-      "dannote/figma-use",
-      "qufei1993/skills-hub",
-      "crshdn/mission-control"
-    ]
-  },
-  {
     "date": "2026-02-16",
     "projects": [
       "coollabsio/jean",
@@ -560,6 +522,31 @@
       "nextlevelbuilder/goclaw",
       "GreenSheep01201/claw-empire",
       "Gentleman-Programming/agent-teams-lite"
+    ]
+  },
+  {
+    "date": "2026-03-17",
+    "projects": [
+      "mukul975/Anthropic-Cybersecurity-Skills",
+      "Narcooo/inkos",
+      "hyperspaceai/agi",
+      "jnMetaCode/agency-agents-zh",
+      "shareAI-lab/claw0",
+      "onecli/onecli",
+      "ZSeven-W/openpencil",
+      "twostraws/Swift-Agent-Skills",
+      "Pickle-Pixel/ApplyPilot",
+      "jrswab/axe",
+      "SixHq/Overture",
+      "carmahhawwari/ui-design-brain",
+      "harshkedia177/axon",
+      "uluckyXH/OpenMOSS",
+      "superhq-ai/shuru",
+      "JohnRiceML/clawport-ui",
+      "es617/claude-replay",
+      "wesm/agentsview",
+      "kibitzsh/kibitz",
+      "sangrokjung/claude-forge"
     ]
   }
 ]
