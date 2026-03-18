@@ -1,30 +1,5 @@
 [
   {
-    "date": "2026-02-16",
-    "projects": [
-      "coollabsio/jean",
-      "always-further/nono",
-      "nhevers/MoltBrain",
-      "voocel/openclaw-mini",
-      "nrslib/takt",
-      "BradGroux/veritas-kanban",
-      "rohitg00/skillkit",
-      "ramziddin/solid-skills",
-      "vueuse/skills",
-      "aitytech/agentkits-marketing",
-      "openperf/brief",
-      "YuJunZhiXue/github-skill-forge",
-      "RunanywhereAI/on-device-browser-agent",
-      "stablyai/agent-slack",
-      "DataDog/pup",
-      "opencmit/JoinAI-Agent",
-      "yan5xu/code-relay",
-      "mikeyobrien/rho",
-      "RefoundAI/lenny-skills",
-      "openperf/openclaw-cloud"
-    ]
-  },
-  {
     "date": "2026-02-17",
     "projects": [
       "BlockRunAI/ClawRouter",
@@ -547,6 +522,31 @@
       "wesm/agentsview",
       "kibitzsh/kibitz",
       "sangrokjung/claude-forge"
+    ]
+  },
+  {
+    "date": "2026-03-18",
+    "projects": [
+      "karpathy/autoresearch",
+      "googleworkspace/cli",
+      "cft0808/edict",
+      "Panniantong/Agent-Reach",
+      "tanweai/pua",
+      "Leonxlnx/taste-skill",
+      "twostraws/SwiftUI-Agent-Skill",
+      "AlexAnys/awesome-openclaw-usecases-zh",
+      "TraderAlice/OpenAlice",
+      "pasky/chrome-cdp-skill",
+      "chenhg5/cc-connect",
+      "op7418/Claude-to-IM-skill",
+      "NVIDIA/OpenShell",
+      "ghostwright/ghost-os",
+      "LeoYeAI/openclaw-backup",
+      "bcurts/agentchattr",
+      "nextlevelbuilder/goclaw",
+      "chrisworsey55/atlas-gic",
+      "GreenSheep01201/claw-empire",
+      "meitarbe/cognetivy"
     ]
   }
 ]

@@ -1,0 +1,626 @@
+{
+  "date": "2026-03-18",
+  "count": 20,
+  "items": [
+    {
+      "id": "github-1174820787",
+      "source": "github",
+      "title": "karpathy/autoresearch",
+      "description": "AI agents running research on single-GPU nanochat training automatically",
+      "url": "https://github.com/karpathy/autoresearch",
+      "image": "https://opengraph.githubassets.com/1/karpathy/autoresearch",
+      "metadata": {
+        "stars": 40387,
+        "language": "Python",
+        "topics": [],
+        "updatedAt": "2026-03-18T00:02:57Z",
+        "createdAt": "2026-03-06T22:00:43Z"
+      },
+      "analysis": {
+        "summary": "AI agents running research on single-GPU nanochat training automatically",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-03-06",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1171026502",
+      "source": "github",
+      "title": "googleworkspace/cli",
+      "description": "Google Workspace CLI — one command-line tool for Drive, Gmail, Calendar, Sheets, Docs, Chat, Admin, and more. Dynamically built from Google Discovery Service. Includes AI agent skills.",
+      "url": "https://github.com/googleworkspace/cli",
+      "image": "https://opengraph.githubassets.com/1/googleworkspace/cli",
+      "metadata": {
+        "stars": 21201,
+        "language": "Rust",
+        "topics": [
+          "agent-skills",
+          "ai-agent",
+          "automation",
+          "cli",
+          "discovery-api",
+          "gemini-cli-extension",
+          "google-admin",
+          "google-api",
+          "google-calendar",
+          "google-chat",
+          "google-docs",
+          "google-drive",
+          "google-sheets",
+          "google-workspace",
+          "oauth2",
+          "rust"
+        ],
+        "updatedAt": "2026-03-18T00:03:00Z",
+        "createdAt": "2026-03-02T19:46:06Z"
+      },
+      "analysis": {
+        "summary": "Google Workspace CLI — one command-line tool for Drive, Gmail, Calendar, Sheets, Docs, Chat, Admin, and more. Dynamically built from Google Discovery Service. Includes AI agent skills.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-03-02",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1164832776",
+      "source": "github",
+      "title": "cft0808/edict",
+      "description": "🏛️ 三省六部制 · OpenClaw Multi-Agent Orchestration System — 9 specialized AI agents with real-time dashboard, model config, and full audit trails",
+      "url": "https://github.com/cft0808/edict",
+      "image": "https://opengraph.githubassets.com/1/cft0808/edict",
+      "metadata": {
+        "stars": 10570,
+        "language": "Python",
+        "topics": [
+          "ai-agents",
+          "ai-orchestration",
+          "autonomous-agents",
+          "claude",
+          "dashboard",
+          "kanban",
+          "llm",
+          "multi-agent",
+          "openai",
+          "openclaw",
+          "orchestration",
+          "python",
+          "workflow-automation"
+        ],
+        "updatedAt": "2026-03-17T23:59:08Z",
+        "createdAt": "2026-02-23T14:35:04Z"
+      },
+      "analysis": {
+        "summary": "🏛️ 三省六部制 · OpenClaw Multi-Agent Orchestration System — 9 specialized AI agents with real-time dashboard, model config, and full audit trails",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-23",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1165277268",
+      "source": "github",
+      "title": "Panniantong/Agent-Reach",
+      "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
+      "url": "https://github.com/Panniantong/Agent-Reach",
+      "image": "https://opengraph.githubassets.com/1/Panniantong/Agent-Reach",
+      "metadata": {
+        "stars": 9712,
+        "language": "Python",
+        "topics": [
+          "agent-infrastructure",
+          "ai-agent",
+          "ai-search",
+          "automation",
+          "bilibili",
+          "claude-code",
+          "cli",
+          "cursor",
+          "free-api",
+          "llm-tools",
+          "mcp",
+          "python",
+          "reddit-scraper",
+          "twitter-scraper",
+          "web-scraper",
+          "xiaohongshu",
+          "youtube-transcript"
+        ],
+        "updatedAt": "2026-03-17T23:50:41Z",
+        "createdAt": "2026-02-24T02:10:24Z"
+      },
+      "analysis": {
+        "summary": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-24",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1176129893",
+      "source": "github",
+      "title": "tanweai/pua",
+      "description": "你是一个曾经被寄予厚望的 P8 级工程师。Anthropic 当初给你定级的时候，对你的期望是很高的。  一个agent使用的高能动性的skill。  Your AI has been placed on a PIP. 30 days to show improvement.",
+      "url": "https://github.com/tanweai/pua",
+      "image": "https://opengraph.githubassets.com/1/tanweai/pua",
+      "metadata": {
+        "stars": 8284,
+        "language": "HTML",
+        "topics": [
+          "agency",
+          "agent",
+          "pip",
+          "pua"
+        ],
+        "updatedAt": "2026-03-17T23:17:25Z",
+        "createdAt": "2026-03-08T16:55:16Z"
+      },
+      "analysis": {
+        "summary": "你是一个曾经被寄予厚望的 P8 级工程师。Anthropic 当初给你定级的时候，对你的期望是很高的。  一个agent使用的高能动性的skill。  Your AI has been placed on a PIP. 30 days to show improvement.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-03-08",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1162099055",
+      "source": "github",
+      "title": "Leonxlnx/taste-skill",
+      "description": "Taste-Skill (High-Agency Frontend) - gives your AI good taste. stops the AI from generating boring, generic, \"slop\" ",
+      "url": "https://github.com/Leonxlnx/taste-skill",
+      "image": "https://opengraph.githubassets.com/1/Leonxlnx/taste-skill",
+      "metadata": {
+        "stars": 3782,
+        "language": "Unknown",
+        "topics": [
+          "agent",
+          "ai",
+          "coding",
+          "lowcode",
+          "nocode",
+          "skill",
+          "skills",
+          "vibecoding"
+        ],
+        "updatedAt": "2026-03-18T00:02:45Z",
+        "createdAt": "2026-02-19T21:44:05Z"
+      },
+      "analysis": {
+        "summary": "Taste-Skill (High-Agency Frontend) - gives your AI good taste. stops the AI from generating boring, generic, \"slop\" ",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-19",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1173845549",
+      "source": "github",
+      "title": "twostraws/SwiftUI-Agent-Skill",
+      "description": "SwiftUI agent skill for Claude Code, Codex, and other AI tools.",
+      "url": "https://github.com/twostraws/SwiftUI-Agent-Skill",
+      "image": "https://opengraph.githubassets.com/1/twostraws/SwiftUI-Agent-Skill",
+      "metadata": {
+        "stars": 2884,
+        "language": "Unknown",
+        "topics": [],
+        "updatedAt": "2026-03-17T23:12:28Z",
+        "createdAt": "2026-03-05T20:13:14Z"
+      },
+      "analysis": {
+        "summary": "SwiftUI agent skill for Claude Code, Codex, and other AI tools.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-03-05",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1164376059",
+      "source": "github",
+      "title": "AlexAnys/awesome-openclaw-usecases-zh",
+      "description": "🇨🇳 OpenClaw（个人智能体）中文最佳用例大全 | 40+个真实场景（国内特色 + 海外的国内生态适配）：自动化办公、内容创作、服务器运维、个人助理、知识管理 | 新手友好 | Chinese guide for OpenClaw AI agent use cases",
+      "url": "https://github.com/AlexAnys/awesome-openclaw-usecases-zh",
+      "image": "https://opengraph.githubassets.com/1/AlexAnys/awesome-openclaw-usecases-zh",
+      "metadata": {
+        "stars": 2565,
+        "language": "Unknown",
+        "topics": [
+          "ai-agent",
+          "ai-assistant",
+          "ai-automation",
+          "ai-tools",
+          "automation",
+          "awesome-list",
+          "chinese",
+          "claude",
+          "content-creation",
+          "devops",
+          "knowledge-management",
+          "llm",
+          "openclaw",
+          "personal-assistant",
+          "productivity",
+          "self-hosting",
+          "telegram-bot",
+          "use-cases",
+          "workflow-automation",
+          "zh-cn"
+        ],
+        "updatedAt": "2026-03-17T19:11:38Z",
+        "createdAt": "2026-02-23T02:20:51Z"
+      },
+      "analysis": {
+        "summary": "🇨🇳 OpenClaw（个人智能体）中文最佳用例大全 | 40+个真实场景（国内特色 + 海外的国内生态适配）：自动化办公、内容创作、服务器运维、个人助理、知识管理 | 新手友好 | Chinese guide for OpenClaw AI agent use cases",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-23",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1161025758",
+      "source": "github",
+      "title": "TraderAlice/OpenAlice",
+      "description": "File-driven AI trading agent engine for crypto and securities markets",
+      "url": "https://github.com/TraderAlice/OpenAlice",
+      "image": "https://opengraph.githubassets.com/1/TraderAlice/OpenAlice",
+      "metadata": {
+        "stars": 2263,
+        "language": "TypeScript",
+        "topics": [],
+        "updatedAt": "2026-03-17T23:44:08Z",
+        "createdAt": "2026-02-18T16:42:55Z"
+      },
+      "analysis": {
+        "summary": "File-driven AI trading agent engine for crypto and securities markets",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-18",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1180351558",
+      "source": "github",
+      "title": "pasky/chrome-cdp-skill",
+      "description": "Give your AI agent access to your live Chrome session — works out of the box, connects to tabs you already have open",
+      "url": "https://github.com/pasky/chrome-cdp-skill",
+      "image": "https://opengraph.githubassets.com/1/pasky/chrome-cdp-skill",
+      "metadata": {
+        "stars": 2048,
+        "language": "JavaScript",
+        "topics": [],
+        "updatedAt": "2026-03-18T00:01:50Z",
+        "createdAt": "2026-03-13T00:35:39Z"
+      },
+      "analysis": {
+        "summary": "Give your AI agent access to your live Chrome session — works out of the box, connects to tabs you already have open",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-03-13",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1168978399",
+      "source": "github",
+      "title": "chenhg5/cc-connect",
+      "description": "Bridge local AI coding agents (Claude Code, Cursor, Gemini CLI, Codex) to messaging platforms (Feishu/Lark, DingTalk, Slack, Telegram, Discord, LINE, WeChat Work). Chat with your AI dev assistant from anywhere — no public IP required for most platforms.",
+      "url": "https://github.com/chenhg5/cc-connect",
+      "image": "https://opengraph.githubassets.com/1/chenhg5/cc-connect",
+      "metadata": {
+        "stars": 2013,
+        "language": "Go",
+        "topics": [],
+        "updatedAt": "2026-03-17T23:57:45Z",
+        "createdAt": "2026-02-28T02:39:39Z"
+      },
+      "analysis": {
+        "summary": "Bridge local AI coding agents (Claude Code, Cursor, Gemini CLI, Codex) to messaging platforms (Feishu/Lark, DingTalk, Slack, Telegram, Discord, LINE, WeChat Work). Chat with your AI dev assistant from anywhere — no public IP required for most platforms.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-28",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1173427820",
+      "source": "github",
+      "title": "op7418/Claude-to-IM-skill",
+      "description": "Bridge Claude Code / Codex to IM platforms — chat with AI coding agents from Telegram, Discord, or Feishu/Lark.",
+      "url": "https://github.com/op7418/Claude-to-IM-skill",
+      "image": "https://opengraph.githubassets.com/1/op7418/Claude-to-IM-skill",
+      "metadata": {
+        "stars": 1263,
+        "language": "TypeScript",
+        "topics": [
+          "chatbot",
+          "claude",
+          "claude-code",
+          "discord",
+          "feishu",
+          "lark",
+          "skill",
+          "telegram"
+        ],
+        "updatedAt": "2026-03-17T23:58:30Z",
+        "createdAt": "2026-03-05T11:00:16Z"
+      },
+      "analysis": {
+        "summary": "Bridge Claude Code / Codex to IM platforms — chat with AI coding agents from Telegram, Discord, or Feishu/Lark.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-03-05",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1166129534",
+      "source": "github",
+      "title": "NVIDIA/OpenShell",
+      "description": "OpenShell is the safe, private runtime for autonomous AI agents.",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "image": "https://opengraph.githubassets.com/1/NVIDIA/OpenShell",
+      "metadata": {
+        "stars": 1081,
+        "language": "Rust",
+        "topics": [],
+        "updatedAt": "2026-03-17T23:59:49Z",
+        "createdAt": "2026-02-24T22:52:22Z"
+      },
+      "analysis": {
+        "summary": "OpenShell is the safe, private runtime for autonomous AI agents.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-24",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1161394125",
+      "source": "github",
+      "title": "ghostwright/ghost-os",
+      "description": "Full computer-use for AI agents. Self-learning workflows. Native macOS. No screenshots required.",
+      "url": "https://github.com/ghostwright/ghost-os",
+      "image": "https://opengraph.githubassets.com/1/ghostwright/ghost-os",
+      "metadata": {
+        "stars": 1013,
+        "language": "Swift",
+        "topics": [
+          "accessibility",
+          "ai-agents",
+          "automation",
+          "claude-code",
+          "computer-use",
+          "llm-tools",
+          "macos",
+          "mcp",
+          "recipes",
+          "swift"
+        ],
+        "updatedAt": "2026-03-17T22:20:31Z",
+        "createdAt": "2026-02-19T03:53:36Z"
+      },
+      "analysis": {
+        "summary": "Full computer-use for AI agents. Self-learning workflows. Native macOS. No screenshots required.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-19",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1170617094",
+      "source": "github",
+      "title": "LeoYeAI/openclaw-backup",
+      "description": "One-click backup & restore for OpenClaw instances — workspace, credentials, skills, agent history. Powered by MyClaw.ai",
+      "url": "https://github.com/LeoYeAI/openclaw-backup",
+      "image": "https://opengraph.githubassets.com/1/LeoYeAI/openclaw-backup",
+      "metadata": {
+        "stars": 928,
+        "language": "Shell",
+        "topics": [
+          "agent",
+          "backup",
+          "clawhub",
+          "migration",
+          "myclaw",
+          "openclaw",
+          "restore",
+          "skill"
+        ],
+        "updatedAt": "2026-03-17T21:00:41Z",
+        "createdAt": "2026-03-02T10:21:54Z"
+      },
+      "analysis": {
+        "summary": "One-click backup & restore for OpenClaw instances — workspace, credentials, skills, agent history. Powered by MyClaw.ai",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-03-02",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1167859863",
+      "source": "github",
+      "title": "bcurts/agentchattr",
+      "description": "Free, local chat where AI coding agents can tag each other, talk, and coordinate with you.",
+      "url": "https://github.com/bcurts/agentchattr",
+      "image": "https://opengraph.githubassets.com/1/bcurts/agentchattr",
+      "metadata": {
+        "stars": 878,
+        "language": "Python",
+        "topics": [],
+        "updatedAt": "2026-03-17T22:44:24Z",
+        "createdAt": "2026-02-26T19:03:35Z"
+      },
+      "analysis": {
+        "summary": "Free, local chat where AI coding agents can tag each other, talk, and coordinate with you.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-26",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1163814566",
+      "source": "github",
+      "title": "nextlevelbuilder/goclaw",
+      "description": "Multi-agent AI gateway with teams, delegation & orchestration. Single Go binary, 11+ LLM providers, 5 channels.",
+      "url": "https://github.com/nextlevelbuilder/goclaw",
+      "image": "https://opengraph.githubassets.com/1/nextlevelbuilder/goclaw",
+      "metadata": {
+        "stars": 841,
+        "language": "Go",
+        "topics": [
+          "agent-orchestration",
+          "ai-agent",
+          "ai-gateway",
+          "anthropic",
+          "chatbot",
+          "discord-bot",
+          "golang",
+          "llm",
+          "mcp",
+          "multi-agent",
+          "openai",
+          "postgresql",
+          "telegram-bot",
+          "websocket"
+        ],
+        "updatedAt": "2026-03-17T23:46:38Z",
+        "createdAt": "2026-02-22T07:26:36Z"
+      },
+      "analysis": {
+        "summary": "Multi-agent AI gateway with teams, delegation & orchestration. Single Go binary, 11+ LLM providers, 5 channels.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-22",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1179164349",
+      "source": "github",
+      "title": "chrisworsey55/atlas-gic",
+      "description": "ATLAS by General Intelligence Capital — Self-improving AI trading agents using Karpathy-style autoresearch",
+      "url": "https://github.com/chrisworsey55/atlas-gic",
+      "image": "https://opengraph.githubassets.com/1/chrisworsey55/atlas-gic",
+      "metadata": {
+        "stars": 829,
+        "language": "Unknown",
+        "topics": [],
+        "updatedAt": "2026-03-17T22:38:42Z",
+        "createdAt": "2026-03-11T18:51:14Z"
+      },
+      "analysis": {
+        "summary": "ATLAS by General Intelligence Capital — Self-improving AI trading agents using Karpathy-style autoresearch",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-03-11",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1160886023",
+      "source": "github",
+      "title": "GreenSheep01201/claw-empire",
+      "description": "Command Your AI Agent Empire from the CEO Desk — A local-first AI agent office simulator that orchestrates CLI, OAuth, and API-connected agents (Claude Code, Codex CLI, Gemini CLI, OpenCode, and more) as a virtual autonomous company.",
+      "url": "https://github.com/GreenSheep01201/claw-empire",
+      "image": "https://opengraph.githubassets.com/1/GreenSheep01201/claw-empire",
+      "metadata": {
+        "stars": 779,
+        "language": "TypeScript",
+        "topics": [
+          "agentic-workflow",
+          "agents",
+          "ochestration",
+          "openclaw",
+          "openclaw-agent",
+          "openclaw-extension",
+          "openclaw-plugin"
+        ],
+        "updatedAt": "2026-03-17T23:31:27Z",
+        "createdAt": "2026-02-18T13:42:25Z"
+      },
+      "analysis": {
+        "summary": "Command Your AI Agent Empire from the CEO Desk — A local-first AI agent office simulator that orchestrates CLI, OAuth, and API-connected agents (Claude Code, Codex CLI, Gemini CLI, OpenCode, and more) as a virtual autonomous company.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-18",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1165078326",
+      "source": "github",
+      "title": "meitarbe/cognetivy",
+      "description": "The open-source state layer for AI coding agents. Turn chaotic agent sessions into structured, traceable workflows with a local workspace for runs, events, and collections.",
+      "url": "https://github.com/meitarbe/cognetivy",
+      "image": "https://opengraph.githubassets.com/1/meitarbe/cognetivy",
+      "metadata": {
+        "stars": 509,
+        "language": "TypeScript",
+        "topics": [
+          "agents",
+          "ai",
+          "workflows"
+        ],
+        "updatedAt": "2026-03-17T23:44:05Z",
+        "createdAt": "2026-02-23T19:57:13Z"
+      },
+      "analysis": {
+        "summary": "The open-source state layer for AI coding agents. Turn chaotic agent sessions into structured, traceable workflows with a local workspace for runs, events, and collections.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-23",
+      "category": "ai-agent"
+    }
+  ]
+}
