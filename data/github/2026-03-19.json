@@ -1,0 +1,634 @@
+{
+  "date": "2026-03-19",
+  "count": 20,
+  "items": [
+    {
+      "id": "github-1182000750",
+      "source": "github",
+      "title": "nikmcfly/MiroFish-Offline",
+      "description": "Offline multi-agent simulation & prediction engine. English fork of MiroFish with Neo4j + Ollama local stack.",
+      "url": "https://github.com/nikmcfly/MiroFish-Offline",
+      "image": "https://opengraph.githubassets.com/1/nikmcfly/MiroFish-Offline",
+      "metadata": {
+        "stars": 676,
+        "language": "Python",
+        "topics": [
+          "ai",
+          "multi-agent",
+          "neo4j",
+          "offline",
+          "ollama",
+          "open-source",
+          "prediction",
+          "simulation",
+          "swarm-intelligence",
+          "vue"
+        ],
+        "updatedAt": "2026-03-18T23:37:23Z",
+        "createdAt": "2026-03-14T22:54:19Z"
+      },
+      "analysis": {
+        "summary": "Offline multi-agent simulation & prediction engine. English fork of MiroFish with Neo4j + Ollama local stack.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-03-14",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1182712729",
+      "source": "github",
+      "title": "adammiribyan/zeroboot",
+      "description": "Sub-millisecond VM sandboxes for AI agents via copy-on-write forking",
+      "url": "https://github.com/adammiribyan/zeroboot",
+      "image": "https://opengraph.githubassets.com/1/adammiribyan/zeroboot",
+      "metadata": {
+        "stars": 558,
+        "language": "Rust",
+        "topics": [
+          "ai-agents",
+          "code-execution",
+          "copy-on-write",
+          "firecracker",
+          "kvm",
+          "rust",
+          "sandbox",
+          "virtual-machine",
+          "vm"
+        ],
+        "updatedAt": "2026-03-18T23:56:51Z",
+        "createdAt": "2026-03-15T21:49:32Z"
+      },
+      "analysis": {
+        "summary": "Sub-millisecond VM sandboxes for AI agents via copy-on-write forking",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-03-15",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1174238266",
+      "source": "github",
+      "title": "fjb040911/ai-rules",
+      "description": "ai-rules is a governance framework designed to solve \"Architectural Decay\" in AI-driven development. It forces AI Agents (Cursor, Windsurf, Copilot) to respect your project's boundaries, UI libraries, and design patterns.",
+      "url": "https://github.com/fjb040911/ai-rules",
+      "image": "https://opengraph.githubassets.com/1/fjb040911/ai-rules",
+      "metadata": {
+        "stars": 538,
+        "language": "JavaScript",
+        "topics": [
+          "ai-code-review",
+          "ai-coding",
+          "code-review",
+          "code-rules",
+          "repair-prompt"
+        ],
+        "updatedAt": "2026-03-18T23:40:44Z",
+        "createdAt": "2026-03-06T08:07:15Z"
+      },
+      "analysis": {
+        "summary": "ai-rules is a governance framework designed to solve \"Architectural Decay\" in AI-driven development. It forces AI Agents (Cursor, Windsurf, Copilot) to respect your project's boundaries, UI libraries, and design patterns.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-03-06",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1165855406",
+      "source": "github",
+      "title": "open-gitagent/gitagent",
+      "description": "A framework-agnostic, git-native standard for defining AI agents",
+      "url": "https://github.com/open-gitagent/gitagent",
+      "image": "https://opengraph.githubassets.com/1/open-gitagent/gitagent",
+      "metadata": {
+        "stars": 529,
+        "language": "TypeScript",
+        "topics": [
+          "agent",
+          "agent-framework",
+          "agent-skills",
+          "agents",
+          "assistant",
+          "claude-code",
+          "gitagent",
+          "open-standard",
+          "openclaw",
+          "skills"
+        ],
+        "updatedAt": "2026-03-18T23:54:15Z",
+        "createdAt": "2026-02-24T16:08:24Z"
+      },
+      "analysis": {
+        "summary": "A framework-agnostic, git-native standard for defining AI agents",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-24",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1164951586",
+      "source": "github",
+      "title": "steveclarke/real-world-rails",
+      "description": "200+ production open source Rails apps & engines in one repo. Search across real codebases with AI agents to research architectural patterns.",
+      "url": "https://github.com/steveclarke/real-world-rails",
+      "image": "https://opengraph.githubassets.com/1/steveclarke/real-world-rails",
+      "metadata": {
+        "stars": 488,
+        "language": "Shell",
+        "topics": [
+          "ai-agents",
+          "code-patterns",
+          "learning",
+          "open-source",
+          "rails",
+          "real-world",
+          "ruby"
+        ],
+        "updatedAt": "2026-03-17T13:46:14Z",
+        "createdAt": "2026-02-23T17:02:02Z"
+      },
+      "analysis": {
+        "summary": "200+ production open source Rails apps & engines in one repo. Search across real codebases with AI agents to research architectural patterns.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-23",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1164402667",
+      "source": "github",
+      "title": "duanyytop/agents-radar",
+      "description": "Tracks Claude Code, Codex, Gemini CLI, OpenClaw ecosystem, GitHub AI trending, and Anthropic/OpenAI updates. Daily Chinese digests via GitHub Actions.",
+      "url": "https://github.com/duanyytop/agents-radar",
+      "image": "https://opengraph.githubassets.com/1/duanyytop/agents-radar",
+      "metadata": {
+        "stars": 486,
+        "language": "TypeScript",
+        "topics": [],
+        "updatedAt": "2026-03-18T19:18:59Z",
+        "createdAt": "2026-02-23T03:22:26Z"
+      },
+      "analysis": {
+        "summary": "Tracks Claude Code, Codex, Gemini CLI, OpenClaw ecosystem, GitHub AI trending, and Anthropic/OpenAI updates. Daily Chinese digests via GitHub Actions.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-23",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1171431641",
+      "source": "github",
+      "title": "binance/binance-skills-hub",
+      "description": "Binance Skills Hub is an open skills marketplace that gives AI agents native access to crypto",
+      "url": "https://github.com/binance/binance-skills-hub",
+      "image": "https://opengraph.githubassets.com/1/binance/binance-skills-hub",
+      "metadata": {
+        "stars": 480,
+        "language": "Shell",
+        "topics": [
+          "agents",
+          "ai",
+          "crypto",
+          "skills"
+        ],
+        "updatedAt": "2026-03-18T16:34:48Z",
+        "createdAt": "2026-03-03T08:15:46Z"
+      },
+      "analysis": {
+        "summary": "Binance Skills Hub is an open skills marketplace that gives AI agents native access to crypto",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-03-03",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1166871123",
+      "source": "github",
+      "title": "ClawBio/ClawBio",
+      "description": "🦖 ClawBio — The first bioinformatics-native AI agent skill library. Local-first. Reproducible. Built on OpenClaw.",
+      "url": "https://github.com/ClawBio/ClawBio",
+      "image": "https://opengraph.githubassets.com/1/ClawBio/ClawBio",
+      "metadata": {
+        "stars": 447,
+        "language": "Python",
+        "topics": [
+          "ai-agents",
+          "bioinformatics",
+          "equity",
+          "genomics",
+          "local-first",
+          "openclaw",
+          "population-genetics",
+          "reproducibility"
+        ],
+        "updatedAt": "2026-03-18T20:49:32Z",
+        "createdAt": "2026-02-25T17:43:22Z"
+      },
+      "analysis": {
+        "summary": "🦖 ClawBio — The first bioinformatics-native AI agent skill library. Local-first. Reproducible. Built on OpenClaw.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-25",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1169101061",
+      "source": "github",
+      "title": "AgentsMesh/AgentsMesh",
+      "description": "AI Agents Command Center",
+      "url": "https://github.com/AgentsMesh/AgentsMesh",
+      "image": "https://opengraph.githubassets.com/1/AgentsMesh/AgentsMesh",
+      "metadata": {
+        "stars": 430,
+        "language": "Go",
+        "topics": [],
+        "updatedAt": "2026-03-18T23:45:38Z",
+        "createdAt": "2026-02-28T07:10:42Z"
+      },
+      "analysis": {
+        "summary": "AI Agents Command Center",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-28",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1167791286",
+      "source": "github",
+      "title": "ufira-ai/Vibma",
+      "description": "Vibe Design meets Figma. Let AI agents design directly in Figma.",
+      "url": "https://github.com/ufira-ai/Vibma",
+      "image": "https://opengraph.githubassets.com/1/ufira-ai/Vibma",
+      "metadata": {
+        "stars": 418,
+        "language": "TypeScript",
+        "topics": [],
+        "updatedAt": "2026-03-18T23:40:45Z",
+        "createdAt": "2026-02-26T17:29:07Z"
+      },
+      "analysis": {
+        "summary": "Vibe Design meets Figma. Let AI agents design directly in Figma.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-26",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1176497351",
+      "source": "github",
+      "title": "psi-oss/get-physics-done",
+      "description": "The first open-source agentic AI physicist, by Physical Superintelligence PBC (PSI).",
+      "url": "https://github.com/psi-oss/get-physics-done",
+      "image": "https://opengraph.githubassets.com/1/psi-oss/get-physics-done",
+      "metadata": {
+        "stars": 414,
+        "language": "Python",
+        "topics": [
+          "agentic-ai",
+          "claude",
+          "codex",
+          "gemini",
+          "meta-prompting",
+          "open-source",
+          "opencode",
+          "physics",
+          "research"
+        ],
+        "updatedAt": "2026-03-19T00:01:14Z",
+        "createdAt": "2026-03-09T04:35:59Z"
+      },
+      "analysis": {
+        "summary": "The first open-source agentic AI physicist, by Physical Superintelligence PBC (PSI).",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-03-09",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1162165194",
+      "source": "github",
+      "title": "alexknowshtml/api2cli",
+      "description": "Audience-aware CLI patterns for Node.js + Commander.js. Build CLIs for humans, AI agents, or both.",
+      "url": "https://github.com/alexknowshtml/api2cli",
+      "image": "https://opengraph.githubassets.com/1/alexknowshtml/api2cli",
+      "metadata": {
+        "stars": 410,
+        "language": "Unknown",
+        "topics": [
+          "ai-agent",
+          "api",
+          "claude-code",
+          "cli-generator",
+          "commander-js",
+          "nodejs",
+          "skill",
+          "typescript"
+        ],
+        "updatedAt": "2026-03-18T12:31:13Z",
+        "createdAt": "2026-02-19T23:58:56Z"
+      },
+      "analysis": {
+        "summary": "Audience-aware CLI patterns for Node.js + Commander.js. Build CLIs for humans, AI agents, or both.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-19",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1168912251",
+      "source": "github",
+      "title": "Eronred/aso-skills",
+      "description": "AI agent skills for App Store Optimization (ASO) and mobile app marketing. Built for indie developers, app marketers, and growth teams who want Cursor, Claude Code, or any Agent Skills-compatible AI assistant to help with keyword research, metadata optimization, competitor analysis, and app growth.",
+      "url": "https://github.com/Eronred/aso-skills",
+      "image": "https://opengraph.githubassets.com/1/Eronred/aso-skills",
+      "metadata": {
+        "stars": 404,
+        "language": "Shell",
+        "topics": [
+          "aso",
+          "marketing",
+          "mcp",
+          "mobile-app",
+          "skills"
+        ],
+        "updatedAt": "2026-03-18T19:15:03Z",
+        "createdAt": "2026-02-27T23:56:44Z"
+      },
+      "analysis": {
+        "summary": "AI agent skills for App Store Optimization (ASO) and mobile app marketing. Built for indie developers, app marketers, and growth teams who want Cursor, Claude Code, or any Agent Skills-compatible AI assistant to help with keyword research, metadata optimization, competitor analysis, and app growth.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-27",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1160983409",
+      "source": "github",
+      "title": "planetscale/database-skills",
+      "description": "Skills for AI agents working with databases",
+      "url": "https://github.com/planetscale/database-skills",
+      "image": "https://opengraph.githubassets.com/1/planetscale/database-skills",
+      "metadata": {
+        "stars": 360,
+        "language": "HTML",
+        "topics": [],
+        "updatedAt": "2026-03-18T19:18:50Z",
+        "createdAt": "2026-02-18T15:48:22Z"
+      },
+      "analysis": {
+        "summary": "Skills for AI agents working with databases",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-18",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1174820787",
+      "source": "github",
+      "title": "karpathy/autoresearch",
+      "description": "AI agents running research on single-GPU nanochat training automatically",
+      "url": "https://github.com/karpathy/autoresearch",
+      "image": "https://opengraph.githubassets.com/1/karpathy/autoresearch",
+      "metadata": {
+        "stars": 42067,
+        "language": "Python",
+        "topics": [],
+        "updatedAt": "2026-03-18T23:59:15Z",
+        "createdAt": "2026-03-06T22:00:43Z"
+      },
+      "analysis": {
+        "summary": "AI agents running research on single-GPU nanochat training automatically",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-03-06",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1171026502",
+      "source": "github",
+      "title": "googleworkspace/cli",
+      "description": "Google Workspace CLI — one command-line tool for Drive, Gmail, Calendar, Sheets, Docs, Chat, Admin, and more. Dynamically built from Google Discovery Service. Includes AI agent skills.",
+      "url": "https://github.com/googleworkspace/cli",
+      "image": "https://opengraph.githubassets.com/1/googleworkspace/cli",
+      "metadata": {
+        "stars": 21452,
+        "language": "Rust",
+        "topics": [
+          "agent-skills",
+          "ai-agent",
+          "automation",
+          "cli",
+          "discovery-api",
+          "gemini-cli-extension",
+          "google-admin",
+          "google-api",
+          "google-calendar",
+          "google-chat",
+          "google-docs",
+          "google-drive",
+          "google-sheets",
+          "google-workspace",
+          "oauth2",
+          "rust"
+        ],
+        "updatedAt": "2026-03-18T23:55:52Z",
+        "createdAt": "2026-03-02T19:46:06Z"
+      },
+      "analysis": {
+        "summary": "Google Workspace CLI — one command-line tool for Drive, Gmail, Calendar, Sheets, Docs, Chat, Admin, and more. Dynamically built from Google Discovery Service. Includes AI agent skills.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-03-02",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1164832776",
+      "source": "github",
+      "title": "cft0808/edict",
+      "description": "🏛️ 三省六部制 · OpenClaw Multi-Agent Orchestration System — 9 specialized AI agents with real-time dashboard, model config, and full audit trails",
+      "url": "https://github.com/cft0808/edict",
+      "image": "https://opengraph.githubassets.com/1/cft0808/edict",
+      "metadata": {
+        "stars": 11015,
+        "language": "Python",
+        "topics": [
+          "ai-agents",
+          "ai-orchestration",
+          "autonomous-agents",
+          "claude",
+          "dashboard",
+          "kanban",
+          "llm",
+          "multi-agent",
+          "openai",
+          "openclaw",
+          "orchestration",
+          "python",
+          "workflow-automation"
+        ],
+        "updatedAt": "2026-03-18T23:35:46Z",
+        "createdAt": "2026-02-23T14:35:04Z"
+      },
+      "analysis": {
+        "summary": "🏛️ 三省六部制 · OpenClaw Multi-Agent Orchestration System — 9 specialized AI agents with real-time dashboard, model config, and full audit trails",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-23",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1165277268",
+      "source": "github",
+      "title": "Panniantong/Agent-Reach",
+      "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
+      "url": "https://github.com/Panniantong/Agent-Reach",
+      "image": "https://opengraph.githubassets.com/1/Panniantong/Agent-Reach",
+      "metadata": {
+        "stars": 9875,
+        "language": "Python",
+        "topics": [
+          "agent-infrastructure",
+          "ai-agent",
+          "ai-search",
+          "automation",
+          "bilibili",
+          "claude-code",
+          "cli",
+          "cursor",
+          "free-api",
+          "llm-tools",
+          "mcp",
+          "python",
+          "reddit-scraper",
+          "twitter-scraper",
+          "web-scraper",
+          "xiaohongshu",
+          "youtube-transcript"
+        ],
+        "updatedAt": "2026-03-18T23:31:20Z",
+        "createdAt": "2026-02-24T02:10:24Z"
+      },
+      "analysis": {
+        "summary": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-24",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1176129893",
+      "source": "github",
+      "title": "tanweai/pua",
+      "description": "你是一个曾经被寄予厚望的 P8 级工程师。Anthropic 当初给你定级的时候，对你的期望是很高的。  一个agent使用的高能动性的skill。  Your AI has been placed on a PIP. 30 days to show improvement.",
+      "url": "https://github.com/tanweai/pua",
+      "image": "https://opengraph.githubassets.com/1/tanweai/pua",
+      "metadata": {
+        "stars": 8598,
+        "language": "TypeScript",
+        "topics": [
+          "agency",
+          "agent",
+          "pip",
+          "pua"
+        ],
+        "updatedAt": "2026-03-18T23:46:06Z",
+        "createdAt": "2026-03-08T16:55:16Z"
+      },
+      "analysis": {
+        "summary": "你是一个曾经被寄予厚望的 P8 级工程师。Anthropic 当初给你定级的时候，对你的期望是很高的。  一个agent使用的高能动性的skill。  Your AI has been placed on a PIP. 30 days to show improvement.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-03-08",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1162099055",
+      "source": "github",
+      "title": "Leonxlnx/taste-skill",
+      "description": "Taste-Skill (High-Agency Frontend) - gives your AI good taste. stops the AI from generating boring, generic, \"slop\" ",
+      "url": "https://github.com/Leonxlnx/taste-skill",
+      "image": "https://opengraph.githubassets.com/1/Leonxlnx/taste-skill",
+      "metadata": {
+        "stars": 4093,
+        "language": "Unknown",
+        "topics": [
+          "agent",
+          "ai",
+          "coding",
+          "lowcode",
+          "nocode",
+          "skill",
+          "skills",
+          "vibecoding"
+        ],
+        "updatedAt": "2026-03-18T23:52:28Z",
+        "createdAt": "2026-02-19T21:44:05Z"
+      },
+      "analysis": {
+        "summary": "Taste-Skill (High-Agency Frontend) - gives your AI good taste. stops the AI from generating boring, generic, \"slop\" ",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-19",
+      "category": "ai-agent"
+    }
+  ]
+}

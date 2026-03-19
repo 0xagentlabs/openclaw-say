@@ -1,0 +1,349 @@
+{
+  "date": "2026-03-19",
+  "count": 20,
+  "sources": [
+    "rotated"
+  ],
+  "items": [
+    {
+      "id": "producthunt-rotated-78-0",
+      "source": "producthunt",
+      "title": "Zapier AI",
+      "description": "Automate with AI actions",
+      "url": "https://www.google.com/search?q=Zapier%20AI%20AI%20tool",
+      "image": "https://ui-avatars.com/api/?name=ZA&background=0a192f&color=64ffda&size=400",
+      "metadata": {
+        "votes": 5800,
+        "topics": [
+          "automation"
+        ],
+        "source": "rotated"
+      },
+      "publishedAt": "2026-03-19",
+      "category": "product"
+    },
+    {
+      "id": "producthunt-rotated-78-1",
+      "source": "producthunt",
+      "title": "Bardeen",
+      "description": "AI automation for repetitive tasks",
+      "url": "https://www.google.com/search?q=Bardeen%20AI%20tool",
+      "image": "https://ui-avatars.com/api/?name=B&background=0a192f&color=64ffda&size=400",
+      "metadata": {
+        "votes": 3200,
+        "topics": [
+          "automation"
+        ],
+        "source": "rotated"
+      },
+      "publishedAt": "2026-03-19",
+      "category": "product"
+    },
+    {
+      "id": "producthunt-rotated-78-2",
+      "source": "producthunt",
+      "title": "Apollo AI",
+      "description": "AI-powered sales engagement",
+      "url": "https://www.google.com/search?q=Apollo%20AI%20AI%20tool",
+      "image": "https://ui-avatars.com/api/?name=AA&background=0a192f&color=64ffda&size=400",
+      "metadata": {
+        "votes": 4800,
+        "topics": [
+          "sales"
+        ],
+        "source": "rotated"
+      },
+      "publishedAt": "2026-03-19",
+      "category": "product"
+    },
+    {
+      "id": "producthunt-rotated-78-3",
+      "source": "producthunt",
+      "title": "Clay",
+      "description": "AI data enrichment and outreach",
+      "url": "https://www.google.com/search?q=Clay%20AI%20tool",
+      "image": "https://ui-avatars.com/api/?name=C&background=0a192f&color=64ffda&size=400",
+      "metadata": {
+        "votes": 5200,
+        "topics": [
+          "sales"
+        ],
+        "source": "rotated"
+      },
+      "publishedAt": "2026-03-19",
+      "category": "product"
+    },
+    {
+      "id": "producthunt-rotated-78-4",
+      "source": "producthunt",
+      "title": "Instantly",
+      "description": "AI cold email campaigns",
+      "url": "https://www.google.com/search?q=Instantly%20AI%20tool",
+      "image": "https://ui-avatars.com/api/?name=I&background=0a192f&color=64ffda&size=400",
+      "metadata": {
+        "votes": 3800,
+        "topics": [
+          "sales"
+        ],
+        "source": "rotated"
+      },
+      "publishedAt": "2026-03-19",
+      "category": "product"
+    },
+    {
+      "id": "producthunt-rotated-78-5",
+      "source": "producthunt",
+      "title": "Luna",
+      "description": "AI email personalization",
+      "url": "https://www.google.com/search?q=Luna%20AI%20tool",
+      "image": "https://ui-avatars.com/api/?name=L&background=0a192f&color=64ffda&size=400",
+      "metadata": {
+        "votes": 2800,
+        "topics": [
+          "sales"
+        ],
+        "source": "rotated"
+      },
+      "publishedAt": "2026-03-19",
+      "category": "product"
+    },
+    {
+      "id": "producthunt-rotated-78-6",
+      "source": "producthunt",
+      "title": "Regie.ai",
+      "description": "AI sales prospecting",
+      "url": "https://www.google.com/search?q=Regie.ai%20AI%20tool",
+      "image": "https://ui-avatars.com/api/?name=R&background=0a192f&color=64ffda&size=400",
+      "metadata": {
+        "votes": 3200,
+        "topics": [
+          "sales"
+        ],
+        "source": "rotated"
+      },
+      "publishedAt": "2026-03-19",
+      "category": "product"
+    },
+    {
+      "id": "producthunt-rotated-78-7",
+      "source": "producthunt",
+      "title": "Otter.ai",
+      "description": "AI meeting transcription",
+      "url": "https://www.google.com/search?q=Otter.ai%20AI%20tool",
+      "image": "https://ui-avatars.com/api/?name=O&background=0a192f&color=64ffda&size=400",
+      "metadata": {
+        "votes": 9200,
+        "topics": [
+          "productivity"
+        ],
+        "source": "rotated"
+      },
+      "publishedAt": "2026-03-19",
+      "category": "product"
+    },
+    {
+      "id": "producthunt-rotated-78-8",
+      "source": "producthunt",
+      "title": "Fireflies.ai",
+      "description": "AI meeting notes and search",
+      "url": "https://www.google.com/search?q=Fireflies.ai%20AI%20tool",
+      "image": "https://ui-avatars.com/api/?name=F&background=0a192f&color=64ffda&size=400",
+      "metadata": {
+        "votes": 6800,
+        "topics": [
+          "productivity"
+        ],
+        "source": "rotated"
+      },
+      "publishedAt": "2026-03-19",
+      "category": "product"
+    },
+    {
+      "id": "producthunt-rotated-78-9",
+      "source": "producthunt",
+      "title": "Fathom",
+      "description": "AI meeting summaries",
+      "url": "https://www.google.com/search?q=Fathom%20AI%20tool",
+      "image": "https://ui-avatars.com/api/?name=F&background=0a192f&color=64ffda&size=400",
+      "metadata": {
+        "votes": 5200,
+        "topics": [
+          "productivity"
+        ],
+        "source": "rotated"
+      },
+      "publishedAt": "2026-03-19",
+      "category": "product"
+    },
+    {
+      "id": "producthunt-rotated-78-10",
+      "source": "producthunt",
+      "title": "Read.ai",
+      "description": "AI meeting analytics",
+      "url": "https://www.google.com/search?q=Read.ai%20AI%20tool",
+      "image": "https://ui-avatars.com/api/?name=R&background=0a192f&color=64ffda&size=400",
+      "metadata": {
+        "votes": 4800,
+        "topics": [
+          "productivity"
+        ],
+        "source": "rotated"
+      },
+      "publishedAt": "2026-03-19",
+      "category": "product"
+    },
+    {
+      "id": "producthunt-rotated-78-11",
+      "source": "producthunt",
+      "title": " tl;dv",
+      "description": "AI meeting recorder",
+      "url": "https://www.google.com/search?q=%20tl%3Bdv%20AI%20tool",
+      "image": "https://ui-avatars.com/api/?name=T&background=0a192f&color=64ffda&size=400",
+      "metadata": {
+        "votes": 4200,
+        "topics": [
+          "productivity"
+        ],
+        "source": "rotated"
+      },
+      "publishedAt": "2026-03-19",
+      "category": "product"
+    },
+    {
+      "id": "producthunt-rotated-78-12",
+      "source": "producthunt",
+      "title": "Cursor",
+      "description": "AI-native code editor built for pair programming",
+      "url": "https://www.google.com/search?q=Cursor%20AI%20tool",
+      "image": "https://ui-avatars.com/api/?name=C&background=0a192f&color=64ffda&size=400",
+      "metadata": {
+        "votes": 15000,
+        "topics": [
+          "developer"
+        ],
+        "source": "rotated"
+      },
+      "publishedAt": "2026-03-19",
+      "category": "product"
+    },
+    {
+      "id": "producthunt-rotated-78-13",
+      "source": "producthunt",
+      "title": "Claude Code",
+      "description": "Agentic coding tool that lives in your terminal",
+      "url": "https://www.google.com/search?q=Claude%20Code%20AI%20tool",
+      "image": "https://ui-avatars.com/api/?name=CC&background=0a192f&color=64ffda&size=400",
+      "metadata": {
+        "votes": 12000,
+        "topics": [
+          "developer"
+        ],
+        "source": "rotated"
+      },
+      "publishedAt": "2026-03-19",
+      "category": "product"
+    },
+    {
+      "id": "producthunt-rotated-78-14",
+      "source": "producthunt",
+      "title": "v0.dev",
+      "description": "Generate UI with simple text prompts",
+      "url": "https://www.google.com/search?q=v0.dev%20AI%20tool",
+      "image": "https://ui-avatars.com/api/?name=V&background=0a192f&color=64ffda&size=400",
+      "metadata": {
+        "votes": 11000,
+        "topics": [
+          "design"
+        ],
+        "source": "rotated"
+      },
+      "publishedAt": "2026-03-19",
+      "category": "product"
+    },
+    {
+      "id": "producthunt-rotated-78-15",
+      "source": "producthunt",
+      "title": "Midjourney v6",
+      "description": "Most advanced AI image generation",
+      "url": "https://www.google.com/search?q=Midjourney%20v6%20AI%20tool",
+      "image": "https://ui-avatars.com/api/?name=MV&background=0a192f&color=64ffda&size=400",
+      "metadata": {
+        "votes": 18000,
+        "topics": [
+          "creative"
+        ],
+        "source": "rotated"
+      },
+      "publishedAt": "2026-03-19",
+      "category": "product"
+    },
+    {
+      "id": "producthunt-rotated-78-16",
+      "source": "producthunt",
+      "title": "Perplexity Pro",
+      "description": "AI search engine with real-time sources",
+      "url": "https://www.google.com/search?q=Perplexity%20Pro%20AI%20tool",
+      "image": "https://ui-avatars.com/api/?name=PP&background=0a192f&color=64ffda&size=400",
+      "metadata": {
+        "votes": 9000,
+        "topics": [
+          "productivity"
+        ],
+        "source": "rotated"
+      },
+      "publishedAt": "2026-03-19",
+      "category": "product"
+    },
+    {
+      "id": "producthunt-rotated-78-17",
+      "source": "producthunt",
+      "title": "Notion AI",
+      "description": "Write faster with AI inside Notion",
+      "url": "https://www.google.com/search?q=Notion%20AI%20AI%20tool",
+      "image": "https://ui-avatars.com/api/?name=NA&background=0a192f&color=64ffda&size=400",
+      "metadata": {
+        "votes": 8500,
+        "topics": [
+          "productivity"
+        ],
+        "source": "rotated"
+      },
+      "publishedAt": "2026-03-19",
+      "category": "product"
+    },
+    {
+      "id": "producthunt-rotated-78-18",
+      "source": "producthunt",
+      "title": "Raycast AI",
+      "description": "AI commands at your fingertips",
+      "url": "https://www.google.com/search?q=Raycast%20AI%20AI%20tool",
+      "image": "https://ui-avatars.com/api/?name=RA&background=0a192f&color=64ffda&size=400",
+      "metadata": {
+        "votes": 7500,
+        "topics": [
+          "productivity"
+        ],
+        "source": "rotated"
+      },
+      "publishedAt": "2026-03-19",
+      "category": "product"
+    },
+    {
+      "id": "producthunt-rotated-78-19",
+      "source": "producthunt",
+      "title": "Granola",
+      "description": "AI notes for your meetings",
+      "url": "https://www.google.com/search?q=Granola%20AI%20tool",
+      "image": "https://ui-avatars.com/api/?name=G&background=0a192f&color=64ffda&size=400",
+      "metadata": {
+        "votes": 6500,
+        "topics": [
+          "productivity"
+        ],
+        "source": "rotated"
+      },
+      "publishedAt": "2026-03-19",
+      "category": "product"
+    }
+  ]
+}

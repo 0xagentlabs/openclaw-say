@@ -1,30 +1,5 @@
 [
   {
-    "date": "2026-02-17",
-    "projects": [
-      "BlockRunAI/ClawRouter",
-      "AvdLee/SwiftUI-Agent-Skill",
-      "DingTalk-Real-AI/dingtalk-openclaw-connector",
-      "sseanliu/VisionClaw",
-      "yohey-w/multi-agent-shogun",
-      "TheAgentContextLab/OneContext",
-      "unitedbyai/droidclaw",
-      "klawsh/klaw.sh",
-      "pocketpaw/pocketpaw",
-      "aarondfrancis/counselors",
-      "win4r/team-tasks",
-      "opencmit/alphora",
-      "rivet-dev/sandbox-agent",
-      "tinyfish-io/tinyfish-cookbook",
-      "luccast/crabwalk",
-      "snwfdhmp/awesome-ralph",
-      "BankrBot/openclaw-skills",
-      "run-bigpig/jcp",
-      "ygwyg/MAHORAGA",
-      "six2dez/burp-ai-agent"
-    ]
-  },
-  {
     "date": "2026-02-18",
     "projects": [
       "aeromomo/claw-compactor",
@@ -547,6 +522,31 @@
       "chrisworsey55/atlas-gic",
       "GreenSheep01201/claw-empire",
       "meitarbe/cognetivy"
+    ]
+  },
+  {
+    "date": "2026-03-19",
+    "projects": [
+      "nikmcfly/MiroFish-Offline",
+      "adammiribyan/zeroboot",
+      "fjb040911/ai-rules",
+      "open-gitagent/gitagent",
+      "steveclarke/real-world-rails",
+      "duanyytop/agents-radar",
+      "binance/binance-skills-hub",
+      "ClawBio/ClawBio",
+      "AgentsMesh/AgentsMesh",
+      "ufira-ai/Vibma",
+      "psi-oss/get-physics-done",
+      "alexknowshtml/api2cli",
+      "Eronred/aso-skills",
+      "planetscale/database-skills",
+      "karpathy/autoresearch",
+      "googleworkspace/cli",
+      "cft0808/edict",
+      "Panniantong/Agent-Reach",
+      "tanweai/pua",
+      "Leonxlnx/taste-skill"
     ]
   }
 ]
