@@ -1,30 +1,5 @@
 [
   {
-    "date": "2026-02-20",
-    "projects": [
-      "tinyfish-io/tinyfish-cookbook",
-      "rivet-dev/sandbox-agent",
-      "netease-youdao/LobsterAI",
-      "BankrBot/openclaw-skills",
-      "unitedbyai/droidclaw",
-      "luccast/crabwalk",
-      "ygwyg/MAHORAGA",
-      "run-bigpig/jcp",
-      "six2dez/burp-ai-agent",
-      "klawsh/klaw.sh",
-      "pocketpaw/pocketpaw",
-      "aarondfrancis/counselors",
-      "marswei/seaseed-clawerse",
-      "microclaw/microclaw",
-      "Cranot/roam-code",
-      "opencmit/alphora",
-      "BlockRunAI/ClawRouter",
-      "PeonPing/peon-ping",
-      "DingTalk-Real-AI/dingtalk-openclaw-connector",
-      "sseanliu/VisionClaw"
-    ]
-  },
-  {
     "date": "2026-02-21",
     "projects": [
       "ValueCell-ai/ClawX",
@@ -547,6 +522,31 @@
       "cft0808/edict",
       "Panniantong/Agent-Reach",
       "tanweai/pua"
+    ]
+  },
+  {
+    "date": "2026-03-22",
+    "projects": [
+      "nikmcfly/MiroFish-Offline",
+      "open-gitagent/gitagent",
+      "fjb040911/ai-rules",
+      "AgentsMesh/AgentsMesh",
+      "greensock/gsap-skills",
+      "truongduy2611/app-store-preflight-skills",
+      "duanyytop/agents-radar",
+      "binance/binance-skills-hub",
+      "steveclarke/real-world-rails",
+      "psi-oss/get-physics-done",
+      "ClawBio/ClawBio",
+      "wangziqi06/724-office",
+      "karpathy/autoresearch",
+      "googleworkspace/cli",
+      "cft0808/edict",
+      "Panniantong/Agent-Reach",
+      "tanweai/pua",
+      "calesthio/Crucix",
+      "jackwener/opencli",
+      "mukul975/Anthropic-Cybersecurity-Skills"
     ]
   }
 ]
