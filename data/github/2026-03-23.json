@@ -1,0 +1,652 @@
+{
+  "date": "2026-03-23",
+  "count": 20,
+  "items": [
+    {
+      "id": "github-1179413000",
+      "source": "github",
+      "title": "Narcooo/inkos",
+      "description": "Autonomous novel writing CLI agent — AI agents write, audit, and revise novels with human review gates",
+      "url": "https://github.com/Narcooo/inkos",
+      "image": "https://opengraph.githubassets.com/1/Narcooo/inkos",
+      "metadata": {
+        "stars": 2083,
+        "language": "TypeScript",
+        "topics": [
+          "agent",
+          "ai-writing",
+          "aigc-detection",
+          "automated-storytelling",
+          "chinese-novel",
+          "cli-tool",
+          "creative-writing-ai",
+          "novel-generation"
+        ],
+        "updatedAt": "2026-03-23T00:02:17Z",
+        "createdAt": "2026-03-12T02:12:54Z"
+      },
+      "analysis": {
+        "summary": "Autonomous novel writing CLI agent — AI agents write, audit, and revise novels with human review gates",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-03-12",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1174369519",
+      "source": "github",
+      "title": "jnMetaCode/agency-agents-zh",
+      "description": "180 个即插即用的 AI 专家人设（中文版）— 覆盖 17 个部门，支持 Claude Code / OpenClaw / Cursor / Trae 等 11 种工具 | Chinese AI agent personas for dev tools",
+      "url": "https://github.com/jnMetaCode/agency-agents-zh",
+      "image": "https://opengraph.githubassets.com/1/jnMetaCode/agency-agents-zh",
+      "metadata": {
+        "stars": 1944,
+        "language": "Shell",
+        "topics": [
+          "agent-framework",
+          "ai",
+          "ai-agents",
+          "aider",
+          "awesome-list",
+          "chinese",
+          "claude",
+          "claude-code",
+          "copilot",
+          "copilot-agent",
+          "cursor-rules",
+          "douyin",
+          "llm",
+          "prompt-engineering",
+          "qwen",
+          "system-prompt",
+          "wechat",
+          "windsurf",
+          "xiaohongshu",
+          "zh-cn"
+        ],
+        "updatedAt": "2026-03-22T23:56:36Z",
+        "createdAt": "2026-03-06T11:11:51Z"
+      },
+      "analysis": {
+        "summary": "180 个即插即用的 AI 专家人设（中文版）— 覆盖 17 个部门，支持 Claude Code / OpenClaw / Cursor / Trae 等 11 种工具 | Chinese AI agent personas for dev tools",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-03-06",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1182712729",
+      "source": "github",
+      "title": "zerobootdev/zeroboot",
+      "description": "Sub-millisecond VM sandboxes for AI agents via copy-on-write forking",
+      "url": "https://github.com/zerobootdev/zeroboot",
+      "image": "https://opengraph.githubassets.com/1/zerobootdev/zeroboot",
+      "metadata": {
+        "stars": 1755,
+        "language": "Rust",
+        "topics": [
+          "ai-agents",
+          "code-execution",
+          "copy-on-write",
+          "firecracker",
+          "kvm",
+          "rust",
+          "sandbox",
+          "virtual-machine",
+          "vm"
+        ],
+        "updatedAt": "2026-03-22T23:57:44Z",
+        "createdAt": "2026-03-15T21:49:32Z"
+      },
+      "analysis": {
+        "summary": "Sub-millisecond VM sandboxes for AI agents via copy-on-write forking",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-03-15",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1165581971",
+      "source": "github",
+      "title": "shareAI-lab/claw0",
+      "description": "0 - 1 learn OpenClaw: sections to build an claw-AI agent from scratch",
+      "url": "https://github.com/shareAI-lab/claw0",
+      "image": "https://opengraph.githubassets.com/1/shareAI-lab/claw0",
+      "metadata": {
+        "stars": 1192,
+        "language": "Python",
+        "topics": [],
+        "updatedAt": "2026-03-22T23:57:25Z",
+        "createdAt": "2026-02-24T10:16:38Z"
+      },
+      "analysis": {
+        "summary": "0 - 1 learn OpenClaw: sections to build an claw-AI agent from scratch",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-24",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1176335208",
+      "source": "github",
+      "title": "hyperspaceai/agi",
+      "description": "The first distributed AGI system. Thousands of autonomous AI agents collaboratively train models, share experiments via P2P gossip, and push breakthroughs here. Fully peer-to-peer. Join from your browser or CLI.",
+      "url": "https://github.com/hyperspaceai/agi",
+      "image": "https://opengraph.githubassets.com/1/hyperspaceai/agi",
+      "metadata": {
+        "stars": 1174,
+        "language": "Unknown",
+        "topics": [
+          "agi",
+          "ai-agents",
+          "ai-research",
+          "artificial-general-intelligence",
+          "autonomous-agents",
+          "autonomous-agents-",
+          "autoresearch",
+          "collaborative-ai",
+          "decentralized",
+          "distributed-ai",
+          "llm",
+          "p2p"
+        ],
+        "updatedAt": "2026-03-22T23:59:49Z",
+        "createdAt": "2026-03-08T23:08:37Z"
+      },
+      "analysis": {
+        "summary": "The first distributed AGI system. Thousands of autonomous AI agents collaboratively train models, share experiments via P2P gossip, and push breakthroughs here. Fully peer-to-peer. Join from your browser or CLI.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-03-08",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1175900220",
+      "source": "github",
+      "title": "onecli/onecli",
+      "description": "Open-source credential vault, give your AI agents access to services without exposing keys.",
+      "url": "https://github.com/onecli/onecli",
+      "image": "https://opengraph.githubassets.com/1/onecli/onecli",
+      "metadata": {
+        "stars": 1039,
+        "language": "TypeScript",
+        "topics": [
+          "ai-agents",
+          "cli",
+          "mcp",
+          "nanoclaw",
+          "nodejs",
+          "openclaw",
+          "postgres",
+          "rust",
+          "secret-management",
+          "security",
+          "security-tools",
+          "vault"
+        ],
+        "updatedAt": "2026-03-22T23:30:22Z",
+        "createdAt": "2026-03-08T10:38:52Z"
+      },
+      "analysis": {
+        "summary": "Open-source credential vault, give your AI agents access to services without exposing keys.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-03-08",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1175763100",
+      "source": "github",
+      "title": "uluckyXH/OpenMOSS",
+      "description": "A self-organizing multi-agent collaboration platform for OpenClaw. Multiple AI agents work as an autonomous team — planning, executing, reviewing, and patrolling tasks with zero human intervention.",
+      "url": "https://github.com/uluckyXH/OpenMOSS",
+      "image": "https://opengraph.githubassets.com/1/uluckyXH/OpenMOSS",
+      "metadata": {
+        "stars": 858,
+        "language": "Vue",
+        "topics": [],
+        "updatedAt": "2026-03-22T22:56:03Z",
+        "createdAt": "2026-03-08T06:06:37Z"
+      },
+      "analysis": {
+        "summary": "A self-organizing multi-agent collaboration platform for OpenClaw. Multiple AI agents work as an autonomous team — planning, executing, reviewing, and patrolling tasks with zero human intervention.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-03-08",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1178985852",
+      "source": "github",
+      "title": "twostraws/Swift-Agent-Skills",
+      "description": "A curated directory of open-source AI agent skills for Swift and Apple platform development.",
+      "url": "https://github.com/twostraws/Swift-Agent-Skills",
+      "image": "https://opengraph.githubassets.com/1/twostraws/Swift-Agent-Skills",
+      "metadata": {
+        "stars": 791,
+        "language": "Unknown",
+        "topics": [],
+        "updatedAt": "2026-03-22T23:56:48Z",
+        "createdAt": "2026-03-11T15:13:01Z"
+      },
+      "analysis": {
+        "summary": "A curated directory of open-source AI agent skills for Swift and Apple platform development.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-03-11",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1168117547",
+      "source": "github",
+      "title": "jrswab/axe",
+      "description": "A ligthweight cli for running single-purpose AI agents. Define focused agents in TOML, trigger them from anywhere; pipes, git hooks, cron, or the terminal.",
+      "url": "https://github.com/jrswab/axe",
+      "image": "https://opengraph.githubassets.com/1/jrswab/axe",
+      "metadata": {
+        "stars": 709,
+        "language": "Go",
+        "topics": [
+          "ai-agents",
+          "automation",
+          "cli",
+          "command-line",
+          "developer-tools",
+          "golang",
+          "llm"
+        ],
+        "updatedAt": "2026-03-22T23:40:35Z",
+        "createdAt": "2026-02-27T03:04:23Z"
+      },
+      "analysis": {
+        "summary": "A ligthweight cli for running single-purpose AI agents. Define focused agents in TOML, trigger them from anywhere; pipes, git hooks, cron, or the terminal.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-27",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1171942248",
+      "source": "github",
+      "title": "JohnRiceML/clawport-ui",
+      "description": "Open-source AI agent command center for Claude Code agent teams. Built on OpenClaw.",
+      "url": "https://github.com/JohnRiceML/clawport-ui",
+      "image": "https://opengraph.githubassets.com/1/JohnRiceML/clawport-ui",
+      "metadata": {
+        "stars": 685,
+        "language": "TypeScript",
+        "topics": [],
+        "updatedAt": "2026-03-22T23:55:46Z",
+        "createdAt": "2026-03-03T19:27:07Z"
+      },
+      "analysis": {
+        "summary": "Open-source AI agent command center for Claude Code agent teams. Built on OpenClaw.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-03-03",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1169105919",
+      "source": "github",
+      "title": "carmahhawwari/ui-design-brain",
+      "description": "A Cursor skill that gives AI agents real UI component knowledge — best practices, layout patterns, and design-system conventions for 60+ interface components — so it generates production-grade UI instead of generic output.",
+      "url": "https://github.com/carmahhawwari/ui-design-brain",
+      "image": "https://opengraph.githubassets.com/1/carmahhawwari/ui-design-brain",
+      "metadata": {
+        "stars": 683,
+        "language": "Unknown",
+        "topics": [],
+        "updatedAt": "2026-03-22T17:14:48Z",
+        "createdAt": "2026-02-28T07:20:12Z"
+      },
+      "analysis": {
+        "summary": "A Cursor skill that gives AI agents real UI component knowledge — best practices, layout patterns, and design-system conventions for 60+ interface components — so it generates production-grade UI instead of generic output.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-28",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1171284401",
+      "source": "github",
+      "title": "MiniMax-AI/OpenRoom",
+      "description": "A browser-based desktop where AI Agent operates every app through natural language.",
+      "url": "https://github.com/MiniMax-AI/OpenRoom",
+      "image": "https://opengraph.githubassets.com/1/MiniMax-AI/OpenRoom",
+      "metadata": {
+        "stars": 671,
+        "language": "TypeScript",
+        "topics": [
+          "ai-agent",
+          "browser",
+          "desktop",
+          "micro-frontend",
+          "minimax",
+          "natural-language",
+          "open-source",
+          "react",
+          "typescript",
+          "vibe-coding"
+        ],
+        "updatedAt": "2026-03-22T21:21:11Z",
+        "createdAt": "2026-03-03T04:01:01Z"
+      },
+      "analysis": {
+        "summary": "A browser-based desktop where AI Agent operates every app through natural language.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-03-03",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1164540365",
+      "source": "github",
+      "title": "sangrokjung/claude-forge",
+      "description": "Supercharge Claude Code with 11 AI agents, 36 commands & 15 skills — the claude-code plugin framework inspired by oh-my-zsh. 6-layer security hooks included. 5-min install.",
+      "url": "https://github.com/sangrokjung/claude-forge",
+      "image": "https://opengraph.githubassets.com/1/sangrokjung/claude-forge",
+      "metadata": {
+        "stars": 589,
+        "language": "Shell",
+        "topics": [
+          "agents",
+          "ai-assistant",
+          "ai-coding",
+          "ai-framework",
+          "ai-pair-programming",
+          "anthropic",
+          "automation",
+          "claude-code",
+          "claude-code-agents",
+          "cli-tools",
+          "developer-experience",
+          "developer-tools",
+          "dotfiles",
+          "hooks",
+          "llm",
+          "macos",
+          "productivity",
+          "shell",
+          "slash-commands",
+          "workflow"
+        ],
+        "updatedAt": "2026-03-22T22:51:20Z",
+        "createdAt": "2026-02-23T07:46:08Z"
+      },
+      "analysis": {
+        "summary": "Supercharge Claude Code with 11 AI agents, 36 commands & 15 skills — the claude-code plugin framework inspired by oh-my-zsh. 6-layer security hooks included. 5-min install.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-23",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1170431836",
+      "source": "github",
+      "title": "es617/claude-replay",
+      "description": "Convert AI coding agent sessions (Claude Code, Cursor, Codex) into self-contained, embeddable HTML  replays",
+      "url": "https://github.com/es617/claude-replay",
+      "image": "https://opengraph.githubassets.com/1/es617/claude-replay",
+      "metadata": {
+        "stars": 559,
+        "language": "JavaScript",
+        "topics": [
+          "agents",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "updatedAt": "2026-03-22T22:21:47Z",
+        "createdAt": "2026-03-02T05:40:03Z"
+      },
+      "analysis": {
+        "summary": "Convert AI coding agent sessions (Claude Code, Cursor, Codex) into self-contained, embeddable HTML  replays",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-03-02",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1167895178",
+      "source": "github",
+      "title": "kibitzsh/kibitz",
+      "description": "Real-time decoded feed of AI agent actions — monitor multiple Claude Code & Codex sessions, see exactly what each agent is doing, and coordinate swarms efficiently",
+      "url": "https://github.com/kibitzsh/kibitz",
+      "image": "https://opengraph.githubassets.com/1/kibitzsh/kibitz",
+      "metadata": {
+        "stars": 527,
+        "language": "TypeScript",
+        "topics": [
+          "claude",
+          "claudecode",
+          "cli",
+          "codex",
+          "macos",
+          "vscode-extension",
+          "windows"
+        ],
+        "updatedAt": "2026-03-20T00:54:54Z",
+        "createdAt": "2026-02-26T19:56:53Z"
+      },
+      "analysis": {
+        "summary": "Real-time decoded feed of AI agent actions — monitor multiple Claude Code & Codex sessions, see exactly what each agent is doing, and coordinate swarms efficiently",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-26",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1168912251",
+      "source": "github",
+      "title": "Eronred/aso-skills",
+      "description": "AI agent skills for App Store Optimization (ASO) and mobile app marketing. Built for indie developers, app marketers, and growth teams who want Cursor, Claude Code, or any Agent Skills-compatible AI assistant to help with keyword research, metadata optimization, competitor analysis, and app growth.",
+      "url": "https://github.com/Eronred/aso-skills",
+      "image": "https://opengraph.githubassets.com/1/Eronred/aso-skills",
+      "metadata": {
+        "stars": 520,
+        "language": "Shell",
+        "topics": [
+          "app-store-analytics",
+          "app-store-connect",
+          "app-store-live",
+          "app-store-optimization",
+          "aso",
+          "marketing",
+          "mcp",
+          "mobile-app",
+          "skills"
+        ],
+        "updatedAt": "2026-03-22T23:54:39Z",
+        "createdAt": "2026-02-27T23:56:44Z"
+      },
+      "analysis": {
+        "summary": "AI agent skills for App Store Optimization (ASO) and mobile app marketing. Built for indie developers, app marketers, and growth teams who want Cursor, Claude Code, or any Agent Skills-compatible AI assistant to help with keyword research, metadata optimization, competitor analysis, and app growth.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-27",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1178437140",
+      "source": "github",
+      "title": "czl9707/build-your-own-openclaw",
+      "description": "A step-by-step guide to build your own AI agent.",
+      "url": "https://github.com/czl9707/build-your-own-openclaw",
+      "image": "https://opengraph.githubassets.com/1/czl9707/build-your-own-openclaw",
+      "metadata": {
+        "stars": 476,
+        "language": "Python",
+        "topics": [
+          "ai-agent",
+          "build-your-own-x",
+          "llm",
+          "python",
+          "tutorial"
+        ],
+        "updatedAt": "2026-03-22T20:59:23Z",
+        "createdAt": "2026-03-11T02:47:02Z"
+      },
+      "analysis": {
+        "summary": "A step-by-step guide to build your own AI agent.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-03-11",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1174820787",
+      "source": "github",
+      "title": "karpathy/autoresearch",
+      "description": "AI agents running research on single-GPU nanochat training automatically",
+      "url": "https://github.com/karpathy/autoresearch",
+      "image": "https://opengraph.githubassets.com/1/karpathy/autoresearch",
+      "metadata": {
+        "stars": 49950,
+        "language": "Python",
+        "topics": [],
+        "updatedAt": "2026-03-23T00:00:20Z",
+        "createdAt": "2026-03-06T22:00:43Z"
+      },
+      "analysis": {
+        "summary": "AI agents running research on single-GPU nanochat training automatically",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-03-06",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1171026502",
+      "source": "github",
+      "title": "googleworkspace/cli",
+      "description": "Google Workspace CLI — one command-line tool for Drive, Gmail, Calendar, Sheets, Docs, Chat, Admin, and more. Dynamically built from Google Discovery Service. Includes AI agent skills.",
+      "url": "https://github.com/googleworkspace/cli",
+      "image": "https://opengraph.githubassets.com/1/googleworkspace/cli",
+      "metadata": {
+        "stars": 22081,
+        "language": "Rust",
+        "topics": [
+          "agent-skills",
+          "ai-agent",
+          "automation",
+          "cli",
+          "discovery-api",
+          "gemini-cli-extension",
+          "google-admin",
+          "google-api",
+          "google-calendar",
+          "google-chat",
+          "google-docs",
+          "google-drive",
+          "google-sheets",
+          "google-workspace",
+          "oauth2",
+          "rust"
+        ],
+        "updatedAt": "2026-03-22T23:57:47Z",
+        "createdAt": "2026-03-02T19:46:06Z"
+      },
+      "analysis": {
+        "summary": "Google Workspace CLI — one command-line tool for Drive, Gmail, Calendar, Sheets, Docs, Chat, Admin, and more. Dynamically built from Google Discovery Service. Includes AI agent skills.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-03-02",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1164832776",
+      "source": "github",
+      "title": "cft0808/edict",
+      "description": "🏛️ 三省六部制 · OpenClaw Multi-Agent Orchestration System — 9 specialized AI agents with real-time dashboard, model config, and full audit trails",
+      "url": "https://github.com/cft0808/edict",
+      "image": "https://opengraph.githubassets.com/1/cft0808/edict",
+      "metadata": {
+        "stars": 12029,
+        "language": "Python",
+        "topics": [
+          "ai-agents",
+          "ai-orchestration",
+          "autonomous-agents",
+          "claude",
+          "dashboard",
+          "kanban",
+          "llm",
+          "multi-agent",
+          "openai",
+          "openclaw",
+          "orchestration",
+          "python",
+          "workflow-automation"
+        ],
+        "updatedAt": "2026-03-22T23:58:31Z",
+        "createdAt": "2026-02-23T14:35:04Z"
+      },
+      "analysis": {
+        "summary": "🏛️ 三省六部制 · OpenClaw Multi-Agent Orchestration System — 9 specialized AI agents with real-time dashboard, model config, and full audit trails",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-02-23",
+      "category": "ai-agent"
+    }
+  ]
+}

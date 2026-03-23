@@ -1,30 +1,5 @@
 [
   {
-    "date": "2026-02-21",
-    "projects": [
-      "ValueCell-ai/ClawX",
-      "TheAgentContextLab/OneContext",
-      "aeromomo/claw-compactor",
-      "yohey-w/multi-agent-shogun",
-      "manaflow-ai/cmux",
-      "spacedriveapp/spacebot",
-      "callstackincubator/agent-device",
-      "cursor/agent-trace",
-      "zylos-ai/zylos-core",
-      "zilliztech/memsearch",
-      "jo-inc/camofox-browser",
-      "Nasiko-Labs/nasiko",
-      "crshdn/mission-control",
-      "jingkaihe/matchlock",
-      "qufei1993/skills-hub",
-      "BakeLens/crust",
-      "abhi1693/openclaw-mission-control",
-      "SamuelQZQ/auto-coding-agent-demo",
-      "Versatly/clawvault",
-      "TraderAlice/OpenAlice"
-    ]
-  },
-  {
     "date": "2026-02-22",
     "projects": [
       "localgpt-app/localgpt",
@@ -547,6 +522,31 @@
       "calesthio/Crucix",
       "jackwener/opencli",
       "mukul975/Anthropic-Cybersecurity-Skills"
+    ]
+  },
+  {
+    "date": "2026-03-23",
+    "projects": [
+      "Narcooo/inkos",
+      "jnMetaCode/agency-agents-zh",
+      "zerobootdev/zeroboot",
+      "shareAI-lab/claw0",
+      "hyperspaceai/agi",
+      "onecli/onecli",
+      "uluckyXH/OpenMOSS",
+      "twostraws/Swift-Agent-Skills",
+      "jrswab/axe",
+      "JohnRiceML/clawport-ui",
+      "carmahhawwari/ui-design-brain",
+      "MiniMax-AI/OpenRoom",
+      "sangrokjung/claude-forge",
+      "es617/claude-replay",
+      "kibitzsh/kibitz",
+      "Eronred/aso-skills",
+      "czl9707/build-your-own-openclaw",
+      "karpathy/autoresearch",
+      "googleworkspace/cli",
+      "cft0808/edict"
     ]
   }
 ]
