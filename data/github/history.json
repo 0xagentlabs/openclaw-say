@@ -223,5 +223,30 @@
       "ghostwright/phantom",
       "Shpigford/chops"
     ]
+  },
+  {
+    "date": "2026-04-12",
+    "projects": [
+      "calesthio/OpenMontage",
+      "samber/cc-skills-golang",
+      "ryanstephen/lil-agents",
+      "wangziqi06/724-office",
+      "truongduy2611/app-store-preflight-skills",
+      "yizhiyanhua-ai/fireworks-tech-graph",
+      "alejandrobalderas/claude-code-from-source",
+      "rcortx/kiwiq",
+      "repowise-dev/claude-code-prompts",
+      "Windy3f3f3f3f/claude-code-from-scratch",
+      "jonwiggins/optio",
+      "liliMozi/openhanako",
+      "e10nMa2k/cc-mini",
+      "CN-Syndra/ClawLink",
+      "Ataraxy-Labs/opensessions",
+      "zubair-trabzada/ai-legal-claude",
+      "walter-grace/mac-code",
+      "ru-yee/Life-Agent-RU-YEE",
+      "6551Team/claude-code-design-guide",
+      "openyak/openyak"
+    ]
   }
 ]
