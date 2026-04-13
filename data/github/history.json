@@ -248,5 +248,30 @@
       "6551Team/claude-code-design-guide",
       "openyak/openyak"
     ]
+  },
+  {
+    "date": "2026-04-13",
+    "projects": [
+      "holaboss-ai/holaOS",
+      "joeynyc/hermes-hudui",
+      "zhu1090093659/spec_driven_develop",
+      "iflytek/astronclaw-tutorial",
+      "theDakshJaitly/mex",
+      "rasbt/mini-coding-agent",
+      "LeoYeAI/openclaw-auto-dream",
+      "swapperfinance/swapper-toolkit",
+      "utkusen/sast-skills",
+      "realkimbarrett/advertising-skills",
+      "kellyvv/PhoneClaw",
+      "24kchengYe/MemoMind",
+      "Railly/agentfiles",
+      "omnimind-ai/OpenOmniBot",
+      "he-yufeng/CoreCoder",
+      "larksuite/cli",
+      "tvytlx/ai-agent-deep-dive",
+      "lintsinghua/claude-code-book",
+      "yasasbanukaofficial/claude-code",
+      "collaborator-ai/collab-public"
+    ]
   }
 ]

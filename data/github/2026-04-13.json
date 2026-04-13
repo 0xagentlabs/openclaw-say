@@ -1,0 +1,634 @@
+{
+  "date": "2026-04-13",
+  "count": 20,
+  "items": [
+    {
+      "id": "github-1188521544",
+      "source": "github",
+      "title": "holaboss-ai/holaOS",
+      "description": "The agent environment for long-horizon work, continuity, and self-evolution.",
+      "url": "https://github.com/holaboss-ai/holaOS",
+      "image": "https://opengraph.githubassets.com/1/holaboss-ai/holaOS",
+      "metadata": {
+        "stars": 1968,
+        "language": "TypeScript",
+        "topics": [
+          "agent",
+          "agent-harness",
+          "agent-runtime",
+          "agentic",
+          "ai",
+          "ai-agent",
+          "ai-agents",
+          "artificial-intelligence",
+          "automation",
+          "continuity",
+          "electron",
+          "holaboss",
+          "holaos",
+          "llm",
+          "mcp",
+          "memory",
+          "model-context-protocol",
+          "runtime",
+          "typescript",
+          "workspace"
+        ],
+        "updatedAt": "2026-04-12T23:56:06Z",
+        "createdAt": "2026-03-22T07:36:16Z"
+      },
+      "analysis": {
+        "summary": "The agent environment for long-horizon work, continuity, and self-evolution.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-03-22",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1205418973",
+      "source": "github",
+      "title": "joeynyc/hermes-hudui",
+      "description": "Web UI consciousness monitor for Hermes — the AI agent with persistent memory",
+      "url": "https://github.com/joeynyc/hermes-hudui",
+      "image": "https://opengraph.githubassets.com/1/joeynyc/hermes-hudui",
+      "metadata": {
+        "stars": 688,
+        "language": "Python",
+        "topics": [],
+        "updatedAt": "2026-04-12T23:24:52Z",
+        "createdAt": "2026-04-09T00:22:33Z"
+      },
+      "analysis": {
+        "summary": "Web UI consciousness monitor for Hermes — the AI agent with persistent memory",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-04-09",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1187868068",
+      "source": "github",
+      "title": "zhu1090093659/spec_driven_develop",
+      "description": "Spec-Driven Develop is a platform-agnostic AI agent skill that automates the pre-development workflow for large-scale complex tasks. It is not a framework, not a runtime, not a package manager — it is a single SKILL.md file that teaches any AI coding agent a structured methodology.",
+      "url": "https://github.com/zhu1090093659/spec_driven_develop",
+      "image": "https://opengraph.githubassets.com/1/zhu1090093659/spec_driven_develop",
+      "metadata": {
+        "stars": 676,
+        "language": "Shell",
+        "topics": [],
+        "updatedAt": "2026-04-12T14:40:30Z",
+        "createdAt": "2026-03-21T09:37:20Z"
+      },
+      "analysis": {
+        "summary": "Spec-Driven Develop is a platform-agnostic AI agent skill that automates the pre-development workflow for large-scale complex tasks. It is not a framework, not a runtime, not a package manager — it is a single SKILL.md file that teaches any AI coding agent a structured methodology.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-03-21",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1185864608",
+      "source": "github",
+      "title": "iflytek/astronclaw-tutorial",
+      "description": "从零到工作流，掌握 AstronClaw（云端）与 Loomy（桌面）的 AI 助手实战教程 | A complete tutorial to master AstronClaw (cloud AI) & Loomy (desktop AI)",
+      "url": "https://github.com/iflytek/astronclaw-tutorial",
+      "image": "https://opengraph.githubassets.com/1/iflytek/astronclaw-tutorial",
+      "metadata": {
+        "stars": 665,
+        "language": "JavaScript",
+        "topics": [
+          "agent",
+          "ai-agent",
+          "iflytek-astron",
+          "openclaw"
+        ],
+        "updatedAt": "2026-04-10T23:35:10Z",
+        "createdAt": "2026-03-19T02:40:44Z"
+      },
+      "analysis": {
+        "summary": "从零到工作流，掌握 AstronClaw（云端）与 Loomy（桌面）的 AI 助手实战教程 | A complete tutorial to master AstronClaw (cloud AI) & Loomy (desktop AI)",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-03-19",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1187896522",
+      "source": "github",
+      "title": "theDakshJaitly/mex",
+      "description": "Persistent project memory for AI coding agents. Structured scaffold + drift detection CLI.",
+      "url": "https://github.com/theDakshJaitly/mex",
+      "image": "https://opengraph.githubassets.com/1/theDakshJaitly/mex",
+      "metadata": {
+        "stars": 614,
+        "language": "TypeScript",
+        "topics": [
+          "claude-code",
+          "claude-code-skills",
+          "cli-tool",
+          "context-management",
+          "cursor",
+          "developer-tools",
+          "documentation",
+          "llm"
+        ],
+        "updatedAt": "2026-04-12T23:51:55Z",
+        "createdAt": "2026-03-21T10:34:18Z"
+      },
+      "analysis": {
+        "summary": "Persistent project memory for AI coding agents. Structured scaffold + drift detection CLI.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-03-21",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1199057215",
+      "source": "github",
+      "title": "rasbt/mini-coding-agent",
+      "description": "Minimal and readable coding agent harness implementation in Python to explain the core components of coding agents.",
+      "url": "https://github.com/rasbt/mini-coding-agent",
+      "image": "https://opengraph.githubassets.com/1/rasbt/mini-coding-agent",
+      "metadata": {
+        "stars": 592,
+        "language": "Python",
+        "topics": [
+          "agents",
+          "ai",
+          "large-language-models",
+          "llms",
+          "python"
+        ],
+        "updatedAt": "2026-04-12T20:03:49Z",
+        "createdAt": "2026-04-02T02:35:06Z"
+      },
+      "analysis": {
+        "summary": "Minimal and readable coding agent harness implementation in Python to explain the core components of coding agents.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-04-02",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1194293040",
+      "source": "github",
+      "title": "LeoYeAI/openclaw-auto-dream",
+      "description": "Automatic memory consolidation for OpenClaw agents — like sleep for your AI. Powered by MyClaw.ai",
+      "url": "https://github.com/LeoYeAI/openclaw-auto-dream",
+      "image": "https://opengraph.githubassets.com/1/LeoYeAI/openclaw-auto-dream",
+      "metadata": {
+        "stars": 582,
+        "language": "HTML",
+        "topics": [
+          "ai-agent",
+          "auto-dream",
+          "llm",
+          "memory",
+          "memory-management",
+          "myclaw",
+          "openclaw"
+        ],
+        "updatedAt": "2026-04-12T23:03:17Z",
+        "createdAt": "2026-03-28T06:38:18Z"
+      },
+      "analysis": {
+        "summary": "Automatic memory consolidation for OpenClaw agents — like sleep for your AI. Powered by MyClaw.ai",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-03-28",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1189465288",
+      "source": "github",
+      "title": "swapperfinance/swapper-toolkit",
+      "description": "DeFi toolkit for AI agents and coding assistants — deposit funds, execute trades, and manage crypto wallets. Works with Claude Code, Cursor,   Windsurf, OpenClaw, CrewAI, AutoGPT, and other AI agent frameworks.",
+      "url": "https://github.com/swapperfinance/swapper-toolkit",
+      "image": "https://opengraph.githubassets.com/1/swapperfinance/swapper-toolkit",
+      "metadata": {
+        "stars": 579,
+        "language": "Unknown",
+        "topics": [
+          "ai-agent",
+          "ai-agent-tools",
+          "ai-coding-assistant",
+          "autogpt",
+          "autonomous-agents",
+          "blockchain",
+          "claude-code",
+          "copilot",
+          "crewai",
+          "crypto",
+          "cursor",
+          "defi",
+          "dex",
+          "langchain",
+          "openclaw",
+          "token-swap",
+          "trading",
+          "wallet",
+          "web3",
+          "windsurf"
+        ],
+        "updatedAt": "2026-04-12T03:40:20Z",
+        "createdAt": "2026-03-23T10:53:26Z"
+      },
+      "analysis": {
+        "summary": "DeFi toolkit for AI agents and coding assistants — deposit funds, execute trades, and manage crypto wallets. Works with Claude Code, Cursor,   Windsurf, OpenClaw, CrewAI, AutoGPT, and other AI agent frameworks.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-03-23",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1196248606",
+      "source": "github",
+      "title": "utkusen/sast-skills",
+      "description": "Collection of agent skills that turn your AI coder into a SAST scanner",
+      "url": "https://github.com/utkusen/sast-skills",
+      "image": "https://opengraph.githubassets.com/1/utkusen/sast-skills",
+      "metadata": {
+        "stars": 563,
+        "language": "Unknown",
+        "topics": [
+          "ai-security",
+          "claude",
+          "claude-code",
+          "sast"
+        ],
+        "updatedAt": "2026-04-12T21:32:23Z",
+        "createdAt": "2026-03-30T14:11:49Z"
+      },
+      "analysis": {
+        "summary": "Collection of agent skills that turn your AI coder into a SAST scanner",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-03-30",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1192432137",
+      "source": "github",
+      "title": "realkimbarrett/advertising-skills",
+      "description": "Advertising Skills for Open Claw, Claude Code & AI agents. Direct response, paid ads, funnels, and copy systems.",
+      "url": "https://github.com/realkimbarrett/advertising-skills",
+      "image": "https://opengraph.githubassets.com/1/realkimbarrett/advertising-skills",
+      "metadata": {
+        "stars": 558,
+        "language": "Unknown",
+        "topics": [
+          "advertising",
+          "claude-code",
+          "codex",
+          "openclaw",
+          "openclawskill"
+        ],
+        "updatedAt": "2026-04-12T22:19:02Z",
+        "createdAt": "2026-03-26T07:58:48Z"
+      },
+      "analysis": {
+        "summary": "Advertising Skills for Open Claw, Claude Code & AI agents. Direct response, paid ads, funnels, and copy systems.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-03-26",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1201495229",
+      "source": "github",
+      "title": "kellyvv/PhoneClaw",
+      "description": "PhoneClaw: On-device AI Agent for Phone powered by Gemma 4",
+      "url": "https://github.com/kellyvv/PhoneClaw",
+      "image": "https://opengraph.githubassets.com/1/kellyvv/PhoneClaw",
+      "metadata": {
+        "stars": 556,
+        "language": "Swift",
+        "topics": [],
+        "updatedAt": "2026-04-12T15:18:50Z",
+        "createdAt": "2026-04-04T18:53:07Z"
+      },
+      "analysis": {
+        "summary": "PhoneClaw: On-device AI Agent for Phone powered by Gemma 4",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-04-04",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1182144293",
+      "source": "github",
+      "title": "24kchengYe/MemoMind",
+      "description": "Give your AI agent a brain that remembers. Local memory system for Claude Code — 100% private, GPU-accelerated, zero cloud dependency.",
+      "url": "https://github.com/24kchengYe/MemoMind",
+      "image": "https://opengraph.githubassets.com/1/24kchengYe/MemoMind",
+      "metadata": {
+        "stars": 523,
+        "language": "Python",
+        "topics": [
+          "agent-memory",
+          "ai",
+          "claude-code",
+          "llm",
+          "local-first",
+          "mcp",
+          "memory"
+        ],
+        "updatedAt": "2026-04-13T00:01:40Z",
+        "createdAt": "2026-03-15T05:10:02Z"
+      },
+      "analysis": {
+        "summary": "Give your AI agent a brain that remembers. Local memory system for Claude Code — 100% private, GPU-accelerated, zero cloud dependency.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-03-15",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1194517182",
+      "source": "github",
+      "title": "Railly/agentfiles",
+      "description": "Browse, create, and edit AI agent files across Claude Code, Cursor, Codex, and 13+ tools — from Obsidian.",
+      "url": "https://github.com/Railly/agentfiles",
+      "image": "https://opengraph.githubassets.com/1/Railly/agentfiles",
+      "metadata": {
+        "stars": 506,
+        "language": "TypeScript",
+        "topics": [
+          "agent-skills",
+          "ai-agents",
+          "ai-tools",
+          "claude-code",
+          "codex",
+          "coding-agents",
+          "copilot",
+          "cursor",
+          "developer-tools",
+          "dotfiles",
+          "obsidian",
+          "obsidian-plugin",
+          "skills",
+          "windsurf"
+        ],
+        "updatedAt": "2026-04-12T23:48:09Z",
+        "createdAt": "2026-03-28T13:17:02Z"
+      },
+      "analysis": {
+        "summary": "Browse, create, and edit AI agent files across Claude Code, Cursor, Codex, and 13+ tools — from Obsidian.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-03-28",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1185430378",
+      "source": "github",
+      "title": "omnimind-ai/OpenOmniBot",
+      "description": "你的端侧 AI 助手，她可以操作终端，也可以完成 Android 世界的广泛任务 || Your on-device AI assistant, capable of operating terminals and performing a wide range of tasks in the Android world",
+      "url": "https://github.com/omnimind-ai/OpenOmniBot",
+      "image": "https://opengraph.githubassets.com/1/omnimind-ai/OpenOmniBot",
+      "metadata": {
+        "stars": 503,
+        "language": "Kotlin",
+        "topics": [
+          "agent",
+          "ai",
+          "alpine",
+          "android",
+          "automation",
+          "bot",
+          "gui",
+          "linux",
+          "on-device",
+          "skills"
+        ],
+        "updatedAt": "2026-04-13T00:01:41Z",
+        "createdAt": "2026-03-18T15:18:51Z"
+      },
+      "analysis": {
+        "summary": "你的端侧 AI 助手，她可以操作终端，也可以完成 Android 世界的广泛任务 || Your on-device AI assistant, capable of operating terminals and performing a wide range of tasks in the Android world",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-03-18",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1198829864",
+      "source": "github",
+      "title": "he-yufeng/CoreCoder",
+      "description": "Minimal AI coding agent (~950 LoC Python) inspired by Claude Code. Works with any LLM. Think NanoGPT for coding agent. Formerly NanoCoder. ",
+      "url": "https://github.com/he-yufeng/CoreCoder",
+      "image": "https://opengraph.githubassets.com/1/he-yufeng/CoreCoder",
+      "metadata": {
+        "stars": 489,
+        "language": "Python",
+        "topics": [
+          "ai-agent",
+          "claude-code",
+          "cli",
+          "coding-agent",
+          "corecoder",
+          "deepseek",
+          "developer-tools",
+          "llm",
+          "openai",
+          "python"
+        ],
+        "updatedAt": "2026-04-12T20:51:14Z",
+        "createdAt": "2026-04-01T19:54:54Z"
+      },
+      "analysis": {
+        "summary": "Minimal AI coding agent (~950 LoC Python) inspired by Claude Code. Works with any LLM. Think NanoGPT for coding agent. Formerly NanoCoder. ",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-04-01",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1191372811",
+      "source": "github",
+      "title": "larksuite/cli",
+      "description": "The official Lark/Feishu CLI tool, maintained by the larksuite team — built for humans and AI Agents. Covers core business domains including Messenger, Docs, Base, Sheets, Calendar, Mail, Tasks, Meetings, and more, with 200+ commands and 19 AI Agent Skills.",
+      "url": "https://github.com/larksuite/cli",
+      "image": "https://opengraph.githubassets.com/1/larksuite/cli",
+      "metadata": {
+        "stars": 7496,
+        "language": "Go",
+        "topics": [],
+        "updatedAt": "2026-04-12T23:47:46Z",
+        "createdAt": "2026-03-25T07:13:30Z"
+      },
+      "analysis": {
+        "summary": "The official Lark/Feishu CLI tool, maintained by the larksuite team — built for humans and AI Agents. Covers core business domains including Messenger, Docs, Base, Sheets, Calendar, Mail, Tasks, Meetings, and more, with 200+ commands and 19 AI Agent Skills.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-03-25",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1197160875",
+      "source": "github",
+      "title": "tvytlx/ai-agent-deep-dive",
+      "description": "AI Agent 源码深度研究报告",
+      "url": "https://github.com/tvytlx/ai-agent-deep-dive",
+      "image": "https://opengraph.githubassets.com/1/tvytlx/ai-agent-deep-dive",
+      "metadata": {
+        "stars": 5472,
+        "language": "Python",
+        "topics": [],
+        "updatedAt": "2026-04-12T23:41:57Z",
+        "createdAt": "2026-03-31T11:27:01Z"
+      },
+      "analysis": {
+        "summary": "AI Agent 源码深度研究报告",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-03-31",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1197598190",
+      "source": "github",
+      "title": "lintsinghua/claude-code-book",
+      "description": "《御舆：解码 Agent Harness》42万字拆解 AI Agent 的Harness骨架与神经 —— Claude Code 架构深度剖析，15 章从对话循环到构建你自己的 Agent Harness。在线阅读网站：",
+      "url": "https://github.com/lintsinghua/claude-code-book",
+      "image": "https://opengraph.githubassets.com/1/lintsinghua/claude-code-book",
+      "metadata": {
+        "stars": 2596,
+        "language": "Unknown",
+        "topics": [
+          "agent",
+          "agent-architecture",
+          "ai-agent",
+          "anthropic",
+          "book",
+          "chinese",
+          "claude-code",
+          "llm",
+          "mcp"
+        ],
+        "updatedAt": "2026-04-12T18:01:35Z",
+        "createdAt": "2026-03-31T18:00:16Z"
+      },
+      "analysis": {
+        "summary": "《御舆：解码 Agent Harness》42万字拆解 AI Agent 的Harness骨架与神经 —— Claude Code 架构深度剖析，15 章从对话循环到构建你自己的 Agent Harness。在线阅读网站：",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-03-31",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1197656055",
+      "source": "github",
+      "title": "yasasbanukaofficial/claude-code",
+      "description": "🚀 Open source Claude Code CLI source code. Advanced AI Agent for developers. Includes TypeScript codebase for LLM tool-calling, agentic workflows, and terminal UI. Remember this is just the skeleton not the brain itself. Found by Chaofan Shou. ",
+      "url": "https://github.com/yasasbanukaofficial/claude-code",
+      "image": "https://opengraph.githubassets.com/1/yasasbanukaofficial/claude-code",
+      "metadata": {
+        "stars": 2360,
+        "language": "TypeScript",
+        "topics": [
+          "claude-ai",
+          "claude-code",
+          "leaked-claude-code",
+          "leaked-code"
+        ],
+        "updatedAt": "2026-04-12T23:43:47Z",
+        "createdAt": "2026-03-31T19:07:10Z"
+      },
+      "analysis": {
+        "summary": "🚀 Open source Claude Code CLI source code. Advanced AI Agent for developers. Includes TypeScript codebase for LLM tool-calling, agentic workflows, and terminal UI. Remember this is just the skeleton not the brain itself. Found by Chaofan Shou. ",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-03-31",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1182216394",
+      "source": "github",
+      "title": "collaborator-ai/collab-public",
+      "description": "Collaborator is a place to create with agents.",
+      "url": "https://github.com/collaborator-ai/collab-public",
+      "image": "https://opengraph.githubassets.com/1/collaborator-ai/collab-public",
+      "metadata": {
+        "stars": 2339,
+        "language": "TypeScript",
+        "topics": [
+          "agents",
+          "ai",
+          "claude-code",
+          "codex-cli",
+          "ide",
+          "terminal"
+        ],
+        "updatedAt": "2026-04-12T20:57:38Z",
+        "createdAt": "2026-03-15T07:46:32Z"
+      },
+      "analysis": {
+        "summary": "Collaborator is a place to create with agents.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-03-15",
+      "category": "ai-agent"
+    }
+  ]
+}
