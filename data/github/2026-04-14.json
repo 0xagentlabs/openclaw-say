@@ -1,0 +1,638 @@
+{
+  "date": "2026-04-14",
+  "count": 20,
+  "items": [
+    {
+      "id": "github-1197183235",
+      "source": "github",
+      "title": "Leonxlnx/agentic-ai-prompt-research",
+      "description": "Research into how agentic AI coding assistants work — reconstructed prompt patterns, agent coordination, and security classification",
+      "url": "https://github.com/Leonxlnx/agentic-ai-prompt-research",
+      "image": "https://opengraph.githubassets.com/1/Leonxlnx/agentic-ai-prompt-research",
+      "metadata": {
+        "stars": 2298,
+        "language": "Unknown",
+        "topics": [
+          "agentic-ai",
+          "ai-research",
+          "claude",
+          "prompt-engineering",
+          "system-prompts"
+        ],
+        "updatedAt": "2026-04-13T21:40:16Z",
+        "createdAt": "2026-03-31T11:47:04Z"
+      },
+      "analysis": {
+        "summary": "Research into how agentic AI coding assistants work — reconstructed prompt patterns, agent coordination, and security classification",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-03-31",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1204451436",
+      "source": "github",
+      "title": "alchaincyf/hermes-agent-orange-book",
+      "description": "Hermes Agent 从入门到精通 · 橙皮书系列 · Nous Research 开源 AI Agent 框架实战指南",
+      "url": "https://github.com/alchaincyf/hermes-agent-orange-book",
+      "image": "https://opengraph.githubassets.com/1/alchaincyf/hermes-agent-orange-book",
+      "metadata": {
+        "stars": 2279,
+        "language": "Unknown",
+        "topics": [],
+        "updatedAt": "2026-04-13T23:56:03Z",
+        "createdAt": "2026-04-08T02:49:02Z"
+      },
+      "analysis": {
+        "summary": "Hermes Agent 从入门到精通 · 橙皮书系列 · Nous Research 开源 AI Agent 框架实战指南",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-04-08",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1197226849",
+      "source": "github",
+      "title": "Windy3f3f3f3f/how-claude-code-works",
+      "description": "Deep dive into Claude Code internals — architecture, agent loop, context engineering, and more. / 深入解析 Claude Code 源码：架构、Agent 循环、上下文工程、工具系统等",
+      "url": "https://github.com/Windy3f3f3f3f/how-claude-code-works",
+      "image": "https://opengraph.githubassets.com/1/Windy3f3f3f3f/how-claude-code-works",
+      "metadata": {
+        "stars": 1816,
+        "language": "Unknown",
+        "topics": [
+          "ai",
+          "ai-agent",
+          "anthropic",
+          "architecture",
+          "claude",
+          "claude-code",
+          "coding-agent",
+          "deep-dive",
+          "llm",
+          "source-code-analysis"
+        ],
+        "updatedAt": "2026-04-13T18:44:01Z",
+        "createdAt": "2026-03-31T12:25:40Z"
+      },
+      "analysis": {
+        "summary": "Deep dive into Claude Code internals — architecture, agent loop, context engineering, and more. / 深入解析 Claude Code 源码：架构、Agent 循环、上下文工程、工具系统等",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-03-31",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1195011586",
+      "source": "github",
+      "title": "WecomTeam/wecom-cli",
+      "description": "企业微信开放平台命令行工具 — 让人类和 AI Agent 都能在终端中操作企业微信",
+      "url": "https://github.com/WecomTeam/wecom-cli",
+      "image": "https://opengraph.githubassets.com/1/WecomTeam/wecom-cli",
+      "metadata": {
+        "stars": 1674,
+        "language": "Rust",
+        "topics": [],
+        "updatedAt": "2026-04-13T23:10:33Z",
+        "createdAt": "2026-03-29T05:06:59Z"
+      },
+      "analysis": {
+        "summary": "企业微信开放平台命令行工具 — 让人类和 AI Agent 都能在终端中操作企业微信",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-03-29",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1187709537",
+      "source": "github",
+      "title": "DingTalk-Real-AI/dingtalk-workspace-cli",
+      "description": "DingTalk Workspace is an officially open-sourced cross-platform CLI tool from DingTalk. It unifies DingTalk’s full suite of product capabilities into a single package, is designed for both human users and AI agent scenarios.",
+      "url": "https://github.com/DingTalk-Real-AI/dingtalk-workspace-cli",
+      "image": "https://opengraph.githubassets.com/1/DingTalk-Real-AI/dingtalk-workspace-cli",
+      "metadata": {
+        "stars": 1544,
+        "language": "Go",
+        "topics": [],
+        "updatedAt": "2026-04-13T14:53:31Z",
+        "createdAt": "2026-03-21T03:51:00Z"
+      },
+      "analysis": {
+        "summary": "DingTalk Workspace is an officially open-sourced cross-platform CLI tool from DingTalk. It unifies DingTalk’s full suite of product capabilities into a single package, is designed for both human users and AI agent scenarios.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-03-21",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1197265285",
+      "source": "github",
+      "title": "openedclaude/claude-reviews-claude",
+      "description": "Claude reads its own source code — 17-chapter architectural deep-dive  into Claude Code v2.1.88. EN/ZH bilingual.",
+      "url": "https://github.com/openedclaude/claude-reviews-claude",
+      "image": "https://opengraph.githubassets.com/1/openedclaude/claude-reviews-claude",
+      "metadata": {
+        "stars": 1298,
+        "language": "Unknown",
+        "topics": [
+          "agent",
+          "agentic-ai",
+          "ai",
+          "anthropic",
+          "architecture",
+          "claude",
+          "claude-code",
+          "deep-dive",
+          "documentation",
+          "llm",
+          "meta",
+          "reverse-engineering",
+          "source-code",
+          "typescript",
+          "vibe-coding"
+        ],
+        "updatedAt": "2026-04-13T21:24:27Z",
+        "createdAt": "2026-03-31T12:58:46Z"
+      },
+      "analysis": {
+        "summary": "Claude reads its own source code — 17-chapter architectural deep-dive  into Claude Code v2.1.88. EN/ZH bilingual.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-03-31",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1192303694",
+      "source": "github",
+      "title": "ghostwright/phantom",
+      "description": "An AI co-worker with its own computer. Self-evolving, persistent memory, MCP server, secure credential collection, email identity. Built on the Claude Agent SDK.",
+      "url": "https://github.com/ghostwright/phantom",
+      "image": "https://opengraph.githubassets.com/1/ghostwright/phantom",
+      "metadata": {
+        "stars": 1261,
+        "language": "TypeScript",
+        "topics": [
+          "ai-agents",
+          "ai-coworker",
+          "anthropic",
+          "autonomous-agents",
+          "bun",
+          "claude",
+          "docker",
+          "llm",
+          "mcp",
+          "self-evolution",
+          "slack",
+          "typescript"
+        ],
+        "updatedAt": "2026-04-13T23:04:06Z",
+        "createdAt": "2026-03-26T04:45:11Z"
+      },
+      "analysis": {
+        "summary": "An AI co-worker with its own computer. Self-evolving, persistent memory, MCP server, secure credential collection, email identity. Built on the Claude Agent SDK.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-03-26",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1185528404",
+      "source": "github",
+      "title": "Shpigford/chops",
+      "description": "Your AI agent skills, finally organized. A macOS app to browse, edit, and manage skills across Claude Code, Cursor, Codex, Windsurf, and Amp.",
+      "url": "https://github.com/Shpigford/chops",
+      "image": "https://opengraph.githubassets.com/1/Shpigford/chops",
+      "metadata": {
+        "stars": 1206,
+        "language": "Swift",
+        "topics": [
+          "agents",
+          "ai",
+          "macos",
+          "skills",
+          "swiftui"
+        ],
+        "updatedAt": "2026-04-13T15:20:59Z",
+        "createdAt": "2026-03-18T17:17:12Z"
+      },
+      "analysis": {
+        "summary": "Your AI agent skills, finally organized. A macOS app to browse, edit, and manage skills across Claude Code, Cursor, Codex, Windsurf, and Amp.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-03-18",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1186742994",
+      "source": "github",
+      "title": "jnMetaCode/superpowers-zh",
+      "description": "🦸 AI 编程超能力 · 中文增强版 — superpowers（116k+ ⭐）完整汉化 + 6 个中国原创 skills，让 Claude Code / Copilot CLI / Hermes Agent / Cursor / Windsurf / Kiro / Gemini CLI 等 16 款 AI 编程工具真正会干活",
+      "url": "https://github.com/jnMetaCode/superpowers-zh",
+      "image": "https://opengraph.githubassets.com/1/jnMetaCode/superpowers-zh",
+      "metadata": {
+        "stars": 808,
+        "language": "Shell",
+        "topics": [
+          "agent-skills",
+          "agentic-coding",
+          "ai-coding",
+          "chinese",
+          "claude-code",
+          "code-review",
+          "cursor",
+          "gemini-cli",
+          "kiro",
+          "mcp",
+          "npm-package",
+          "prompt-engineering",
+          "skills",
+          "superpowers",
+          "tdd",
+          "trae"
+        ],
+        "updatedAt": "2026-04-13T20:09:57Z",
+        "createdAt": "2026-03-20T00:12:39Z"
+      },
+      "analysis": {
+        "summary": "🦸 AI 编程超能力 · 中文增强版 — superpowers（116k+ ⭐）完整汉化 + 6 个中国原创 skills，让 Claude Code / Copilot CLI / Hermes Agent / Cursor / Windsurf / Kiro / Gemini CLI 等 16 款 AI 编程工具真正会干活",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-03-20",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1197631840",
+      "source": "github",
+      "title": "russelleNVy/three-man-team",
+      "description": "A structured 3-agent AI dev team — Architect, Builder, Reviewer. Built from production use. Token-optimized. Works with Claude Code, VS Code, Cursor, and any AI that supports context files.",
+      "url": "https://github.com/russelleNVy/three-man-team",
+      "image": "https://opengraph.githubassets.com/1/russelleNVy/three-man-team",
+      "metadata": {
+        "stars": 520,
+        "language": "Shell",
+        "topics": [
+          "agent-skills",
+          "agent-workflow",
+          "ai-agents",
+          "claude",
+          "context-files",
+          "developer-tools",
+          "llm",
+          "markdown",
+          "productivity",
+          "prompt-engineering"
+        ],
+        "updatedAt": "2026-04-13T21:54:39Z",
+        "createdAt": "2026-03-31T18:38:09Z"
+      },
+      "analysis": {
+        "summary": "A structured 3-agent AI dev team — Architect, Builder, Reviewer. Built from production use. Token-optimized. Works with Claude Code, VS Code, Cursor, and any AI that supports context files.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-03-31",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1186572375",
+      "source": "github",
+      "title": "alibaba-flyai/flyai-skill",
+      "description": "fly ai agent skill",
+      "url": "https://github.com/alibaba-flyai/flyai-skill",
+      "image": "https://opengraph.githubassets.com/1/alibaba-flyai/flyai-skill",
+      "metadata": {
+        "stars": 485,
+        "language": "Unknown",
+        "topics": [],
+        "updatedAt": "2026-04-13T15:09:51Z",
+        "createdAt": "2026-03-19T19:11:14Z"
+      },
+      "analysis": {
+        "summary": "fly ai agent skill",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-03-19",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1188887217",
+      "source": "github",
+      "title": "neo4j-labs/create-context-graph",
+      "description": "AI agents with graph based reasoning memory, scaffolded in seconds",
+      "url": "https://github.com/neo4j-labs/create-context-graph",
+      "image": "https://opengraph.githubassets.com/1/neo4j-labs/create-context-graph",
+      "metadata": {
+        "stars": 483,
+        "language": "Python",
+        "topics": [
+          "agent-memory",
+          "context-graph",
+          "neo4j"
+        ],
+        "updatedAt": "2026-04-13T20:28:24Z",
+        "createdAt": "2026-03-22T18:04:44Z"
+      },
+      "analysis": {
+        "summary": "AI agents with graph based reasoning memory, scaffolded in seconds",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-03-22",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1186233280",
+      "source": "github",
+      "title": "elirantutia/vibeyard",
+      "description": "The IDE built for AI coding agents.",
+      "url": "https://github.com/elirantutia/vibeyard",
+      "image": "https://opengraph.githubassets.com/1/elirantutia/vibeyard",
+      "metadata": {
+        "stars": 464,
+        "language": "TypeScript",
+        "topics": [
+          "ai",
+          "cc",
+          "claude",
+          "claude-code",
+          "cli",
+          "developer-tools",
+          "electron",
+          "ide",
+          "typescript",
+          "vibe-coding",
+          "xterm"
+        ],
+        "updatedAt": "2026-04-13T21:27:16Z",
+        "createdAt": "2026-03-19T12:10:31Z"
+      },
+      "analysis": {
+        "summary": "The IDE built for AI coding agents.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-03-19",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1191372811",
+      "source": "github",
+      "title": "larksuite/cli",
+      "description": "The official Lark/Feishu CLI tool, maintained by the larksuite team — built for humans and AI Agents. Covers core business domains including Messenger, Docs, Base, Sheets, Calendar, Mail, Tasks, Meetings, and more, with 200+ commands and 19 AI Agent Skills.",
+      "url": "https://github.com/larksuite/cli",
+      "image": "https://opengraph.githubassets.com/1/larksuite/cli",
+      "metadata": {
+        "stars": 7649,
+        "language": "Go",
+        "topics": [],
+        "updatedAt": "2026-04-13T23:01:13Z",
+        "createdAt": "2026-03-25T07:13:30Z"
+      },
+      "analysis": {
+        "summary": "The official Lark/Feishu CLI tool, maintained by the larksuite team — built for humans and AI Agents. Covers core business domains including Messenger, Docs, Base, Sheets, Calendar, Mail, Tasks, Meetings, and more, with 200+ commands and 19 AI Agent Skills.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-03-25",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1197160875",
+      "source": "github",
+      "title": "tvytlx/ai-agent-deep-dive",
+      "description": "AI Agent 源码深度研究报告",
+      "url": "https://github.com/tvytlx/ai-agent-deep-dive",
+      "image": "https://opengraph.githubassets.com/1/tvytlx/ai-agent-deep-dive",
+      "metadata": {
+        "stars": 5499,
+        "language": "Python",
+        "topics": [],
+        "updatedAt": "2026-04-13T16:57:33Z",
+        "createdAt": "2026-03-31T11:27:01Z"
+      },
+      "analysis": {
+        "summary": "AI Agent 源码深度研究报告",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-03-31",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1197598190",
+      "source": "github",
+      "title": "lintsinghua/claude-code-book",
+      "description": "《御舆：解码 Agent Harness》42万字拆解 AI Agent 的Harness骨架与神经 —— Claude Code 架构深度剖析，15 章从对话循环到构建你自己的 Agent Harness。在线阅读网站：",
+      "url": "https://github.com/lintsinghua/claude-code-book",
+      "image": "https://opengraph.githubassets.com/1/lintsinghua/claude-code-book",
+      "metadata": {
+        "stars": 2647,
+        "language": "Unknown",
+        "topics": [
+          "agent",
+          "agent-architecture",
+          "ai-agent",
+          "anthropic",
+          "book",
+          "chinese",
+          "claude-code",
+          "llm",
+          "mcp"
+        ],
+        "updatedAt": "2026-04-13T21:35:13Z",
+        "createdAt": "2026-03-31T18:00:16Z"
+      },
+      "analysis": {
+        "summary": "《御舆：解码 Agent Harness》42万字拆解 AI Agent 的Harness骨架与神经 —— Claude Code 架构深度剖析，15 章从对话循环到构建你自己的 Agent Harness。在线阅读网站：",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-03-31",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1197656055",
+      "source": "github",
+      "title": "yasasbanukaofficial/claude-code",
+      "description": "🚀 Open source Claude Code CLI source code. Advanced AI Agent for developers. Includes TypeScript codebase for LLM tool-calling, agentic workflows, and terminal UI. Remember this is just the skeleton not the brain itself. Found by Chaofan Shou. ",
+      "url": "https://github.com/yasasbanukaofficial/claude-code",
+      "image": "https://opengraph.githubassets.com/1/yasasbanukaofficial/claude-code",
+      "metadata": {
+        "stars": 2449,
+        "language": "TypeScript",
+        "topics": [
+          "claude-ai",
+          "claude-code",
+          "leaked-claude-code",
+          "leaked-code"
+        ],
+        "updatedAt": "2026-04-13T23:52:58Z",
+        "createdAt": "2026-03-31T19:07:10Z"
+      },
+      "analysis": {
+        "summary": "🚀 Open source Claude Code CLI source code. Advanced AI Agent for developers. Includes TypeScript codebase for LLM tool-calling, agentic workflows, and terminal UI. Remember this is just the skeleton not the brain itself. Found by Chaofan Shou. ",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-03-31",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1188521544",
+      "source": "github",
+      "title": "holaboss-ai/holaOS",
+      "description": "The agent environment for long-horizon work, continuity, and self-evolution.",
+      "url": "https://github.com/holaboss-ai/holaOS",
+      "image": "https://opengraph.githubassets.com/1/holaboss-ai/holaOS",
+      "metadata": {
+        "stars": 2209,
+        "language": "TypeScript",
+        "topics": [
+          "agent",
+          "agent-harness",
+          "agent-runtime",
+          "agentic",
+          "ai",
+          "ai-agent",
+          "ai-agents",
+          "artificial-intelligence",
+          "electron",
+          "holaboss",
+          "holaos",
+          "llm",
+          "mcp",
+          "memory",
+          "model-context-protocol",
+          "proactive",
+          "proactive-ai",
+          "runtime",
+          "typescript",
+          "workspace"
+        ],
+        "updatedAt": "2026-04-14T00:02:25Z",
+        "createdAt": "2026-03-22T07:36:16Z"
+      },
+      "analysis": {
+        "summary": "The agent environment for long-horizon work, continuity, and self-evolution.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-03-22",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1207091162",
+      "source": "github",
+      "title": "yizhiyanhua-ai/fireworks-tech-graph",
+      "description": "Claude Code skill for generating production-quality SVG+PNG technical diagrams. Supports 8 diagram types, 5 visual styles, and deep AI/Agent domain knowledge.",
+      "url": "https://github.com/yizhiyanhua-ai/fireworks-tech-graph",
+      "image": "https://opengraph.githubassets.com/1/yizhiyanhua-ai/fireworks-tech-graph",
+      "metadata": {
+        "stars": 2008,
+        "language": "Python",
+        "topics": [],
+        "updatedAt": "2026-04-13T23:59:52Z",
+        "createdAt": "2026-04-10T15:07:10Z"
+      },
+      "analysis": {
+        "summary": "Claude Code skill for generating production-quality SVG+PNG technical diagrams. Supports 8 diagram types, 5 visual styles, and deep AI/Agent domain knowledge.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-04-10",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1195360525",
+      "source": "github",
+      "title": "calesthio/OpenMontage",
+      "description": "World's first open-source, agentic video production system. 12 pipelines, 52 tools, 500+ agent skills. Turn your AI coding assistant into a full video production studio.",
+      "url": "https://github.com/calesthio/OpenMontage",
+      "image": "https://opengraph.githubassets.com/1/calesthio/OpenMontage",
+      "metadata": {
+        "stars": 1609,
+        "language": "Python",
+        "topics": [
+          "agent",
+          "agentic-ai",
+          "ai",
+          "claude",
+          "copilot",
+          "cursor",
+          "elevenlabs",
+          "ffmpeg",
+          "flux",
+          "image-generation",
+          "open-source",
+          "openai",
+          "python",
+          "remotion",
+          "stable-diffusion",
+          "text-to-speech",
+          "text-to-video",
+          "video-generation",
+          "video-production"
+        ],
+        "updatedAt": "2026-04-13T23:23:13Z",
+        "createdAt": "2026-03-29T15:23:22Z"
+      },
+      "analysis": {
+        "summary": "World's first open-source, agentic video production system. 12 pipelines, 52 tools, 500+ agent skills. Turn your AI coding assistant into a full video production studio.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-03-29",
+      "category": "ai-agent"
+    }
+  ]
+}

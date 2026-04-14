@@ -1,30 +1,5 @@
 [
   {
-    "date": "2026-03-15",
-    "projects": [
-      "karpathy/autoresearch",
-      "googleworkspace/cli",
-      "cft0808/edict",
-      "Panniantong/Agent-Reach",
-      "tanweai/pua",
-      "Leonxlnx/taste-skill",
-      "twostraws/SwiftUI-Agent-Skill",
-      "AlexAnys/awesome-openclaw-usecases-zh",
-      "Gentleman-Programming/engram",
-      "chenhg5/cc-connect",
-      "TraderAlice/OpenAlice",
-      "op7418/Claude-to-IM-skill",
-      "ghostwright/ghost-os",
-      "LeoYeAI/openclaw-backup",
-      "pasky/chrome-cdp-skill",
-      "bcurts/agentchattr",
-      "chrisworsey55/atlas-gic",
-      "nextlevelbuilder/goclaw",
-      "GreenSheep01201/claw-empire",
-      "Gentleman-Programming/agent-teams-lite"
-    ]
-  },
-  {
     "date": "2026-03-17",
     "projects": [
       "mukul975/Anthropic-Cybersecurity-Skills",
@@ -272,6 +247,31 @@
       "lintsinghua/claude-code-book",
       "yasasbanukaofficial/claude-code",
       "collaborator-ai/collab-public"
+    ]
+  },
+  {
+    "date": "2026-04-14",
+    "projects": [
+      "Leonxlnx/agentic-ai-prompt-research",
+      "alchaincyf/hermes-agent-orange-book",
+      "Windy3f3f3f3f/how-claude-code-works",
+      "WecomTeam/wecom-cli",
+      "DingTalk-Real-AI/dingtalk-workspace-cli",
+      "openedclaude/claude-reviews-claude",
+      "ghostwright/phantom",
+      "Shpigford/chops",
+      "jnMetaCode/superpowers-zh",
+      "russelleNVy/three-man-team",
+      "alibaba-flyai/flyai-skill",
+      "neo4j-labs/create-context-graph",
+      "elirantutia/vibeyard",
+      "larksuite/cli",
+      "tvytlx/ai-agent-deep-dive",
+      "lintsinghua/claude-code-book",
+      "yasasbanukaofficial/claude-code",
+      "holaboss-ai/holaOS",
+      "yizhiyanhua-ai/fireworks-tech-graph",
+      "calesthio/OpenMontage"
     ]
   }
 ]
