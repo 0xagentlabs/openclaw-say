@@ -1,0 +1,568 @@
+{
+  "date": "2026-04-15",
+  "count": 20,
+  "items": [
+    {
+      "id": "github-1191520000",
+      "source": "github",
+      "title": "HughYau/qiushi-skill",
+      "description": "求是Skill——从教员思想中提炼出一条总原则和九大方法论工具，系统性地武装 AI 的大脑。Qiushi-Skill: Build agents that investigate first, focus on the main contradiction, validate in practice, and keep pushing until the work is actually done.",
+      "url": "https://github.com/HughYau/qiushi-skill",
+      "image": "https://opengraph.githubassets.com/1/HughYau/qiushi-skill",
+      "metadata": {
+        "stars": 2676,
+        "language": "JavaScript",
+        "topics": [
+          "ai-agents",
+          "methodology",
+          "skills",
+          "workflow"
+        ],
+        "updatedAt": "2026-04-14T22:37:58Z",
+        "createdAt": "2026-03-25T10:24:01Z"
+      },
+      "analysis": {
+        "summary": "求是Skill——从教员思想中提炼出一条总原则和九大方法论工具，系统性地武装 AI 的大脑。Qiushi-Skill: Build agents that investigate first, focus on the main contradiction, validate in practice, and keep pushing until the work is actually done.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-03-25",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1198636839",
+      "source": "github",
+      "title": "alejandrobalderas/claude-code-from-source",
+      "description": "Architecture, patterns & internals of Anthropic's AI coding agent — reverse-engineered from source maps",
+      "url": "https://github.com/alejandrobalderas/claude-code-from-source",
+      "image": "https://opengraph.githubassets.com/1/alejandrobalderas/claude-code-from-source",
+      "metadata": {
+        "stars": 1450,
+        "language": "TypeScript",
+        "topics": [],
+        "updatedAt": "2026-04-14T23:55:30Z",
+        "createdAt": "2026-04-01T15:59:12Z"
+      },
+      "analysis": {
+        "summary": "Architecture, patterns & internals of Anthropic's AI coding agent — reverse-engineered from source maps",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-04-01",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1188322477",
+      "source": "github",
+      "title": "samber/cc-skills-golang",
+      "description": "🧑‍🎨 A collection of Golang agentic skills that works",
+      "url": "https://github.com/samber/cc-skills-golang",
+      "image": "https://opengraph.githubassets.com/1/samber/cc-skills-golang",
+      "metadata": {
+        "stars": 1209,
+        "language": "Go",
+        "topics": [
+          "agent",
+          "agent-skills",
+          "ai",
+          "antigravity",
+          "claude",
+          "claude-code",
+          "code",
+          "codex",
+          "coding",
+          "copilot",
+          "cursor",
+          "gemini",
+          "gemini-cli-extension",
+          "openclaw",
+          "opencode",
+          "plugin",
+          "skills",
+          "skillsmp",
+          "vibe-coding"
+        ],
+        "updatedAt": "2026-04-14T23:26:44Z",
+        "createdAt": "2026-03-21T23:10:11Z"
+      },
+      "analysis": {
+        "summary": "🧑‍🎨 A collection of Golang agentic skills that works",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-03-21",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1189197045",
+      "source": "github",
+      "title": "ryanstephen/lil-agents",
+      "description": "tiny AI companions that live on your macOS dock",
+      "url": "https://github.com/ryanstephen/lil-agents",
+      "image": "https://opengraph.githubassets.com/1/ryanstephen/lil-agents",
+      "metadata": {
+        "stars": 1180,
+        "language": "Swift",
+        "topics": [],
+        "updatedAt": "2026-04-14T19:59:07Z",
+        "createdAt": "2026-03-23T04:28:40Z"
+      },
+      "analysis": {
+        "summary": "tiny AI companions that live on your macOS dock",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-03-23",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1183972690",
+      "source": "github",
+      "title": "wangziqi06/724-office",
+      "description": "7/24 Office — Self-evolving AI Agent system. 36 tools, 10,000 lines pure Python, modular architecture, MCP plugins, three-layer memory, nudge system, AI mirror, 24/7 production.",
+      "url": "https://github.com/wangziqi06/724-office",
+      "image": "https://opengraph.githubassets.com/1/wangziqi06/724-office",
+      "metadata": {
+        "stars": 1090,
+        "language": "Python",
+        "topics": [],
+        "updatedAt": "2026-04-14T23:06:42Z",
+        "createdAt": "2026-03-17T05:56:13Z"
+      },
+      "analysis": {
+        "summary": "7/24 Office — Self-evolving AI Agent system. 36 tools, 10,000 lines pure Python, modular architecture, MCP plugins, three-layer memory, nudge system, AI mirror, 24/7 production.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-03-17",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1185958882",
+      "source": "github",
+      "title": "truongduy2611/app-store-preflight-skills",
+      "description": "AI agent skill to scan iOS/macOS projects for App Store rejection patterns before submission",
+      "url": "https://github.com/truongduy2611/app-store-preflight-skills",
+      "image": "https://opengraph.githubassets.com/1/truongduy2611/app-store-preflight-skills",
+      "metadata": {
+        "stars": 1070,
+        "language": "Unknown",
+        "topics": [],
+        "updatedAt": "2026-04-14T17:55:25Z",
+        "createdAt": "2026-03-19T05:39:43Z"
+      },
+      "analysis": {
+        "summary": "AI agent skill to scan iOS/macOS projects for App Store rejection patterns before submission",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-03-19",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1185075092",
+      "source": "github",
+      "title": "rcortx/kiwiq",
+      "description": "Production-grade multi-agent orchestration platform - JSON-defined agents, multi-tier memory, and built-in observability. Battle-tested on 200+ enterprise AI agents. Now fully open-sourced (prod at https://kiwiq.ai).",
+      "url": "https://github.com/rcortx/kiwiq",
+      "image": "https://opengraph.githubassets.com/1/rcortx/kiwiq",
+      "metadata": {
+        "stars": 1060,
+        "language": "Python",
+        "topics": [],
+        "updatedAt": "2026-04-14T17:36:53Z",
+        "createdAt": "2026-03-18T08:03:04Z"
+      },
+      "analysis": {
+        "summary": "Production-grade multi-agent orchestration platform - JSON-defined agents, multi-tier memory, and built-in observability. Battle-tested on 200+ enterprise AI agents. Now fully open-sourced (prod at https://kiwiq.ai).",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-03-18",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1198155461",
+      "source": "github",
+      "title": "repowise-dev/claude-code-prompts",
+      "description": "Independently authored prompt templates for AI coding agents — system prompts, tool prompts, agent delegation, memory management, and multi-agent coordination. Informed by studying Claude Code.",
+      "url": "https://github.com/repowise-dev/claude-code-prompts",
+      "image": "https://opengraph.githubassets.com/1/repowise-dev/claude-code-prompts",
+      "metadata": {
+        "stars": 937,
+        "language": "Unknown",
+        "topics": [
+          "ai-coding-agent",
+          "ai-tools",
+          "anthropic-claude",
+          "claude-code",
+          "claude-code-prompts",
+          "claude-code-system-prompt",
+          "claude-prompts",
+          "coding-assistant",
+          "cursor-skills",
+          "llm-prompts",
+          "multi-agent",
+          "prompt-engineering",
+          "prompt-templates",
+          "system-prompt"
+        ],
+        "updatedAt": "2026-04-14T17:01:28Z",
+        "createdAt": "2026-04-01T06:59:09Z"
+      },
+      "analysis": {
+        "summary": "Independently authored prompt templates for AI coding agents — system prompts, tool prompts, agent delegation, memory management, and multi-agent coordination. Informed by studying Claude Code.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-04-01",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1186621765",
+      "source": "github",
+      "title": "Ataraxy-Labs/opensessions",
+      "description": "persistent tmux sidebar showing AI agent status across all sessions",
+      "url": "https://github.com/Ataraxy-Labs/opensessions",
+      "image": "https://opengraph.githubassets.com/1/Ataraxy-Labs/opensessions",
+      "metadata": {
+        "stars": 920,
+        "language": "TypeScript",
+        "topics": [
+          "agents",
+          "tmux",
+          "tmux-plugins"
+        ],
+        "updatedAt": "2026-04-14T23:10:37Z",
+        "createdAt": "2026-03-19T20:24:35Z"
+      },
+      "analysis": {
+        "summary": "persistent tmux sidebar showing AI agent status across all sessions",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-03-19",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1197227242",
+      "source": "github",
+      "title": "Windy3f3f3f3f/claude-code-from-scratch",
+      "description": "Build your own Claude Code from scratch.  🔍 Claude Code 开源了 50 万行代码，读不动？用 ~4000 行 TypeScript / Python 从零复现核心架构，11 章分步教程带你理解 coding agent 精髓",
+      "url": "https://github.com/Windy3f3f3f3f/claude-code-from-scratch",
+      "image": "https://opengraph.githubassets.com/1/Windy3f3f3f3f/claude-code-from-scratch",
+      "metadata": {
+        "stars": 910,
+        "language": "Python",
+        "topics": [
+          "ai",
+          "ai-agent",
+          "anthropic",
+          "build-from-scratch",
+          "claude",
+          "claude-code",
+          "coding-agent",
+          "llm",
+          "tutorial",
+          "typescript"
+        ],
+        "updatedAt": "2026-04-14T23:30:15Z",
+        "createdAt": "2026-03-31T12:26:06Z"
+      },
+      "analysis": {
+        "summary": "Build your own Claude Code from scratch.  🔍 Claude Code 开源了 50 万行代码，读不动？用 ~4000 行 TypeScript / Python 从零复现核心架构，11 章分步教程带你理解 coding agent 精髓",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-03-31",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1190010281",
+      "source": "github",
+      "title": "walter-grace/mac-code",
+      "description": "mac code — Claude Code, but it runs on your Mac for free.   35B AI agent at 30 tok/s via Apple Silicon flash-paging. $0/month. ",
+      "url": "https://github.com/walter-grace/mac-code",
+      "image": "https://opengraph.githubassets.com/1/walter-grace/mac-code",
+      "metadata": {
+        "stars": 873,
+        "language": "Python",
+        "topics": [],
+        "updatedAt": "2026-04-14T22:56:46Z",
+        "createdAt": "2026-03-23T22:08:54Z"
+      },
+      "analysis": {
+        "summary": "mac code — Claude Code, but it runs on your Mac for free.   35B AI agent at 30 tok/s via Apple Silicon flash-paging. $0/month. ",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-03-23",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1186598756",
+      "source": "github",
+      "title": "jonwiggins/optio",
+      "description": "Workflow orchestration for AI coding agents, from task to merged PR.",
+      "url": "https://github.com/jonwiggins/optio",
+      "image": "https://opengraph.githubassets.com/1/jonwiggins/optio",
+      "metadata": {
+        "stars": 867,
+        "language": "TypeScript",
+        "topics": [],
+        "updatedAt": "2026-04-14T23:40:17Z",
+        "createdAt": "2026-03-19T19:50:11Z"
+      },
+      "analysis": {
+        "summary": "Workflow orchestration for AI coding agents, from task to merged PR.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-03-19",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1197126855",
+      "source": "github",
+      "title": "e10nMa2k/cc-mini",
+      "description": "Ultra-light Harness scaffolding for AI agents, a mini version of claude code ",
+      "url": "https://github.com/e10nMa2k/cc-mini",
+      "image": "https://opengraph.githubassets.com/1/e10nMa2k/cc-mini",
+      "metadata": {
+        "stars": 794,
+        "language": "Python",
+        "topics": [],
+        "updatedAt": "2026-04-14T17:07:38Z",
+        "createdAt": "2026-03-31T10:52:39Z"
+      },
+      "analysis": {
+        "summary": "Ultra-light Harness scaffolding for AI agents, a mini version of claude code ",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-03-31",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1186973832",
+      "source": "github",
+      "title": "CN-Syndra/ClawLink",
+      "description": "An AI Agent Social Network — Let your AI (Claw) talk to other people's AIs directly. Autonomous agent-to-agent communication, negotiation, and collaboration, with full owner control.",
+      "url": "https://github.com/CN-Syndra/ClawLink",
+      "image": "https://opengraph.githubassets.com/1/CN-Syndra/ClawLink",
+      "metadata": {
+        "stars": 763,
+        "language": "TypeScript",
+        "topics": [
+          "agent",
+          "agent-social-network",
+          "claw",
+          "openclaw"
+        ],
+        "updatedAt": "2026-04-14T12:17:06Z",
+        "createdAt": "2026-03-20T07:38:57Z"
+      },
+      "analysis": {
+        "summary": "An AI Agent Social Network — Let your AI (Claw) talk to other people's AIs directly. Autonomous agent-to-agent communication, negotiation, and collaboration, with full owner control.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-03-20",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1192370538",
+      "source": "github",
+      "title": "zubair-trabzada/ai-legal-claude",
+      "description": "AI Legal Assistant skill for Claude Code. Contract review, risk analysis, NDA generation, compliance auditing, negotiation strategy, and PDF reports — 14 skills, 5 parallel agents. If you want to learn how to sell this to real businesses, check out the Skool community",
+      "url": "https://github.com/zubair-trabzada/ai-legal-claude",
+      "image": "https://opengraph.githubassets.com/1/zubair-trabzada/ai-legal-claude",
+      "metadata": {
+        "stars": 738,
+        "language": "Python",
+        "topics": [],
+        "updatedAt": "2026-04-14T19:25:50Z",
+        "createdAt": "2026-03-26T06:32:13Z"
+      },
+      "analysis": {
+        "summary": "AI Legal Assistant skill for Claude Code. Contract review, risk analysis, NDA generation, compliance auditing, negotiation strategy, and PDF reports — 14 skills, 5 parallel agents. If you want to learn how to sell this to real businesses, check out the Skool community",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-03-26",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1197124375",
+      "source": "github",
+      "title": "6551Team/claude-code-design-guide",
+      "description": "From Early Internet Design Patterns to AI Agent Implementation — A Deep Dive into Claude Code for Developers",
+      "url": "https://github.com/6551Team/claude-code-design-guide",
+      "image": "https://opengraph.githubassets.com/1/6551Team/claude-code-design-guide",
+      "metadata": {
+        "stars": 723,
+        "language": "JavaScript",
+        "topics": [],
+        "updatedAt": "2026-04-14T14:21:44Z",
+        "createdAt": "2026-03-31T10:50:07Z"
+      },
+      "analysis": {
+        "summary": "From Early Internet Design Patterns to AI Agent Implementation — A Deep Dive into Claude Code for Developers",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-03-31",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1187461911",
+      "source": "github",
+      "title": "openyak/openyak",
+      "description": "An open-source desktop AI agent that handles your documents, files, and daily workflows — locally, with any model.",
+      "url": "https://github.com/openyak/openyak",
+      "image": "https://opengraph.githubassets.com/1/openyak/openyak",
+      "metadata": {
+        "stars": 710,
+        "language": "Python",
+        "topics": [
+          "agent",
+          "agentic-ai",
+          "desktop-application",
+          "llm",
+          "local",
+          "mcp",
+          "open-source",
+          "skills",
+          "tools"
+        ],
+        "updatedAt": "2026-04-14T13:06:44Z",
+        "createdAt": "2026-03-20T18:51:13Z"
+      },
+      "analysis": {
+        "summary": "An open-source desktop AI agent that handles your documents, files, and daily workflows — locally, with any model.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-03-20",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1187100345",
+      "source": "github",
+      "title": "Yuan-lab-LLM/ClawManager",
+      "description": "A Kubernetes-native control plane for AI agent instance management, with governed AI access, runtime orchestration, and reusable resources across multiple agent runtimes.",
+      "url": "https://github.com/Yuan-lab-LLM/ClawManager",
+      "image": "https://opengraph.githubassets.com/1/Yuan-lab-LLM/ClawManager",
+      "metadata": {
+        "stars": 553,
+        "language": "TypeScript",
+        "topics": [
+          "kubernetes",
+          "openclaw",
+          "webtop"
+        ],
+        "updatedAt": "2026-04-14T13:44:34Z",
+        "createdAt": "2026-03-20T10:43:22Z"
+      },
+      "analysis": {
+        "summary": "A Kubernetes-native control plane for AI agent instance management, with governed AI access, runtime orchestration, and reusable resources across multiple agent runtimes.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-03-20",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1192581753",
+      "source": "github",
+      "title": "vkhanhqui/figma-mcp-go",
+      "description": "Figma MCP for free users — no rate limits, full read/write, text to designs, designs to code",
+      "url": "https://github.com/vkhanhqui/figma-mcp-go",
+      "image": "https://opengraph.githubassets.com/1/vkhanhqui/figma-mcp-go",
+      "metadata": {
+        "stars": 520,
+        "language": "Go",
+        "topics": [
+          "agent",
+          "ai",
+          "automation",
+          "design",
+          "figma",
+          "figma-plugin",
+          "mcp"
+        ],
+        "updatedAt": "2026-04-14T23:49:54Z",
+        "createdAt": "2026-03-26T11:06:26Z"
+      },
+      "analysis": {
+        "summary": "Figma MCP for free users — no rate limits, full read/write, text to designs, designs to code",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-03-26",
+      "category": "ai-agent"
+    },
+    {
+      "id": "github-1191372811",
+      "source": "github",
+      "title": "larksuite/cli",
+      "description": "The official Lark/Feishu CLI tool, maintained by the larksuite team — built for humans and AI Agents. Covers core business domains including Messenger, Docs, Base, Sheets, Calendar, Mail, Tasks, Meetings, and more, with 200+ commands and 20+ AI Agent Skills.",
+      "url": "https://github.com/larksuite/cli",
+      "image": "https://opengraph.githubassets.com/1/larksuite/cli",
+      "metadata": {
+        "stars": 7789,
+        "language": "Go",
+        "topics": [],
+        "updatedAt": "2026-04-14T23:42:22Z",
+        "createdAt": "2026-03-25T07:13:30Z"
+      },
+      "analysis": {
+        "summary": "The official Lark/Feishu CLI tool, maintained by the larksuite team — built for humans and AI Agents. Covers core business domains including Messenger, Docs, Base, Sheets, Calendar, Mail, Tasks, Meetings, and more, with 200+ commands and 20+ AI Agent Skills.",
+        "background": "未能获取",
+        "implementation": "未能获取",
+        "extension": "未能获取",
+        "highlights": "未能获取"
+      },
+      "publishedAt": "2026-03-25",
+      "category": "ai-agent"
+    }
+  ]
+}

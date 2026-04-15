@@ -1,0 +1,96 @@
+{
+  "date": "2026-04-15",
+  "count": 6,
+  "items": [
+    {
+      "id": "youtube-Ersv1ogj7Jo",
+      "source": "youtube",
+      "title": "Anthropic’s New AI Solves Problems…By Cheating",
+      "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\n📝 The paper is available here:\nhttps://www.anthropic.com/claude-mythos-preview-system-card\n\nLinks and sources:\nhttp...",
+      "url": "https://www.youtube.com/watch?v=Ersv1ogj7Jo",
+      "image": "https://i2.ytimg.com/vi/Ersv1ogj7Jo/hqdefault.jpg",
+      "metadata": {
+        "views": "32.3K",
+        "channel": "Two Minute Papers",
+        "videoId": "Ersv1ogj7Jo"
+      },
+      "publishedAt": "2026-04-14",
+      "category": "video"
+    },
+    {
+      "id": "youtube-mFSFvKquXwI",
+      "source": "youtube",
+      "title": "NVIDIA’s New AI Shouldn’t Work…But It Does",
+      "description": "❤️ Check out Weights &amp; Biases and sign up for a free demo here: https://wandb.me/papers\n\n📝 The paper is available here:\nhttps://dreamdojo-world.github.io/\n\nOur Patreon if you wish to support us: ...",
+      "url": "https://www.youtube.com/watch?v=mFSFvKquXwI",
+      "image": "https://i2.ytimg.com/vi/mFSFvKquXwI/hqdefault.jpg",
+      "metadata": {
+        "views": "47.6K",
+        "channel": "Two Minute Papers",
+        "videoId": "mFSFvKquXwI"
+      },
+      "publishedAt": "2026-04-11",
+      "category": "video"
+    },
+    {
+      "id": "youtube-ZQAz_HrUq68",
+      "source": "youtube",
+      "title": "NVIDIA’s New AI Just Changed Everything",
+      "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\n📝 The #NVIDIA paper on Nemotron 3 Super is available here:\nhttps://research.nvidia.com/labs/nemotron/files/NVIDIA-N...",
+      "url": "https://www.youtube.com/watch?v=ZQAz_HrUq68",
+      "image": "https://i3.ytimg.com/vi/ZQAz_HrUq68/hqdefault.jpg",
+      "metadata": {
+        "views": "176.4K",
+        "channel": "Two Minute Papers",
+        "videoId": "ZQAz_HrUq68"
+      },
+      "publishedAt": "2026-04-07",
+      "category": "video"
+    },
+    {
+      "id": "youtube-7YVrb3-ABYE",
+      "source": "youtube",
+      "title": "Google’s New AI Just Broke My Brain",
+      "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\n📝 The TurboQuant paper is available here:\nhttps://arxiv.org/abs/2504.19874\n\nReproductions: \nhttps://github.com/tonb...",
+      "url": "https://www.youtube.com/watch?v=7YVrb3-ABYE",
+      "image": "https://i4.ytimg.com/vi/7YVrb3-ABYE/hqdefault.jpg",
+      "metadata": {
+        "views": "161.8K",
+        "channel": "Two Minute Papers",
+        "videoId": "7YVrb3-ABYE"
+      },
+      "publishedAt": "2026-04-01",
+      "category": "video"
+    },
+    {
+      "id": "youtube-Io_GqmbNBbY",
+      "source": "youtube",
+      "title": "DeepMind’s New AI Just Changed Science Forever",
+      "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\n📝 The paper is available here:\nhttps://arxiv.org/abs/2602.10177\n\nSource:\nhttps://www.youtube.com/watch?v=6evUpgCHtO...",
+      "url": "https://www.youtube.com/watch?v=Io_GqmbNBbY",
+      "image": "https://i2.ytimg.com/vi/Io_GqmbNBbY/hqdefault.jpg",
+      "metadata": {
+        "views": "237.8K",
+        "channel": "Two Minute Papers",
+        "videoId": "Io_GqmbNBbY"
+      },
+      "publishedAt": "2026-03-27",
+      "category": "video"
+    },
+    {
+      "id": "youtube-fallback-3",
+      "source": "youtube",
+      "title": "Matt Wolfe",
+      "description": "AI 工具和创意应用探索",
+      "url": "https://www.youtube.com/@mreflow",
+      "image": "https://img.youtube.com/vi/placeholder/maxresdefault.jpg",
+      "metadata": {
+        "views": "N/A",
+        "channel": "Matt Wolfe",
+        "videoId": "fallback-3"
+      },
+      "publishedAt": "2026-04-15",
+      "category": "video"
+    }
+  ]
+}
