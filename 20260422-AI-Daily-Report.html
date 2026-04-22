@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 每日精选 - 2026年4月22日</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --secondary: #f59e0b;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text: #1e293b;
+            --text-muted: #64748b;
+            --border: #e2e8f0;
+            --radius: 12px;
+            --shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -2px rgba(0,0,0,0.1);
+            --shadow-hover: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1);
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 48px;
+            padding: 32px;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: white;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+        }
+        header h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        header .subtitle {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+        header .date {
+            display: inline-block;
+            margin-top: 12px;
+            padding: 6px 16px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 20px;
+            font-size: 0.875rem;
+        }
+        .intro {
+            background: var(--card-bg);
+            padding: 24px;
+            border-radius: var(--radius);
+            margin-bottom: 32px;
+            box-shadow: var(--shadow);
+            border-left: 4px solid var(--secondary);
+        }
+        .intro p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+        .video-grid {
+            display: grid;
+            gap: 24px;
+        }
+        .video-card {
+            background: var(--card-bg);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: transform 0.2s, box-shadow 0.2s;
+            border: 1px solid var(--border);
+        }
+        .video-card:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-hover);
+        }
+        .video-header {
+            display: flex;
+            gap: 16px;
+            padding: 20px;
+            background: linear-gradient(to right, #f8fafc, #ffffff);
+        }
+        .video-thumb {
+            flex-shrink: 0;
+            width: 160px;
+            height: 90px;
+            border-radius: 8px;
+            overflow: hidden;
+            background: #e2e8f0;
+        }
+        .video-thumb img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .video-meta {
+            flex: 1;
+            min-width: 0;
+        }
+        .video-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text);
+            margin-bottom: 6px;
+            line-height: 1.4;
+        }
+        .video-title a {
+            color: inherit;
+            text-decoration: none;
+        }
+        .video-title a:hover {
+            color: var(--primary);
+        }
+        .video-channel {
+            font-size: 0.875rem;
+            color: var(--text-muted);
+            margin-bottom: 4px;
+        }
+        .video-stats {
+            display: flex;
+            gap: 12px;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+        .video-stats span {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        .video-body {
+            padding: 0 20px 20px;
+        }
+        .section-title {
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--primary);
+            margin: 16px 0 8px;
+        }
+        .summary {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+        .highlights {
+            list-style: none;
+            padding: 0;
+        }
+        .highlights li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 8px;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+        .highlights li::before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: var(--secondary);
+            font-weight: bold;
+        }
+        .watch-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 16px;
+            padding: 10px 20px;
+            background: var(--primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: background 0.2s;
+        }
+        .watch-btn:hover {
+            background: var(--primary-dark);
+        }
+        .footer {
+            text-align: center;
+            margin-top: 48px;
+            padding: 24px;
+            color: var(--text-muted);
+            font-size: 0.875rem;
+        }
+        .footer a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+        @media (max-width: 640px) {
+            .video-header {
+                flex-direction: column;
+            }
+            .video-thumb {
+                width: 100%;
+                height: auto;
+                aspect-ratio: 16/9;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🤖 AI 每日精选</h1>
+            <div class="subtitle">YouTube 最新 AI 技术视频日报</div>
+            <div class="date">2026年4月22日 · 星期三</div>
+        </header>
+
+        <div class="intro">
+            <p>本日报精选了过去 24 小时内 YouTube 上最新、最火的 AI 技术分享视频，涵盖 AI 趋势、LLM、Agents、生成式 AI 等热门话题。每个视频都包含核心观点摘要和技术亮点，点击标题即可观看原视频。</p>
+        </div>
+
+        <div class="video-grid">
+            <!-- Video 1 -->
+            <article class="video-card">
+                <div class="video-header">
+                    <div class="video-thumb">
+                        <img src="https://i.ytimg.com/vi/kqj22mWIdjU/mqdefault.jpg" alt="Building a Team of AI Agents">
+                    </div>
+                    <div class="video-meta">
+                        <h2 class="video-title"><a href="https://www.youtube.com/watch?v=kqj22mWIdjU" target="_blank">Building a Team of AI Agents: Roles, Feedback, & Teamwork Explained</a></h2>
+                        <div class="video-channel">📺 IBM Technology</div>
+                        <div class="video-stats">
+                            <span>👁 10,079 views</span>
+                            <span>⏱ 14 hours ago</span>
+                            <span>🕐 9:59</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-body">
+                    <div class="section-title">核心观点</div>
+                    <p class="summary">IBM Technology 深入讲解了如何构建一个由多个 AI Agent 组成的协作团队。视频详细介绍了不同 Agent 的角色分配、反馈机制以及团队协作模式，为企业级 AI 应用提供了实践指南。</p>
+                    <div class="section-title">技术亮点</div>
+                    <ul class="highlights">
+                        <li>多 Agent 角色定义与分工策略</li>
+                        <li>Agent 间反馈循环设计模式</li>
+                        <li>团队协作与任务编排最佳实践</li>
+                        <li>企业级 AI Agent 架构案例</li>
+                    </ul>
+                    <a href="https://www.youtube.com/watch?v=kqj22mWIdjU" class="watch-btn" target="_blank">▶ 观看视频</a>
+                </div>
+            </article>
+
+            <!-- Video 2 -->
+            <article class="video-card">
+                <div class="video-header">
+                    <div class="video-thumb">
+                        <img src="https://i.ytimg.com/vi/UKmvr7TpP3g/mqdefault.jpg" alt="3 mostly annoying AI trends">
+                    </div>
+                    <div class="video-meta">
+                        <h2 class="video-title"><a href="https://www.youtube.com/watch?v=UKmvr7TpP3g" target="_blank">3 mostly annoying AI trends we see in companies right now</a></h2>
+                        <div class="video-channel">📺 Maximilian Schwarzmüller</div>
+                        <div class="video-stats">
+                            <span>👁 6,448 views</span>
+                            <span>⏱ 12 hours ago</span>
+                            <span>🕐 13:54</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-body">
+                    <div class="section-title">核心观点</div>
+                    <p class="summary">Maximilian 从实战角度剖析了当前企业应用 AI 时最常见的三个误区：过度依赖 AI 而忽视人工审核、盲目追求最新模型而忽略业务适配、以及将 AI 视为万能解决方案而缺乏系统性规划。</p>
+                    <div class="section-title">技术亮点</div>
+                    <ul class="highlights">
+                        <li>企业 AI 落地的常见陷阱分析</li>
+                        <li>AI 与人工协作的平衡点</li>
+                        <li>模型选型与业务需求匹配策略</li>
+                        <li>AI 项目规划与 ROI 评估框架</li>
+                    </ul>
+                    <a href="https://www.youtube.com/watch?v=UKmvr7TpP3g" class="watch-btn" target="_blank">▶ 观看视频</a>
+                </div>
+            </article>
+
+            <!-- Video 3 -->
+            <article class="video-card">
+                <div class="video-header">
+                    <div class="video-thumb">
+                        <img src="https://i.ytimg.com/vi/n-kW9wjApVw/mqdefault.jpg" alt="What AI Actually Is">
+                    </div>
+                    <div class="video-meta">
+                        <h2 class="video-title"><a href="https://www.youtube.com/watch?v=n-kW9wjApVw" target="_blank">What AI Actually Is</a></h2>
+                        <div class="video-channel">📺 Julian Whatley</div>
+                        <div class="video-stats">
+                            <span>👁 6,735 views</span>
+                            <span>⏱ 10 hours ago</span>
+                            <span>🕐 12:25</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-body">
+                    <div class="section-title">核心观点</div>
+                    <p class="summary">Julian Whatley 用通俗易懂的方式解释了 AI 的本质，澄清了大众对人工智能的误解。视频从 Token 生成器的工作原理出发，解释了为什么 AI 会产生"幻觉"以及如何正确理解 AI 的能力边界。</p>
+                    <div class="section-title">技术亮点</div>
+                    <ul class="highlights">
+                        <li>Token 生成机制深度解析</li>
+                        <li>AI "幻觉"现象的技术解释</li>
+                        <li>AI 能力边界的科学界定</li>
+                        <li>从第一性原理理解机器学习</li>
+                    </ul>
+                    <a href="https://www.youtube.com/watch?v=n-kW9wjApVw" class="watch-btn" target="_blank">▶ 观看视频</a>
+                </div>
+            </article>
+
+            <!-- Video 4 -->
+            <article class="video-card">
+                <div class="video-header">
+                    <div class="video-thumb">
+                        <img src="https://i.ytimg.com/vi/Wn_4oLs-4AY/mqdefault.jpg" alt="AI Memory Market">
+                    </div>
+                    <div class="video-meta">
+                        <h2 class="video-title"><a href="https://www.youtube.com/watch?v=Wn_4oLs-4AY" target="_blank">Money Is Rotating In AI Memory… And Going To These HUGE Players.</a></h2>
+                        <div class="video-channel">📺 Market Signal</div>
+                        <div class="video-stats">
+                            <span>👁 367 views</span>
+                            <span>⏱ 29 minutes ago</span>
+                            <span>🕐 20:56</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-body">
+                    <div class="section-title">核心观点</div>
+                    <p class="summary">Market Signal 分析了 AI 内存市场的资本流向，指出随着大模型对内存需求的爆炸式增长，资金正在向 HBM（高带宽内存）和存储解决方案的头部企业集中，揭示了 AI 基础设施投资的新趋势。</p>
+                    <div class="section-title">技术亮点</div>
+                    <ul class="highlights">
+                        <li>HBM 高带宽内存技术解析</li>
+                        <li>AI 训练/推理的内存需求趋势</li>
+                        <li>半导体产业链投资机会分析</li>
+                        <li>内存技术对模型性能的影响</li>
+                    </ul>
+                    <a href="https://www.youtube.com/watch?v=Wn_4oLs-4AY" class="watch-btn" target="_blank">▶ 观看视频</a>
+                </div>
+            </article>
+
+            <!-- Video 5 -->
+            <article class="video-card">
+                <div class="video-header">
+                    <div class="video-thumb">
+                        <img src="https://i.ytimg.com/vi/Ch-vMy6WeQs/mqdefault.jpg" alt="2026 Laptops">
+                    </div>
+                    <div class="video-meta">
+                        <h2 class="video-title"><a href="https://www.youtube.com/watch?v=Ch-vMy6WeQs" target="_blank">This is What Laptops Look Like in 2026</a></h2>
+                        <div class="video-channel">📺 AI Uncovered</div>
+                        <div class="video-stats">
+                            <span>👁 4,607 views</span>
+                            <span>⏱ 1 day ago</span>
+                            <span>🕐 10:58</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-body">
+                    <div class="section-title">核心观点</div>
+                    <p class="summary">AI Uncovered 展示了 2026 年笔记本电脑的最新形态，重点介绍了集成 NPU（神经网络处理单元）的 AI PC 如何改变本地 AI 计算格局，以及端侧大模型运行的硬件突破。</p>
+                    <div class="section-title">技术亮点</div>
+                    <ul class="highlights">
+                        <li>NPU 架构与 AI 计算性能对比</li>
+                        <li>端侧大模型部署硬件要求</li>
+                        <li>AI PC 生态系统发展现状</li>
+                        <li>本地 vs 云端 AI 计算的权衡</li>
+                    </ul>
+                    <a href="https://www.youtube.com/watch?v=Ch-vMy6WeQs" class="watch-btn" target="_blank">▶ 观看视频</a>
+                </div>
+            </article>
+
+            <!-- Video 6 -->
+            <article class="video-card">
+                <div class="video-header">
+                    <div class="video-thumb">
+                        <img src="https://i.ytimg.com/vi/vqDbb2DofKI/mqdefault.jpg" alt="Top 10 Tech Trends 2026">
+                    </div>
+                    <div class="video-meta">
+                        <h2 class="video-title"><a href="https://www.youtube.com/watch?v=vqDbb2DofKI" target="_blank">Top 10 Tech Trends That Will Dominate 2026 | Tech Guide: Everything You Need to Know</a></h2>
+                        <div class="video-channel">📺 Hustle Vision 11</div>
+                        <div class="video-stats">
+                            <span>👁 1 view</span>
+                            <span>⏱ 8 hours ago</span>
+                            <span>🕐 7:45</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-body">
+                    <div class="section-title">核心观点</div>
+                    <p class="summary">Hustle Vision 11 盘点了 2026 年最值得关注的十大技术趋势，涵盖 AI Agent 自主化、多模态大模型、边缘计算、量子计算实用化等前沿方向，为技术从业者提供年度趋势导航。</p>
+                    <div class="section-title">技术亮点</div>
+                    <ul class="highlights">
+                        <li>2026 年十大技术趋势全景图</li>
+                        <li>AI Agent 自主决策能力突破</li>
+                        <li>多模态大模型应用场景扩展</li>
+                        <li>边缘 AI 与量子计算进展</li>
+                    </ul>
+                    <a href="https://www.youtube.com/watch?v=vqDbb2DofKI" class="watch-btn" target="_blank">▶ 观看视频</a>
+                </div>
+            </article>
+
+            <!-- Video 7 -->
+            <article class="video-card">
+                <div class="video-header">
+                    <div class="video-thumb">
+                        <img src="https://i.ytimg.com/vi/mn-T-N83zlc/mqdefault.jpg" alt="AI B2B Marketing 2026">
+                    </div>
+                    <div class="video-meta">
+                        <h2 class="video-title"><a href="https://www.youtube.com/watch?v=mn-T-N83zlc" target="_blank">AI Trends in B2B Marketing for 2026</a></h2>
+                        <div class="video-channel">📺 Trivera Interactive</div>
+                        <div class="video-stats">
+                            <span>👁 1 view</span>
+                            <span>⏱ 13 hours ago</span>
+                            <span>🕐 19:47</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-body">
+                    <div class="section-title">核心观点</div>
+                    <p class="summary">Trivera Interactive 聚焦 B2B 营销领域的 AI 应用趋势，分析了生成式 AI 如何重塑内容营销、线索生成和客户旅程，并提供了可落地的 AI 营销工具栈建议。</p>
+                    <div class="section-title">技术亮点</div>
+                    <ul class="highlights">
+                        <li>生成式 AI 在 B2B 内容创作中的应用</li>
+                        <li>AI 驱动的线索评分与培育</li>
+                        <li>个性化营销自动化工具推荐</li>
+                        <li>AI 营销 ROI 测量框架</li>
+                    </ul>
+                    <a href="https://www.youtube.com/watch?v=mn-T-N83zlc" class="watch-btn" target="_blank">▶ 观看视频</a>
+                </div>
+            </article>
+
+            <!-- Video 8 -->
+            <article class="video-card">
+                <div class="video-header">
+                    <div class="video-thumb">
+                        <img src="https://i.ytimg.com/vi/b8Yu00YOGB8/mqdefault.jpg" alt="Future of AI May 2026">
+                    </div>
+                    <div class="video-meta">
+                        <h2 class="video-title"><a href="https://www.youtube.com/watch?v=b8Yu00YOGB8" target="_blank">The Future of AI is Here (May 2026 Updates)</a></h2>
+                        <div class="video-channel">📺 Fix-Z</div>
+                        <div class="video-stats">
+                            <span>👁 1 view</span>
+                            <span>⏱ 3 hours ago</span>
+                            <span>🕐 2:40</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-body">
+                    <div class="section-title">核心观点</div>
+                    <p class="summary">Fix-Z 快速梳理了 2026 年 5 月 AI 领域的最新动态，包括新模型发布、重要产品更新和行业里程碑事件，适合快速了解近期 AI 生态变化。</p>
+                    <div class="section-title">技术亮点</div>
+                    <ul class="highlights">
+                        <li>2026 年 5 月 AI 新品速览</li>
+                        <li>大模型性能基准最新排名</li>
+                        <li>AI 行业重要收购与投资</li>
+                        <li>开源社区关键项目更新</li>
+                    </ul>
+                    <a href="https://www.youtube.com/watch?v=b8Yu00YOGB8" class="watch-btn" target="_blank">▶ 观看视频</a>
+                </div>
+            </article>
+        </div>
+
+        <div class="footer">
+            <p>🤖 由 Nova 自动生成 · 数据来源：YouTube</p>
+            <p style="margin-top:8px;">📅 生成时间：2026-04-22 09:30 CST</p>
+            <p style="margin-top:8px;">💡 提示：点击视频标题或"观看视频"按钮即可跳转到 YouTube 原视频页面</p>
+        </div>
+    </div>
+</body>
+</html>
