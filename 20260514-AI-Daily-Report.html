@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 每日精选日报 - 2026年5月14日</title>
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+            background: #f0f2f5;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 25px;
+            border-bottom: 3px solid #4CAF50;
+        }
+        .header h1 {
+            color: #1a1a1a;
+            font-size: 2.2em;
+            margin: 0 0 10px 0;
+        }
+        .header .subtitle {
+            color: #666;
+            font-size: 1.1em;
+        }
+        .header .date {
+            color: #4CAF50;
+            font-weight: 600;
+            font-size: 1em;
+            margin-top: 8px;
+        }
+        .summary-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 35px;
+        }
+        .summary-box h2 {
+            margin: 0 0 15px 0;
+            font-size: 1.3em;
+        }
+        .summary-box ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+        .summary-box li {
+            margin-bottom: 8px;
+        }
+        .video-card {
+            background: #fafbfc;
+            border: 1px solid #e1e4e8;
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 25px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .video-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(0,0,0,0.1);
+        }
+        .video-header {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+        .video-number {
+            background: #4CAF50;
+            color: white;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            flex-shrink: 0;
+            font-size: 0.9em;
+        }
+        .video-title {
+            font-size: 1.25em;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin: 0 0 5px 0;
+            line-height: 1.3;
+        }
+        .video-title a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .video-title a:hover {
+            color: #4CAF50;
+        }
+        .video-meta {
+            color: #666;
+            font-size: 0.9em;
+        }
+        .video-meta span {
+            margin-right: 15px;
+        }
+        .video-link {
+            display: inline-block;
+            background: #ff0000;
+            color: white;
+            padding: 8px 18px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9em;
+            margin: 10px 0;
+            transition: background 0.2s;
+        }
+        .video-link:hover {
+            background: #cc0000;
+        }
+        .section-title {
+            color: #2c3e50;
+            font-size: 1.1em;
+            font-weight: 700;
+            margin: 15px 0 8px 0;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .section-title::before {
+            content: '';
+            display: inline-block;
+            width: 4px;
+            height: 18px;
+            background: #4CAF50;
+            border-radius: 2px;
+        }
+        .content-text {
+            color: #444;
+            margin: 0 0 12px 0;
+        }
+        .highlight-box {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            border-radius: 0 8px 8px 0;
+            margin: 12px 0;
+        }
+        .tag {
+            display: inline-block;
+            background: #e3f2fd;
+            color: #1976d2;
+            padding: 3px 10px;
+            border-radius: 12px;
+            font-size: 0.8em;
+            margin-right: 6px;
+            margin-bottom: 6px;
+        }
+        .footer {
+            margin-top: 50px;
+            padding-top: 25px;
+            border-top: 2px solid #e1e4e8;
+            text-align: center;
+            color: #888;
+            font-size: 0.9em;
+        }
+        .stats-bar {
+            display: flex;
+            justify-content: space-around;
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .stat-item {
+            text-align: center;
+        }
+        .stat-number {
+            font-size: 1.8em;
+            font-weight: 700;
+            color: #4CAF50;
+        }
+        .stat-label {
+            color: #666;
+            font-size: 0.85em;
+        }
+        @media (max-width: 600px) {
+            .container { padding: 20px; }
+            .header h1 { font-size: 1.6em; }
+            .video-header { flex-direction: column; }
+            .stats-bar { flex-direction: column; gap: 15px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🤖 AI 每日精选日报</h1>
+            <div class="subtitle">YouTube 最新 AI 技术分享视频精选与深度解读</div>
+            <div class="date">📅 2026年5月14日 | Thursday</div>
+        </div>
+
+        <div class="stats-bar">
+            <div class="stat-item">
+                <div class="stat-number">12</div>
+                <div class="stat-label">精选视频</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">6</div>
+                <div class="stat-label">核心主题</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">24h</div>
+                <div class="stat-label">时间范围</div>
+            </div>
+        </div>
+
+        <div class="summary-box">
+            <h2>📌 今日 AI 圈核心动态</h2>
+            <ul>
+                <li><strong>AI 就业市场拐点：</strong>Mo Bitar 预测 AI 裁员潮将在 12 个月内结束，AI 行业正从"替代人类"转向"增强人类"的新阶段</li>
+                <li><strong>Claude Code 生态爆发：</strong>freeCodeCamp 推出 4.5 小时完整教程，Jay E 解析 /goal 指令如何重新定义 AI Agent 开发范式</li>
+                <li><strong>Cursor 3.0 登顶：</strong>新一代 AI 编码工具集成更深度，Sonny Sangha 展示完整 AI 编码工作流配置</li>
+                <li><strong>Google DeepMind 创新：</strong>用 AI 重新设计 50 年历史的鼠标指针交互，展示多模态输入的未来</li>
+                <li><strong>NVIDIA 效率突破：</strong>新 AI 架构实现前所未有的计算效率，Two Minute Papers 深度解读技术原理</li>
+                <li><strong>AI Agent 框架进化：</strong>Hermes Agent v2.0 发布，集成 Qwen 3.6 Plus、Computer Use 和全新 WebUI</li>
+            </ul>
+        </div>
+
+        <!-- Video 1 -->
+        <div class="video-card">
+            <div class="video-header">
+                <div class="video-number">1</div>
+                <div>
+                    <div class="video-title"><a href="https://www.youtube.com/watch?v=doI1GYZ7r-w" target="_blank">The AI layoffs end in 12 months and I know why</a></div>
+                    <div class="video-meta">
+                        <span>👤 Mo Bitar</span>
+                        <span>👁 109,219 views</span>
+                        <span>🕐 10 hours ago</span>
+                        <span>⏱ 9:57</span>
+                    </div>
+                </div>
+            </div>
+            <a href="https://www.youtube.com/watch?v=doI1GYZ7r-w" class="video-link" target="_blank">▶ 观看视频</a>
+            <div class="section-title">核心观点摘要</div>
+            <p class="content-text">Mo Bitar 深入分析当前 AI 裁员潮的根本原因，并预测这一趋势将在 12 个月内逆转。他指出，第一波 AI 裁员主要源于企业对 AI 能力的过度乐观预期，而现实是 AI 目前更多是"增强"而非"替代"人类工作。随着企业重新调整 AI 战略，从"裁员降本"转向"AI 赋能增长"，就业市场将迎来新的平衡点。</p>
+            <div class="section-title">技术亮点</div>
+            <div class="highlight-box">
+                📊 AI 裁员数据趋势分析；🔄 从"替代"到"增强"的范式转变；💼 未来 12 个月就业市场预测模型
+            </div>
+            <div>
+                <span class="tag">AI Employment</span>
+                <span class="tag">Future of Work</span>
+                <span class="tag">Market Analysis</span>
+            </div>
+        </div>
+
+        <!-- Video 2 -->
+        <div class="video-card">
+            <div class="video-header">
+                <div class="video-number">2</div>
+                <div>
+                    <div class="video-title"><a href="https://www.youtube.com/watch?v=aN8hD4c_mdI" target="_blank">Make Agency-Quality Product Ads With AI | Kling 3.0</a></div>
+                    <div class="video-meta">
+                        <span>👤 Jon Law</span>
+                        <span>👁 60,572 views</span>
+                        <span>🕐 1 day ago</span>
+                        <span>⏱ 10:09</span>
+                    </div>
+                </div>
+            </div>
+            <a href="https://www.youtube.com/watch?v=aN8hD4c_mdI" class="video-link" target="_blank">▶ 观看视频</a>
+            <div class="section-title">核心观点摘要</div>
+            <p class="content-text">Jon Law 演示如何使用 Kling 3.0 AI 视频生成工具制作专业级产品广告。Kling 3.0 在视频质量、运动一致性和产品细节保留方面实现重大突破，使得个人创作者和小型企业能够以极低成本产出传统需要昂贵设备和团队的广告内容。这标志着 AI 视频生成正式进入商业应用阶段。</p>
+            <div class="section-title">技术亮点</div>
+            <div class="highlight-box">
+                🎬 Kling 3.0 视频生成质量突破；🛍️ 产品细节精确保留技术；💰 大幅降低广告制作成本
+            </div>
+            <div>
+                <span class="tag">AI Video</span>
+                <span class="tag">Kling 3.0</span>
+                <span class="tag">Content Creation</span>
+            </div>
+        </div>
+
+        <!-- Video 3 -->
+        <div class="video-card">
+            <div class="video-header">
+                <div class="video-number">3</div>
+                <div>
+                    <div class="video-title"><a href="https://www.youtube.com/watch?v=gh2_PhgZGsM" target="_blank">Claude Code for Beginners Tutorial</a></div>
+                    <div class="video-meta">
+                        <span>👤 freeCodeCamp.org</span>
+                        <span>👁 34,066 views</span>
+                        <span>🕐 15 hours ago</span>
+                        <span>⏱ 4:27:48</span>
+                    </div>
+                </div>
+            </div>
+            <a href="https://www.youtube.com/watch?v=gh2_PhgZGsM" class="video-link" target="_blank">▶ 观看视频</a>
+            <div class="section-title">核心观点摘要</div>
+            <p class="content-text">freeCodeCamp 推出长达 4.5 小时的 Claude Code 完整入门教程，这是目前最全面的 Claude Code 学习资源。教程涵盖从基础安装到高级 Agent 开发的完整流程，包括代码生成、调试、重构、测试以及与其他开发工具的集成。对于希望将 AI 深度融入开发工作流的程序员来说，这是必看资源。</p>
+            <div class="section-title">技术亮点</div>
+            <div class="highlight-box">
+                🚀 4.5 小时深度实战教程；🔧 Claude Code 完整功能覆盖；🎯 从入门到 Agent 开发的全路径
+            </div>
+            <div>
+                <span class="tag">Claude Code</span>
+                <span class="tag">Tutorial</span>
+                <span class="tag">AI Coding</span>
+            </div>
+        </div>
+
+        <!-- Video 4 -->
+        <div class="video-card">
+            <div class="video-header">
+                <div class="video-number">4</div>
+                <div>
+                    <div class="video-title"><a href="https://www.youtube.com/watch?v=Gx2joHxUhgg" target="_blank">Hermes Agent v2.0! Huge New Updates: WebUI, Qwen 3.6 Plus FREE, Computer Use, & More!</a></div>
+                    <div class="video-meta">
+                        <span>👤 WorldofAI</span>
+                        <span>👁 33,159 views</span>
+                        <span>🕐 1 day ago</span>
+                        <span>⏱ 11:07</span>
+                    </div>
+                </div>
+            </div>
+            <a href="https://www.youtube.com/watch?v=Gx2joHxUhgg" class="video-link" target="_blank">▶ 观看视频</a>
+            <div class="section-title">核心观点摘要</div>
+            <p class="content-text">Hermes Agent v2.0 带来重大更新，包括全新 WebUI 界面、免费集成 Qwen 3.6 Plus 模型、Computer Use 功能支持以及更强大的工具调用能力。这款开源 AI Agent 框架正在成为开发者和企业构建自定义 Agent 的首选工具，其模块化设计允许灵活扩展和定制。</p>
+            <div class="section-title">技术亮点</div>
+            <div class="highlight-box">
+                🖥️ 全新 WebUI 管理界面；🆓 Qwen 3.6 Plus 免费集成；🖱️ Computer Use 自动化操作；🔧 模块化 Agent 架构
+            </div>
+            <div>
+                <span class="tag">Hermes Agent</span>
+                <span class="tag">Open Source</span>
+                <span class="tag">AI Framework</span>
+            </div>
+        </div>
+
+        <!-- Video 5 -->
+        <div class="video-card">
+            <div class="video-header">
+                <div class="video-number">5</div>
+                <div>
+                    <div class="video-title"><a href="https://www.youtube.com/watch?v=pZNzfQLgGsA" target="_blank">Reimagining a 50-year-old interface (the mouse pointer) with AI</a></div>
+                    <div class="video-meta">
+                        <span>👤 Google DeepMind</span>
+                        <span>👁 27,144 views</span>
+                        <span>🕐 20 hours ago</span>
+                        <span>⏱ 2:48</span>
+                    </div>
+                </div>
+            </div>
+            <a href="https://www.youtube.com/watch?v=pZNzfQLgGsA" class="video-link" target="_blank">▶ 观看视频</a>
+            <div class="section-title">核心观点摘要</div>
+            <p class="content-text">Google DeepMind 展示了一项突破性研究：使用 AI 重新设计已有 50 年历史的鼠标指针交互方式。通过多模态 AI 理解用户的意图和上下文，指针可以智能变形、预测用户下一步操作，并提供上下文相关的辅助功能。这代表了人机交互领域的一次根本性创新。</p>
+            <div class="section-title">技术亮点</div>
+            <div class="highlight-box">
+                🖱️ AI 驱动的智能指针变形；🧠 上下文感知的交互预测；🎨 多模态输入融合技术
+            </div>
+            <div>
+                <span class="tag">Google DeepMind</span>
+                <span class="tag">HCI</span>
+                <span class="tag">Multimodal AI</span>
+            </div>
+        </div>
+
+        <!-- Video 6 -->
+        <div class="video-card">
+            <div class="video-header">
+                <div class="video-number">6</div>
+                <div>
+                    <div class="video-title"><a href="https://www.youtube.com/watch?v=4wC8hnQawiA" target="_blank">NVIDIA New AI Is An Efficiency Monster</a></div>
+                    <div class="video-meta">
+                        <span>👤 Two Minute Papers</span>
+                        <span>👁 24,330 views</span>
+                        <span>🕐 13 hours ago</span>
+                        <span>⏱ 5:42</span>
+                    </div>
+                </div>
+            </div>
+            <a href="https://www.youtube.com/watch?v=4wC8hnQawiA" class="video-link" target="_blank">▶ 观看视频</a>
+            <div class="section-title">核心观点摘要</div>
+            <p class="content-text">Two Minute Papers 解读 NVIDIA 最新发布的超高效率 AI 架构。新模型在保持同等性能的前提下，实现了显著的计算资源节省，这对于大规模 AI 部署和边缘计算应用具有重大意义。视频深入分析了新架构的技术创新点，包括改进的注意力机制和更高效的参数利用方式。</p>
+            <div class="section-title">技术亮点</div>
+            <div class="highlight-box">
+                ⚡ 突破性计算效率提升；🔬 改进的注意力机制；📱 边缘设备部署可行性
+            </div>
+            <div>
+                <span class="tag">NVIDIA</span>
+                <span class="tag">Efficiency</span>
+                <span class="tag">AI Architecture</span>
+            </div>
+        </div>
+
+        <!-- Video 7 -->
+        <div class="video-card">
+            <div class="video-header">
+                <div class="video-number">7</div>
+                <div>
+                    <div class="video-title"><a href="https://www.youtube.com/watch?v=_JfrIQhP5PM" target="_blank">Why the Biggest AI Winners May NOT Be Nvidia or the Mag 7</a></div>
+                    <div class="video-meta">
+                        <span>👤 TheStreet</span>
+                        <span>👁 19,786 views</span>
+                        <span>🕐 11 hours ago</span>
+                        <span>⏱ 15:46</span>
+                    </div>
+                </div>
+            </div>
+            <a href="https://www.youtube.com/watch?v=_JfrIQhP5PM" class="video-link" target="_blank">▶ 观看视频</a>
+            <div class="section-title">核心观点摘要</div>
+            <p class="content-text">TheStreet 提出一个反直觉观点：AI 革命的最大赢家可能不是当前的市场巨头（NVIDIA、Mag 7），而是那些能够有效应用 AI 的传统行业公司和新兴 AI 原生企业。视频分析了 AI 价值链的演变，指出"卖铲子"的硬件公司可能不如"用铲子挖到金子"的应用层公司获益大。</p>
+            <div class="section-title">技术亮点</div>
+            <div class="highlight-box">
+                📈 AI 价值链深度分析；🏢 传统行业 AI 转型机会；🎯 投资视角的 AI 生态重构
+            </div>
+            <div>
+                <span class="tag">AI Investment</span>
+                <span class="tag">Market Analysis</span>
+                <span class="tag">Strategy</span>
+            </div>
+        </div>
+
+        <!-- Video 8 -->
+        <div class="video-card">
+            <div class="video-header">
+                <div class="video-number">8</div>
+                <div>
+                    <div class="video-title"><a href="https://www.youtube.com/watch?v=oxerUfMFuCU" target="_blank">I've Said Too Much Already!</a></div>
+                    <div class="video-meta">
+                        <span>👤 Matt Wolfe</span>
+                        <span>👁 18,987 views</span>
+                        <span>🕐 14 hours ago</span>
+                        <span>⏱ 47:36</span>
+                    </div>
+                </div>
+            </div>
+            <a href="https://www.youtube.com/watch?v=oxerUfMFuCU" class="video-link" target="_blank">▶ 观看视频</a>
+            <div class="section-title">核心观点摘要</div>
+            <p class="content-text">Matt Wolfe（Future Tools）在长达 47 分钟的深度分享中，回答了观众最关心的 AI 问题。作为 AI 工具领域的顶级观察者，他分享了对最新 AI 发展趋势的独到见解，包括哪些工具真正值得使用、AI 创业的机会在哪里，以及普通用户如何在这个快速变化的领域保持竞争力。</p>
+            <div class="section-title">技术亮点</div>
+            <div class="highlight-box">
+                🛠️ 最新 AI 工具实战评测；💡 AI 创业机会洞察；🎯 个人 AI 技能提升路径
+            </div>
+            <div>
+                <span class="tag">AI Tools</span>
+                <span class="tag">Q&A</span>
+                <span class="tag">Future Tools</span>
+            </div>
+        </div>
+
+        <!-- Video 9 -->
+        <div class="video-card">
+            <div class="video-header">
+                <div class="video-number">9</div>
+                <div>
+                    <div class="video-title"><a href="https://www.youtube.com/watch?v=aEDq1bBynOg" target="_blank">The Future of AI Agents Just Arrived (/goal for Claude Code & Codex)</a></div>
+                    <div class="video-meta">
+                        <span>👤 Jay E | RoboNuggets</span>
+                        <span>👁 11,542 views</span>
+                        <span>🕐 18 hours ago</span>
+                        <span>⏱ 13:45</span>
+                    </div>
+                </div>
+            </div>
+            <a href="https://www.youtube.com/watch?v=aEDq1bBynOg" class="video-link" target="_blank">▶ 观看视频</a>
+            <div class="section-title">核心观点摘要</div>
+            <p class="content-text">Jay E 深入解析 Claude Code 和 Codex 的 /goal 指令如何重新定义 AI Agent 的开发范式。这个看似简单的功能实际上代表了 AI 从"执行命令"到"理解目标"的质变——用户只需描述想要达成的目标，AI Agent 就能自主规划并执行多步骤任务。这可能是 2026 年最重要的 AI 编程范式转变。</p>
+            <div class="section-title">技术亮点</div>
+            <div class="highlight-box">
+                🎯 /goal 指令的目标驱动编程；🤖 自主任务规划与执行；🔄 从命令式到声明式的范式跃迁
+            </div>
+            <div>
+                <span class="tag">Claude Code</span>
+                <span class="tag">Codex</span>
+                <span class="tag">AI Agents</span>
+            </div>
+        </div>
+
+        <!-- Video 10 -->
+        <div class="video-card">
+            <div class="video-header">
+                <div class="video-number">10</div>
+                <div>
+                    <div class="video-title"><a href="https://www.youtube.com/watch?v=la_tAgBKqO0" target="_blank">Cursor 3.0 is officially the new King (My AI coding setup revealed)</a></div>
+                    <div class="video-meta">
+                        <span>👤 Sonny Sangha</span>
+                        <span>👁 9,924 views</span>
+                        <span>🕐 17 hours ago</span>
+                        <span>⏱ 25:31</span>
+                    </div>
+                </div>
+            </div>
+            <a href="https://www.youtube.com/watch?v=la_tAgBKqO0" class="video-link" target="_blank">▶ 观看视频</a>
+            <div class="section-title">核心观点摘要</div>
+            <p class="content-text">Sonny Sangha 宣布 Cursor 3.0 正式成为 AI 编码工具的"新王者"，并首次完整展示他的 AI 编码工作流配置。Cursor 3.0 在代码理解、上下文保持和多文件编辑方面实现重大提升，配合精心设计的提示词工程和工具链集成，可以将开发效率提升数倍。</p>
+            <div class="section-title">技术亮点</div>
+            <div class="highlight-box">
+                👑 Cursor 3.0 功能全面解析；⚙️ 完整 AI 编码工作流配置；🚀 实战开发效率提升技巧
+            </div>
+            <div>
+                <span class="tag">Cursor 3.0</span>
+                <span class="tag">AI Coding</span>
+                <span class="tag">Workflow</span>
+            </div>
+        </div>
+
+        <!-- Video 11 -->
+        <div class="video-card">
+            <div class="video-header">
+                <div class="video-number">11</div>
+                <div>
+                    <div class="video-title"><a href="https://www.youtube.com/watch?v=NC2mE7C4s2c" target="_blank">Your Local AI is "Stupid" Because You're Using it Like ChatGPT</a></div>
+                    <div class="video-meta">
+                        <span>👤 Manolo Remiddi</span>
+                        <span>👁 8,957 views</span>
+                        <span>🕐 13 hours ago</span>
+                        <span>⏱ 33:44</span>
+                    </div>
+                </div>
+            </div>
+            <a href="https://www.youtube.com/watch?v=NC2mE7C4s2c" class="video-link" target="_blank">▶ 观看视频</a>
+            <div class="section-title">核心观点摘要</div>
+            <p class="content-text">Manolo Remiddi 指出本地 AI（Local LLM）表现不佳的核心原因：用户错误地将云端大模型的使用方式套用到本地模型上。本地 AI 需要不同的提示策略、RAG 架构和工具配置。视频详细讲解如何针对本地模型的特点优化使用方式，释放其真正的潜力。</p>
+            <div class="section-title">技术亮点</div>
+            <div class="highlight-box">
+                🏠 本地 LLM 优化策略；🎯 针对性的提示词工程；🔗 RAG + 本地模型的最佳实践
+            </div>
+            <div>
+                <span class="tag">Local AI</span>
+                <span class="tag">LLM</span>
+                <span class="tag">Optimization</span>
+            </div>
+        </div>
+
+        <!-- Video 12 -->
+        <div class="video-card">
+            <div class="video-header">
+                <div class="video-number">12</div>
+                <div>
+                    <div class="video-title"><a href="https://www.youtube.com/watch?v=tsQB0n0YV3k" target="_blank">Stanford CS153 Frontier Systems | Jensen Huang from NVIDIA on the Compute Behind Intelligence</a></div>
+                    <div class="video-meta">
+                        <span>👤 Stanford Online</span>
+                        <span>👁 12,292 views</span>
+                        <span>🕐 12 hours ago</span>
+                        <span>⏱ 1:08:24</span>
+                    </div>
+                </div>
+            </div>
+            <a href="https://www.youtube.com/watch?v=tsQB0n0YV3k" class="video-link" target="_blank">▶ 观看视频</a>
+            <div class="section-title">核心观点摘要</div>
+            <p class="content-text">NVIDIA CEO Jensen Huang 在斯坦福 CS153 课程中发表演讲，深入探讨支撑 AI 革命的底层计算架构。他分享了 NVIDIA 在 AI 芯片设计、分布式计算和能效优化方面的最新进展，并展望了未来 AI 计算的发展趋势。对于理解 AI 技术的硬件基础和未来方向，这是不可多得的权威视角。</p>
+            <div class="section-title">技术亮点</div>
+            <div class="highlight-box">
+                🖥️ AI 计算架构深度解析；⚡ 下一代芯片设计哲学；🌐 分布式 AI 训练基础设施
+            </div>
+            <div>
+                <span class="tag">NVIDIA</span>
+                <span class="tag">Jensen Huang</span>
+                <span class="tag">AI Hardware</span>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>📊 本报告由 Nova AI 自动生成 | 数据来源：YouTube 公开搜索</p>
+            <p>🕐 生成时间：2026-05-14 13:07 CST (Asia/Shanghai)</p>
+            <p>💡 每日精选最新 AI 技术动态，助您把握行业脉搏</p>
+        </div>
+    </div>
+</body>
+</html>
